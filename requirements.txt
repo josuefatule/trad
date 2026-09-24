@@ -1,0 +1,4 @@
+# Application dependencies already present in .venv; do not reinstall the ASR stack.
+fastapi==0.141.1
+uvicorn==0.53.0
+websockets==17.1

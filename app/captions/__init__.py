@@ -1,0 +1,1 @@
+"""Transcript snapshot state."""

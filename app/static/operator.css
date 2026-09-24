@@ -1,0 +1,6 @@
+body { font: 16px system-ui, sans-serif; margin: 2rem; background: #f5f5f5; color: #202020; }
+main { max-width: 1000px; margin: auto; }
+button, select { font: inherit; padding: .5rem; margin: .2rem; max-width: 100%; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: white; border: 1px solid #bbb; padding: 1rem; min-height: 3rem; }
+#partial { color: #725200; } #error { color: #a00000; font-weight: bold; }
+#debug, #segments { max-height: 20rem; overflow: auto; font-size: .85rem; }

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Captions — Development</title><link rel="stylesheet" href="/static/operator.css"></head>
+<body><main>
+<h1>LIVE CAPTIONS — DEVELOPMENT</h1>
+<p>WhisperLiveKit: <strong id="connection">Disconnected</strong></p>
+<p id="error" role="alert"></p>
+<label for="microphone">Microphone:</label> <select id="microphone"><option value="">Predeterminado</option></select>
+<button id="refresh">Permitir / actualizar micrófonos</button>
+<p><button id="start">START</button> <button id="stop" disabled>STOP</button></p>
+<p id="capture">Micrófono inactivo</p>
+<h2>PARTIAL</h2><pre id="partial" aria-live="polite"></pre>
+<h2>CONFIRMED</h2><pre id="confirmed"></pre>
+<p>Confirmado por ASR; la última línea puede seguir creciendo. STOP espera el resultado final.</p>
+<details><summary>Segmentos / timestamps</summary><pre id="segments"></pre></details>
+<h2>DEBUG</h2><pre id="debug"></pre>
+</main><script src="/static/operator.js"></script></body></html>
