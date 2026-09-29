@@ -8,6 +8,7 @@ from fastapi import WebSocket, WebSocketDisconnect
 from websockets.asyncio.client import connect
 
 from app.captions.transcript_state import TranscriptState
+from app.captions.segment_manager import SegmentManager
 
 logger = logging.getLogger("captions")
 raw_logger = logging.getLogger("captions.raw")
@@ -23,6 +24,7 @@ def session_url(url, language):
 
 async def relay(browser: WebSocket, settings, session_id: str):
     state = TranscriptState()
+    manager = SegmentManager(getattr(settings, "segments", None), session_id)
 
     def event(name, *args):
         logger.info("session=%s " + name, session_id, *args)
@@ -69,18 +71,43 @@ async def relay(browser: WebSocket, settings, session_id: str):
                     started = True
 
         async def download():
-            async for raw in upstream:
-                payload = decode(raw)
-                if payload.get("error") or payload.get("type") == "error":
-                    raise ValueError(payload.get("error", "WLK error"))
-                if state.update(payload):
-                    event("transcript updated segments=%d", len(state.segments))
-                await browser.send_json({"type": "asr", "payload": payload, "transcript": state.to_dict()})
-                if payload.get("type") == "ready_to_stop":
-                    event("session stopped")
-                    await browser.send_json({"type": "status", "state": "stopped"})
-                    return
-            raise ConnectionError("WLK disconnected before ready_to_stop")
+            receiving = asyncio.create_task(upstream.recv())
+            try:
+                while True:
+                    done, _ = await asyncio.wait({receiving}, timeout=manager.config.tick_seconds)
+                    if not done:
+                        result = manager.tick()
+                        if result.ready_segments or result.events:
+                            await browser.send_json({"type": "segmentation", "segmentation": result.to_dict()})
+                        continue
+                    try:
+                        raw = receiving.result()
+                    except Exception as exc:
+                        raise ConnectionError("WLK disconnected before ready_to_stop") from exc
+                    payload = decode(raw)
+                    if payload.get("error") or payload.get("type") == "error":
+                        raise ValueError(payload.get("error", "WLK error"))
+                    if state.update(payload):
+                        event("transcript updated segments=%d", len(state.segments))
+                    final = payload.get("type") == "ready_to_stop"
+                    result = (manager.finish() if final else manager.update(state)
+                              if "lines" in payload else manager.tick())
+                    await browser.send_json({"type": "asr", "payload": payload,
+                                             "transcript": state.to_dict(), "segmentation": result.to_dict()})
+                    if settings.log_raw and "lines" in payload:
+                        event("partial trace sent raw_present=%s raw_chars=%d state_chars=%d lines=%d",
+                              "buffer_transcription" in payload,
+                              len(payload.get("buffer_transcription") or ""),
+                              len(state.partial_text), len(state.segments))
+                    if final:
+                        event("session stopped")
+                        await browser.send_json({"type": "status", "state": "stopped"})
+                        return
+                    receiving = asyncio.create_task(upstream.recv())
+            finally:
+                if not receiving.done():
+                    receiving.cancel()
+                await asyncio.gather(receiving, return_exceptions=True)
 
         sender = asyncio.create_task(upload())
         receiver = asyncio.create_task(download())

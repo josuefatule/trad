@@ -1,16 +1,24 @@
-# Milestone 1
+# Milestones
 
-- [x] Inspect installed WhisperLiveKit 0.2.26 and verify ignored .venv.
-- [x] Create small FastAPI project scaffold without changing the environment.
-- [x] Implement full-mode WebSocket proxy and transcript snapshots.
-- [x] Implement microphone selection, PCM capture, operator and development logs.
-- [x] Test state, transport and HTTP endpoints (16 tests passed).
-- [x] Test live WLK config, silence through proxy, snapshots and EOF.
-- [x] Check JS syntax and PCM output parity with installed WLK.
-- [ ] Validate real microphone capture and Spanish transcription with Blue Yeti.
+## Milestone 1 — completado
 
-Milestone 2 is outside this change. No translation, terminology, cloud or OBS.
+- [x] Inspección de WLK 0.2.26 instalado, proxy PCM, operador, TranscriptState y tests.
+- [x] Blue Yeti validado por el usuario con voz real.
+- [x] PARTIAL investigado: buffer vacío por SimulStreaming con idioma fijo es.
 
-Milestone 1 remains open until the physical browser/Blue Yeti test passes.
-Browser automation has no connected browsers in this session. Git commits are
-pending the user's author name and email; scaffold paths are already staged.
+## Milestone 2 — implementación completada
+
+- [x] Revisar arquitectura, investigación de partial, fixtures y RAW existente.
+- [x] SegmentManager por línea/cursor, pending, READY incremental e inmutable.
+- [x] Eventos para late revisions, retiming y desaparición de contenido publicado.
+- [x] Puntuación, silencio ASR, longitud, edad, estabilidad y tick configurables.
+- [x] STOP/ready_to_stop hace flush; START crea manager y paneles limpios.
+- [x] UI ASR CONFIRMED / SEGMENT PENDING / TRANSLATION READY.
+- [x] Benchmark médico, referencia sin corregir y replay temporizado de voz real.
+- [x] Tests unitarios, integración de sesiones, lógica DOM y smoke con WLK real.
+- [x] Documentar métricas, thresholds y limitaciones del primer algoritmo.
+- [ ] Validación final de voz del usuario para evaluar la calidad de los cortes.
+
+No continuar a normalización, traducción, OBS ni otro milestone.
+Próximas decisiones: ajustar edad/longitud, política de late revisions y precisión
+temporal. El replay demuestra conservación del texto, no calidad lingüística final.

@@ -1,4 +1,6 @@
 import unittest
+import json
+from pathlib import Path
 
 from app.captions.transcript_state import TranscriptState
 
@@ -31,6 +33,33 @@ class TranscriptTests(unittest.TestCase):
         self.state.update(snapshot([line("La hipertensión")], "arterial"))
         self.assertEqual(self.state.confirmed_text, "La hipertensión")
         self.assertEqual(self.state.partial_text, "arterial")
+
+    def test_partial_only_change_with_identical_confirmed_lines(self):
+        # Synthetic regression: explicitly exercise unchanged nonempty lines.
+        lines = [line("Texto confirmado.")]
+        self.state.update(snapshot(lines, "La hipertensión"))
+        self.assertTrue(self.state.update(snapshot(lines, "La hipertensión arterial")))
+        self.assertEqual(self.state.partial_text, "La hipertensión arterial")
+        self.assertEqual(self.state.confirmed_text, "Texto confirmado.")
+        self.assertEqual(self.state.segments, lines)
+        self.assertTrue(self.state.update(snapshot(lines, "")))
+        self.assertEqual(self.state.partial_text, "")
+        self.assertEqual(self.state.confirmed_text, "Texto confirmado.")
+
+    def test_real_voice_simulstreaming_empty_partial_preserves_confirmed(self):
+        fixture = Path(__file__).parent / "fixtures/wlk_0_2_26_simulstreaming_es_real_voice.json"
+        payloads = json.loads(fixture.read_text(encoding="utf-8"))["payloads"]
+        confirmed = []
+        for payload in payloads:
+            self.assertIn("buffer_transcription", payload)
+            self.assertEqual(payload["buffer_transcription"], "")
+            self.assertTrue(self.state.update(payload))
+            self.assertEqual(self.state.partial_text, "")
+            self.assertEqual(self.state.segments, payload["lines"])
+            expected = " ".join(x["text"].strip() for x in payload["lines"] if x.get("text") and x["speaker"] != -2)
+            self.assertEqual(self.state.confirmed_text, expected)
+            confirmed.append(self.state.confirmed_text)
+        self.assertTrue(confirmed[1].startswith(confirmed[0]))
 
     def test_growing_line_and_repeated_snapshot(self):
         for text in ["La hipertensión", "La hipertensión arterial", "La hipertensión arterial es"]:

@@ -4,12 +4,14 @@ import json
 from contextlib import nullcontext
 import unittest
 from types import SimpleNamespace
+from pathlib import Path
 
 from fastapi.testclient import TestClient
 from websockets.asyncio.server import serve
 
 from app.asr.whisperlivekit_client import relay, session_url
 from app.main import Settings, create_app
+from app.captions.segment_manager import SegmentConfig
 
 
 class Browser:
@@ -25,14 +27,15 @@ class Browser:
 
 
 class ProxyTests(unittest.IsolatedAsyncioTestCase):
-    async def run_proxy(self, handler, frames, timeout=1):
+    async def run_proxy(self, handler, frames, timeout=1, segments=None):
         browser = Browser()
         for frame in frames:
             browser.incoming.put_nowait({"type": "websocket.receive", "bytes": frame})
         async with serve(handler, "127.0.0.1", 0) as server:
             port = server.sockets[0].getsockname()[1]
             settings = SimpleNamespace(wlk_url=f"ws://127.0.0.1:{port}/asr", language="es",
-                                       log_raw=False, connect_timeout=1, stop_timeout=timeout)
+                                       log_raw=False, connect_timeout=1, stop_timeout=timeout,
+                                       segments=segments)
             await relay(browser, settings, "test")
         return browser.outgoing
 
@@ -54,12 +57,68 @@ class ProxyTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(received, [b"\x00\x00" * 128, b""])
         self.assertEqual(messages[-2]["transcript"]["confirmed_text"], "Hola.")
         self.assertEqual(messages[-1]["state"], "stopped")
+        self.assertEqual(messages[-2]["segmentation"]["ready_segments"][0]["reason"], "session_end")
+
+    async def test_segmentation_timer_emits_without_asr_updates(self):
+        async def wlk(ws):
+            await ws.send(json.dumps({"type": "config", "useAudioWorklet": True, "mode": "full"}))
+            await ws.recv()
+            await ws.send(json.dumps({"lines": [{"text": "Una frase.", "speaker": 1,
+                                                "start": "0:00:00.00", "end": "0:00:01.00"}],
+                                      "buffer_transcription": ""}))
+            await asyncio.sleep(.15)
+            await ws.send(json.dumps({"type": "ready_to_stop"}))
+
+        config = SegmentConfig(stabilization_seconds=.03, tick_seconds=.01)
+        messages = await self.run_proxy(wlk, [b""], segments=config)
+        ticks = [m for m in messages if m["type"] == "segmentation"]
+        self.assertEqual(len(ticks), 1)
+        self.assertEqual(ticks[0]["segmentation"]["ready_segments"][0]["text"], "Una frase.")
+        self.assertEqual(ticks[0]["segmentation"]["pending_segment"], "")
+        self.assertEqual(messages[-2]["segmentation"]["ready_segments"], ())
 
     async def test_reject_non_pcm_server(self):
         async def wlk(ws):
             await ws.send(json.dumps({"type": "config", "useAudioWorklet": False}))
         with self.assertRaisesRegex(ValueError, "pcm-input"):
             await self.run_proxy(wlk, [])
+
+    async def test_publish_partial_only_changes_with_identical_lines(self):
+        # Synthetic protocol snapshots, not presented as observed real speech.
+        lines = [{"text": "Confirmado.", "speaker": 1,
+                  "start": "0:00:00.00", "end": "0:00:01.00"}]
+        partials = ["La", "La hipertensión", "La hipertensión", ""]
+
+        async def wlk(ws):
+            await ws.send(json.dumps({"type": "config", "useAudioWorklet": True, "mode": "full"}))
+            await ws.recv()
+            for partial in partials:
+                await ws.send(json.dumps({"lines": lines, "buffer_transcription": partial}))
+            await ws.send(json.dumps({"type": "ready_to_stop"}))
+
+        messages = await self.run_proxy(wlk, [b""])
+        snapshots = [m for m in messages if m["type"] == "asr" and "lines" in m["payload"]]
+        self.assertEqual([m["transcript"]["partial_text"] for m in snapshots], partials)
+        self.assertTrue(all(m["transcript"]["confirmed_text"] == "Confirmado." for m in snapshots))
+
+    async def test_replay_real_voice_payloads_without_losing_fields(self):
+        fixture = Path(__file__).parent / "fixtures/wlk_0_2_26_simulstreaming_es_real_voice.json"
+        payloads = json.loads(fixture.read_text(encoding="utf-8"))["payloads"]
+
+        async def wlk(ws):
+            await ws.send(json.dumps({"type": "config", "useAudioWorklet": True, "mode": "full"}))
+            await ws.recv()
+            for payload in payloads:
+                await ws.send(json.dumps(payload))
+            await ws.send(json.dumps({"type": "ready_to_stop"}))
+
+        messages = await self.run_proxy(wlk, [b""])
+        snapshots = [m for m in messages if m["type"] == "asr" and "lines" in m["payload"]]
+        self.assertEqual([m["payload"] for m in snapshots], payloads)
+        for message in snapshots:
+            self.assertEqual(message["transcript"]["partial_text"], "")
+            self.assertEqual(message["transcript"]["segments"], message["payload"]["lines"])
+            self.assertTrue(message["transcript"]["confirmed_text"])
 
     async def test_finalization_timeout(self):
         async def wlk(ws):

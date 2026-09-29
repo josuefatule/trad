@@ -1,7 +1,7 @@
 import logging
 import os
 from contextlib import asynccontextmanager
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 from uuid import uuid4
@@ -11,6 +11,7 @@ from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.asr.whisperlivekit_client import relay
+from app.captions.segment_manager import SegmentConfig
 
 ROOT = Path(__file__).resolve().parent
 
@@ -23,6 +24,7 @@ class Settings:
     log_dir: str = os.getenv("CAPTIONS_LOG_DIR", str(ROOT.parent / "logs"))
     connect_timeout: float = float(os.getenv("CAPTIONS_CONNECT_TIMEOUT", "15"))
     stop_timeout: float = float(os.getenv("CAPTIONS_STOP_TIMEOUT", "120"))
+    segments: SegmentConfig = field(default_factory=SegmentConfig.from_env)
 
 
 def create_app(settings=None):

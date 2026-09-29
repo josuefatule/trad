@@ -1,0 +1,1329 @@
+{
+  "provenance": {
+    "source": "logs/wlk-raw.log",
+    "session_id": "8ac73eec87da",
+    "recorded_on": "2026-09-29",
+    "real_voice": true,
+    "selection": "All changed lines snapshots plus ready_to_stop; original payloads and receive offsets preserved. Identical lines omitted; replay ticks retain elapsed time."
+  },
+  "events": [
+    {
+      "at": 0.0,
+      "payload": {
+        "status": "no_audio_detected",
+        "lines": [],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0,
+        "remaining_time_transcription_processing": 0.0,
+        "remaining_time_transcription_policy": 0.0,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 4.737,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arter",
+            "start": "0:00:02.58",
+            "end": "0:00:03.30",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.7,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 6.617,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular",
+            "start": "0:00:02.58",
+            "end": "0:00:05.00",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.6,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 1.0,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 8.488,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una",
+            "start": "0:00:02.58",
+            "end": "0:00:07.30",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 9.007,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación",
+            "start": "0:00:02.58",
+            "end": "0:00:07.94",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 9.472,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persist",
+            "start": "0:00:02.58",
+            "end": "0:00:08.34",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.5,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 9.987,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente",
+            "start": "0:00:02.58",
+            "end": "0:00:08.92",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.5,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 10.546,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la pres",
+            "start": "0:00:02.58",
+            "end": "0:00:09.52",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 11.067,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arter",
+            "start": "0:00:02.58",
+            "end": "0:00:09.90",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.5,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 11.576,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial syst",
+            "start": "0:00:02.58",
+            "end": "0:00:10.46",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.5,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 12.095,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica",
+            "start": "0:00:02.58",
+            "end": "0:00:10.94",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.5,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 13.076,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y",
+            "start": "0:00:02.58",
+            "end": "0:00:12.00",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.6,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 13.595,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o",
+            "start": "0:00:02.58",
+            "end": "0:00:12.32",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.9,
+        "remaining_time_transcription_processing": 1.0,
+        "remaining_time_transcription_policy": 0.3,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 14.155,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diast",
+            "start": "0:00:02.58",
+            "end": "0:00:12.90",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 14.676,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastó",
+            "start": "0:00:02.58",
+            "end": "0:00:13.22",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.9,
+        "remaining_time_transcription_processing": 1.0,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 15.146,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica",
+            "start": "0:00:02.58",
+            "end": "0:00:13.36",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.1,
+        "remaining_time_transcription_processing": 1.2,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 15.845,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio pat",
+            "start": "0:00:02.58",
+            "end": "0:00:14.72",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.6,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 16.365,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología",
+            "start": "0:00:02.58",
+            "end": "0:00:14.98",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.9,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 16.875,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involuc",
+            "start": "0:00:02.58",
+            "end": "0:00:15.94",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 17.485,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanism",
+            "start": "0:00:02.58",
+            "end": "0:00:16.46",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 18.046,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos comple",
+            "start": "0:00:02.58",
+            "end": "0:00:16.92",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 18.566,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos",
+            "start": "0:00:02.58",
+            "end": "0:00:17.36",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.5,
+        "remaining_time_transcription_policy": 0.8,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 19.125,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, inclu",
+            "start": "0:00:02.58",
+            "end": "0:00:18.16",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 19.785,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activ",
+            "start": "0:00:02.58",
+            "end": "0:00:18.76",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 20.345,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del",
+            "start": "0:00:02.58",
+            "end": "0:00:19.34",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 20.916,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema",
+            "start": "0:00:02.58",
+            "end": "0:00:19.70",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 21.474,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina",
+            "start": "0:00:02.58",
+            "end": "0:00:20.36",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 22.175,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotens",
+            "start": "0:00:02.58",
+            "end": "0:00:21.16",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.4,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 22.785,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina",
+            "start": "0:00:02.58",
+            "end": "0:00:21.48",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.6,
+        "remaining_time_transcription_processing": 0.8,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 24.006,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al doster",
+            "start": "0:00:02.58",
+            "end": "0:00:22.76",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 25.175,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona",
+            "start": "0:00:02.58",
+            "end": "0:00:23.10",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.1,
+        "remaining_time_transcription_processing": 1.3,
+        "remaining_time_transcription_policy": 0.9,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 25.874,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de",
+            "start": "0:00:02.58",
+            "end": "0:00:24.74",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.6,
+        "remaining_time_transcription_processing": 0.8,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 26.534,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia",
+            "start": "0:00:02.58",
+            "end": "0:00:25.38",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 27.145,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular",
+            "start": "0:00:02.58",
+            "end": "0:00:26.00",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 27.845,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica",
+            "start": "0:00:02.58",
+            "end": "0:00:26.86",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.4,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 29.014,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alter",
+            "start": "0:00:02.58",
+            "end": "0:00:27.86",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.4,
+        "remaining_time_transcription_processing": 0.6,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 29.674,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en",
+            "start": "0:00:02.58",
+            "end": "0:00:28.72",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.7,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 30.945,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotel",
+            "start": "0:00:02.58",
+            "end": "0:00:29.92",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.6,
+        "remaining_time_transcription_processing": 0.8,
+        "remaining_time_transcription_policy": 0.4,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 32.114,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial.",
+            "start": "0:00:02.58",
+            "end": "0:00:30.32",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.3,
+        "remaining_time_transcription_processing": 1.5,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 34.084,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios",
+            "start": "0:00:02.58",
+            "end": "0:00:32.62",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.9,
+        "remaining_time_transcription_processing": 1.1,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 34.694,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios,",
+            "start": "0:00:02.58",
+            "end": "0:00:33.10",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.4,
+        "remaining_time_transcription_processing": 1.7,
+        "remaining_time_transcription_policy": 0.2,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 35.444,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolong",
+            "start": "0:00:02.58",
+            "end": "0:00:34.30",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.8,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 36.614,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada",
+            "start": "0:00:02.58",
+            "end": "0:00:34.78",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.0,
+        "remaining_time_transcription_processing": 1.2,
+        "remaining_time_transcription_policy": 0.8,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 37.364,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles",
+            "start": "0:00:02.58",
+            "end": "0:00:36.21",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.8,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 38.019,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados",
+            "start": "0:00:02.58",
+            "end": "0:00:36.80",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.5,
+        "remaining_time_transcription_processing": 0.8,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 38.624,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de",
+            "start": "0:00:02.58",
+            "end": "0:00:37.12",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.1,
+        "remaining_time_transcription_processing": 1.4,
+        "remaining_time_transcription_policy": 0.4,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 39.284,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de pres",
+            "start": "0:00:02.58",
+            "end": "0:00:37.37",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.0,
+        "remaining_time_transcription_processing": 1.3,
+        "remaining_time_transcription_policy": 0.9,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 39.896,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión",
+            "start": "0:00:02.58",
+            "end": "0:00:37.93",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.6,
+        "remaining_time_transcription_processing": 1.9,
+        "remaining_time_transcription_policy": 0.4,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 40.973,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipert",
+            "start": "0:00:02.58",
+            "end": "0:00:39.62",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.8,
+        "remaining_time_transcription_processing": 1.1,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 42.474,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular",
+            "start": "0:00:02.58",
+            "end": "0:00:40.51",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.2,
+        "remaining_time_transcription_processing": 1.6,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 43.224,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquier",
+            "start": "0:00:02.58",
+            "end": "0:00:40.95",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.5,
+        "remaining_time_transcription_processing": 1.8,
+        "remaining_time_transcription_policy": 0.8,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 43.974,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda",
+            "start": "0:00:02.58",
+            "end": "0:00:41.51",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 2.1,
+        "remaining_time_transcription_processing": 2.5,
+        "remaining_time_transcription_policy": 0.3,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 46.271,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular",
+            "start": "0:00:02.58",
+            "end": "0:00:43.27",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 2.4,
+        "remaining_time_transcription_processing": 2.7,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 49.033,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular, disfunción renal y un incremento significativo",
+            "start": "0:00:02.58",
+            "end": "0:00:46.86",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.7,
+        "remaining_time_transcription_processing": 2.1,
+        "remaining_time_transcription_policy": 0.5,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 50.723,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular, disfunción renal y un incremento significativo del ries",
+            "start": "0:00:02.58",
+            "end": "0:00:47.88",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 2.0,
+        "remaining_time_transcription_processing": 2.4,
+        "remaining_time_transcription_policy": 0.8,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 51.514,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular, disfunción renal y un incremento significativo del riesgo",
+            "start": "0:00:02.58",
+            "end": "0:00:48.36",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 2.8,
+        "remaining_time_transcription_processing": 3.2,
+        "remaining_time_transcription_policy": 0.3,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 53.583,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular, disfunción renal y un incremento significativo del riesgo de accidentes cerebrovascular e infarto",
+            "start": "0:00:02.58",
+            "end": "0:00:51.19",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 1.7,
+        "remaining_time_transcription_processing": 2.1,
+        "remaining_time_transcription_policy": 0.7,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 55.123,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular, disfunción renal y un incremento significativo del riesgo de accidentes cerebrovascular e infarto agudo de mioc",
+            "start": "0:00:02.58",
+            "end": "0:00:52.38",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 2.2,
+        "remaining_time_transcription_processing": 2.6,
+        "remaining_time_transcription_policy": 0.6,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 56.251,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular, disfunción renal y un incremento significativo del riesgo de accidentes cerebrovascular e infarto agudo de miocardio",
+            "start": "0:00:02.58",
+            "end": "0:00:52.82",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 3.3,
+        "remaining_time_transcription_processing": 3.7,
+        "remaining_time_transcription_policy": 0.1,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 58.299,
+      "payload": {
+        "status": "active_transcription",
+        "lines": [
+          {
+            "speaker": 1,
+            "text": " La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial systólica y/o diastólica. Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina angiotensina al dosterona. El aumento de la resistencia vascular periférica y alteraciones en la función endotelial. En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir hipertrofia ventricular izquierda, remodelado vascular, disfunción renal y un incremento significativo del riesgo de accidentes cerebrovascular e infarto agudo de miocardio.",
+            "start": "0:00:02.58",
+            "end": "0:00:53.16",
+            "detected_language": "es"
+          }
+        ],
+        "buffer_transcription": "",
+        "buffer_diarization": "",
+        "buffer_translation": "",
+        "remaining_time_transcription": 0.7,
+        "remaining_time_transcription_processing": 0.0,
+        "remaining_time_transcription_policy": 4.4,
+        "remaining_time_diarization": 0
+      }
+    },
+    {
+      "at": 58.3,
+      "payload": {
+        "type": "ready_to_stop"
+      }
+    }
+  ]
+}

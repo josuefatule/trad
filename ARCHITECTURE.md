@@ -1,8 +1,15 @@
-# Milestone 1: protocolo y arquitectura
+# Arquitectura — Milestones 1 y 2
 
 Inspección local: 24 de septiembre de 2026, **whisperlivekit 0.2.26**.
 La fuente principal fue `.venv/Lib/site-packages/whisperlivekit/`, sin modificar
 el paquete ni consultar implementaciones de otras versiones.
+
+**Validación con voz real, 2026-09-29:** el comando actual usa la política
+`simulstreaming` por defecto. Con idioma fijo `es`, el backend observado no expone
+hipótesis parciales: los 887 snapshots de la sesión incluyeron
+`buffer_transcription: ""`, aunque 831 contenían texto confirmado. No es una pérdida
+en nuestro proxy. Ver [PARTIAL_INVESTIGATION.md](PARTIAL_INVESTIGATION.md) para
+payloads reales, causa en el código instalado y pruebas de regresión.
 
 ## Fuentes inspeccionadas
 
@@ -26,7 +33,7 @@ audio o texto de otra conexión. Un segundo cliente no observa una sesión exist
 Micrófono → navegador (/operator)
           → ws://localhost:8010/ws/session (nuestro FastAPI)
           → ws://localhost:8000/asr?mode=full&language=es (WLK)
-          → nuestro proxy → TranscriptState → navegador
+          → nuestro proxy → TranscriptState → SegmentManager → navegador
 ```
 
 Hay una conexión upstream por conexión del navegador. Nuestra app no carga modelos
@@ -163,3 +170,118 @@ El debug de pantalla conserva los últimos 100 eventos, no todo el payload.
 La configuración usa variables de entorno, documentadas en README. Se mantiene
 la estructura sugerida y se añaden dos archivos de audio necesarios para AudioWorklet
 y Worker. Ninguna dependencia ni versión del motor ASR fue modificada.
+
+## Milestone 2: Segment Manager
+
+`TranscriptState` y CONFIRMED no cambian. Un `SegmentManager` nuevo por conexión
+consume exclusivamente `segments` (snapshot completo de `lines`). No utiliza
+`buffer_transcription` ni inventa parciales. El flujo es:
+
+```text
+WLK → TranscriptState.confirmed_text / segments
+    → SegmentManager.pending_segment
+    → nuevos CaptionSegment inmutables → UI de desarrollo
+```
+
+### Reconciliación basada en evidencia
+
+La sesión real `8ac73eec87da` tuvo 887 snapshots y 60 cambios en `lines`: una línea
+de voz mantuvo inicio `0:00:02.58`, mientras fin y texto crecían, incluso dentro
+de palabras. `benchmarks/medical_real_snapshots.json` conserva esos 60 payloads
+y EOF con los tiempos de recepción originales.
+
+Cada línea se asocia a una fuente por timestamp de inicio y ocurrencia ordenada,
+no por texto ni hablante. Si falta el tiempo o hay retiming, se usa la posición
+anterior y solapamiento temporal cuando ambos intervalos existen. Cada fuente
+mantiene texto observado, cursor de caracteres consumidos, IDs publicados y tiempos
+de primera aparición/último cambio por carácter. Cada snapshot reemplaza su cola
+pendiente; las zonas idénticas preservan sus tiempos mediante prefijo y sufijo
+**exactos**. No hay fuzzy matching ni `replace` de texto previo. Los snapshots
+repetidos no generan contenido ni reinician estabilidad. Extender el final no
+reinicia la estabilidad de una frase anterior idéntica.
+
+Una revisión del contenido consumido genera `late_revision_detected` con old/new
+text, timestamps e IDs afectados. El cursor se mapea por el intervalo cambiado
+delimitado por prefijo/sufijo exactos. Si ese cambio cruza la frontera publicada,
+se excluye de pending la región revisada ambigua y se conserva el sufijo posterior
+idéntico; se registra `boundary_crossed`. Esta política evita republicar el pasado,
+pero puede omitir texto nuevo ambiguo. READY no cambia. Extender un token ya emitido
+(`arter` → `arterial`) también se registra; no se publica `ial` como otra unidad.
+
+El retiming y la desaparición de líneas publicadas se registran. Una división exacta
+de una línea totalmente consumida se reconoce si el texto nuevo aparece una sola
+vez en el anterior y su intervalo está contenido en él. Las repeticiones genuinas
+en tiempos distintos se conservan. Fusiones/divisiones arbitrarias con cambios
+simultáneos de texto y tiempos o timestamps reutilizados siguen siendo ambiguas
+sin IDs/token times; no se promete reconciliación general de esos casos no observados.
+
+### Reglas, relojes y configuración
+
+Los timestamps del audio sirven para intervalos/pausas; el reloj monotónico de
+recepción sirve para estabilidad, edad y latencia. Valores iniciales configurables:
+
+| Regla | Condición |
+| --- | --- |
+| `punctuation` | primer `.?!` seguido de espacio o fin, candidato estable 0,9 s |
+| `silence` | silencio explícito `speaker=-2` o gap entre líneas ≥1,1 s; candidato estable |
+| `max_words` | 25 palabras pendientes; corte cerca del objetivo de 18, estable |
+| `max_age` | contenido pendiente más antiguo ≥2,8 s; corte seguro y estable |
+| `session_end` | `ready_to_stop` de WLK; vaciar pendiente sin esperar estabilidad |
+
+Puntuación/pausa no saltan el máximo de palabras si hay un corte seguro. Cortes
+forzados prefieren la última coma, punto y coma o dos puntos antes del objetivo;
+si no, whitespace. Conservan la última palabra sin límite conocido, pues puede
+estar incompleta. No cortan palabras técnicas. Edad y longitud son **límites blandos**
+subordinados a estabilidad/límite seguro: una palabra sola puede esperar hasta pausa,
+puntuación o EOF. El flush de EOF puede superar el máximo si recibió mucho texto final.
+
+Un decimal como `3.5` no cierra frase. No hay analizador de abreviaturas ni sintaxis;
+`Dr.` puede cerrar un candidato. READY significa estable según estas reglas de
+desarrollo, no una garantía gramatical/médica. El target no es una longitud mínima:
+2,8 s produjo 25 segmentos de 1–7 palabras en el benchmark. Hay que ajustar latencia
+vs. longitud con voz real.
+
+Un solo bucle de descarga atiende WLK y ticks de 100 ms; mantiene el recv pendiente
+sin cancelarlo en cada tick. Puede publicar aunque no llegue otro snapshot.
+**Inactividad de red no es silencio.** STOP envía EOF y espera `ready_to_stop`;
+`finish()` publica lo restante antes de `status=stopped`. START crea manager/IDs nuevos.
+
+### Datos y protocolo
+
+`CaptionSegment` es frozen: `id`, `text`, `start_time`, `end_time`, `emitted_at`,
+`reason`, `first_seen_at`, `latency_ms`, `word_count`, `revisions_before_ready`,
+`source_ids`, `timing_precision`.
+
+`start_time`/`end_time` son límites de las líneas de origen en segundos de audio,
+**no tiempos exactos de cada subsegmento**. Varios cortes de una línea comparten
+inicio y pueden solaparse; se indica en UI y como `timing_precision=source_line_bounds`.
+No se inventan timestamps por palabra; datos ausentes son null. `emitted_at` y
+`first_seen_at` son segundos monotónicos desde el inicio del manager; `latency_ms`
+mide primera aparición del contenido conservado → READY, no captura → ASR.
+
+Los mensajes `type=asr` conservan payload/transcript de M1 y añaden `segmentation`:
+
+```json
+{"confirmed_text":"texto ASR completo","pending_segment":"cola pendiente","ready_segments":[],"events":[]}
+```
+
+`ready_segments` contiene **solo emisiones nuevas de la llamada**. Los ticks envían
+`type=segmentation` con esa misma propiedad, sin fabricar un mensaje ASR. La UI
+reemplaza PENDING y agrega READY por ID; START limpia paneles e IDs. El manager
+también conserva el historial inmutable durante la sesión.
+
+Logs: `segment_manager_reset`, `segment_pending_updated` solo cuando cambia,
+`segment_ready` con `flush_reason`/métricas, y `late_revision_detected`.
+`revisions_before_ready` cuenta sustituciones del pendiente desde la emisión anterior,
+no simples extensiones ni snapshots repetidos; es una métrica de ventana pendiente,
+no un contador de correcciones por palabra. Late revisions se cuentan por evento.
+RAW continúa desactivado salvo `CAPTIONS_LOG_RAW=1`. No se guarda audio.
+
+### Validación
+
+Tests con reloj explícito cubren crecimiento, revisión, varias líneas, estabilidad,
+pausas, cortes, EOF, reset, timestamps, inmutabilidad y late revisions. Replay real:
+25 segmentos, cero late revisions y todas las palabras finales en orden sin duplicación.
+Integración FastAPI + WLK simulado reproduce payloads reales y dos sesiones completas.
+Smoke con WLK real y PCM de silencio valida transporte/cierre. La prueba final de
+segmentación con Blue Yeti queda al usuario. Sin traducción, normalización ni cambios ASR.

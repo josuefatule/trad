@@ -1,9 +1,16 @@
-# Live Captions local — Milestone 1
+# Live Captions local — Milestone 2: Segment Manager
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.
-**Implementación lista para la prueba física; el hito sigue pendiente de validar
-captura y transcripción española con el Blue Yeti en un navegador.**
+**Blue Yeti validado por el usuario para CONFIRMED.** La investigación con voz real
+del 2026-09-29 confirmó que WLK entrega `buffer_transcription` vacío con la política
+SimulStreaming predeterminada e idioma `es`. PARTIAL permanece vacío por esa
+limitación; no se fabrica texto parcial. Evidencia y pruebas en
+[PARTIAL_INVESTIGATION.md](PARTIAL_INVESTIGATION.md).
+
+Milestone 2 añade ASR CONFIRMED → SEGMENT PENDING → TRANSLATION READY, en español.
+No implementa traducción ni normalización. Implementación validada con tests y replay
+real; la validación final de voz del Segment Manager queda al usuario.
 
 ## Arranque (PowerShell)
 
@@ -39,12 +46,18 @@ si el proceso correspondiente sigue abierto antes de iniciar otro.
    su frecuencia de captura y el destino `PCM s16le mono 16000 Hz`.
 5. Decir: «La hipertensión arterial es un factor de riesgo cardiovascular».
    Hacer una pausa y decir: «El paciente necesita seguimiento y control de la presión».
-6. Observar el texto cambiante en **PARTIAL** y el confirmado en **CONFIRMED**.
+   Para el benchmark, leer `benchmarks/medical_reference.txt` con pausas y de corrido.
+6. Observar el confirmado en **ASR CONFIRMED**. **PARTIAL** solo muestra hipótesis que
+   WLK realmente envía; con la configuración actual se ha observado siempre vacío.
    La última línea confirmada puede crecer. Abrir **Segmentos / timestamps** para
    ver los tiempos reales. La latencia y visibilidad del parcial dependen de WLK.
+   **SEGMENT PENDING** crece/se revisa; **TRANSLATION READY** agrega unidades
+   inmutables con razón, palabras y latencia. Sus timestamps son límites de líneas
+   fuente; pueden solaparse y no equivalen a tiempos precisos de palabras.
 7. Pulsar **STOP**, esperar `sesión finalizada` y comprobar que el final se conserva,
    que no se repite todo el historial y que se apaga el indicador de micrófono.
-8. Pulsar START otra vez: debe comenzar con texto vacío y una sesión nueva.
+   Probar también una lectura sin punto final: el remanente debe salir como `session_end`.
+8. Pulsar START otra vez: CONFIRMED, PENDING y READY deben estar vacíos; sesión nueva.
 9. Para comprobar errores, detener WLK después de acabar una sesión y pulsar START:
    debe aparecer un error visible, sin quedar el micrófono capturando indefinidamente.
 
@@ -64,6 +77,24 @@ Variables opcionales antes de arrancar nuestra app:
 | `CAPTIONS_LOG_DIR` | `C:\live-captions\logs` (relativo a la ubicación del proyecto) |
 | `CAPTIONS_CONNECT_TIMEOUT` | `15` segundos |
 | `CAPTIONS_STOP_TIMEOUT` | `120` segundos |
+| `SEGMENT_STABILIZATION_SECONDS` | `0.9` segundos |
+| `SEGMENT_SILENCE_SECONDS` | `1.1` segundos de silencio/gap ASR |
+| `SEGMENT_TARGET_WORDS` | `18` palabras objetivo por corte forzado |
+| `SEGMENT_MAX_WORDS` | `25` palabras para activar corte por longitud |
+| `SEGMENT_MAX_PENDING_SECONDS` | `2.8` segundos de edad pendiente |
+| `SEGMENT_TICK_SECONDS` | `0.1` segundos entre evaluaciones |
+
+Valores de desarrollo, leídos al arrancar. Ejemplo para comparar configuraciones:
+
+```powershell
+$env:SEGMENT_MAX_PENDING_SECONDS = "5"
+.\.venv\Scripts\python.exe replay_fixture.py benchmarks/medical_real_snapshots.json
+```
+
+Reiniciar FastAPI para aplicar variables a la UI. Edad/longitud son límites blandos:
+se espera estabilidad y no se corta una palabra incompleta. Puntuación espera
+estabilidad; pausa requiere evidencia ASR, no inactividad de red. EOF vacía el
+pendiente sin esperar. Reconciliación y limitaciones explicadas en ARCHITECTURE.md.
 
 Ejemplo para analizar protocolo original:
 
@@ -83,12 +114,27 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**16 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
+**52 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
 timeout y desconexión. Usan unittest, websockets y el httpx ya instalado para
 TestClient; no requieren pytest ni GPU. Los errores de conexión deliberados del
 test aparecen en el log y no son fallos de la suite.
+
+Incluyen SegmentManager, replay médico con conservación de palabras, late revisions,
+cortes, métricas, timer sin nuevos mensajes y dos sesiones FastAPI completas contra
+un WLK simulado que entrega payloads reales. Prueba adicional del operador con DOM
+simulado: `node tests/test_operator_partial.cjs`, si Node está disponible. Se ejecutó
+con el runtime de la herramienta, sin instalarlo.
+
+Replay sin servidores, GPU ni micrófono:
+
+```powershell
+.\.venv\Scripts\python.exe replay_fixture.py benchmarks/medical_real_snapshots.json
+```
+
+Imprime PENDING, READY con métricas, late revisions y resumen. Reproduce virtualmente
+el tiempo de 61 eventos reales capturados en M1. Ver `benchmarks/README.md`.
 
 Prueba opcional contra los dos servidores **ya arrancados**:
 
@@ -102,18 +148,21 @@ silencio en memoria; no valida habla ni el navegador.
 
 También se verificó sintaxis de los tres JavaScript y que el worker produce los
 mismos bytes que el instalado para bloques a 16000, 44100 y 48000 Hz, incluida
-la barrera FIFO antes de EOF. No fue posible validar visualmente ni capturar
-Blue Yeti: la herramienta de automatización no tenía navegadores conectados.
+la barrera FIFO antes de EOF durante M1. El usuario validó voz real con Blue Yeti
+en M1; queda a su cargo la validación final de las nuevas reglas de segmentación.
 
 ## Archivos y dependencias
 
 - `app/main.py`: rutas, configuración y logs.
 - `app/asr/whisperlivekit_client.py`: conexión WLK y proxy bidireccional.
 - `app/captions/transcript_state.py`: reconstrucción desde snapshots completos.
+- `app/captions/segment_manager.py`: reconciliación, reglas, reloj, datos y métricas.
 - `app/templates/operator.html`: página de operador.
 - `app/static/operator.js`, `operator.css`: controles, estados y renderizado.
 - `app/static/pcm_worklet.js`, `recorder_worker.js`: captura y conversión basada en WLK.
 - `tests/test_transcript_state.py`, `test_proxy.py`, `smoke_live.py`: pruebas.
+- `tests/test_segment_manager.py`, `test_session_replay.py`: segmentación e integración.
+- `replay_fixture.py`, `benchmarks/`: replay y lectura médica sin corregir.
 - `ARCHITECTURE.md`, `PLAN.md`, `requirements.txt`, `third_party/`: documentación y licencia.
 
 **Paquetes instalados o actualizados: ninguno.** `requirements.txt` contiene solo
@@ -122,7 +171,12 @@ Uvicorn 0.53.0 y websockets 17.1. No es un freeze del entorno.
 
 ## Límites y siguiente decisión
 
-- No cerrar Milestone 1 hasta superar la prueba manual anterior.
+- Milestone 1 validado; confirmar ahora la experiencia de segmentación con voz.
+- Con edad 2,8 s, el replay genera 25 segmentos, muchos de 1–7 palabras, sin
+  duplicación ni late revisions. Ajustar edad vs. longitud antes de producción.
+- Los tiempos ASR son por línea; cortes distintos pueden solaparse. Abreviaturas
+  y reorganizaciones arbitrarias de líneas siguen siendo limitaciones. Revisiones
+  ambiguas que cruzan lo publicado se registran y no se republican silenciosamente.
 - WLK mostró un aviso sobre Triton: usa un median kernel más lento como fallback.
   Aun así arrancó con CUDA y completó la prueba de transporte. No se modificó CUDA.
 - TestClient emitió una deprecación por httpx y sugirió httpx2; los tests pasan
@@ -131,10 +185,9 @@ Uvicorn 0.53.0 y websockets 17.1. No es un freeze del entorno.
 - Se conserva el remuestreo por bloques del frontend instalado, con su redondeo.
 - Al perder una conexión hay que iniciar una sesión nueva; no hay recuperación
   de texto persistente. No existe vista pasiva de otra sesión.
-- Antes de otro milestone, registrar calidad y latencia con el Yeti, probar una
-  sesión larga y decidir qué unidad confirmada consumirá el futuro Segment Manager.
-  No se ha implementado traducción.
+- Antes de otro milestone, escoger thresholds con el Yeti, probar una sesión larga
+  y decidir si se admitirán correcciones explícitas de READY y timestamps más finos.
+  No se ha implementado traducción ni normalización.
 
-Git ya estaba inicializado y `.venv/` está explícitamente ignorado. La preparación
-del scaffold se añadió al índice; el commit no pudo crearse porque faltan
-`user.name` y `user.email`. No se inventó identidad ni se cambió configuración global.
+Git ya estaba inicializado y `.venv/` está explícitamente ignorado. Se utiliza
+la identidad ya configurada en Git, sin modificarla.

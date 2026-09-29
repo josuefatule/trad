@@ -11,8 +11,12 @@
 <p><button id="start">START</button> <button id="stop" disabled>STOP</button></p>
 <p id="capture">Micrófono inactivo</p>
 <h2>PARTIAL</h2><pre id="partial" aria-live="polite"></pre>
-<h2>CONFIRMED</h2><pre id="confirmed"></pre>
+<h2>ASR CONFIRMED</h2><pre id="confirmed"></pre>
 <p>Confirmado por ASR; la última línea puede seguir creciendo. STOP espera el resultado final.</p>
+<h2>SEGMENT PENDING</h2><pre id="pending" aria-live="polite"></pre>
+<h2>TRANSLATION READY</h2><pre id="ready"></pre>
+<p>Segmentos estables en español, sin traducción. Los tiempos son límites de las líneas ASR de origen;
+los segmentos cortados dentro de una línea pueden compartir intervalos.</p>
 <details><summary>Segmentos / timestamps</summary><pre id="segments"></pre></details>
 <h2>DEBUG</h2><pre id="debug"></pre>
 </main><script src="/static/operator.js"></script></body></html>

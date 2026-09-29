@@ -1,0 +1,50 @@
+{
+  "provenance": {
+    "date": "2026-09-29",
+    "session_id": "8ac73eec87da",
+    "source": "logs/wlk-raw.log; real Blue Yeti browser session through FastAPI",
+    "wlk_version": "0.2.26",
+    "command": "wlk --backend faster-whisper --model small --language es --pcm-input",
+    "selection": "First snapshot containing speech and first subsequent changed lines; payloads unmodified"
+  },
+  "payloads": [
+    {
+      "status": "active_transcription",
+      "lines": [
+        {
+          "speaker": 1,
+          "text": " La hipertensión arter",
+          "start": "0:00:02.58",
+          "end": "0:00:03.30",
+          "detected_language": "es"
+        }
+      ],
+      "buffer_transcription": "",
+      "buffer_diarization": "",
+      "buffer_translation": "",
+      "remaining_time_transcription": 0.7,
+      "remaining_time_transcription_processing": 0.7,
+      "remaining_time_transcription_policy": 0.7,
+      "remaining_time_diarization": 0
+    },
+    {
+      "status": "active_transcription",
+      "lines": [
+        {
+          "speaker": 1,
+          "text": " La hipertensión arterial es una condición cardiovascular",
+          "start": "0:00:02.58",
+          "end": "0:00:05.00",
+          "detected_language": "es"
+        }
+      ],
+      "buffer_transcription": "",
+      "buffer_diarization": "",
+      "buffer_translation": "",
+      "remaining_time_transcription": 0.6,
+      "remaining_time_transcription_processing": 0.6,
+      "remaining_time_transcription_policy": 1.0,
+      "remaining_time_diarization": 0
+    }
+  ]
+}
