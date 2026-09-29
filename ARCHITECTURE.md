@@ -222,24 +222,28 @@ recepción sirve para estabilidad, edad y latencia. Valores iniciales configurab
 
 | Regla | Condición |
 | --- | --- |
-| `punctuation` | primer `.?!` seguido de espacio o fin, candidato estable 0,9 s |
-| `silence` | silencio explícito `speaker=-2` o gap entre líneas ≥1,1 s; candidato estable |
-| `max_words` | 25 palabras pendientes; corte cerca del objetivo de 18, estable |
-| `max_age` | contenido pendiente más antiguo ≥2,8 s; corte seguro y estable |
+| `punctuation` | primer `.?!` seguido de espacio o fin, candidato estable 0,8 s |
+| `silence` | silencio explícito `speaker=-2` o gap entre líneas ≥1,0 s; candidato estable y con ≥6 palabras, salvo puntuación fuerte |
+| `target_words` | desde 16 palabras, coma, punto y coma o dos puntos estable después del mínimo de 6 |
+| `max_words` | 24 palabras pendientes; límite fuerte y corte seguro cerca del objetivo de 16 |
+| `soft_max_age` | edad ≥4,5 s, ≥6 palabras y límite débil estable; si no existe, sigue pendiente |
+| `hard_max_age` | edad ≥7,0 s; corte seguro que garantiza progreso sin dividir tokens |
 | `session_end` | `ready_to_stop` de WLK; vaciar pendiente sin esperar estabilidad |
 
-Puntuación/pausa no saltan el máximo de palabras si hay un corte seguro. Cortes
-forzados prefieren la última coma, punto y coma o dos puntos antes del objetivo;
-si no, whitespace. Conservan la última palabra sin límite conocido, pues puede
-estar incompleta. No cortan palabras técnicas. Edad y longitud son **límites blandos**
-subordinados a estabilidad/límite seguro: una palabra sola puede esperar hasta pausa,
-puntuación o EOF. El flush de EOF puede superar el máximo si recibió mucho texto final.
+Puntuación/pausa no saltan el máximo de palabras si hay un corte seguro. Los cortes
+prefieren la última coma, punto y coma o dos puntos antes del objetivo; si no, usan
+whitespace. Conservan la palabra terminal sin whitespace cuando ya existe un límite
+anterior, pues WLK puede completarla o añadirle puntuación. Nunca dividen palabras
+técnicas. `soft_max_age` no crea fragmentos por sí solo antes del mínimo;
+`hard_max_age` y `max_words` son límites fuertes. Si solo existe una palabra abierta,
+la edad dura la publica completa para garantizar progreso. El flush de EOF puede
+superar el máximo si recibió mucho texto final.
 
 Un decimal como `3.5` no cierra frase. No hay analizador de abreviaturas ni sintaxis;
 `Dr.` puede cerrar un candidato. READY significa estable según estas reglas de
-desarrollo, no una garantía gramatical/médica. El target no es una longitud mínima:
-2,8 s produjo 25 segmentos de 1–7 palabras en el benchmark. Hay que ajustar latencia
-vs. longitud con voz real.
+desarrollo, no una garantía gramatical/médica. El benchmark mostró que la causa de
+la fragmentación era la edad única de 2,8 s sin mínimo: produjo 21 de sus 25 cortes.
+Con edad blanda/dura separadas y mínimo explícito genera 10 segmentos.
 
 Un solo bucle de descarga atiende WLK y ticks de 100 ms; mantiene el recv pendiente
 sin cancelarlo en cada tick. Puede publicar aunque no llegue otro snapshot.
@@ -281,7 +285,7 @@ RAW continúa desactivado salvo `CAPTIONS_LOG_RAW=1`. No se guarda audio.
 
 Tests con reloj explícito cubren crecimiento, revisión, varias líneas, estabilidad,
 pausas, cortes, EOF, reset, timestamps, inmutabilidad y late revisions. Replay real:
-25 segmentos, cero late revisions y todas las palabras finales en orden sin duplicación.
+10 segmentos, cero late revisions y sus 81 palabras finales en orden sin duplicación.
 Integración FastAPI + WLK simulado reproduce payloads reales y dos sesiones completas.
 Smoke con WLK real y PCM de silencio valida transporte/cierre. La prueba final de
 segmentación con Blue Yeti queda al usuario. Sin traducción, normalización ni cambios ASR.

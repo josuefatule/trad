@@ -1,7 +1,9 @@
 import dataclasses
+from collections import Counter
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 from app.captions.segment_manager import SegmentConfig, SegmentManager, timestamp
 from app.captions.transcript_state import TranscriptState
@@ -46,8 +48,8 @@ class SegmentTests(unittest.TestCase):
     def test_repeated_snapshots_do_not_reset_stability_or_duplicate(self):
         rows = [line("Hola.")]
         self.update(rows, 0)
-        self.update(rows, .8)
-        self.assertEqual(len(self.update(rows, 1).ready_segments), 1)
+        self.assertEqual(len(self.update(rows, .8).ready_segments), 1)
+        self.assertFalse(self.update(rows, 1).ready_segments)
         self.assertFalse(self.update(rows, 2).ready_segments)
         self.assertFalse(self.manager.finish(3).ready_segments)
 
@@ -59,53 +61,60 @@ class SegmentTests(unittest.TestCase):
         self.assertEqual(self.manager.tick(2.1).ready_segments[0].text, "Segunda.")
 
     def test_explicit_silence(self):
-        self.update([line("Sin punto"), line("", "0:00:05.80", "0:00:07.00", -2)], 0)
+        self.update([line("Este contenido tiene seis palabras sin punto"),
+                     line("", "0:00:05.80", "0:00:07.00", -2)], 0)
         result = self.manager.tick(1)
         self.assertEqual(result.ready_segments[0].reason, "silence")
-        self.assertEqual(result.ready_segments[0].text, "Sin punto")
+        self.assertEqual(result.ready_segments[0].text, "Este contenido tiene seis palabras sin punto")
 
     def test_gap_between_lines_flushes_previous_only(self):
-        self.update([line("Primera"), line("Segunda", "0:00:07.20", "0:00:08.00")], 0)
+        self.update([line("Esta primera unidad contiene seis palabras útiles"),
+                     line("Segunda", "0:00:07.20", "0:00:08.00")], 0)
         result = self.manager.tick(1)
-        self.assertEqual(result.ready_segments[0].text, "Primera")
+        self.assertEqual(result.ready_segments[0].text, "Esta primera unidad contiene seis palabras útiles")
         self.assertEqual(result.pending_segment, "Segunda")
 
     def test_no_silence_inferred_from_network_idle(self):
         self.update([line("cardio")], 0)
-        self.assertFalse(self.manager.tick(100).ready_segments)
+        segment = self.manager.tick(100).ready_segments[0]
+        self.assertEqual(segment.reason, "hard_max_age")
 
-    def test_max_age_leaves_terminal_fragment(self):
-        self.update([line("La condición cardio")], 0)
+    def test_soft_max_age_waits_for_minimum_and_natural_boundary(self):
+        self.manager = SegmentManager(SegmentConfig(
+            minimum_words=3, soft_max_age_seconds=3, hard_max_age_seconds=7))
+        self.update([line("La condición clínica, cardio")], 0)
         result = self.manager.tick(3)
-        self.assertEqual(result.ready_segments[0].text, "La condición")
-        self.assertEqual(result.ready_segments[0].reason, "max_age")
+        self.assertEqual(result.ready_segments[0].text, "La condición clínica,")
+        self.assertEqual(result.ready_segments[0].reason, "soft_max_age")
         self.assertEqual(result.pending_segment, "cardio")
-        self.update([line("La condición cardiovascular")], 3.1)
+        self.update([line("La condición clínica, cardiovascular")], 3.1)
         self.assertEqual(self.manager.finish(3.2).ready_segments[0].text, "cardiovascular")
 
+    def test_soft_max_age_without_natural_boundary_waits_for_hard_limit(self):
+        self.update([line("uno dos tres cuatro cinco seis siete")], 0)
+        self.assertFalse(self.manager.tick(4.6).ready_segments)
+        self.assertEqual(self.manager.tick(7).ready_segments[0].reason, "hard_max_age")
+
     def test_max_words_whitespace(self):
-        self.manager = SegmentManager(SegmentConfig(target_words=3, max_words=5))
-        self.update([line("uno dos tres cuatro cinco")], 0)
-        result = self.manager.tick(1)
+        self.manager = SegmentManager(SegmentConfig(minimum_words=2, target_words=3, max_words=5))
+        result = self.update([line("uno dos tres cuatro cinco")], 0)
         self.assertEqual(result.ready_segments[0].text, "uno dos tres")
         self.assertEqual(result.ready_segments[0].reason, "max_words")
         self.assertEqual(result.pending_segment, "cuatro cinco")
 
     def test_forced_cut_prefers_comma_or_semicolon(self):
-        self.manager = SegmentManager(SegmentConfig(target_words=4, max_words=5))
-        self.update([line("uno dos; tres cuatro cinco")], 0)
-        result = self.manager.tick(1)
+        self.manager = SegmentManager(SegmentConfig(minimum_words=2, target_words=4, max_words=5))
+        result = self.update([line("uno dos; tres cuatro cinco")], 0)
         self.assertEqual(result.ready_segments[0].text, "uno dos;")
 
-    def test_max_words_waits_for_stability(self):
-        self.manager = SegmentManager(SegmentConfig(target_words=2, max_words=3))
-        self.assertFalse(self.update([line("uno dos tres")], 0).ready_segments)
-        self.assertFalse(self.manager.tick(.5).ready_segments)
+    def test_max_words_is_a_strong_limit(self):
+        self.manager = SegmentManager(SegmentConfig(minimum_words=1, target_words=2, max_words=3))
+        result = self.update([line("uno dos tres")], 0)
+        self.assertEqual(result.ready_segments[0].reason, "max_words")
 
     def test_long_punctuated_sentence_still_respects_max_words(self):
-        self.manager = SegmentManager(SegmentConfig(target_words=3, max_words=5))
-        self.update([line("uno dos tres cuatro cinco seis siete.")], 0)
-        result = self.manager.tick(1)
+        self.manager = SegmentManager(SegmentConfig(minimum_words=2, target_words=3, max_words=5))
+        result = self.update([line("uno dos tres cuatro cinco seis siete.")], 0)
         self.assertTrue(all(s.word_count <= 5 for s in result.ready_segments))
         self.assertEqual(result.ready_segments[0].reason, "max_words")
 
@@ -147,8 +156,8 @@ class SegmentTests(unittest.TestCase):
 
     def test_late_extension_of_published_word_does_not_emit_suffix(self):
         self.update([line("arter"), line("", "0:00:05.80", "0:00:07.00", -2)], 0)
-        self.manager.tick(1)
-        result = self.update([line("arterial es importante")], 1.1)
+        self.manager.tick(7)
+        result = self.update([line("arterial es importante")], 7.1)
         self.assertTrue(any(e.get("token_extended") for e in result.events))
         self.assertEqual(result.pending_segment.strip(), "es importante")
 
@@ -170,8 +179,9 @@ class SegmentTests(unittest.TestCase):
     def test_long_technical_word_never_split(self):
         text = "electroencefalográficamente"
         self.update([line(text)], 0)
-        self.assertFalse(self.manager.tick(20).ready_segments)
-        self.assertEqual(self.manager.finish(21).ready_segments[0].text, text)
+        segment = self.manager.tick(7).ready_segments[0]
+        self.assertEqual(segment.text, text)
+        self.assertEqual(segment.reason, "hard_max_age")
 
     def test_decimal_is_not_sentence_boundary(self):
         self.update([line("Una medida de 3.5 unidades")], 0)
@@ -196,11 +206,29 @@ class SegmentTests(unittest.TestCase):
             self.manager.tick(.1)
 
     def test_invalid_config_and_time(self):
-        for kwargs in [dict(max_words=0), dict(stabilization_seconds=-1), dict(tick_seconds=float('nan'))]:
+        for kwargs in [dict(max_words=0), dict(stabilization_seconds=-1),
+                       dict(tick_seconds=float('nan')),
+                       dict(soft_max_age_seconds=8, hard_max_age_seconds=7),
+                       dict(minimum_words=17, target_words=16)]:
             with self.assertRaises(ValueError):
                 SegmentConfig(**kwargs)
         self.assertEqual(timestamp("1:02:03.45"), 3723.45)
         self.assertIsNone(timestamp("bad"))
+
+    def test_config_reads_batching_thresholds_from_environment(self):
+        values = {
+            "SEGMENT_MINIMUM_WORDS": "7",
+            "SEGMENT_TARGET_WORDS": "17",
+            "SEGMENT_MAX_WORDS": "25",
+            "SEGMENT_SOFT_MAX_AGE_SECONDS": "5.5",
+            "SEGMENT_HARD_MAX_AGE_SECONDS": "8.0",
+        }
+        with patch.dict("os.environ", values):
+            config = SegmentConfig.from_env()
+        self.assertEqual((config.minimum_words, config.target_words, config.max_words),
+                         (7, 17, 25))
+        self.assertEqual((config.soft_max_age_seconds, config.hard_max_age_seconds),
+                         (5.5, 8.0))
 
     def test_same_spoken_text_at_different_times_is_not_deduplicated(self):
         self.update([line("Sí."), line("Sí.", "0:00:08.00", "0:00:09.00")], 0)
@@ -239,10 +267,62 @@ class SegmentTests(unittest.TestCase):
         final_payload = next(e["payload"] for e in reversed(fixture["events"]) if "lines" in e["payload"])
         expected_words = " ".join(l["text"] for l in final_payload["lines"] if l.get("text")).split()
         self.assertEqual(" ".join(s.text for s in emitted).split(), expected_words)
+        self.assertEqual([s.text for s in emitted], [
+            "La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial",
+            "systólica y/o diastólica.",
+            "Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina",
+            "angiotensina al dosterona.",
+            "El aumento de la resistencia vascular periférica y alteraciones en la función endotelial.",
+            "En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir",
+            "hipertrofia ventricular izquierda, remodelado",
+            "vascular, disfunción renal y un incremento significativo del",
+            "riesgo de accidentes cerebrovascular e infarto agudo de",
+            "miocardio.",
+        ])
+        self.assertEqual(Counter(s.reason for s in emitted),
+                         Counter(hard_max_age=6, punctuation=3, session_end=1))
+        self.assertEqual([s.word_count for s in emitted], [16, 3, 11, 3, 13, 14, 4, 8, 8, 1])
         self.assertEqual(len({s.id for s in emitted}), len(emitted))
         self.assertEqual(results[-1][1].pending_segment, "")
         self.assertTrue(all(s.text and s.word_count > 0 for s in emitted))
         self.assertFalse([e for _,r in results for e in r.events if e["type"] == "late_revision_detected"])
+
+    def test_soft_age_does_not_emit_tiny_fragment(self):
+        self.update([line("solo dos")], 0)
+        self.assertFalse(self.manager.tick(4.6).ready_segments)
+        result = self.manager.tick(7.1)
+        self.assertEqual([s.text for s in result.ready_segments], ["solo", "dos"])
+        self.assertTrue(all(s.reason == "hard_max_age" for s in result.ready_segments))
+        self.assertEqual(result.pending_segment, "")
+
+    def test_hard_age_flushes_single_open_word(self):
+        self.update([line("cardio")], 0)
+        self.assertFalse(self.manager.tick(6.9).ready_segments)
+        segment = self.manager.tick(7.0).ready_segments[0]
+        self.assertEqual((segment.text, segment.reason), ("cardio", "hard_max_age"))
+
+    def test_hard_age_keeps_open_terminal_word_when_complete_words_exist(self):
+        self.update([line("uno dos")], 0)
+        self.update([line("uno dos cardio")], 6.5)
+        result = self.manager.tick(7)
+        self.assertEqual(result.ready_segments[0].text, "uno dos")
+        self.assertEqual(result.pending_segment, "cardio")
+        result = self.update([line("uno dos cardiovascular")], 7.1)
+        self.assertFalse([e for e in result.events if e["type"] == "late_revision_detected"])
+        self.assertEqual(self.manager.finish(7.2).ready_segments[0].text, "cardiovascular")
+
+    def test_target_words_uses_natural_boundary(self):
+        text = "uno dos tres cuatro cinco seis, siete ocho nueve diez once doce trece catorce quince dieciséis"
+        self.update([line(text)], 0)
+        segment = self.manager.tick(.8).ready_segments[0]
+        self.assertEqual(segment.text, "uno dos tres cuatro cinco seis,")
+        self.assertEqual(segment.reason, "target_words")
+
+    def test_silence_requires_linguistically_useful_content(self):
+        rows = [line("muy corto"), line("", "0:00:05.80", "0:00:07.00", -2)]
+        self.update(rows, 0)
+        self.assertFalse(self.manager.tick(1).ready_segments)
+        self.assertEqual(self.manager.tick(7).ready_segments[0].reason, "hard_max_age")
 
 
 if __name__ == "__main__":

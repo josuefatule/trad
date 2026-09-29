@@ -18,20 +18,25 @@ logger = logging.getLogger("captions")
 
 @dataclass(frozen=True)
 class SegmentConfig:
-    stabilization_seconds: float = .9
-    silence_seconds: float = 1.1
-    target_words: int = 18
-    max_words: int = 25
-    max_pending_seconds: float = 2.8
+    stabilization_seconds: float = .8
+    silence_seconds: float = 1.0
+    minimum_words: int = 6
+    target_words: int = 16
+    max_words: int = 24
+    soft_max_age_seconds: float = 4.5
+    hard_max_age_seconds: float = 7.0
     tick_seconds: float = .1
 
     def __post_init__(self):
-        for name in ("stabilization_seconds", "silence_seconds", "max_pending_seconds", "tick_seconds"):
+        for name in ("stabilization_seconds", "silence_seconds", "soft_max_age_seconds",
+                     "hard_max_age_seconds", "tick_seconds"):
             value = getattr(self, name)
             if not math.isfinite(value) or value <= 0:
                 raise ValueError(f"{name} must be finite and positive")
-        if not 1 <= self.target_words <= self.max_words:
-            raise ValueError("Require 1 <= target_words <= max_words")
+        if not 1 <= self.minimum_words <= self.target_words <= self.max_words:
+            raise ValueError("Require 1 <= minimum_words <= target_words <= max_words")
+        if self.soft_max_age_seconds > self.hard_max_age_seconds:
+            raise ValueError("soft_max_age_seconds cannot exceed hard_max_age_seconds")
 
     @classmethod
     def from_env(cls):
@@ -40,9 +45,11 @@ class SegmentConfig:
             for name, env, cast in (
                 ("stabilization_seconds", "SEGMENT_STABILIZATION_SECONDS", float),
                 ("silence_seconds", "SEGMENT_SILENCE_SECONDS", float),
+                ("minimum_words", "SEGMENT_MINIMUM_WORDS", int),
                 ("target_words", "SEGMENT_TARGET_WORDS", int),
                 ("max_words", "SEGMENT_MAX_WORDS", int),
-                ("max_pending_seconds", "SEGMENT_MAX_PENDING_SECONDS", float),
+                ("soft_max_age_seconds", "SEGMENT_SOFT_MAX_AGE_SECONDS", float),
+                ("hard_max_age_seconds", "SEGMENT_HARD_MAX_AGE_SECONDS", float),
                 ("tick_seconds", "SEGMENT_TICK_SECONDS", float),
             )
         })
@@ -286,15 +293,45 @@ class SegmentManager:
 
     def _forced_cut(self, text):
         words = list(re.finditer(r"\S+", text))
-        # The final token may be a fragment such as 'cardio'; leave it pending.
+        # The final token may be a fragment such as 'cardio'; leave it pending
+        # whenever an earlier complete-word boundary exists.
         complete = [w for w in words if w.end() < len(text) and text[w.end()].isspace()]
         if not complete:
             return 0
-        limit = complete[min(len(complete), self.config.target_words) - 1].end()
-        boundaries = list(re.finditer(r"[,;:](?=\s)", text[:limit + 1]))
+        limit_count = min(len(complete), self.config.target_words)
+        limit = complete[limit_count - 1].end()
+        boundaries = [match for match in re.finditer(r"[,;:](?=\s)", text[:limit + 1])
+                      if len(text[:match.end()].split()) >= self.config.minimum_words]
         if boundaries:
             return boundaries[-1].end()
         return limit
+
+    def _natural_target_cut(self, text):
+        """At target length, emit only when a useful weak boundary exists."""
+        if len(text.split()) < self.config.target_words:
+            return 0
+        words = list(re.finditer(r"\S+", text))
+        limit = words[min(len(words), self.config.target_words) - 1].end()
+        boundaries = [match for match in re.finditer(r"[,;:](?=\s)", text[:limit + 1])
+                      if len(text[:match.end()].split()) >= self.config.minimum_words]
+        return boundaries[-1].end() if boundaries else 0
+
+    def _weak_boundary_cut(self, text):
+        """Latest useful comma/semicolon/colon, capped at target length."""
+        words = list(re.finditer(r"\S+", text))
+        if len(words) < self.config.minimum_words:
+            return 0
+        limit = words[min(len(words), self.config.target_words) - 1].end()
+        boundaries = [match for match in re.finditer(r"[,;:](?=\s)", text[:limit + 1])
+                      if len(text[:match.end()].split()) >= self.config.minimum_words]
+        return boundaries[-1].end() if boundaries else 0
+
+    def _hard_cut(self, text):
+        """Bound latency while avoiding a recently changing terminal token."""
+        cut = self._forced_cut(text)
+        # A single open word has no safe earlier boundary. The hard deadline
+        # must still guarantee progress; any later extension is a late revision.
+        return cut or len(text)
 
     def _choose(self, text, refs, pauses, now):
         for match in re.finditer(r"[.!?]+(?=\s|$)", text):
@@ -303,19 +340,31 @@ class SegmentManager:
             # Preserve sentence order; do not bypass an unstable first sentence.
             break
         for cut, duration in pauses:
-            if (duration >= self.config.silence_seconds and len(text[:cut].split()) <= self.config.max_words
+            useful = (len(text[:cut].split()) >= self.config.minimum_words
+                      or bool(re.search(r"[.!?]+\s*$", text[:cut])))
+            if (duration >= self.config.silence_seconds and useful
+                    and len(text[:cut].split()) <= self.config.max_words
                     and self._stable(refs, cut, now)):
                 return cut, "silence"
-        reason = None
-        if len(text.split()) >= self.config.max_words:
-            reason = "max_words"
-        elif refs:
+        target_cut = self._natural_target_cut(text)
+        if target_cut and self._stable(refs, target_cut, now):
+            return target_cut, "target_words"
+        word_count = len(text.split())
+        if word_count >= self.config.max_words:
+            # Strong bound: ASR-confirmed complete words may flush without
+            # waiting for the stabilization timer.
+            return self._forced_cut(text), "max_words"
+        if refs:
             first = min(s.first_seen[i] for r in refs if r is not None for s, i in [r])
-            if now - first >= self.config.max_pending_seconds:
-                reason = "max_age"
-        cut = self._forced_cut(text) if reason else 0
-        if cut and self._stable(refs, cut, now):
-            return cut, reason
+            age = now - first
+            if age >= self.config.hard_max_age_seconds:
+                cut = self._hard_cut(text)
+                if cut:
+                    return cut, "hard_max_age"
+            if age >= self.config.soft_max_age_seconds and word_count >= self.config.minimum_words:
+                cut = self._weak_boundary_cut(text)
+                if cut and self._stable(refs, cut, now):
+                    return cut, "soft_max_age"
         return 0, None
 
     def _emit(self, text, refs, cut, reason, now):

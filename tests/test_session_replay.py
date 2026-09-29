@@ -28,7 +28,9 @@ class SessionReplayTests(unittest.IsolatedAsyncioTestCase):
         async with serve(wlk, "127.0.0.1", 0) as server:
             port = server.sockets[0].getsockname()[1]
             settings = Settings(wlk_url=f"ws://127.0.0.1:{port}/asr", log_dir="logs/tests",
-                                segments=SegmentConfig(stabilization_seconds=10, max_pending_seconds=20))
+                                segments=SegmentConfig(stabilization_seconds=10,
+                                                       soft_max_age_seconds=20,
+                                                       hard_max_age_seconds=30))
 
             def browser():
                 ids = []

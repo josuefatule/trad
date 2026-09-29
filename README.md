@@ -77,24 +77,28 @@ Variables opcionales antes de arrancar nuestra app:
 | `CAPTIONS_LOG_DIR` | `C:\live-captions\logs` (relativo a la ubicación del proyecto) |
 | `CAPTIONS_CONNECT_TIMEOUT` | `15` segundos |
 | `CAPTIONS_STOP_TIMEOUT` | `120` segundos |
-| `SEGMENT_STABILIZATION_SECONDS` | `0.9` segundos |
-| `SEGMENT_SILENCE_SECONDS` | `1.1` segundos de silencio/gap ASR |
-| `SEGMENT_TARGET_WORDS` | `18` palabras objetivo por corte forzado |
-| `SEGMENT_MAX_WORDS` | `25` palabras para activar corte por longitud |
-| `SEGMENT_MAX_PENDING_SECONDS` | `2.8` segundos de edad pendiente |
+| `SEGMENT_STABILIZATION_SECONDS` | `0.8` segundos |
+| `SEGMENT_SILENCE_SECONDS` | `1.0` segundos de silencio/gap ASR |
+| `SEGMENT_MINIMUM_WORDS` | `6` palabras para que silencio/edad blanda sean útiles |
+| `SEGMENT_TARGET_WORDS` | `16` palabras objetivo para buscar un corte natural |
+| `SEGMENT_MAX_WORDS` | `24` palabras; límite fuerte |
+| `SEGMENT_SOFT_MAX_AGE_SECONDS` | `4.5` segundos; solo corta en límite natural y tras el mínimo |
+| `SEGMENT_HARD_MAX_AGE_SECONDS` | `7.0` segundos; garantiza progreso |
 | `SEGMENT_TICK_SECONDS` | `0.1` segundos entre evaluaciones |
 
 Valores de desarrollo, leídos al arrancar. Ejemplo para comparar configuraciones:
 
 ```powershell
-$env:SEGMENT_MAX_PENDING_SECONDS = "5"
+$env:SEGMENT_HARD_MAX_AGE_SECONDS = "8"
 .\.venv\Scripts\python.exe replay_fixture.py benchmarks/medical_real_snapshots.json
 ```
 
-Reiniciar FastAPI para aplicar variables a la UI. Edad/longitud son límites blandos:
-se espera estabilidad y no se corta una palabra incompleta. Puntuación espera
-estabilidad; pausa requiere evidencia ASR, no inactividad de red. EOF vacía el
-pendiente sin esperar. Reconciliación y limitaciones explicadas en ARCHITECTURE.md.
+Reiniciar FastAPI para aplicar variables a la UI. Puntuación y pausa esperan
+estabilidad. La edad blanda requiere mínimo y un límite lingüístico; la edad dura y
+el máximo de palabras sí garantizan progreso. Una palabra terminal sin whitespace se
+retiene cuando existe un corte anterior seguro, porque WLK todavía puede completarla
+o añadir puntuación. Pausa requiere evidencia ASR, no inactividad de red. EOF vacía
+el pendiente sin esperar. Reconciliación y limitaciones explicadas en ARCHITECTURE.md.
 
 Ejemplo para analizar protocolo original:
 
@@ -114,7 +118,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**52 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
+**59 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
 timeout y desconexión. Usan unittest, websockets y el httpx ya instalado para
@@ -172,8 +176,8 @@ Uvicorn 0.53.0 y websockets 17.1. No es un freeze del entorno.
 ## Límites y siguiente decisión
 
 - Milestone 1 validado; confirmar ahora la experiencia de segmentación con voz.
-- Con edad 2,8 s, el replay genera 25 segmentos, muchos de 1–7 palabras, sin
-  duplicación ni late revisions. Ajustar edad vs. longitud antes de producción.
+- La afinación reduce el replay médico de 25 a 10 segmentos. Conserva sus 81
+  palabras exactamente y no genera late revisions; ver `benchmarks/README.md`.
 - Los tiempos ASR son por línea; cortes distintos pueden solaparse. Abreviaturas
   y reorganizaciones arbitrarias de líneas siguen siendo limitaciones. Revisiones
   ambiguas que cruzan lo publicado se registran y no se republican silenciosamente.
@@ -185,8 +189,8 @@ Uvicorn 0.53.0 y websockets 17.1. No es un freeze del entorno.
 - Se conserva el remuestreo por bloques del frontend instalado, con su redondeo.
 - Al perder una conexión hay que iniciar una sesión nueva; no hay recuperación
   de texto persistente. No existe vista pasiva de otra sesión.
-- Antes de otro milestone, escoger thresholds con el Yeti, probar una sesión larga
-  y decidir si se admitirán correcciones explícitas de READY y timestamps más finos.
+- Antes de otro milestone, validar estos thresholds con el Yeti, probar una sesión
+  larga y decidir si se admitirán correcciones explícitas de READY y timestamps más finos.
   No se ha implementado traducción ni normalización.
 
 Git ya estaba inicializado y `.venv/` está explícitamente ignorado. Se utiliza
