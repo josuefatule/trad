@@ -1,0 +1,46 @@
+{
+  "name": "medical_base",
+  "version": 1,
+  "terms": [
+    {
+      "canonical": "sistólica",
+      "variants": ["systólica"],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hipertensión",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "arteria",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "renina-angiotensina-aldosterona",
+      "variants": ["renina angiotensina aldosterona"],
+      "aliases": ["sistema renina angiotensina aldosterona"],
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "fibrilación auricular",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "insuficiencia cardíaca",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "antagonistas del receptor de angiotensina II",
+      "aliases": ["ARA II"],
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "ecocardiografía transtorácica",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "hemoglobina glicosilada",
+      "auto_apply": "fuzzy"
+    }
+  ]
+}

@@ -2,10 +2,12 @@
 import argparse
 from collections import Counter
 import json
+import math
 from pathlib import Path
 import statistics
 
 from app.captions.segment_manager import SegmentConfig, SegmentManager
+from app.captions.terminology_normalizer import NormalizerConfig, TerminologyNormalizer
 from app.captions.transcript_state import TranscriptState
 
 
@@ -37,12 +39,19 @@ def replay(events, manager):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("fixture", type=Path)
+    parser.add_argument("--perf-repeats", type=int, default=100,
+                        help="normalization performance passes over emitted READY segments")
     args = parser.parse_args()
+    if args.perf_repeats < 0:
+        parser.error("--perf-repeats must be non-negative")
     fixture = json.loads(args.fixture.read_text(encoding="utf-8"))
     manager = SegmentManager(SegmentConfig.from_env(), "replay")
+    normalizer_config = NormalizerConfig.from_env()
+    normalizer = TerminologyNormalizer.from_config(normalizer_config)
     previous = None
     late = 0
     emitted = []
+    normalized = []
     for now, result in replay(fixture["events"], manager):
         if result.pending_segment != previous:
             print(f"{now:7.3f} PENDING {result.pending_segment}")
@@ -50,6 +59,14 @@ def main():
         for segment in result.ready_segments:
             emitted.append(segment)
             print(f"{now:7.3f} READY {json.dumps(dataclass_dict(segment), ensure_ascii=False)}")
+            item = normalizer.normalize(segment.id, segment.text)
+            normalized.append(item)
+            print(f"{now:7.3f} RAW {item.raw_text}")
+            print(f"{now:7.3f} NORMALIZED {item.normalized_text}")
+            for correction in item.corrections:
+                print(f"{now:7.3f} CORRECTION {json.dumps(dataclass_dict(correction), ensure_ascii=False)}")
+            for suggestion in item.suggestions:
+                print(f"{now:7.3f} SUGGESTION {json.dumps(dataclass_dict(suggestion), ensure_ascii=False)}")
         for event in result.events:
             if event["type"] == "late_revision_detected":
                 late += 1
@@ -81,6 +98,22 @@ def main():
         print(f"HARD_AGE count={hard_age} percent={hard_age / len(emitted) * 100:.2f}")
         print("BOUNDARIES " + " ".join(
             f"{kind}={count}" for kind, count in sorted(boundaries.items())))
+    correction_count = sum(len(item.corrections) for item in normalized)
+    suggestion_count = sum(len(item.suggestions) for item in normalized)
+    unchanged = sum(item.raw_text == item.normalized_text for item in normalized)
+    known = sorted({term for item in normalized for term in item.known_terms})
+    print(f"NORMALIZATION corrections={correction_count} suggestions={suggestion_count} "
+          f"unchanged_segments={unchanged} known_terms={json.dumps(known, ensure_ascii=False)}")
+    timings = []
+    for _ in range(args.perf_repeats):
+        measured = TerminologyNormalizer.from_config(normalizer_config)
+        for segment in emitted:
+            timings.append(measured.normalize(segment.id, segment.text).processing_ms)
+    if timings:
+        ordered = sorted(timings)
+        p95 = ordered[math.ceil(len(ordered) * .95) - 1]
+        print("NORMALIZER_PERF samples={} median_ms={:.3f} p95_ms={:.3f} max_ms={:.3f}".format(
+            len(timings), statistics.median(timings), p95, max(timings)))
 
 
 def dataclass_dict(value):

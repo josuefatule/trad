@@ -6,7 +6,7 @@
 - [x] Blue Yeti validado por el usuario con voz real.
 - [x] PARTIAL investigado: buffer vacío por SimulStreaming con idioma fijo es.
 
-## Milestone 2 — implementación completada
+## Milestone 2 — completado
 
 - [x] Revisar arquitectura, investigación de partial, fixtures y RAW existente.
 - [x] SegmentManager por línea/cursor, pending, READY incremental e inmutable.
@@ -17,8 +17,21 @@
 - [x] Benchmark médico, referencia sin corregir y replay temporizado de voz real.
 - [x] Tests unitarios, integración de sesiones, lógica DOM y smoke con WLK real.
 - [x] Documentar métricas, thresholds y limitaciones del primer algoritmo.
-- [ ] Validación final de voz del usuario para evaluar la calidad de los cortes.
+- [x] Afinación final por replay: 16 READY, mediana 3,83 s e integridad 81/81.
 
-No continuar a normalización, traducción, OBS ni otro milestone.
-Próximas decisiones: ajustar edad/longitud, política de late revisions y precisión
-temporal. El replay demuestra conservación del texto, no calidad lingüística final.
+## Milestone 3 — implementación completada
+
+- [x] `TerminologyNormalizer` independiente entre READY y la futura traducción.
+- [x] `raw_text` inmutable y `normalized_text` separado con auditoría completa.
+- [x] Glosario médico base y glosario de conferencia configurables.
+- [x] Exactos seguros, fuzzy conservador de expresiones y sugerencias por umbral.
+- [x] Resolución determinista de solapamientos, mayúsculas, acentos, guiones y signos.
+- [x] Contexto reciente entre segmentos solo como `cross_segment_suggestion`.
+- [x] UI RAW / NORMALIZED / CORRECTIONS-SUGGESTIONS.
+- [x] Replay médico con salida comparada, términos conocidos y perfil de rendimiento.
+- [x] Pruebas positivas, negativas, integración proxy y fixture real.
+- [ ] Validación final con voz Blue Yeti del flujo NORMALIZED ES.
+
+No avanzar todavía a traducción, LLM, OBS ni corrección retroactiva de READY.
+El siguiente paso operativo es validar con voz real y revisar sugerencias antes de
+ampliar el glosario de conferencia.

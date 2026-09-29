@@ -55,13 +55,25 @@ module.exports = (async () => {
   const ready = {id: 's:1', text: 'Lista en español.', start_time: 2.58, end_time: 5.8,
     reason: 'punctuation', word_count: 3, latency_ms: 900};
   const segmentation = {pending_segment: 'Siguiente', ready_segments: [ready], events: []};
-  await sockets[0].onmessage({data: JSON.stringify({type: 'segmentation', segmentation})});
-  await sockets[0].onmessage({data: JSON.stringify({type: 'segmentation', segmentation})});
+  const normalization = {segments: [{
+    segment_id: 's:1', raw_text: ready.text, normalized_text: 'Texto normalizado.',
+    corrections: [{source: 'Lista', replacement: 'Texto', confidence: 1,
+      rule: 'exact_alias'}],
+    suggestions: [{source: 'lista', candidate: 'listado', confidence: 0.9,
+      rule: 'glossary_fuzzy', cross_segment: false}],
+  }]};
+  await sockets[0].onmessage({data: JSON.stringify({type: 'segmentation', segmentation, normalization})});
+  await sockets[0].onmessage({data: JSON.stringify({type: 'segmentation', segmentation, normalization})});
   assert.equal(element('pending').textContent, 'Siguiente');
   assert.equal(element('ready').textContent.split('Lista en español.').length - 1, 1);
   assert.match(element('ready').textContent, /00:02.58/);
+  assert.equal(element('normalized').textContent.split('Texto normalizado.').length - 1, 1);
+  assert.equal(element('corrections').textContent.split('Lista').length - 1, 1);
+  assert.match(element('corrections').textContent, /SUGGESTION/);
   await element('start').onclick();
   assert.equal(element('pending').textContent, '');
   assert.equal(element('ready').textContent, '');
-  console.log('PASS: operator.js receives partial-only updates, renders and clears PARTIAL; CONFIRMED unchanged');
+  assert.equal(element('normalized').textContent, '');
+  assert.equal(element('corrections').textContent, '');
+  console.log('PASS: operator.js renders partial, RAW, NORMALIZED and audit data without duplicates');
 })();

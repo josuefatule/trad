@@ -14,8 +14,10 @@
 ```
 
 No requiere micrófono, servidores ni GPU; termina sin esperar 58 segundos reales.
-Lee las mismas variables `SEGMENT_*` que la app. Imprime PENDING, READY con métricas,
-LATE si hay revisiones tardías, y un resumen. Para guardar UTF-8 en PowerShell:
+Lee las mismas variables `SEGMENT_*` y `NORMALIZER_*` que la app. Imprime PENDING,
+READY, RAW, NORMALIZED, CORRECTION/SUGGESTION, LATE si hay revisiones tardías, los
+resúmenes y un perfil del normalizador. `--perf-repeats 0` omite el perfil. Para
+guardar UTF-8 en PowerShell:
 
 ```powershell
 $env:PYTHONIOENCODING = "utf-8"
@@ -87,3 +89,9 @@ tipos de límite, IDs únicos, pending vacío y ausencia de late revisions.
 
 Los tests comparan conservación respecto del último snapshot del fixture y las
 invariantes del algoritmo, no contra la ortografía del texto médico de referencia.
+
+## Normalización
+
+El resultado reproducible de Milestone 3 está en `NORMALIZER_REPORT.md`: 1 corrección
+exacta, 1 sugerencia entre segmentos, 0 falsos positivos observados y RAW 81/81.
+El normalizador no modifica los READY ni las métricas de segmentación anteriores.

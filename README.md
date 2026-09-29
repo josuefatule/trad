@@ -1,4 +1,4 @@
-# Live Captions local — Milestone 2: Segment Manager
+# Live Captions local — Milestone 3: Terminology Normalizer
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.
@@ -8,9 +8,10 @@ SimulStreaming predeterminada e idioma `es`. PARTIAL permanece vacío por esa
 limitación; no se fabrica texto parcial. Evidencia y pruebas en
 [PARTIAL_INVESTIGATION.md](PARTIAL_INVESTIGATION.md).
 
-Milestone 2 añade ASR CONFIRMED → SEGMENT PENDING → TRANSLATION READY, en español.
-No implementa traducción ni normalización. Implementación validada con tests y replay
-real; la validación final de voz del Segment Manager queda al usuario.
+El flujo actual es ASR CONFIRMED → SEGMENT PENDING → RAW ES → NORMALIZED ES.
+Milestone 3 conserva cada READY original y produce una vista normalizada separada,
+con correcciones y sugerencias auditables. No implementa traducción. La validación
+final de voz del Segment Manager y del normalizador queda al usuario.
 
 ## Arranque (PowerShell)
 
@@ -51,8 +52,9 @@ si el proceso correspondiente sigue abierto antes de iniciar otro.
    WLK realmente envía; con la configuración actual se ha observado siempre vacío.
    La última línea confirmada puede crecer. Abrir **Segmentos / timestamps** para
    ver los tiempos reales. La latencia y visibilidad del parcial dependen de WLK.
-   **SEGMENT PENDING** crece/se revisa; **TRANSLATION READY** agrega unidades
-   inmutables con razón, palabras y latencia. Sus timestamps son límites de líneas
+   **SEGMENT PENDING** crece/se revisa; **RAW ES** agrega unidades inmutables con
+   razón, palabras y latencia. **NORMALIZED ES** muestra la salida derivada y
+   **CORRECTIONS / SUGGESTIONS** su auditoría. Los timestamps son límites de líneas
    fuente; pueden solaparse y no equivalen a tiempos precisos de palabras.
 7. Pulsar **STOP**, esperar `sesión finalizada` y comprobar que el final se conserva,
    que no se repite todo el historial y que se apaga el indicador de micrófono.
@@ -86,6 +88,12 @@ Variables opcionales antes de arrancar nuestra app:
 | `SEGMENT_SOFT_MAX_AGE_SECONDS` | `3.3` segundos; requiere un `safe_cut` estable |
 | `SEGMENT_HARD_MAX_AGE_SECONDS` | `5.5` segundos; garantiza progreso |
 | `SEGMENT_TICK_SECONDS` | `0.1` segundos entre evaluaciones |
+| `NORMALIZER_AUTO_THRESHOLD` | `0.96`; debe superar el umbral de sugerencia |
+| `NORMALIZER_SUGGEST_THRESHOLD` | `0.86` |
+| `NORMALIZER_MAX_TOKEN_DELTA` | `1` palabra de diferencia para candidatos fuzzy |
+| `NORMALIZER_CONTEXT_WORDS` | `8` palabras recientes para sugerencias entre segmentos |
+| `NORMALIZER_MEDICAL_GLOSSARY` | `glossaries/medical_base.json` |
+| `NORMALIZER_CONFERENCE_GLOSSARY` | `glossaries/conference.json` |
 
 Valores de desarrollo, leídos al arrancar. Ejemplo para comparar configuraciones:
 
@@ -119,7 +127,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**62 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
+**80 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
 timeout y desconexión. Usan unittest, websockets y el httpx ya instalado para
@@ -127,10 +135,9 @@ TestClient; no requieren pytest ni GPU. Los errores de conexión deliberados del
 test aparecen en el log y no son fallos de la suite.
 
 Incluyen SegmentManager, replay médico con conservación de palabras, late revisions,
-cortes, métricas, timer sin nuevos mensajes y dos sesiones FastAPI completas contra
-un WLK simulado que entrega payloads reales. Prueba adicional del operador con DOM
-simulado: `node tests/test_operator_partial.cjs`, si Node está disponible. Se ejecutó
-con el runtime de la herramienta, sin instalarlo.
+cortes, métricas, normalización exacta/fuzzy, negativos, solapamientos, contexto entre
+segmentos y transporte FastAPI contra WLK simulado. La prueba adicional del operador
+con DOM simulado es `node tests/test_operator_partial.cjs`, si Node está disponible.
 
 Replay sin servidores, GPU ni micrófono:
 
@@ -138,8 +145,9 @@ Replay sin servidores, GPU ni micrófono:
 .\.venv\Scripts\python.exe replay_fixture.py benchmarks/medical_real_snapshots.json
 ```
 
-Imprime PENDING, READY con métricas, late revisions y resumen. Reproduce virtualmente
-el tiempo de 61 eventos reales capturados en M1. Ver `benchmarks/README.md`.
+Imprime PENDING, READY, RAW, NORMALIZED, correcciones/sugerencias, late revisions,
+métricas y un perfil del normalizador. Reproduce virtualmente el tiempo de 61 eventos
+reales capturados en M1. Ver `benchmarks/README.md`.
 
 Prueba opcional contra los dos servidores **ya arrancados**:
 
@@ -162,11 +170,14 @@ en M1; queda a su cargo la validación final de las nuevas reglas de segmentaci�
 - `app/asr/whisperlivekit_client.py`: conexión WLK y proxy bidireccional.
 - `app/captions/transcript_state.py`: reconstrucción desde snapshots completos.
 - `app/captions/segment_manager.py`: reconciliación, reglas, reloj, datos y métricas.
+- `app/captions/terminology_normalizer.py`: glosarios, matching y auditoría.
+- `glossaries/medical_base.json`, `conference.json`: términos base y del evento.
 - `app/templates/operator.html`: página de operador.
 - `app/static/operator.js`, `operator.css`: controles, estados y renderizado.
 - `app/static/pcm_worklet.js`, `recorder_worker.js`: captura y conversión basada en WLK.
 - `tests/test_transcript_state.py`, `test_proxy.py`, `smoke_live.py`: pruebas.
 - `tests/test_segment_manager.py`, `test_session_replay.py`: segmentación e integración.
+- `tests/test_terminology_normalizer.py`: exactos, fuzzy, negativos y replay real.
 - `replay_fixture.py`, `benchmarks/`: replay y lectura médica sin corregir.
 - `ARCHITECTURE.md`, `PLAN.md`, `requirements.txt`, `third_party/`: documentación y licencia.
 
@@ -174,7 +185,26 @@ en M1; queda a su cargo la validación final de las nuevas reglas de segmentaci�
 las dependencias de ejecución de nuestra aplicación ya presentes: FastAPI 0.141.1,
 Uvicorn 0.53.0 y websockets 17.1. No es un freeze del entorno.
 
-## Límites y siguiente decisión
+## Normalización y límites
+
+Las formas exactas conocidas se corrigen con confianza 1. El matching fuzzy solo se
+habilita para términos de varias palabras y exige el umbral alto para modificar texto;
+entre ambos umbrales solo crea una sugerencia. Los términos solapados se resuelven de
+forma determinista. Mayúsculas, acentos, guiones/espacios y puntuación adyacente se
+preservan cuando corresponde. El contexto reciente puede detectar un término dividido
+entre dos READY, pero siempre genera `cross_segment_suggestion`: nunca reescribe READY
+anteriores.
+
+Editar `glossaries/conference.json` permite añadir vocabulario del evento sin cambiar
+la base. Cada entrada admite `canonical`, `variants`, `aliases`, `auto_apply`
+(`exact`, `fuzzy` o `suggest`) y umbrales opcionales. Reiniciar FastAPI tras cambiar
+el archivo. El formato completo está en `glossaries/README.md`.
+
+En el replay médico real se conserva RAW 81/81. Solo se aplica
+`systólica → sistólica`; `Suficio` y `pertenecios` quedan intactos, y el término
+partido `herenina angiotensina | al dosterona` produce una sugerencia contextual.
+El perfil de 1.600 evaluaciones dio mediana 12,780 ms, p95 26,090 ms y máximo
+29,798 ms por segmento. Ver `benchmarks/NORMALIZER_REPORT.md`.
 
 - Milestone 1 validado; confirmar ahora la experiencia de segmentación con voz.
 - La afinación final produce 16 segmentos con mediana de 3,83 s, frente a 25/2,88 s
@@ -191,9 +221,8 @@ Uvicorn 0.53.0 y websockets 17.1. No es un freeze del entorno.
 - Se conserva el remuestreo por bloques del frontend instalado, con su redondeo.
 - Al perder una conexión hay que iniciar una sesión nueva; no hay recuperación
   de texto persistente. No existe vista pasiva de otra sesión.
-- Antes de otro milestone, validar estos thresholds con el Yeti, probar una sesión
-  larga y decidir si se admitirán correcciones explícitas de READY y timestamps más finos.
-  No se ha implementado traducción ni normalización.
+- Antes de otro milestone, validar los cortes y la normalización con el Yeti, probar
+  una sesión larga y revisar cualquier sugerencia falsa. No se ha implementado traducción.
 
 Git ya estaba inicializado y `.venv/` está explícitamente ignorado. Se utiliza
 la identidad ya configurada en Git, sin modificarla.

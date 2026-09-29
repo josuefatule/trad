@@ -1,14 +1,23 @@
 "use strict";
 const $ = (id) => document.getElementById(id);
 let active = null;
-function renderSegmentation(s, result) {
+function renderSegmentation(s, result, normalization) {
   if (!result) return;
   $("pending").textContent = result.pending_segment;
   const stamp = value => value == null ? "?" : `${Math.floor(value / 60).toString().padStart(2, "0")}:${(value % 60).toFixed(2).padStart(5, "0")}`;
+  const normalizedById = new Map((normalization?.segments || []).map(item => [item.segment_id, item]));
   for (const segment of result.ready_segments) {
     if (s.readyIds.has(segment.id)) continue;
     s.readyIds.add(segment.id);
     $("ready").textContent += `[${stamp(segment.start_time)} → ${stamp(segment.end_time)}] ${segment.reason} · ${segment.word_count} palabras · ${Math.round(segment.latency_ms)} ms\n${segment.text}\n\n`;
+    const item = normalizedById.get(segment.id);
+    $("normalized").textContent += `${item?.normalized_text ?? segment.text}\n\n`;
+    for (const correction of item?.corrections || []) {
+      $("corrections").textContent += `${correction.source} → ${correction.replacement}\nconfidence: ${correction.confidence.toFixed(3)}\nrule: ${correction.rule}\nsegment: ${segment.id}\n\n`;
+    }
+    for (const suggestion of item?.suggestions || []) {
+      $("corrections").textContent += `SUGGESTION${suggestion.cross_segment ? " · CROSS SEGMENT" : ""}\nsource: ${suggestion.source}\ncandidate: ${suggestion.candidate}\nconfidence: ${suggestion.confidence.toFixed(3)}\nrule: ${suggestion.rule}\nsegment: ${segment.id}\n\n`;
+    }
   }
   for (const event of result.events || []) {
     if (event.type === "late_revision_detected") debug(`late_revision_detected ${JSON.stringify(event)}`);
@@ -106,7 +115,7 @@ $("start").onclick = async () => {
   active = s;
   controls(true);
   $("error").textContent = "";
-  for (const id of ["partial", "confirmed", "segments", "pending", "ready"]) $(id).textContent = "";
+  for (const id of ["partial", "confirmed", "segments", "pending", "ready", "normalized", "corrections"]) $(id).textContent = "";
   $("connection").textContent = "Connecting";
   try {
     // Create/resume in the click gesture, before waiting for WLK.
@@ -130,12 +139,12 @@ $("start").onclick = async () => {
           $("partial").textContent = data.transcript.partial_text;
           $("confirmed").textContent = data.transcript.confirmed_text;
           $("segments").textContent = JSON.stringify(data.transcript.segments, null, 2);
-          renderSegmentation(s, data.segmentation);
+          renderSegmentation(s, data.segmentation, data.normalization);
           if (new URLSearchParams(location.search).get("trace_partial") === "1") {
             debug(`PARTIAL raw=${JSON.stringify(data.payload.buffer_transcription)} state=${JSON.stringify(data.transcript.partial_text)} DOM=${JSON.stringify($("partial").textContent)}`);
           }
         } else if (data.type === "segmentation") {
-          renderSegmentation(s, data.segmentation);
+          renderSegmentation(s, data.segmentation, data.normalization);
         } else if (data.type === "error") throw new Error(data.message);
         else if (data.state === "stopped") {
           s.finished = true;

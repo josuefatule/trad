@@ -1,4 +1,4 @@
-# Arquitectura — Milestones 1 y 2
+# Arquitectura — Milestones 1, 2 y 3
 
 Inspección local: 24 de septiembre de 2026, **whisperlivekit 0.2.26**.
 La fuente principal fue `.venv/Lib/site-packages/whisperlivekit/`, sin modificar
@@ -33,13 +33,14 @@ audio o texto de otra conexión. Un segundo cliente no observa una sesión exist
 Micrófono → navegador (/operator)
           → ws://localhost:8010/ws/session (nuestro FastAPI)
           → ws://localhost:8000/asr?mode=full&language=es (WLK)
-          → nuestro proxy → TranscriptState → SegmentManager → navegador
+          → nuestro proxy → TranscriptState → SegmentManager
+          → TerminologyNormalizer → navegador
 ```
 
 Hay una conexión upstream por conexión del navegador. Nuestra app no carga modelos
 ni importa WLK. WLK sigue siendo un proceso independiente. START abre una sesión
 nueva y limpia el estado; no intentamos reconectar audio a una sesión perdida.
-No se implementan traducción, normalización, glosarios, servicios cloud ni OBS.
+No se implementan traducción, servicios cloud ni OBS.
 
 ## Protocolo WLK real
 
@@ -154,7 +155,8 @@ PCM binario y EOF, reenviados sin transformación. Envía objetos JSON:
 | --- | --- |
 | `status` | `state=connecting` y `session_id`; al acabar, `state=stopped` |
 | `config` | `state=connected`, `session_id`, `sample_rate=16000`, config original en `wlk` |
-| `asr` | mensaje original decodificado en `payload`, estado derivado en `transcript` |
+| `asr` | `payload`, `transcript`, `segmentation` y nuevas salidas en `normalization` |
+| `segmentation` | ticks que emiten READY sin un snapshot ASR nuevo, también normalizados |
 | `error` | `message` legible; después se cierra la sesión |
 
 Errores de conexión, modo incompatible, errores ASR y timeout de finalización son
@@ -294,4 +296,76 @@ pausas, cortes, EOF, reset, timestamps, inmutabilidad y late revisions. Replay r
 16 segmentos, mediana 3,83 s, cero late revisions y sus 81 palabras finales en orden.
 Integración FastAPI + WLK simulado reproduce payloads reales y dos sesiones completas.
 Smoke con WLK real y PCM de silencio valida transporte/cierre. La prueba final de
-segmentación con Blue Yeti queda al usuario. Sin traducción, normalización ni cambios ASR.
+segmentación con Blue Yeti queda al usuario. Sin traducción ni cambios ASR.
+
+## Milestone 3: Terminology Normalizer
+
+Cada `CaptionSegment` READY se procesa exactamente una vez dentro de su sesión. El
+normalizador no consume PENDING ni `buffer_transcription`, y no altera el objeto READY:
+
+```text
+CaptionSegment.text (RAW ES, inmutable)
+    → TerminologyNormalizer
+    → NormalizedSegment(raw_text, normalized_text, corrections, suggestions)
+```
+
+Hay dos glosarios JSON cargados al abrir la conexión: una base médica y otro de
+conferencia. Cada término declara forma canónica, variantes, aliases y política
+`exact`, `fuzzy` o `suggest`; puede sobrescribir los umbrales generales. La carga
+rechaza documentos inválidos, umbrales invertidos y formas que apuntan a dos términos
+canónicos distintos.
+
+El matching normaliza internamente Unicode, mayúsculas y diacríticos. Guiones y
+espacios son equivalentes dentro de una expresión, sin absorber puntuación vecina.
+Las coincidencias exactas conocidas tienen confianza 1. El fuzzy usa similitud de la
+frase espaciada y compacta, más una penalización por diferencia de tokens. Solo se
+evalúa para términos de varias palabras: una palabra común parecida nunca se corrige
+por distancia. `auto_threshold=0.96` y `suggest_threshold=0.86`; el primero debe ser
+mayor. Una coincidencia fuzzy intermedia queda como sugerencia y no cambia el texto.
+
+Los solapamientos se resuelven de modo estable por acción, confianza, longitud,
+posición y orden del glosario. Las sustituciones se aplican desde el final para que
+los offsets de auditoría sigan señalando `raw_text`. `Correction` guarda fuente,
+reemplazo, offsets, regla, confianza y canónico. `Suggestion` guarda candidato y los
+mismos datos de decisión. `NormalizedSegment` es frozen e incluye el tiempo de proceso.
+
+El normalizador conserva las últimas ocho palabras RAW del segmento previo. Si una
+coincidencia cruza la frontera, emite `cross_segment_glossary_*` con ambos IDs como
+sugerencia. Nunca modifica el segmento previo ni une silenciosamente dos READY. Un
+normalizador nuevo por conexión y `reset()` impiden que el contexto pase entre sesiones.
+
+Los mensajes `asr` y `segmentation` añaden en paralelo:
+
+```json
+{
+  "normalization": {
+    "segments": [{
+      "segment_id": "sesión:3",
+      "raw_text": "arterial systólica y/o diastólica.",
+      "normalized_text": "arterial sistólica y/o diastólica.",
+      "corrections": [{
+        "source": "systólica", "replacement": "sistólica",
+        "start": 9, "end": 18, "rule": "exact_variant",
+        "confidence": 1.0, "canonical": "sistólica"
+      }],
+      "suggestions": [],
+      "known_terms": ["sistólica"],
+      "processing_ms": 6.5
+    }]
+  }
+}
+```
+
+La UI agrega RAW y NORMALIZED por el mismo ID y muestra la auditoría. El replay usa
+la ruta de producción y conserva las métricas de segmentación. Sobre los 16 READY del
+fixture médico: 1 corrección exacta, 1 sugerencia entre segmentos, 15 segmentos sin
+cambios y ninguna corrección falsa conocida. Se mantienen sin cambio `Suficio` y
+`pertenecios`; en particular no existe una regla que convierta este último en
+`hipertensos`. Las pruebas negativas fijan `renal ≠ renina`, `arterial ≠ arteria`,
+`tensión ≠ hipertensión` y bloquean expansiones arbitrarias de `receptor`.
+
+El perfil reproducible de 1.600 segmentos medidos dio 12,780 ms de mediana,
+26,090 ms p95 y 29,798 ms máximo en este equipo. Es menos del 1 % de la latencia
+mediana READY del benchmark (3,826 s). Los tiempos dependen del equipo y del tamaño
+del glosario; el algoritmo actual recorre términos y ventanas, por lo que un glosario
+mucho mayor requerirá indexación antes de producción.

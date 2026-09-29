@@ -9,6 +9,7 @@ from websockets.asyncio.client import connect
 
 from app.captions.transcript_state import TranscriptState
 from app.captions.segment_manager import SegmentManager
+from app.captions.terminology_normalizer import TerminologyNormalizer
 
 logger = logging.getLogger("captions")
 raw_logger = logging.getLogger("captions.raw")
@@ -25,6 +26,16 @@ def session_url(url, language):
 async def relay(browser: WebSocket, settings, session_id: str):
     state = TranscriptState()
     manager = SegmentManager(getattr(settings, "segments", None), session_id)
+    normalizer = TerminologyNormalizer.from_config(getattr(settings, "normalizer", None))
+
+    def normalize(result):
+        segments = tuple(normalizer.normalize(segment.id, segment.text).to_dict()
+                         for segment in result.ready_segments)
+        for segment in segments:
+            event("segment normalized id=%s corrections=%d suggestions=%d processing_ms=%.3f",
+                  segment["segment_id"], len(segment["corrections"]),
+                  len(segment["suggestions"]), segment["processing_ms"])
+        return {"segments": segments}
 
     def event(name, *args):
         logger.info("session=%s " + name, session_id, *args)
@@ -78,7 +89,9 @@ async def relay(browser: WebSocket, settings, session_id: str):
                     if not done:
                         result = manager.tick()
                         if result.ready_segments or result.events:
-                            await browser.send_json({"type": "segmentation", "segmentation": result.to_dict()})
+                            await browser.send_json({"type": "segmentation",
+                                                     "segmentation": result.to_dict(),
+                                                     "normalization": normalize(result)})
                         continue
                     try:
                         raw = receiving.result()
@@ -93,7 +106,9 @@ async def relay(browser: WebSocket, settings, session_id: str):
                     result = (manager.finish() if final else manager.update(state)
                               if "lines" in payload else manager.tick())
                     await browser.send_json({"type": "asr", "payload": payload,
-                                             "transcript": state.to_dict(), "segmentation": result.to_dict()})
+                                             "transcript": state.to_dict(),
+                                             "segmentation": result.to_dict(),
+                                             "normalization": normalize(result)})
                     if settings.log_raw and "lines" in payload:
                         event("partial trace sent raw_present=%s raw_chars=%d state_chars=%d lines=%d",
                               "buffer_transcription" in payload,

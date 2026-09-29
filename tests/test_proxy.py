@@ -58,6 +58,31 @@ class ProxyTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(messages[-2]["transcript"]["confirmed_text"], "Hola.")
         self.assertEqual(messages[-1]["state"], "stopped")
         self.assertEqual(messages[-2]["segmentation"]["ready_segments"][0]["reason"], "session_end")
+        normalized = messages[-2]["normalization"]["segments"][0]
+        self.assertEqual(normalized["raw_text"], "Hola.")
+        self.assertEqual(normalized["normalized_text"], "Hola.")
+
+    async def test_ready_segment_is_normalized_without_mutating_raw_text(self):
+        async def wlk(ws):
+            await ws.send(json.dumps({"type": "config", "useAudioWorklet": True, "mode": "full"}))
+            await ws.recv()
+            await ws.send(json.dumps({
+                "lines": [{"text": "Presión systólica estable.", "speaker": 1,
+                           "start": "0:00:00.00", "end": "0:00:01.00"}],
+                "buffer_transcription": "",
+            }))
+            await ws.send(json.dumps({"type": "ready_to_stop"}))
+
+        messages = await self.run_proxy(wlk, [b""])
+        final = next(message for message in messages
+                     if message["type"] == "asr"
+                     and message["segmentation"]["ready_segments"])
+        ready = final["segmentation"]["ready_segments"][0]
+        normalized = final["normalization"]["segments"][0]
+        self.assertEqual(ready["text"], "Presión systólica estable.")
+        self.assertEqual(normalized["raw_text"], ready["text"])
+        self.assertEqual(normalized["normalized_text"], "Presión sistólica estable.")
+        self.assertEqual(normalized["corrections"][0]["rule"], "exact_variant")
 
     async def test_segmentation_timer_emits_without_asr_updates(self):
         async def wlk(ws):
