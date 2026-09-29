@@ -30,44 +30,60 @@ del audio en tiempos de recepción. Un fixture sin EOF no se finaliza artificial
 
 ## Afinación del SegmentManager
 
-La configuración anterior (`stability=0.9`, `silence=1.1`, `target=18`, `max=25`,
-`max_age=2.8`) generaba **25 READY**. El motivo dominante no era el objetivo de
-palabras: 21 cortes eran `max_age`, 3 `punctuation` y 1 `session_end`. La edad única
-actuaba sin longitud mínima y fragmentaba esta lectura lenta.
+Se compararon tres políticas sobre los mismos 61 eventos y el mismo reloj de recepción:
 
-Con los defaults actuales (`stability=0.8`, `silence=1.0`, `minimum=6`, `target=16`,
-`maximum=24`, `soft_max_age=4.5`, `hard_max_age=7.0`) el mismo fixture genera:
+| Métrica | Original | Afinación anterior | `safe_cut` final |
+| --- | ---: | ---: | ---: |
+| READY | 25 | 10 | **16** |
+| Palabras mín./mediana/media/máx. | 1 / 3 / 3,24 / 7 | 1 / 8 / 8,10 / 16 | **1 / 5,5 / 5,06 / 8** |
+| Latencia mín./mediana/media/máx. | 2,069 / 2,877 / 3,007 / 3,947 s | 3,177 / 7,040 / 6,220 / 7,098 s | **2,728 / 3,826 / 4,100 / 5,598 s** |
+| Cortes por edad dura | 21/25 (`max_age`) | 6/10 | **2/16 (12,5 %)** |
+| Late revisions | 0 | 0 | **0** |
+| Integridad | 81/81, PASS | 81/81, PASS | **81/81, PASS** |
 
-| Métrica | Antes | Ahora |
-| --- | ---: | ---: |
-| READY | 25 | 10 |
-| Palabras mín./mediana/media/máx. | 1 / 3 / 3,24 / 7 | 1 / 8 / 8,10 / 16 |
-| Latencia mín./mediana/media/máx. | 2,069 / 2,877 / 3,007 / 3,947 s | 3,177 / 7,040 / 6,220 / 7,098 s |
-| Late revisions | 0 | 0 |
-| Integridad | 81/81 palabras, PASS | 81/81 palabras, PASS |
+Defaults finales: `stability=0.8`, `silence=1.0`, `minimum=7`, `target=13`,
+`maximum=21`, `safe_cut_lookback=8`, `soft_max_age=3.3` y `hard_max_age=5.5`.
+Se probaron mínimos 6–9, targets 12–14, edades blandas 3,0–3,5, edades duras
+5,0–5,5 y ventanas 6/8/10. Un mínimo de 8 reducía `forced_whitespace_cut_count`
+solo de 8 a 7, elevaba la mediana a 4,55 s y volvía a separar `presión arterial`
+de `systólica y/o diastólica`; se descartó.
 
-Motivos nuevos: 6 `hard_max_age`, 3 `punctuation` y 1 `session_end`. En este fixture
-no aparece un corte `soft_max_age`: a los 4,5 s no había un límite débil estable y
-útil. Esperar hasta el límite duro fue precisamente lo que permitió agrupar más.
-La latencia mide primera aparición del contenido conservado → READY usando el reloj
-virtual de recepción. El máximo de 7,098 s incluye la granularidad del tick de 100 ms.
+Motivos finales: 10 `soft_max_age`, 3 `punctuation`, 2 `hard_max_age` y 1
+`session_end`. Límites: 8 `whitespace`, 4 `comma`, 3 `strong_punctuation` y 1
+`session_end`. Por tanto, `forced_whitespace_cut_count=8`. La latencia mide primera
+aparición del contenido conservado → READY. El máximo de 5,598 s incluye el tick
+de 100 ms sobre el ceiling configurado de 5,5 s.
 
-READY completos del replay nuevo, conservando literalmente los errores del ASR real:
+READY finales, conservando literalmente los errores del ASR real:
 
-1. `La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial`
-2. `systólica y/o diastólica.`
-3. `Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina`
-4. `angiotensina al dosterona.`
-5. `El aumento de la resistencia vascular periférica y alteraciones en la función endotelial.`
-6. `En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir`
-7. `hipertrofia ventricular izquierda, remodelado`
-8. `vascular, disfunción renal y un incremento significativo del`
-9. `riesgo de accidentes cerebrovascular e infarto agudo de`
-10. `miocardio.`
+1. `La hipertensión arterial es una condición cardiovascular`
+2. `caracterizada por una elevación persistente de la presión`
+3. `arterial systólica y/o diastólica.`
+4. `Suficio patología involucra mecanismos complejos,`
+5. `incluyendo la activación del sistema herenina angiotensina`
+6. `al dosterona.`
+7. `El aumento de la resistencia vascular periférica`
+8. `y alteraciones en la función endotelial.`
+9. `En pacientes y pertencios,`
+10. `la exposición prolongada a niveles elevados de`
+11. `presión puede producir hipertrofia ventricular`
+12. `izquierda,`
+13. `remodelado vascular,`
+14. `disfunción renal y un incremento significativo del`
+15. `riesgo de accidentes cerebrovascular e infarto agudo de`
+16. `miocardio.`
+
+El fixture mantiene una sola línea WLK creciente durante toda la lectura. Por eso no
+ofrece límites internos de línea, y sus timestamps solo describen esa línea completa.
+La política conserva `arterial systólica y/o diastólica` y `remodelado vascular`.
+No puede preservar también toda la cadena `sistema herenina angiotensina al dosterona`
+dentro de un ceiling de 5,5 s: la puntuación final aparece demasiado tarde y no hay
+otra señal estructural antes. Añadir una regla léxica específica sería frágil, por lo
+que se documenta el límite.
 
 La concatenación por whitespace coincide palabra por palabra con el snapshot final;
-no se perdió ni duplicó contenido. El test de regresión usa este payload real y exige
-también IDs únicos, pending vacío y ausencia de late revisions.
+no se perdió ni duplicó contenido. El test de regresión fija los 16 READY, motivos,
+tipos de límite, IDs únicos, pending vacío y ausencia de late revisions.
 
 Los tests comparan conservación respecto del último snapshot del fixture y las
 invariantes del algoritmo, no contra la ortografía del texto médico de referencia.

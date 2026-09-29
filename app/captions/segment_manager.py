@@ -20,11 +20,12 @@ logger = logging.getLogger("captions")
 class SegmentConfig:
     stabilization_seconds: float = .8
     silence_seconds: float = 1.0
-    minimum_words: int = 6
-    target_words: int = 16
-    max_words: int = 24
-    soft_max_age_seconds: float = 4.5
-    hard_max_age_seconds: float = 7.0
+    minimum_words: int = 7
+    target_words: int = 13
+    max_words: int = 21
+    safe_cut_lookback_words: int = 8
+    soft_max_age_seconds: float = 3.3
+    hard_max_age_seconds: float = 5.5
     tick_seconds: float = .1
 
     def __post_init__(self):
@@ -35,6 +36,8 @@ class SegmentConfig:
                 raise ValueError(f"{name} must be finite and positive")
         if not 1 <= self.minimum_words <= self.target_words <= self.max_words:
             raise ValueError("Require 1 <= minimum_words <= target_words <= max_words")
+        if self.safe_cut_lookback_words < 1:
+            raise ValueError("safe_cut_lookback_words must be positive")
         if self.soft_max_age_seconds > self.hard_max_age_seconds:
             raise ValueError("soft_max_age_seconds cannot exceed hard_max_age_seconds")
 
@@ -48,6 +51,7 @@ class SegmentConfig:
                 ("minimum_words", "SEGMENT_MINIMUM_WORDS", int),
                 ("target_words", "SEGMENT_TARGET_WORDS", int),
                 ("max_words", "SEGMENT_MAX_WORDS", int),
+                ("safe_cut_lookback_words", "SEGMENT_SAFE_CUT_LOOKBACK_WORDS", int),
                 ("soft_max_age_seconds", "SEGMENT_SOFT_MAX_AGE_SECONDS", float),
                 ("hard_max_age_seconds", "SEGMENT_HARD_MAX_AGE_SECONDS", float),
                 ("tick_seconds", "SEGMENT_TICK_SECONDS", float),
@@ -63,6 +67,7 @@ class CaptionSegment:
     end_time: float | None
     emitted_at: float
     reason: str
+    boundary_kind: str
     first_seen_at: float
     latency_ms: float
     word_count: int
@@ -264,7 +269,7 @@ class SegmentManager:
         return result
 
     def _pending(self):
-        text, refs, pauses = "", [], []
+        text, refs, pauses, line_cuts = "", [], [], []
         previous_end = None
         for source, start, end in self._layout:
             if source is None:
@@ -276,6 +281,7 @@ class SegmentManager:
                 previous_end = end
                 continue
             if text:
+                line_cuts.append(len(text))
                 if start is not None and previous_end is not None:
                     pauses.append((len(text), max(0., start - previous_end)))
                 text += " "
@@ -285,58 +291,58 @@ class SegmentManager:
             text += tail
             refs.extend((source, i) for i in range(offset, len(source.text)))
             previous_end = end
-        return text, refs, pauses
+        return text, refs, pauses, line_cuts
 
     def _stable(self, refs, cut, now):
         actual = [r for r in refs[:cut] if r is not None]
         return actual and now - max(s.changed_at[i] for s, i in actual) >= self.config.stabilization_seconds
 
-    def _forced_cut(self, text):
+    def _safe_cut(self, text, refs, line_cuts, now, *, allow_whitespace,
+                  minimum_whitespace_words=1, require_stability=True):
+        """Find the best eligible boundary while looking backward from the target."""
         words = list(re.finditer(r"\S+", text))
-        # The final token may be a fragment such as 'cardio'; leave it pending
-        # whenever an earlier complete-word boundary exists.
         complete = [w for w in words if w.end() < len(text) and text[w.end()].isspace()]
         if not complete:
-            return 0
-        limit_count = min(len(complete), self.config.target_words)
-        limit = complete[limit_count - 1].end()
-        boundaries = [match for match in re.finditer(r"[,;:](?=\s)", text[:limit + 1])
-                      if len(text[:match.end()].split()) >= self.config.minimum_words]
-        if boundaries:
-            return boundaries[-1].end()
-        return limit
+            return 0, None
+        anchor = min(len(complete), self.config.target_words)
+        lower = max(1, anchor - self.config.safe_cut_lookback_words + 1)
+        candidates = []
+        line_cuts = set(line_cuts)
+        for word_number in range(lower, anchor + 1):
+            cut = complete[word_number - 1].end()
+            if require_stability and not self._stable(refs, cut, now):
+                continue
+            token = complete[word_number - 1].group()
+            if re.search(r"[.!?]+$", token):
+                priority, kind = 0, "strong_punctuation"
+            elif token.endswith(";"):
+                priority, kind = 1, "semicolon"
+            elif token.endswith(","):
+                priority, kind = 2, "comma"
+            elif cut in line_cuts:
+                priority, kind = 3, "line"
+            elif allow_whitespace:
+                if word_number < minimum_whitespace_words:
+                    continue
+                priority, kind = 4, "whitespace"
+            else:
+                continue
+            candidates.append((priority, -word_number, cut, kind))
+        if not candidates:
+            return 0, None
+        _, _, cut, kind = min(candidates)
+        return cut, kind
 
-    def _natural_target_cut(self, text):
+    def _natural_target_cut(self, text, refs, line_cuts, now):
         """At target length, emit only when a useful weak boundary exists."""
         if len(text.split()) < self.config.target_words:
-            return 0
-        words = list(re.finditer(r"\S+", text))
-        limit = words[min(len(words), self.config.target_words) - 1].end()
-        boundaries = [match for match in re.finditer(r"[,;:](?=\s)", text[:limit + 1])
-                      if len(text[:match.end()].split()) >= self.config.minimum_words]
-        return boundaries[-1].end() if boundaries else 0
+            return 0, None
+        return self._safe_cut(text, refs, line_cuts, now, allow_whitespace=False)
 
-    def _weak_boundary_cut(self, text):
-        """Latest useful comma/semicolon/colon, capped at target length."""
-        words = list(re.finditer(r"\S+", text))
-        if len(words) < self.config.minimum_words:
-            return 0
-        limit = words[min(len(words), self.config.target_words) - 1].end()
-        boundaries = [match for match in re.finditer(r"[,;:](?=\s)", text[:limit + 1])
-                      if len(text[:match.end()].split()) >= self.config.minimum_words]
-        return boundaries[-1].end() if boundaries else 0
-
-    def _hard_cut(self, text):
-        """Bound latency while avoiding a recently changing terminal token."""
-        cut = self._forced_cut(text)
-        # A single open word has no safe earlier boundary. The hard deadline
-        # must still guarantee progress; any later extension is a late revision.
-        return cut or len(text)
-
-    def _choose(self, text, refs, pauses, now):
+    def _choose(self, text, refs, pauses, line_cuts, now):
         for match in re.finditer(r"[.!?]+(?=\s|$)", text):
             if len(text[:match.end()].split()) <= self.config.max_words and self._stable(refs, match.end(), now):
-                return match.end(), "punctuation"
+                return match.end(), "punctuation", "strong_punctuation"
             # Preserve sentence order; do not bypass an unstable first sentence.
             break
         for cut, duration in pauses:
@@ -345,29 +351,37 @@ class SegmentManager:
             if (duration >= self.config.silence_seconds and useful
                     and len(text[:cut].split()) <= self.config.max_words
                     and self._stable(refs, cut, now)):
-                return cut, "silence"
-        target_cut = self._natural_target_cut(text)
+                return cut, "silence", "line"
+        target_cut, target_kind = self._natural_target_cut(text, refs, line_cuts, now)
         if target_cut and self._stable(refs, target_cut, now):
-            return target_cut, "target_words"
+            return target_cut, "target_words", target_kind
         word_count = len(text.split())
         if word_count >= self.config.max_words:
             # Strong bound: ASR-confirmed complete words may flush without
             # waiting for the stabilization timer.
-            return self._forced_cut(text), "max_words"
+            cut, kind = self._safe_cut(
+                text, refs, line_cuts, now, allow_whitespace=True,
+                minimum_whitespace_words=self.config.minimum_words,
+                require_stability=False)
+            if cut:
+                return cut, "max_words", kind
         if refs:
             first = min(s.first_seen[i] for r in refs if r is not None for s, i in [r])
             age = now - first
             if age >= self.config.hard_max_age_seconds:
-                cut = self._hard_cut(text)
+                cut, kind = self._safe_cut(text, refs, line_cuts, now, allow_whitespace=True)
                 if cut:
-                    return cut, "hard_max_age"
+                    return cut, "hard_max_age", kind
+                return len(text), "hard_max_age", "whitespace"
             if age >= self.config.soft_max_age_seconds and word_count >= self.config.minimum_words:
-                cut = self._weak_boundary_cut(text)
-                if cut and self._stable(refs, cut, now):
-                    return cut, "soft_max_age"
-        return 0, None
+                cut, kind = self._safe_cut(
+                    text, refs, line_cuts, now, allow_whitespace=True,
+                    minimum_whitespace_words=self.config.minimum_words)
+                if cut:
+                    return cut, "soft_max_age", kind
+        return 0, None, None
 
-    def _emit(self, text, refs, cut, reason, now):
+    def _emit(self, text, refs, cut, reason, boundary_kind, now):
         consumed_refs = [r for r in refs[:cut] if r is not None]
         sources = list({s.id: s for s, _ in consumed_refs}.values())
         first = min(s.first_seen[i] for s, i in consumed_refs)
@@ -375,6 +389,7 @@ class SegmentManager:
         segment = CaptionSegment(
             id=f"{self.session_id}:{len(self._emitted) + 1}", text=text[:cut].strip(),
             start_time=start, end_time=end, emitted_at=now, reason=reason,
+            boundary_kind=boundary_kind,
             first_seen_at=first, latency_ms=round((now - first) * 1000, 3),
             word_count=len(text[:cut].split()), revisions_before_ready=self._revisions,
             source_ids=tuple(s.id for s in sources))
@@ -390,7 +405,7 @@ class SegmentManager:
         return segment
 
     def _evaluate(self, now, final=False):
-        text, refs, pauses = self._pending()
+        text, refs, pauses, line_cuts = self._pending()
         if text != self._last_pending:
             if self._last_pending and not text.startswith(self._last_pending):
                 self._revisions += 1
@@ -398,11 +413,12 @@ class SegmentManager:
                         revisions=self._revisions)
         ready = []
         while text.strip() and not self._ended:
-            cut, reason = (len(text), "session_end") if final else self._choose(text, refs, pauses, now)
+            cut, reason, boundary_kind = ((len(text), "session_end", "session_end") if final
+                                          else self._choose(text, refs, pauses, line_cuts, now))
             if not cut:
                 break
-            ready.append(self._emit(text, refs, cut, reason, now))
-            text, refs, pauses = self._pending()
+            ready.append(self._emit(text, refs, cut, reason, boundary_kind, now))
+            text, refs, pauses, line_cuts = self._pending()
             self._event("segment_pending_updated", text=text, observed_at=now,
                         revisions=self._revisions)
         self._last_pending = text

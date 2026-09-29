@@ -79,11 +79,12 @@ Variables opcionales antes de arrancar nuestra app:
 | `CAPTIONS_STOP_TIMEOUT` | `120` segundos |
 | `SEGMENT_STABILIZATION_SECONDS` | `0.8` segundos |
 | `SEGMENT_SILENCE_SECONDS` | `1.0` segundos de silencio/gap ASR |
-| `SEGMENT_MINIMUM_WORDS` | `6` palabras para que silencio/edad blanda sean útiles |
-| `SEGMENT_TARGET_WORDS` | `16` palabras objetivo para buscar un corte natural |
-| `SEGMENT_MAX_WORDS` | `24` palabras; límite fuerte |
-| `SEGMENT_SOFT_MAX_AGE_SECONDS` | `4.5` segundos; solo corta en límite natural y tras el mínimo |
-| `SEGMENT_HARD_MAX_AGE_SECONDS` | `7.0` segundos; garantiza progreso |
+| `SEGMENT_MINIMUM_WORDS` | `7` palabras pendientes antes de habilitar la edad blanda |
+| `SEGMENT_TARGET_WORDS` | `13` palabras; ancla de búsqueda retrospectiva |
+| `SEGMENT_MAX_WORDS` | `21` palabras; límite fuerte |
+| `SEGMENT_SAFE_CUT_LOOKBACK_WORDS` | `8` palabras de búsqueda hacia atrás |
+| `SEGMENT_SOFT_MAX_AGE_SECONDS` | `3.3` segundos; requiere un `safe_cut` estable |
+| `SEGMENT_HARD_MAX_AGE_SECONDS` | `5.5` segundos; garantiza progreso |
 | `SEGMENT_TICK_SECONDS` | `0.1` segundos entre evaluaciones |
 
 Valores de desarrollo, leídos al arrancar. Ejemplo para comparar configuraciones:
@@ -93,12 +94,12 @@ $env:SEGMENT_HARD_MAX_AGE_SECONDS = "8"
 .\.venv\Scripts\python.exe replay_fixture.py benchmarks/medical_real_snapshots.json
 ```
 
-Reiniciar FastAPI para aplicar variables a la UI. Puntuación y pausa esperan
-estabilidad. La edad blanda requiere mínimo y un límite lingüístico; la edad dura y
-el máximo de palabras sí garantizan progreso. Una palabra terminal sin whitespace se
-retiene cuando existe un corte anterior seguro, porque WLK todavía puede completarla
-o añadir puntuación. Pausa requiere evidencia ASR, no inactividad de red. EOF vacía
-el pendiente sin esperar. Reconciliación y limitaciones explicadas en ARCHITECTURE.md.
+Reiniciar FastAPI para aplicar variables a la UI. `safe_cut` busca hacia atrás y
+prioriza puntuación fuerte, punto y coma, coma, límite de línea WLK y whitespace.
+La edad blanda exige suficiente contenido y un límite estable; la edad dura y el
+máximo de palabras garantizan progreso. El sufijo posterior al corte permanece en
+PENDING. Pausa requiere evidencia ASR, no inactividad de red. EOF vacía el pendiente
+sin esperar. Reconciliación y limitaciones explicadas en ARCHITECTURE.md.
 
 Ejemplo para analizar protocolo original:
 
@@ -118,7 +119,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**59 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
+**62 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
 timeout y desconexión. Usan unittest, websockets y el httpx ya instalado para
@@ -176,8 +177,9 @@ Uvicorn 0.53.0 y websockets 17.1. No es un freeze del entorno.
 ## Límites y siguiente decisión
 
 - Milestone 1 validado; confirmar ahora la experiencia de segmentación con voz.
-- La afinación reduce el replay médico de 25 a 10 segmentos. Conserva sus 81
-  palabras exactamente y no genera late revisions; ver `benchmarks/README.md`.
+- La afinación final produce 16 segmentos con mediana de 3,83 s, frente a 25/2,88 s
+  originalmente y 10/7,04 s en la iteración anterior. Conserva exactamente las 81
+  palabras y no genera late revisions; ver `benchmarks/README.md`.
 - Los tiempos ASR son por línea; cortes distintos pueden solaparse. Abreviaturas
   y reorganizaciones arbitrarias de líneas siguen siendo limitaciones. Revisiones
   ambiguas que cruzan lo publicado se registran y no se republican silenciosamente.

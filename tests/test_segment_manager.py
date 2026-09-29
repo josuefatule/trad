@@ -2,6 +2,7 @@ import dataclasses
 from collections import Counter
 import json
 from pathlib import Path
+import statistics
 import unittest
 from unittest.mock import patch
 
@@ -209,7 +210,8 @@ class SegmentTests(unittest.TestCase):
         for kwargs in [dict(max_words=0), dict(stabilization_seconds=-1),
                        dict(tick_seconds=float('nan')),
                        dict(soft_max_age_seconds=8, hard_max_age_seconds=7),
-                       dict(minimum_words=17, target_words=16)]:
+                       dict(minimum_words=17, target_words=16),
+                       dict(safe_cut_lookback_words=0)]:
             with self.assertRaises(ValueError):
                 SegmentConfig(**kwargs)
         self.assertEqual(timestamp("1:02:03.45"), 3723.45)
@@ -220,6 +222,7 @@ class SegmentTests(unittest.TestCase):
             "SEGMENT_MINIMUM_WORDS": "7",
             "SEGMENT_TARGET_WORDS": "17",
             "SEGMENT_MAX_WORDS": "25",
+            "SEGMENT_SAFE_CUT_LOOKBACK_WORDS": "9",
             "SEGMENT_SOFT_MAX_AGE_SECONDS": "5.5",
             "SEGMENT_HARD_MAX_AGE_SECONDS": "8.0",
         }
@@ -227,6 +230,7 @@ class SegmentTests(unittest.TestCase):
             config = SegmentConfig.from_env()
         self.assertEqual((config.minimum_words, config.target_words, config.max_words),
                          (7, 17, 25))
+        self.assertEqual(config.safe_cut_lookback_words, 9)
         self.assertEqual((config.soft_max_age_seconds, config.hard_max_age_seconds),
                          (5.5, 8.0))
 
@@ -268,20 +272,37 @@ class SegmentTests(unittest.TestCase):
         expected_words = " ".join(l["text"] for l in final_payload["lines"] if l.get("text")).split()
         self.assertEqual(" ".join(s.text for s in emitted).split(), expected_words)
         self.assertEqual([s.text for s in emitted], [
-            "La hipertensión arterial es una condición cardiovascular caracterizada por una elevación persistente de la presión arterial",
-            "systólica y/o diastólica.",
-            "Suficio patología involucra mecanismos complejos, incluyendo la activación del sistema herenina",
-            "angiotensina al dosterona.",
-            "El aumento de la resistencia vascular periférica y alteraciones en la función endotelial.",
-            "En pacientes y pertencios, la exposición prolongada a niveles elevados de presión puede producir",
-            "hipertrofia ventricular izquierda, remodelado",
-            "vascular, disfunción renal y un incremento significativo del",
+            "La hipertensión arterial es una condición cardiovascular",
+            "caracterizada por una elevación persistente de la presión",
+            "arterial systólica y/o diastólica.",
+            "Suficio patología involucra mecanismos complejos,",
+            "incluyendo la activación del sistema herenina angiotensina",
+            "al dosterona.",
+            "El aumento de la resistencia vascular periférica",
+            "y alteraciones en la función endotelial.",
+            "En pacientes y pertencios,",
+            "la exposición prolongada a niveles elevados de",
+            "presión puede producir hipertrofia ventricular",
+            "izquierda,",
+            "remodelado vascular,",
+            "disfunción renal y un incremento significativo del",
             "riesgo de accidentes cerebrovascular e infarto agudo de",
             "miocardio.",
         ])
         self.assertEqual(Counter(s.reason for s in emitted),
-                         Counter(hard_max_age=6, punctuation=3, session_end=1))
-        self.assertEqual([s.word_count for s in emitted], [16, 3, 11, 3, 13, 14, 4, 8, 8, 1])
+                         Counter(soft_max_age=10, punctuation=3,
+                                 hard_max_age=2, session_end=1))
+        self.assertEqual([s.word_count for s in emitted],
+                         [7, 8, 4, 5, 7, 2, 7, 6, 4, 7, 5, 1, 2, 7, 8, 1])
+        self.assertEqual(sum(s.boundary_kind == "whitespace"
+                             and s.reason in {"soft_max_age", "hard_max_age", "max_words"}
+                             for s in emitted), 8)
+        self.assertEqual(Counter(s.boundary_kind for s in emitted),
+                         Counter(whitespace=8, comma=4,
+                                 strong_punctuation=3, session_end=1))
+        latencies = [s.latency_ms for s in emitted]
+        self.assertLessEqual(statistics.median(latencies), 4500)
+        self.assertLessEqual(max(latencies), 5600)
         self.assertEqual(len({s.id for s in emitted}), len(emitted))
         self.assertEqual(results[-1][1].pending_segment, "")
         self.assertTrue(all(s.text and s.word_count > 0 for s in emitted))
@@ -297,19 +318,49 @@ class SegmentTests(unittest.TestCase):
 
     def test_hard_age_flushes_single_open_word(self):
         self.update([line("cardio")], 0)
-        self.assertFalse(self.manager.tick(6.9).ready_segments)
-        segment = self.manager.tick(7.0).ready_segments[0]
+        self.assertFalse(self.manager.tick(5.4).ready_segments)
+        segment = self.manager.tick(5.5).ready_segments[0]
         self.assertEqual((segment.text, segment.reason), ("cardio", "hard_max_age"))
 
     def test_hard_age_keeps_open_terminal_word_when_complete_words_exist(self):
         self.update([line("uno dos")], 0)
-        self.update([line("uno dos cardio")], 6.5)
-        result = self.manager.tick(7)
+        self.update([line("uno dos cardio")], 5.0)
+        result = self.manager.tick(5.5)
         self.assertEqual(result.ready_segments[0].text, "uno dos")
         self.assertEqual(result.pending_segment, "cardio")
-        result = self.update([line("uno dos cardiovascular")], 7.1)
+        result = self.update([line("uno dos cardiovascular")], 5.6)
         self.assertFalse([e for e in result.events if e["type"] == "late_revision_detected"])
-        self.assertEqual(self.manager.finish(7.2).ready_segments[0].text, "cardiovascular")
+        self.assertEqual(self.manager.finish(5.7).ready_segments[0].text, "cardiovascular")
+
+    def test_safe_cut_prefers_line_boundary_over_whitespace(self):
+        self.manager = SegmentManager(SegmentConfig(
+            minimum_words=2, target_words=4, max_words=5,
+            safe_cut_lookback_words=4))
+        result = self.update([
+            line("uno dos", end="0:00:05.80"),
+            line("tres cuatro cinco", "0:00:05.80", "0:00:08.00"),
+        ], 0)
+        segment = result.ready_segments[0]
+        self.assertEqual((segment.text, segment.boundary_kind), ("uno dos", "line"))
+        self.assertEqual(result.pending_segment, "tres cuatro cinco")
+
+    def test_safe_cut_lookback_ignores_distant_punctuation(self):
+        self.manager = SegmentManager(SegmentConfig(
+            minimum_words=2, target_words=10, max_words=10,
+            safe_cut_lookback_words=3))
+        result = self.update([line("uno dos tres, cuatro cinco seis siete ocho nueve diez")], 0)
+        segment = result.ready_segments[0]
+        self.assertEqual(segment.word_count, 9)
+        self.assertEqual(segment.boundary_kind, "whitespace")
+
+    def test_safe_cut_prefers_semicolon_over_later_comma(self):
+        self.manager = SegmentManager(SegmentConfig(
+            minimum_words=2, target_words=6, max_words=7,
+            safe_cut_lookback_words=6))
+        result = self.update([line("uno dos; tres cuatro, cinco seis siete")], 0)
+        segment = result.ready_segments[0]
+        self.assertEqual((segment.text, segment.boundary_kind), ("uno dos;", "semicolon"))
+        self.assertEqual(result.pending_segment, "tres cuatro, cinco seis siete")
 
     def test_target_words_uses_natural_boundary(self):
         text = "uno dos tres cuatro cinco seis, siete ocho nueve diez once doce trece catorce quince dieciséis"

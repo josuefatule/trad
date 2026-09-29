@@ -57,6 +57,11 @@ def main():
     words = [segment.word_count for segment in emitted]
     latencies = [segment.latency_ms for segment in emitted]
     reasons = Counter(segment.reason for segment in emitted)
+    boundaries = Counter(segment.boundary_kind for segment in emitted)
+    hard_age = reasons["hard_max_age"]
+    forced_whitespace = sum(segment.boundary_kind == "whitespace"
+                            and segment.reason in {"soft_max_age", "hard_max_age", "max_words"}
+                            for segment in emitted)
     final_snapshot = next((event["payload"] for event in reversed(fixture["events"])
                            if "lines" in event["payload"]), {"lines": []})
     expected = " ".join((line.get("text") or "").strip()
@@ -65,13 +70,17 @@ def main():
     actual = " ".join(segment.text for segment in emitted).split()
     print(f"SUMMARY segments={len(emitted)} late_revisions={late} "
           f"integrity={'PASS' if actual == expected else 'FAIL'} "
-          f"source_words={len(expected)} emitted_words={len(actual)}")
+          f"source_words={len(expected)} emitted_words={len(actual)} "
+          f"forced_whitespace_cut_count={forced_whitespace}")
     if emitted:
         print("WORDS min={} median={:g} mean={:.2f} max={}".format(
             min(words), statistics.median(words), statistics.mean(words), max(words)))
         print("LATENCY_MS min={:.0f} median={:.0f} mean={:.0f} max={:.0f}".format(
             min(latencies), statistics.median(latencies), statistics.mean(latencies), max(latencies)))
         print("REASONS " + " ".join(f"{reason}={count}" for reason, count in sorted(reasons.items())))
+        print(f"HARD_AGE count={hard_age} percent={hard_age / len(emitted) * 100:.2f}")
+        print("BOUNDARIES " + " ".join(
+            f"{kind}={count}" for kind, count in sorted(boundaries.items())))
 
 
 def dataclass_dict(value):
