@@ -22,6 +22,41 @@
       "auto_apply": "fuzzy"
     },
     {
+      "canonical": "fisiopatología",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "aldosterona",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "resistencia vascular periférica",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99
+    },
+    {
+      "canonical": "accidente cerebrovascular",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99
+    },
+    {
+      "canonical": "cerebrovascular",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "diabetes mellitus",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "enzima convertidora de angiotensina",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "angiotensina II",
+      "aliases": ["angiotensina 2", "angiotensina dos"],
+      "auto_apply": "exact"
+    },
+    {
       "canonical": "fibrilación auricular",
       "auto_apply": "fuzzy"
     },
@@ -30,9 +65,10 @@
       "auto_apply": "fuzzy"
     },
     {
-      "canonical": "antagonistas del receptor de angiotensina II",
+      "canonical": "antagonistas de los receptores de angiotensina II",
       "aliases": ["ARA II"],
-      "auto_apply": "fuzzy"
+      "auto_apply": "fuzzy",
+      "suggest_threshold": 0.9
     },
     {
       "canonical": "ecocardiografía transtorácica",
@@ -40,6 +76,18 @@
     },
     {
       "canonical": "hemoglobina glicosilada",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "diuréticos tiazídicos",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "electrocardiograma",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "microalbuminuria",
       "auto_apply": "fuzzy"
     }
   ]

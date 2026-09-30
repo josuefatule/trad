@@ -60,7 +60,9 @@ async def relay(browser: WebSocket, settings, session_id: str):
             raise ValueError("WLK must use full mode")
         event("wlk connected")
         await browser.send_json({"type": "config", "state": "connected", "session_id": session_id,
-                                 "sample_rate": 16000, "wlk": config})
+                                 "sample_rate": 16000,
+                                 "capabilities": {"terminology_normalizer": 1},
+                                 "wlk": config})
 
         async def upload():
             started = False

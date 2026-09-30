@@ -92,6 +92,11 @@ invariantes del algoritmo, no contra la ortografía del texto médico de referen
 
 ## Normalización
 
-El resultado reproducible de Milestone 3 está en `NORMALIZER_REPORT.md`: 1 corrección
-exacta, 1 sugerencia entre segmentos, 0 falsos positivos observados y RAW 81/81.
+El resultado reproducible actualizado está en `NORMALIZER_REPORT.md`: 2 correcciones,
+2 sugerencias, 0 falsos positivos observados y RAW 81/81.
 El normalizador no modifica los READY ni las métricas de segmentación anteriores.
+
+La validación posterior con la sesión real `c73206fa7334`, la causa del backend
+obsoleto y la comparación completa antes/después están en
+`MILESTONE_3_1_REPORT.md`. El RAW suministrado se conserva en
+`medical_m3_1_observed.txt`.

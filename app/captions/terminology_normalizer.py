@@ -22,6 +22,8 @@ class NormalizerConfig:
     suggest_threshold: float = .86
     max_token_delta: int = 1
     context_words: int = 8
+    collapsed_min_characters: int = 10
+    collapsed_max_edits: int = 1
     medical_glossary: str = str(ROOT / "glossaries" / "medical_base.json")
     conference_glossary: str = str(ROOT / "glossaries" / "conference.json")
 
@@ -32,8 +34,9 @@ class NormalizerConfig:
                 raise ValueError(f"{name} must be between 0 and 1")
         if self.auto_threshold <= self.suggest_threshold:
             raise ValueError("auto_threshold must exceed suggest_threshold")
-        if self.max_token_delta < 0 or self.context_words < 1:
-            raise ValueError("max_token_delta must be non-negative and context_words positive")
+        if (self.max_token_delta < 0 or self.context_words < 1
+                or self.collapsed_min_characters < 1 or self.collapsed_max_edits < 0):
+            raise ValueError("token/edit limits must be non-negative and context sizes positive")
 
     @classmethod
     def from_env(cls):
@@ -43,6 +46,10 @@ class NormalizerConfig:
             suggest_threshold=float(os.getenv("NORMALIZER_SUGGEST_THRESHOLD", defaults.suggest_threshold)),
             max_token_delta=int(os.getenv("NORMALIZER_MAX_TOKEN_DELTA", defaults.max_token_delta)),
             context_words=int(os.getenv("NORMALIZER_CONTEXT_WORDS", defaults.context_words)),
+            collapsed_min_characters=int(os.getenv(
+                "NORMALIZER_COLLAPSED_MIN_CHARACTERS", defaults.collapsed_min_characters)),
+            collapsed_max_edits=int(os.getenv(
+                "NORMALIZER_COLLAPSED_MAX_EDITS", defaults.collapsed_max_edits)),
             medical_glossary=os.getenv("NORMALIZER_MEDICAL_GLOSSARY", defaults.medical_glossary),
             conference_glossary=os.getenv("NORMALIZER_CONFERENCE_GLOSSARY", defaults.conference_glossary),
         )
@@ -56,7 +63,7 @@ class Correction:
     end: int
     rule: str
     confidence: float
-    canonical: str
+    canonical: str | None
 
 
 @dataclass(frozen=True)
@@ -154,7 +161,55 @@ def _score(source_tokens, canonical_tokens):
                               canonical.replace(" ", "")).ratio()
     count = min(len(source_tokens), len(canonical_tokens)) / max(
         len(source_tokens), len(canonical_tokens))
-    return .45 * spaced + .45 * compact + .10 * count
+    score = .45 * spaced + .45 * compact + .10 * count
+    if len(source_tokens) > len(canonical_tokens):
+        score = max(score, _jaro_winkler(source.replace(" ", ""),
+                                        canonical.replace(" ", "")))
+    return score
+
+
+def _jaro_winkler(source, target):
+    """Character evidence for ASR token splits/merges; returns a 0..1 score."""
+    if source == target:
+        return 1.
+    if not source or not target:
+        return 0.
+    radius = max(len(source), len(target)) // 2 - 1
+    source_match = [False] * len(source)
+    target_match = [False] * len(target)
+    matches = 0
+    for source_index, char in enumerate(source):
+        for target_index in range(max(0, source_index - radius),
+                                  min(source_index + radius + 1, len(target))):
+            if not target_match[target_index] and char == target[target_index]:
+                source_match[source_index] = True
+                target_match[target_index] = True
+                matches += 1
+                break
+    if not matches:
+        return 0.
+    source_chars = [char for char, matched in zip(source, source_match) if matched]
+    target_chars = [char for char, matched in zip(target, target_match) if matched]
+    transpositions = sum(left != right for left, right in zip(source_chars, target_chars)) / 2
+    jaro = (matches / len(source) + matches / len(target)
+            + (matches - transpositions) / matches) / 3
+    prefix = 0
+    for left, right in zip(source, target):
+        if left != right or prefix == 4:
+            break
+        prefix += 1
+    return jaro + prefix * .1 * (1 - jaro)
+
+
+def _edit_distance(source, target):
+    previous = list(range(len(target) + 1))
+    for source_index, source_char in enumerate(source, 1):
+        current = [source_index]
+        for target_index, target_char in enumerate(target, 1):
+            current.append(min(current[-1] + 1, previous[target_index] + 1,
+                               previous[target_index - 1] + (source_char != target_char)))
+        previous = current
+    return previous[-1]
 
 
 def _parse_glossary(document, label, config, start_order):
@@ -246,18 +301,33 @@ class TerminologyNormalizer:
     def _fuzzy_matches(self, text, tokens):
         candidates = []
         for term in self.terms:
-            # Single ordinary words are never fuzzy-corrected automatically.
-            if len(term.canonical_tokens) < 2:
+            if term.policy == "exact":
                 continue
-            low = max(1, len(term.canonical_tokens) - self.config.max_token_delta)
+            single_technical = (len(term.canonical_tokens) == 1
+                                and term.policy in {"fuzzy", "suggest"}
+                                and len(term.canonical_tokens[0])
+                                >= self.config.collapsed_min_characters)
+            if len(term.canonical_tokens) < 2 and not single_technical:
+                continue
+            low = 2 if single_technical else len(term.canonical_tokens)
             high = len(term.canonical_tokens) + self.config.max_token_delta
             for length in range(low, high + 1):
+                # A technical one-word canonical may match a split ASR span, but
+                # arbitrary one-word fuzzy matching remains disabled.
+                if single_technical and length == 1:
+                    continue
                 for start in range(0, len(tokens) - length + 1):
                     end = start + length
                     if not _valid_span(text, tokens, start, end):
                         continue
                     confidence = _score(tuple(t.normalized for t in tokens[start:end]),
                                         term.canonical_tokens)
+                    if single_technical:
+                        compact_source = "".join(
+                            token.normalized for token in tokens[start:end])
+                        distance = _edit_distance(compact_source, term.canonical_tokens[0])
+                        if distance <= self.config.collapsed_max_edits:
+                            confidence = max(confidence, term.auto_threshold)
                     if confidence < term.suggest_threshold:
                         continue
                     action = ("auto" if term.policy == "fuzzy"
@@ -266,6 +336,36 @@ class TerminologyNormalizer:
                                              tokens[end - 1].end, term, confidence,
                                              "glossary_fuzzy", action))
         return candidates
+
+    @staticmethod
+    def _spacing_corrections(text, reserved):
+        corrections = []
+
+        def overlaps(start, end):
+            return any((start < reserved_end and end > reserved_start)
+                       or (start == end and reserved_start < start < reserved_end)
+                       for reserved_start, reserved_end in reserved)
+
+        for match in re.finditer(r"\s+", text):
+            start, end = match.span()
+            if overlaps(start, end):
+                continue
+            following = text[end:end + 1]
+            replacement = ("" if start == 0 or end == len(text)
+                           or following in ",.;:!?" else " ")
+            if match.group() != replacement:
+                corrections.append(Correction(
+                    match.group(), replacement, start, end,
+                    "deterministic_spacing", 1., None))
+
+        missing_space = re.compile(r"[,;:!?](?=[^\W_\d])", re.UNICODE)
+        for match in missing_space.finditer(text):
+            position = match.end()
+            if not overlaps(position, position):
+                corrections.append(Correction(
+                    "", " ", position, position,
+                    "deterministic_spacing", 1., None))
+        return corrections
 
     @staticmethod
     def _select(candidates, reserved=()):
@@ -297,11 +397,21 @@ class TerminologyNormalizer:
         boundary = len(self._previous_raw[previous_start:])
         tokens = _source_tokens(context)
         candidates = self._exact_matches(context, tokens) + self._fuzzy_matches(context, tokens)
-        crossing = [match for match in candidates if match.start < boundary < match.end]
+        crossing = []
+        for match in candidates:
+            if not match.start < boundary < match.end:
+                continue
+            left = "".join(_tokens(context[match.start:boundary]))
+            right = "".join(_tokens(context[boundary:match.end]))
+            if len(left) >= 2 and len(right) >= 2:
+                crossing.append(match)
         suggestions = []
         for match in self._select(crossing):
+            source = context[match.start:match.end]
+            if source == _case_like(source, match.term.canonical):
+                continue
             suggestions.append(Suggestion(
-                source=context[match.start:match.end], candidate=match.term.canonical,
+                source=source, candidate=match.term.canonical,
                 start=None, end=max(0, match.end - boundary - 1),
                 rule="cross_segment_" + match.rule,
                 confidence=round(match.confidence, 6), cross_segment=True,
@@ -332,6 +442,9 @@ class TerminologyNormalizer:
                     source, match.term.canonical, match.start, match.end,
                     match.rule, round(match.confidence, 6)))
         suggestions.extend(self._cross_segment_suggestions(raw_text))
+        reserved = tuple((correction.start, correction.end) for correction in corrections)
+        corrections.extend(self._spacing_corrections(raw_text, reserved))
+        corrections.sort(key=lambda correction: (correction.start, correction.end))
         normalized = raw_text
         for correction in reversed(corrections):
             normalized = (normalized[:correction.start] + correction.replacement

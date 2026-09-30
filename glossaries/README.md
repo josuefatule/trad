@@ -20,9 +20,9 @@ abrir cada sesión. Ambos usan UTF-8 y este formato:
 
 - `canonical` es obligatorio.
 - `variants` y `aliases` son listas opcionales de formas conocidas y exactas.
-- `auto_apply` puede ser `exact`, `fuzzy` o `suggest`. `exact` nunca autoaplica
-  similitud; `fuzzy` puede hacerlo sobre expresiones de varias palabras; `suggest`
-  nunca modifica texto automáticamente.
+- `auto_apply` puede ser `exact`, `fuzzy` o `suggest`. `exact` solo reconoce las
+  formas configuradas; `fuzzy` puede operar sobre expresiones y spans técnicos
+  partidos; `suggest` nunca modifica texto automáticamente.
 - Los umbrales son opcionales por término. Deben cumplir
   `0 <= suggest_threshold < auto_threshold <= 1`.
 
@@ -34,3 +34,9 @@ Mantener la base limitada a correcciones ampliamente seguras. Usar el glosario d
 conferencia para nombres y vocabulario confirmado del evento. Antes de promover una
 entrada fuzzy, probar ejemplos positivos y negativos; una sugerencia es preferible
 cuando la ambigüedad sea material.
+
+Un canónico fuzzy de una palabra no se compara con palabras ASR aisladas. Puede
+compararse con dos tokens cuando supera la longitud mínima configurada; esto cubre
+separaciones como `electro cardiograma`. La ruta fuerte admite como máximo una edición
+tras compactar los tokens. Los defaults se controlan con
+`NORMALIZER_COLLAPSED_MIN_CHARACTERS` y `NORMALIZER_COLLAPSED_MAX_EDITS`.

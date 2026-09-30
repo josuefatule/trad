@@ -8,12 +8,14 @@ function renderSegmentation(s, result, normalization) {
   const normalizedById = new Map((normalization?.segments || []).map(item => [item.segment_id, item]));
   for (const segment of result.ready_segments) {
     if (s.readyIds.has(segment.id)) continue;
+    const item = normalizedById.get(segment.id);
+    if (!item) throw new Error("El backend no envió NORMALIZED ES. Reinicia FastAPI y recarga esta página.");
     s.readyIds.add(segment.id);
     $("ready").textContent += `[${stamp(segment.start_time)} → ${stamp(segment.end_time)}] ${segment.reason} · ${segment.word_count} palabras · ${Math.round(segment.latency_ms)} ms\n${segment.text}\n\n`;
-    const item = normalizedById.get(segment.id);
-    $("normalized").textContent += `${item?.normalized_text ?? segment.text}\n\n`;
+    $("normalized").textContent += `${item.normalized_text}\n\n`;
     for (const correction of item?.corrections || []) {
-      $("corrections").textContent += `${correction.source} → ${correction.replacement}\nconfidence: ${correction.confidence.toFixed(3)}\nrule: ${correction.rule}\nsegment: ${segment.id}\n\n`;
+      const visible = value => !value || /^\s*$/.test(value) ? JSON.stringify(value) : value;
+      $("corrections").textContent += `${visible(correction.source)} → ${visible(correction.replacement)}\nconfidence: ${correction.confidence.toFixed(3)}\nrule: ${correction.rule}\nsegment: ${segment.id}\n\n`;
     }
     for (const suggestion of item?.suggestions || []) {
       $("corrections").textContent += `SUGGESTION${suggestion.cross_segment ? " · CROSS SEGMENT" : ""}\nsource: ${suggestion.source}\ncandidate: ${suggestion.candidate}\nconfidence: ${suggestion.confidence.toFixed(3)}\nrule: ${suggestion.rule}\nsegment: ${segment.id}\n\n`;
@@ -132,6 +134,9 @@ $("start").onclick = async () => {
         const data = JSON.parse(event.data);
         debug(`${data.type} ${data.state || data.payload?.type || data.payload?.status || ""}`);
         if (data.type === "config") {
+          if (data.capabilities?.terminology_normalizer !== 1) {
+            throw new Error("Backend anterior a Milestone 3.1. Reinicia FastAPI y recarga esta página.");
+          }
           clearTimeout(s.timer);
           $("connection").textContent = "Connected";
           await capture(s);

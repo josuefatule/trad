@@ -46,10 +46,11 @@ class TerminologyNormalizerTests(unittest.TestCase):
             ("ecocardiografia transtoracica", "ecocardiografía transtorácica", 1, 0),
             ("hemoglobina glicosiladaa", "hemoglobina glicosilada", 1, 0),
             ("antagonistas del receptor de angiotensina dos",
-             "antagonistas del receptor de angiotensina dos", 0, 1),
+             "antagonistas del receptor de angiotensina II", 1, 0),
         )
         for index, (raw, expected, correction_count, suggestion_count) in enumerate(cases):
             with self.subTest(raw=raw):
+                self.normalizer.reset()
                 result = self.normalizer.normalize(f"medical:{index}", raw)
                 self.assertEqual(result.normalized_text, expected)
                 self.assertEqual(len(result.corrections), correction_count)
@@ -99,7 +100,7 @@ class TerminologyNormalizerTests(unittest.TestCase):
             "s:1", "incluyendo el sistema herenina angiotensina")
         second = self.normalizer.normalize("s:2", "al dosterona.")
         self.assertEqual(first.normalized_text, first.raw_text)
-        self.assertEqual(second.normalized_text, second.raw_text)
+        self.assertEqual(second.normalized_text, "aldosterona.")
         suggestion = next(item for item in second.suggestions if item.cross_segment)
         self.assertEqual(suggestion.candidate, "renina-angiotensina-aldosterona")
         self.assertEqual(suggestion.previous_segment_id, "s:1")
@@ -131,12 +132,15 @@ class TerminologyNormalizerTests(unittest.TestCase):
             "NORMALIZER_SUGGEST_THRESHOLD": ".8",
             "NORMALIZER_MAX_TOKEN_DELTA": "2",
             "NORMALIZER_CONTEXT_WORDS": "11",
+            "NORMALIZER_COLLAPSED_MIN_CHARACTERS": "12",
+            "NORMALIZER_COLLAPSED_MAX_EDITS": "2",
         }
         with patch.dict(os.environ, values):
             config = NormalizerConfig.from_env()
         self.assertEqual((config.auto_threshold, config.suggest_threshold,
-                          config.max_token_delta, config.context_words),
-                         (.98, .8, 2, 11))
+                          config.max_token_delta, config.context_words,
+                          config.collapsed_min_characters, config.collapsed_max_edits),
+                         (.98, .8, 2, 11, 12, 2))
 
     def test_conference_glossary_loads_without_changing_base(self):
         base = json.loads((Path(__file__).parents[1] / "glossaries/medical_base.json").read_text(
@@ -160,11 +164,72 @@ class TerminologyNormalizerTests(unittest.TestCase):
         corrections = [item for result in normalized for item in result.corrections]
         suggestions = [item for result in normalized for item in result.suggestions]
         self.assertEqual([(item.source, item.replacement) for item in corrections],
-                         [("systólica", "sistólica")])
+                         [("systólica", "sistólica"),
+                          ("al dosterona", "aldosterona")])
         self.assertEqual(sum(item.cross_segment for item in suggestions), 1)
         joined = " ".join(item.normalized_text for item in normalized)
         self.assertIn("Suficio patología", joined)
         self.assertIn("pertencios", joined)
+
+    def test_real_milestone_3_1_observation(self):
+        raw = (Path(__file__).parents[1] / "benchmarks/medical_m3_1_observed.txt").read_text(
+            encoding="utf-8").rstrip("\r\n")
+        result = self.normalizer.normalize("live:1", raw)
+        changes = {(item.source, item.replacement) for item in result.corrections}
+        suggestions = {(item.source, item.candidate) for item in result.suggestions}
+        self.assertEqual(changes, {
+            ("systólica", "sistólica"),
+            ("renina angiotensina al desterona", "renina-angiotensina-aldosterona"),
+            ("accidente cerebro vascular", "accidente cerebrovascular"),
+            ("angiotensina 2", "angiotensina II"),
+        })
+        self.assertEqual(suggestions, {
+            ("suficio patología", "fisiopatología"),
+            ("resistencias vascular periférica", "resistencia vascular periférica"),
+            ("diabetes mellitos", "diabetes mellitus"),
+            ("diuréticos diacídicos", "diuréticos tiazídicos"),
+        })
+        self.assertIn("del enzima convertidora de angiotensina", result.normalized_text)
+        self.assertIn("y incluyendo", result.normalized_text)
+        self.assertIn("de la del sistema", result.normalized_text)
+
+    def test_cerebrovascular_split_is_a_safe_single_term_merge(self):
+        result = self.normalizer.normalize("new:1", "riesgo cerebro vascular elevado")
+        self.assertEqual(result.normalized_text, "riesgo cerebrovascular elevado")
+        self.assertEqual(result.corrections[0].confidence, 1.)
+
+    def test_split_single_term_requires_strong_technical_evidence(self):
+        positive = {
+            "al desterona": "aldosterona",
+            "electro cardiograma": "electrocardiograma",
+            "micro albuminuria": "microalbuminuria",
+        }
+        for raw, expected in positive.items():
+            with self.subTest(raw=raw):
+                self.normalizer.reset()
+                result = self.normalizer.normalize("new:1", raw)
+                self.assertEqual(result.normalized_text, expected)
+                self.assertEqual(result.corrections[0].rule, "glossary_fuzzy")
+                self.assertGreaterEqual(result.corrections[0].confidence,
+                                        self.normalizer.config.auto_threshold)
+
+        for raw in ("alta tensión", "arteria renal", "cardio grama",
+                    "micro economía", "angiotensina"):
+            with self.subTest(raw=raw):
+                self.normalizer.reset()
+                result = self.normalizer.normalize("negative:1", raw)
+                self.assertEqual(result.normalized_text, raw)
+                self.assertFalse(result.corrections)
+
+    def test_spacing_is_normalized_without_changing_raw(self):
+        raw = "  condición  cardiovascular ,sin alterar 3,5 ni EE.UU.  "
+        result = self.normalizer.normalize("spacing:1", raw)
+        self.assertEqual(result.raw_text, raw)
+        self.assertEqual(result.normalized_text,
+                         "condición cardiovascular, sin alterar 3,5 ni EE.UU.")
+        spacing = [item for item in result.corrections
+                   if item.rule == "deterministic_spacing"]
+        self.assertGreaterEqual(len(spacing), 4)
 
 
 if __name__ == "__main__":

@@ -55,6 +55,8 @@ class ProxyTests(unittest.IsolatedAsyncioTestCase):
 
         messages = await self.run_proxy(wlk, [b"\x00\x00" * 128, b""])
         self.assertEqual(received, [b"\x00\x00" * 128, b""])
+        config = next(message for message in messages if message["type"] == "config")
+        self.assertEqual(config["capabilities"]["terminology_normalizer"], 1)
         self.assertEqual(messages[-2]["transcript"]["confirmed_text"], "Hola.")
         self.assertEqual(messages[-1]["state"], "stopped")
         self.assertEqual(messages[-2]["segmentation"]["ready_segments"][0]["reason"], "session_end")

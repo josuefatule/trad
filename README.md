@@ -92,6 +92,8 @@ Variables opcionales antes de arrancar nuestra app:
 | `NORMALIZER_SUGGEST_THRESHOLD` | `0.86` |
 | `NORMALIZER_MAX_TOKEN_DELTA` | `1` palabra de diferencia para candidatos fuzzy |
 | `NORMALIZER_CONTEXT_WORDS` | `8` palabras recientes para sugerencias entre segmentos |
+| `NORMALIZER_COLLAPSED_MIN_CHARACTERS` | `10`; longitud mínima para un canónico técnico unido |
+| `NORMALIZER_COLLAPSED_MAX_EDITS` | `1`; distancia máxima fuerte tras unir dos tokens ASR |
 | `NORMALIZER_MEDICAL_GLOSSARY` | `glossaries/medical_base.json` |
 | `NORMALIZER_CONFERENCE_GLOSSARY` | `glossaries/conference.json` |
 
@@ -127,7 +129,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**80 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
+**84 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
 timeout y desconexión. Usan unittest, websockets y el httpx ya instalado para
@@ -195,16 +197,26 @@ preservan cuando corresponde. El contexto reciente puede detectar un término di
 entre dos READY, pero siempre genera `cross_segment_suggestion`: nunca reescribe READY
 anteriores.
 
+Milestone 3.1 permite además unir un span ASR de dos tokens contra un canónico técnico
+de una palabra, con longitud mínima y distancia de edición configurables. No habilita
+fuzzy global de palabras aisladas. El espaciado repetido y alrededor de puntuación se
+normaliza mediante correcciones auditables, sin añadir signos. La UI exige la capability
+del backend y deja de copiar RAW silenciosamente cuando falta `normalization`; un error
+visible indica que hay que reiniciar FastAPI. Evidencia en
+`benchmarks/MILESTONE_3_1_REPORT.md`.
+
 Editar `glossaries/conference.json` permite añadir vocabulario del evento sin cambiar
 la base. Cada entrada admite `canonical`, `variants`, `aliases`, `auto_apply`
 (`exact`, `fuzzy` o `suggest`) y umbrales opcionales. Reiniciar FastAPI tras cambiar
 el archivo. El formato completo está en `glossaries/README.md`.
 
-En el replay médico real se conserva RAW 81/81. Solo se aplica
-`systólica → sistólica`; `Suficio` y `pertenecios` quedan intactos, y el término
-partido `herenina angiotensina | al dosterona` produce una sugerencia contextual.
-El perfil de 1.600 evaluaciones dio mediana 12,780 ms, p95 26,090 ms y máximo
-29,798 ms por segmento. Ver `benchmarks/NORMALIZER_REPORT.md`.
+En el replay médico real se conserva RAW 81/81. Se aplican
+`systólica → sistólica` y `al dosterona → aldosterona`; `Suficio` produce una
+sugerencia, `pertenecios` queda intacto y el término partido
+`herenina angiotensina | al dosterona` produce otra sugerencia contextual.
+Con el glosario de Milestone 3.1, el perfil de 1.600 evaluaciones dio mediana
+25,867 ms, p95 53,079 ms y máximo 72,956 ms por segmento. Ver
+`benchmarks/NORMALIZER_REPORT.md`.
 
 - Milestone 1 validado; confirmar ahora la experiencia de segmentación con voz.
 - La afinación final produce 16 segmentos con mediana de 3,83 s, frente a 25/2,88 s

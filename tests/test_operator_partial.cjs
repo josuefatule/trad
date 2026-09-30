@@ -75,5 +75,7 @@ module.exports = (async () => {
   assert.equal(element('ready').textContent, '');
   assert.equal(element('normalized').textContent, '');
   assert.equal(element('corrections').textContent, '');
+  assert.throws(() => context.renderSegmentation(
+    {readyIds: new Set()}, segmentation, {segments: []}), /Reinicia FastAPI/);
   console.log('PASS: operator.js renders partial, RAW, NORMALIZED and audit data without duplicates');
 })();

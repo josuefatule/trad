@@ -318,10 +318,11 @@ canónicos distintos.
 El matching normaliza internamente Unicode, mayúsculas y diacríticos. Guiones y
 espacios son equivalentes dentro de una expresión, sin absorber puntuación vecina.
 Las coincidencias exactas conocidas tienen confianza 1. El fuzzy usa similitud de la
-frase espaciada y compacta, más una penalización por diferencia de tokens. Solo se
-evalúa para términos de varias palabras: una palabra común parecida nunca se corrige
-por distancia. `auto_threshold=0.96` y `suggest_threshold=0.86`; el primero debe ser
-mayor. Una coincidencia fuzzy intermedia queda como sugerencia y no cambia el texto.
+frase espaciada y compacta, más una penalización por diferencia de tokens. Se evalúa
+para frases y para el caso restringido de un canónico técnico unido desde dos tokens;
+una palabra ASR aislada nunca se corrige por distancia. `auto_threshold=0.96` y
+`suggest_threshold=0.86`; el primero debe ser mayor. Una coincidencia fuzzy intermedia
+queda como sugerencia y no cambia el texto.
 
 Los solapamientos se resuelven de modo estable por acción, confianza, longitud,
 posición y orden del glosario. Las sustituciones se aplican desde el final para que
@@ -356,16 +357,42 @@ Los mensajes `asr` y `segmentation` añaden en paralelo:
 }
 ```
 
+El mensaje inicial `config` declara
+`capabilities.terminology_normalizer=1`. El operador exige esa capability y un objeto
+normalizado para cada READY. Esto detecta procesos FastAPI antiguos: los estáticos se
+leen desde disco en cada request, mientras los módulos Python permanecen importados en
+memoria hasta reiniciar el servidor.
+
 La UI agrega RAW y NORMALIZED por el mismo ID y muestra la auditoría. El replay usa
 la ruta de producción y conserva las métricas de segmentación. Sobre los 16 READY del
-fixture médico: 1 corrección exacta, 1 sugerencia entre segmentos, 15 segmentos sin
-cambios y ninguna corrección falsa conocida. Se mantienen sin cambio `Suficio` y
-`pertenecios`; en particular no existe una regla que convierta este último en
-`hipertensos`. Las pruebas negativas fijan `renal ≠ renina`, `arterial ≠ arteria`,
+fixture médico tras Milestone 3.1: 2 correcciones, 2 sugerencias, 14 segmentos sin
+cambios y ninguna corrección falsa conocida. `Suficio` queda como sugerencia y
+`pertenecios` permanece intacto; en particular no existe una regla que convierta
+este último en `hipertensos`. Las pruebas negativas fijan `renal ≠ renina`, `arterial ≠ arteria`,
 `tensión ≠ hipertensión` y bloquean expansiones arbitrarias de `receptor`.
 
-El perfil reproducible de 1.600 segmentos medidos dio 12,780 ms de mediana,
-26,090 ms p95 y 29,798 ms máximo en este equipo. Es menos del 1 % de la latencia
-mediana READY del benchmark (3,826 s). Los tiempos dependen del equipo y del tamaño
+El perfil reproducible de 1.600 segmentos medidos tras Milestone 3.1 dio 25,867 ms
+de mediana, 53,079 ms p95 y 72,956 ms máximo en este equipo. La mediana sigue por
+debajo del 1 % de la latencia mediana READY del benchmark (3,826 s). Los tiempos
+dependen del equipo y del tamaño
 del glosario; el algoritmo actual recorre términos y ventanas, por lo que un glosario
 mucho mayor requerirá indexación antes de producción.
+
+### Afinación Milestone 3.1
+
+El fuzzy de una palabra ASR contra todo el glosario sigue deshabilitado. Para corregir
+separaciones del reconocedor, una entrada técnica canónica de una palabra con política
+fuzzy puede comparar contra exactamente dos tokens. El canónico debe tener al menos
+10 caracteres. Se usa evidencia compactada y Jaro-Winkler cuando el ASR produjo más
+tokens que el canónico; una distancia compactada de hasta una edición satisface el
+umbral auto. Ambos límites son configurables. Las ventanas nunca omiten tokens que el
+canónico requiere, lo cual evita sugerencias como `angiotensina → angiotensina II`.
+
+Los cruces entre segmentos requieren contenido léxico a ambos lados y omiten formas
+canónicas que ya son idénticas. Siguen siendo solo sugerencias. El matching exacto no
+participa en fuzzy: únicamente reconoce canónicos, variantes y aliases configurados.
+
+Después de las sustituciones terminológicas se aplican ediciones de espaciado basadas
+en offsets RAW: colapsar whitespace, retirarlo antes de puntuación y añadirlo después
+de `,;:!?` si sigue una letra. Estas ediciones tienen regla `deterministic_spacing`,
+confianza 1 y `canonical=null`. No se añaden signos ni reglas gramaticales.

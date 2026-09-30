@@ -35,3 +35,15 @@
 No avanzar todavía a traducción, LLM, OBS ni corrección retroactiva de READY.
 El siguiente paso operativo es validar con voz real y revisar sugerencias antes de
 ampliar el glosario de conferencia.
+
+## Milestone 3.1 — validación y afinación completada
+
+- [x] Explicar `systólica` sin corregir: proceso FastAPI antiguo y fallback RAW de UI.
+- [x] Handshake de capability y error visible ante backend sin normalización.
+- [x] Matching conservador de spans ASR partidos contra canónicos técnicos unidos.
+- [x] Glosario médico ampliado con terminología general reutilizable.
+- [x] Whitespace y spacing de puntuación determinísticos y auditables.
+- [x] Replay del texto real, tests positivos/negativos y límites documentados.
+- [ ] Repetir una sesión Blue Yeti después de reiniciar FastAPI.
+
+No iniciar Milestone 4 ni traducción.
