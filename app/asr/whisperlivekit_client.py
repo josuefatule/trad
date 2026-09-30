@@ -10,6 +10,7 @@ from websockets.asyncio.client import connect
 from app.captions.transcript_state import TranscriptState
 from app.captions.segment_manager import SegmentManager
 from app.captions.terminology_normalizer import TerminologyNormalizer
+from app.translation import TranslationConfig, build_translation_engine
 
 logger = logging.getLogger("captions")
 raw_logger = logging.getLogger("captions.raw")
@@ -27,15 +28,41 @@ async def relay(browser: WebSocket, settings, session_id: str):
     state = TranscriptState()
     manager = SegmentManager(getattr(settings, "segments", None), session_id)
     normalizer = TerminologyNormalizer.from_config(getattr(settings, "normalizer", None))
+    send_lock = asyncio.Lock()
+
+    async def send_json(message):
+        async with send_lock:
+            await browser.send_json(message)
+
+    async def translation_ready(result, snapshot):
+        await send_json({"type": "translation", "session_id": session_id,
+                         "translation": result.to_dict(),
+                         "translation_status": snapshot["status"],
+                         "translation_queue_depth": snapshot["queue_depth"],
+                         "translation_metrics": snapshot["metrics"]})
+
+    translator = build_translation_engine(
+        getattr(settings, "translation", None) or TranslationConfig(),
+        session_id, translation_ready)
+    await translator.start()
 
     def normalize(result):
-        segments = tuple(normalizer.normalize(segment.id, segment.text).to_dict()
-                         for segment in result.ready_segments)
+        pairs = tuple((segment, normalizer.normalize(segment.id, segment.text))
+                      for segment in result.ready_segments)
+        segments = tuple(item.to_dict() for _, item in pairs)
         for segment in segments:
             event("segment normalized id=%s corrections=%d suggestions=%d processing_ms=%.3f",
                   segment["segment_id"], len(segment["corrections"]),
                   len(segment["suggestions"]), segment["processing_ms"])
-        return {"segments": segments}
+        return {"segments": segments}, pairs
+
+    async def queue_translations(pairs):
+        for segment, item in pairs:
+            await translator.submit(
+                segment.id, item.raw_text, item.normalized_text,
+                asr_first_seen_at=segment.first_seen_at,
+                ready_at=segment.emitted_at,
+                normalization_latency_ms=item.processing_ms)
 
     def event(name, *args):
         logger.info("session=%s " + name, session_id, *args)
@@ -49,20 +76,26 @@ async def relay(browser: WebSocket, settings, session_id: str):
         event("ASR message received type=%s", payload.get("type", payload.get("status", "snapshot")))
         return payload
 
-    await browser.send_json({"type": "status", "state": "connecting", "session_id": session_id})
-    async with connect(session_url(settings.wlk_url, settings.language),
-                       open_timeout=settings.connect_timeout, max_size=None,
-                       proxy=None) as upstream:
+    await send_json({"type": "status", "state": "connecting", "session_id": session_id})
+    try:
+      async with connect(session_url(settings.wlk_url, settings.language),
+                         open_timeout=settings.connect_timeout, max_size=None,
+                         proxy=None) as upstream:
         config = decode(await asyncio.wait_for(upstream.recv(), settings.connect_timeout))
         if config.get("type") != "config" or config.get("useAudioWorklet") is not True:
             raise ValueError(config.get("error") or "WLK must run with --pcm-input")
         if config.get("mode") != "full":
             raise ValueError("WLK must use full mode")
         event("wlk connected")
-        await browser.send_json({"type": "config", "state": "connected", "session_id": session_id,
-                                 "sample_rate": 16000,
-                                 "capabilities": {"terminology_normalizer": 1},
-                                 "wlk": config})
+        await send_json({"type": "config", "state": "connected", "session_id": session_id,
+                         "sample_rate": 16000,
+                         "capabilities": {
+                             "terminology_normalizer": 1,
+                             "translation_engine": 1,
+                             "translation_provider": translator.status.provider,
+                         },
+                         "translation_status": translator.status.to_dict(),
+                         "wlk": config})
 
         async def upload():
             started = False
@@ -91,9 +124,12 @@ async def relay(browser: WebSocket, settings, session_id: str):
                     if not done:
                         result = manager.tick()
                         if result.ready_segments or result.events:
-                            await browser.send_json({"type": "segmentation",
-                                                     "segmentation": result.to_dict(),
-                                                     "normalization": normalize(result)})
+                            normalization, pairs = normalize(result)
+                            await send_json({"type": "segmentation",
+                                             "segmentation": result.to_dict(),
+                                             "normalization": normalization,
+                                             "translation_queue_depth": translator.queue_depth})
+                            await queue_translations(pairs)
                         continue
                     try:
                         raw = receiving.result()
@@ -107,18 +143,23 @@ async def relay(browser: WebSocket, settings, session_id: str):
                     final = payload.get("type") == "ready_to_stop"
                     result = (manager.finish() if final else manager.update(state)
                               if "lines" in payload else manager.tick())
-                    await browser.send_json({"type": "asr", "payload": payload,
-                                             "transcript": state.to_dict(),
-                                             "segmentation": result.to_dict(),
-                                             "normalization": normalize(result)})
+                    normalization, pairs = normalize(result)
+                    await send_json({"type": "asr", "payload": payload,
+                                     "transcript": state.to_dict(),
+                                     "segmentation": result.to_dict(),
+                                     "normalization": normalization,
+                                     "translation_queue_depth": translator.queue_depth})
+                    await queue_translations(pairs)
                     if settings.log_raw and "lines" in payload:
                         event("partial trace sent raw_present=%s raw_chars=%d state_chars=%d lines=%d",
                               "buffer_transcription" in payload,
                               len(payload.get("buffer_transcription") or ""),
                               len(state.partial_text), len(state.segments))
                     if final:
+                        await translator.wait_idle()
                         event("session stopped")
-                        await browser.send_json({"type": "status", "state": "stopped"})
+                        await send_json({"type": "status", "state": "stopped",
+                                         "translation_metrics": translator.metrics.to_dict()})
                         return
                     receiving = asyncio.create_task(upstream.recv())
             finally:
@@ -143,3 +184,5 @@ async def relay(browser: WebSocket, settings, session_id: str):
                 if not task.done():
                     task.cancel()
             await asyncio.gather(sender, receiver, return_exceptions=True)
+    finally:
+        await translator.close()

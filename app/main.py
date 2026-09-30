@@ -13,6 +13,7 @@ from fastapi.staticfiles import StaticFiles
 from app.asr.whisperlivekit_client import relay
 from app.captions.segment_manager import SegmentConfig
 from app.captions.terminology_normalizer import NormalizerConfig
+from app.translation import TranslationConfig
 
 ROOT = Path(__file__).resolve().parent
 
@@ -27,6 +28,7 @@ class Settings:
     stop_timeout: float = float(os.getenv("CAPTIONS_STOP_TIMEOUT", "120"))
     segments: SegmentConfig = field(default_factory=SegmentConfig.from_env)
     normalizer: NormalizerConfig = field(default_factory=NormalizerConfig.from_env)
+    translation: TranslationConfig = field(default_factory=TranslationConfig.from_env)
 
 
 def create_app(settings=None):

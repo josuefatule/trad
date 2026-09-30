@@ -12,6 +12,7 @@ from websockets.asyncio.server import serve
 from app.asr.whisperlivekit_client import relay, session_url
 from app.main import Settings, create_app
 from app.captions.segment_manager import SegmentConfig
+from app.translation import TranslationConfig
 
 
 class Browser:
@@ -27,7 +28,7 @@ class Browser:
 
 
 class ProxyTests(unittest.IsolatedAsyncioTestCase):
-    async def run_proxy(self, handler, frames, timeout=1, segments=None):
+    async def run_proxy(self, handler, frames, timeout=1, segments=None, translation=None):
         browser = Browser()
         for frame in frames:
             browser.incoming.put_nowait({"type": "websocket.receive", "bytes": frame})
@@ -35,7 +36,7 @@ class ProxyTests(unittest.IsolatedAsyncioTestCase):
             port = server.sockets[0].getsockname()[1]
             settings = SimpleNamespace(wlk_url=f"ws://127.0.0.1:{port}/asr", language="es",
                                        log_raw=False, connect_timeout=1, stop_timeout=timeout,
-                                       segments=segments)
+                                       segments=segments, translation=translation or TranslationConfig())
             await relay(browser, settings, "test")
         return browser.outgoing
 
@@ -57,12 +58,40 @@ class ProxyTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(received, [b"\x00\x00" * 128, b""])
         config = next(message for message in messages if message["type"] == "config")
         self.assertEqual(config["capabilities"]["terminology_normalizer"], 1)
+        self.assertEqual(config["capabilities"]["translation_engine"], 1)
+        self.assertEqual(config["translation_status"]["state"], "disabled")
         self.assertEqual(messages[-2]["transcript"]["confirmed_text"], "Hola.")
         self.assertEqual(messages[-1]["state"], "stopped")
         self.assertEqual(messages[-2]["segmentation"]["ready_segments"][0]["reason"], "session_end")
         normalized = messages[-2]["normalization"]["segments"][0]
         self.assertEqual(normalized["raw_text"], "Hola.")
         self.assertEqual(normalized["normalized_text"], "Hola.")
+
+    async def test_mock_translation_is_emitted_after_normalized_segment(self):
+        async def wlk(ws):
+            await ws.send(json.dumps({"type": "config", "useAudioWorklet": True, "mode": "full"}))
+            await ws.recv()
+            await ws.send(json.dumps({
+                "lines": [{"text": "Presión systólica.", "speaker": 1,
+                           "start": "0:00:00.00", "end": "0:00:01.00"}],
+                "buffer_transcription": "",
+            }))
+            await ws.send(json.dumps({"type": "ready_to_stop"}))
+
+        translation = TranslationConfig(enabled=True, provider="mock")
+        messages = await self.run_proxy(wlk, [b""], translation=translation)
+        config = next(message for message in messages if message["type"] == "config")
+        self.assertEqual(config["capabilities"]["translation_provider"], "mock")
+        translated = next(message for message in messages if message["type"] == "translation")
+        result = translated["translation"]
+        self.assertEqual(result["raw_text"], "Presión systólica.")
+        self.assertEqual(result["normalized_text"], "Presión sistólica.")
+        self.assertEqual(result["translated_text"], "[MOCK EN] Presión sistólica.")
+        self.assertLess(messages.index(next(message for message in messages
+                                            if message["type"] == "asr"
+                                            and message["segmentation"]["ready_segments"])),
+                        messages.index(translated))
+        self.assertEqual(messages[-1]["state"], "stopped")
 
     async def test_ready_segment_is_normalized_without_mutating_raw_text(self):
         async def wlk(ws):
@@ -167,7 +196,12 @@ class HttpTests(unittest.TestCase):
         with nullcontext("logs/tests") as folder:
             with TestClient(create_app(Settings(log_dir=folder))) as client:
                 self.assertEqual(client.get("/health").json()["status"], "ok")
-                self.assertIn("LIVE CAPTIONS", client.get("/operator").text)
+                operator_html = client.get("/operator").text
+                self.assertIn("LIVE CAPTIONS", operator_html)
+                self.assertIn('<div id="normalized" class="normalized-flow"', operator_html)
+                self.assertIn('<pre id="normalized-segments"></pre>', operator_html)
+                self.assertIn('<div id="english" class="translated-flow"', operator_html)
+                self.assertIn('id="translation-status"', operator_html)
                 self.assertEqual(client.get("/static/operator.js").status_code, 200)
 
     def test_connection_error_visible(self):

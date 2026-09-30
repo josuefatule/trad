@@ -1,6 +1,8 @@
 """Replay timed full snapshots using the exact manager and timer rules, without GPU."""
 import argparse
+import asyncio
 from collections import Counter
+from dataclasses import replace
 import json
 import math
 from pathlib import Path
@@ -9,6 +11,7 @@ import statistics
 from app.captions.segment_manager import SegmentConfig, SegmentManager
 from app.captions.terminology_normalizer import NormalizerConfig, TerminologyNormalizer
 from app.captions.transcript_state import TranscriptState
+from app.translation import TranslationConfig, build_translation_engine
 
 
 def replay(events, manager):
@@ -36,11 +39,13 @@ def replay(events, manager):
         last = now
 
 
-def main():
+async def async_main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("fixture", type=Path)
     parser.add_argument("--perf-repeats", type=int, default=100,
                         help="normalization performance passes over emitted READY segments")
+    parser.add_argument("--translation-provider", choices=("mock", "configured", "disabled"),
+                        default="mock", help="translation source for replay; mock is visibly synthetic")
     args = parser.parse_args()
     if args.perf_repeats < 0:
         parser.error("--perf-repeats must be non-negative")
@@ -52,6 +57,19 @@ def main():
     late = 0
     emitted = []
     normalized = []
+    translation_results = {}
+    translation_requests = {}
+
+    async def translated(result, snapshot):
+        translation_results[result.segment_id] = result
+
+    translation_config = TranslationConfig.from_env()
+    if args.translation_provider == "mock":
+        translation_config = replace(translation_config, enabled=True, provider="mock")
+    elif args.translation_provider == "disabled":
+        translation_config = replace(translation_config, enabled=False)
+    translator = build_translation_engine(translation_config, "replay", translated)
+    await translator.start()
     for now, result in replay(fixture["events"], manager):
         if result.pending_segment != previous:
             print(f"{now:7.3f} PENDING {result.pending_segment}")
@@ -67,10 +85,38 @@ def main():
                 print(f"{now:7.3f} CORRECTION {json.dumps(dataclass_dict(correction), ensure_ascii=False)}")
             for suggestion in item.suggestions:
                 print(f"{now:7.3f} SUGGESTION {json.dumps(dataclass_dict(suggestion), ensure_ascii=False)}")
+            request = await translator.submit(
+                segment.id, item.raw_text, item.normalized_text,
+                asr_first_seen_at=segment.first_seen_at,
+                ready_at=segment.emitted_at,
+                normalization_latency_ms=item.processing_ms)
+            if request is not None:
+                translation_requests[segment.id] = request
         for event in result.events:
             if event["type"] == "late_revision_detected":
                 late += 1
                 print(f"{now:7.3f} LATE {json.dumps(event, ensure_ascii=False)}")
+    await translator.wait_idle()
+    await translator.close()
+    for index, (segment, item) in enumerate(zip(emitted, normalized), 1):
+        request = translation_requests.get(segment.id)
+        translated_item = translation_results.get(segment.id)
+        print(f"\nSEGMENT {index:02d}")
+        print(f"RAW ES:\n{item.raw_text}")
+        print(f"NORMALIZED ES:\n{item.normalized_text}")
+        context = ([entry.normalized_text for entry in request.context_segments]
+                   if request else [])
+        print("CONTEXT:\n" + json.dumps(context, ensure_ascii=False))
+        if translated_item and translated_item.success:
+            print(f"ENGLISH:\n{translated_item.translated_text}")
+        elif translated_item:
+            print(f"ENGLISH:\nERROR: {translated_item.error}")
+        else:
+            print("ENGLISH:\nDISABLED / MISCONFIGURED")
+        print(f"PROVIDER:\n{translated_item.provider if translated_item else translator.status.provider or 'none'}")
+        print("TRANSLATION LATENCY:\n{}".format(
+            f"{translated_item.latency_ms:.3f} ms" if translated_item else "n/a"))
+
     words = [segment.word_count for segment in emitted]
     latencies = [segment.latency_ms for segment in emitted]
     reasons = Counter(segment.reason for segment in emitted)
@@ -114,6 +160,20 @@ def main():
         p95 = ordered[math.ceil(len(ordered) * .95) - 1]
         print("NORMALIZER_PERF samples={} median_ms={:.3f} p95_ms={:.3f} max_ms={:.3f}".format(
             len(timings), statistics.median(timings), p95, max(timings)))
+    translated_values = list(translation_results.values())
+    translation_latencies = [item.latency_ms for item in translated_values]
+    queue_delays = [item.queue_delay_ms for item in translated_values]
+    successes = sum(item.success for item in translated_values)
+    failures = len(translated_values) - successes
+    print(f"TRANSLATION_SUMMARY segments={len(emitted)} successes={successes} "
+          f"failures={failures} retries={translator.metrics.retries} "
+          f"timeouts={translator.metrics.timeouts} max_queue_depth={translator.metrics.max_queue_depth}")
+    if translation_latencies:
+        print("TRANSLATION_LATENCY_MS median={:.3f} p95={:.3f} max={:.3f}".format(
+            statistics.median(translation_latencies), percentile(translation_latencies, .95),
+            max(translation_latencies)))
+        print("TRANSLATION_QUEUE_DELAY_MS median={:.3f} p95={:.3f}".format(
+            statistics.median(queue_delays), percentile(queue_delays, .95)))
 
 
 def dataclass_dict(value):
@@ -121,5 +181,10 @@ def dataclass_dict(value):
     return asdict(value)
 
 
+def percentile(values, quantile):
+    ordered = sorted(values)
+    return ordered[math.ceil(len(ordered) * quantile) - 1]
+
+
 if __name__ == "__main__":
-    main()
+    asyncio.run(async_main())

@@ -12,7 +12,9 @@ function renderSegmentation(s, result, normalization) {
     if (!item) throw new Error("El backend no envió NORMALIZED ES. Reinicia FastAPI y recarga esta página.");
     s.readyIds.add(segment.id);
     $("ready").textContent += `[${stamp(segment.start_time)} → ${stamp(segment.end_time)}] ${segment.reason} · ${segment.word_count} palabras · ${Math.round(segment.latency_ms)} ms\n${segment.text}\n\n`;
-    $("normalized").textContent += `${item.normalized_text}\n\n`;
+    s.normalizedSegments.push(item.normalized_text);
+    $("normalized").textContent = compactNormalizedText(s.normalizedSegments);
+    $("normalized-segments").textContent += `[${segment.id}]\n${item.normalized_text}\n\n`;
     for (const correction of item?.corrections || []) {
       const visible = value => !value || /^\s*$/.test(value) ? JSON.stringify(value) : value;
       $("corrections").textContent += `${visible(correction.source)} → ${visible(correction.replacement)}\nconfidence: ${correction.confidence.toFixed(3)}\nrule: ${correction.rule}\nsegment: ${segment.id}\n\n`;
@@ -23,6 +25,53 @@ function renderSegmentation(s, result, normalization) {
   }
   for (const event of result.events || []) {
     if (event.type === "late_revision_detected") debug(`late_revision_detected ${JSON.stringify(event)}`);
+  }
+}
+function compactNormalizedText(parts) {
+  let compact = "";
+  for (const part of parts) {
+    const clean = String(part || "").replace(/\s+/g, " ").trim();
+    if (!clean) continue;
+    const separator = compact && !/^[,.;:!?]/.test(clean) ? " " : "";
+    compact += separator + clean;
+  }
+  return compact;
+}
+function translationStatus(status, queueDepth) {
+  const state = status?.state || "unknown";
+  const provider = status?.provider ? ` (${status.provider})` : "";
+  $("translator").textContent = `${state[0].toUpperCase()}${state.slice(1)}${provider}`;
+  $("translation-status").textContent = [
+    `provider: ${status?.provider || "none"}`,
+    `status: ${state}`,
+    `queue depth: ${queueDepth ?? 0}`,
+    status?.message ? `detail: ${status.message}` : "",
+  ].filter(Boolean).join("\n");
+}
+function renderTranslation(s, data) {
+  if (data.session_id !== s.sessionId) {
+    debug(`translation discarded for stale session ${data.session_id}`);
+    return;
+  }
+  const result = data.translation;
+  s.translationResults.set(result.sequence, result);
+  while (s.translationResults.has(s.nextTranslationSequence)) {
+    const ready = s.translationResults.get(s.nextTranslationSequence);
+    s.translationResults.delete(s.nextTranslationSequence++);
+    if (ready.success) {
+      s.translatedSegments.push(ready.translated_text);
+      $("english").textContent = compactNormalizedText(s.translatedSegments);
+    }
+    $("translation-status").textContent = [
+      `provider: ${ready.provider}`,
+      `status: ${ready.success ? "completed" : "error"}`,
+      `segment: ${ready.segment_id} (#${ready.sequence})`,
+      `translation latency: ${Math.round(ready.latency_ms)} ms`,
+      `queue delay: ${Math.round(ready.queue_delay_ms)} ms`,
+      `queue depth: ${data.translation_queue_depth}`,
+      `attempts: ${ready.attempt_count}`,
+      ready.error ? `error: ${ready.error}` : "",
+    ].filter(Boolean).join("\n");
   }
 }
 function debug(message) {
@@ -113,11 +162,14 @@ async function capture(s) {
 }
 $("refresh").onclick = () => microphones(true).catch(error => { $("error").textContent = error.message; });
 $("start").onclick = async () => {
-  const s = {readyIds: new Set()};
+  const s = {readyIds: new Set(), normalizedSegments: [], translatedSegments: [],
+    translationResults: new Map(), nextTranslationSequence: 1, sessionId: null};
   active = s;
   controls(true);
   $("error").textContent = "";
-  for (const id of ["partial", "confirmed", "segments", "pending", "ready", "normalized", "corrections"]) $(id).textContent = "";
+  for (const id of ["partial", "confirmed", "segments", "pending", "ready", "normalized", "normalized-segments", "english", "corrections"]) $(id).textContent = "";
+  $("translator").textContent = "Connecting";
+  $("translation-status").textContent = "Waiting for configuration";
   $("connection").textContent = "Connecting";
   try {
     // Create/resume in the click gesture, before waiting for WLK.
@@ -132,15 +184,22 @@ $("start").onclick = async () => {
       if (active !== s) return;
       try {
         const data = JSON.parse(event.data);
+        if (data.session_id && !s.sessionId) s.sessionId = data.session_id;
         debug(`${data.type} ${data.state || data.payload?.type || data.payload?.status || ""}`);
         if (data.type === "config") {
           if (data.capabilities?.terminology_normalizer !== 1) {
             throw new Error("Backend anterior a Milestone 3.1. Reinicia FastAPI y recarga esta página.");
           }
+          if (data.capabilities?.translation_engine !== 1) {
+            throw new Error("Backend anterior a Milestone 4. Reinicia FastAPI y recarga esta página.");
+          }
+          s.translationStatus = data.translation_status;
+          translationStatus(s.translationStatus, 0);
           clearTimeout(s.timer);
           $("connection").textContent = "Connected";
           await capture(s);
         } else if (data.type === "asr") {
+          if (s.translationStatus) translationStatus(s.translationStatus, data.translation_queue_depth);
           $("partial").textContent = data.transcript.partial_text;
           $("confirmed").textContent = data.transcript.confirmed_text;
           $("segments").textContent = JSON.stringify(data.transcript.segments, null, 2);
@@ -149,7 +208,10 @@ $("start").onclick = async () => {
             debug(`PARTIAL raw=${JSON.stringify(data.payload.buffer_transcription)} state=${JSON.stringify(data.transcript.partial_text)} DOM=${JSON.stringify($("partial").textContent)}`);
           }
         } else if (data.type === "segmentation") {
+          if (s.translationStatus) translationStatus(s.translationStatus, data.translation_queue_depth);
           renderSegmentation(s, data.segmentation, data.normalization);
+        } else if (data.type === "translation") {
+          renderTranslation(s, data);
         } else if (data.type === "error") throw new Error(data.message);
         else if (data.state === "stopped") {
           s.finished = true;

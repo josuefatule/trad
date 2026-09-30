@@ -46,4 +46,20 @@ ampliar el glosario de conferencia.
 - [x] Replay del texto real, tests positivos/negativos y límites documentados.
 - [ ] Repetir una sesión Blue Yeti después de reiniciar FastAPI.
 
-No iniciar Milestone 4 ni traducción.
+## Milestone 4 — implementación estructural completada
+
+- [x] `TranslationRequest`/`TranslationResult` inmutables y provider-agnostic.
+- [x] `TranslatorProvider`, mock determinístico y adaptador DeepL configurable.
+- [x] Contexto NORMALIZED de 0–2+ segmentos sin reemitirlo.
+- [x] Cola secuencial acotada, orden estricto y métricas de depth/delay.
+- [x] Timeouts, retries limitados y continuidad después de fallos.
+- [x] Reset por sesión y descarte explícito de resultados stale.
+- [x] Handshake `translation_engine=1`, estado y provider visibles.
+- [x] Operator con RAW ES, NORMALIZED ES y ENGLISH simultáneos.
+- [x] Replay con contexto, traducción y resumen de latencias.
+- [x] Referencia inglesa humana separada y fuera del provider.
+- [x] Tests unitarios y de integración sin red ni credenciales.
+- [ ] Validación con voz real y un provider real configurado.
+
+No iniciar Milestone 5. El mock es infraestructura de desarrollo y siempre se
+identifica como tal; activar DeepL requiere credenciales externas.

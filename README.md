@@ -1,4 +1,4 @@
-# Live Captions local — Milestone 3: Terminology Normalizer
+# Live Captions local — Milestone 4: Translation Engine ES → EN
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.
@@ -8,10 +8,10 @@ SimulStreaming predeterminada e idioma `es`. PARTIAL permanece vacío por esa
 limitación; no se fabrica texto parcial. Evidencia y pruebas en
 [PARTIAL_INVESTIGATION.md](PARTIAL_INVESTIGATION.md).
 
-El flujo actual es ASR CONFIRMED → SEGMENT PENDING → RAW ES → NORMALIZED ES.
-Milestone 3 conserva cada READY original y produce una vista normalizada separada,
-con correcciones y sugerencias auditables. No implementa traducción. La validación
-final de voz del Segment Manager y del normalizador queda al usuario.
+El flujo actual es ASR CONFIRMED → SEGMENT PENDING → RAW ES → NORMALIZED ES →
+TranslationEngine → ENGLISH. RAW y NORMALIZED permanecen inmutables. La traducción
+se ejecuta en una cola secuencial independiente y está deshabilitada por defecto;
+el operador nunca presenta el español como si fuera inglés.
 
 ## Arranque (PowerShell)
 
@@ -88,7 +88,7 @@ Variables opcionales antes de arrancar nuestra app:
 | `SEGMENT_SOFT_MAX_AGE_SECONDS` | `3.3` segundos; requiere un `safe_cut` estable |
 | `SEGMENT_HARD_MAX_AGE_SECONDS` | `5.5` segundos; garantiza progreso |
 | `SEGMENT_TICK_SECONDS` | `0.1` segundos entre evaluaciones |
-| `NORMALIZER_AUTO_THRESHOLD` | `0.96`; debe superar el umbral de sugerencia |
+| `NORMALIZER_AUTO_THRESHOLD` | `0.90`; debe superar el umbral de sugerencia |
 | `NORMALIZER_SUGGEST_THRESHOLD` | `0.86` |
 | `NORMALIZER_MAX_TOKEN_DELTA` | `1` palabra de diferencia para candidatos fuzzy |
 | `NORMALIZER_CONTEXT_WORDS` | `8` palabras recientes para sugerencias entre segmentos |
@@ -96,6 +96,16 @@ Variables opcionales antes de arrancar nuestra app:
 | `NORMALIZER_COLLAPSED_MAX_EDITS` | `1`; distancia máxima fuerte tras unir dos tokens ASR |
 | `NORMALIZER_MEDICAL_GLOSSARY` | `glossaries/medical_base.json` |
 | `NORMALIZER_CONFERENCE_GLOSSARY` | `glossaries/conference.json` |
+| `TRANSLATION_ENABLED` | `0`; ASR y normalización siguen funcionando |
+| `TRANSLATION_PROVIDER` | vacío; valores implementados: `mock`, `deepl` |
+| `TRANSLATION_SOURCE_LANGUAGE` | `es` |
+| `TRANSLATION_TARGET_LANGUAGE` | `en` |
+| `TRANSLATION_CONTEXT_SEGMENTS` | `2` segmentos NORMALIZED anteriores |
+| `TRANSLATION_TIMEOUT_SECONDS` | `8` por intento |
+| `TRANSLATION_RETRIES` | `1` retry máximo |
+| `TRANSLATION_QUEUE_MAXSIZE` | `32`; desborde visible como error de segmento |
+| `DEEPL_AUTH_KEY` | vacío; requerido cuando provider=`deepl` |
+| `DEEPL_API_URL` | `https://api-free.deepl.com/v2/translate` |
 
 Valores de desarrollo, leídos al arrancar. Ejemplo para comparar configuraciones:
 
@@ -103,6 +113,20 @@ Valores de desarrollo, leídos al arrancar. Ejemplo para comparar configuracione
 $env:SEGMENT_HARD_MAX_AGE_SECONDS = "8"
 .\.venv\Scripts\python.exe replay_fixture.py benchmarks/medical_real_snapshots.json
 ```
+
+Para probar M4 sin credenciales, usar el mock explícito. Su salida empieza por
+`[MOCK EN]` y no representa una traducción real:
+
+```powershell
+$env:TRANSLATION_ENABLED = "1"
+$env:TRANSLATION_PROVIDER = "mock"
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8010
+```
+
+Para DeepL, definir además `DEEPL_AUTH_KEY`. El adaptador envía únicamente el
+segmento actual en `text`; los segmentos anteriores viajan en `context`, que DeepL
+usa como contexto sin traducirlo. `.env` sigue ignorado por Git y la aplicación no
+lo carga automáticamente.
 
 Reiniciar FastAPI para aplicar variables a la UI. `safe_cut` busca hacia atrás y
 prioriza puntuación fuerte, punto y coma, coma, límite de línea WLK y whitespace.
@@ -129,7 +153,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**84 pruebas pasaron**: parcial, confirmación, líneas crecientes, frases consecutivas,
+**100 pruebas pasan**: parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
 timeout y desconexión. Usan unittest, websockets y el httpx ya instalado para
@@ -141,15 +165,16 @@ cortes, métricas, normalización exacta/fuzzy, negativos, solapamientos, contex
 segmentos y transporte FastAPI contra WLK simulado. La prueba adicional del operador
 con DOM simulado es `node tests/test_operator_partial.cjs`, si Node está disponible.
 
-Replay sin servidores, GPU ni micrófono:
+Replay sin servidores, GPU ni micrófono; usa el mock por defecto:
 
 ```powershell
 .\.venv\Scripts\python.exe replay_fixture.py benchmarks/medical_real_snapshots.json
 ```
 
-Imprime PENDING, READY, RAW, NORMALIZED, correcciones/sugerencias, late revisions,
-métricas y un perfil del normalizador. Reproduce virtualmente el tiempo de 61 eventos
-reales capturados en M1. Ver `benchmarks/README.md`.
+Imprime PENDING, READY y, por segmento, RAW ES, NORMALIZED ES, CONTEXT, ENGLISH,
+provider y latencia. Resume éxitos, fallos, retries, timeouts, latencia de traducción
+y demora de cola. `--translation-provider configured` usa las variables de entorno;
+`disabled` prueba el flujo sin traducción. Ver `benchmarks/README.md`.
 
 Prueba opcional contra los dos servidores **ya arrancados**:
 
@@ -173,6 +198,9 @@ en M1; queda a su cargo la validación final de las nuevas reglas de segmentaci�
 - `app/captions/transcript_state.py`: reconstrucción desde snapshots completos.
 - `app/captions/segment_manager.py`: reconciliación, reglas, reloj, datos y métricas.
 - `app/captions/terminology_normalizer.py`: glosarios, matching y auditoría.
+- `app/translation/models.py`: contratos inmutables request/result/context.
+- `app/translation/providers.py`: abstracción, mock determinístico y adaptador DeepL.
+- `app/translation/engine.py`: contexto, cola, ordering, timeout, retries y métricas.
 - `glossaries/medical_base.json`, `conference.json`: términos base y del evento.
 - `app/templates/operator.html`: página de operador.
 - `app/static/operator.js`, `operator.css`: controles, estados y renderizado.

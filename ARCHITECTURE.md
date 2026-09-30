@@ -320,7 +320,7 @@ espacios son equivalentes dentro de una expresión, sin absorber puntuación vec
 Las coincidencias exactas conocidas tienen confianza 1. El fuzzy usa similitud de la
 frase espaciada y compacta, más una penalización por diferencia de tokens. Se evalúa
 para frases y para el caso restringido de un canónico técnico unido desde dos tokens;
-una palabra ASR aislada nunca se corrige por distancia. `auto_threshold=0.96` y
+una palabra ASR aislada nunca se corrige por distancia. `auto_threshold=0.90` y
 `suggest_threshold=0.86`; el primero debe ser mayor. Una coincidencia fuzzy intermedia
 queda como sugerencia y no cambia el texto.
 
@@ -365,7 +365,7 @@ memoria hasta reiniciar el servidor.
 
 La UI agrega RAW y NORMALIZED por el mismo ID y muestra la auditoría. El replay usa
 la ruta de producción y conserva las métricas de segmentación. Sobre los 16 READY del
-fixture médico tras Milestone 3.1: 2 correcciones, 2 sugerencias, 14 segmentos sin
+fixture médico con la configuración local actual: 3 correcciones, 1 sugerencia y 13 segmentos sin
 cambios y ninguna corrección falsa conocida. `Suficio` queda como sugerencia y
 `pertenecios` permanece intacto; en particular no existe una regla que convierta
 este último en `hipertensos`. Las pruebas negativas fijan `renal ≠ renina`, `arterial ≠ arteria`,
@@ -396,3 +396,75 @@ Después de las sustituciones terminológicas se aplican ediciones de espaciado 
 en offsets RAW: colapsar whitespace, retirarlo antes de puntuación y añadirlo después
 de `,;:!?` si sigue una letra. Estas ediciones tienen regla `deterministic_spacing`,
 confianza 1 y `canonical=null`. No se añaden signos ni reglas gramaticales.
+
+## Milestone 4: Translation Engine ES → EN
+
+La traducción consume exclusivamente `NormalizedSegment` correspondientes a READY:
+
+```text
+CaptionSegment RAW (inmutable) + NormalizedSegment (inmutable)
+    → TranslationRequest + hasta N context_segments NORMALIZED
+    → queue acotada → TranslatorProvider.translate()
+    → TranslationResult → mensaje WebSocket translation → ENGLISH
+```
+
+`TranslationRequest` conserva `session_id`, `segment_id`, `sequence`, RAW,
+NORMALIZED, idiomas, contexto y tiempos disponibles. `TranslationResult` añade
+texto traducido, provider, éxito/error, intentos, timestamps, latencia del provider
+y demora en cola. El traductor nunca escribe sobre RAW ni NORMALIZED.
+
+### Contexto y providers
+
+La ventana predeterminada contiene los dos NORMALIZED inmediatamente anteriores.
+El segmento actual nunca forma parte de su propio contexto. El provider recibe el
+contexto como dato separado y debe devolver solamente la traducción del segmento
+actual. El mock cumple este contrato de forma determinística y etiqueta toda salida
+con `[MOCK EN]`.
+
+`TranslatorProvider` es abstracto. El adaptador real preparado es DeepL, aislado en
+`providers.py`; usa `/v2/translate`, coloca el segmento actual en `text` y concatena
+la ventana previa en el parámetro `context`. No hay credenciales en el repositorio.
+Provider ausente o incompleto produce estados `disabled` o `misconfigured`; ninguna
+salida española se copia a ENGLISH.
+
+### Ordering, backpressure y fallos
+
+Cada sesión crea un engine y un único worker. `submit()` solo valida y hace
+`put_nowait`, por lo que recepción WLK, audio, SegmentManager y normalización no
+esperan la red del provider. El worker procesa secuencialmente y un buffer de
+resultados publica únicamente la siguiente `sequence`; un error ocupa su posición
+y no bloquea segmentos posteriores.
+
+La cola tiene tamaño máximo configurable. Se registran `translation_queue_depth`,
+máximo observado y `translation_queue_delay_ms`. Un desborde genera un resultado
+fallido `translation_queue_full` en su orden, sin espera infinita. Cada intento tiene
+timeout y el número de retries es finito. Se registran `translation_queued`,
+`translation_started`, `translation_completed`, `translation_timeout`,
+`translation_retry`, `translation_failed`, `translation_discarded_stale_session` y
+`translation_engine_reset` con sesión y segmento cuando corresponde.
+
+START crea otra sesión, contexto, cola, secuencia y estado DOM. El engine también
+expone `reset(session_id)`: incrementa una generación y cancela el worker anterior.
+Cualquier finalización tardía cuyo `session_id` o generación ya no coincide se
+descarta antes del callback.
+
+### Protocolo y tiempos
+
+El handshake declara `capabilities.translation_engine=1`,
+`capabilities.translation_provider` y `translation_status`. Cada resultado viaja en
+un mensaje `type=translation` separado con su snapshot de métricas. El navegador
+valida `session_id`, vuelve a ordenar por sequence como segunda defensa y avanza aun
+si una secuencia falló.
+
+Se propagan `first_seen_at` y `emitted_at` de SegmentManager, el tiempo de proceso del
+normalizador, y timestamps wall-clock de queued/started/completed. Queue delay y
+translation latency sí son medidas directas. Todavía no existe un reloj absoluto
+común entre el primer audio, WLK y todos los stages; por eso no se publica como exacta
+la métrica speech onset → English. `first_seen_at → READY` tampoco incluye captura →
+primera hipótesis ASR. Unificar ese reloj queda para instrumentación futura.
+
+El replay usa el engine de producción, mock por defecto, y no lee
+`benchmarks/medical_reference_en.txt`. Esa referencia humana está separada y sirve
+solo para evaluación posterior. Como el replay comprime 58,3 segundos de eventos en
+tiempo de CPU, su queue delay mide esa ejecución acelerada y no predice la cola de
+una sesión en vivo.

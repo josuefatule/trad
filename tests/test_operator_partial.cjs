@@ -64,18 +64,49 @@ module.exports = (async () => {
   }]};
   await sockets[0].onmessage({data: JSON.stringify({type: 'segmentation', segmentation, normalization})});
   await sockets[0].onmessage({data: JSON.stringify({type: 'segmentation', segmentation, normalization})});
-  assert.equal(element('pending').textContent, 'Siguiente');
+  const nextReady = {id: 's:2', text: 'Segundo segmento.', start_time: 5.8, end_time: 8.1,
+    reason: 'soft_max_age', word_count: 2, latency_ms: 3200};
+  await sockets[0].onmessage({data: JSON.stringify({
+    type: 'segmentation',
+    segmentation: {pending_segment: '', ready_segments: [ready, nextReady], events: []},
+    normalization: {segments: [normalization.segments[0], {
+      segment_id: 's:2', raw_text: nextReady.text, normalized_text: '  Segundo   segmento.  ',
+      corrections: [], suggestions: [],
+    }]},
+  })});
+  assert.equal(element('pending').textContent, '');
   assert.equal(element('ready').textContent.split('Lista en español.').length - 1, 1);
   assert.match(element('ready').textContent, /00:02.58/);
-  assert.equal(element('normalized').textContent.split('Texto normalizado.').length - 1, 1);
+  assert.equal(element('normalized').textContent, 'Texto normalizado. Segundo segmento.');
+  assert.doesNotMatch(element('normalized').textContent, /\n/);
+  assert.match(element('normalized-segments').textContent, /\[s:1\]\nTexto normalizado\./);
+  assert.match(element('normalized-segments').textContent, /\[s:2\]\n  Segundo   segmento\./);
+  const translationState = {sessionId: 'current', translationResults: new Map(),
+    nextTranslationSequence: 1, translatedSegments: []};
+  context.renderTranslation(translationState, {
+    session_id: 'current', translation_queue_depth: 0,
+    translation: {sequence: 1, segment_id: 's:1', success: true,
+      translated_text: 'Normalized text.', provider: 'mock', latency_ms: 4,
+      queue_delay_ms: 2, attempt_count: 1, error: null},
+  });
+  context.renderTranslation(translationState, {
+    session_id: 'old', translation_queue_depth: 0,
+    translation: {sequence: 2, segment_id: 'old:2', success: true,
+      translated_text: 'STALE', provider: 'mock', latency_ms: 1,
+      queue_delay_ms: 0, attempt_count: 1, error: null},
+  });
+  assert.equal(element('english').textContent, 'Normalized text.');
+  assert.doesNotMatch(element('english').textContent, /STALE/);
   assert.equal(element('corrections').textContent.split('Lista').length - 1, 1);
   assert.match(element('corrections').textContent, /SUGGESTION/);
   await element('start').onclick();
   assert.equal(element('pending').textContent, '');
   assert.equal(element('ready').textContent, '');
   assert.equal(element('normalized').textContent, '');
+  assert.equal(element('normalized-segments').textContent, '');
+  assert.equal(element('english').textContent, '');
   assert.equal(element('corrections').textContent, '');
   assert.throws(() => context.renderSegmentation(
     {readyIds: new Set()}, segmentation, {segments: []}), /Reinicia FastAPI/);
-  console.log('PASS: operator.js renders partial, RAW, NORMALIZED and audit data without duplicates');
+  console.log('PASS: operator.js renders normalized and ordered English without stale-session leakage');
 })();

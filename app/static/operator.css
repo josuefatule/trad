@@ -3,4 +3,19 @@ main { max-width: 1000px; margin: auto; }
 button, select { font: inherit; padding: .5rem; margin: .2rem; max-width: 100%; }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; background: white; border: 1px solid #bbb; padding: 1rem; min-height: 3rem; }
 #partial { color: #725200; } #error { color: #a00000; font-weight: bold; }
-#debug, #segments { max-height: 20rem; overflow: auto; font-size: .85rem; }
+#debug, #segments, #normalized-segments { max-height: 20rem; overflow: auto; font-size: .85rem; }
+.normalized-flow, .translated-flow {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  background: white;
+  border: 1px solid #bbb;
+  padding: .65rem .8rem;
+  min-height: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.translation-status { min-height: 0; padding: .55rem .8rem; font-size: .82rem; line-height: 1.3; }
+.normalized-debug { margin: .45rem 0 1rem; }
+.normalized-debug summary { cursor: pointer; font-size: .9rem; }
+#normalized-segments { padding: .65rem .8rem; line-height: 1.3; }

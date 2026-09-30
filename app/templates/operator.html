@@ -5,6 +5,7 @@
 <body><main>
 <h1>LIVE CAPTIONS — DEVELOPMENT</h1>
 <p>WhisperLiveKit: <strong id="connection">Disconnected</strong></p>
+<p>Translator: <strong id="translator">Unknown</strong></p>
 <p id="error" role="alert"></p>
 <label for="microphone">Microphone:</label> <select id="microphone"><option value="">Predeterminado</option></select>
 <button id="refresh">Permitir / actualizar micrófonos</button>
@@ -15,7 +16,12 @@
 <p>Confirmado por ASR; la última línea puede seguir creciendo. STOP espera el resultado final.</p>
 <h2>SEGMENT PENDING</h2><pre id="pending" aria-live="polite"></pre>
 <h2>RAW ES</h2><pre id="ready"></pre>
-<h2>NORMALIZED ES</h2><pre id="normalized"></pre>
+<h2>NORMALIZED ES</h2><div id="normalized" class="normalized-flow" aria-live="polite"></div>
+<details class="normalized-debug">
+<summary>NORMALIZED SEGMENTS</summary><pre id="normalized-segments"></pre>
+</details>
+<h2>ENGLISH</h2><div id="english" class="translated-flow" aria-live="polite"></div>
+<pre id="translation-status" class="translation-status">Waiting for configuration</pre>
 <h2>CORRECTIONS / SUGGESTIONS</h2><pre id="corrections"></pre>
 <p>Segmentos estables en español y su normalización auditable, sin traducción. Los tiempos son límites de las líneas ASR de origen;
 los segmentos cortados dentro de una línea pueden compartir intervalos.</p>

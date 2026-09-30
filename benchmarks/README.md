@@ -92,11 +92,22 @@ invariantes del algoritmo, no contra la ortografía del texto médico de referen
 
 ## Normalización
 
-El resultado reproducible actualizado está en `NORMALIZER_REPORT.md`: 2 correcciones,
-2 sugerencias, 0 falsos positivos observados y RAW 81/81.
+El resultado histórico de Milestone 3.1 está en `NORMALIZER_REPORT.md`. Con la
+configuración local actual el replay produce 3 correcciones, 1 sugerencia y RAW 81/81.
 El normalizador no modifica los READY ni las métricas de segmentación anteriores.
 
 La validación posterior con la sesión real `c73206fa7334`, la causa del backend
 obsoleto y la comparación completa antes/después están en
 `MILESTONE_3_1_REPORT.md`. El RAW suministrado se conserva en
 `medical_m3_1_observed.txt`.
+
+## Traducción Milestone 4
+
+`medical_reference_en.txt` es una referencia humana separada para evaluación. Nunca
+entra al provider, al contexto ni a la generación de resultados.
+
+El replay usa `MockTranslatorProvider` por defecto y muestra explícitamente
+`[MOCK EN]`. `--translation-provider configured` usa `TRANSLATION_*`; `disabled`
+conserva el benchmark sin traducción. El resumen incluye éxitos/fallos, retries,
+timeouts, latencia y demora de cola. Esta demora corresponde al replay acelerado,
+no a los 58,3 segundos reales del fixture.
