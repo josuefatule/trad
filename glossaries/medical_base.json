@@ -26,6 +26,14 @@
       "auto_apply": "fuzzy"
     },
     {
+      "canonical": "betabloqueadores",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "mineralocorticoides",
+      "auto_apply": "fuzzy"
+    },
+    {
       "canonical": "aldosterona",
       "auto_apply": "fuzzy"
     },
@@ -68,10 +76,14 @@
       "canonical": "antagonistas de los receptores de angiotensina II",
       "aliases": ["ARA II"],
       "auto_apply": "fuzzy",
-      "suggest_threshold": 0.9
+      "suggest_threshold": 0.85
     },
     {
-      "canonical": "ecocardiografía transtorácica",
+      "canonical": "transtorácica",
+      "auto_apply": "fuzzy"
+    },
+    {
+      "canonical": "estratificación",
       "auto_apply": "fuzzy"
     },
     {

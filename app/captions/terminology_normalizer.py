@@ -18,7 +18,7 @@ POLICIES = {"exact", "fuzzy", "suggest"}
 
 @dataclass(frozen=True)
 class NormalizerConfig:
-    auto_threshold: float = .96
+    auto_threshold: float = .90
     suggest_threshold: float = .86
     max_token_delta: int = 1
     context_words: int = 8

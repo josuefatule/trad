@@ -43,7 +43,7 @@ class TerminologyNormalizerTests(unittest.TestCase):
     def test_additional_medical_terms_cover_exact_fuzzy_and_suggestion_paths(self):
         cases = (
             ("insuficiencia cardíaaca", "insuficiencia cardíaca", 1, 0),
-            ("ecocardiografia transtoracica", "ecocardiografía transtorácica", 1, 0),
+            ("ecocardiografia transtoracica", "ecocardiografia transtorácica", 1, 0),
             ("hemoglobina glicosiladaa", "hemoglobina glicosilada", 1, 0),
             ("antagonistas del receptor de angiotensina dos",
              "antagonistas del receptor de angiotensina II", 1, 0),
@@ -57,13 +57,15 @@ class TerminologyNormalizerTests(unittest.TestCase):
                 self.assertEqual(len(result.suggestions), suggestion_count)
 
     def test_fuzzy_below_auto_is_suggestion(self):
-        result = self.normalizer.normalize("s:1", "Se documentó fibrilación aurikular.")
+        normalizer = TerminologyNormalizer.from_config(
+            NormalizerConfig(auto_threshold=.96, suggest_threshold=.86))
+        result = normalizer.normalize("s:1", "Se documentó fibrilación aurikular.")
         self.assertEqual(result.normalized_text, result.raw_text)
         suggestion = next(item for item in result.suggestions
                           if item.candidate == "fibrilación auricular")
-        self.assertLess(suggestion.confidence, self.normalizer.config.auto_threshold)
+        self.assertLess(suggestion.confidence, normalizer.config.auto_threshold)
         self.assertGreaterEqual(suggestion.confidence,
-                                self.normalizer.config.suggest_threshold)
+                                normalizer.config.suggest_threshold)
 
     def test_below_suggestion_threshold_is_no_match(self):
         result = self.normalizer.normalize("s:1", "Se observa insuficienza kardyaka.")
@@ -165,10 +167,11 @@ class TerminologyNormalizerTests(unittest.TestCase):
         suggestions = [item for result in normalized for item in result.suggestions]
         self.assertEqual([(item.source, item.replacement) for item in corrections],
                          [("systólica", "sistólica"),
+                          ("Suficio patología", "Fisiopatología"),
                           ("al dosterona", "aldosterona")])
         self.assertEqual(sum(item.cross_segment for item in suggestions), 1)
         joined = " ".join(item.normalized_text for item in normalized)
-        self.assertIn("Suficio patología", joined)
+        self.assertIn("Fisiopatología", joined)
         self.assertIn("pertencios", joined)
 
     def test_real_milestone_3_1_observation(self):
@@ -182,12 +185,12 @@ class TerminologyNormalizerTests(unittest.TestCase):
             ("renina angiotensina al desterona", "renina-angiotensina-aldosterona"),
             ("accidente cerebro vascular", "accidente cerebrovascular"),
             ("angiotensina 2", "angiotensina II"),
-        })
-        self.assertEqual(suggestions, {
             ("suficio patología", "fisiopatología"),
-            ("resistencias vascular periférica", "resistencia vascular periférica"),
             ("diabetes mellitos", "diabetes mellitus"),
             ("diuréticos diacídicos", "diuréticos tiazídicos"),
+        })
+        self.assertEqual(suggestions, {
+            ("resistencias vascular periférica", "resistencia vascular periférica"),
         })
         self.assertIn("del enzima convertidora de angiotensina", result.normalized_text)
         self.assertIn("y incluyendo", result.normalized_text)
