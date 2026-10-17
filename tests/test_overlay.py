@@ -125,17 +125,45 @@ class OverlayRoutesTests(unittest.TestCase):
             page = client.get("/overlay")
             self.assertEqual(page.status_code, 200)
             self.assertIn("caption_renderer.js", page.text)
+            self.assertIn("overlay_geometry.js", page.text)
+            self.assertIn('id="overlay-canvas"', page.text)
             self.assertNotIn("operator.js", page.text)
             css = client.get("/static/overlay.css").text
             self.assertIn("html, body", css)
             self.assertIn("background: transparent !important", css)
             self.assertNotIn("line-clamp", css)
             self.assertIn("DEMO", client.get("/overlay/preview").text)
+            self.assertIn('id="preview-viewport"', client.get("/overlay/preview").text)
             self.assertEqual(client.get("/api/overlay/config?max_lines=1&position=top").json()["position"], "top")
             for query in ("position=javascript:alert(1)", "font_size=9999", "css=body{}",
                           "background_opacity=NaN", "min_display_ms=9000&max_display_ms=1000"):
                 self.assertEqual(client.get("/api/overlay/config?" + query).status_code, 400)
             self.assertNotIn("key", json.dumps(client.get("/api/overlay/config").json()).lower())
+
+    def test_caption_region_bounds_and_line_capacity_validation(self):
+        with TestClient(self.app) as client:
+            config = client.get("/api/overlay/config").json()
+            self.assertEqual((config["canvas_width"], config["canvas_height"]), (1920, 1080))
+            self.assertEqual((config["region_y"], config["region_height"]), (930, 150))
+            self.assertEqual(config["background_opacity"], 0)
+            self.assertEqual(config["mode"], "persistent_rolling")
+            for query in ("region_y=931", "region_x=1", "region_width=1921",
+                          "canvas_height=1000", "region_height=-1", "region_y=NaN",
+                          "region_height=60", "padding_y=60", "padding_x=1",
+                          "line_height=NaN", "line_height=0.5", "region_width=80&padding_x=32"):
+                with self.subTest(query=query):
+                    self.assertEqual(client.get("/api/overlay/config?" + query).status_code, 400)
+            # Requesting three lines is allowed; frontend reports two fit at 48px.
+            self.assertEqual(client.get("/api/overlay/config?max_lines=3").status_code, 200)
+            self.assertEqual(client.get("/api/overlay/config?font_size=36").status_code, 200)
+            self.assertEqual(client.get("/api/overlay/config?region_y=900&region_height=180").status_code, 200)
+
+    def test_region_settings_from_environment(self):
+        with patch.dict("os.environ", {"CAPTION_REGION_Y": "900", "CAPTION_REGION_HEIGHT": "180",
+                                       "CAPTION_PADDING_Y": "10", "CAPTION_LINE_HEIGHT": "1.25"}):
+            config = CaptionConfig.from_env()
+        self.assertEqual((config.region_y, config.region_height, config.padding_y), (900, 180, 10))
+        self.assertEqual(config.line_height, 1.25)
 
     def test_subscription_never_connects_wlk_and_reconnect_snapshot_is_current(self):
         with patch("app.asr.whisperlivekit_client.connect") as connect:

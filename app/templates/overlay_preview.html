@@ -1,11 +1,24 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Caption preview — DEMO</title><link rel="stylesheet" href="/static/overlay.css">
-<style>body { background: #345 !important; font: 18px Arial; color: white; }
-header { position: relative; z-index: 1; padding: 24px; pointer-events: auto; } button { padding: 10px; }</style></head>
+<style>
+body { background: #26313d !important; font: 16px Arial; color: white; overflow: auto; pointer-events: auto; }
+header { padding: 12px 20px; } button { padding: 8px; }
+#preview-status, #geometry-status { margin: 8px 0; }
+#geometry-status { color: #ffe0a0; }
+#preview-viewport { position: relative; width: calc(100% - 40px); max-width: 1920px; margin: 0 auto 20px; }
+#overlay-canvas { pointer-events: none; }
+#slide-region { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #f3f5f8;
+  color: #26313d; display: flex; align-items: flex-start; justify-content: center; padding-top: 180px; box-sizing: border-box; font-size: 50px; }
+#preview-band { position: absolute; background: #1256a0; }
+#caption-stage { outline: 2px dashed #96ccff; outline-offset: -2px; }
+</style></head>
 <body><header><strong>DEMO — LOCAL FIXTURES, NO TRANSLATION OR MICROPHONE</strong>
 <p><button id="play">Play demo</button> <button id="stop">STOP demo</button>
 <button id="reset">Reset session</button></p>
-<p id="preview-status"></p></header>
-<div id="caption-stage"><div id="caption" hidden></div></div>
-<script src="/static/caption_renderer.js"></script><script src="/static/overlay_preview.js"></script></body></html>
+<p id="geometry-status" role="status"></p><p id="preview-status"></p></header>
+<div id="preview-viewport"><div id="overlay-canvas">
+<div id="slide-region">PowerPoint / slide area — preview only</div><div id="preview-band"></div>
+<div id="caption-stage"><div id="caption" hidden></div></div></div></div>
+<script src="/static/overlay_geometry.js"></script><script src="/static/caption_renderer.js"></script>
+<script src="/static/overlay_preview.js"></script></body></html>

@@ -10,9 +10,18 @@ class CaptionConfig:
     stop_clear_ms: int = 8000
     font_size: int = 48
     max_width: int = 1500
-    position: str = "bottom"
+    canvas_width: int = 1920
+    canvas_height: int = 1080
+    region_x: int = 0
+    region_y: int = 930
+    region_width: int = 1920
+    region_height: int = 150
+    padding_x: int = 32
+    padding_y: int = 8
+    line_height: float = 1.2
+    position: str = "center"
     bottom_offset: int = 70
-    background_opacity: float = .72
+    background_opacity: float = 0.
     min_display_ms: int = 1800
     max_display_ms: int = 6500
     reading_wps: float = 3.
@@ -24,7 +33,12 @@ class CaptionConfig:
                   "max_width": (240, 3840), "bottom_offset": (0, 1000),
                   "background_opacity": (0, 1), "min_display_ms": (300, 10000),
                   "max_display_ms": (500, 30000), "reading_wps": (1, 8),
-                  "visual_queue_max": (1, 256), "max_backlog_ms": (1000, 120000)}
+                  "visual_queue_max": (1, 256), "max_backlog_ms": (1000, 120000),
+                  "canvas_width": (240, 7680), "canvas_height": (150, 4320),
+                  "region_x": (0, 7680), "region_y": (0, 4320),
+                  "region_width": (80, 7680), "region_height": (40, 4320),
+                  "padding_x": (8, 200), "padding_y": (8, 200),
+                  "line_height": (1.1, 1.6)}
         for name, (low, high) in limits.items():
             value = getattr(self, name)
             if not math.isfinite(value) or not low <= value <= high:
@@ -35,6 +49,13 @@ class CaptionConfig:
             raise ValueError("Invalid caption mode")
         if self.min_display_ms > self.max_display_ms:
             raise ValueError("Caption minimum display time exceeds maximum")
+        if (self.region_x + self.region_width > self.canvas_width or
+                self.region_y + self.region_height > self.canvas_height):
+            raise ValueError("Caption region exceeds canvas")
+        if self.region_width - 2 * self.padding_x < 40:
+            raise ValueError("Caption region has insufficient text width")
+        if self.region_height - 2 * self.padding_y < self.font_size * self.line_height:
+            raise ValueError("Caption region cannot fit one line at configured font size")
 
     @classmethod
     def from_env(cls):

@@ -90,7 +90,7 @@ assert.equal(unreadable.drops[0].reason,'unreadable_token');
 
 // Exercise actual transport and DOM assignments using controlled browser primitives.
 module.exports = (async () => {
-  const elements = new Map(['caption', 'caption-stage'].map(id => [id, {
+  const elements = new Map(['caption', 'caption-stage', 'overlay-canvas'].map(id => [id, {
     textContent: '', hidden:true, style:{}, classList:{add(){},remove(){}},
     set innerHTML(value) { throw new Error('Unsafe HTML assignment'); },
   }]));
@@ -103,12 +103,15 @@ module.exports = (async () => {
   }
   const context = vm.createContext({
     CaptionPresentation: {CaptionRenderer},
+    OverlayGeometry: require('../app/static/overlay_geometry.js'),
     OverlayClock: require('../app/static/overlay_latency.js').OverlayClock,
     performance: {now: () => 0}, requestAnimationFrame: fn => fn(0),
     document: {getElementById: id => elements.get(id), createElement: () => ({
       getContext: () => ({font:'',measureText: text => ({width:measure(text,48)})}),
     })},
-    fetch: async () => ({ok:true,json:async () => ({...config,position:'bottom',bottom_offset:70,background_opacity:.72})}),
+    fetch: async () => ({ok:true,json:async () => ({...config,
+      canvas_width:1920,canvas_height:1080,region_x:0,region_y:930,region_width:1920,region_height:150,
+      padding_x:32,padding_y:8,line_height:1.2,position:'center',background_opacity:0})}),
     location:{protocol:'http:',host:'localhost:8010',search:''}, innerWidth:1920, innerHeight:1080,
     window:{addEventListener(){}}, WebSocket:Socket, console,
     setTimeout: fn => {callbacks.push(fn); return callbacks.length;}, clearTimeout(){},
@@ -127,7 +130,10 @@ module.exports = (async () => {
   assert.equal(elements.get('caption').textContent.replace(/\n/g,' '),literal);
   assert.equal(sockets[0].sent.at(-1).type,'render_sample');
   assert.equal(sockets[0].sent.at(-1).ready_to_visible_estimate_ms,900);
-  assert.equal(elements.get('caption-stage').style.alignItems,'flex-end');
+  assert.equal(elements.get('caption-stage').style.alignItems,'center');
+  assert.equal(elements.get('caption-stage').style.top,'930px');
+  assert.equal(elements.get('caption-stage').style.height,'150px');
+  assert.equal(elements.get('caption').style.backgroundColor,'rgba(0, 0, 0, 0)');
   send({type:'session',event_id:2,session_id:'b',state:'connecting'});
   assert.equal(elements.get('caption').textContent,'');
   send({type:'caption',event_id:3,session_id:'a',caption:caption('STALE',2)});

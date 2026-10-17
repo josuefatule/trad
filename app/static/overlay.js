@@ -1,21 +1,18 @@
 "use strict";
 (async () => {
   const element = document.getElementById("caption"), stage = document.getElementById("caption-stage");
+  const surface = document.getElementById("overlay-canvas");
   let socket = null, stopped = false, retry = 0, renderer;
   let lastEventId = -1;
   let clock = new OverlayClock(), probeTimer = null, renderSerial = 0, pendingPaint = false, coalesced = 0;
   const response = await fetch(`/api/overlay/config${location.search}`);
   if (!response.ok) { console.error("Invalid overlay configuration"); return; }
   const config = await response.json();
-  stage.style.alignItems = {bottom: "flex-end", top: "flex-start", center: "center"}[config.position];
-  element.style.backgroundColor = `rgba(0, 0, 0, ${config.background_opacity})`;
   const canvas = document.createElement("canvas"), context = canvas.getContext("2d");
   const effective = () => {
-    const offset = Math.min(config.bottom_offset, Math.max(0,
-      innerHeight - config.font_size * 1.2 * config.max_lines - 72));
-    stage.style.paddingBottom = config.position === "bottom" ? `${offset}px` : "24px";
-    stage.style.paddingTop = config.position === "top" ? `${offset}px` : "24px";
-    return {...config, max_width: Math.max(40, Math.min(config.max_width, innerWidth - 92))};
+    const result = OverlayGeometry.apply(config, innerWidth, innerHeight, surface, stage, element);
+    if (result.geometry.warning) console.warn("overlay_geometry", result.geometry.warning);
+    return result.config;
   };
   const report = (reason, count) => {
     console.warn("overlay_display_drop", {reason, count});

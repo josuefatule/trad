@@ -19,10 +19,13 @@ DeepL. El operador sigue siendo la única fuente de audio y control.
 Preview local sin voz ni API: **http://localhost:8010/overlay/preview** → Play demo.
 Configuración y pasos completos: [OBS_OVERLAY.md](OBS_OVERLAY.md).
 
-M5.1 usa persistent_rolling: tres líneas (configurable a dos), reflow continuo y
+M5.1 usa persistent_rolling: hasta tres líneas según la altura disponible, reflow continuo y
 actualización inmediata. Las pausas no borran texto; STOP limpia tras 8 s. El modo
 timed_queue anterior sigue disponible. Operator añade latencias por etapa, cola y
 telemetría de Browser Source con mediciones y estimaciones claramente separadas.
+El overlay ocupa únicamente la región Y=930–1080 del canvas 1920 × 1080, con
+fondo transparente y centrado dentro de la franja. A 48 px caben dos líneas;
+el preview muestra el canvas completo y avisa si la altura limita las solicitadas.
 
 ## Arranque (PowerShell)
 
@@ -174,7 +177,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**121 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
+**125 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
 parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
@@ -189,6 +192,8 @@ con DOM simulado es `node tests/test_operator_partial.cjs`, si Node está dispon
 El renderer y transporte del overlay se prueban con `node tests/test_overlay_renderer.cjs`.
 M5.1: `node tests/test_persistent_captions.cjs`; comparación reproducible en
 `benchmarks/renderer_arrivals.py` y `benchmarks/renderer_policy.cjs`.
+Geometría y wrapping de la franja: `node tests/test_overlay_geometry.cjs`.
+La suite Python incluye geometría real con Chrome/Edge headless si está instalado.
 Para ejecutar toda la suite sin usar DeepL real aunque `.env` esté configurado:
 
 ```powershell

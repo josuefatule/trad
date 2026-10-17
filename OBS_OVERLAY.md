@@ -4,10 +4,13 @@
 
 Arrancar FastAPI y abrir http://localhost:8010/overlay/preview. Pulsar **Play demo**.
 Debe verse DEMO en la parte superior, frases inglesas, Unicode y un texto largo
-incorporado inmediatamente a las últimas tres líneas. Una pausa no borra el texto.
+incorporado inmediatamente a las últimas líneas que caben en la región. Una pausa no borra el texto.
 STOP demo limpia después de ocho segundos; Reset session limpia inmediatamente.
 El demo no conecta WLK ni usa DeepL, incluso si .env contiene una clave válida.
-El fondo de preview es azul intencionadamente; el overlay público es transparente.
+El preview muestra todo el canvas 1920 × 1080 a escala: diapositiva clara arriba y
+franja azul abajo. La franja y el borde discontinuo son ayudas exclusivas del preview;
+el overlay público es transparente. El aviso de geometría indica las líneas solicitadas
+y las que realmente caben sin reducir la fuente.
 
 ## OBS Studio
 
@@ -16,7 +19,9 @@ El fondo de preview es azul intencionadamente; el overlay público es transparen
 3. Desactivar **Local file / Archivo local**.
 4. URL: **http://localhost:8010/overlay**.
 5. Width/Ancho **1920**, Height/Alto **1080** para composición Full HD.
-6. Colocar esta fuente por encima de diapositivas/video en la lista de fuentes.
+6. Colocar esta fuente por encima de diapositivas/video en la lista de fuentes, con
+   transformación sin recorte y posición (0, 0) sobre el canvas 1920 × 1080.
+   Ajustar PowerPoint a Y=0–930 y la franja azul de OBS a Y=930–1080.
 7. Mantener el CSS transparente predeterminado de OBS; la página también fija
    html/body transparentes y queda completamente invisible sin texto.
 8. Para conservar la cola al cambiar de escena, dejar desactivados **Shutdown source
@@ -36,13 +41,22 @@ Variables opcionales en .env, leídas al arrancar FastAPI:
 | Variable | Inicial | Rango / significado |
 | --- | ---: | --- |
 | CAPTION_MODE | persistent_rolling | persistent_rolling o timed_queue |
-| CAPTION_MAX_LINES | 3 | 1–3 líneas; usar 2 si se prefiere |
+| CAPTION_MAX_LINES | 3 | 1–3 solicitadas; se limita a las que caben por altura |
 | CAPTION_STOP_CLEAR_MS | 8000 | 0–120000 ms después de STOP |
 | CAPTION_FONT_SIZE | 48 | 16–96 px |
-| CAPTION_MAX_WIDTH | 1500 | 240–3840 px; se limita al viewport |
-| CAPTION_POSITION | bottom | bottom, center, top |
-| CAPTION_BOTTOM_OFFSET | 70 | 0–1000 px; también margen superior en top |
-| CAPTION_BACKGROUND_OPACITY | 0.72 | 0–1; 0 elimina fondo |
+| CAPTION_MAX_WIDTH | 1500 | 240–3840 px; limitado al ancho interior de la región |
+| CAPTION_CANVAS_WIDTH | 1920 | 240–7680 px |
+| CAPTION_CANVAS_HEIGHT | 1080 | 150–4320 px |
+| CAPTION_REGION_X | 0 | Coordenada horizontal, 0–7680 px |
+| CAPTION_REGION_Y | 930 | Coordenada vertical, 0–4320 px |
+| CAPTION_REGION_WIDTH | 1920 | 80–7680 px; región completa dentro del canvas |
+| CAPTION_REGION_HEIGHT | 150 | 40–4320 px; debe caber al menos una línea |
+| CAPTION_PADDING_X | 32 | 8–200 px por lado; ancho interior mínimo 40 px |
+| CAPTION_PADDING_Y | 8 | 8–200 px por lado; reserva espacio para sombra |
+| CAPTION_LINE_HEIGHT | 1.2 | 1.1–1.6 veces el tamaño de fuente |
+| CAPTION_POSITION | center | center, bottom, top; alineación **dentro** de la región |
+| CAPTION_BOTTOM_OFFSET | 70 | Compatibilidad con URLs anteriores; no desplaza la nueva región |
+| CAPTION_BACKGROUND_OPACITY | 0 | 0–1; 0 transparente, permite usar el azul de OBS |
 | CAPTION_MIN_DISPLAY_MS | 1800 | Solo timed_queue; 300–10000 ms |
 | CAPTION_MAX_DISPLAY_MS | 6500 | Solo timed_queue; 500–30000 ms; ≥ mínimo |
 | CAPTION_READING_WPS | 3 | Solo timed_queue; 1–8 palabras/s |
@@ -50,14 +64,31 @@ Variables opcionales en .env, leídas al arrancar FastAPI:
 | CAPTION_MAX_BACKLOG_MS | 20000 | Solo timed_queue; 1000–120000 ms |
 
 Excepto visual_queue_max, se pueden sobrescribir por URL usando nombres en minúscula
-sin CAPTION_: mode, max_lines, stop_clear_ms, font_size, max_width, position, bottom_offset,
-background_opacity, min_display_ms, max_display_ms, reading_wps, max_backlog_ms.
+sin CAPTION_, incluidos canvas_width, canvas_height, region_x, region_y, region_width,
+region_height, padding_x, padding_y y line_height.
 Todos se validan con los mismos rangos. Parámetros desconocidos o valores inválidos
 producen 400 al cargar configuración y el overlay queda invisible; detalle en consola.
 
-Ejemplo sin fondo y fuente de 54 px:
+URL explícita para esta composición (también son los valores predeterminados):
 
-http://localhost:8010/overlay?font_size=54&background_opacity=0&bottom_offset=90
+http://localhost:8010/overlay?canvas_width=1920&canvas_height=1080&region_x=0&region_y=930&region_width=1920&region_height=150&position=center&background_opacity=0&mode=persistent_rolling&max_lines=3
+
+Conservar fuente de **48 px** y line-height 1.2 implica 57.6 px por línea. Altura
+interior: 150 − 2×8 = 134 px. Caben **dos líneas** (115.2 px), centradas entre
+Y≈947.4 y Y≈1062.6; tres necesitarían 188.8 px incluyendo padding. No se reduce
+la fuente automáticamente para conseguir tres líneas, ni se ocultan líneas con CSS.
+Para pedir explícitamente dos, añadir `&max_lines=2`. Para elegir conscientemente
+tres líneas en 150 px, una fuente de **36 px** cabe: 3×43.2 + 16 = 145.6 px;
+añadir `&font_size=36&max_lines=3` y revisar legibilidad en el monitor de salida.
+Otra opción es ampliar la franja y actualizar las diapositivas y la región juntas.
+
+El wrapping se mide por palabras en coordenadas del canvas; CSS conserva exactamente
+esos saltos, sin un segundo wrapping del navegador. La capacidad vertical se calcula
+antes de renderizar, igual en OBS y preview. Si no cabe una sola línea o la región
+sale del canvas, se rechaza la configuración con 400. Al cambiar el viewport se
+escala el canvas completo proporcionalmente (con márgenes transparentes si cambia
+su relación de aspecto); no se altera la fuente lógica ni el orden del texto.
+Para OBS usar 1920 × 1080, evitando escalado accidental de la fuente Browser.
 
 El texto blanco con sombra es fijo. No se permite CSS/código arbitrario ni secretos
 en URL. Los límites de lectura son experimentales, no una afinación definitiva.
@@ -75,7 +106,7 @@ Un caption largo puede superar él solo la ventana visible: se conserva su cola 
 registra rolling_overflow por las palabras nuevas que salieron antes de mostrarse.
 El desplazamiento normal de líneas ya visibles se cuenta aparte como rolled-out lines.
 Captions >20.000 caracteres o tokens que exijan fuente <8 px se rechazan explícitamente.
-Resize vuelve a medir las palabras retenidas sin vaciar la ventana. Llegadas en el
+Resize conserva la ventana en el canvas lógico, escalando toda la composición. Llegadas en el
 mismo frame pueden compartir un solo pintado: coalesced DOM updates indica ese caso;
 no garantiza que cada actualización DOM aparezca individualmente en el vídeo de OBS.
 
@@ -129,6 +160,11 @@ Pruebas sin credenciales: `python -m unittest discover -s tests -v` con
 TRANSLATION_ENABLED=0; `node tests/test_overlay_renderer.cjs` y
 `node tests/test_operator_partial.cjs` para DOM y reloj simulado.
 Persistencia/reconexión/reloj: `node tests/test_persistent_captions.cjs`.
+Geometría/capacidad/wrapping: `node tests/test_overlay_geometry.cjs`.
+`tests/test_overlay_browser.py` prueba el DOM real y Canvas en Chromium/Chrome/Edge
+headless con un perfil temporal: límites X/Y, centrado, padding, altura de líneas,
+transparencia, fuente intacta, deduplicación y preview completo visible. Se omite si no existe ese navegador.
+No conecta el micrófono ni usa DeepL; tampoco sustituye la comprobación visual en OBS.
 
 No usar varios workers Uvicorn. El historial acotado solo existe en memoria del proceso.
 Mantener FastAPI escuchando en 127.0.0.1; el producto no añade autenticación remota.
