@@ -129,6 +129,18 @@ Restricción histórica superada por la autorización explícita de M7.
 - [x] Historial/recursos acotados, truncamiento visible y presupuestos de sesión.
 - [x] Logs estructurados sin transcripciones/secretos por defecto, alertas operativas.
 - [x] Fault injection, Chrome con audio falso y prueba de al menos una hora virtual.
-- [ ] Validación M7 con Blue Yeti, DeepL y salida física de OBS siguiendo el runbook.
+- [x] Validación M7 con Blue Yeti, DeepL y salida física OBS: confirmada por usuario en brief M8.
 
-No iniciar M8 ni Sprint 2. Configuración A, normalización, glosarios y modelo ASR intactos.
+M8 autorizado por el usuario. Configuración A, normalización, glosarios y modelo ASR intactos.
+
+## Milestone 8 — candidato de validación, aceptación pendiente
+
+- [x] Auditoría del baseline M7, Python/dependencias, configuración y seguridad local.
+- [x] Replay A con timing original, integridad y evaluación lingüística/histórica.
+- [x] E2E Chrome/PCM sintético/ASGI/WLK fixture/normalización/provider fake/Hub/DOM.
+- [x] Baseline por segmento, distinción de relojes y protocolo voz física→proyección.
+- [x] Documentación de instalación, operación OBS, checklist y gates manuales.
+- [ ] Acta nueva M8: Blue Yeti/DeepL/OBS, 60–90 minutos, instalación limpia, revisión médica.
+- [ ] Aprobación explícita para v0.1.0 definitivo. No iniciar Sprint 2.
+
+El tag RC solo acredita el gate automatizado, no cierra M8 ni aprueba hardware/servicios reales.

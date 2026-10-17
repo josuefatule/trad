@@ -1,4 +1,12 @@
-# Live Captions local — M7: Reliability & Recovery
+# Live Captions local — candidato v0.1.0-rc1
+
+M8 prepara validación/release sin cambiar el pipeline M7 ni la configuración A.
+**Candidato técnico; M8 y release definitivo pendientes de aceptación física.**
+El usuario confirmó validación real de M7 con Blue Yeti/WLK/DeepL/OBS; la nueva
+sesión M8 de 60–90 minutos y la instalación limpia aún requieren ejecución.
+Ver [reporte](VALIDATION_REPORT_V0_1.md), [latencias](LATENCY_BASELINE_V0_1.md),
+[checklist](RELEASE_CHECKLIST_V0_1.md), [instalación Windows](INSTALL_WINDOWS.md)
+y [prueba física](MANUAL_VALIDATION_V0_1.md). No iniciar Sprint 2.
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.

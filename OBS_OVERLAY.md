@@ -178,3 +178,49 @@ al reconectar. La siguiente publicación inglesa aparece normalmente. El histori
 del Operator, el micrófono y DeepL siguen funcionando. El overlay es observador y
 no puede emitir ese control. Se conserva persistent_rolling y la región Y=930–1080.
 La consola muestra **Overlay clients: N**, no una afirmación de conexión OBS.
+
+## Candidato v0.1: composición de conferencia y aceptación
+
+No se modificó la escena OBS. En Settings → Video usar Base y Output 1920×1080.
+En la escena, de abajo hacia arriba: fondo, captura PowerPoint, franja azul inferior
+y Browser Source transparente. Reservar Y=930–1080 (150 px) o Y=900–1080 (180 px)
+para captions; ajustar la presentación a la región superior **conservando aspecto**.
+Una diapositiva 16:9 ajustada a altura 930 ocupa aproximadamente 1653×930, centrada;
+el espacio lateral es preferible a deformar o tapar contenido.
+
+Browser Source: URL `http://localhost:8010/overlay`, Width 1920, Height 1080.
+Transform → Reset Transform y posición X=0/Y=0, sin crop ni escalado doble; bloquear
+la fuente después de verificarla. No usar `/overlay/preview` para producción.
+Conservar la fuente cargada entre cambios de escena: desactivar "Shutdown source
+when not visible" y, si se busca continuidad, "Refresh browser when scene becomes active".
+Tras actualizar el candidato, con sesión detenida, usar **Refresh cache of current page**.
+No pegar CSS que añada fondo opaco o cambie geometría/fuente fuera de parámetros.
+
+La URL sin parámetros utiliza la configuración backend auditada:
+1920×1080, región 0/930/1920/150, padding 32/8, fuente 48, line-height 1.2,
+max_width 1500, background_opacity=0 y persistent_rolling. Capacidad efectiva:
+`floor((region_height - 2*padding_y)/(font_size*line_height))`, limitada a max_lines.
+Con 150 px caben **dos** líneas de 48 px, aunque max_lines=3. A 180 px todavía
+caben dos con esa fuente/interlineado. Para tres líneas a la altura original se
+puede elegir explícitamente `?font_size=36` y verificar legibilidad; no se reduce
+automáticamente la fuente para forzar tres. Alternativamente diseñar otra altura
+que permita tres al tamaño deseado y reubicar la diapositiva. El preview completo
+avisa de capacidad insuficiente y permite ensayar sin API/micrófono.
+
+Para una franja de 180 px, usar de forma coherente región Y=900/height=180 en el
+backend y en OBS, o URL `http://localhost:8010/overlay?region_y=900&region_height=180`.
+Los parámetros no llevan secretos. Verificar región, wrapping, centrado y cola 0
+con el guion médico. Abrir el proyector fullscreen de OBS en la segunda pantalla;
+confirmar resolución, escala y que el escritorio del operador no esté proyectado.
+
+CLEAR durante LIVE limpia sin detener audio; siguiente inglés reaparece. STOP
+espera flush/drain y conserva la última ventana ocho segundos desde stopped.
+Reconectar/recargar reconstruye solo la ventana vigente respetando CLEAR; si se
+agotan los ocho intentos, recargar la fuente. Reiniciar backend pierde esa ventana.
+No cerrar CAPTURE durante LIVE. El renderer puede coalescer cambios en un frame;
+solo la prueba visual física acredita lo que realmente llegó al proyector.
+
+M7 fue validado por el usuario con OBS real. La nueva aceptación del RC, incluido
+ensayo de 60–90 min, queda **PENDIENTE** siguiendo
+[MANUAL_VALIDATION_V0_1.md](MANUAL_VALIDATION_V0_1.md). Las pruebas Chrome validan
+geometría y transporte, no el compositor de OBS ni la salida física.

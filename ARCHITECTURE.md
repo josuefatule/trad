@@ -691,3 +691,18 @@ snapshot válido, con jitter y cancelación de timer. Captions y traducción no 
 reinician por recuperaciones legítimas de controlador u observador. Logs existentes
 rotan y filtran texto/secretos por defecto. Ver [runbook](RELIABILITY_RUNBOOK.md)
 para límites, recuperación manual y pruebas que aún requieren hardware real.
+
+## M8: evidencia y candidato de release
+
+No hay cambios al pipeline M7. Los módulos `benchmarks/release_validation.py` y
+`release_report.py` ejecutan/reúnen evidencia fuera del servidor: replay con reloj
+virtual, normalización medida con reloj real independiente y English histórico
+solo ante entradas/contexto idénticos. El E2E aislado usa PCM fake y WLK cronometrado,
+FastAPI/normalizador/Hub/Chrome reales y un provider de etiquetas de prueba.
+No prueba reconocimiento de ese PCM ni DeepL/OBS físicos.
+
+Se preservan Operator v1, overlay v3, configuración A y límites M7. Duraciones backend
+usan un reloj monotónico de proceso; estimaciones browser se anclan mediante clock
+probe WS y conservan incertidumbre. Inicio físico de habla y proyección no se infieren
+de ASR ni de doble-rAF. Las muestras acotadas no son un archivo completo de conferencia.
+Ver [baseline M8](LATENCY_BASELINE_V0_1.md) y [aceptación pendiente](RELEASE_CHECKLIST_V0_1.md).

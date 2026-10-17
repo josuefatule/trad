@@ -5,6 +5,12 @@ workers de Uvicorn: autoridad, journal y CaptionHub viven en memoria. No se
 recupera audio que no llegó ni se preserva una sesión tras reiniciar esos procesos.
 La configuración lingüística A de M5.2 permanece intacta.
 
+Actualización M8: el usuario confirmó la validación física M7 en su brief. Las
+indicaciones históricas de "pendiente M7" al final se conservan como procedimiento;
+la nueva aceptación v0.1 y la sesión real de 60–90 min están **PENDIENTES** en
+[MANUAL_VALIDATION_V0_1.md](MANUAL_VALIDATION_V0_1.md). No equiparar el soak virtual
+a una hora de hardware real. Baseline nuevo: [LATENCY_BASELINE_V0_1.md](LATENCY_BASELINE_V0_1.md).
+
 ## Operación normal y recuperación de consola
 
 1. Arrancar WLK como antes y FastAPI con el micrófono detenido. Abrir `/operator`
@@ -158,7 +164,7 @@ retiene persistent_rolling y la limpieza tras 8 s. CLEAR sigue siendo solo visua
 | Mensaje WLK | 8 MB; frame PCM entrante máximo 1 MB |
 | Journal autorizado | 512 eventos / 2 MB serializados; contador `journal_truncated`, bytes y `history_gap` |
 | UI | Últimos 500 segmentos por flujo, con techo adicional de 60000 caracteres por flujo/panel; truncamiento contado y visible |
-| Hub existente | 128 captions de hasta 20000 caracteres, 128 muestras por historial, 32 observadores y cola 64 por observador |
+| Hub existente | 128 captions y 20000 caracteres totales de historial; caption individual hasta 20000; 128 muestras por historial, 32 observadores y cola 64 por observador |
 | Tokens | 64, TTL 24 h; rotación de resume no aumenta el conteo |
 | HTTP | Un worker y una plaza admitida, sin backlog oculto entre sesiones |
 | Logs | development.log 5 MB × 4; raw opt-in 10 MB × 4; sin audio guardado |

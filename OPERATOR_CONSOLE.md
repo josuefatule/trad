@@ -222,3 +222,13 @@ no se simula continuidad. Overlay v3 recupera su snapshot/CLEAR con hasta ocho
 intentos; tras agotarlos requiere recargar Browser Source. No se reinician procesos
 externos ni se ofrece persistencia tras reinicio. Procedimientos completos y ensayo
 con Blue Yeti/DeepL/OBS: [RELIABILITY_RUNBOOK.md](RELIABILITY_RUNBOOK.md).
+
+## Validación del candidato v0.1
+
+M7 fue aceptado físicamente según el brief M8. La aceptación nueva del RC sigue
+pendiente: [protocolo M8](MANUAL_VALIDATION_V0_1.md) y
+[checklist](RELEASE_CHECKLIST_V0_1.md). No se modifican controles ni protocolos.
+Antes de otro START guardar counters/outcome/colas y diagnósticos: son memoria
+acotada por sesión, no un historial completo de conferencia. El poll de 2 s puede
+retrasar visualmente NORMALIZED/ENGLISH en consola; las latencias backend y el
+WebSocket inmediato del overlay no incluyen esa espera de monitor.

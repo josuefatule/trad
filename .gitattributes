@@ -1,0 +1,4 @@
+# Preserve checksum inputs across Windows checkouts (core.autocrlf may be true).
+glossaries/*.json text eol=lf
+benchmarks/m8_*.json text eol=lf
+requirements-release.lock text eol=lf
