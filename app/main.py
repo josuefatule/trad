@@ -10,6 +10,10 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
+from app.environment import load_project_env
+
+load_project_env()
+
 from app.asr.whisperlivekit_client import relay
 from app.captions.segment_manager import SegmentConfig
 from app.captions.terminology_normalizer import NormalizerConfig

@@ -12,6 +12,7 @@ from app.captions.segment_manager import SegmentConfig, SegmentManager
 from app.captions.terminology_normalizer import NormalizerConfig, TerminologyNormalizer
 from app.captions.transcript_state import TranscriptState
 from app.translation import TranslationConfig, build_translation_engine
+from app.environment import load_project_env
 
 
 def replay(events, manager):
@@ -40,6 +41,7 @@ def replay(events, manager):
 
 
 async def async_main():
+    load_project_env()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("fixture", type=Path)
     parser.add_argument("--perf-repeats", type=int, default=100,

@@ -104,7 +104,7 @@ Variables opcionales antes de arrancar nuestra app:
 | `TRANSLATION_TIMEOUT_SECONDS` | `8` por intento |
 | `TRANSLATION_RETRIES` | `1` retry máximo |
 | `TRANSLATION_QUEUE_MAXSIZE` | `32`; desborde visible como error de segmento |
-| `DEEPL_AUTH_KEY` | vacío; requerido cuando provider=`deepl` |
+| `DEEPL_API_KEY` | vacío; requerido cuando provider=`deepl`; acepta también `DEEPL_AUTH_KEY` |
 | `DEEPL_API_URL` | `https://api-free.deepl.com/v2/translate` |
 
 Valores de desarrollo, leídos al arrancar. Ejemplo para comparar configuraciones:
@@ -123,10 +123,20 @@ $env:TRANSLATION_PROVIDER = "mock"
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8010
 ```
 
-Para DeepL, definir además `DEEPL_AUTH_KEY`. El adaptador envía únicamente el
+Para DeepL, definir además `DEEPL_API_KEY`. El adaptador envía únicamente el
 segmento actual en `text`; los segmentos anteriores viajan en `context`, que DeepL
-usa como contexto sin traducirlo. `.env` sigue ignorado por Git y la aplicación no
-lo carga automáticamente.
+usa como contexto sin traducirlo. FastAPI y replay cargan automáticamente el `.env`
+de la raíz del proyecto. Acepta valores entre comillas simples o dobles; las variables
+de la terminal tienen prioridad. No se expanden variables dentro de los valores.
+Para activar DeepL al arrancar, configurar en `.env`:
+
+```ini
+TRANSLATION_ENABLED=1
+TRANSLATION_PROVIDER=deepl
+DEEPL_API_KEY="tu-clave"
+```
+
+`.env` sigue ignorado por Git. Reiniciar FastAPI después de editarlo.
 
 Reiniciar FastAPI para aplicar variables a la UI. `safe_cut` busca hacia atrás y
 prioriza puntuación fuerte, punto y coma, coma, límite de línea WLK y whitespace.
@@ -144,7 +154,7 @@ $env:CAPTIONS_LOG_RAW = "1"
 
 Los eventos están en `logs/development.log` y los mensajes originales, si se
 habilitan, en `logs/wlk-raw.log`. Incluyen texto transcrito; ambos están ignorados
-por Git. No se guardan muestras de audio. No se carga `.env` automáticamente.
+por Git. No se guardan muestras de audio.
 
 ## Pruebas y evidencia
 

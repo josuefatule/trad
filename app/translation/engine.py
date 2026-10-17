@@ -1,7 +1,7 @@
 """Sequential non-blocking translation queue with context, retries and ordering."""
 import asyncio
 from collections import deque
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 import logging
 import math
 import os
@@ -35,7 +35,7 @@ class TranslationConfig:
     timeout_seconds: float = 8.
     retries: int = 1
     queue_maxsize: int = 32
-    deepl_auth_key: str = ""
+    deepl_auth_key: str = field(default="", repr=False)
     deepl_api_url: str = "https://api-free.deepl.com/v2/translate"
 
     def __post_init__(self):
@@ -62,7 +62,7 @@ class TranslationConfig:
             timeout_seconds=float(os.getenv("TRANSLATION_TIMEOUT_SECONDS", defaults.timeout_seconds)),
             retries=int(os.getenv("TRANSLATION_RETRIES", defaults.retries)),
             queue_maxsize=int(os.getenv("TRANSLATION_QUEUE_MAXSIZE", defaults.queue_maxsize)),
-            deepl_auth_key=os.getenv("DEEPL_AUTH_KEY", ""),
+            deepl_auth_key=os.getenv("DEEPL_API_KEY") or os.getenv("DEEPL_AUTH_KEY", ""),
             deepl_api_url=os.getenv("DEEPL_API_URL", defaults.deepl_api_url),
         )
 
@@ -104,7 +104,7 @@ def provider_from_config(config):
     if config.provider == "deepl":
         if not config.deepl_auth_key:
             return None, TranslationStatus("misconfigured", "deepl",
-                                           "DEEPL_AUTH_KEY is required")
+                                           "DEEPL_API_KEY (or DEEPL_AUTH_KEY) is required")
         provider = DeepLTranslatorProvider(
             config.deepl_auth_key, config.deepl_api_url, config.timeout_seconds)
         return provider, TranslationStatus("ready", "deepl", "DeepL provider ready")
