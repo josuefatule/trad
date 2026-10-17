@@ -1,4 +1,4 @@
-# Live Captions local — Milestone 4: Translation Engine ES → EN
+# Live Captions local — Milestone 5: Live Caption Overlay para OBS
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.
@@ -12,6 +12,12 @@ El flujo actual es ASR CONFIRMED → SEGMENT PENDING → RAW ES → NORMALIZED E
 TranslationEngine → ENGLISH. RAW y NORMALIZED permanecen inmutables. La traducción
 se ejecuta en una cola secuencial independiente y está deshabilitada por defecto;
 el operador nunca presenta el español como si fuera inglés.
+
+M5 comparte esa misma traducción con un overlay transparente en
+**http://localhost:8010/overlay**. No abre otro micrófono, conexión WLK ni llamada
+DeepL. El operador sigue siendo la única fuente de audio y control.
+Preview local sin voz ni API: **http://localhost:8010/overlay/preview** → Play demo.
+Configuración y pasos completos: [OBS_OVERLAY.md](OBS_OVERLAY.md).
 
 ## Arranque (PowerShell)
 
@@ -163,7 +169,8 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**100 pruebas pasan**: parcial, confirmación, líneas crecientes, frases consecutivas,
+**116 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
+parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
 timeout y desconexión. Usan unittest, websockets y el httpx ya instalado para
@@ -174,6 +181,14 @@ Incluyen SegmentManager, replay médico con conservación de palabras, late revi
 cortes, métricas, normalización exacta/fuzzy, negativos, solapamientos, contexto entre
 segmentos y transporte FastAPI contra WLK simulado. La prueba adicional del operador
 con DOM simulado es `node tests/test_operator_partial.cjs`, si Node está disponible.
+El renderer y transporte del overlay se prueban con `node tests/test_overlay_renderer.cjs`.
+Para ejecutar toda la suite sin usar DeepL real aunque `.env` esté configurado:
+
+```powershell
+$env:TRANSLATION_ENABLED = "0"
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+Remove-Item Env:TRANSLATION_ENABLED
+```
 
 Replay sin servidores, GPU ni micrófono; usa el mock por defecto:
 
@@ -211,6 +226,10 @@ en M1; queda a su cargo la validación final de las nuevas reglas de segmentaci�
 - `app/translation/models.py`: contratos inmutables request/result/context.
 - `app/translation/providers.py`: abstracción, mock determinístico y adaptador DeepL.
 - `app/translation/engine.py`: contexto, cola, ordering, timeout, retries y métricas.
+- `app/overlay/`: hub de sesión, suscriptores y configuración visual validada.
+- `app/static/caption_renderer.js`, `overlay.js`, `overlay.css`: presentación y transporte del overlay.
+- `app/templates/overlay.html`, `overlay_preview.html`: overlay público y demo aislado.
+- `tests/test_overlay.py`, `test_overlay_renderer.cjs`: broadcast, integración y presentación.
 - `glossaries/medical_base.json`, `conference.json`: términos base y del evento.
 - `app/templates/operator.html`: página de operador.
 - `app/static/operator.js`, `operator.css`: controles, estados y renderizado.

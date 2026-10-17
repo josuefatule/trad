@@ -193,6 +193,9 @@ $("start").onclick = async () => {
           if (data.capabilities?.translation_engine !== 1) {
             throw new Error("Backend anterior a Milestone 4. Reinicia FastAPI y recarga esta página.");
           }
+          if (data.capabilities?.caption_overlay !== 1) {
+            throw new Error("Backend anterior a Milestone 5. Reinicia FastAPI para conectar el overlay.");
+          }
           s.translationStatus = data.translation_status;
           translationStatus(s.translationStatus, 0);
           clearTimeout(s.timer);

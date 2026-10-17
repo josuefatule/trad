@@ -6,6 +6,10 @@
 <h1>LIVE CAPTIONS — DEVELOPMENT</h1>
 <p>WhisperLiveKit: <strong id="connection">Disconnected</strong></p>
 <p>Translator: <strong id="translator">Unknown</strong></p>
+<details><summary>Overlay / OBS diagnostics</summary>
+<p><a href="/overlay" target="_blank" rel="noopener">Open overlay</a> ·
+<a href="/overlay/preview" target="_blank" rel="noopener">Local demo preview</a></p>
+<pre id="overlay-diagnostics">Waiting for caption hub</pre></details>
 <p id="error" role="alert"></p>
 <label for="microphone">Microphone:</label> <select id="microphone"><option value="">Predeterminado</option></select>
 <button id="refresh">Permitir / actualizar micrófonos</button>
@@ -23,8 +27,8 @@
 <h2>ENGLISH</h2><div id="english" class="translated-flow" aria-live="polite"></div>
 <pre id="translation-status" class="translation-status">Waiting for configuration</pre>
 <h2>CORRECTIONS / SUGGESTIONS</h2><pre id="corrections"></pre>
-<p>Segmentos estables en español y su normalización auditable, sin traducción. Los tiempos son límites de las líneas ASR de origen;
+<p>Segmentos estables en español, normalización auditable y traducción inglesa. Los tiempos son límites de las líneas ASR de origen;
 los segmentos cortados dentro de una línea pueden compartir intervalos.</p>
 <details><summary>Segmentos / timestamps</summary><pre id="segments"></pre></details>
 <h2>DEBUG</h2><pre id="debug"></pre>
-</main><script src="/static/operator.js"></script></body></html>
+</main><script src="/static/operator.js"></script><script src="/static/overlay_diagnostics.js"></script></body></html>

@@ -1,4 +1,4 @@
-# Arquitectura — Milestones 1, 2 y 3
+# Arquitectura — Milestones 1–5
 
 Inspección local: 24 de septiembre de 2026, **whisperlivekit 0.2.26**.
 La fuente principal fue `.venv/Lib/site-packages/whisperlivekit/`, sin modificar
@@ -40,7 +40,8 @@ Micrófono → navegador (/operator)
 Hay una conexión upstream por conexión del navegador. Nuestra app no carga modelos
 ni importa WLK. WLK sigue siendo un proceso independiente. START abre una sesión
 nueva y limpia el estado; no intentamos reconectar audio a una sesión perdida.
-No se implementan traducción, servicios cloud ni OBS.
+La descripción inicial de M1 aparece abajo; las capas posteriores de traducción
+y overlay se documentan en las secciones M4 y M5.
 
 ## Protocolo WLK real
 
@@ -468,3 +469,90 @@ El replay usa el engine de producción, mock por defecto, y no lee
 solo para evaluación posterior. Como el replay comprime 58,3 segundos de eventos en
 tiempo de CPU, su queue delay mide esa ejecución acelerada y no predice la cola de
 una sesión en vivo.
+
+## Milestone 5: Session Caption Hub y overlay
+
+```text
+Operator → /ws/session → WLK → TranscriptState → SegmentManager
+    → TerminologyNormalizer → TranslationEngine → TranslationResult
+        ├→ Operator (protocolo M4 conservado + capability caption_overlay=1)
+        └→ CaptionHub → /ws/overlay → uno o varios overlays /overlay
+```
+
+El hub pertenece a una instancia FastAPI y un event loop. Admite una sola sesión
+productora activa: un START concurrente se rechaza antes de conectar WLK y no cambia
+el estado del productor. El callback del engine publica una proyección sanitizada
+de cada resultado antes de enviar la respuesta al Operator. Hub.publish no tiene
+await: un observador jamás bloquea audio o traducción. No se comparten RAW,
+NORMALIZED, mensajes de error del provider ni configuración sensible con overlays.
+
+Se eligió WebSocket dedicado para reutilizar el servidor existente, detectar cierre
+de observadores y aceptar únicamente telemetría validada de descartes. No acepta
+audio, start, stop, traducciones ni cambios de estado desde observadores.
+
+### Contrato v1 y memoria
+
+Al conectar, /ws/overlay recibe un snapshot con `protocol_version=1`, `event_id`,
+`session_id`, `state`, última `sequence`, estado del traductor, `server_time` y
+`caption` vigente o null. Registro del suscriptor y encolado del snapshot ocurren
+sin await; los siguientes eventos quedan después del snapshot, sin carrera.
+
+Eventos incrementales: `session` (connecting/live/draining/stopped/disconnected/error),
+`caption` (session_id, sequence, segment_id, text, provider, published_at, expires_at)
+y `translator` (error/mock_filtered/invalid_caption). Nunca se transporta el error
+privado del provider. Sequence avanza también ante fallos y resultados mock para que
+el siguiente resultado real conserve su orden. Gaps inesperados se rechazan y se
+registran; duplicados y sesiones stale se descartan.
+
+Límites: 32 observadores; 64 eventos por observador; solo el último caption retenido,
+máximo 20.000 caracteres; timeout de envío 2 s. Cola llena elimina al suscriptor y
+cierra su socket; la reconexión recibe estado vigente, no historial acumulado. Se
+cuentan broadcast_errors. No se promete entrega completa a observadores desconectados.
+
+Snapshot caption caduca max_display_ms después de publicación y se excluye si el
+estado ya no admite texto. El JS conserva la secuencia aceptada durante reconexiones
+y no repite una entrega ya aceptada, incluso si fue interrumpida. Una página nueva
+puede mostrar el último caption aún vigente. No se reenvían históricos: se prefiere
+recuperar el presente. El reloj de expiración del cliente usa expires_at-server_time,
+evitando depender de que su reloj absoluto esté sincronizado.
+
+### Unidad de traducción frente a unidad visible
+
+TranslationResult sigue siendo inmutable y no se vuelve a traducir. CaptionRenderer
+genera VisibleCaption {text, fontSize, duration, queuedAt, deadline} por paginación
+de palabras y medición Canvas de la misma Arial 600 usada en CSS. Cada bloque tiene
+hasta max_lines líneas calculadas, no line-clamp. Una palabra indivisible demasiado
+ancha ocupa su propio bloque con fuente reducida; si requeriría menos de 8 px se
+rechaza explícitamente todo el caption (`unreadable_token`). No se corta un token.
+
+La cola visual es distinta de TranslationQueue. Duración = palabras / reading_wps,
+acotada a min/max. Se mantiene el caption actual hasta completar su lectura y se
+reemplaza directamente por el siguiente. Al vaciarse queda totalmente invisible.
+No hay toolbar ni datos técnicos en el overlay público; se usa textContent.
+
+La cola limita frames y atraso estimado; elimina los más antiguos aún no mostrados
+si supera 64 frames o 20 s, preservando el bloque en lectura. También vence frames
+con más de 20 s de espera. El compromiso es omitir texto durante sobrecarga para no
+mostrar discurso antiguo indefinidamente. Cada decisión emite overlay_display_drop
+en consola y telemetría acotada al backend; Operator muestra el contador. Resize
+limpia medidas antiguas y reporta el descarte, evitando ocultar palabras por clipping.
+
+### Ciclo de vida y límites operativos
+
+EOF marca draining. Se espera ready_to_stop, se normaliza/traduce lo pendiente y
+después se publica stopped. Los overlays ya conectados terminan la cola visual
+dentro de sus límites y se limpian. START nueva borra todo inmediatamente. Un error
+del provider no finaliza audio ni borra la cola en lectura; el siguiente English
+correcto puede mostrarse. Cerrar el Operator durante captura cancela upstream y
+traducciones; se publica disconnected y se limpia. Si ya se aceptó EOF, la política
+existente termina el drain; el overlay nunca se marca live después de STOP.
+
+La demo /overlay/preview usa fixtures English locales con aviso DEMO permanente,
+sin socket productivo, micrófono ni API. El hub y renderer públicos filtran provider
+mock y prefijos [MOCK]. Diagnósticos de conexión/estado/último caption/errores quedan
+en /api/overlay/status y Operator; config visual pública en /api/overlay/config.
+
+Un solo proceso Uvicorn y acceso localhost son requisitos de esta versión. Varios
+workers necesitarían un hub externo compartido. No hay autenticación ni aislamiento
+de espectadores en red; mantener --host 127.0.0.1. No se modifica OBS ni se crean
+overlays de otros idiomas. La validación de UI real en OBS queda pendiente.

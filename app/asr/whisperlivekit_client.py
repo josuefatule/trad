@@ -24,7 +24,7 @@ def session_url(url, language):
     return urlunsplit(parts._replace(query=urlencode(query)))
 
 
-async def relay(browser: WebSocket, settings, session_id: str):
+async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None):
     state = TranscriptState()
     manager = SegmentManager(getattr(settings, "segments", None), session_id)
     normalizer = TerminologyNormalizer.from_config(getattr(settings, "normalizer", None))
@@ -35,6 +35,8 @@ async def relay(browser: WebSocket, settings, session_id: str):
             await browser.send_json(message)
 
     async def translation_ready(result, snapshot):
+        if caption_hub is not None:
+            caption_hub.publish(result)
         await send_json({"type": "translation", "session_id": session_id,
                          "translation": result.to_dict(),
                          "translation_status": snapshot["status"],
@@ -93,9 +95,13 @@ async def relay(browser: WebSocket, settings, session_id: str):
                              "terminology_normalizer": 1,
                              "translation_engine": 1,
                              "translation_provider": translator.status.provider,
+                             "caption_overlay": 1,
                          },
                          "translation_status": translator.status.to_dict(),
                          "wlk": config})
+        if caption_hub is not None:
+            caption_hub.translator_state = translator.status.state
+            caption_hub.set_state(session_id, "live")
 
         async def upload():
             started = False
@@ -110,6 +116,8 @@ async def relay(browser: WebSocket, settings, session_id: str):
                     raise ValueError("PCM s16le frame must contain whole samples")
                 await upstream.send(audio)
                 if not audio:
+                    if caption_hub is not None:
+                        caption_hub.set_state(session_id, "draining")
                     event("audio stream ended; waiting for ready_to_stop")
                     return
                 if not started:
@@ -157,6 +165,8 @@ async def relay(browser: WebSocket, settings, session_id: str):
                               len(state.partial_text), len(state.segments))
                     if final:
                         await translator.wait_idle()
+                        if caption_hub is not None:
+                            caption_hub.set_state(session_id, "stopped")
                         event("session stopped")
                         await send_json({"type": "status", "state": "stopped",
                                          "translation_metrics": translator.metrics.to_dict()})

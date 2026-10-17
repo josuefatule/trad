@@ -61,5 +61,23 @@ ampliar el glosario de conferencia.
 - [x] Tests unitarios y de integración sin red ni credenciales.
 - [ ] Validación con voz real y un provider real configurado.
 
-No iniciar Milestone 5. El mock es infraestructura de desarrollo y siempre se
-identifica como tal; activar DeepL requiere credenciales externas.
+## Milestone 4.1 — completado
+
+- [x] Carga automática de `.env`, valores entre comillas y alias `DEEPL_API_KEY`.
+- [x] Clave excluida de Git y del repr de configuración.
+- [x] DeepL probado con una traducción breve real.
+
+## Milestone 5 — implementación completada
+
+- [x] Hub de sesión con único publisher y múltiples observadores acotados.
+- [x] Overlay transparente /overlay y WebSocket /ws/overlay de solo lectura.
+- [x] Snapshot atómico vigente, orden, deduplicación y aislamiento de sesiones.
+- [x] Cola visual independiente, paginación por tipografía y timers finitos.
+- [x] Políticas de saturación y descartes explícitos con diagnósticos en Operator.
+- [x] Demo aislada sin micrófono, WLK ni DeepL en /overlay/preview.
+- [x] Bloqueo explícito de traducciones mock en producción.
+- [x] Configuración y parámetros URL validados, documentación OBS.
+- [x] Tests Python, DOM/tiempos JavaScript, integración simulada y replay.
+- [ ] Inspección visual final en OBS y lectura real con audio + DeepL.
+
+No avanzar a Milestone 6. No se instala ni controla OBS desde la aplicación.
