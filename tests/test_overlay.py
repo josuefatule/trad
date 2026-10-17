@@ -31,7 +31,9 @@ class HubTests(unittest.TestCase):
 
     def test_multiple_subscribers_identical_events_order_and_no_duplicates(self):
         first, second = self.hub.subscribe(), self.hub.subscribe()
-        self.assertEqual(first.queue.get_nowait(), second.queue.get_nowait())
+        first_snapshot, second_snapshot = first.queue.get_nowait(), second.queue.get_nowait()
+        self.assertNotEqual(first_snapshot.pop("observer_id"), second_snapshot.pop("observer_id"))
+        self.assertEqual(first_snapshot, second_snapshot)
         self.assertTrue(self.hub.publish(translated(1)))
         self.assertFalse(self.hub.publish(translated(1)))
         self.assertTrue(self.hub.publish(translated(2)))
@@ -61,6 +63,7 @@ class HubTests(unittest.TestCase):
         self.assertEqual(hub.broadcast_errors, 1)
 
     def test_snapshot_atomic_registration_expiry_and_session_reset(self):
+        self.hub.config = CaptionConfig(mode="timed_queue")
         self.hub.publish(translated())
         observer = self.hub.subscribe()
         snapshot = observer.queue.get_nowait()

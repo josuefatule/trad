@@ -1,5 +1,7 @@
 import logging
 import asyncio
+import math
+import time
 import os
 from contextlib import asynccontextmanager
 from dataclasses import dataclass, field
@@ -116,20 +118,39 @@ def create_app(settings=None):
         except ValueError:
             await browser.close(code=1013)
             return
+        send_lock = asyncio.Lock()
+
+        async def observer_send(message):
+            async with send_lock:
+                await asyncio.wait_for(browser.send_json(message), 2.)
 
         async def send_events():
             while True:
                 message = await subscriber.queue.get()
-                await asyncio.wait_for(browser.send_json(message), 2.)
+                await observer_send(message)
 
         async def receive_telemetry():
             while True:
                 # Read-only except validated, bounded display diagnostics.
                 data = await browser.receive_json()
+                received_mono = time.monotonic() * 1000
+                if not isinstance(data, dict):
+                    continue
+                if (data.get("type") == "clock_probe"
+                        and type(data.get("client_sent_ms")) in (int, float)
+                        and math.isfinite(data["client_sent_ms"])
+                        and 0 <= data["client_sent_ms"] <= 1e12):
+                    await observer_send({"type": "clock_sync", "protocol_version": 2,
+                                         "client_sent_ms": data["client_sent_ms"],
+                                         "server_clock_resolution_ms": time.get_clock_info("monotonic").resolution * 1000,
+                                         "server_received_mono_ms": received_mono,
+                                         "server_sent_mono_ms": time.monotonic() * 1000})
+                if data.get("type") == "render_sample":
+                    hub.record_client_sample(subscriber, data)
                 if (isinstance(data, dict) and data.get("type") == "display_drop"
-                        and data.get("reason") in {"queue_overflow", "oversize", "unreadable_token"}
-                        and type(data.get("count")) is int and 1 <= data["count"] <= 256):
-                    hub.report_display_drop(data.get("session_id"), data["reason"], data["count"])
+                        and data.get("reason") in {"queue_overflow", "oversize", "unreadable_token", "rolling_overflow"}
+                        and type(data.get("count")) is int and 1 <= data["count"] <= 20000):
+                    hub.report_display_drop(data.get("session_id"), data["reason"], data["count"], data.get("sequence"))
 
         tasks = [asyncio.create_task(send_events()), asyncio.create_task(receive_telemetry()),
                  asyncio.create_task(subscriber.closed.wait())]

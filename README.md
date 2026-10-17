@@ -1,4 +1,4 @@
-# Live Captions local — Milestone 5: Live Caption Overlay para OBS
+# Live Captions local — M5.1: Persistent Captions & Latency Diagnostics
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.
@@ -18,6 +18,11 @@ M5 comparte esa misma traducción con un overlay transparente en
 DeepL. El operador sigue siendo la única fuente de audio y control.
 Preview local sin voz ni API: **http://localhost:8010/overlay/preview** → Play demo.
 Configuración y pasos completos: [OBS_OVERLAY.md](OBS_OVERLAY.md).
+
+M5.1 usa persistent_rolling: tres líneas (configurable a dos), reflow continuo y
+actualización inmediata. Las pausas no borran texto; STOP limpia tras 8 s. El modo
+timed_queue anterior sigue disponible. Operator añade latencias por etapa, cola y
+telemetría de Browser Source con mediciones y estimaciones claramente separadas.
 
 ## Arranque (PowerShell)
 
@@ -169,7 +174,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**116 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
+**121 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
 parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
@@ -182,6 +187,8 @@ cortes, métricas, normalización exacta/fuzzy, negativos, solapamientos, contex
 segmentos y transporte FastAPI contra WLK simulado. La prueba adicional del operador
 con DOM simulado es `node tests/test_operator_partial.cjs`, si Node está disponible.
 El renderer y transporte del overlay se prueban con `node tests/test_overlay_renderer.cjs`.
+M5.1: `node tests/test_persistent_captions.cjs`; comparación reproducible en
+`benchmarks/renderer_arrivals.py` y `benchmarks/renderer_policy.cjs`.
 Para ejecutar toda la suite sin usar DeepL real aunque `.env` esté configurado:
 
 ```powershell

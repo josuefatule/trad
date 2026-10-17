@@ -470,7 +470,7 @@ solo para evaluación posterior. Como el replay comprime 58,3 segundos de evento
 tiempo de CPU, su queue delay mide esa ejecución acelerada y no predice la cola de
 una sesión en vivo.
 
-## Milestone 5: Session Caption Hub y overlay
+## Milestone 5: Session Caption Hub y overlay (política original timed_queue)
 
 ```text
 Operator → /ws/session → WLK → TranscriptState → SegmentManager
@@ -556,3 +556,56 @@ Un solo proceso Uvicorn y acceso localhost son requisitos de esta versión. Vari
 workers necesitarían un hub externo compartido. No hay autenticación ni aislamiento
 de espectadores en red; mantener --host 127.0.0.1. No se modifica OBS ni se crean
 overlays de otros idiomas. La validación de UI real en OBS queda pendiente.
+
+## M5.1: persistent_rolling y trazabilidad temporal
+
+El usuario validó M5 en OBS con WLK y DeepL. La política temporal original de M5
+queda disponible como timed_queue; M5.1 sustituye el predeterminado por
+persistent_rolling y eleva max_lines a 3 (configurable a 2).
+
+Retención y orden son independientes. Cada caption nuevo se acepta una vez y se
+añade inmediatamente a los tokens visibles. Canvas mide reflow de palabras sobre
+la cola retenida; salen las líneas más antiguas hasta caber en la ventana. No hay
+espera por min_display_ms ni TranslationQueue adicional. No se inventan signos ni
+se insertan saltos por READY. Durante LIVE no hay timer de desaparición.
+STOP (después del drain del engine) programa stop_clear_ms=8000. START y desconexión
+limpian; resize refluye tokens actuales. Rolling normal y texto nuevo demasiado
+largo que sale sin verse se distinguen mediante rolled_out_lines y rolling_overflow.
+
+Hub conserva hasta 128 captions / 20.000 caracteres por sesión. Snapshot LIVE no
+caduca por inactividad; STOP caduca según configuración backend. Restauración
+reconstruye la ventana y mantiene el watermark de secuencia, sin concatenarla dos
+veces. Los límites de memoria y evicción de observadores de M5 se mantienen.
+
+### Relojes y métricas
+
+SegmentManager expone únicamente su monotonic_origin para anclar first_seen_at y
+emitted_at. No cambia ninguna decisión. El proxy registra fin de normalización.
+TranslationRequest/Result añaden TranslationTiming frozen con queued/start/end
+monotónicos y duraciones de intentos del provider. Hub mide publicación con ese
+mismo reloj y conserva 128 muestras numéricas. Campos wall-clock de M4 siguen
+presentes para compatibilidad, pero no calculan las nuevas duraciones.
+
+El protocolo overlay sube a v2; capabilities existentes se conservan y se añaden
+persistent_captions=1 y caption_latency=1. El socket permite clock_probe/clock_sync:
+cuatro timestamps estiman offset y RTT sin mezclar procesos arbitrariamente. La
+muestra reciente de menor RTT se utiliza hasta 30 s; la incertidumbre indicada es
+RTT de red/2 más resolución backend y no incluye deriva/asimetría no observables. Las respuestas de reloj
+y broadcast comparten un lock de envío por observador.
+
+Browser mide recepción→DOM localmente con performance.now. Dos rAF generan una
+muestra de oportunidad de pintado, descartada si la ventana cambió antes de medirla.
+No prueba salida visible de OBS/encoder/display. El resultado READY→visible es una
+estimación: READY→Hub medido + entrega sincronizada estimada + tiempo local hasta
+doble-rAF. Sin sincronización válida o al restaurar snapshots no se inventa esa
+cifra. coalesced_render_updates informa actualizaciones DOM entre pintados.
+
+El observador solo envía render_sample con números validados y session/sequence
+vigentes; cada cliente conserva una muestra reciente y el hub 128 en total. No
+envía texto ni credenciales. Operator muestra mediciones, estimaciones, profundidad
+de ambas colas, captions/líneas visibles y alertas. La duración provider incluye
+adaptador/thread/red y retries por separado, no solo tiempo HTTP de DeepL.
+
+Sigue sin medirse el inicio físico del habla → primera hipótesis ASR; ni composición,
+buffering, encoder y pantalla de OBS. Las pruebas sintéticas aíslan el renderer y
+no permiten afirmar mejora end-to-end real hasta otra lectura instrumentada.

@@ -81,3 +81,17 @@ ampliar el glosario de conferencia.
 - [ ] Inspección visual final en OBS y lectura real con audio + DeepL.
 
 No avanzar a Milestone 6. No se instala ni controla OBS desde la aplicación.
+
+## Milestone 5.1 — completado
+
+- [x] M5 probado realmente por el usuario en OBS, WLK y DeepL.
+- [x] persistent_rolling predeterminado, 3/2 líneas, reflow sin cola de lectura.
+- [x] Pausas persistentes; STOP con limpieza configurable y START inmediato.
+- [x] Snapshots acotados para restaurar una ventana vigente tras reconexión.
+- [x] Tiempos monotónicos desde primera aparición ASR hasta publicación Hub.
+- [x] Recepción/DOM/doble-rAF, sincronización WebSocket y estimaciones con incertidumbre.
+- [x] Diagnóstico compacto en Operator, colas, alertas y descartes instrumentados.
+- [x] Comparación determinista anterior/nueva y tests temporales con reloj simulado.
+- [ ] Medir la experiencia completa de M5.1 con otra lectura real en OBS.
+
+No avanzar a M6 ni cambiar thresholds de segmentación a partir de estas cifras.

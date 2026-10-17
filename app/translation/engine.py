@@ -1,7 +1,7 @@
 """Sequential non-blocking translation queue with context, retries and ordering."""
 import asyncio
 from collections import deque
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass, field, replace
 import logging
 import math
 import os
@@ -9,6 +9,7 @@ import time
 
 from .models import TranslationContextSegment, TranslationRequest, TranslationResult
 from .providers import DeepLTranslatorProvider, MockTranslatorProvider
+from .timing import TranslationTiming, elapsed_ms
 
 logger = logging.getLogger("captions")
 
@@ -113,13 +114,15 @@ def provider_from_config(config):
 
 
 class TranslationEngine:
-    def __init__(self, config, provider, session_id, on_result=None, *, status=None):
+    def __init__(self, config, provider, session_id, on_result=None, *, status=None,
+                 monotonic_clock=time.monotonic):
         self.config = config
         self.provider = provider
         self.session_id = session_id
         self.on_result = on_result
         self.status = status or TranslationStatus(
             "ready" if provider else "disabled", getattr(provider, "name", None), "")
+        self._clock = monotonic_clock
         self.metrics = TranslationMetrics()
         self._generation = 0
         self._workers = set()
@@ -184,7 +187,8 @@ class TranslationEngine:
             await self._queue.join()
 
     async def submit(self, segment_id, raw_text, normalized_text, *,
-                     asr_first_seen_at=None, ready_at=None, normalization_latency_ms=None):
+                     asr_first_seen_at=None, ready_at=None, normalization_latency_ms=None,
+                     timing=None):
         if self.provider is None:
             return None
         sequence = self._next_sequence
@@ -204,6 +208,7 @@ class TranslationEngine:
             asr_first_seen_at=asr_first_seen_at,
             ready_at=ready_at,
             normalization_latency_ms=normalization_latency_ms,
+            timing=replace(timing or TranslationTiming(), queued_mono=self._clock()),
         )
         if not isinstance(normalized_text, str) or not normalized_text.strip():
             result = self._failure(request, "invalid_segment: normalized_text is empty", 0, now, now)
@@ -235,36 +240,44 @@ class TranslationEngine:
 
     async def _translate(self, request):
         started_wall = time.time()
-        started_mono = time.monotonic()
-        queue_delay = max(0., (started_wall - request.queued_at) * 1000)
+        started_mono = self._clock()
+        timing = replace(request.timing or TranslationTiming(), translation_started_mono=started_mono)
+        queue_delay = elapsed_ms(timing.queued_mono, started_mono) or 0.
         logger.info("session=%s translation_started segment_id=%s sequence=%d "
                     "translation_queue_depth=%d translation_queue_delay_ms=%.3f",
                     request.session_id, request.segment_id, request.sequence,
                     self.queue_depth, queue_delay)
         error = None
         attempts = 0
+        attempt_durations = []
         for attempt in range(1, self.config.retries + 2):
             attempts = attempt
+            attempt_started = self._clock()
             try:
                 translated = await asyncio.wait_for(
                     self.provider.translate(request), self.config.timeout_seconds)
                 if not isinstance(translated, str) or not translated.strip():
                     raise ValueError("provider returned empty translation")
                 completed = time.time()
-                latency = max(0., (time.monotonic() - started_mono) * 1000)
+                completed_mono = self._clock()
+                attempt_durations.append(elapsed_ms(attempt_started, completed_mono))
+                timing = replace(timing, translation_completed_mono=completed_mono,
+                                 provider_attempts_ms=tuple(attempt_durations))
+                latency = elapsed_ms(started_mono, completed_mono)
                 result = TranslationResult(
                     request.session_id, request.segment_id, request.sequence,
                     request.raw_text, request.normalized_text, translated,
                     self.provider.name, True, None, attempts, request.queued_at,
                     started_wall, completed, round(queue_delay, 3), round(latency, 3),
                     request.asr_first_seen_at, request.ready_at,
-                    request.normalization_latency_ms)
+                    request.normalization_latency_ms, timing)
                 logger.info("session=%s translation_completed segment_id=%s sequence=%d "
                             "attempt_count=%d latency_ms=%.3f",
                             request.session_id, request.segment_id, request.sequence,
                             attempts, latency)
                 return result
             except TimeoutError:
+                attempt_durations.append(elapsed_ms(attempt_started, self._clock()))
                 self.metrics.timeouts += 1
                 error = f"translation_timeout after {self.config.timeout_seconds:g}s"
                 logger.warning("session=%s translation_timeout segment_id=%s sequence=%d attempt=%d",
@@ -272,15 +285,19 @@ class TranslationEngine:
             except asyncio.CancelledError:
                 raise
             except Exception as exc:
+                attempt_durations.append(elapsed_ms(attempt_started, self._clock()))
                 error = f"{type(exc).__name__}: {exc}"
             if attempt <= self.config.retries:
                 self.metrics.retries += 1
                 logger.warning("session=%s translation_retry segment_id=%s sequence=%d attempt=%d error=%s",
                                request.session_id, request.segment_id, request.sequence, attempt, error)
         completed = time.time()
-        latency = max(0., (time.monotonic() - started_mono) * 1000)
+        latency = max(0., (self._clock() - started_mono) * 1000)
         result = self._failure(request, error or "translation failed", attempts,
                                started_wall, completed, queue_delay, latency)
+        result = replace(result, timing=replace(timing,
+                         translation_completed_mono=self._clock(),
+                         provider_attempts_ms=tuple(attempt_durations)))
         logger.error("session=%s translation_failed segment_id=%s sequence=%d attempt_count=%d error=%s",
                      request.session_id, request.segment_id, request.sequence, attempts, error)
         return result
@@ -293,7 +310,8 @@ class TranslationEngine:
             getattr(self.provider, "name", self.status.provider or "none"),
             False, error, attempts, request.queued_at, started, completed,
             round(queue_delay, 3), round(latency, 3), request.asr_first_seen_at,
-            request.ready_at, request.normalization_latency_ms)
+            request.ready_at, request.normalization_latency_ms,
+            replace(request.timing or TranslationTiming(), translation_completed_mono=self._clock()))
 
     async def _store_result(self, result, generation):
         if generation != self._generation or result.session_id != self.session_id:

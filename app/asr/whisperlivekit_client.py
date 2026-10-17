@@ -2,6 +2,7 @@
 import asyncio
 import json
 import logging
+import time
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from fastapi import WebSocket, WebSocketDisconnect
@@ -11,6 +12,7 @@ from app.captions.transcript_state import TranscriptState
 from app.captions.segment_manager import SegmentManager
 from app.captions.terminology_normalizer import TerminologyNormalizer
 from app.translation import TranslationConfig, build_translation_engine
+from app.translation.timing import TranslationTiming
 
 logger = logging.getLogger("captions")
 raw_logger = logging.getLogger("captions.raw")
@@ -36,6 +38,7 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
 
     async def translation_ready(result, snapshot):
         if caption_hub is not None:
+            caption_hub.record_translation_status(session_id, snapshot)
             caption_hub.publish(result)
         await send_json({"type": "translation", "session_id": session_id,
                          "translation": result.to_dict(),
@@ -47,11 +50,15 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
         getattr(settings, "translation", None) or TranslationConfig(),
         session_id, translation_ready)
     await translator.start()
+    if caption_hub is not None:
+        caption_hub.translation_status_getter = translator.snapshot
 
     def normalize(result):
-        pairs = tuple((segment, normalizer.normalize(segment.id, segment.text))
-                      for segment in result.ready_segments)
-        segments = tuple(item.to_dict() for _, item in pairs)
+        pairs = []
+        for segment in result.ready_segments:
+            item = normalizer.normalize(segment.id, segment.text)
+            pairs.append((segment, item, time.monotonic()))
+        segments = tuple(item.to_dict() for _, item, _ in pairs)
         for segment in segments:
             event("segment normalized id=%s corrections=%d suggestions=%d processing_ms=%.3f",
                   segment["segment_id"], len(segment["corrections"]),
@@ -59,12 +66,18 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
         return {"segments": segments}, pairs
 
     async def queue_translations(pairs):
-        for segment, item in pairs:
+        for segment, item, normalized_completed in pairs:
             await translator.submit(
                 segment.id, item.raw_text, item.normalized_text,
                 asr_first_seen_at=segment.first_seen_at,
                 ready_at=segment.emitted_at,
-                normalization_latency_ms=item.processing_ms)
+                normalization_latency_ms=item.processing_ms,
+                timing=TranslationTiming(
+                    asr_first_seen_mono=manager.monotonic_origin + segment.first_seen_at,
+                    ready_mono=manager.monotonic_origin + segment.emitted_at,
+                    normalized_completed_mono=normalized_completed))
+        if caption_hub is not None:
+            caption_hub.record_translation_status(session_id, translator.snapshot())
 
     def event(name, *args):
         logger.info("session=%s " + name, session_id, *args)
@@ -96,6 +109,8 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
                              "translation_engine": 1,
                              "translation_provider": translator.status.provider,
                              "caption_overlay": 1,
+                             "persistent_captions": 1,
+                             "caption_latency": 1,
                          },
                          "translation_status": translator.status.to_dict(),
                          "wlk": config})
@@ -196,3 +211,5 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
             await asyncio.gather(sender, receiver, return_exceptions=True)
     finally:
         await translator.close()
+        if caption_hub is not None and caption_hub.session_id == session_id:
+            caption_hub.translation_status_getter = None

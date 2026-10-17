@@ -5,7 +5,9 @@ import os
 
 @dataclass(frozen=True)
 class CaptionConfig:
-    max_lines: int = 2
+    mode: str = "persistent_rolling"
+    max_lines: int = 3
+    stop_clear_ms: int = 8000
     font_size: int = 48
     max_width: int = 1500
     position: str = "bottom"
@@ -18,7 +20,7 @@ class CaptionConfig:
     max_backlog_ms: int = 20000
 
     def __post_init__(self):
-        limits = {"max_lines": (1, 4), "font_size": (16, 96),
+        limits = {"max_lines": (1, 3), "stop_clear_ms": (0, 120000), "font_size": (16, 96),
                   "max_width": (240, 3840), "bottom_offset": (0, 1000),
                   "background_opacity": (0, 1), "min_display_ms": (300, 10000),
                   "max_display_ms": (500, 30000), "reading_wps": (1, 8),
@@ -29,6 +31,8 @@ class CaptionConfig:
                 raise ValueError(f"Invalid caption setting: {name}")
         if self.position not in {"bottom", "top", "center"}:
             raise ValueError("Invalid caption position")
+        if self.mode not in {"persistent_rolling", "timed_queue"}:
+            raise ValueError("Invalid caption mode")
         if self.min_display_ms > self.max_display_ms:
             raise ValueError("Caption minimum display time exceeds maximum")
 

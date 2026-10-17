@@ -151,6 +151,11 @@ class SegmentManager:
     def emitted_segments(self):
         return tuple(self._emitted)
 
+    @property
+    def monotonic_origin(self):
+        """Clock anchor for stage diagnostics; segmentation decisions are unchanged."""
+        return self._origin
+
     def _now(self, now):
         now = time.monotonic() - self._origin if now is None else now
         if not math.isfinite(now) or now < self._last_now:

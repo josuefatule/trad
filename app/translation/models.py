@@ -1,5 +1,6 @@
 """Immutable inputs and outputs at the translation boundary."""
 from dataclasses import asdict, dataclass
+from .timing import TranslationTiming
 
 
 @dataclass(frozen=True)
@@ -23,6 +24,7 @@ class TranslationRequest:
     asr_first_seen_at: float | None = None
     ready_at: float | None = None
     normalization_latency_ms: float | None = None
+    timing: TranslationTiming | None = None
 
     def to_dict(self):
         return asdict(self)
@@ -48,6 +50,7 @@ class TranslationResult:
     asr_first_seen_at: float | None = None
     ready_at: float | None = None
     normalization_latency_ms: float | None = None
+    timing: TranslationTiming | None = None
 
     def to_dict(self):
         return asdict(self)

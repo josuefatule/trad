@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const {CaptionRenderer, splitCaption} = require('../app/static/caption_renderer.js');
-const config = {max_lines: 2, font_size: 48, max_width: 240, min_display_ms: 1800,
+const config = {mode: 'timed_queue', max_lines: 2, font_size: 48, max_width: 240, min_display_ms: 1800,
   max_display_ms: 6500, reading_wps: 3, visual_queue_max: 64, max_backlog_ms: 120000};
 const measure = (text, size) => text.length * size / 4;
 
@@ -99,10 +99,12 @@ module.exports = (async () => {
     static OPEN = 1;
     constructor() {this.readyState = 1; sockets.push(this);}
     close() {this.readyState = 3;}
-    send() {}
+    send(message) { (this.sent ||= []).push(JSON.parse(message)); }
   }
   const context = vm.createContext({
     CaptionPresentation: {CaptionRenderer},
+    OverlayClock: require('../app/static/overlay_latency.js').OverlayClock,
+    performance: {now: () => 0}, requestAnimationFrame: fn => fn(0),
     document: {getElementById: id => elements.get(id), createElement: () => ({
       getContext: () => ({font:'',measureText: text => ({width:measure(text,48)})}),
     })},
@@ -114,11 +116,17 @@ module.exports = (async () => {
   vm.runInContext(fs.readFileSync(path.join(__dirname,'../app/static/overlay.js'),'utf8'),context);
   // Initialization awaits fetch and JSON.
   for (let i=0;i<8;i++) await Promise.resolve();
-  const send = data => sockets.at(-1).onmessage({data:JSON.stringify({protocol_version:1,...data})});
+  sockets[0].onopen();
+  assert.equal(sockets[0].sent[0].type,'clock_probe');
+  const send = data => sockets.at(-1).onmessage({data:JSON.stringify({protocol_version:2,...data})});
+  send({type:'clock_sync',client_sent_ms:0,server_received_mono_ms:10000,server_sent_mono_ms:10000});
   send({type:'snapshot',event_id:0,session_id:'a',state:'live',server_time:0,caption:null});
   const literal = '<img src=x onerror=alert(1)>';
-  send({type:'caption',event_id:1,session_id:'a',caption:caption(literal)});
+  send({type:'caption',event_id:1,session_id:'a',caption:{...caption(literal),
+    published_mono_ms:10000,latency:{ready_to_hub_ms:900}}});
   assert.equal(elements.get('caption').textContent.replace(/\n/g,' '),literal);
+  assert.equal(sockets[0].sent.at(-1).type,'render_sample');
+  assert.equal(sockets[0].sent.at(-1).ready_to_visible_estimate_ms,900);
   assert.equal(elements.get('caption-stage').style.alignItems,'flex-end');
   send({type:'session',event_id:2,session_id:'b',state:'connecting'});
   assert.equal(elements.get('caption').textContent,'');
