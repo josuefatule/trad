@@ -1,7 +1,7 @@
 """Optional smoke check of running servers: silence only, never records audio."""
 import asyncio
 import json
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 from websockets.asyncio.client import connect
 
@@ -11,7 +11,13 @@ async def main():
         with urlopen(url, timeout=5) as response:
             print(url, response.status)
             assert response.status == 200
-    async with connect("ws://localhost:8010/ws/session", proxy=None) as ws:
+    with urlopen("http://localhost:8010/api/operator/bootstrap", timeout=5) as response:
+        token = json.load(response)["control_token"]
+    request = Request("http://localhost:8010/api/operator/status", headers={"X-Operator-Token": token})
+    with urlopen(request, timeout=5) as response:
+        assert json.load(response)["can_start"], "An operator session is active; smoke check refused"
+    async with connect("ws://localhost:8010/ws/session", proxy=None,
+                       origin="http://localhost:8010", subprotocols=["operator.v1", token]) as ws:
         while True:
             data = json.loads(await asyncio.wait_for(ws.recv(), 30))
             print(json.dumps(data, ensure_ascii=False))

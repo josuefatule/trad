@@ -4,6 +4,7 @@
   const surface = document.getElementById("overlay-canvas");
   let socket = null, stopped = false, retry = 0, renderer;
   let lastEventId = -1;
+  let visualGeneration = -1, clearedThrough = 0;
   let clock = new OverlayClock(), probeTimer = null, renderSerial = 0, pendingPaint = false, coalesced = 0;
   const response = await fetch(`/api/overlay/config${location.search}`);
   if (!response.ok) { console.error("Invalid overlay configuration"); return; }
@@ -34,6 +35,7 @@
       renderSerial++; pendingPaint = false;
       if (socket?.readyState === WebSocket.OPEN) socket.send(JSON.stringify({
         type: "render_sample", kind: "clear", session_id: sample.sessionId, sequence: sample.sequence,
+        visual_generation: visualGeneration,
         browser_rendered_ms: performance.now(), visual_queue_depth: 0,
         visible_caption_count: 0, visible_line_count: 0, rolled_out_lines: renderer.rolledOutLines || 0}));
     },
@@ -48,6 +50,7 @@
         pendingPaint = false;
         const painted = performance.now();
         const data = {type: "render_sample", session_id: session, sequence: sample.caption.sequence,
+          visual_generation: visualGeneration,
           renderer_delay_ms: sample.renderer_delay_ms,
           paint_delay_ms: Math.max(0, painted - sample.receivedAt),
           browser_received_ms: sample.receivedAt, browser_rendered_ms: painted,
@@ -71,6 +74,7 @@
     if (stopped) return;
     renderer.setState("reconnecting");
     socket = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws/overlay`);
+    const connection = socket;
     clock = new OverlayClock();
     const probe = () => {
       if (socket.readyState === WebSocket.OPEN) {
@@ -80,20 +84,25 @@
     };
     socket.onopen = probe;
     socket.onmessage = event => {
+      if(socket !== connection)return;
       const receivedAt = performance.now();
       let data;
       try { data = JSON.parse(event.data); } catch { socket.close(); return; }
-      if (data.protocol_version !== 2) { stopped = true; renderer.clear(); socket.close(); return; }
+      if (data.protocol_version !== 3) { stopped = true; renderer.clear(); socket.close(); return; }
       if (data.type === "clock_sync") { clock.synchronize(data, receivedAt); return; }
       if (data.type === "snapshot") {
+        if(data.session_id===renderer.sessionId && ((data.visual_generation ?? 0)<visualGeneration || data.event_id<lastEventId))return;
         retry = 0; lastEventId = data.event_id;
         if (renderer.sessionId !== data.session_id) renderer.reset(data.session_id);
+        visualGeneration = data.visual_generation ?? 0;
+        clearedThrough = data.cleared_through_sequence ?? 0;
+        renderer.clear(); renderer.seen = Math.max(renderer.seen, clearedThrough);
         if (renderer.restore) {
-          renderer.restore(data.captions || (data.caption ? [data.caption] : []), receivedAt);
+          renderer.restore((data.captions || (data.caption ? [data.caption] : [])).filter(item=>item.sequence>clearedThrough), receivedAt);
           renderer.setState(data.state, data.stop_remaining_ms);
         } else {
           renderer.setState(data.state);
-          if (data.caption) renderer.enqueue(data.caption,
+          if (data.caption && data.caption.sequence>clearedThrough) renderer.enqueue(data.caption,
             Math.max(0, (data.caption.expires_at - data.server_time) * 1000), receivedAt);
         }
         return;
@@ -102,13 +111,23 @@
       lastEventId = data.event_id;
       if (data.type === "session" && data.state === "connecting") {
         renderer.reset(data.session_id); coalesced = 0; pendingPaint = false; renderSerial++;
+        visualGeneration = data.visual_generation ?? 0; clearedThrough = 0;
       }
       if (data.session_id !== renderer.sessionId) return;
+      const generation = data.visual_generation ?? 0;
+      if (generation < visualGeneration) return;
+      if (data.type === "captions_cleared" || generation > visualGeneration) {
+        visualGeneration = generation;
+        clearedThrough = Math.max(clearedThrough, data.cleared_through_sequence ?? 0);
+        renderer.clear(); renderer.seen = Math.max(renderer.seen, clearedThrough);
+        if(data.type === "captions_cleared")return;
+      }
       if (data.type === "session") renderer.setState(data.state);
-      if (data.type === "caption") renderer.enqueue(data.caption, null, receivedAt);
+      if (data.type === "caption" && data.caption.sequence > clearedThrough) renderer.enqueue(data.caption, null, receivedAt);
       if (data.type === "translator") renderer.translatorState = data.state;
     };
     socket.onclose = () => {
+      if(socket !== connection)return;
       clearTimeout(probeTimer); pendingPaint = false; renderSerial++;
       renderer.setState("disconnected");
       if (!stopped) setTimeout(connect, Math.min(10000, 500 * 2 ** Math.min(retry++, 5)));

@@ -88,7 +88,7 @@ class PersistentHubTests(unittest.TestCase):
     def test_clock_probe_protocol_without_translation(self):
         app = create_app(Settings(log_dir="logs/tests", translation=TranslationConfig()))
         with TestClient(app) as client, client.websocket_connect("/ws/overlay") as ws:
-            self.assertEqual(ws.receive_json()["protocol_version"], 2)
+            self.assertEqual(ws.receive_json()["protocol_version"], 3)
             ws.send_json({"type": "clock_probe", "client_sent_ms": 12.})
             response = ws.receive_json()
             self.assertEqual(response["type"], "clock_sync")

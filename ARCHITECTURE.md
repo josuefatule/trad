@@ -1,4 +1,4 @@
-# Arquitectura — Milestones 1–5
+# Arquitectura — Milestones 1–6
 
 Inspección local: 24 de septiembre de 2026, **whisperlivekit 0.2.26**.
 La fuente principal fue `.venv/Lib/site-packages/whisperlivekit/`, sin modificar
@@ -554,7 +554,8 @@ en /api/overlay/status y Operator; config visual pública en /api/overlay/config
 
 Un solo proceso Uvicorn y acceso localhost son requisitos de esta versión. Varios
 workers necesitarían un hub externo compartido. No hay autenticación ni aislamiento
-de espectadores en red; mantener --host 127.0.0.1. No se modifica OBS ni se crean
+de espectadores en red en M5; M6 añade autoridad local para mutaciones, descrita abajo.
+Mantener --host 127.0.0.1. No se modifica OBS ni se crean
 overlays de otros idiomas. La validación de UI real en OBS queda pendiente.
 
 ## M5.1: persistent_rolling y trazabilidad temporal
@@ -609,3 +610,39 @@ adaptador/thread/red y retries por separado, no solo tiempo HTTP de DeepL.
 Sigue sin medirse el inicio físico del habla → primera hipótesis ASR; ni composición,
 buffering, encoder y pantalla de OBS. Las pruebas sintéticas aíslan el renderer y
 no permiten afirmar mejora end-to-end real hasta otra lectura instrumentada.
+
+## M6: Operator Console v1 y control visual
+
+`operator_console.js` mantiene estados/acciones, autorización, diagnósticos y alertas;
+`operator.js` conserva captura/EOF, reflow y auditoría por ID/secuencia. HTML/CSS
+usan una cabecera sticky y paneles con scroll interno; ENGLISH ocupa la columna
+principal. No hay framework ni recursos externos. Poll de estado cada 2 s sin
+solapamiento; disponibilidad HTTP de overlay se comprueba una vez. Ready del
+adaptador significa configurado, no autenticación/red verificadas. Una traducción
+exitosa permite mostrar Verified; no se afirma que un observador sea OBS.
+
+Nuevas rutas: `GET /api/operator/bootstrap`, `GET /api/operator/status` y
+`POST /api/operator/clear`. `OperatorAuthority` emite nonces efímeros por pestaña;
+`/ws/session` exige loopback, Host/Origin exactos y subprotocolos operator.v1/nonce.
+El primer productor válido conserva autoridad sobre CLEAR hasta una sesión nueva.
+El relay recibe `OperatorBrowser`, adaptador que añade protocolo/capabilities M6
+y sanitiza errores para UI sin tocar resultados ni políticas de traducción.
+El canal hacia WLK sigue siendo exclusivamente PCM/EOF. No se modificó su cliente.
+
+Operator usa protocol_version=1 y capabilities operator_console/captions_clear=1;
+backend viejo se rechaza antes de pedir audio. Overlay pasa a v3. CLEAR compara
+session_id y visual_generation esperados, incrementa solo la generación visual,
+fija cleared_through_sequence=sequence, vacía el historial visual y emite
+captions_cleared por el mismo broadcast ordenado. No reinicia manager ni traductor.
+Snapshots y eventos llevan watermark/generación. El transporte del overlay cancela
+la ventana y timers, filtra capturas de snapshots/seq antiguos y sockets previos,
+y admite la siguiente traducción posterior al watermark. El renderer de rolling
+no se modifica. Las muestras de paint viejas se descartan por generación.
+
+Los observadores no reciben nonces y sus mensajes no pueden mutar captions/sesión.
+Estado local requiere nonce; CLEAR y audio requieren además origen y propietario.
+Tokens en memoria, 24 h, máximo 64, sin URL/cookies/localStorage. No protege contra
+código malicioso en el propio PC/origen ni permite despliegue remoto/multiusuario.
+Los diagnósticos distinguen backend/observadores y muestras ausentes, ofrecen
+mediana/p95 desde mínimo configurable y alertas solo ante condiciones sostenidas.
+Detalles y límites M7: [OPERATOR_CONSOLE.md](OPERATOR_CONSOLE.md).

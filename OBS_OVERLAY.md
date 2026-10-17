@@ -144,7 +144,7 @@ Ver [MILESTONE_5_1_REPORT.md](benchmarks/MILESTONE_5_1_REPORT.md).
 
 - Reiniciar FastAPI después de actualizar Python/configuración, con el micrófono detenido.
 - Recargar /operator con Ctrl+F5 y comprobar Translator: Ready (deepl).
-- En OBS, Refresh cache of current page para cargar protocolo overlay v2 y M5.1.
+- En OBS, Refresh cache of current page para cargar protocolo overlay v3 y CLEAR de M6.
 - Abrir /overlay antes de START. En Operator → Overlay / OBS diagnostics debe
   aumentar overlay connections. Cada overlay adicional comparte la misma traducción.
 - Leer 20–30 segundos, hacer una pausa de 10 segundos y comprobar que el texto permanece.
@@ -167,4 +167,14 @@ transparencia, fuente intacta, deduplicación y preview completo visible. Se omi
 No conecta el micrófono ni usa DeepL; tampoco sustituye la comprobación visual en OBS.
 
 No usar varios workers Uvicorn. El historial acotado solo existe en memoria del proceso.
-Mantener FastAPI escuchando en 127.0.0.1; el producto no añade autenticación remota.
+Mantener FastAPI escuchando en 127.0.0.1; M6 autoriza mutaciones mediante nonce y
+propietario local, sin autenticación remota ni cuentas.
+
+## M6: limpieza manual desde Operator
+
+START/STOP/CLEAR y diagnósticos están en `/operator`; ver [OPERATOR_CONSOLE.md](OPERATOR_CONSOLE.md).
+CLEAR CAPTIONS vacía todos los overlays conectados y evita restaurar texto anterior
+al reconectar. La siguiente publicación inglesa aparece normalmente. El historial
+del Operator, el micrófono y DeepL siguen funcionando. El overlay es observador y
+no puede emitir ese control. Se conserva persistent_rolling y la región Y=930–1080.
+La consola muestra **Overlay clients: N**, no una afirmación de conexión OBS.

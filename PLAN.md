@@ -80,7 +80,7 @@ ampliar el glosario de conferencia.
 - [x] Tests Python, DOM/tiempos JavaScript, integración simulada y replay.
 - [ ] Inspección visual final en OBS y lectura real con audio + DeepL.
 
-No avanzar a Milestone 6. No se instala ni controla OBS desde la aplicación.
+Restricción histórica de M5 superada por la autorización de M6. No se instala ni controla OBS.
 
 ## Milestone 5.1 — completado
 
@@ -94,4 +94,24 @@ No avanzar a Milestone 6. No se instala ni controla OBS desde la aplicación.
 - [x] Comparación determinista anterior/nueva y tests temporales con reloj simulado.
 - [ ] Medir la experiencia completa de M5.1 con otra lectura real en OBS.
 
-No avanzar a M6 ni cambiar thresholds de segmentación a partir de estas cifras.
+No cambiar thresholds de segmentación a partir de estas cifras.
+
+## Milestone 5.2 — completado
+
+- [x] Evidencia real de que ASR → READY domina la espera hasta NORMALIZED.
+- [x] Replay A/B/C del stream original completo y evaluación de cortes/DeepL con caché.
+- [x] Configuración A predeterminada conservada; B no recomendada.
+
+## Milestone 6 — implementación completada
+
+- [x] Consola con status bar, controles y ENGLISH predominante, RAW/NORMALIZED accesibles.
+- [x] START/STOP conservan PCM, barrera EOF y flush final; bloqueo de duplicados/transiciones.
+- [x] CLEAR visual autorizado por propietario, broadcast a todos los overlays, sin tocar pipeline.
+- [x] Snapshot/reconexión con generación visual y watermark, sin restaurar texto borrado.
+- [x] Estados de servicio honestos; Overlay clients sin afirmar identificación de OBS.
+- [x] Diagnósticos desplegables, auditoría por ID/sequence, mediana/p95 y alertas sostenidas.
+- [x] Autorización localhost/origen/nonce, errores sanitizados y compatibilidad de protocolos.
+- [x] Tests Python/JS y capturas Chrome a 1366×768 y 1920×1080 con fixtures locales.
+- [ ] Aceptación final del usuario con micrófono/DeepL y CLEAR en sus fuentes OBS reales.
+
+Detenerse antes de Milestone 7; sin recuperación automática de audio ni control de OBS.

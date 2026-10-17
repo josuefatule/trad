@@ -6,7 +6,7 @@ import unittest
 from types import SimpleNamespace
 from pathlib import Path
 
-from fastapi.testclient import TestClient
+from tests.operator_client import TestClient
 from websockets.asyncio.server import serve
 
 from app.asr.whisperlivekit_client import relay, session_url
@@ -198,9 +198,9 @@ class HttpTests(unittest.TestCase):
                 self.assertEqual(client.get("/health").json()["status"], "ok")
                 operator_html = client.get("/operator").text
                 self.assertIn("LIVE CAPTIONS", operator_html)
-                self.assertIn('<div id="normalized" class="normalized-flow"', operator_html)
+                self.assertIn('<div id="normalized" class="text-flow"', operator_html)
                 self.assertIn('<pre id="normalized-segments"></pre>', operator_html)
-                self.assertIn('<div id="english" class="translated-flow"', operator_html)
+                self.assertIn('<div id="english" class="text-flow"', operator_html)
                 self.assertIn('id="translation-status"', operator_html)
                 self.assertEqual(client.get("/static/operator.js").status_code, 200)
 

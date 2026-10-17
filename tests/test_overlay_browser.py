@@ -89,7 +89,7 @@ class OverlayBrowserTests(unittest.TestCase):
           };
           try {
             check(window.testSocket?.onmessage,'production overlay initialized: '+JSON.stringify(window.layoutErrors));
-            const send=data=>testSocket.onmessage({data:JSON.stringify({protocol_version:2,...data})});
+            const send=data=>testSocket.onmessage({data:JSON.stringify({protocol_version:3,...data})});
             send({type:'snapshot',event_id:0,session_id:'layout',state:'live',captions:[]});
             const text='Systolic and diastolic pressure, cardiovascular function and vascular resistance. Café, naïve — whole words stay together. '.repeat(6);
             send({type:'caption',event_id:1,session_id:'layout',caption:{session_id:'layout',sequence:1,provider:'deepl',text}});

@@ -1,6 +1,13 @@
 "use strict";
 const $ = (id) => document.getElementById(id);
+const ui = new OperatorConsole.ConsoleView($);
+globalThis.OperatorUI = ui;
 let active = null;
+function flow(id, text) {
+  const element=$(id), following=element.scrollHeight===undefined || element.scrollHeight-element.clientHeight-element.scrollTop<40;
+  element.textContent=text;
+  if(following)element.scrollTop=element.scrollHeight;
+}
 function renderSegmentation(s, result, normalization) {
   if (!result) return;
   $("pending").textContent = result.pending_segment;
@@ -11,9 +18,9 @@ function renderSegmentation(s, result, normalization) {
     const item = normalizedById.get(segment.id);
     if (!item) throw new Error("El backend no envió NORMALIZED ES. Reinicia FastAPI y recarga esta página.");
     s.readyIds.add(segment.id);
-    $("ready").textContent += `[${stamp(segment.start_time)} → ${stamp(segment.end_time)}] ${segment.reason} · ${segment.word_count} palabras · ${Math.round(segment.latency_ms)} ms\n${segment.text}\n\n`;
+    $("ready").textContent += `[${segment.id}] [${stamp(segment.start_time)} → ${stamp(segment.end_time)}] ${segment.reason} · ${segment.word_count} palabras · ${Math.round(segment.latency_ms)} ms\n${segment.text}\n\n`;
     s.normalizedSegments.push(item.normalized_text);
-    $("normalized").textContent = compactNormalizedText(s.normalizedSegments);
+    flow("normalized", compactNormalizedText(s.normalizedSegments));
     $("normalized-segments").textContent += `[${segment.id}]\n${item.normalized_text}\n\n`;
     for (const correction of item?.corrections || []) {
       const visible = value => !value || /^\s*$/.test(value) ? JSON.stringify(value) : value;
@@ -40,11 +47,11 @@ function compactNormalizedText(parts) {
 function translationStatus(status, queueDepth) {
   const state = status?.state || "unknown";
   const provider = status?.provider ? ` (${status.provider})` : "";
-  $("translator").textContent = `${state[0].toUpperCase()}${state.slice(1)}${provider}`;
+  if(!ui.lastTranslationFailed)ui.translator(status);
   $("translation-status").textContent = [
     `provider: ${status?.provider || "none"}`,
     `status: ${state}`,
-    `queue depth: ${queueDepth ?? 0}`,
+    `queue depth: ${queueDepth ?? "—"}`,
     status?.message ? `detail: ${status.message}` : "",
   ].filter(Boolean).join("\n");
 }
@@ -54,23 +61,32 @@ function renderTranslation(s, data) {
     return;
   }
   const result = data.translation;
+  if (result.sequence < s.nextTranslationSequence) return;
   s.translationResults.set(result.sequence, result);
   while (s.translationResults.has(s.nextTranslationSequence)) {
     const ready = s.translationResults.get(s.nextTranslationSequence);
     s.translationResults.delete(s.nextTranslationSequence++);
     if (ready.success) {
       s.translatedSegments.push(ready.translated_text);
-      $("english").textContent = compactNormalizedText(s.translatedSegments);
+      flow("english", compactNormalizedText(s.translatedSegments));
+      if(ui.lastTranslationFailed)$("error").textContent="";
+      ui.lastTranslationFailed=false;
+      ui.translator({state:"ready",provider:ready.provider}, true);
+    } else {
+      ui.lastTranslationFailed=true;
+      ui.translator({state:"error",provider:ready.provider});
+      ui.error(ready.error);
     }
+    $("english-segments").textContent += `[${ready.segment_id}] #${ready.sequence} ${ready.provider} ${ready.success?"OK":"ERROR"}\n${ready.success?ready.translated_text:OperatorConsole.userError(ready.error)}\n\n`;
     $("translation-status").textContent = [
       `provider: ${ready.provider}`,
       `status: ${ready.success ? "completed" : "error"}`,
       `segment: ${ready.segment_id} (#${ready.sequence})`,
-      `translation latency: ${Math.round(ready.latency_ms)} ms`,
-      `queue delay: ${Math.round(ready.queue_delay_ms)} ms`,
-      `queue depth: ${data.translation_queue_depth}`,
+      `translation latency: ${OperatorConsole.ms(ready.latency_ms)}`,
+      `queue delay: ${OperatorConsole.ms(ready.queue_delay_ms)}`,
+      `queue depth: ${data.translation_queue_depth ?? "—"}`,
       `attempts: ${ready.attempt_count}`,
-      ready.error ? `error: ${ready.error}` : "",
+      ready.error ? `error: ${OperatorConsole.userError(ready.error)}` : "",
     ].filter(Boolean).join("\n");
   }
 }
@@ -79,10 +95,7 @@ function debug(message) {
     $("debug").textContent.split("\n").slice(0, 99).join("\n");
 }
 function controls(busy) {
-  $("start").disabled = busy;
-  $("refresh").disabled = busy;
-  $("microphone").disabled = busy;
-  $("stop").disabled = true;
+  ui.localActive=busy;ui.render();
 }
 async function microphones(permission = false) {
   if (permission) {
@@ -94,6 +107,7 @@ async function microphones(permission = false) {
   $("microphone").replaceChildren(new Option("Predeterminado", ""),
     ...devices.map((d, i) => new Option(d.label || `Micrófono ${i + 1}`, d.deviceId)));
   if (devices.some(d => d.deviceId === selected)) $("microphone").value = selected;
+  $("selected-microphone").textContent=$("microphone").selectedOptions?.[0]?.textContent || "Predeterminado";
 }
 async function release(s) {
   if (s.releasing) return s.releasing;
@@ -110,7 +124,8 @@ async function fail(s, error) {
   if (active !== s) return;
   clearTimeout(s.timer);
   s.failed = true;
-  $("error").textContent = error.message || String(error);
+  ui.error(error);
+  ui.phaseTo("ERROR");
   $("connection").textContent = "Error / Disconnected";
   debug($("error").textContent);
   s.socket?.close();
@@ -157,17 +172,23 @@ async function capture(s) {
   await s.context.resume();
   if (active !== s) return;
   $("capture").textContent = `${s.stream.getAudioTracks()[0].label} | ${s.context.sampleRate} Hz → PCM s16le mono 16000 Hz`;
+  $("selected-microphone").textContent=s.stream.getAudioTracks()[0].label;
   $("stop").disabled = false;
+  ui.phaseTo("LIVE");
   debug("audio stream started");
 }
-$("refresh").onclick = () => microphones(true).catch(error => { $("error").textContent = error.message; });
+$("refresh").onclick = () => microphones(true).catch(error => ui.error(error));
+$("clear").onclick = () => ui.clear();
 $("start").onclick = async () => {
+  if(active || !await ui.ready || $("start").disabled)return;
   const s = {readyIds: new Set(), normalizedSegments: [], translatedSegments: [],
     translationResults: new Map(), nextTranslationSequence: 1, sessionId: null};
   active = s;
   controls(true);
+  ui.phaseTo("STARTING");ui.startedAt=Date.now();
+  ui.verifiedProvider=null;ui.lastTranslationFailed=false;
   $("error").textContent = "";
-  for (const id of ["partial", "confirmed", "segments", "pending", "ready", "normalized", "normalized-segments", "english", "corrections"]) $(id).textContent = "";
+  for (const id of ["partial", "confirmed", "segments", "pending", "ready", "normalized", "normalized-segments", "english", "english-segments", "corrections"]) $(id).textContent = "";
   $("translator").textContent = "Connecting";
   $("translation-status").textContent = "Waiting for configuration";
   $("connection").textContent = "Connecting";
@@ -178,15 +199,18 @@ $("start").onclick = async () => {
     const deviceId = $("microphone").value;
     s.stream = await navigator.mediaDevices.getUserMedia({audio: deviceId ? {deviceId: {exact: deviceId}} : true});
     s.stream.getAudioTracks()[0].onended = () => { if (active === s && !s.stopping) fail(s, new Error("Micrófono desconectado")); };
-    const socket = s.socket = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws/session`);
+    const socket = s.socket = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws/session`, ["operator.v1",ui.token]);
     s.timer = setTimeout(() => fail(s, new Error("Timeout al conectar con WLK")), 30000);
     socket.onmessage = async event => {
       if (active !== s) return;
       try {
         const data = JSON.parse(event.data);
+        if(data.protocol_version!==1)throw Error("Backend incompatible");
         if (data.session_id && !s.sessionId) s.sessionId = data.session_id;
+        if(data.session_id && data.session_id!==s.sessionId)return;
         debug(`${data.type} ${data.state || data.payload?.type || data.payload?.status || ""}`);
         if (data.type === "config") {
+          if(data.capabilities?.operator_console!==1 || data.capabilities?.captions_clear!==1)throw Error("Backend incompatible con M6");
           if (data.capabilities?.terminology_normalizer !== 1) {
             throw new Error("Backend anterior a Milestone 3.1. Reinicia FastAPI y recarga esta página.");
           }
@@ -200,14 +224,14 @@ $("start").onclick = async () => {
             throw new Error("Backend anterior a M5.1. Reinicia FastAPI para captions persistentes y latencias.");
           }
           s.translationStatus = data.translation_status;
-          translationStatus(s.translationStatus, 0);
+          translationStatus(s.translationStatus, 0);ui.translator(s.translationStatus);
           clearTimeout(s.timer);
           $("connection").textContent = "Connected";
           await capture(s);
         } else if (data.type === "asr") {
           if (s.translationStatus) translationStatus(s.translationStatus, data.translation_queue_depth);
           $("partial").textContent = data.transcript.partial_text;
-          $("confirmed").textContent = data.transcript.confirmed_text;
+          flow("confirmed", data.transcript.confirmed_text);
           $("segments").textContent = JSON.stringify(data.transcript.segments, null, 2);
           renderSegmentation(s, data.segmentation, data.normalization);
           if (new URLSearchParams(location.search).get("trace_partial") === "1") {
@@ -221,6 +245,7 @@ $("start").onclick = async () => {
         } else if (data.type === "error") throw new Error(data.message);
         else if (data.state === "stopped") {
           s.finished = true;
+          ui.phaseTo("STOPPED");
           $("connection").textContent = "Disconnected — sesión finalizada";
           await release(s);
         }
@@ -241,6 +266,7 @@ $("stop").onclick = async () => {
   const s = active;
   if (!s || s.stopping) return;
   s.stopping = true;
+  ui.phaseTo("STOPPING");
   $("stop").disabled = true;
   $("connection").textContent = "Finalizando…";
   try {
@@ -253,4 +279,4 @@ window.addEventListener("beforeunload", () => {
   active?.stream?.getTracks().forEach(track => track.stop());
   active?.socket?.close();
 });
-microphones().catch(error => { $("error").textContent = error.message; });
+microphones().catch(error => ui.error(error));

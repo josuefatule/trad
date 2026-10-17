@@ -21,7 +21,7 @@ class Subscriber:
 
 
 class CaptionHub:
-    protocol_version = 2
+    protocol_version = 3
 
     def __init__(self, config, *, subscriber_limit=32, queue_size=64, clock=time.time,
                  monotonic_clock=time.monotonic):
@@ -33,6 +33,9 @@ class CaptionHub:
         self.session_id = None
         self.state = "waiting"
         self.sequence = 0
+        self.last_success_sequence = 0
+        self.visual_generation = 0
+        self.cleared_through_sequence = 0
         self.last_caption = None
         self.event_id = 0
         self.subscribers = set()
@@ -56,7 +59,9 @@ class CaptionHub:
     def _event(self, kind, **values):
         self.event_id += 1
         message = {"type": kind, "protocol_version": self.protocol_version,
-                   "event_id": self.event_id, "session_id": self.session_id, **values}
+                   "event_id": self.event_id, "session_id": self.session_id,
+                   "visual_generation": self.visual_generation,
+                   "cleared_through_sequence": self.cleared_through_sequence, **values}
         for subscriber in tuple(self.subscribers):
             try:
                 subscriber.queue.put_nowait(message)
@@ -79,6 +84,8 @@ class CaptionHub:
         return {"type": "snapshot", "protocol_version": self.protocol_version,
                 "event_id": self.event_id, "session_id": self.session_id,
                 "state": self.state, "sequence": self.sequence,
+                "visual_generation": self.visual_generation,
+                "cleared_through_sequence": self.cleared_through_sequence,
                 "translator_state": self.translator_state,
                 "caption": caption, "server_time": self.clock(),
                 "captions": list(self.caption_history) if caption and persistent else [],
@@ -104,6 +111,9 @@ class CaptionHub:
             raise ValueError("An audio session is already active; stop it before START")
         self.session_id = session_id
         self.sequence = 0
+        self.last_success_sequence = 0
+        self.visual_generation = 0
+        self.cleared_through_sequence = 0
         self.last_caption = None
         self.caption_history.clear()
         self.stopped_at = None
@@ -119,6 +129,26 @@ class CaptionHub:
         self.translator_state = "unknown"
         self.state = "connecting"
         self._event("session", state=self.state)
+
+    def clear_captions(self, session_id, expected_generation):
+        if self.state in {"connecting", "draining"}:
+            raise ValueError("Session transition in progress")
+        if session_id != self.session_id or expected_generation != self.visual_generation:
+            raise ValueError("Stale visual control")
+        if self.session_id is None:
+            return False
+        self.visual_generation += 1
+        self.cleared_through_sequence = self.sequence
+        self.last_caption = None
+        self.caption_history.clear()
+        for subscriber in self.subscribers:
+            subscriber.diagnostics = {}
+        # Ordered synchronous event, after queued publications and before future ones.
+        self._event("captions_cleared", sequence=self.sequence,
+                    cleared_through_sequence=self.cleared_through_sequence)
+        logger.info("session=%s captions_cleared generation=%d through=%d", self.session_id,
+                    self.visual_generation, self.cleared_through_sequence)
+        return True
 
     def set_state(self, session_id, state):
         if session_id != self.session_id:
@@ -164,6 +194,7 @@ class CaptionHub:
             logger.warning("session=%s overlay_caption_rejected sequence=%d", self.session_id, result.sequence)
             return False
         self.translator_state = "ready"
+        self.last_success_sequence = result.sequence
         now = self.clock()
         published_mono = self.monotonic_clock()
         durations = stage_durations(result.timing, published_mono)
@@ -186,6 +217,9 @@ class CaptionHub:
 
     def diagnostics(self):
         return {"session_id": self.session_id, "state": self.state,
+                "visual_generation": self.visual_generation,
+                "cleared_through_sequence": self.cleared_through_sequence,
+                "sequence": self.sequence,
                 "overlay_connections": len(self.subscribers),
                 "last_caption": self.last_caption,
                 "broadcast_errors": self.broadcast_errors,
@@ -203,7 +237,9 @@ class CaptionHub:
     def record_client_sample(self, subscriber, data):
         if data.get("session_id") != self.session_id or subscriber not in self.subscribers:
             return
-        allowed = {"sequence", "renderer_delay_ms", "paint_delay_ms", "hub_delivery_estimate_ms",
+        if data.get("visual_generation", 0) != self.visual_generation:
+            return
+        allowed = {"sequence", "visual_generation", "renderer_delay_ms", "paint_delay_ms", "hub_delivery_estimate_ms",
                    "delivery_uncertainty_ms", "ready_to_visible_estimate_ms", "asr_to_visible_estimate_ms",
                    "visual_queue_depth", "visible_caption_count", "visible_line_count", "rolled_out_lines",
                    "browser_received_ms", "browser_rendered_ms"}

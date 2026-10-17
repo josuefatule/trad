@@ -1,4 +1,4 @@
-# Live Captions local — M5.1: Persistent Captions & Latency Diagnostics
+# Live Captions local — M6: Operator Console v1
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.
@@ -18,6 +18,15 @@ M5 comparte esa misma traducción con un overlay transparente en
 DeepL. El operador sigue siendo la única fuente de audio y control.
 Preview local sin voz ni API: **http://localhost:8010/overlay/preview** → Play demo.
 Configuración y pasos completos: [OBS_OVERLAY.md](OBS_OVERLAY.md).
+
+M6 reorganiza `/operator` con estados reales, controles START/STOP/CLEAR, ENGLISH
+predominante y diagnósticos desplegables. CLEAR borra solo la ventana de todos los
+overlays, incluso tras reconectar; no detiene audio/traducción ni borra historiales.
+La consola exige autorización local por pestaña y propietario de sesión. No puede
+identificar OBS frente a una pestaña: muestra **Overlay clients: N**.
+Operación, protocolo, seguridad y capturas: [OPERATOR_CONSOLE.md](OPERATOR_CONSOLE.md).
+Después de actualizar, reiniciar FastAPI con el micrófono detenido y recargar
+Operator/Browser Source para cargar Operator v1 y overlay v3. No se cambió A de M5.2.
 
 M5.1 usa persistent_rolling: hasta tres líneas según la altura disponible, reflow continuo y
 actualización inmediata. Las pausas no borran texto; STOP limpia tras 8 s. El modo
@@ -177,7 +186,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**132 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
+**143 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
 parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
@@ -194,6 +203,9 @@ M5.1: `node tests/test_persistent_captions.cjs`; comparación reproducible en
 `benchmarks/renderer_arrivals.py` y `benchmarks/renderer_policy.cjs`.
 Geometría y wrapping de la franja: `node tests/test_overlay_geometry.cjs`.
 La suite Python incluye geometría real con Chrome/Edge headless si está instalado.
+M6 añade `node tests/test_operator_console.cjs`, autorización local, CLEAR versionado
+y comprobaciones/capturas a 1366×768 y 1920×1080. Todas las pruebas usan fixtures;
+no requieren la API key ni consumen DeepL real.
 M5.2 compara SegmentManager A/B/C sin cambiar defaults: [informe completo](benchmarks/MILESTONE_5_2_REPORT.md),
 stream original de 888 mensajes, métricas por segmento, integridad y traducciones
 DeepL con caché. Reproducir sin API con `python -m benchmarks.segment_latency_ab --output logs/m52-replay.json`.
@@ -305,8 +317,8 @@ Con el glosario de Milestone 3.1, el perfil de 1.600 evaluaciones dio mediana
 - Se conserva el remuestreo por bloques del frontend instalado, con su redondeo.
 - Al perder una conexión hay que iniciar una sesión nueva; no hay recuperación
   de texto persistente. No existe vista pasiva de otra sesión.
-- Antes de otro milestone, validar los cortes y la normalización con el Yeti, probar
-  una sesión larga y revisar cualquier sugerencia falsa. No se ha implementado traducción.
+- Antes de otro milestone, validar M6 con el Yeti y CLEAR en OBS, probar una sesión
+  larga y revisar cualquier sugerencia falsa. La traducción DeepL existente se conserva.
 
 Git ya estaba inicializado y `.venv/` está explícitamente ignorado. Se utiliza
 la identidad ya configurada en Git, sin modificarla.

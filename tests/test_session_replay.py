@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import unittest
 
-from fastapi.testclient import TestClient
+from tests.operator_client import TestClient
 from websockets.asyncio.server import serve
 
 from app.captions.segment_manager import SegmentConfig

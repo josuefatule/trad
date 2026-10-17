@@ -6,7 +6,7 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 
-from fastapi.testclient import TestClient
+from tests.operator_client import TestClient
 from websockets.asyncio.server import serve
 
 from app.main import Settings, create_app
@@ -255,7 +255,7 @@ class OverlayIntegrationTests(unittest.IsolatedAsyncioTestCase):
                         with client.websocket_connect("/ws/session") as second:
                             rejected = second.receive_json()
                             self.assertEqual(rejected["type"], "error")
-                            self.assertIn("already active", rejected["message"])
+                            self.assertEqual(rejected["error_code"], "session_active")
                         self.assertEqual(client.get("/api/overlay/status").json()["session_id"], session)
                         operator.send({"type": "websocket.disconnect", "code": 1000})
                         operator.receive()

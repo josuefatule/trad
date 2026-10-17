@@ -4,13 +4,13 @@ import math
 import time
 import os
 from contextlib import asynccontextmanager
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 from uuid import uuid4
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Request, HTTPException
-from fastapi.responses import FileResponse, RedirectResponse
+from fastapi.responses import FileResponse, RedirectResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.environment import load_project_env
@@ -23,6 +23,8 @@ from app.captions.terminology_normalizer import NormalizerConfig
 from app.translation import TranslationConfig
 from app.overlay.config import CaptionConfig
 from app.overlay.hub import CaptionHub
+from app.operator_control import OperatorAuthority, OperatorBrowser, OperatorConfig, local_request, operational_error
+from app.translation.engine import provider_from_config
 
 ROOT = Path(__file__).resolve().parent
 
@@ -39,6 +41,7 @@ class Settings:
     normalizer: NormalizerConfig = field(default_factory=NormalizerConfig.from_env)
     translation: TranslationConfig = field(default_factory=TranslationConfig.from_env)
     captions: CaptionConfig = field(default_factory=CaptionConfig.from_env)
+    operator: OperatorConfig = field(default_factory=OperatorConfig.from_env)
 
 
 def create_app(settings=None):
@@ -76,6 +79,7 @@ def create_app(settings=None):
     app = FastAPI(lifespan=lifespan)
     hub = CaptionHub(settings.captions)
     app.state.caption_hub = hub
+    authority = OperatorAuthority()
     app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
 
     @app.get("/health")
@@ -90,6 +94,53 @@ def create_app(settings=None):
     @app.get("/operator")
     async def operator():
         return FileResponse(ROOT / "templates" / "operator.html")
+
+    @app.get("/api/operator/bootstrap")
+    async def operator_bootstrap(request: Request):
+        if not local_request(request):
+            raise HTTPException(403, "Local same-origin operator required")
+        try:
+            token = authority.issue()
+        except ValueError:
+            raise HTTPException(429, "Too many operator tabs")
+        return JSONResponse({"protocol_version": 1, "capabilities": {"operator_console": 1, "captions_clear": 1},
+                             "control_token": token, "diagnostics_config": asdict(settings.operator)},
+                            headers={"Cache-Control": "no-store"})
+
+    @app.get("/api/operator/status")
+    async def operator_status(request: Request):
+        token = request.headers.get("x-operator-token")
+        if not local_request(request) or not authority.valid(token):
+            raise HTTPException(403, "Local operator authorization required")
+        _, configured = provider_from_config(settings.translation)
+        translator = (hub.translation_status_getter()["status"] if hub.translation_status_getter
+                      else configured.to_dict())
+        return {"protocol_version": 1, **hub.diagnostics(), "caption_config": settings.captions.to_dict(),
+                "translator": translator, "translator_verified": hub.last_success_sequence > 0,
+                "owns_session": authority.owner == token,
+                "can_start": hub.state not in {"connecting", "live", "draining"}}
+
+    @app.post("/api/operator/clear")
+    async def clear_captions(request: Request):
+        token = request.headers.get("x-operator-token")
+        if not local_request(request, require_origin=True) or not authority.valid(token):
+            raise HTTPException(403, "Local operator authorization required")
+        if hub.session_id is not None and authority.owner != token:
+            raise HTTPException(403, "Only the session operator may clear captions")
+        try:
+            data = await request.json()
+            # Reading the body yields: recheck ownership immediately before mutation.
+            if not authority.valid(token) or (hub.session_id is not None and authority.owner != token):
+                raise HTTPException(403, "Only the current session operator may clear captions")
+            if (not isinstance(data, dict) or type(data.get("visual_generation")) is not int
+                    or type(data.get("protocol_version")) is not int or data["protocol_version"] != 1):
+                raise ValueError("Invalid clear request")
+            applied = hub.clear_captions(data.get("session_id"), data["visual_generation"])
+        except (ValueError, TypeError):
+            raise HTTPException(409, "Stale or invalid visual control; refresh operator status")
+        return {"protocol_version": 1, "type": "captions_cleared", "applied": applied,
+                "session_id": hub.session_id, "visual_generation": hub.visual_generation,
+                "sequence": hub.sequence, "event_id": hub.event_id}
 
     @app.get("/overlay")
     async def overlay():
@@ -140,7 +191,7 @@ def create_app(settings=None):
                         and type(data.get("client_sent_ms")) in (int, float)
                         and math.isfinite(data["client_sent_ms"])
                         and 0 <= data["client_sent_ms"] <= 1e12):
-                    await observer_send({"type": "clock_sync", "protocol_version": 2,
+                    await observer_send({"type": "clock_sync", "protocol_version": hub.protocol_version,
                                          "client_sent_ms": data["client_sent_ms"],
                                          "server_clock_resolution_ms": time.get_clock_info("monotonic").resolution * 1000,
                                          "server_received_mono_ms": received_mono,
@@ -171,14 +222,20 @@ def create_app(settings=None):
 
     @app.websocket("/ws/session")
     async def session(browser: WebSocket):
-        await browser.accept()
+        protocols = [item.strip() for item in browser.headers.get("sec-websocket-protocol", "").split(",")]
+        token = protocols[1] if len(protocols) == 2 and protocols[0] == "operator.v1" else None
+        if not local_request(browser, require_origin=True) or not authority.valid(token):
+            await browser.close(code=4403)
+            return
+        await browser.accept(subprotocol="operator.v1")
         session_id = uuid4().hex[:12]
         logger.info("session=%s browser connected", session_id)
         owns_session = False
         try:
             hub.begin(session_id)
             owns_session = True
-            await relay(browser, settings, session_id, caption_hub=hub)
+            authority.owner = token
+            await relay(OperatorBrowser(browser, session_id), settings, session_id, caption_hub=hub)
         except WebSocketDisconnect:
             if owns_session:
                 hub.set_state(session_id, "disconnected")
@@ -188,7 +245,9 @@ def create_app(settings=None):
                 hub.set_state(session_id, "error")
             logger.exception("session=%s error", session_id)
             try:
-                await browser.send_json({"type": "error", "message": str(exc) or type(exc).__name__})
+                code, message = operational_error(exc)
+                await browser.send_json({"type": "error", "protocol_version": 1, "session_id": session_id,
+                                         "error_code": code, "message": message})
             except (RuntimeError, WebSocketDisconnect):
                 pass
         finally:
