@@ -1,0 +1,18 @@
+{
+  "fixture": "medical_real_snapshots.json",
+  "purpose": "Manual linguistic evaluation annotations only; never loaded by the runtime segmenter or normalizer. RAW ASR spelling is deliberately preserved.",
+  "units": [
+    "condición cardiovascular",
+    "elevación persistente",
+    "presión arterial systólica y/o diastólica",
+    "sistema herenina angiotensina al dosterona",
+    "resistencia vascular periférica",
+    "función endotelial",
+    "niveles elevados de presión",
+    "hipertrofia ventricular izquierda",
+    "remodelado vascular",
+    "disfunción renal",
+    "accidentes cerebrovascular",
+    "infarto agudo de miocardio"
+  ]
+}

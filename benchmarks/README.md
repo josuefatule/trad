@@ -1,5 +1,26 @@
 # Material de segmentación
 
+## M5.2 — Benchmark A/B de latencia
+
+Informe y decisión: [MILESTONE_5_2_REPORT.md](MILESTONE_5_2_REPORT.md).
+Detalle de todos los READY y traducciones reales: [M5_2_RESULTS.md](M5_2_RESULTS.md).
+`medical_full_receive.json.gz` conserva los 888 mensajes originales de la misma
+sesión médica, incluidos repetidos, en gzip determinista. El fixture histórico
+de 61 eventos permanece intacto. `medical_units.json` contiene anotaciones de
+evaluación; el runtime no las carga.
+
+```powershell
+.\.venv\Scripts\python.exe -m benchmarks.segment_latency_ab --output logs/m52-replay.json
+```
+
+Replay sin API: A 17 READY, mediana 3.751 s/p95 5.539 s; B 22, 3.108/4.061 s;
+C 17, 3.940/4.550 s. Las tres conservan RAW 81/81 y 0 late revisions en la
+grabación real. B fragmenta más unidades y falla dos controles sintéticos de
+revisión. **No se cambian los defaults**. DeepL es opt-in mediante `--deepl`, con
+caché por texto/contexto/idiomas/endpoint; ver consumo y limitaciones en el informe.
+
+## Fixture histórico y etapas anteriores
+
 - `medical_reference.txt`: lectura de referencia suministrada por el usuario.
 - `medical_small_observed.txt`: transcripción aproximada suministrada por el
   usuario, con sus errores conservados; no es el resultado esperado de un test ASR.

@@ -177,7 +177,7 @@ cd C:\live-captions
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-**125 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
+**132 pruebas Python pasan**, además de las pruebas DOM de Operator y overlay:
 parcial, confirmación, líneas crecientes, frases consecutivas,
 silencio/timestamps, duplicados, repetición legítima, reset, controles, diarización,
 copia de snapshots, rutas HTTP, error visible, proxy PCM/EOF, modo incompatible,
@@ -194,6 +194,9 @@ M5.1: `node tests/test_persistent_captions.cjs`; comparación reproducible en
 `benchmarks/renderer_arrivals.py` y `benchmarks/renderer_policy.cjs`.
 Geometría y wrapping de la franja: `node tests/test_overlay_geometry.cjs`.
 La suite Python incluye geometría real con Chrome/Edge headless si está instalado.
+M5.2 compara SegmentManager A/B/C sin cambiar defaults: [informe completo](benchmarks/MILESTONE_5_2_REPORT.md),
+stream original de 888 mensajes, métricas por segmento, integridad y traducciones
+DeepL con caché. Reproducir sin API con `python -m benchmarks.segment_latency_ab --output logs/m52-replay.json`.
 Para ejecutar toda la suite sin usar DeepL real aunque `.env` esté configurado:
 
 ```powershell

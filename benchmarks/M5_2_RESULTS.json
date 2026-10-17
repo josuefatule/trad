@@ -1,0 +1,6029 @@
+{
+  "fixture": "medical_full_receive.json.gz",
+  "fixture_sha256": "6e4850702c084614cf62ad72a824d7f51384b16ea4c3416fadc7c764749d55b7",
+  "annotation_sha256": "764123ea493e786bcad85a9db9bf637d0452e7f1f94b32272b93c708ff3efb20",
+  "event_count": 888,
+  "end_s": 58.3,
+  "percentile_method": "nearest-rank ceil(0.95*n)",
+  "variants": {
+    "A": {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 1.0,
+        "minimum_words": 7,
+        "target_words": 13,
+        "max_words": 21,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 3.3,
+        "hard_max_age_seconds": 5.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 8,
+        "max": 8
+      },
+      "latency_ms": {
+        "min": 2539.0,
+        "median": 3751.0,
+        "mean": 4004.1176470588234,
+        "p95": 5539.0,
+        "max": 5539.0
+      },
+      "latency_without_session_end_ms": {
+        "min": 2539.0,
+        "median": 3845.5,
+        "mean": 4055.8125,
+        "p95": 5539.0,
+        "max": 5539.0
+      },
+      "flush_reasons": {
+        "soft_max_age": 10,
+        "hard_max_age": 3,
+        "punctuation": 3,
+        "session_end": 1
+      },
+      "boundary_kinds": {
+        "whitespace": 9,
+        "strong_punctuation": 3,
+        "comma": 4,
+        "session_end": 1
+      },
+      "hard_age_percent": 17.647058823529413,
+      "forced_whitespace_cut_count": 9,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      },
+      "late_revision_count": 0,
+      "late_revisions": [],
+      "medical_units": [
+        {
+          "raw_unit": "condición cardiovascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "elevación persistente",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "presión arterial systólica y/o diastólica",
+          "split_after_segments": [
+            3
+          ]
+        },
+        {
+          "raw_unit": "sistema herenina angiotensina al dosterona",
+          "split_after_segments": [
+            6
+          ]
+        },
+        {
+          "raw_unit": "resistencia vascular periférica",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "función endotelial",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "niveles elevados de presión",
+          "split_after_segments": [
+            11
+          ]
+        },
+        {
+          "raw_unit": "hipertrofia ventricular izquierda",
+          "split_after_segments": [
+            12
+          ]
+        },
+        {
+          "raw_unit": "remodelado vascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "disfunción renal",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "accidentes cerebrovascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "infarto agudo de miocardio",
+          "split_after_segments": [
+            16
+          ]
+        }
+      ],
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "segments": [
+        {
+          "id": "benchmark:1",
+          "text": "La hipertensión arterial es una condición cardiovascular",
+          "start_time": 2.58,
+          "end_time": 7.3,
+          "emitted_at": 8.488,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 4.737,
+          "latency_ms": 3751.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:1",
+            "raw_text": "La hipertensión arterial es una condición cardiovascular",
+            "normalized_text": "La hipertensión arterial es una condición cardiovascular",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "hipertensión"
+            ],
+            "processing_ms": 16.0825
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "829a8aceef9a36f4faa4025dafc4154b2e1ea82b65b21a2ff51d64d8cf61244c",
+            "context": [],
+            "text": "High blood pressure is a cardiovascular condition",
+            "provider_ms": 693.43
+          }
+        },
+        {
+          "id": "benchmark:2",
+          "text": "caracterizada por una elevación persistente de la",
+          "start_time": 2.58,
+          "end_time": 10.46,
+          "emitted_at": 11.816,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 8.488,
+          "latency_ms": 3328.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:2",
+            "raw_text": "caracterizada por una elevación persistente de la",
+            "normalized_text": "caracterizada por una elevación persistente de la",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 56.7772
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "7520f62a5fbb6d1b98affb58d778df4c1bc69ab3350566e993d41b8292f02200",
+            "context": [
+              "La hipertensión arterial es una condición cardiovascular"
+            ],
+            "text": "characterized by a persistent elevation in",
+            "provider_ms": 593.226
+          }
+        },
+        {
+          "id": "benchmark:3",
+          "text": "presión arterial systólica y/o",
+          "start_time": 2.58,
+          "end_time": 14.72,
+          "emitted_at": 16.085,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 10.546,
+          "latency_ms": 5539.0,
+          "word_count": 4,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:3",
+            "raw_text": "presión arterial systólica y/o",
+            "normalized_text": "presión arterial sistólica y/o",
+            "corrections": [
+              {
+                "source": "systólica",
+                "replacement": "sistólica",
+                "start": 17,
+                "end": 26,
+                "rule": "exact_variant",
+                "confidence": 1.0,
+                "canonical": "sistólica"
+              }
+            ],
+            "suggestions": [],
+            "known_terms": [
+              "sistólica"
+            ],
+            "processing_ms": 38.3407
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "6b4a0e2fb94a42a740ee085f43cf6e4524d31aef9d3a4952da0b860c6612eb8a",
+            "context": [
+              "La hipertensión arterial es una condición cardiovascular",
+              "caracterizada por una elevación persistente de la"
+            ],
+            "text": "systolic blood pressure and/or",
+            "provider_ms": 585.161
+          }
+        },
+        {
+          "id": "benchmark:4",
+          "text": "diastólica.",
+          "start_time": 2.58,
+          "end_time": 14.98,
+          "emitted_at": 16.694,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 14.155,
+          "latency_ms": 2539.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:4",
+            "raw_text": "diastólica.",
+            "normalized_text": "diastólica.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 8.9563
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "4282f101554c68bca77b4f732fa0a9045ea105224baabf4f817568fd5ea47e2c",
+            "context": [
+              "caracterizada por una elevación persistente de la",
+              "presión arterial sistólica y/o"
+            ],
+            "text": "diastolic blood pressure.",
+            "provider_ms": 592.426
+          }
+        },
+        {
+          "id": "benchmark:5",
+          "text": "Suficio patología involucra mecanismos complejos,",
+          "start_time": 2.58,
+          "end_time": 18.76,
+          "emitted_at": 19.925,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 15.845,
+          "latency_ms": 4080.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:5",
+            "raw_text": "Suficio patología involucra mecanismos complejos,",
+            "normalized_text": "Fisiopatología involucra mecanismos complejos,",
+            "corrections": [
+              {
+                "source": "Suficio patología",
+                "replacement": "Fisiopatología",
+                "start": 0,
+                "end": 17,
+                "rule": "glossary_fuzzy",
+                "confidence": 0.922619,
+                "canonical": "fisiopatología"
+              }
+            ],
+            "suggestions": [],
+            "known_terms": [
+              "fisiopatología"
+            ],
+            "processing_ms": 26.5322
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "40606c675c29a424f3ce19af83a72514d2d41db64c716908c927feac8fabbad2",
+            "context": [
+              "presión arterial sistólica y/o",
+              "diastólica."
+            ],
+            "text": "The pathophysiology involves complex mechanisms,",
+            "provider_ms": 569.113
+          }
+        },
+        {
+          "id": "benchmark:6",
+          "text": "incluyendo la activación del sistema herenina angiotensina",
+          "start_time": 2.58,
+          "end_time": 22.76,
+          "emitted_at": 24.006,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 19.125,
+          "latency_ms": 4881.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:6",
+            "raw_text": "incluyendo la activación del sistema herenina angiotensina",
+            "normalized_text": "incluyendo la activación del sistema herenina angiotensina",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 48.9621
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "f69abc14969768aae2f7f4a573eb742109596b557c9dd63ba3870e556b6342e8",
+            "context": [
+              "diastólica.",
+              "Fisiopatología involucra mecanismos complejos,"
+            ],
+            "text": "including activation of the renin-angiotensin system",
+            "provider_ms": 675.923
+          }
+        },
+        {
+          "id": "benchmark:7",
+          "text": "al dosterona.",
+          "start_time": 2.58,
+          "end_time": 25.38,
+          "emitted_at": 26.724,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 24.006,
+          "latency_ms": 2718.0,
+          "word_count": 2,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:7",
+            "raw_text": "al dosterona.",
+            "normalized_text": "aldosterona.",
+            "corrections": [
+              {
+                "source": "al dosterona",
+                "replacement": "aldosterona",
+                "start": 0,
+                "end": 12,
+                "rule": "glossary_fuzzy",
+                "confidence": 1.0,
+                "canonical": "aldosterona"
+              }
+            ],
+            "suggestions": [
+              {
+                "source": "herenina angiotensina al dosterona",
+                "candidate": "renina-angiotensina-aldosterona",
+                "start": null,
+                "end": 12,
+                "rule": "cross_segment_glossary_fuzzy",
+                "confidence": 0.939231,
+                "cross_segment": true,
+                "previous_segment_id": "benchmark:6"
+              }
+            ],
+            "known_terms": [
+              "aldosterona"
+            ],
+            "processing_ms": 26.5773
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "5849d3595ad645233fc4127b2daa8ff4ae14104e169a81ee622369027fc05a50",
+            "context": [
+              "Fisiopatología involucra mecanismos complejos,",
+              "incluyendo la activación del sistema herenina angiotensina"
+            ],
+            "text": "aldosterone system.",
+            "provider_ms": 518.126
+          }
+        },
+        {
+          "id": "benchmark:8",
+          "text": "El aumento de la resistencia vascular periférica",
+          "start_time": 2.58,
+          "end_time": 27.86,
+          "emitted_at": 29.254,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 25.874,
+          "latency_ms": 3380.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:8",
+            "raw_text": "El aumento de la resistencia vascular periférica",
+            "normalized_text": "El aumento de la resistencia vascular periférica",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "resistencia vascular periférica"
+            ],
+            "processing_ms": 32.3539
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "8bd6879ed5df878830d5a7399c79d6726138247ecae94126425662e457e2a81b",
+            "context": [
+              "incluyendo la activación del sistema herenina angiotensina",
+              "aldosterona."
+            ],
+            "text": "Increased peripheral vascular resistance",
+            "provider_ms": 551.317
+          }
+        },
+        {
+          "id": "benchmark:9",
+          "text": "y alteraciones en la función endotelial.",
+          "start_time": 2.58,
+          "end_time": 30.32,
+          "emitted_at": 32.954,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 29.014,
+          "latency_ms": 3940.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:9",
+            "raw_text": "y alteraciones en la función endotelial.",
+            "normalized_text": "y alteraciones en la función endotelial.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 45.9637
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "ff14a461ea53d24eeba6a46125ab711adeb88804c465503734c5540d0aaff7cc",
+            "context": [
+              "aldosterona.",
+              "El aumento de la resistencia vascular periférica"
+            ],
+            "text": "and abnormalities in endothelial function.",
+            "provider_ms": 581.654
+          }
+        },
+        {
+          "id": "benchmark:10",
+          "text": "En pacientes y pertencios,",
+          "start_time": 2.58,
+          "end_time": 36.21,
+          "emitted_at": 37.453,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 34.084,
+          "latency_ms": 3369.0,
+          "word_count": 4,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:10",
+            "raw_text": "En pacientes y pertencios,",
+            "normalized_text": "En pacientes y pertencios,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 24.1943
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "e5c229465f1c1f98313e0acb4be8b334d7bc328010d05069ebbde7e53cc013ce",
+            "context": [
+              "El aumento de la resistencia vascular periférica",
+              "y alteraciones en la función endotelial."
+            ],
+            "text": "In patients and their relatives,",
+            "provider_ms": 557.125
+          }
+        },
+        {
+          "id": "benchmark:11",
+          "text": "la exposición prolongada a niveles elevados de",
+          "start_time": 2.58,
+          "end_time": 37.37,
+          "emitted_at": 39.474,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 35.444,
+          "latency_ms": 4030.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:11",
+            "raw_text": "la exposición prolongada a niveles elevados de",
+            "normalized_text": "la exposición prolongada a niveles elevados de",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 37.9689
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "f2149637952f57eec7b60e23ed76ba449f188ac9a0e70aeb93bf46fec4b42353",
+            "context": [
+              "y alteraciones en la función endotelial.",
+              "En pacientes y pertencios,"
+            ],
+            "text": "prolonged exposure to high levels of",
+            "provider_ms": 555.947
+          }
+        },
+        {
+          "id": "benchmark:12",
+          "text": "presión puede producir hipertrofia ventricular",
+          "start_time": 2.58,
+          "end_time": 41.51,
+          "emitted_at": 44.813,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 39.284,
+          "latency_ms": 5529.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:12",
+            "raw_text": "presión puede producir hipertrofia ventricular",
+            "normalized_text": "presión puede producir hipertrofia ventricular",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 44.8147
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "7bb48e1a819546b1093fbbbb2606a7496ea37f51512cf697e797a49b0cfe560c",
+            "context": [
+              "En pacientes y pertencios,",
+              "la exposición prolongada a niveles elevados de"
+            ],
+            "text": "blood pressure can lead to ventricular hypertrophy",
+            "provider_ms": 585.149
+          }
+        },
+        {
+          "id": "benchmark:13",
+          "text": "izquierda,",
+          "start_time": 2.58,
+          "end_time": 43.27,
+          "emitted_at": 48.753,
+          "reason": "hard_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 43.224,
+          "latency_ms": 5529.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:13",
+            "raw_text": "izquierda,",
+            "normalized_text": "izquierda,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 15.3616
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "a79fd51c382fe5dfa4438909fb35fdb3ca9492678cb73db0af16ca3c199c3c77",
+            "context": [
+              "la exposición prolongada a niveles elevados de",
+              "presión puede producir hipertrofia ventricular"
+            ],
+            "text": ",",
+            "provider_ms": 510.914
+          }
+        },
+        {
+          "id": "benchmark:14",
+          "text": "remodelado vascular,",
+          "start_time": 2.58,
+          "end_time": 46.86,
+          "emitted_at": 49.873,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 46.271,
+          "latency_ms": 3602.0,
+          "word_count": 2,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:14",
+            "raw_text": "remodelado vascular,",
+            "normalized_text": "remodelado vascular,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 3.9002
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "2cb401a62422a6fded92da149902a772eb5d41e3aa31cdadccb18894a5063e01",
+            "context": [
+              "presión puede producir hipertrofia ventricular",
+              "izquierda,"
+            ],
+            "text": "vascular remodeling,",
+            "provider_ms": 551.72
+          }
+        },
+        {
+          "id": "benchmark:15",
+          "text": "disfunción renal y un incremento significativo del",
+          "start_time": 2.58,
+          "end_time": 48.36,
+          "emitted_at": 52.412,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 49.033,
+          "latency_ms": 3379.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:15",
+            "raw_text": "disfunción renal y un incremento significativo del",
+            "normalized_text": "disfunción renal y un incremento significativo del",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 31.6644
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "a21bb706bb86ae9693506f629bf51bd722581ae4b4cb2983105d2b016ff9c7cd",
+            "context": [
+              "izquierda,",
+              "remodelado vascular,"
+            ],
+            "text": "renal dysfunction, and a significant increase in",
+            "provider_ms": 560.752
+          }
+        },
+        {
+          "id": "benchmark:16",
+          "text": "riesgo de accidentes cerebrovascular e infarto agudo de",
+          "start_time": 2.58,
+          "end_time": 52.38,
+          "emitted_at": 56.022,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 50.723,
+          "latency_ms": 5299.0,
+          "word_count": 8,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:16",
+            "raw_text": "riesgo de accidentes cerebrovascular e infarto agudo de",
+            "normalized_text": "riesgo de accidentes cerebrovascular e infarto agudo de",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "cerebrovascular"
+            ],
+            "processing_ms": 61.3578
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "a678ced481820a1e820b63b9dfa9673c7293cda8facf253fca08c4cb83777581",
+            "context": [
+              "remodelado vascular,",
+              "disfunción renal y un incremento significativo del"
+            ],
+            "text": "risk of stroke and acute myocardial infarction",
+            "provider_ms": 552.267
+          }
+        },
+        {
+          "id": "benchmark:17",
+          "text": "miocardio.",
+          "start_time": 2.58,
+          "end_time": 53.16,
+          "emitted_at": 58.3,
+          "reason": "session_end",
+          "boundary_kind": "session_end",
+          "first_seen_at": 55.123,
+          "latency_ms": 3177.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:17",
+            "raw_text": "miocardio.",
+            "normalized_text": "miocardio.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 22.2862
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "b841f1ef8694d70ac58f24aa044d251039e448e6b77f4a9fc7a4d21038f85c32",
+            "context": [
+              "disfunción renal y un incremento significativo del",
+              "riesgo de accidentes cerebrovascular e infarto agudo de"
+            ],
+            "text": "myocardial infarction.",
+            "provider_ms": 541.918
+          }
+        }
+      ]
+    },
+    "B": {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 10,
+        "max_words": 18,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.2,
+        "hard_max_age_seconds": 4.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 22,
+      "words": {
+        "min": 1,
+        "median": 4.5,
+        "mean": 3.6818181818181817,
+        "p95": 6,
+        "max": 6
+      },
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3107.5,
+        "mean": 3098.0,
+        "p95": 4061.0,
+        "max": 4072.0
+      },
+      "latency_without_session_end_ms": {
+        "min": 1779.0,
+        "median": 3038.0,
+        "mean": 3094.2380952380954,
+        "p95": 4061.0,
+        "max": 4072.0
+      },
+      "flush_reasons": {
+        "soft_max_age": 13,
+        "hard_max_age": 5,
+        "punctuation": 3,
+        "session_end": 1
+      },
+      "boundary_kinds": {
+        "whitespace": 14,
+        "strong_punctuation": 3,
+        "comma": 4,
+        "session_end": 1
+      },
+      "hard_age_percent": 22.727272727272727,
+      "forced_whitespace_cut_count": 14,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      },
+      "late_revision_count": 0,
+      "late_revisions": [],
+      "medical_units": [
+        {
+          "raw_unit": "condición cardiovascular",
+          "split_after_segments": [
+            1
+          ]
+        },
+        {
+          "raw_unit": "elevación persistente",
+          "split_after_segments": [
+            2
+          ]
+        },
+        {
+          "raw_unit": "presión arterial systólica y/o diastólica",
+          "split_after_segments": [
+            3,
+            4
+          ]
+        },
+        {
+          "raw_unit": "sistema herenina angiotensina al dosterona",
+          "split_after_segments": [
+            7,
+            8
+          ]
+        },
+        {
+          "raw_unit": "resistencia vascular periférica",
+          "split_after_segments": [
+            10
+          ]
+        },
+        {
+          "raw_unit": "función endotelial",
+          "split_after_segments": [
+            11
+          ]
+        },
+        {
+          "raw_unit": "niveles elevados de presión",
+          "split_after_segments": [
+            14
+          ]
+        },
+        {
+          "raw_unit": "hipertrofia ventricular izquierda",
+          "split_after_segments": [
+            16
+          ]
+        },
+        {
+          "raw_unit": "remodelado vascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "disfunción renal",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "accidentes cerebrovascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "infarto agudo de miocardio",
+          "split_after_segments": [
+            21
+          ]
+        }
+      ],
+      "fragmented_unit_count": 9,
+      "medical_unit_boundary_count": 11,
+      "segments": [
+        {
+          "id": "benchmark:1",
+          "text": "La hipertensión arterial es una condición",
+          "start_time": 2.58,
+          "end_time": 5.0,
+          "emitted_at": 7.226,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 4.737,
+          "latency_ms": 2489.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:1",
+            "raw_text": "La hipertensión arterial es una condición",
+            "normalized_text": "La hipertensión arterial es una condición",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "hipertensión"
+            ],
+            "processing_ms": 11.8001
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "d6df43058dc8e5888fc44f13b605ba39f54508a3c65af0560112e7d4a74c6fc8",
+            "context": [],
+            "text": "High blood pressure is a condition",
+            "provider_ms": 527.399
+          }
+        },
+        {
+          "id": "benchmark:2",
+          "text": "cardiovascular caracterizada por una elevación",
+          "start_time": 2.58,
+          "end_time": 8.34,
+          "emitted_at": 9.655,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 6.617,
+          "latency_ms": 3038.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:2",
+            "raw_text": "cardiovascular caracterizada por una elevación",
+            "normalized_text": "cardiovascular caracterizada por una elevación",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 42.6392
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "c189c8faa729285b153ce85c23314e786e3bc43ee800de43567fdf61e5521080",
+            "context": [
+              "La hipertensión arterial es una condición"
+            ],
+            "text": "cardiovascular condition characterized by elevated",
+            "provider_ms": 595.618
+          }
+        },
+        {
+          "id": "benchmark:3",
+          "text": "persistente de la presión arterial",
+          "start_time": 2.58,
+          "end_time": 10.94,
+          "emitted_at": 12.235,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 9.472,
+          "latency_ms": 2763.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:3",
+            "raw_text": "persistente de la presión arterial",
+            "normalized_text": "persistente de la presión arterial",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 34.0951
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "452984ffcdd685302dece3ff10016573de1ae989c40ee47f991aee79a6e689b9",
+            "context": [
+              "La hipertensión arterial es una condición",
+              "cardiovascular caracterizada por una elevación"
+            ],
+            "text": "in blood pressure",
+            "provider_ms": 523.893
+          }
+        },
+        {
+          "id": "benchmark:4",
+          "text": "systólica y/o",
+          "start_time": 2.58,
+          "end_time": 13.36,
+          "emitted_at": 15.615,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 11.576,
+          "latency_ms": 4039.0,
+          "word_count": 2,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:4",
+            "raw_text": "systólica y/o",
+            "normalized_text": "sistólica y/o",
+            "corrections": [
+              {
+                "source": "systólica",
+                "replacement": "sistólica",
+                "start": 0,
+                "end": 9,
+                "rule": "exact_variant",
+                "confidence": 1.0,
+                "canonical": "sistólica"
+              }
+            ],
+            "suggestions": [],
+            "known_terms": [
+              "sistólica"
+            ],
+            "processing_ms": 14.975
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "e1eea06a4ecaf76e879d7d157d11dc04ee20d1f3d2c7cb0a5f10d9acd492b298",
+            "context": [
+              "cardiovascular caracterizada por una elevación",
+              "persistente de la presión arterial"
+            ],
+            "text": "and/or",
+            "provider_ms": 524.846
+          }
+        },
+        {
+          "id": "benchmark:5",
+          "text": "diastólica.",
+          "start_time": 2.58,
+          "end_time": 14.98,
+          "emitted_at": 16.505,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 14.155,
+          "latency_ms": 2350.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:5",
+            "raw_text": "diastólica.",
+            "normalized_text": "diastólica.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 2.7099
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "89eed1e4d171af494fb407b9a3e3951403a87b437470d81b2cf91a6cf5820216",
+            "context": [
+              "persistente de la presión arterial",
+              "sistólica y/o"
+            ],
+            "text": "diastolic blood pressure.",
+            "provider_ms": 541.267
+          }
+        },
+        {
+          "id": "benchmark:6",
+          "text": "Suficio patología involucra mecanismos complejos,",
+          "start_time": 2.58,
+          "end_time": 18.16,
+          "emitted_at": 19.735,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 15.845,
+          "latency_ms": 3890.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:6",
+            "raw_text": "Suficio patología involucra mecanismos complejos,",
+            "normalized_text": "Fisiopatología involucra mecanismos complejos,",
+            "corrections": [
+              {
+                "source": "Suficio patología",
+                "replacement": "Fisiopatología",
+                "start": 0,
+                "end": 17,
+                "rule": "glossary_fuzzy",
+                "confidence": 0.922619,
+                "canonical": "fisiopatología"
+              }
+            ],
+            "suggestions": [],
+            "known_terms": [
+              "fisiopatología"
+            ],
+            "processing_ms": 24.9018
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "a7ecb66334bc34808297e4ca4bf18baa8dc9e355180e7ed6d16f352968aa1024",
+            "context": [
+              "sistólica y/o",
+              "diastólica."
+            ],
+            "text": "Pathophysiology involves complex mechanisms,",
+            "provider_ms": 546.482
+          }
+        },
+        {
+          "id": "benchmark:7",
+          "text": "incluyendo la activación del sistema",
+          "start_time": 2.58,
+          "end_time": 20.36,
+          "emitted_at": 21.564,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 19.125,
+          "latency_ms": 2439.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:7",
+            "raw_text": "incluyendo la activación del sistema",
+            "normalized_text": "incluyendo la activación del sistema",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 30.997
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "567bd957ff68d23f289d3cb98ce107de5ee34830014ae2ec317c188c6c6f4c0b",
+            "context": [
+              "diastólica.",
+              "Fisiopatología involucra mecanismos complejos,"
+            ],
+            "text": "including activation of the system",
+            "provider_ms": 532.397
+          }
+        },
+        {
+          "id": "benchmark:8",
+          "text": "herenina angiotensina al",
+          "start_time": 2.58,
+          "end_time": 23.1,
+          "emitted_at": 25.546,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 21.474,
+          "latency_ms": 4072.0,
+          "word_count": 3,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:8",
+            "raw_text": "herenina angiotensina al",
+            "normalized_text": "herenina angiotensina al",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 24.52
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "5aff95f51cd24e31e9445497a11e8048f14dcfce5029f83c1f215cdf64fb533c",
+            "context": [
+              "Fisiopatología involucra mecanismos complejos,",
+              "incluyendo la activación del sistema"
+            ],
+            "text": "renin-angiotensin system at the",
+            "provider_ms": 566.278
+          }
+        },
+        {
+          "id": "benchmark:9",
+          "text": "dosterona.",
+          "start_time": 2.58,
+          "end_time": 24.74,
+          "emitted_at": 26.485,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 24.006,
+          "latency_ms": 2479.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:9",
+            "raw_text": "dosterona.",
+            "normalized_text": "dosterona.",
+            "corrections": [],
+            "suggestions": [
+              {
+                "source": "al dosterona",
+                "candidate": "aldosterona",
+                "start": null,
+                "end": 9,
+                "rule": "cross_segment_glossary_fuzzy",
+                "confidence": 1.0,
+                "cross_segment": true,
+                "previous_segment_id": "benchmark:8"
+              }
+            ],
+            "known_terms": [],
+            "processing_ms": 7.3983
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "766c15f2cfdd91273198c2fe9ef08fedcfe87f7cc747b40ea812157e05216190",
+            "context": [
+              "incluyendo la activación del sistema",
+              "herenina angiotensina al"
+            ],
+            "text": "dosterone.",
+            "provider_ms": 531.381
+          }
+        },
+        {
+          "id": "benchmark:10",
+          "text": "El aumento de la resistencia vascular",
+          "start_time": 2.58,
+          "end_time": 26.86,
+          "emitted_at": 28.085,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 25.874,
+          "latency_ms": 2211.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:10",
+            "raw_text": "El aumento de la resistencia vascular",
+            "normalized_text": "El aumento de la resistencia vascular",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 20.7653
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "8cb250f9f3ee5105e4ed4f1871681b2cb72cd74d4e20d3a345ba062f286cf2be",
+            "context": [
+              "herenina angiotensina al",
+              "dosterona."
+            ],
+            "text": "Increased vascular resistance",
+            "provider_ms": 527.656
+          }
+        },
+        {
+          "id": "benchmark:11",
+          "text": "periférica y alteraciones en la función",
+          "start_time": 2.58,
+          "end_time": 29.92,
+          "emitted_at": 31.554,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 27.845,
+          "latency_ms": 3709.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:11",
+            "raw_text": "periférica y alteraciones en la función",
+            "normalized_text": "periférica y alteraciones en la función",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 40.7678
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "a91bb4ded6b570641a6a2f2815f6ebe16f3bcb7809b91d0128bb75e33853676d",
+            "context": [
+              "dosterona.",
+              "El aumento de la resistencia vascular"
+            ],
+            "text": "and alterations in the function",
+            "provider_ms": 547.745
+          }
+        },
+        {
+          "id": "benchmark:12",
+          "text": "endotelial.",
+          "start_time": 2.58,
+          "end_time": 30.32,
+          "emitted_at": 32.724,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 30.945,
+          "latency_ms": 1779.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:12",
+            "raw_text": "endotelial.",
+            "normalized_text": "endotelial.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 14.5349
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "d9c5465e2f67cd5fbd272936b8394ade368677b7839ff2c70634893c98d11e23",
+            "context": [
+              "El aumento de la resistencia vascular",
+              "periférica y alteraciones en la función"
+            ],
+            "text": "endothelial function.",
+            "provider_ms": 534.773
+          }
+        },
+        {
+          "id": "benchmark:13",
+          "text": "En pacientes y pertencios,",
+          "start_time": 2.58,
+          "end_time": 34.3,
+          "emitted_at": 36.374,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 34.084,
+          "latency_ms": 2290.0,
+          "word_count": 4,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:13",
+            "raw_text": "En pacientes y pertencios,",
+            "normalized_text": "En pacientes y pertencios,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 11.9009
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "23fbc830b9f554eec2dbaae019ea8eb250bd397f717e3bd6bb9cc3413e6f90f7",
+            "context": [
+              "periférica y alteraciones en la función",
+              "endotelial."
+            ],
+            "text": "In patients and relatives,",
+            "provider_ms": 542.023
+          }
+        },
+        {
+          "id": "benchmark:14",
+          "text": "la exposición prolongada a niveles",
+          "start_time": 2.58,
+          "end_time": 36.8,
+          "emitted_at": 38.019,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 35.444,
+          "latency_ms": 2575.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:14",
+            "raw_text": "la exposición prolongada a niveles",
+            "normalized_text": "la exposición prolongada a niveles",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 24.6583
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "f414fbebba5d1a39d604bfd31f1f9398d85398734bd790a4e03abb827626b2e9",
+            "context": [
+              "endotelial.",
+              "En pacientes y pertencios,"
+            ],
+            "text": "prolonged exposure to levels",
+            "provider_ms": 541.595
+          }
+        },
+        {
+          "id": "benchmark:15",
+          "text": "elevados de presión puede producir",
+          "start_time": 2.58,
+          "end_time": 39.62,
+          "emitted_at": 41.624,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 38.019,
+          "latency_ms": 3605.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:15",
+            "raw_text": "elevados de presión puede producir",
+            "normalized_text": "elevados de presión puede producir",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 33.1878
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "7dedb83ce979b411e47cd5f250adf1232e8e3267548075f7987a2b8d10590027",
+            "context": [
+              "En pacientes y pertencios,",
+              "la exposición prolongada a niveles"
+            ],
+            "text": "high pressure can cause",
+            "provider_ms": 538.168
+          }
+        },
+        {
+          "id": "benchmark:16",
+          "text": "hipertrofia ventricular",
+          "start_time": 2.58,
+          "end_time": 41.51,
+          "emitted_at": 45.003,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 40.973,
+          "latency_ms": 4030.0,
+          "word_count": 2,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:16",
+            "raw_text": "hipertrofia ventricular",
+            "normalized_text": "hipertrofia ventricular",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 18.7698
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "c76308de6e8b1962fd339d9daa1e137d0aeee0a4c43a371de1a2cc4f043de4fa",
+            "context": [
+              "la exposición prolongada a niveles",
+              "elevados de presión puede producir"
+            ],
+            "text": "ventricular hypertrophy",
+            "provider_ms": 558.675
+          }
+        },
+        {
+          "id": "benchmark:17",
+          "text": "izquierda,",
+          "start_time": 2.58,
+          "end_time": 43.27,
+          "emitted_at": 47.253,
+          "reason": "hard_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 43.224,
+          "latency_ms": 4029.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:17",
+            "raw_text": "izquierda,",
+            "normalized_text": "izquierda,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 5.4618
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "61e7f9fed747dcebd8ebca781c39fcebe28726e8ea0e8df0ce7f00486096cca4",
+            "context": [
+              "elevados de presión puede producir",
+              "hipertrofia ventricular"
+            ],
+            "text": ",",
+            "provider_ms": 530.934
+          }
+        },
+        {
+          "id": "benchmark:18",
+          "text": "remodelado vascular,",
+          "start_time": 2.58,
+          "end_time": 46.86,
+          "emitted_at": 49.643,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 46.271,
+          "latency_ms": 3372.0,
+          "word_count": 2,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:18",
+            "raw_text": "remodelado vascular,",
+            "normalized_text": "remodelado vascular,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 3.8567
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "c071b9382ed81995e0cdbf52bd95b2cf44e2bac235100009baff05ff7ef3fc91",
+            "context": [
+              "hipertrofia ventricular",
+              "izquierda,"
+            ],
+            "text": "vascular remodeling,",
+            "provider_ms": 528.995
+          }
+        },
+        {
+          "id": "benchmark:19",
+          "text": "disfunción renal y un incremento significativo",
+          "start_time": 2.58,
+          "end_time": 47.88,
+          "emitted_at": 51.283,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 49.033,
+          "latency_ms": 2250.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:19",
+            "raw_text": "disfunción renal y un incremento significativo",
+            "normalized_text": "disfunción renal y un incremento significativo",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 24.7383
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "daa3238a917ca5d706b0a24dc11bcb217ec35262b0aad0f6ca480211887501c6",
+            "context": [
+              "izquierda,",
+              "remodelado vascular,"
+            ],
+            "text": "kidney dysfunction, and a significant increase",
+            "provider_ms": 544.118
+          }
+        },
+        {
+          "id": "benchmark:20",
+          "text": "del riesgo de accidentes cerebrovascular e",
+          "start_time": 2.58,
+          "end_time": 51.19,
+          "emitted_at": 54.232,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 50.723,
+          "latency_ms": 3509.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:20",
+            "raw_text": "del riesgo de accidentes cerebrovascular e",
+            "normalized_text": "del riesgo de accidentes cerebrovascular e",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "cerebrovascular"
+            ],
+            "processing_ms": 45.2293
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "026a85e838baa19085e04aa5b3085c907a3324e9be1c85cf014ffb829199d2bd",
+            "context": [
+              "remodelado vascular,",
+              "disfunción renal y un incremento significativo"
+            ],
+            "text": "in the risk of stroke and",
+            "provider_ms": 566.199
+          }
+        },
+        {
+          "id": "benchmark:21",
+          "text": "infarto agudo de",
+          "start_time": 2.58,
+          "end_time": 52.82,
+          "emitted_at": 57.644000000000005,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 53.583,
+          "latency_ms": 4061.0,
+          "word_count": 3,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:21",
+            "raw_text": "infarto agudo de",
+            "normalized_text": "infarto agudo de",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 25.6104
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "4595711846f86aab403346e228301225a686051e10fa141fa0db0ce0694c752a",
+            "context": [
+              "disfunción renal y un incremento significativo",
+              "del riesgo de accidentes cerebrovascular e"
+            ],
+            "text": "acute myocardial infarction",
+            "provider_ms": 526.016
+          }
+        },
+        {
+          "id": "benchmark:22",
+          "text": "miocardio.",
+          "start_time": 2.58,
+          "end_time": 53.16,
+          "emitted_at": 58.3,
+          "reason": "session_end",
+          "boundary_kind": "session_end",
+          "first_seen_at": 55.123,
+          "latency_ms": 3177.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:22",
+            "raw_text": "miocardio.",
+            "normalized_text": "miocardio.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 5.7971
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "baa2d2f425cec1f80d15e87a6c3ca9cc8ff313becd3ceff233bc4134ef87c4da",
+            "context": [
+              "del riesgo de accidentes cerebrovascular e",
+              "infarto agudo de"
+            ],
+            "text": "myocardial infarction.",
+            "provider_ms": 563.446
+          }
+        }
+      ]
+    },
+    "C": {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 1.0,
+        "minimum_words": 7,
+        "target_words": 13,
+        "max_words": 21,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.5,
+        "hard_max_age_seconds": 4.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "latency_ms": {
+        "min": 2530.0,
+        "median": 3940.0,
+        "mean": 3736.0588235294117,
+        "p95": 4550.0,
+        "max": 4550.0
+      },
+      "latency_without_session_end_ms": {
+        "min": 2530.0,
+        "median": 3985.0,
+        "mean": 3771.0,
+        "p95": 4550.0,
+        "max": 4550.0
+      },
+      "flush_reasons": {
+        "soft_max_age": 8,
+        "hard_max_age": 5,
+        "punctuation": 3,
+        "session_end": 1
+      },
+      "boundary_kinds": {
+        "whitespace": 9,
+        "strong_punctuation": 3,
+        "comma": 4,
+        "session_end": 1
+      },
+      "hard_age_percent": 29.41176470588235,
+      "forced_whitespace_cut_count": 9,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      },
+      "late_revision_count": 0,
+      "late_revisions": [],
+      "medical_units": [
+        {
+          "raw_unit": "condición cardiovascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "elevación persistente",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "presión arterial systólica y/o diastólica",
+          "split_after_segments": [
+            3
+          ]
+        },
+        {
+          "raw_unit": "sistema herenina angiotensina al dosterona",
+          "split_after_segments": [
+            6
+          ]
+        },
+        {
+          "raw_unit": "resistencia vascular periférica",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "función endotelial",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "niveles elevados de presión",
+          "split_after_segments": [
+            11
+          ]
+        },
+        {
+          "raw_unit": "hipertrofia ventricular izquierda",
+          "split_after_segments": [
+            12
+          ]
+        },
+        {
+          "raw_unit": "remodelado vascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "disfunción renal",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "accidentes cerebrovascular",
+          "split_after_segments": []
+        },
+        {
+          "raw_unit": "infarto agudo de miocardio",
+          "split_after_segments": [
+            16
+          ]
+        }
+      ],
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "segments": [
+        {
+          "id": "benchmark:1",
+          "text": "La hipertensión arterial es una condición cardiovascular",
+          "start_time": 2.58,
+          "end_time": 7.3,
+          "emitted_at": 8.488,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 4.737,
+          "latency_ms": 3751.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:1",
+            "raw_text": "La hipertensión arterial es una condición cardiovascular",
+            "normalized_text": "La hipertensión arterial es una condición cardiovascular",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "hipertensión"
+            ],
+            "processing_ms": 19.1491
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "829a8aceef9a36f4faa4025dafc4154b2e1ea82b65b21a2ff51d64d8cf61244c",
+            "context": [],
+            "text": "High blood pressure is a cardiovascular condition",
+            "provider_ms": 693.43
+          }
+        },
+        {
+          "id": "benchmark:2",
+          "text": "caracterizada por una elevación persistente de la",
+          "start_time": 2.58,
+          "end_time": 9.9,
+          "emitted_at": 11.395,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 8.488,
+          "latency_ms": 2907.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:2",
+            "raw_text": "caracterizada por una elevación persistente de la",
+            "normalized_text": "caracterizada por una elevación persistente de la",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 61.0753
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "7520f62a5fbb6d1b98affb58d778df4c1bc69ab3350566e993d41b8292f02200",
+            "context": [
+              "La hipertensión arterial es una condición cardiovascular"
+            ],
+            "text": "characterized by a persistent elevation in",
+            "provider_ms": 593.226
+          }
+        },
+        {
+          "id": "benchmark:3",
+          "text": "presión arterial systólica y/o",
+          "start_time": 2.58,
+          "end_time": 13.22,
+          "emitted_at": 15.095,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 10.546,
+          "latency_ms": 4549.0,
+          "word_count": 4,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:3",
+            "raw_text": "presión arterial systólica y/o",
+            "normalized_text": "presión arterial sistólica y/o",
+            "corrections": [
+              {
+                "source": "systólica",
+                "replacement": "sistólica",
+                "start": 17,
+                "end": 26,
+                "rule": "exact_variant",
+                "confidence": 1.0,
+                "canonical": "sistólica"
+              }
+            ],
+            "suggestions": [],
+            "known_terms": [
+              "sistólica"
+            ],
+            "processing_ms": 37.3369
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "6b4a0e2fb94a42a740ee085f43cf6e4524d31aef9d3a4952da0b860c6612eb8a",
+            "context": [
+              "La hipertensión arterial es una condición cardiovascular",
+              "caracterizada por una elevación persistente de la"
+            ],
+            "text": "systolic blood pressure and/or",
+            "provider_ms": 585.161
+          }
+        },
+        {
+          "id": "benchmark:4",
+          "text": "diastólica.",
+          "start_time": 2.58,
+          "end_time": 14.98,
+          "emitted_at": 16.694,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 14.155,
+          "latency_ms": 2539.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:4",
+            "raw_text": "diastólica.",
+            "normalized_text": "diastólica.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 8.0652
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "4282f101554c68bca77b4f732fa0a9045ea105224baabf4f817568fd5ea47e2c",
+            "context": [
+              "caracterizada por una elevación persistente de la",
+              "presión arterial sistólica y/o"
+            ],
+            "text": "diastolic blood pressure.",
+            "provider_ms": 592.426
+          }
+        },
+        {
+          "id": "benchmark:5",
+          "text": "Suficio patología involucra mecanismos complejos,",
+          "start_time": 2.58,
+          "end_time": 18.76,
+          "emitted_at": 19.925,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 15.845,
+          "latency_ms": 4080.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:5",
+            "raw_text": "Suficio patología involucra mecanismos complejos,",
+            "normalized_text": "Fisiopatología involucra mecanismos complejos,",
+            "corrections": [
+              {
+                "source": "Suficio patología",
+                "replacement": "Fisiopatología",
+                "start": 0,
+                "end": 17,
+                "rule": "glossary_fuzzy",
+                "confidence": 0.922619,
+                "canonical": "fisiopatología"
+              }
+            ],
+            "suggestions": [],
+            "known_terms": [
+              "fisiopatología"
+            ],
+            "processing_ms": 25.1269
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "40606c675c29a424f3ce19af83a72514d2d41db64c716908c927feac8fabbad2",
+            "context": [
+              "presión arterial sistólica y/o",
+              "diastólica."
+            ],
+            "text": "The pathophysiology involves complex mechanisms,",
+            "provider_ms": 569.113
+          }
+        },
+        {
+          "id": "benchmark:6",
+          "text": "incluyendo la activación del sistema herenina",
+          "start_time": 2.58,
+          "end_time": 21.48,
+          "emitted_at": 23.674,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 19.125,
+          "latency_ms": 4549.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:6",
+            "raw_text": "incluyendo la activación del sistema herenina",
+            "normalized_text": "incluyendo la activación del sistema herenina",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 36.9377
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "d9efb6cab9f8aaecc2a3f1e81de8e5fc28818a48aff81741113be0a04424c1d9",
+            "context": [
+              "diastólica.",
+              "Fisiopatología involucra mecanismos complejos,"
+            ],
+            "text": "including activation of the renin system",
+            "provider_ms": 596.046
+          }
+        },
+        {
+          "id": "benchmark:7",
+          "text": "angiotensina al dosterona.",
+          "start_time": 2.58,
+          "end_time": 25.38,
+          "emitted_at": 26.724,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 22.175,
+          "latency_ms": 4549.0,
+          "word_count": 3,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:7",
+            "raw_text": "angiotensina al dosterona.",
+            "normalized_text": "angiotensina aldosterona.",
+            "corrections": [
+              {
+                "source": "al dosterona",
+                "replacement": "aldosterona",
+                "start": 13,
+                "end": 25,
+                "rule": "glossary_fuzzy",
+                "confidence": 1.0,
+                "canonical": "aldosterona"
+              }
+            ],
+            "suggestions": [
+              {
+                "source": "herenina angiotensina al dosterona",
+                "candidate": "renina-angiotensina-aldosterona",
+                "start": null,
+                "end": 25,
+                "rule": "cross_segment_glossary_fuzzy",
+                "confidence": 0.939231,
+                "cross_segment": true,
+                "previous_segment_id": "benchmark:6"
+              }
+            ],
+            "known_terms": [
+              "aldosterona"
+            ],
+            "processing_ms": 27.5107
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "750afb6c0033f3ba4be40917608da729f2f05d053544411e21da0353aab59a61",
+            "context": [
+              "Fisiopatología involucra mecanismos complejos,",
+              "incluyendo la activación del sistema herenina"
+            ],
+            "text": "angiotensin-aldosterone system.",
+            "provider_ms": 570.662
+          }
+        },
+        {
+          "id": "benchmark:8",
+          "text": "El aumento de la resistencia vascular periférica",
+          "start_time": 2.58,
+          "end_time": 27.86,
+          "emitted_at": 29.014,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 25.874,
+          "latency_ms": 3140.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:8",
+            "raw_text": "El aumento de la resistencia vascular periférica",
+            "normalized_text": "El aumento de la resistencia vascular periférica",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "resistencia vascular periférica"
+            ],
+            "processing_ms": 31.9722
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "8bd6879ed5df878830d5a7399c79d6726138247ecae94126425662e457e2a81b",
+            "context": [
+              "incluyendo la activación del sistema herenina",
+              "angiotensina aldosterona."
+            ],
+            "text": "Increased peripheral vascular resistance",
+            "provider_ms": 551.317
+          }
+        },
+        {
+          "id": "benchmark:9",
+          "text": "y alteraciones en la función endotelial.",
+          "start_time": 2.58,
+          "end_time": 30.32,
+          "emitted_at": 32.954,
+          "reason": "punctuation",
+          "boundary_kind": "strong_punctuation",
+          "first_seen_at": 29.014,
+          "latency_ms": 3940.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:9",
+            "raw_text": "y alteraciones en la función endotelial.",
+            "normalized_text": "y alteraciones en la función endotelial.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 45.1756
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "69e4f1be3fa6ca0cae476fd2ec259a408af3f853bbf2289d35f961379616f2fe",
+            "context": [
+              "angiotensina aldosterona.",
+              "El aumento de la resistencia vascular periférica"
+            ],
+            "text": "and abnormalities in endothelial function.",
+            "provider_ms": 562.096
+          }
+        },
+        {
+          "id": "benchmark:10",
+          "text": "En pacientes y pertencios,",
+          "start_time": 2.58,
+          "end_time": 34.78,
+          "emitted_at": 36.614,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 34.084,
+          "latency_ms": 2530.0,
+          "word_count": 4,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:10",
+            "raw_text": "En pacientes y pertencios,",
+            "normalized_text": "En pacientes y pertencios,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 22.6867
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "e5c229465f1c1f98313e0acb4be8b334d7bc328010d05069ebbde7e53cc013ce",
+            "context": [
+              "El aumento de la resistencia vascular periférica",
+              "y alteraciones en la función endotelial."
+            ],
+            "text": "In patients and their relatives,",
+            "provider_ms": 557.125
+          }
+        },
+        {
+          "id": "benchmark:11",
+          "text": "la exposición prolongada a niveles elevados de",
+          "start_time": 2.58,
+          "end_time": 37.37,
+          "emitted_at": 39.474,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 35.444,
+          "latency_ms": 4030.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:11",
+            "raw_text": "la exposición prolongada a niveles elevados de",
+            "normalized_text": "la exposición prolongada a niveles elevados de",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 36.86
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "f2149637952f57eec7b60e23ed76ba449f188ac9a0e70aeb93bf46fec4b42353",
+            "context": [
+              "y alteraciones en la función endotelial.",
+              "En pacientes y pertencios,"
+            ],
+            "text": "prolonged exposure to high levels of",
+            "provider_ms": 555.947
+          }
+        },
+        {
+          "id": "benchmark:12",
+          "text": "presión puede producir hipertrofia ventricular",
+          "start_time": 2.58,
+          "end_time": 40.95,
+          "emitted_at": 43.834,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 39.284,
+          "latency_ms": 4550.0,
+          "word_count": 5,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:12",
+            "raw_text": "presión puede producir hipertrofia ventricular",
+            "normalized_text": "presión puede producir hipertrofia ventricular",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 45.4063
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "7bb48e1a819546b1093fbbbb2606a7496ea37f51512cf697e797a49b0cfe560c",
+            "context": [
+              "En pacientes y pertencios,",
+              "la exposición prolongada a niveles elevados de"
+            ],
+            "text": "blood pressure can lead to ventricular hypertrophy",
+            "provider_ms": 585.149
+          }
+        },
+        {
+          "id": "benchmark:13",
+          "text": "izquierda,",
+          "start_time": 2.58,
+          "end_time": 43.27,
+          "emitted_at": 47.764,
+          "reason": "hard_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 43.224,
+          "latency_ms": 4540.0,
+          "word_count": 1,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:13",
+            "raw_text": "izquierda,",
+            "normalized_text": "izquierda,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 15.3155
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "a79fd51c382fe5dfa4438909fb35fdb3ca9492678cb73db0af16ca3c199c3c77",
+            "context": [
+              "la exposición prolongada a niveles elevados de",
+              "presión puede producir hipertrofia ventricular"
+            ],
+            "text": ",",
+            "provider_ms": 510.914
+          }
+        },
+        {
+          "id": "benchmark:14",
+          "text": "remodelado vascular,",
+          "start_time": 2.58,
+          "end_time": 46.86,
+          "emitted_at": 49.873,
+          "reason": "soft_max_age",
+          "boundary_kind": "comma",
+          "first_seen_at": 46.271,
+          "latency_ms": 3602.0,
+          "word_count": 2,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:14",
+            "raw_text": "remodelado vascular,",
+            "normalized_text": "remodelado vascular,",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 4.1414
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "2cb401a62422a6fded92da149902a772eb5d41e3aa31cdadccb18894a5063e01",
+            "context": [
+              "presión puede producir hipertrofia ventricular",
+              "izquierda,"
+            ],
+            "text": "vascular remodeling,",
+            "provider_ms": 551.72
+          }
+        },
+        {
+          "id": "benchmark:15",
+          "text": "disfunción renal y un incremento significativo del",
+          "start_time": 2.58,
+          "end_time": 48.36,
+          "emitted_at": 51.613,
+          "reason": "soft_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 49.033,
+          "latency_ms": 2580.0,
+          "word_count": 7,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:15",
+            "raw_text": "disfunción renal y un incremento significativo del",
+            "normalized_text": "disfunción renal y un incremento significativo del",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 32.0161
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "a21bb706bb86ae9693506f629bf51bd722581ae4b4cb2983105d2b016ff9c7cd",
+            "context": [
+              "izquierda,",
+              "remodelado vascular,"
+            ],
+            "text": "renal dysfunction, and a significant increase in",
+            "provider_ms": 560.752
+          }
+        },
+        {
+          "id": "benchmark:16",
+          "text": "riesgo de accidentes cerebrovascular e infarto",
+          "start_time": 2.58,
+          "end_time": 52.38,
+          "emitted_at": 55.223,
+          "reason": "hard_max_age",
+          "boundary_kind": "whitespace",
+          "first_seen_at": 50.723,
+          "latency_ms": 4500.0,
+          "word_count": 6,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:16",
+            "raw_text": "riesgo de accidentes cerebrovascular e infarto",
+            "normalized_text": "riesgo de accidentes cerebrovascular e infarto",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [
+              "cerebrovascular"
+            ],
+            "processing_ms": 49.0624
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "0e76d458601d1dbe0e6be06ba714a3c1ae5ddeda3a478872b246cc6931eaa0d9",
+            "context": [
+              "remodelado vascular,",
+              "disfunción renal y un incremento significativo del"
+            ],
+            "text": "risk of stroke and heart attack",
+            "provider_ms": 531.126
+          }
+        },
+        {
+          "id": "benchmark:17",
+          "text": "agudo de miocardio.",
+          "start_time": 2.58,
+          "end_time": 53.16,
+          "emitted_at": 58.3,
+          "reason": "session_end",
+          "boundary_kind": "session_end",
+          "first_seen_at": 55.123,
+          "latency_ms": 3177.0,
+          "word_count": 3,
+          "revisions_before_ready": 0,
+          "source_ids": [
+            "source-1"
+          ],
+          "timing_precision": "source_line_bounds",
+          "normalization": {
+            "segment_id": "benchmark:17",
+            "raw_text": "agudo de miocardio.",
+            "normalized_text": "agudo de miocardio.",
+            "corrections": [],
+            "suggestions": [],
+            "known_terms": [],
+            "processing_ms": 24.9499
+          },
+          "translation": {
+            "success": true,
+            "provider": "deepl",
+            "request_hash": "4c17d3e4e009d2b2a1e991ba6f1ec34b4d534c298db8389481bd315f469deedd",
+            "context": [
+              "disfunción renal y un incremento significativo del",
+              "riesgo de accidentes cerebrovascular e infarto"
+            ],
+            "text": "acute myocardial infarction.",
+            "provider_ms": 527.217
+          }
+        }
+      ]
+    }
+  },
+  "intermediate_exploration": [
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.2,
+        "hard_max_age_seconds": 4.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 22,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3107.5,
+        "mean": 3098.0,
+        "p95": 4061.0,
+        "max": 4072.0
+      },
+      "words": {
+        "min": 1,
+        "median": 4.5,
+        "mean": 3.6818181818181817,
+        "p95": 6,
+        "max": 6
+      },
+      "forced_whitespace_cut_count": 14,
+      "fragmented_unit_count": 9,
+      "medical_unit_boundary_count": 11,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.5,
+        "hard_max_age_seconds": 4.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 22,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3107.5,
+        "mean": 3254.1363636363635,
+        "p95": 4540.0,
+        "max": 4546.0
+      },
+      "words": {
+        "min": 1,
+        "median": 4.5,
+        "mean": 3.6818181818181817,
+        "p95": 6,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 14,
+      "fragmented_unit_count": 9,
+      "medical_unit_boundary_count": 11,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.6,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 21,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3038.0,
+        "mean": 3348.5238095238096,
+        "p95": 4829.0,
+        "max": 4831.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 3.857142857142857,
+        "p95": 6,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 13,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 10,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.8,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 21,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3038.0,
+        "mean": 3413.2380952380954,
+        "p95": 4829.0,
+        "max": 4831.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 3.857142857142857,
+        "p95": 6,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 13,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 10,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 3.0,
+        "hard_max_age_seconds": 5.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 19,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3372.0,
+        "mean": 3617.0,
+        "p95": 5011.0,
+        "max": 5011.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.2631578947368425,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 11,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.2,
+        "hard_max_age_seconds": 4.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 21,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3372.0,
+        "mean": 3221.4285714285716,
+        "p95": 4061.0,
+        "max": 4080.0
+      },
+      "words": {
+        "min": 1,
+        "median": 4,
+        "mean": 3.857142857142857,
+        "p95": 6,
+        "max": 6
+      },
+      "forced_whitespace_cut_count": 13,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 9,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.5,
+        "hard_max_age_seconds": 4.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 18,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3276.0,
+        "mean": 3342.5555555555557,
+        "p95": 4540.0,
+        "max": 4540.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5.5,
+        "mean": 4.5,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 10,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.6,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 18,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3276.0,
+        "mean": 3382.3333333333335,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 6.0,
+        "mean": 4.5,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 10,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.8,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 18,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3276.0,
+        "mean": 3428.8888888888887,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 6.0,
+        "mean": 4.5,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 10,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 3.0,
+        "hard_max_age_seconds": 5.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 18,
+      "latency_ms": {
+        "min": 1779.0,
+        "median": 3276.0,
+        "mean": 3480.722222222222,
+        "p95": 5010.0,
+        "max": 5010.0
+      },
+      "words": {
+        "min": 1,
+        "median": 6.0,
+        "mean": 4.5,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 10,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.2,
+        "hard_max_age_seconds": 4.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 19,
+      "latency_ms": {
+        "min": 2290.0,
+        "median": 3751.0,
+        "mean": 3439.157894736842,
+        "p95": 4079.0,
+        "max": 4079.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.2631578947368425,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 11,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 6,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.5,
+        "hard_max_age_seconds": 4.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2350.0,
+        "median": 3751.0,
+        "mean": 3650.3529411764707,
+        "p95": 4550.0,
+        "max": 4550.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.6,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2350.0,
+        "median": 3751.0,
+        "mean": 3746.705882352941,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.8,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2350.0,
+        "median": 3751.0,
+        "mean": 3777.176470588235,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.6,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 3.0,
+        "hard_max_age_seconds": 5.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2350.0,
+        "median": 3710.0,
+        "mean": 3754.470588235294,
+        "p95": 5019.0,
+        "max": 5019.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 8,
+        "max": 8
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.2,
+        "hard_max_age_seconds": 4.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 23,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3177.0,
+        "mean": 3179.9565217391305,
+        "p95": 4061.0,
+        "max": 4072.0
+      },
+      "words": {
+        "min": 1,
+        "median": 4,
+        "mean": 3.5217391304347827,
+        "p95": 6,
+        "max": 6
+      },
+      "forced_whitespace_cut_count": 15,
+      "fragmented_unit_count": 9,
+      "medical_unit_boundary_count": 11,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.5,
+        "hard_max_age_seconds": 4.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 22,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3203.0,
+        "mean": 3370.181818181818,
+        "p95": 4540.0,
+        "max": 4546.0
+      },
+      "words": {
+        "min": 1,
+        "median": 4.5,
+        "mean": 3.6818181818181817,
+        "p95": 6,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 14,
+      "fragmented_unit_count": 9,
+      "medical_unit_boundary_count": 11,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.6,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 21,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3229.0,
+        "mean": 3460.904761904762,
+        "p95": 4829.0,
+        "max": 4831.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 3.857142857142857,
+        "p95": 6,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 13,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 10,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.8,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 21,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3229.0,
+        "mean": 3507.4761904761904,
+        "p95": 4829.0,
+        "max": 4831.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 3.857142857142857,
+        "p95": 6,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 13,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 10,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 5,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 3.0,
+        "hard_max_age_seconds": 5.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 21,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3229.0,
+        "mean": 3596.6666666666665,
+        "p95": 5011.0,
+        "max": 5018.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 3.857142857142857,
+        "p95": 6,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 13,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 10,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.2,
+        "hard_max_age_seconds": 4.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 22,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3603.0,
+        "mean": 3348.0454545454545,
+        "p95": 4061.0,
+        "max": 4080.0
+      },
+      "words": {
+        "min": 1,
+        "median": 4.0,
+        "mean": 3.6818181818181817,
+        "p95": 6,
+        "max": 6
+      },
+      "forced_whitespace_cut_count": 14,
+      "fragmented_unit_count": 9,
+      "medical_unit_boundary_count": 10,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.5,
+        "hard_max_age_seconds": 4.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 19,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3602.0,
+        "mean": 3526.2631578947367,
+        "p95": 4549.0,
+        "max": 4549.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.2631578947368425,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 11,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.6,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 18,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3531.5,
+        "mean": 3514.222222222222,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 6.0,
+        "mean": 4.5,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 10,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.8,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 18,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3531.5,
+        "mean": 3555.6666666666665,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 6.0,
+        "mean": 4.5,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 10,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 6,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 3.0,
+        "hard_max_age_seconds": 5.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 18,
+      "latency_ms": {
+        "min": 2009.0,
+        "median": 3531.5,
+        "mean": 3607.5,
+        "p95": 5010.0,
+        "max": 5010.0
+      },
+      "words": {
+        "min": 1,
+        "median": 6.0,
+        "mean": 4.5,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 10,
+      "fragmented_unit_count": 8,
+      "medical_unit_boundary_count": 8,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.2,
+        "hard_max_age_seconds": 4.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 20,
+      "latency_ms": {
+        "min": 2290.0,
+        "median": 3845.5,
+        "mean": 3520.95,
+        "p95": 4061.0,
+        "max": 4079.0
+      },
+      "words": {
+        "min": 1,
+        "median": 4.0,
+        "mean": 4.05,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 12,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 6,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.5,
+        "hard_max_age_seconds": 4.5,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2530.0,
+        "median": 3940.0,
+        "mean": 3736.0588235294117,
+        "p95": 4550.0,
+        "max": 4550.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.6,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2539.0,
+        "median": 3940.0,
+        "mean": 3832.4117647058824,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 2.8,
+        "hard_max_age_seconds": 4.8,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2539.0,
+        "median": 3940.0,
+        "mean": 3854.705882352941,
+        "p95": 4829.0,
+        "max": 4829.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    },
+    {
+      "config": {
+        "stabilization_seconds": 0.8,
+        "silence_seconds": 0.8,
+        "minimum_words": 7,
+        "target_words": 12,
+        "max_words": 20,
+        "safe_cut_lookback_words": 8,
+        "soft_max_age_seconds": 3.0,
+        "hard_max_age_seconds": 5.0,
+        "tick_seconds": 0.1
+      },
+      "ready_count": 17,
+      "latency_ms": {
+        "min": 2539.0,
+        "median": 3751.0,
+        "mean": 3826.1176470588234,
+        "p95": 5019.0,
+        "max": 5019.0
+      },
+      "words": {
+        "min": 1,
+        "median": 5,
+        "mean": 4.764705882352941,
+        "p95": 7,
+        "max": 7
+      },
+      "forced_whitespace_cut_count": 9,
+      "fragmented_unit_count": 5,
+      "medical_unit_boundary_count": 5,
+      "late_revision_count": 0,
+      "integrity": {
+        "ordered_word_equality": true,
+        "source_words": 81,
+        "emitted_words": 81,
+        "missing_words": {},
+        "excess_words": {},
+        "unique_ids": true,
+        "pending_at_end": ""
+      }
+    }
+  ],
+  "live_evidence": [
+    {
+      "session_id": "5033f1ad06d4",
+      "last_ready_log_timestamp": "2026-10-17 00:25:34,408",
+      "samples": [
+        {
+          "segment_id": "5033f1ad06d4:1",
+          "raw_text": "La insuficiencia cardíaca con fracción de eyección",
+          "asr_first_seen_s": 7.421999999991385,
+          "ready_s": 10.89100000000326,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 19.557,
+          "asr_to_ready_ms": 3469.0,
+          "ready_to_normalized_ms": 15.0,
+          "ready_to_translation_started_ms": 15.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 672.0,
+          "provider_last_attempt_ms": 672.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 687.0,
+          "asr_to_hub_ms": 4156.0
+        },
+        {
+          "segment_id": "5033f1ad06d4:2",
+          "raw_text": "reducida se caracteriza por una disminución de la capacidad",
+          "asr_first_seen_s": 10.046999999991385,
+          "ready_s": 13.60899999999674,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 82.83,
+          "asr_to_ready_ms": 3562.0,
+          "ready_to_normalized_ms": 78.0,
+          "ready_to_translation_started_ms": 78.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 563.0,
+          "provider_last_attempt_ms": 563.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 641.0,
+          "asr_to_hub_ms": 4203.0
+        },
+        {
+          "segment_id": "5033f1ad06d4:3",
+          "raw_text": "contractil del ventrículo izquierdo acompañado de",
+          "asr_first_seen_s": 13.28100000001723,
+          "ready_s": 18.78100000001723,
+          "ready_reason": "hard_max_age",
+          "normalization_processing_ms": 76.197,
+          "asr_to_ready_ms": 5500.0,
+          "ready_to_normalized_ms": 78.0,
+          "ready_to_translation_started_ms": 78.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 610.0,
+          "provider_last_attempt_ms": 610.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 688.0,
+          "asr_to_hub_ms": 6188.0
+        },
+        {
+          "segment_id": "5033f1ad06d4:4",
+          "raw_text": "activación neurohormonal y aumento de las presiones de",
+          "asr_first_seen_s": 17.562000000005355,
+          "ready_s": 21.796999999991385,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 97.107,
+          "asr_to_ready_ms": 4235.0,
+          "ready_to_normalized_ms": 94.0,
+          "ready_to_translation_started_ms": 94.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 656.0,
+          "provider_last_attempt_ms": 656.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 750.0,
+          "asr_to_hub_ms": 4985.0
+        },
+        {
+          "segment_id": "5033f1ad06d4:5",
+          "raw_text": "llenado",
+          "asr_first_seen_s": 21.562000000005355,
+          "ready_s": 27.14100000000326,
+          "ready_reason": "hard_max_age",
+          "normalization_processing_ms": 25.855,
+          "asr_to_ready_ms": 5579.0,
+          "ready_to_normalized_ms": 31.0,
+          "ready_to_translation_started_ms": 31.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 531.0,
+          "provider_last_attempt_ms": 531.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 562.0,
+          "asr_to_hub_ms": 6141.0
+        }
+      ],
+      "summary": {
+        "asr_to_ready_ms": {
+          "min": 3469.0,
+          "median": 4235.0,
+          "mean": 4469.0,
+          "p95": 5579.0,
+          "max": 5579.0
+        },
+        "ready_to_normalized_ms": {
+          "min": 15.0,
+          "median": 78.0,
+          "mean": 59.2,
+          "p95": 94.0,
+          "max": 94.0
+        },
+        "normalization_processing_ms": {
+          "min": 19.557,
+          "median": 76.197,
+          "mean": 60.3092,
+          "p95": 97.107,
+          "max": 97.107
+        },
+        "provider_total_ms": {
+          "min": 531.0,
+          "median": 610.0,
+          "mean": 606.4,
+          "p95": 672.0,
+          "max": 672.0
+        },
+        "translation_queue_delay_ms": {
+          "min": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "asr_to_hub_ms": {
+          "min": 4156.0,
+          "median": 4985.0,
+          "mean": 5134.6,
+          "p95": 6188.0,
+          "max": 6188.0
+        }
+      }
+    },
+    {
+      "session_id": "f35acbc2d027",
+      "last_ready_log_timestamp": "2026-10-17 00:26:54,026",
+      "samples": [
+        {
+          "segment_id": "f35acbc2d027:1",
+          "raw_text": "La insuficiencia cardíaca con fracción de eyección",
+          "asr_first_seen_s": 4.625,
+          "ready_s": 8.65700000000652,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 18.431,
+          "asr_to_ready_ms": 4032.0,
+          "ready_to_normalized_ms": 15.0,
+          "ready_to_translation_started_ms": 15.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 610.0,
+          "provider_last_attempt_ms": 610.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 625.0,
+          "asr_to_hub_ms": 4657.0
+        },
+        {
+          "segment_id": "f35acbc2d027:2",
+          "raw_text": "reducida se caracteriza por una disminución de la capacidad",
+          "asr_first_seen_s": 8.328999999997905,
+          "ready_s": 11.89100000000326,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 84.041,
+          "asr_to_ready_ms": 3562.0,
+          "ready_to_normalized_ms": 78.0,
+          "ready_to_translation_started_ms": 94.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 578.0,
+          "provider_last_attempt_ms": 578.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 672.0,
+          "asr_to_hub_ms": 4234.0
+        },
+        {
+          "segment_id": "f35acbc2d027:3",
+          "raw_text": "contractil del ventrículo izquierdo,",
+          "asr_first_seen_s": 11.51600000000326,
+          "ready_s": 15.75,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 48.972,
+          "asr_to_ready_ms": 4234.0,
+          "ready_to_normalized_ms": 47.0,
+          "ready_to_translation_started_ms": 47.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 563.0,
+          "provider_last_attempt_ms": 563.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 610.0,
+          "asr_to_hub_ms": 4844.0
+        },
+        {
+          "segment_id": "f35acbc2d027:4",
+          "raw_text": "acompañada de la activación neurohormonal y aumento de las",
+          "asr_first_seen_s": 14.90700000000652,
+          "ready_s": 18.23499999998603,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 65.335,
+          "asr_to_ready_ms": 3328.0,
+          "ready_to_normalized_ms": 62.0,
+          "ready_to_translation_started_ms": 62.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 563.0,
+          "provider_last_attempt_ms": 563.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 625.0,
+          "asr_to_hub_ms": 3953.0
+        },
+        {
+          "segment_id": "f35acbc2d027:5",
+          "raw_text": "presiones de",
+          "asr_first_seen_s": 17.344000000011874,
+          "ready_s": 22.875,
+          "ready_reason": "hard_max_age",
+          "normalization_processing_ms": 30.209,
+          "asr_to_ready_ms": 5531.0,
+          "ready_to_normalized_ms": 32.0,
+          "ready_to_translation_started_ms": 32.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 531.0,
+          "provider_last_attempt_ms": 531.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 563.0,
+          "asr_to_hub_ms": 6094.0
+        },
+        {
+          "segment_id": "f35acbc2d027:6",
+          "raw_text": "llenado",
+          "asr_first_seen_s": 18.0,
+          "ready_s": 23.53200000000652,
+          "ready_reason": "hard_max_age",
+          "normalization_processing_ms": 4.476,
+          "asr_to_ready_ms": 5532.0,
+          "ready_to_normalized_ms": 0.0,
+          "ready_to_translation_started_ms": 0.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 562.0,
+          "provider_last_attempt_ms": 562.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 562.0,
+          "asr_to_hub_ms": 6094.0
+        },
+        {
+          "segment_id": "f35acbc2d027:7",
+          "raw_text": "la insuficiencia cardíaca con fracción de inyección reducida",
+          "asr_first_seen_s": 47.062999999994645,
+          "ready_s": 50.437999999994645,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 53.052,
+          "asr_to_ready_ms": 3375.0,
+          "ready_to_normalized_ms": 47.0,
+          "ready_to_translation_started_ms": 62.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 641.0,
+          "provider_last_attempt_ms": 641.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 703.0,
+          "asr_to_hub_ms": 4078.0
+        },
+        {
+          "segment_id": "f35acbc2d027:8",
+          "raw_text": "se caracteriza por una disminución de la capacidad",
+          "asr_first_seen_s": 49.687999999994645,
+          "ready_s": 53.01600000000326,
+          "ready_reason": "soft_max_age",
+          "normalization_processing_ms": 76.959,
+          "asr_to_ready_ms": 3328.0,
+          "ready_to_normalized_ms": 78.0,
+          "ready_to_translation_started_ms": 78.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 578.0,
+          "provider_last_attempt_ms": 578.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 656.0,
+          "asr_to_hub_ms": 3984.0
+        },
+        {
+          "segment_id": "f35acbc2d027:9",
+          "raw_text": "contractil del ventrículo",
+          "asr_first_seen_s": 52.312999999994645,
+          "ready_s": 57.844000000011874,
+          "ready_reason": "hard_max_age",
+          "normalization_processing_ms": 37.763,
+          "asr_to_ready_ms": 5531.0,
+          "ready_to_normalized_ms": 31.0,
+          "ready_to_translation_started_ms": 31.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 579.0,
+          "provider_last_attempt_ms": 579.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 610.0,
+          "asr_to_hub_ms": 6141.0
+        },
+        {
+          "segment_id": "f35acbc2d027:10",
+          "raw_text": "izquierdo",
+          "asr_first_seen_s": 54.421999999991385,
+          "ready_s": 59.953999999997905,
+          "ready_reason": "hard_max_age",
+          "normalization_processing_ms": 9.078,
+          "asr_to_ready_ms": 5532.0,
+          "ready_to_normalized_ms": 0.0,
+          "ready_to_translation_started_ms": 0.0,
+          "translation_queue_delay_ms": 0.0,
+          "provider_total_ms": 578.0,
+          "provider_last_attempt_ms": 578.0,
+          "translation_to_hub_ms": 0.0,
+          "ready_to_hub_ms": 578.0,
+          "asr_to_hub_ms": 6110.0
+        }
+      ],
+      "summary": {
+        "asr_to_ready_ms": {
+          "min": 3328.0,
+          "median": 4133.0,
+          "mean": 4398.5,
+          "p95": 5532.0,
+          "max": 5532.0
+        },
+        "ready_to_normalized_ms": {
+          "min": 0.0,
+          "median": 39.5,
+          "mean": 39.0,
+          "p95": 78.0,
+          "max": 78.0
+        },
+        "normalization_processing_ms": {
+          "min": 4.476,
+          "median": 43.3675,
+          "mean": 42.8316,
+          "p95": 84.041,
+          "max": 84.041
+        },
+        "provider_total_ms": {
+          "min": 531.0,
+          "median": 578.0,
+          "mean": 578.3,
+          "p95": 641.0,
+          "max": 641.0
+        },
+        "translation_queue_delay_ms": {
+          "min": 0.0,
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "asr_to_hub_ms": {
+          "min": 3953.0,
+          "median": 4750.5,
+          "mean": 5018.9,
+          "p95": 6141.0,
+          "max": 6141.0
+        }
+      }
+    }
+  ],
+  "synthetic_revision_controls": {
+    "pending_correction_700ms": {
+      "A": {
+        "config": {
+          "stabilization_seconds": 0.8,
+          "silence_seconds": 1.0,
+          "minimum_words": 7,
+          "target_words": 13,
+          "max_words": 21,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 3.3,
+          "hard_max_age_seconds": 5.5,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 1,
+        "words": {
+          "min": 2,
+          "median": 2,
+          "mean": 2,
+          "p95": 2,
+          "max": 2
+        },
+        "latency_ms": {
+          "min": 1500.0,
+          "median": 1500.0,
+          "mean": 1500.0,
+          "p95": 1500.0,
+          "max": 1500.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 1500.0,
+          "median": 1500.0,
+          "mean": 1500.0,
+          "p95": 1500.0,
+          "max": 1500.0
+        },
+        "flush_reasons": {
+          "punctuation": 1
+        },
+        "boundary_kinds": {
+          "strong_punctuation": 1
+        },
+        "hard_age_percent": 0.0,
+        "forced_whitespace_cut_count": 0,
+        "integrity": {
+          "ordered_word_equality": true,
+          "source_words": 2,
+          "emitted_words": 2,
+          "missing_words": {},
+          "excess_words": {},
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 0,
+        "late_revisions": [],
+        "medical_units": [],
+        "fragmented_unit_count": 0,
+        "medical_unit_boundary_count": 0,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "Tiene hipertensión.",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "emitted_at": 1.5000000000000002,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 0.0,
+            "latency_ms": 1500.0,
+            "word_count": 2,
+            "revisions_before_ready": 1,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      },
+      "B": {
+        "config": {
+          "stabilization_seconds": 0.6,
+          "silence_seconds": 0.8,
+          "minimum_words": 5,
+          "target_words": 10,
+          "max_words": 18,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 2.2,
+          "hard_max_age_seconds": 4.0,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 1,
+        "words": {
+          "min": 2,
+          "median": 2,
+          "mean": 2,
+          "p95": 2,
+          "max": 2
+        },
+        "latency_ms": {
+          "min": 600.0,
+          "median": 600.0,
+          "mean": 600.0,
+          "p95": 600.0,
+          "max": 600.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 600.0,
+          "median": 600.0,
+          "mean": 600.0,
+          "p95": 600.0,
+          "max": 600.0
+        },
+        "flush_reasons": {
+          "punctuation": 1
+        },
+        "boundary_kinds": {
+          "strong_punctuation": 1
+        },
+        "hard_age_percent": 0.0,
+        "forced_whitespace_cut_count": 0,
+        "integrity": {
+          "ordered_word_equality": false,
+          "source_words": 2,
+          "emitted_words": 2,
+          "missing_words": {
+            "hipertensión.": 1
+          },
+          "excess_words": {
+            "hipotensión.": 1
+          },
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 1,
+        "late_revisions": [
+          {
+            "type": "late_revision_detected",
+            "source_id": "source-1",
+            "segment_ids": [
+              "benchmark:1"
+            ],
+            "old_text": "Tiene hipotensión.",
+            "new_text": "Tiene hipertensión.",
+            "old_timestamps": [
+              0.0,
+              1.0
+            ],
+            "new_timestamps": [
+              0.0,
+              1.0
+            ],
+            "boundary_crossed": false
+          }
+        ],
+        "medical_units": [],
+        "fragmented_unit_count": 0,
+        "medical_unit_boundary_count": 0,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "Tiene hipotensión.",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "emitted_at": 0.6,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 0.0,
+            "latency_ms": 600.0,
+            "word_count": 2,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      },
+      "C": {
+        "config": {
+          "stabilization_seconds": 0.8,
+          "silence_seconds": 1.0,
+          "minimum_words": 7,
+          "target_words": 13,
+          "max_words": 21,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 2.5,
+          "hard_max_age_seconds": 4.5,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 1,
+        "words": {
+          "min": 2,
+          "median": 2,
+          "mean": 2,
+          "p95": 2,
+          "max": 2
+        },
+        "latency_ms": {
+          "min": 1500.0,
+          "median": 1500.0,
+          "mean": 1500.0,
+          "p95": 1500.0,
+          "max": 1500.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 1500.0,
+          "median": 1500.0,
+          "mean": 1500.0,
+          "p95": 1500.0,
+          "max": 1500.0
+        },
+        "flush_reasons": {
+          "punctuation": 1
+        },
+        "boundary_kinds": {
+          "strong_punctuation": 1
+        },
+        "hard_age_percent": 0.0,
+        "forced_whitespace_cut_count": 0,
+        "integrity": {
+          "ordered_word_equality": true,
+          "source_words": 2,
+          "emitted_words": 2,
+          "missing_words": {},
+          "excess_words": {},
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 0,
+        "late_revisions": [],
+        "medical_units": [],
+        "fragmented_unit_count": 0,
+        "medical_unit_boundary_count": 0,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "Tiene hipertensión.",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "emitted_at": 1.5000000000000002,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 0.0,
+            "latency_ms": 1500.0,
+            "word_count": 2,
+            "revisions_before_ready": 1,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      }
+    },
+    "open_token_extended_4200ms": {
+      "A": {
+        "config": {
+          "stabilization_seconds": 0.8,
+          "silence_seconds": 1.0,
+          "minimum_words": 7,
+          "target_words": 13,
+          "max_words": 21,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 3.3,
+          "hard_max_age_seconds": 5.5,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 1,
+        "words": {
+          "min": 1,
+          "median": 1,
+          "mean": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "latency_ms": {
+          "min": 5600.0,
+          "median": 5600.0,
+          "mean": 5600.0,
+          "p95": 5600.0,
+          "max": 5600.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 5600.0,
+          "median": 5600.0,
+          "mean": 5600.0,
+          "p95": 5600.0,
+          "max": 5600.0
+        },
+        "flush_reasons": {
+          "hard_max_age": 1
+        },
+        "boundary_kinds": {
+          "whitespace": 1
+        },
+        "hard_age_percent": 100.0,
+        "forced_whitespace_cut_count": 1,
+        "integrity": {
+          "ordered_word_equality": true,
+          "source_words": 1,
+          "emitted_words": 1,
+          "missing_words": {},
+          "excess_words": {},
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 0,
+        "late_revisions": [],
+        "medical_units": [],
+        "fragmented_unit_count": 0,
+        "medical_unit_boundary_count": 0,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "cardiovascular",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "emitted_at": 5.599999999999995,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 0.0,
+            "latency_ms": 5600.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      },
+      "B": {
+        "config": {
+          "stabilization_seconds": 0.6,
+          "silence_seconds": 0.8,
+          "minimum_words": 5,
+          "target_words": 10,
+          "max_words": 18,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 2.2,
+          "hard_max_age_seconds": 4.0,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 1,
+        "words": {
+          "min": 1,
+          "median": 1,
+          "mean": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "latency_ms": {
+          "min": 4000.0,
+          "median": 4000.0,
+          "mean": 4000.0,
+          "p95": 4000.0,
+          "max": 4000.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 4000.0,
+          "median": 4000.0,
+          "mean": 4000.0,
+          "p95": 4000.0,
+          "max": 4000.0
+        },
+        "flush_reasons": {
+          "hard_max_age": 1
+        },
+        "boundary_kinds": {
+          "whitespace": 1
+        },
+        "hard_age_percent": 100.0,
+        "forced_whitespace_cut_count": 1,
+        "integrity": {
+          "ordered_word_equality": false,
+          "source_words": 1,
+          "emitted_words": 1,
+          "missing_words": {
+            "cardiovascular": 1
+          },
+          "excess_words": {
+            "cardio": 1
+          },
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 1,
+        "late_revisions": [
+          {
+            "type": "late_revision_detected",
+            "source_id": "source-1",
+            "segment_ids": [
+              "benchmark:1"
+            ],
+            "old_text": "cardio",
+            "new_text": "cardiovascular",
+            "old_timestamps": [
+              0.0,
+              1.0
+            ],
+            "new_timestamps": [
+              0.0,
+              1.0
+            ],
+            "token_extended": true
+          }
+        ],
+        "medical_units": [],
+        "fragmented_unit_count": 0,
+        "medical_unit_boundary_count": 0,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "cardio",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "emitted_at": 4.000000000000002,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 0.0,
+            "latency_ms": 4000.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      },
+      "C": {
+        "config": {
+          "stabilization_seconds": 0.8,
+          "silence_seconds": 1.0,
+          "minimum_words": 7,
+          "target_words": 13,
+          "max_words": 21,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 2.5,
+          "hard_max_age_seconds": 4.5,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 1,
+        "words": {
+          "min": 1,
+          "median": 1,
+          "mean": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "latency_ms": {
+          "min": 4600.0,
+          "median": 4600.0,
+          "mean": 4600.0,
+          "p95": 4600.0,
+          "max": 4600.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 4600.0,
+          "median": 4600.0,
+          "mean": 4600.0,
+          "p95": 4600.0,
+          "max": 4600.0
+        },
+        "flush_reasons": {
+          "hard_max_age": 1
+        },
+        "boundary_kinds": {
+          "whitespace": 1
+        },
+        "hard_age_percent": 100.0,
+        "forced_whitespace_cut_count": 1,
+        "integrity": {
+          "ordered_word_equality": true,
+          "source_words": 1,
+          "emitted_words": 1,
+          "missing_words": {},
+          "excess_words": {},
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 0,
+        "late_revisions": [],
+        "medical_units": [],
+        "fragmented_unit_count": 0,
+        "medical_unit_boundary_count": 0,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "cardiovascular",
+            "start_time": 0.0,
+            "end_time": 1.0,
+            "emitted_at": 4.599999999999999,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 0.0,
+            "latency_ms": 4600.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      }
+    }
+  },
+  "glossary_sha256": {
+    "medical_base.json": "d8c09dbb234eb8c2c256e1bdad68013cceea2db3d7ac557db799772e0af53b37",
+    "conference.json": "a711330ff91dcb2ecefa9866684087345bb1d34a9ecb663935d6641791857004"
+  },
+  "legacy_sparse_fixture": {
+    "source": "medical_real_snapshots.json",
+    "event_count": 61,
+    "variants": {
+      "A": {
+        "config": {
+          "stabilization_seconds": 0.8,
+          "silence_seconds": 1.0,
+          "minimum_words": 7,
+          "target_words": 13,
+          "max_words": 21,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 3.3,
+          "hard_max_age_seconds": 5.5,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 16,
+        "words": {
+          "min": 1,
+          "median": 5.5,
+          "mean": 5.0625,
+          "p95": 8,
+          "max": 8
+        },
+        "latency_ms": {
+          "min": 2728.0,
+          "median": 3825.5,
+          "mean": 4100.1875,
+          "p95": 5598.0,
+          "max": 5598.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 2728.0,
+          "median": 3900.0,
+          "mean": 4161.733333333334,
+          "p95": 5598.0,
+          "max": 5598.0
+        },
+        "flush_reasons": {
+          "soft_max_age": 10,
+          "punctuation": 3,
+          "hard_max_age": 2,
+          "session_end": 1
+        },
+        "boundary_kinds": {
+          "whitespace": 8,
+          "strong_punctuation": 3,
+          "comma": 4,
+          "session_end": 1
+        },
+        "hard_age_percent": 12.5,
+        "forced_whitespace_cut_count": 8,
+        "integrity": {
+          "ordered_word_equality": true,
+          "source_words": 81,
+          "emitted_words": 81,
+          "missing_words": {},
+          "excess_words": {},
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 0,
+        "late_revisions": [],
+        "medical_units": [
+          {
+            "raw_unit": "condición cardiovascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "elevación persistente",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "presión arterial systólica y/o diastólica",
+            "split_after_segments": [
+              2
+            ]
+          },
+          {
+            "raw_unit": "sistema herenina angiotensina al dosterona",
+            "split_after_segments": [
+              5
+            ]
+          },
+          {
+            "raw_unit": "resistencia vascular periférica",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "función endotelial",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "niveles elevados de presión",
+            "split_after_segments": [
+              10
+            ]
+          },
+          {
+            "raw_unit": "hipertrofia ventricular izquierda",
+            "split_after_segments": [
+              11
+            ]
+          },
+          {
+            "raw_unit": "remodelado vascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "disfunción renal",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "accidentes cerebrovascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "infarto agudo de miocardio",
+            "split_after_segments": [
+              15
+            ]
+          }
+        ],
+        "fragmented_unit_count": 5,
+        "medical_unit_boundary_count": 5,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "La hipertensión arterial es una condición cardiovascular",
+            "start_time": 2.58,
+            "end_time": 7.3,
+            "emitted_at": 8.488,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 4.737,
+            "latency_ms": 3751.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:2",
+            "text": "caracterizada por una elevación persistente de la presión",
+            "start_time": 2.58,
+            "end_time": 10.46,
+            "emitted_at": 11.876,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 8.488,
+            "latency_ms": 3388.0,
+            "word_count": 8,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:3",
+            "text": "arterial systólica y/o diastólica.",
+            "start_time": 2.58,
+            "end_time": 14.98,
+            "emitted_at": 16.665000000000003,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 11.067,
+            "latency_ms": 5598.0,
+            "word_count": 4,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:4",
+            "text": "Suficio patología involucra mecanismos complejos,",
+            "start_time": 2.58,
+            "end_time": 18.76,
+            "emitted_at": 19.985000000000003,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 15.845,
+            "latency_ms": 4140.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:5",
+            "text": "incluyendo la activación del sistema herenina angiotensina",
+            "start_time": 2.58,
+            "end_time": 22.76,
+            "emitted_at": 24.006,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 19.125,
+            "latency_ms": 4881.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:6",
+            "text": "al dosterona.",
+            "start_time": 2.58,
+            "end_time": 25.38,
+            "emitted_at": 26.734,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 24.006,
+            "latency_ms": 2728.0,
+            "word_count": 2,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:7",
+            "text": "El aumento de la resistencia vascular periférica",
+            "start_time": 2.58,
+            "end_time": 27.86,
+            "emitted_at": 29.214000000000002,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 25.874,
+            "latency_ms": 3340.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:8",
+            "text": "y alteraciones en la función endotelial.",
+            "start_time": 2.58,
+            "end_time": 30.32,
+            "emitted_at": 32.91400000000001,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 29.014,
+            "latency_ms": 3900.0,
+            "word_count": 6,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:9",
+            "text": "En pacientes y pertencios,",
+            "start_time": 2.58,
+            "end_time": 36.21,
+            "emitted_at": 37.464,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 34.084,
+            "latency_ms": 3380.0,
+            "word_count": 4,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:10",
+            "text": "la exposición prolongada a niveles elevados de",
+            "start_time": 2.58,
+            "end_time": 37.37,
+            "emitted_at": 39.484,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 35.444,
+            "latency_ms": 4040.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:11",
+            "text": "presión puede producir hipertrofia ventricular",
+            "start_time": 2.58,
+            "end_time": 41.51,
+            "emitted_at": 44.87400000000001,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 39.284,
+            "latency_ms": 5590.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:12",
+            "text": "izquierda,",
+            "start_time": 2.58,
+            "end_time": 43.27,
+            "emitted_at": 48.771000000000036,
+            "reason": "hard_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 43.224,
+            "latency_ms": 5547.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:13",
+            "text": "remodelado vascular,",
+            "start_time": 2.58,
+            "end_time": 46.86,
+            "emitted_at": 49.83300000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 46.271,
+            "latency_ms": 3562.0,
+            "word_count": 2,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:14",
+            "text": "disfunción renal y un incremento significativo del",
+            "start_time": 2.58,
+            "end_time": 48.36,
+            "emitted_at": 52.414000000000016,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 49.033,
+            "latency_ms": 3381.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:15",
+            "text": "riesgo de accidentes cerebrovascular e infarto agudo de",
+            "start_time": 2.58,
+            "end_time": 52.38,
+            "emitted_at": 55.92300000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 50.723,
+            "latency_ms": 5200.0,
+            "word_count": 8,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:16",
+            "text": "miocardio.",
+            "start_time": 2.58,
+            "end_time": 53.16,
+            "emitted_at": 58.3,
+            "reason": "session_end",
+            "boundary_kind": "session_end",
+            "first_seen_at": 55.123,
+            "latency_ms": 3177.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      },
+      "B": {
+        "config": {
+          "stabilization_seconds": 0.6,
+          "silence_seconds": 0.8,
+          "minimum_words": 5,
+          "target_words": 10,
+          "max_words": 18,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 2.2,
+          "hard_max_age_seconds": 4.0,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 22,
+        "words": {
+          "min": 1,
+          "median": 4.5,
+          "mean": 3.6818181818181817,
+          "p95": 6,
+          "max": 7
+        },
+        "latency_ms": {
+          "min": 1769.0,
+          "median": 3116.0,
+          "mean": 3094.090909090909,
+          "p95": 4068.0,
+          "max": 4070.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 1769.0,
+          "median": 3055.0,
+          "mean": 3090.1428571428573,
+          "p95": 4068.0,
+          "max": 4070.0
+        },
+        "flush_reasons": {
+          "soft_max_age": 13,
+          "hard_max_age": 5,
+          "punctuation": 3,
+          "session_end": 1
+        },
+        "boundary_kinds": {
+          "whitespace": 14,
+          "strong_punctuation": 3,
+          "comma": 4,
+          "session_end": 1
+        },
+        "hard_age_percent": 22.727272727272727,
+        "forced_whitespace_cut_count": 14,
+        "integrity": {
+          "ordered_word_equality": true,
+          "source_words": 81,
+          "emitted_words": 81,
+          "missing_words": {},
+          "excess_words": {},
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 0,
+        "late_revisions": [],
+        "medical_units": [
+          {
+            "raw_unit": "condición cardiovascular",
+            "split_after_segments": [
+              1
+            ]
+          },
+          {
+            "raw_unit": "elevación persistente",
+            "split_after_segments": [
+              2
+            ]
+          },
+          {
+            "raw_unit": "presión arterial systólica y/o diastólica",
+            "split_after_segments": [
+              3,
+              4
+            ]
+          },
+          {
+            "raw_unit": "sistema herenina angiotensina al dosterona",
+            "split_after_segments": [
+              7,
+              8
+            ]
+          },
+          {
+            "raw_unit": "resistencia vascular periférica",
+            "split_after_segments": [
+              10
+            ]
+          },
+          {
+            "raw_unit": "función endotelial",
+            "split_after_segments": [
+              11
+            ]
+          },
+          {
+            "raw_unit": "niveles elevados de presión",
+            "split_after_segments": [
+              14
+            ]
+          },
+          {
+            "raw_unit": "hipertrofia ventricular izquierda",
+            "split_after_segments": [
+              16
+            ]
+          },
+          {
+            "raw_unit": "remodelado vascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "disfunción renal",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "accidentes cerebrovascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "infarto agudo de miocardio",
+            "split_after_segments": [
+              21
+            ]
+          }
+        ],
+        "fragmented_unit_count": 9,
+        "medical_unit_boundary_count": 11,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "La hipertensión arterial es una condición",
+            "start_time": 2.58,
+            "end_time": 5.0,
+            "emitted_at": 7.3169999999999975,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 4.737,
+            "latency_ms": 2580.0,
+            "word_count": 6,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:2",
+            "text": "cardiovascular caracterizada por una elevación",
+            "start_time": 2.58,
+            "end_time": 8.34,
+            "emitted_at": 9.671999999999999,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 6.617,
+            "latency_ms": 3055.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:3",
+            "text": "persistente de la presión arterial",
+            "start_time": 2.58,
+            "end_time": 10.94,
+            "emitted_at": 12.195,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 9.472,
+            "latency_ms": 2723.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:4",
+            "text": "systólica y/o",
+            "start_time": 2.58,
+            "end_time": 13.36,
+            "emitted_at": 15.645999999999999,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 11.576,
+            "latency_ms": 4070.0,
+            "word_count": 2,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:5",
+            "text": "diastólica.",
+            "start_time": 2.58,
+            "end_time": 14.98,
+            "emitted_at": 16.465,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 14.155,
+            "latency_ms": 2310.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:6",
+            "text": "Suficio patología involucra mecanismos complejos,",
+            "start_time": 2.58,
+            "end_time": 18.16,
+            "emitted_at": 19.72500000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 15.845,
+            "latency_ms": 3880.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:7",
+            "text": "incluyendo la activación del sistema",
+            "start_time": 2.58,
+            "end_time": 20.36,
+            "emitted_at": 21.574,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 19.125,
+            "latency_ms": 2449.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:8",
+            "text": "herenina angiotensina al",
+            "start_time": 2.58,
+            "end_time": 23.1,
+            "emitted_at": 25.475000000000005,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 21.474,
+            "latency_ms": 4001.0,
+            "word_count": 3,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:9",
+            "text": "dosterona.",
+            "start_time": 2.58,
+            "end_time": 24.74,
+            "emitted_at": 26.474000000000007,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 24.006,
+            "latency_ms": 2468.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:10",
+            "text": "El aumento de la resistencia vascular",
+            "start_time": 2.58,
+            "end_time": 26.86,
+            "emitted_at": 28.145000000000003,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 25.874,
+            "latency_ms": 2271.0,
+            "word_count": 6,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:11",
+            "text": "periférica y alteraciones en la función",
+            "start_time": 2.58,
+            "end_time": 29.92,
+            "emitted_at": 31.54500000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 27.845,
+            "latency_ms": 3700.0,
+            "word_count": 6,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:12",
+            "text": "endotelial.",
+            "start_time": 2.58,
+            "end_time": 30.32,
+            "emitted_at": 32.714000000000006,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 30.945,
+            "latency_ms": 1769.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:13",
+            "text": "En pacientes y pertencios,",
+            "start_time": 2.58,
+            "end_time": 34.3,
+            "emitted_at": 36.344000000000015,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 34.084,
+            "latency_ms": 2260.0,
+            "word_count": 4,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:14",
+            "text": "la exposición prolongada a niveles",
+            "start_time": 2.58,
+            "end_time": 36.8,
+            "emitted_at": 38.019,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 35.444,
+            "latency_ms": 2575.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:15",
+            "text": "elevados de presión puede producir",
+            "start_time": 2.58,
+            "end_time": 39.62,
+            "emitted_at": 41.57300000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 38.019,
+            "latency_ms": 3554.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:16",
+            "text": "hipertrofia ventricular",
+            "start_time": 2.58,
+            "end_time": 41.51,
+            "emitted_at": 44.97400000000001,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 40.973,
+            "latency_ms": 4001.0,
+            "word_count": 2,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:17",
+            "text": "izquierda,",
+            "start_time": 2.58,
+            "end_time": 43.27,
+            "emitted_at": 47.271000000000015,
+            "reason": "hard_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 43.224,
+            "latency_ms": 4047.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:18",
+            "text": "remodelado vascular,",
+            "start_time": 2.58,
+            "end_time": 46.86,
+            "emitted_at": 49.63300000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 46.271,
+            "latency_ms": 3362.0,
+            "word_count": 2,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:19",
+            "text": "disfunción renal y un incremento significativo del",
+            "start_time": 2.58,
+            "end_time": 47.88,
+            "emitted_at": 51.32300000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 49.033,
+            "latency_ms": 2290.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:20",
+            "text": "riesgo de accidentes cerebrovascular e",
+            "start_time": 2.58,
+            "end_time": 51.19,
+            "emitted_at": 54.18300000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 50.723,
+            "latency_ms": 3460.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:21",
+            "text": "infarto agudo de",
+            "start_time": 2.58,
+            "end_time": 52.82,
+            "emitted_at": 57.65100000000002,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 53.583,
+            "latency_ms": 4068.0,
+            "word_count": 3,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:22",
+            "text": "miocardio.",
+            "start_time": 2.58,
+            "end_time": 53.16,
+            "emitted_at": 58.3,
+            "reason": "session_end",
+            "boundary_kind": "session_end",
+            "first_seen_at": 55.123,
+            "latency_ms": 3177.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      },
+      "C": {
+        "config": {
+          "stabilization_seconds": 0.8,
+          "silence_seconds": 1.0,
+          "minimum_words": 7,
+          "target_words": 13,
+          "max_words": 21,
+          "safe_cut_lookback_words": 8,
+          "soft_max_age_seconds": 2.5,
+          "hard_max_age_seconds": 4.5,
+          "tick_seconds": 0.1
+        },
+        "ready_count": 17,
+        "words": {
+          "min": 1,
+          "median": 5,
+          "mean": 4.764705882352941,
+          "p95": 7,
+          "max": 7
+        },
+        "latency_ms": {
+          "min": 2510.0,
+          "median": 3900.0,
+          "mean": 3732.1176470588234,
+          "p95": 4560.0,
+          "max": 4560.0
+        },
+        "latency_without_session_end_ms": {
+          "min": 2510.0,
+          "median": 3970.0,
+          "mean": 3766.8125,
+          "p95": 4560.0,
+          "max": 4560.0
+        },
+        "flush_reasons": {
+          "soft_max_age": 8,
+          "hard_max_age": 5,
+          "punctuation": 3,
+          "session_end": 1
+        },
+        "boundary_kinds": {
+          "whitespace": 9,
+          "strong_punctuation": 3,
+          "comma": 4,
+          "session_end": 1
+        },
+        "hard_age_percent": 29.41176470588235,
+        "forced_whitespace_cut_count": 9,
+        "integrity": {
+          "ordered_word_equality": true,
+          "source_words": 81,
+          "emitted_words": 81,
+          "missing_words": {},
+          "excess_words": {},
+          "unique_ids": true,
+          "pending_at_end": ""
+        },
+        "late_revision_count": 0,
+        "late_revisions": [],
+        "medical_units": [
+          {
+            "raw_unit": "condición cardiovascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "elevación persistente",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "presión arterial systólica y/o diastólica",
+            "split_after_segments": [
+              3
+            ]
+          },
+          {
+            "raw_unit": "sistema herenina angiotensina al dosterona",
+            "split_after_segments": [
+              6
+            ]
+          },
+          {
+            "raw_unit": "resistencia vascular periférica",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "función endotelial",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "niveles elevados de presión",
+            "split_after_segments": [
+              11
+            ]
+          },
+          {
+            "raw_unit": "hipertrofia ventricular izquierda",
+            "split_after_segments": [
+              12
+            ]
+          },
+          {
+            "raw_unit": "remodelado vascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "disfunción renal",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "accidentes cerebrovascular",
+            "split_after_segments": []
+          },
+          {
+            "raw_unit": "infarto agudo de miocardio",
+            "split_after_segments": [
+              16
+            ]
+          }
+        ],
+        "fragmented_unit_count": 5,
+        "medical_unit_boundary_count": 5,
+        "segments": [
+          {
+            "id": "benchmark:1",
+            "text": "La hipertensión arterial es una condición cardiovascular",
+            "start_time": 2.58,
+            "end_time": 7.3,
+            "emitted_at": 8.488,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 4.737,
+            "latency_ms": 3751.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:2",
+            "text": "caracterizada por una elevación persistente de la",
+            "start_time": 2.58,
+            "end_time": 9.9,
+            "emitted_at": 11.366999999999999,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 8.488,
+            "latency_ms": 2879.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:3",
+            "text": "presión arterial systólica y/o",
+            "start_time": 2.58,
+            "end_time": 13.22,
+            "emitted_at": 15.075999999999999,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 10.546,
+            "latency_ms": 4530.0,
+            "word_count": 4,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:4",
+            "text": "diastólica.",
+            "start_time": 2.58,
+            "end_time": 14.98,
+            "emitted_at": 16.665000000000003,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 14.155,
+            "latency_ms": 2510.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:5",
+            "text": "Suficio patología involucra mecanismos complejos,",
+            "start_time": 2.58,
+            "end_time": 18.76,
+            "emitted_at": 19.985000000000003,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 15.845,
+            "latency_ms": 4140.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:6",
+            "text": "incluyendo la activación del sistema herenina",
+            "start_time": 2.58,
+            "end_time": 21.48,
+            "emitted_at": 23.685000000000013,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 19.125,
+            "latency_ms": 4560.0,
+            "word_count": 6,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:7",
+            "text": "angiotensina al dosterona.",
+            "start_time": 2.58,
+            "end_time": 25.38,
+            "emitted_at": 26.734,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 22.175,
+            "latency_ms": 4559.0,
+            "word_count": 3,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:8",
+            "text": "El aumento de la resistencia vascular periférica",
+            "start_time": 2.58,
+            "end_time": 27.86,
+            "emitted_at": 29.014,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 25.874,
+            "latency_ms": 3140.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:9",
+            "text": "y alteraciones en la función endotelial.",
+            "start_time": 2.58,
+            "end_time": 30.32,
+            "emitted_at": 32.91400000000001,
+            "reason": "punctuation",
+            "boundary_kind": "strong_punctuation",
+            "first_seen_at": 29.014,
+            "latency_ms": 3900.0,
+            "word_count": 6,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:10",
+            "text": "En pacientes y pertencios,",
+            "start_time": 2.58,
+            "end_time": 34.78,
+            "emitted_at": 36.614,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 34.084,
+            "latency_ms": 2530.0,
+            "word_count": 4,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:11",
+            "text": "la exposición prolongada a niveles elevados de",
+            "start_time": 2.58,
+            "end_time": 37.37,
+            "emitted_at": 39.484,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 35.444,
+            "latency_ms": 4040.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:12",
+            "text": "presión puede producir hipertrofia ventricular",
+            "start_time": 2.58,
+            "end_time": 40.95,
+            "emitted_at": 43.824000000000005,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 39.284,
+            "latency_ms": 4540.0,
+            "word_count": 5,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:13",
+            "text": "izquierda,",
+            "start_time": 2.58,
+            "end_time": 43.27,
+            "emitted_at": 47.77100000000002,
+            "reason": "hard_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 43.224,
+            "latency_ms": 4547.0,
+            "word_count": 1,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:14",
+            "text": "remodelado vascular,",
+            "start_time": 2.58,
+            "end_time": 46.86,
+            "emitted_at": 49.83300000000001,
+            "reason": "soft_max_age",
+            "boundary_kind": "comma",
+            "first_seen_at": 46.271,
+            "latency_ms": 3562.0,
+            "word_count": 2,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:15",
+            "text": "disfunción renal y un incremento significativo del",
+            "start_time": 2.58,
+            "end_time": 48.36,
+            "emitted_at": 51.614000000000004,
+            "reason": "soft_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 49.033,
+            "latency_ms": 2581.0,
+            "word_count": 7,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:16",
+            "text": "riesgo de accidentes cerebrovascular e infarto",
+            "start_time": 2.58,
+            "end_time": 52.38,
+            "emitted_at": 55.223,
+            "reason": "hard_max_age",
+            "boundary_kind": "whitespace",
+            "first_seen_at": 50.723,
+            "latency_ms": 4500.0,
+            "word_count": 6,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          },
+          {
+            "id": "benchmark:17",
+            "text": "agudo de miocardio.",
+            "start_time": 2.58,
+            "end_time": 53.16,
+            "emitted_at": 58.3,
+            "reason": "session_end",
+            "boundary_kind": "session_end",
+            "first_seen_at": 55.123,
+            "latency_ms": 3177.0,
+            "word_count": 3,
+            "revisions_before_ready": 0,
+            "source_ids": [
+              "source-1"
+            ],
+            "timing_precision": "source_line_bounds"
+          }
+        ]
+      }
+    }
+  },
+  "deepl": {
+    "new_requests": 0,
+    "cache_hits": 56,
+    "failures": 0,
+    "text_characters_submitted": 0,
+    "context_segments": 2,
+    "note": "Provider durations are offline requests, not real-time end-to-end latency. Cache includes context."
+  }
+}
