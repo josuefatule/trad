@@ -1,4 +1,4 @@
-# Live Captions local — M6: Operator Console v1
+# Live Captions local — M7: Reliability & Recovery
 
 Operador propio y proxy FastAPI para WhisperLiveKit 0.2.26 instalado en `.venv`.
 Captura PCM desde el micrófono, muestra parcial/confirmado y registra el protocolo.
@@ -15,7 +15,7 @@ el operador nunca presenta el español como si fuera inglés.
 
 M5 comparte esa misma traducción con un overlay transparente en
 **http://localhost:8010/overlay**. No abre otro micrófono, conexión WLK ni llamada
-DeepL. El operador sigue siendo la única fuente de audio y control.
+DeepL. La ventana CAPTURE del operador sigue siendo la única fuente de audio.
 Preview local sin voz ni API: **http://localhost:8010/overlay/preview** → Play demo.
 Configuración y pasos completos: [OBS_OVERLAY.md](OBS_OVERLAY.md).
 
@@ -27,6 +27,14 @@ identificar OBS frente a una pestaña: muestra **Overlay clients: N**.
 Operación, protocolo, seguridad y capturas: [OPERATOR_CONSOLE.md](OPERATOR_CONSOLE.md).
 Después de actualizar, reiniciar FastAPI con el micrófono detenido y recargar
 Operator/Browser Source para cargar Operator v1 y overlay v3. No se cambió A de M5.2.
+
+M7 añade captura en una ventana independiente, recuperación de autorización al
+recargar la consola, recuperación administrativa local, health de flujo real,
+reintentos acotados, circuito DeepL auth/cuota, STOP completo/incompleto y límites
+auditables de recursos. **Permitir popups y mantener CAPTURE abierta durante LIVE.**
+No reinicia WLK automáticamente ni simula continuidad de audio después de perderlo.
+Guía: [RELIABILITY_RUNBOOK.md](RELIABILITY_RUNBOOK.md). Evidencia y matriz de fallos:
+[M7_REPORT.md](M7_REPORT.md). No se cambian A, glosarios, normalización ni modelo ASR.
 
 M5.1 usa persistent_rolling: hasta tres líneas según la altura disponible, reflow continuo y
 actualización inmediata. Las pausas no borran texto; STOP limpia tras 8 s. El modo
@@ -66,7 +74,8 @@ si el proceso correspondiente sigue abierto antes de iniciar otro.
    permiso de micrófono para localhost.
 3. Seleccionar explícitamente la entrada cuyo nombre corresponda al **Blue Yeti**;
    el nombre exacto depende de Windows. No dejar Predeterminado si hay varios.
-4. Pulsar **START**. Debe aparecer `Connected` y el nombre del dispositivo con
+4. Pulsar **START** y mantener abierta la nueva ventana CAPTURE (permitir popups).
+   Debe aparecer `Connected` y el nombre del dispositivo con
    su frecuencia de captura y el destino `PCM s16le mono 16000 Hz`.
 5. Decir: «La hipertensión arterial es un factor de riesgo cardiovascular».
    Hacer una pausa y decir: «El paciente necesita seguimiento y control de la presión».
@@ -315,10 +324,10 @@ Con el glosario de Milestone 3.1, el perfil de 1.600 evaluaciones dio mediana
   con la dependencia existente, por lo que no se cambió el entorno.
 - El modo full crece con la duración; no activar recorte de historial en WLK.
 - Se conserva el remuestreo por bloques del frontend instalado, con su redondeo.
-- Al perder una conexión hay que iniciar una sesión nueva; no hay recuperación
-  de texto persistente. No existe vista pasiva de otra sesión.
-- Antes de otro milestone, validar M6 con el Yeti y CLEAR en OBS, probar una sesión
-  larga y revisar cualquier sugerencia falsa. La traducción DeepL existente se conserva.
+- Al perder WLK/captura durante LIVE hay que iniciar una sesión nueva. La consola
+  sí puede recargarse mientras CAPTURE continúa y recuperar su historial acotado.
+- M6 fue validado por el usuario con Yeti/DeepL/CLEAR/OBS. Validar ahora M7 con
+  hardware real siguiendo el runbook; la hora simulada no sustituye ese ensayo.
 
 Git ya estaba inicializado y `.venv/` está explícitamente ignorado. Se utiliza
 la identidad ya configurada en Git, sin modificarla.

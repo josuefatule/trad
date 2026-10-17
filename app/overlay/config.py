@@ -27,6 +27,9 @@ class CaptionConfig:
     reading_wps: float = 3.
     visual_queue_max: int = 64
     max_backlog_ms: int = 20000
+    reconnect_attempts: int = 8
+    reconnect_base_ms: int = 500
+    reconnect_max_ms: int = 10000
 
     def __post_init__(self):
         limits = {"max_lines": (1, 3), "stop_clear_ms": (0, 120000), "font_size": (16, 96),
@@ -38,7 +41,8 @@ class CaptionConfig:
                   "region_x": (0, 7680), "region_y": (0, 4320),
                   "region_width": (80, 7680), "region_height": (40, 4320),
                   "padding_x": (8, 200), "padding_y": (8, 200),
-                  "line_height": (1.1, 1.6)}
+                  "line_height": (1.1, 1.6), "reconnect_attempts": (1,20),
+                  "reconnect_base_ms": (100,5000), "reconnect_max_ms": (500,30000)}
         for name, (low, high) in limits.items():
             value = getattr(self, name)
             if not math.isfinite(value) or not low <= value <= high:
@@ -49,6 +53,7 @@ class CaptionConfig:
             raise ValueError("Invalid caption mode")
         if self.min_display_ms > self.max_display_ms:
             raise ValueError("Caption minimum display time exceeds maximum")
+        if self.reconnect_base_ms>self.reconnect_max_ms:raise ValueError("Invalid reconnect interval")
         if (self.region_x + self.region_width > self.canvas_width or
                 self.region_y + self.region_height > self.canvas_height):
             raise ValueError("Caption region exceeds canvas")

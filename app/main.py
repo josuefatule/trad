@@ -3,6 +3,10 @@ import asyncio
 import math
 import time
 import os
+import secrets
+import json
+import subprocess
+import getpass
 from contextlib import asynccontextmanager
 from dataclasses import asdict, dataclass, field
 from logging.handlers import RotatingFileHandler
@@ -25,6 +29,7 @@ from app.overlay.config import CaptionConfig
 from app.overlay.hub import CaptionHub
 from app.operator_control import OperatorAuthority, OperatorBrowser, OperatorConfig, local_request, operational_error
 from app.translation.engine import provider_from_config
+from app.reliability import OperationalRun, ReliabilityConfig, SafeLogFilter, incident
 
 ROOT = Path(__file__).resolve().parent
 
@@ -42,11 +47,31 @@ class Settings:
     translation: TranslationConfig = field(default_factory=TranslationConfig.from_env)
     captions: CaptionConfig = field(default_factory=CaptionConfig.from_env)
     operator: OperatorConfig = field(default_factory=OperatorConfig.from_env)
+    reliability: ReliabilityConfig = field(default_factory=ReliabilityConfig.from_env)
+
+    def __post_init__(self):
+        if not math.isfinite(self.connect_timeout) or not 0<self.connect_timeout<=60:
+            raise ValueError("CAPTIONS_CONNECT_TIMEOUT must be within (0,60]")
+        if not math.isfinite(self.stop_timeout) or not 0<self.stop_timeout<=300:
+            raise ValueError("CAPTIONS_STOP_TIMEOUT must be within (0,300]")
 
 
 def create_app(settings=None):
     settings = settings or Settings()
     logger = logging.getLogger("captions")
+    authority = OperatorAuthority()
+    run = OperationalRun(settings.reliability)
+    admin_code = secrets.token_urlsafe(32)
+    admin_path = ROOT.parent / ".runtime" / f"operator-{os.getpid()}.json"
+
+    def save_admin_code():
+        admin_path.parent.mkdir(parents=True,exist_ok=True)
+        admin_path.write_text(json.dumps({"code":admin_code}),encoding="utf-8")
+        admin_path.chmod(0o600)
+        if os.name=="nt":
+            account=os.environ.get("USERDOMAIN","")+"\\"+getpass.getuser()
+            result=subprocess.run(["icacls",str(admin_path),"/inheritance:r","/grant:r",account+":(F)","*S-1-5-18:(F)"],capture_output=True)
+            if result.returncode:raise RuntimeError("Cannot restrict local administrative recovery file ACL")
 
     @asynccontextmanager
     async def lifespan(app):
@@ -59,7 +84,10 @@ def create_app(settings=None):
         logger.propagate = False
         for handler in handlers:
             handler.setFormatter(formatter)
+            handler.addFilter(SafeLogFilter(lambda:(settings.translation.deepl_auth_key,admin_code,
+                *authority.tokens,*authority.resume_secrets.values()),allow_text=settings.log_raw))
             logger.addHandler(handler)
+        save_admin_code()
         raw = logging.getLogger("captions.raw")
         raw.propagate = False
         raw_handler = None
@@ -67,6 +95,8 @@ def create_app(settings=None):
             raw_handler = RotatingFileHandler(folder / "wlk-raw.log", maxBytes=10_000_000,
                                               backupCount=3, encoding="utf-8")
             raw_handler.setFormatter(formatter)
+            raw_handler.addFilter(SafeLogFilter(lambda:(settings.translation.deepl_auth_key,admin_code,
+                *authority.tokens,*authority.resume_secrets.values()),allow_text=True))
             raw.addHandler(raw_handler)
         yield
         for handler in handlers:
@@ -75,11 +105,14 @@ def create_app(settings=None):
         if raw_handler:
             raw.removeHandler(raw_handler)
             raw_handler.close()
+        if admin_path.exists() and json.loads(admin_path.read_text(encoding="utf-8")).get("code")==admin_code:
+            admin_path.unlink()
 
     app = FastAPI(lifespan=lifespan)
     hub = CaptionHub(settings.captions)
     app.state.caption_hub = hub
-    authority = OperatorAuthority()
+    app.state.operational_run=run
+    app.state.operator_authority=authority
     app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
 
     @app.get("/health")
@@ -95,6 +128,10 @@ def create_app(settings=None):
     async def operator():
         return FileResponse(ROOT / "templates" / "operator.html")
 
+    @app.get("/capture")
+    async def capture():
+        return FileResponse(ROOT / "templates" / "operator.html")
+
     @app.get("/api/operator/bootstrap")
     async def operator_bootstrap(request: Request):
         if not local_request(request):
@@ -103,22 +140,80 @@ def create_app(settings=None):
             token = authority.issue()
         except ValueError:
             raise HTTPException(429, "Too many operator tabs")
-        return JSONResponse({"protocol_version": 1, "capabilities": {"operator_console": 1, "captions_clear": 1},
-                             "control_token": token, "diagnostics_config": asdict(settings.operator)},
+        return JSONResponse({"protocol_version": 1, "capabilities": {"operator_console": 1, "captions_clear": 1,"operator_recovery":1},
+                             "control_token": token,"resume_secret":authority.resume_secrets[token],
+                             "server_pid":os.getpid(), "diagnostics_config": asdict(settings.operator)},
                             headers={"Cache-Control": "no-store"})
+
+    @app.post("/api/operator/resume")
+    async def operator_resume(request: Request):
+        if not local_request(request,require_origin=True):raise HTTPException(403,"Local origin required")
+        data=await request.json()
+        try:token=authority.resume(request.headers.get("x-operator-token"),data.get("resume_secret"))
+        except (ValueError,AttributeError):raise HTTPException(403,"Recovery authorization rejected")
+        return JSONResponse({"protocol_version":1,"capabilities":{"operator_console":1,"captions_clear":1,"operator_recovery":1},
+            "control_token":token,"resume_secret":authority.resume_secrets[token],"server_pid":os.getpid(),
+            "diagnostics_config":asdict(settings.operator)},headers={"Cache-Control":"no-store"})
+
+    @app.post("/api/operator/recover")
+    async def operator_recover(request: Request):
+        nonlocal admin_code
+        token=request.headers.get("x-operator-token")
+        if not local_request(request,require_origin=True) or not authority.valid(token):raise HTTPException(403,"Local authorization required")
+        data=await request.json()
+        if not authority.valid(token):raise HTTPException(403,"Authorization expired")
+        if (not isinstance(data,dict) or not secrets.compare_digest(str(data.get("admin_code","")).encode(),admin_code.encode())):
+            raise HTTPException(403,"Administrative authorization rejected")
+        now=time.monotonic()
+        if data.get("session_id")!=hub.session_id or (authority.owner_seen is not None and now-authority.owner_seen<=settings.reliability.owner_timeout_seconds):
+            raise HTTPException(409,"Owner is still available or session changed")
+        previous=authority.owner
+        if previous:authority.tokens.pop(previous,None);authority.resume_secrets.pop(previous,None)
+        authority.owner=token;authority.owner_seen=now;authority.recoveries+=1
+        admin_code=secrets.token_urlsafe(32);save_admin_code()
+        incident("operator","administrative_recovery",hub.session_id,outcome="success")
+        return {"protocol_version":1,"recovered":True,"session_id":hub.session_id}
+
+    @app.post("/api/operator/stop")
+    async def operator_stop(request: Request):
+        token=request.headers.get("x-operator-token")
+        if not local_request(request,require_origin=True) or not authority.valid(token) or authority.owner!=token:
+            raise HTTPException(403,"Current session owner required")
+        data=await request.json()
+        if not authority.valid(token) or authority.owner!=token or data.get("session_id")!=hub.session_id:
+            raise HTTPException(409,"Session changed")
+        if hub.state not in {"connecting","live","draining"}:return {"protocol_version":1,"requested":False}
+        requested=await run.request_stop()
+        return {"protocol_version":1,"requested":requested}
+
+    @app.post("/api/operator/translator-reset")
+    async def translator_reset(request: Request):
+        token=request.headers.get("x-operator-token")
+        if not local_request(request,require_origin=True) or not authority.valid(token) or authority.owner!=token:
+            raise HTTPException(403,"Current session owner required")
+        data=await request.json()
+        if not authority.valid(token) or authority.owner!=token or not isinstance(data,dict) or data.get("session_id")!=hub.session_id:
+            raise HTTPException(409,"Session changed")
+        rearmed=bool(run.translator and run.translator.rearm())
+        return {"protocol_version":1,"rearmed":rearmed}
 
     @app.get("/api/operator/status")
     async def operator_status(request: Request):
         token = request.headers.get("x-operator-token")
         if not local_request(request) or not authority.valid(token):
             raise HTTPException(403, "Local operator authorization required")
+        if authority.owner==token and request.headers.get("x-operator-role")!="capture":authority.owner_seen=time.monotonic()
         _, configured = provider_from_config(settings.translation)
         translator = (hub.translation_status_getter()["status"] if hub.translation_status_getter
                       else configured.to_dict())
-        return {"protocol_version": 1, **hub.diagnostics(), "caption_config": settings.captions.to_dict(),
+        try:cursor=max(0,int(request.query_params.get("after_event","0")))
+        except ValueError:raise HTTPException(400,"Invalid history cursor")
+        return JSONResponse({"protocol_version": 1, **hub.diagnostics(), "caption_config": settings.captions.to_dict(),
+                "reliability":run.health(hub,None if authority.owner_seen is None else time.monotonic()-authority.owner_seen),
+                "operator_history":run.journal_snapshot(cursor),
                 "translator": translator, "translator_verified": hub.last_success_sequence > 0,
                 "owns_session": authority.owner == token,
-                "can_start": hub.state not in {"connecting", "live", "draining"}}
+                "can_start": hub.state not in {"connecting", "live", "draining"}},headers={"Cache-Control":"no-store"})
 
     @app.post("/api/operator/clear")
     async def clear_captions(request: Request):
@@ -166,6 +261,8 @@ def create_app(settings=None):
         await browser.accept()
         try:
             subscriber = hub.subscribe()
+            run.counters["overlay_connections"]+=1
+            incident("overlay","connected",hub.session_id,observer_id=subscriber.observer_id)
         except ValueError:
             await browser.close(code=1013)
             return
@@ -187,6 +284,15 @@ def create_app(settings=None):
                 received_mono = time.monotonic() * 1000
                 if not isinstance(data, dict):
                     continue
+                if (data.get("type")=="connection_health" and not subscriber.transport
+                        and data.get("session_id")==hub.session_id
+                        and type(data.get("attempts")) is int and 0<=data["attempts"]<=20
+                        and type(data.get("downtime_ms")) in (int,float)
+                        and math.isfinite(data["downtime_ms"]) and 0<=data["downtime_ms"]<=86400000):
+                    subscriber.transport={"client_reconnect_attempts":data["attempts"],"client_downtime_ms":data["downtime_ms"],"received_mono_ms":received_mono}
+                    run.counters["overlay_client_reconnect_attempts"]+=data["attempts"]
+                    incident("overlay","client_recovery_report",hub.session_id,observer_id=subscriber.observer_id,
+                             attempts=data["attempts"],client_downtime_ms=data["downtime_ms"])
                 if (data.get("type") == "clock_probe"
                         and type(data.get("client_sent_ms")) in (int, float)
                         and math.isfinite(data["client_sent_ms"])
@@ -212,6 +318,8 @@ def create_app(settings=None):
                 logger.warning("session=%s overlay_send_failed", hub.session_id)
         finally:
             hub.unsubscribe(subscriber)
+            run.counters["overlay_disconnections"]+=1
+            incident("overlay","disconnected",hub.session_id,observer_id=subscriber.observer_id)
             for task in tasks:
                 task.cancel()
             await asyncio.gather(*tasks, return_exceptions=True)
@@ -235,14 +343,22 @@ def create_app(settings=None):
             hub.begin(session_id)
             owns_session = True
             authority.owner = token
-            await relay(OperatorBrowser(browser, session_id), settings, session_id, caption_hub=hub)
+            authority.owner_seen=time.monotonic()
+            run.reset(session_id);run.outcome="in_progress";run.transition("RECOVERING","connecting_wlk")
+            run.owner_age_getter=lambda:None if authority.owner_seen is None else time.monotonic()-authority.owner_seen
+            adapter=OperatorBrowser(browser, session_id,run)
+            run.capture_sender=adapter.send_json
+            await relay(adapter, settings, session_id, caption_hub=hub)
         except WebSocketDisconnect:
-            if owns_session:
+            if owns_session and run.session_id==session_id:
                 hub.set_state(session_id, "disconnected")
+                run.fail("capture_disconnected")
             logger.info("session=%s browser disconnected", session_id)
         except Exception as exc:
-            if owns_session:
+            if owns_session and run.session_id==session_id:
                 hub.set_state(session_id, "error")
+                run.fail("stop_timeout" if isinstance(exc,TimeoutError) else "resource_budget_exhausted"
+                         if isinstance(exc,RuntimeError) and "budget" in str(exc).lower() else "session_transport_error")
             logger.exception("session=%s error", session_id)
             try:
                 code, message = operational_error(exc)
@@ -258,6 +374,7 @@ def create_app(settings=None):
             except (RuntimeError, WebSocketDisconnect):
                 pass
             logger.info("session=%s session closed", session_id)
+            if owns_session and run.session_id==session_id:run.capture_sender=None
 
     return app
 

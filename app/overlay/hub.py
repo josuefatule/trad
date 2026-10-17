@@ -18,6 +18,7 @@ class Subscriber:
     closed: asyncio.Event = field(default_factory=asyncio.Event)
     observer_id: int = 0
     diagnostics: dict = field(default_factory=dict)
+    transport: dict = field(default_factory=dict)
 
 
 class CaptionHub:
@@ -265,7 +266,7 @@ class CaptionHub:
                 "translation_queue_max": self.translation_queue_max,
                 "backend_samples": list(self.latency_samples),
                 "observer_samples": list(self.client_samples),
-                "observers": [{"observer_id": sub.observer_id, **sub.diagnostics}
+                "observers": [{"observer_id": sub.observer_id, "transport":sub.transport, **sub.diagnostics}
                               for sub in self.subscribers]}
 
     def report_display_drop(self, session_id, reason, count, sequence=None):

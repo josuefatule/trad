@@ -3,6 +3,57 @@ const $ = (id) => document.getElementById(id);
 const ui = new OperatorConsole.ConsoleView($);
 globalThis.OperatorUI = ui;
 let active = null;
+let captureWindow=null,monitor=null;
+const historyPanels=["partial","confirmed","segments","pending","ready","normalized","normalized-segments","english","english-segments","corrections"];
+function newHistory(sessionId=null) {
+  return {readyIds:new Set(),normalizedSegments:[],translatedSegments:[],translationResults:new Map(),nextTranslationSequence:1,sessionId,truncated:0};
+}
+function boundHistory(s) {
+  const limit=ui.snapshot?.operator_history?.ui_history_segments || 500;
+  let removed=0;
+  for(const parts of [s.normalizedSegments,s.translatedSegments])if(parts && parts.length>limit){s.truncated=(s.truncated || 0)+parts.length-limit;parts.splice(0,parts.length-limit);}
+  for(const parts of [s.normalizedSegments,s.translatedSegments])if(parts){
+    let characters=parts.reduce((sum,text)=>sum+text.length,0);
+    while(parts.length>1 && characters>60000){const first=parts.shift();characters-=first.length;removed+=first.length;s.truncated=(s.truncated || 0)+1;}
+    if(parts.length===1 && characters>60000){removed+=characters-60000;parts[0]=parts[0].slice(-60000);}
+  }
+  if(s.normalizedSegments)flow("normalized",compactNormalizedText(s.normalizedSegments));
+  if(s.translatedSegments)flow("english",compactNormalizedText(s.translatedSegments));
+  while(s.readyIds?.size>limit)s.readyIds.delete(s.readyIds.values().next().value);
+  for(const id of ["ready","normalized-segments","english-segments","corrections","confirmed","segments","partial"]){
+    const element=$(id);if(element.textContent.length>60000){removed+=element.textContent.length-60000;element.textContent=element.textContent.slice(-60000);}
+  }
+  s.truncatedCharacters=(s.truncatedCharacters || 0)+removed;
+  if(s.truncated || s.truncatedCharacters)$("control-notice").textContent=`Historial visual limitado: ${s.truncated || 0} entradas y ${s.truncatedCharacters || 0} caracteres retirados; no afecta captions ni pipeline.`;
+}
+ui.consumeHistory=data=>{
+  const history=data.operator_history;if(!history)return;
+  const resync=monitor?.sessionId!==data.session_id || history.history_gap;
+  if(resync){
+    monitor=newHistory(data.session_id);monitor.nextTranslationSequence=history.first_translation_sequence;
+    for(const id of historyPanels)$(id).textContent="";
+    ui.historyCursor=0;
+  }
+  if(!monitor)monitor=newHistory(data.session_id);
+  monitor.translationStatus=history.config?.translation_status;
+  for(const entry of history.events || [])if(entry.journal_id>ui.historyCursor){
+    const message=entry.message;
+    if(message.type==="segmentation")renderSegmentation(monitor,message.segmentation,message.normalization);
+    if(message.type==="translation"){
+      if(resync && message.translation.sequence>monitor.nextTranslationSequence){
+        debug(`recovery history gap before sequence ${message.translation.sequence}`);
+        monitor.nextTranslationSequence=message.translation.sequence;
+      }
+      renderTranslation(monitor,message);
+    }
+    ui.historyCursor=entry.journal_id;
+  }
+  ui.historyCursor=history.cursor;
+  if(history.transcript){$("partial").textContent=history.transcript.partial_text;flow("confirmed",history.transcript.confirmed_text);}
+  $("pending").textContent=history.pending_segment || "";
+  boundHistory(monitor);
+  if(history.truncated_events)$("control-notice").textContent=`Historial de recuperación: ${history.truncated_events} eventos antiguos retirados por límite de memoria.`;
+};
 function flow(id, text) {
   const element=$(id), following=element.scrollHeight===undefined || element.scrollHeight-element.clientHeight-element.scrollTop<40;
   element.textContent=text;
@@ -33,6 +84,7 @@ function renderSegmentation(s, result, normalization) {
   for (const event of result.events || []) {
     if (event.type === "late_revision_detected") debug(`late_revision_detected ${JSON.stringify(event)}`);
   }
+  boundHistory(s);
 }
 function compactNormalizedText(parts) {
   let compact = "";
@@ -89,6 +141,7 @@ function renderTranslation(s, data) {
       ready.error ? `error: ${OperatorConsole.userError(ready.error)}` : "",
     ].filter(Boolean).join("\n");
   }
+  boundHistory(s);
 }
 function debug(message) {
   $("debug").textContent = `${new Date().toISOString()} ${message}\n` +
@@ -179,10 +232,19 @@ async function capture(s) {
 }
 $("refresh").onclick = () => microphones(true).catch(error => ui.error(error));
 $("clear").onclick = () => ui.clear();
+$("recover-owner").onclick=async()=>{const input=$("recovery-code");const code=input.value;input.value="";await ui.command("recover",{admin_code:code});};
+$("rearm-translator").onclick=()=>ui.command("translator-reset");
 $("start").onclick = async () => {
   if(active || !await ui.ready || $("start").disabled)return;
-  const s = {readyIds: new Set(), normalizedSegments: [], translatedSegments: [],
-    translationResults: new Map(), nextTranslationSequence: 1, sessionId: null};
+  if(ui.recovery && !ui.captureMode){
+    if(captureWindow && !captureWindow.closed){$("error").textContent="Cierra la ventana de captura anterior antes de iniciar otra sesión.";return;}
+    captureWindow=window.open("/capture","_blank","popup,width=620,height=420");
+    if(!captureWindow){$("error").textContent="Permite ventanas emergentes para abrir CAPTURE. El audio necesita una ventana que permanezca abierta.";return;}
+    ui.localActive=true;ui.phaseTo("STARTING");
+    $("control-notice").textContent="Mantén CAPTURE abierta. Puedes recargar esta consola sin cortar audio.";
+    return;
+  }
+  const s = newHistory();
   active = s;
   controls(true);
   ui.phaseTo("STARTING");ui.startedAt=Date.now();
@@ -195,12 +257,14 @@ $("start").onclick = async () => {
   try {
     // Create/resume in the click gesture, before waiting for WLK.
     s.context = new AudioContext();
-    await s.context.resume();
     const deviceId = $("microphone").value;
     s.stream = await navigator.mediaDevices.getUserMedia({audio: deviceId ? {deviceId: {exact: deviceId}} : true});
+    // A same-origin capture popup receives START via postMessage. Obtain its
+    // capture stream before resume so Chromium's WebAudio policy permits it.
+    await s.context.resume();
     s.stream.getAudioTracks()[0].onended = () => { if (active === s && !s.stopping) fail(s, new Error("Micrófono desconectado")); };
     const socket = s.socket = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws/session`, ["operator.v1",ui.token]);
-    s.timer = setTimeout(() => fail(s, new Error("Timeout al conectar con WLK")), 30000);
+    s.timer = setTimeout(() => fail(s, new Error("Timeout al conectar con WLK")), 120000);
     socket.onmessage = async event => {
       if (active !== s) return;
       try {
@@ -209,6 +273,7 @@ $("start").onclick = async () => {
         if (data.session_id && !s.sessionId) s.sessionId = data.session_id;
         if(data.session_id && data.session_id!==s.sessionId)return;
         debug(`${data.type} ${data.state || data.payload?.type || data.payload?.status || ""}`);
+        if(data.type==="operator_command" && data.command==="stop"){await $("stop").onclick();return;}
         if (data.type === "config") {
           if(data.capabilities?.operator_console!==1 || data.capabilities?.captions_clear!==1)throw Error("Backend incompatible con M6");
           if (data.capabilities?.terminology_normalizer !== 1) {
@@ -248,6 +313,7 @@ $("start").onclick = async () => {
           ui.phaseTo("STOPPED");
           $("connection").textContent = "Disconnected — sesión finalizada";
           await release(s);
+          if(data.completion==="incomplete")$("error").textContent="STOP incompleto: revisa los diagnósticos de la consola.";
         }
       } catch (error) { await fail(s, error); }
     };
@@ -263,6 +329,7 @@ $("start").onclick = async () => {
   } catch (error) { await fail(s, error); }
 };
 $("stop").onclick = async () => {
+  if(ui.recovery && !ui.captureMode){await ui.command("stop");return;}
   const s = active;
   if (!s || s.stopping) return;
   s.stopping = true;
@@ -279,4 +346,19 @@ window.addEventListener("beforeunload", () => {
   active?.stream?.getTracks().forEach(track => track.stop());
   active?.socket?.close();
 });
+window.addEventListener("message",async event=>{
+  if(event.origin!==location.origin)return;
+  if(!ui.captureMode && event.source===captureWindow && event.data?.type==="capture_ready"){
+    captureWindow.postMessage({type:"capture_start",token:ui.token,deviceId:$("microphone").value},location.origin);
+  }
+  if(ui.captureMode && event.source===window.opener && event.data?.type==="capture_start" && !active){
+    await ui.ready;ui.token=event.data.token;$("microphone").value=event.data.deviceId || "";
+    $("start").disabled=false;await $("start").onclick();
+  }
+});
+if(ui.captureMode){
+  document.body.classList.add("capture-window");
+  $("control-notice").textContent="CAPTURE — no cierres esta ventana durante LIVE. La consola principal puede recargarse.";
+  ui.ready.then(()=>window.opener?.postMessage({type:"capture_ready"},location.origin));
+}
 microphones().catch(error => ui.error(error));

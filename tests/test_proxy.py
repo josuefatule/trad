@@ -210,6 +210,9 @@ class HttpTests(unittest.TestCase):
             with TestClient(create_app(settings)) as client:
                 with client.websocket_connect("/ws/session") as ws:
                     self.assertEqual(ws.receive_json()["state"], "connecting")
+                    for attempt in (1,2):
+                        retry=ws.receive_json()
+                        self.assertEqual((retry["state"],retry["attempt"]),("recovering",attempt))
                     self.assertEqual(ws.receive_json()["type"], "error")
 
     def test_full_mode_is_explicit(self):

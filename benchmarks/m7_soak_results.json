@@ -1,0 +1,108 @@
+{
+  "kind": "virtual-clock simulation; NOT a real conference",
+  "simulated_seconds": 3603.304,
+  "wall_seconds": 436.994,
+  "segment_configuration": {
+    "stabilization_seconds": 0.8,
+    "silence_seconds": 1.0,
+    "minimum_words": 7,
+    "target_words": 13,
+    "max_words": 21,
+    "safe_cut_lookback_words": 8,
+    "soft_max_age_seconds": 3.3,
+    "hard_max_age_seconds": 5.5,
+    "tick_seconds": 0.1
+  },
+  "audio_frames": 36000,
+  "audio_bytes": 115200000,
+  "asr_messages": 901,
+  "source_lines": 300,
+  "ready_segments": 600,
+  "words_expected": 5400,
+  "words_ready": 5400,
+  "word_integrity": true,
+  "flush_reasons": {
+    "punctuation": 600
+  },
+  "provider_calls_simulated": 608,
+  "translation_successes": 591,
+  "translation_failures": 9,
+  "translator": {
+    "status": {
+      "state": "ready",
+      "provider": "simulation-only",
+      "message": ""
+    },
+    "queue_depth": 0,
+    "health": "READY",
+    "last_seen_mono": 3580.3044799381923,
+    "reason": null,
+    "pending_count": 0,
+    "cooldown_remaining_seconds": 0,
+    "metrics": {
+      "queued": 600,
+      "successes": 591,
+      "failures": 9,
+      "retries": 16,
+      "timeouts": 0,
+      "stale_discarded": 0,
+      "max_queue_depth": 2,
+      "permanent_errors": 1,
+      "cancelled": 0,
+      "expired": 0,
+      "possible_duplicate_requests": 16,
+      "delivery_failures": 0
+    }
+  },
+  "stop_outcome": "incomplete",
+  "health_sample_counts": {
+    "READY": 3520,
+    "DEGRADED": 80
+  },
+  "journal_high_water": 512,
+  "journal_bytes_high_water": 599236,
+  "journal_truncated_events": 388,
+  "caption_history_high_water": 128,
+  "subscriber_queue_high_water": 2,
+  "slow_subscriber_evictions": 1,
+  "manager_sources_high_water": 300,
+  "python_traced_final_bytes": 4766774,
+  "python_traced_peak_bytes": 4936364,
+  "allocation_checkpoints": [
+    {
+      "simulated_seconds": 900.818,
+      "python_traced_bytes": 2087723,
+      "peak_bytes": 2118242,
+      "journal_retained": 225,
+      "asr_characters": 9974
+    },
+    {
+      "simulated_seconds": 1801.628,
+      "python_traced_bytes": 3324655,
+      "peak_bytes": 3400637,
+      "journal_retained": 450,
+      "asr_characters": 19949
+    },
+    {
+      "simulated_seconds": 2702.442,
+      "python_traced_bytes": 4074088,
+      "peak_bytes": 4196581,
+      "journal_retained": 512,
+      "asr_characters": 29924
+    },
+    {
+      "simulated_seconds": 3603.304,
+      "python_traced_bytes": 4771424,
+      "peak_bytes": 4936364,
+      "journal_retained": 512,
+      "asr_characters": 39899
+    }
+  ],
+  "tasks_before": 1,
+  "tasks_after": 1,
+  "threads_before": 2,
+  "threads_after": 2,
+  "workers_after_stop": 0,
+  "queue_after_stop": 0,
+  "subscribers_after_stop": 0
+}

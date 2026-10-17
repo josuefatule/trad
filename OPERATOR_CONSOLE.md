@@ -131,7 +131,7 @@ backend no se borran.
 
 `GET /api/operator/bootstrap` emite un nonce aleatorio de 256 bits, no almacenable
 en caché. Solo admite peer loopback y Host local válido; si hay Origin debe coincidir.
-La pestaña lo conserva en memoria, sin localStorage/cookie/URL. El handshake de audio
+M7 conserva token y secreto de resume en sessionStorage, sin localStorage/cookie/URL. El handshake de audio
 usa subprotocolos `operator.v1` y el nonce; el servidor selecciona solo `operator.v1`.
 El token no aparece en URLs/logs de acceso ni en eventos de los overlays.
 
@@ -142,7 +142,7 @@ Browser públicas sin autoridad no pueden mutar sesión/captions. `/ws/overlay`
 continúa aceptando solo la telemetría acotada existente; un supuesto comando CLEAR
 en ese socket se ignora. `GET /api/operator/status` requiere nonce y acceso local.
 Los mensajes de error proyectados a UI se categorizan y sanitizan; el resultado
-original y los logs técnicos no se reescriben.
+original no se reescribe. M7 omite contenido y secretos de los logs por defecto.
 
 Límite: 64 nonces, caducidad 24 h o reinicio del proceso; recargar la consola si
 caducan. No protege frente a un proceso malicioso **local** ni a scripts capaces
@@ -167,7 +167,8 @@ Los tests verifican estados, permisos, START duplicado, STOP/EOF, CLEAR LIVE/sin
 sesión, varios overlays, snapshot/reconexión, watermark, aislamiento de sesiones,
 autorización/origen/remoto, frontend/backend viejos, errores WLK/DeepL, alertas
 sostenidas, datos ausentes, integridad y renderer persistent_rolling conservado.
-**143 tests Python y cinco suites JavaScript PASS**, sin credenciales reales.
+Baseline M6: **143 tests Python y cinco suites JavaScript PASS**, sin credenciales reales.
+Resultados M7 y cobertura adicional en [M7_REPORT.md](M7_REPORT.md).
 
 ```powershell
 $env:TRANSLATION_ENABLED="0"
@@ -177,6 +178,7 @@ node tests/test_operator_partial.cjs
 node tests/test_overlay_renderer.cjs
 node tests/test_persistent_captions.cjs
 node tests/test_overlay_geometry.cjs
+node tests/test_reliability.cjs
 ```
 
 En OBS real: recargar caché, abrir Operator actualizado, START y hablar. Comprobar
@@ -186,12 +188,37 @@ Cerrar/reabrir una fuente inmediatamente después de CLEAR no debe recuperar tex
 anterior. STOP debe preservar el flush final. Esta aceptación con voz queda al
 operador; las capturas son QA del layout, no prueba de salida física de OBS.
 
-## Límites para M7
+## M7: operación recuperable
 
-Sin recuperación automática de audio, transferencia de propietario entre pestañas,
-supervisión/reinicio de servicios, persistencia tras reinicio ni health-check de
-autenticación DeepL previo a una traducción. Se conserva únicamente la reconexión
-del overlay ya existente. El historial completo de ASR y la UI crecen con la sesión.
-Las estadísticas no validan calidad médica; M5.2 mantiene sus límites.
-Los estilos y 2/3 líneas se ajustan mediante la URL/config validada existente; no
-hay editor global en vivo ni cambio de composición PowerPoint. M7 no implementado.
+START abre CAPTURE en una ventana dedicada (permitir popups). Mantenerla abierta
+durante LIVE: es la propietaria del micrófono, no la consola. El permiso de audio
+sigue siendo el del navegador para este origen. STOP en consola conserva la barrera
+EOF de esa captura. Tras STOP se puede cerrar CAPTURE. No cerrar todo el navegador
+ni la ventana de captura mientras se está hablando.
+
+Recargar la consola rota automáticamente su autorización a partir del par guardado
+en sessionStorage y reconstruye ASR/NORMALIZED/ENGLISH desde un journal acotado.
+No abre un segundo WLK ni repite DeepL. Solo una autorización posee controles. Si
+se pierde el par, abrir otra consola requiere recuperación administrativa local:
+Diagnostics → Reliability / recovery, código de `.runtime/operator-<PID>.json` y
+propietario sin heartbeat durante 15 s. Esa operación revoca el token anterior.
+
+Las alertas operativas muestran falta de frames, señal sin mensajes WLK, traductor
+degradado, propietario ausente, overlay sin suscriptores y STOP incompleto. Debajo,
+JSON técnico con edades/última actividad, causas, pendientes y métricas. No hay
+ping facturable de DeepL: Configured no prueba conectividad; un resultado sí.
+Los errores auth/cuota bloquean llamadas innecesarias. REARM TRANSLATOR habilita
+solo entradas futuras después de corregir la causa; nunca reenvía fallos anteriores.
+
+La vista conserva hasta 500 segmentos y 60000 caracteres por flujo; paneles de
+auditoría y ASR, 60000 caracteres. Journal de recuperación, 512 eventos y 2 MB
+serializados. Los recortes están contados y
+visibles; son límites del monitor y no modifican captions o segmentos publicados.
+El pipeline tiene un presupuesto de duración/historial con STOP preventivo, sin
+alterar configuración A. Las estadísticas no validan calidad médica.
+
+Pérdida de WLK durante LIVE o de CAPTURE: final INCOMPLETO y nuevo START manual;
+no se simula continuidad. Overlay v3 recupera su snapshot/CLEAR con hasta ocho
+intentos; tras agotarlos requiere recargar Browser Source. No se reinician procesos
+externos ni se ofrece persistencia tras reinicio. Procedimientos completos y ensayo
+con Blue Yeti/DeepL/OBS: [RELIABILITY_RUNBOOK.md](RELIABILITY_RUNBOOK.md).

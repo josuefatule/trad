@@ -6,6 +6,8 @@ import os
 import secrets
 import time
 from urllib.parse import urlsplit
+import asyncio
+from app.reliability import incident
 
 
 def local_request(request, *, require_origin=False):
@@ -30,18 +32,34 @@ class OperatorAuthority:
     def __init__(self):
         self.tokens = {}
         self.owner = None
+        self.resume_secrets = {}
+        self.owner_seen = None
+        self.recoveries = 0
 
     def issue(self):
         now = time.monotonic()
         self.tokens = {key: expiry for key, expiry in self.tokens.items() if expiry > now}
+        self.resume_secrets={key:value for key,value in self.resume_secrets.items() if key in self.tokens}
         if len(self.tokens) >= 64:
             raise ValueError("Too many local operator tabs")
         token = secrets.token_urlsafe(32)
         self.tokens[token] = now + 86400
+        self.resume_secrets[token] = secrets.token_urlsafe(32)
         return token
 
     def valid(self, token):
         return isinstance(token, str) and self.tokens.get(token, 0) > time.monotonic()
+
+    def resume(self, token, secret):
+        if not self.valid(token) or not secrets.compare_digest(self.resume_secrets.get(token,"").encode(),str(secret).encode()):
+            raise ValueError("Invalid recovery authorization")
+        replacement=secrets.token_urlsafe(32)
+        self.tokens[replacement]=time.monotonic()+86400
+        self.resume_secrets[replacement]=secrets.token_urlsafe(32)
+        if self.owner==token:self.owner=replacement;self.owner_seen=time.monotonic()
+        self.tokens.pop(token,None);self.resume_secrets.pop(token,None);self.recoveries+=1
+        incident("operator","authorization_resumed",outcome="success",recoveries=self.recoveries)
+        return replacement
 
 
 @dataclass(frozen=True)
@@ -78,6 +96,12 @@ def operational_error(error):
         return "translation_timeout", "Timeout de traducción; este segmento no se tradujo. Revisa los diagnósticos."
     if "translation_queue_full" in text:
         return "translation_queue_full", "Cola de traducción saturada; este segmento no se tradujo."
+    if "provider_auth" in text:
+        return "translation_auth", "DeepL rechazó la autenticación. Corrige las credenciales y reinicia FastAPI sin una sesión activa."
+    if "provider_quota" in text:
+        return "translation_quota", "Cuota DeepL agotada. No se reintenta automáticamente; revisa el plan antes de rearmar el traductor."
+    if "provider_" in text or "translation_queue_expired" in text:
+        return "translation_provider", "Traducción no completada; revisa el estado del proveedor y los diagnósticos."
     if "pcm-input" in text or "full mode" in text:
         return "wlk_mode", "WLK incompatible: necesita --pcm-input y modo full."
     if "wlk" in text or isinstance(error, (ConnectionError, OSError, TimeoutError)):
@@ -87,18 +111,51 @@ def operational_error(error):
 
 class OperatorBrowser:
     """Relay adapter: annotate protocol and sanitize errors without changing results upstream."""
-    def __init__(self, socket, session_id):
+    def __init__(self, socket, session_id, run=None):
         self.socket = socket
         self.session_id = session_id
+        self.run=run
+        self.send_lock=asyncio.Lock()
 
     async def receive(self):
-        return await self.socket.receive()
+        if self.run is None:return await self.socket.receive()
+        # Receive task remains unique; a missed capture STOP has a bounded fallback.
+        while True:
+            if (self.run.stop_requested_at is not None and not self.run.audio_eof and
+                    self.run.clock()-self.run.stop_requested_at>self.run.config.control_flush_seconds):
+                self.run.counters["forced_audio_eof"]+=1;self.run.failure_reason="capture_flush_timeout"
+                incident("capture","forced_eof",self.session_id,"ERROR",reason="capture_flush_timeout")
+                self.run.audio(b"")
+                return {"type":"websocket.receive","bytes":b""}
+            task=asyncio.create_task(self.socket.receive())
+            try:
+                while not task.done():
+                    done,_=await asyncio.wait({task},timeout=.25)
+                    if done:break
+                    if (self.run.stop_requested_at is not None and not self.run.audio_eof and
+                            self.run.clock()-self.run.stop_requested_at>self.run.config.control_flush_seconds):
+                        self.run.counters["forced_audio_eof"]+=1
+                        self.run.failure_reason="capture_flush_timeout"
+                        incident("capture","forced_eof",self.session_id,"ERROR",reason="capture_flush_timeout")
+                        self.run.audio(b"")
+                        return {"type":"websocket.receive","bytes":b""}
+                message=task.result()
+                if message.get("bytes") is not None:
+                    if len(message["bytes"])>1048576:raise ValueError("PCM frame exceeds operational budget")
+                    self.run.audio(message["bytes"])
+                return message
+            finally:
+                if not task.done():task.cancel()
+                await asyncio.gather(task,return_exceptions=True)
 
     async def send_json(self, data):
         data = {**data, "protocol_version": 1, "session_id": self.session_id}
         if data.get("type") == "config":
-            data["capabilities"] = {**data["capabilities"], "operator_console": 1, "captions_clear": 1}
+            data["capabilities"] = {**data["capabilities"], "operator_console": 1, "captions_clear": 1,
+                                    "operator_recovery":1}
         if data.get("type") == "translation" and data["translation"].get("error"):
             code, message = operational_error(data["translation"]["error"])
             data["translation"] = {**data["translation"], "error": message, "error_code": code}
-        await self.socket.send_json(data)
+        if self.run:self.run.retain(data)
+        async with self.send_lock:
+            await asyncio.wait_for(self.socket.send_json(data),2.)

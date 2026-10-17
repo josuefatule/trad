@@ -31,6 +31,8 @@
     constructor(get) {
       this.get=get;this.phase="IDLE";this.authorized=false;this.localActive=false;this.snapshot=null;
       this.alertSince=new Map();this.startedAt=null;this.stopped=false;this.clearBusy=false;
+      this.captureMode=typeof location!=="undefined" && location.pathname==="/capture";
+      this.historyCursor=0;
       this.render();this.ready=this.initialize();
     }
     render() {
@@ -47,33 +49,89 @@
     error(error) {this.get("error").textContent=userError(error);}
     async initialize() {
       try {
-        const response=await fetch("/api/operator/bootstrap",{cache:"no-store"});
+        let stored=null;
+        if(!this.captureMode)try{stored=JSON.parse(sessionStorage.getItem("operator-recovery"));}catch{}
+        let response;
+        if(stored?.token && stored?.secret)response=await fetch("/api/operator/resume",{method:"POST",
+          headers:{"Content-Type":"application/json","X-Operator-Token":stored.token},body:JSON.stringify({resume_secret:stored.secret})});
+        if(!response?.ok)response=await fetch("/api/operator/bootstrap",{cache:"no-store"});
         if(!response.ok) throw Error("Backend incompatible");
         const data=await response.json();
         if(data.protocol_version!==1 || data.capabilities?.operator_console!==1 || data.capabilities?.captions_clear!==1)
           throw Error("Backend incompatible");
         this.token=data.control_token;this.config=data.diagnostics_config;this.authorized=true;
+        this.recovery=data.capabilities?.operator_recovery===1;this.serverPid=data.server_pid;
+        if(!this.captureMode && this.recovery)try{sessionStorage.setItem("operator-recovery",JSON.stringify({token:this.token,secret:data.resume_secret}));}catch{}
+        if(this.captureMode){this.render();return true;}
         await this.refresh();this.render();return this.authorized;
       }catch(error){this.error(error);this.phaseTo("ERROR");return false;}
     }
     async refresh() {
       if(!this.authorized) return;
       try {
-        const response=await fetch("/api/operator/status",{cache:"no-store",headers:{"X-Operator-Token":this.token}});
+        const response=await fetch(`/api/operator/status?after_event=${this.historyCursor}`,{cache:"no-store",headers:{"X-Operator-Token":this.token}});
+        if([401,403].includes(response.status)){
+          this.authorized=false;this.localActive=false;this.phaseTo("ERROR");
+          this.get("error").textContent="Esta consola perdió autorización. Recarga para revisar la propiedad de la sesión.";return;
+        }
         if(!response.ok) throw Error("Backend incompatible");
         const data=await response.json();
         if(data.protocol_version!==1) throw Error("Backend incompatible");
         this.snapshot=data;
+        if(this.recovery && !this.captureMode) {
+          this.localActive=!!data.owns_session && ["connecting","live","draining"].includes(data.state);
+          this.startedAt=data.reliability?.duration_seconds!=null?Date.now()-data.reliability.duration_seconds*1000:null;
+          const frames=data.reliability?.audio_frames || 0, age=data.reliability?.audio_age_seconds;
+          this.get("capture").textContent=this.localActive?`CAPTURE independiente · ${frames} frames PCM recibidos · última recepción ${age==null?"sin medir":age+" s"}`:"Micrófono inactivo";
+          this.get("selected-microphone").textContent=this.localActive?"CAPTURE · consulta dispositivo en su ventana":
+            (this.get("microphone").selectedOptions?.[0]?.textContent || "Predeterminado");
+          if(this.consumeHistory)this.consumeHistory(data);
+          if(data.owns_session)this.get("connection").textContent=data.state==="live"?"Connected · capture window":data.state;
+        }
         if(!this.localActive && ["live","draining"].includes(data.state))
           this.get("connection").textContent="Connected · active session in another tab";
-        if(!this.localActive && !(this.phase==="ERROR" && this.get("error").textContent)) this.phase=phases[data.state] || "ERROR";
+        if((this.recovery || !this.localActive) && !(this.phase==="ERROR" && this.get("error").textContent && !this.recovery)) this.phase=phases[data.state] || "ERROR";
         this.get("overlay-clients").textContent=`Overlay clients: ${data.overlay_connections}`;
         this.get("overlay-info").textContent=`${data.caption_config.mode} · requested ${data.caption_config.max_lines} lines · published sequence ${data.sequence} · visual generation ${data.visual_generation}`;
         this.get("last-caption").textContent=data.last_caption?`#${data.last_caption.sequence} · ${data.last_caption.text}`:"No caption in overlay window";
-        if(!this.localActive) this.translator(data.translator, data.translator_verified);
+        if(this.recovery || !this.localActive) this.translator(data.translator, data.translator_verified);
         this.diagnostics(data);this.render();
+        this.operational(data);
       }catch(error){this.get("overlay-clients").textContent="Overlay clients: —";this.get("overlay-diagnostics").textContent="Backend unavailable or incompatible. Not measured.";this.error(error);
+        if(this.recovery){this.get("connection").textContent="FastAPI disconnected · capture not verified";this.phaseTo("ERROR");}
         if(!this.localActive){this.authorized=false;this.phaseTo("ERROR");}}
+    }
+    operational(data) {
+      const h=data.reliability;if(!h)return;
+      const labels={audio_frames_missing:"Micrófono sin flujo de audio: revisa la ventana de captura.",
+        asr_messages_missing:"Hay señal de audio pero WLK no envía mensajes: revisa WLK.",
+        operator_owner_missing:"Propietario ausente: recuperación administrativa disponible.",
+        overlay_no_subscribers:"Sin clientes de overlay conectados; revisa OBS.",
+        translator_degraded:"Traductor degradado: hay segmentos sin traducir.",translator_error:"Traductor detenido: revisa cuota/credenciales.",
+        translator_recovering:"Traductor reintentando con espera limitada.",wlk_startup_backoff:"Reconectando con WLK antes de capturar audio.",
+        capture_disconnected:"Captura desconectada; sesión incompleta. Se requiere un nuevo START.",
+        session_transport_error:"Conexión de sesión perdida; sesión incompleta.",stop_timeout:"STOP agotó su plazo; contenido pendiente incompleto."};
+      labels.resource_budget_exhausted="Límite de recursos excedido: sesión incompleta. Revisa el evento budget_exhausted en el log local.";
+      const notices=String(h.reason || "").split(",").map(reason=>labels[reason]).filter(Boolean);
+      if(h.outcome==="incomplete")notices.push("Finalización INCOMPLETA. Consulta los contadores de contenido pendiente/fallido.");
+      if(h.stop_reason==="session_resource_budget")notices.push("Límite operativo de sesión alcanzado: finalización controlada. Inicia una sesión nueva cuando termine STOP.");
+      if(h.translator?.reason==="provider_quota")notices.push("Cuota DeepL agotada. Revisa el plan antes de rearmar el traductor.");
+      if(h.translator?.reason==="provider_auth")notices.push("DeepL rechazó credenciales. Corrige .env con la sesión detenida y reinicia FastAPI.");
+      if(data.session_id && !data.owns_session)notices.push("Esta consola no es propietaria de la sesión; no tiene controles activos.");
+      this.get("operational-alert").textContent=notices.join(" · ");
+      this.get("reliability-diagnostics").textContent=JSON.stringify(h,null,2);
+      this.get("recover-owner").disabled=data.owns_session || !data.session_id;
+      this.get("rearm-translator").disabled=!data.owns_session;
+      this.get("recovery-path").textContent=`Código local: .runtime/operator-${this.serverPid}.json (PID del servidor). Requiere propietario ausente ≥15 s.`;
+    }
+    async command(command,extra={}) {
+      if(!this.authorized)return false;
+      try{
+        const response=await fetch(`/api/operator/${command}`,{method:"POST",headers:{"Content-Type":"application/json","X-Operator-Token":this.token},
+          body:JSON.stringify({session_id:this.snapshot?.session_id,...extra})});
+        if(!response.ok){this.get("error").textContent="Control rechazado: verifica propiedad, sesión y requisitos de recuperación.";return false;}
+        await this.refresh();return true;
+      }catch{this.get("error").textContent="No se pudo contactar FastAPI; la operación no está confirmada. Verifica CAPTURE y el servidor.";return false;}
     }
     translator(status, verified=false) {
       const provider=status?.provider || "none", state=status?.state || "unknown";

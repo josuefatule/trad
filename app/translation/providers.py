@@ -2,9 +2,20 @@
 from abc import ABC, abstractmethod
 import asyncio
 import json
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from urllib.request import Request, urlopen
 
 from .models import TranslationRequest
+
+# A cancelled asyncio waiter cannot kill urllib's running socket. One worker and
+# a finite socket timeout bound that cost; queued cancelled futures never run.
+_HTTP_EXECUTOR = ThreadPoolExecutor(max_workers=1, thread_name_prefix="captions-http")
+_HTTP_SLOT = threading.BoundedSemaphore(1)
+
+
+class ProviderBusyError(RuntimeError):
+    """Previous bounded HTTP socket still in flight; no new HTTP was issued."""
 
 
 class TranslatorProvider(ABC):
@@ -71,10 +82,21 @@ class DeepLTranslatorProvider(TranslatorProvider):
         )
 
         def perform():
-            with self._opener(http_request, timeout=self.request_timeout) as response:
-                return json.loads(response.read().decode("utf-8"))
+            try:
+                with self._opener(http_request, timeout=self.request_timeout) as response:
+                    data=response.read(1000001)
+                    if len(data)>1000000:raise ValueError("Provider response exceeds operational budget")
+                    return json.loads(data.decode("utf-8"))
+            finally:_HTTP_SLOT.release()
 
-        payload = await asyncio.to_thread(perform)
+        if not _HTTP_SLOT.acquire(blocking=False):raise ProviderBusyError("provider_http_busy")
+        try:future=asyncio.get_running_loop().run_in_executor(_HTTP_EXECUTOR, perform)
+        except BaseException:_HTTP_SLOT.release();raise
+        # The socket owns the slot until it returns, even if the session stops.
+        # Socket operations have a timeout; cancellation cannot kill a thread.
+        # No executor queue accumulates across sessions.
+        future.add_done_callback(lambda done:None if done.cancelled() else done.exception())
+        payload = await asyncio.shield(future)
         try:
             translated = payload["translations"][0]["text"]
         except (KeyError, IndexError, TypeError) as exc:

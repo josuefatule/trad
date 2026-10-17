@@ -21,6 +21,7 @@
 </section>
 <p id="capture">Micrófono inactivo</p><p id="error" role="alert"></p>
 <p id="latency-alert" role="status"></p><p id="control-notice" role="status"></p>
+<p id="operational-alert" role="alert"></p>
 </header>
 <section class="live-monitoring" aria-label="Live monitoring">
 <article class="english-panel panel"><div class="panel-heading"><h1>ENGLISH</h1><span>Translation output</span></div>
@@ -31,6 +32,11 @@
 <div id="confirmed" class="text-flow" tabindex="0"></div></article>
 </section>
 <details class="diagnostics"><summary>Diagnostics &amp; segment audit</summary>
+<details><summary>Reliability / recovery</summary><pre id="reliability-diagnostics">Not measured</pre>
+<p id="recovery-path"></p><label for="recovery-code">Código administrativo local</label>
+<input id="recovery-code" type="password" autocomplete="off">
+<button id="recover-owner" disabled>RECOVER OWNER</button><button id="rearm-translator" disabled>REARM TRANSLATOR</button>
+<p>Rearmar no recupera segmentos fallidos ni reenvía solicitudes anteriores. Mantén abierta la ventana CAPTURE.</p></details>
 <section class="diagnostic-grid">
 <article><h2>OVERLAY / PUBLICATION</h2><p id="overlay-info">Not measured</p><p id="last-caption">Not measured</p>
 <p id="overlay-availability">Overlay page: not checked</p>

@@ -94,7 +94,7 @@ module.exports = (async () => {
     textContent: '', hidden:true, style:{}, classList:{add(){},remove(){}},
     set innerHTML(value) { throw new Error('Unsafe HTML assignment'); },
   }]));
-  const sockets = [], callbacks = [];
+  const sockets = [], callbacks = [], listeners = new Map();
   class Socket {
     static OPEN = 1;
     constructor() {this.readyState = 1; sockets.push(this);}
@@ -113,7 +113,7 @@ module.exports = (async () => {
       canvas_width:1920,canvas_height:1080,region_x:0,region_y:930,region_width:1920,region_height:150,
       padding_x:32,padding_y:8,line_height:1.2,position:'center',background_opacity:0})}),
     location:{protocol:'http:',host:'localhost:8010',search:''}, innerWidth:1920, innerHeight:1080,
-    window:{addEventListener(){}}, WebSocket:Socket, console,
+    window:{addEventListener:(name,fn)=>listeners.set(name,fn)}, WebSocket:Socket, console,
     setTimeout: fn => {callbacks.push(fn); return callbacks.length;}, clearTimeout(){},
   });
   vm.runInContext(fs.readFileSync(path.join(__dirname,'../app/static/overlay.js'),'utf8'),context);
@@ -151,8 +151,17 @@ module.exports = (async () => {
   assert.equal(elements.get('caption').textContent,'');
   sockets.at(-1).onclose(); assert(callbacks.length > 0);
   callbacks.at(-1)(); assert.equal(sockets.length,2);
-  send({type:'snapshot',event_id:0,session_id:'b',state:'live',server_time:0,caption:null});
-  send({type:'session',event_id:1,session_id:'b',state:'disconnected'});
+  send({type:'snapshot',event_id:8,session_id:'b',state:'live',server_time:0,caption:null});
+  send({type:'session',event_id:9,session_id:'b',state:'disconnected'});
   assert.equal(elements.get('caption').hidden,true);
+  const countBefore=sockets.length;
+  for(let attempt=0;attempt<8;attempt++){
+    const before=callbacks.length;sockets.at(-1).onclose();assert.equal(callbacks.length,before+1);
+    callbacks.at(-1)();
+  }
+  assert.equal(sockets.length,countBefore+8);
+  const timerCount=callbacks.length;sockets.at(-1).onclose();assert.equal(callbacks.length,timerCount);
+  listeners.get('beforeunload')();callbacks.at(-1)();
+  assert.equal(sockets.length,countBefore+8); // No late timer reconnects after unload.
   console.log('PASS: overlay pagination, timers, drops, reset, reconnect, stale events and safe DOM');
 })();

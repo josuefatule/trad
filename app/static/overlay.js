@@ -3,6 +3,8 @@
   const element = document.getElementById("caption"), stage = document.getElementById("caption-stage");
   const surface = document.getElementById("overlay-canvas");
   let socket = null, stopped = false, retry = 0, renderer;
+  let retryTimer=null;
+  let disconnectedSince=null;
   let lastEventId = -1;
   let visualGeneration = -1, clearedThrough = 0;
   let clock = new OverlayClock(), probeTimer = null, renderSerial = 0, pendingPaint = false, coalesced = 0;
@@ -92,7 +94,9 @@
       if (data.type === "clock_sync") { clock.synchronize(data, receivedAt); return; }
       if (data.type === "snapshot") {
         if(data.session_id===renderer.sessionId && ((data.visual_generation ?? 0)<visualGeneration || data.event_id<lastEventId))return;
-        retry = 0; lastEventId = data.event_id;
+        socket.send(JSON.stringify({type:"connection_health",session_id:data.session_id,attempts:retry,
+          downtime_ms:disconnectedSince===null?0:Math.max(0,performance.now()-disconnectedSince)}));
+        retry = 0;disconnectedSince=null; lastEventId = data.event_id;
         if (renderer.sessionId !== data.session_id) renderer.reset(data.session_id);
         visualGeneration = data.visual_generation ?? 0;
         clearedThrough = data.cleared_through_sequence ?? 0;
@@ -130,10 +134,15 @@
       if(socket !== connection)return;
       clearTimeout(probeTimer); pendingPaint = false; renderSerial++;
       renderer.setState("disconnected");
-      if (!stopped) setTimeout(connect, Math.min(10000, 500 * 2 ** Math.min(retry++, 5)));
+      if(disconnectedSince===null)disconnectedSince=performance.now();
+      if (!stopped && retry<(config.reconnect_attempts ?? 8)) {
+        const delay=Math.min(config.reconnect_max_ms ?? 10000,(config.reconnect_base_ms ?? 500)*2**Math.min(retry++,10))*(.75+.25*Math.random());
+        console.warn("overlay_reconnect",{attempt:retry,delay_ms:delay});
+        retryTimer=setTimeout(connect,delay);
+      } else if(!stopped) console.error("overlay_retries_exhausted: reload Browser Source after restoring FastAPI");
     };
     socket.onerror = () => socket.close();
   };
-  window.addEventListener("beforeunload", () => { stopped = true; clearTimeout(probeTimer); renderer.clear(); socket?.close(); });
+  window.addEventListener("beforeunload", () => { stopped = true; clearTimeout(probeTimer);clearTimeout(retryTimer); renderer.clear(); socket?.close(); });
   connect();
 })().catch(() => console.error("Overlay initialization failed"));

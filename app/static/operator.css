@@ -43,3 +43,8 @@ a { color: #aaccff; }
   .status-bar { grid-template-columns: 1fr 1fr; } .diagnostic-grid { grid-template-columns: 1fr; } }
 @media (max-width: 550px) { main { padding: 10px; } .brand { flex-wrap: wrap; } .eyebrow { width: 100%; }
   .panel-heading span { display: none; } .device-controls label { width: 100%; } }
+#operational-alert { color: #ffdc8b; font-weight: 650; margin: 6px 0 0; font-size: .85rem; overflow-wrap: anywhere; }
+#operational-alert:empty { display: none; }
+.capture-window .live-monitoring, .capture-window .diagnostics, .capture-window .device-controls, .capture-window .status-bar { display: none; }
+.capture-window main { max-width: 600px; }
+.capture-window #start, .capture-window #clear, .capture-window #elapsed { display: none; }

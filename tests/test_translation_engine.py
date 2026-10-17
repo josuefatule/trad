@@ -224,6 +224,8 @@ class TranslationEngineTests(unittest.IsolatedAsyncioTestCase):
         missing = build_translation_engine(TranslationConfig(enabled=True), "s")
         await missing.start()
         self.assertEqual(missing.status.state, "misconfigured")
+        self.assertEqual(missing.snapshot()["health"],"ERROR")
+        self.assertFalse(missing.rearm())
         self.assertIn("TRANSLATION_PROVIDER", missing.status.message)
         await missing.close()
 
@@ -239,7 +241,7 @@ class DeepLProviderTests(unittest.IsolatedAsyncioTestCase):
             def __exit__(self, *args):
                 return False
 
-            def read(self):
+            def read(self,limit=None):
                 return json.dumps({"translations": [{"text": "Current only."}]}).encode()
 
         def opener(request, timeout):

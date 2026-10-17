@@ -2,6 +2,7 @@
 (async () => {
   const ui = globalThis.OperatorUI;
   if (!await ui.ready) return;
+  if(ui.captureMode)return; // Only the console renews the owner's heartbeat.
   let stopped = false;
   const update = async () => {
     if(stopped)return;

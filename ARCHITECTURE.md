@@ -646,3 +646,48 @@ código malicioso en el propio PC/origen ni permite despliegue remoto/multiusuar
 Los diagnósticos distinguen backend/observadores y muestras ausentes, ofrecen
 mediana/p95 desde mínimo configurable y alertas solo ante condiciones sostenidas.
 Detalles y límites M7: [OPERATOR_CONSOLE.md](OPERATOR_CONSOLE.md).
+
+## M7: recuperación y presupuestos operativos
+
+`/operator` pasa a controlador/monitor. `/capture`, popup del mismo origen, posee
+AudioContext, worklet/worker y el único `/ws/session`. START transmite nonce y
+deviceId por postMessage validado por origen/source; ningún secreto va en URL.
+La consola puede recargarse sin descargar la ventana CAPTURE. sessionStorage
+guarda token/resume_secret; POST resume valida ambos y rota/revoca el par anterior.
+El socket ya autenticado de captura sigue asociado al mismo session_id. STOP
+autorizado viaja del servidor a ese socket, que conserva el flush FIFO PCM/EOF.
+No se modifica el protocolo WLK ni la lógica de segmentación/normalización.
+
+Operator v1 añade capability `operator_recovery=1`; overlay sigue en v3. El journal
+de sesión retiene hasta 512 eventos / 2 MB de READY/normalización/traducción y último ASR acotado.
+Status local autorizado usa cursor, gap y contadores de truncamiento para reponer
+los paneles sin reejecutar traducciones. Su poll de 2 s añade entre 0 y 2 s de
+espera visual en la consola; no en el WebSocket de OBS ni en ASR → READY medido.
+Hay límites visuales separados de 500
+entradas y 60000 caracteres por flujo/panel. No existe persistencia tras
+reinicio de FastAPI. El heartbeat pertenece a la consola, no a CAPTURE. Recuperación
+administrativa exige nonce + secreto del archivo de proceso con ACL local + sesión
+vigente + lease ausente; revoca al propietario anterior sin reemplazar el relay.
+
+`OperationalRun` mide flujo y estados, conserva solo metadatos de incidentes y
+supervisa presupuestos desde el loop de recepción ASR. El silencio se observa
+mediante PCM/energía/mensajes y no se deduce de ausencia de texto. El umbral RMS es
+una señal de diagnóstico, no VAD lingüístico. La protección de tamaño/fuentes/eventos
+rodea al manager sin podar sus fuentes o cambiar reconciliación: STOP preventivo al
+90% y fallo explícito ante exceso abrupto. Duración predeterminada 2 h; no promete
+continuidad ilimitada ni recuperación de audio perdido.
+
+WLK reintenta conexión/handshake con plazo único antes de entregar config al browser;
+después de LIVE no reabre AudioProcessor ni mezcla estado antiguo. Provider secuencial
+con deadline, backoff/jitter, cooldown 429, circuito auth/cuota y expiración de cola.
+Orden/IDs y generación de traducción se conservan. Un único socket HTTP admitido y
+thread por proceso acota el trabajo síncrono que no puede matarse con cancelación.
+Sus reintentos declaran posible consumo duplicado. STOP tiene flush y drain finitos;
+fallos/cancelaciones/timeout llevan outcome incompleto y detalles de pendientes.
+
+Hub mantiene su broadcast/snapshot/watermark; añade solo metadatos acotados de
+transporte por observador. Reconexión del overlay limitada a ocho intentos sin
+snapshot válido, con jitter y cancelación de timer. Captions y traducción no se
+reinician por recuperaciones legítimas de controlador u observador. Logs existentes
+rotan y filtran texto/secretos por defecto. Ver [runbook](RELIABILITY_RUNBOOK.md)
+para límites, recuperación manual y pruebas que aún requieren hardware real.

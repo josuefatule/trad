@@ -112,6 +112,23 @@ No cambiar thresholds de segmentación a partir de estas cifras.
 - [x] Diagnósticos desplegables, auditoría por ID/sequence, mediana/p95 y alertas sostenidas.
 - [x] Autorización localhost/origen/nonce, errores sanitizados y compatibilidad de protocolos.
 - [x] Tests Python/JS y capturas Chrome a 1366×768 y 1920×1080 con fixtures locales.
-- [ ] Aceptación final del usuario con micrófono/DeepL y CLEAR en sus fuentes OBS reales.
+- [x] Aceptación del usuario con micrófono/DeepL y CLEAR en sus fuentes OBS reales.
 
-Detenerse antes de Milestone 7; sin recuperación automática de audio ni control de OBS.
+Restricción histórica superada por la autorización explícita de M7.
+
+## Milestone 7 — fiabilidad y recuperación
+
+- [x] Auditoría y baseline M6: 143 tests Python y cinco suites JavaScript.
+- [x] Health por frames, energía PCM, mensajes ASR, WLK, traductor, colas, Hub y propietario.
+- [x] WLK: backoff/jitter solo antes de PCM; pérdida LIVE explícitamente incompleta.
+- [x] Overlay v3 conservado, reconexión limitada y CLEAR/generaciones intactos.
+- [x] CAPTURE independiente; resume autorizado con rotación exclusiva sin reiniciar audio.
+- [x] Heartbeat de propietario y recuperación administrativa con secreto local protegido.
+- [x] Clasificación de fallos DeepL, deadlines, cooldown, circuito, orden y consumo incierto registrado.
+- [x] STOP con plazo, flush conservado, cancelación y resultado completo/incompleto.
+- [x] Historial/recursos acotados, truncamiento visible y presupuestos de sesión.
+- [x] Logs estructurados sin transcripciones/secretos por defecto, alertas operativas.
+- [x] Fault injection, Chrome con audio falso y prueba de al menos una hora virtual.
+- [ ] Validación M7 con Blue Yeti, DeepL y salida física de OBS siguiendo el runbook.
+
+No iniciar M8 ni Sprint 2. Configuración A, normalización, glosarios y modelo ASR intactos.
