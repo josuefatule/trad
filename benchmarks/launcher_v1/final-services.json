@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-10-22T10:46:37.471815+00:00",
+  "service_records": [
+    {
+      "role": "asr",
+      "pid": 17192,
+      "created_ticks": "639282625899456130",
+      "run_id": "76c6343f558246d6baef1f906913c169",
+      "stop_file": "C:\\live-captions\\.runtime\\launcher\\asr-76c6343f558246d6baef1f906913c169.stop",
+      "owned": true
+    },
+    {
+      "role": "api",
+      "pid": 44604,
+      "created_ticks": "639282625992750490",
+      "run_id": "74d3d0e3ad7b4d5f8540a0c3fa52d598",
+      "stop_file": "C:\\live-captions\\.runtime\\launcher\\api-74d3d0e3ad7b4d5f8540a0c3fa52d598.stop",
+      "owned": true
+    }
+  ],
+  "network": {
+    "local_ip": "10.0.0.88",
+    "local_ips": [
+      "10.0.0.88"
+    ],
+    "overlay_pc_ip": "",
+    "network_profile": "Public",
+    "lan_enabled": false
+  },
+  "asr_health_ready": true,
+  "api_health_pid": 44604,
+  "microphone_used": false,
+  "translation_requested": false,
+  "firewall_managed_state_present": false
+}

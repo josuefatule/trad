@@ -1,0 +1,120 @@
+{
+  "policy": "medical-streaming-v2",
+  "generated_utc": "2026-10-22T06:08:37.732661+00:00",
+  "python_tests_passed": 136,
+  "protected_files_unchanged": 892,
+  "data_release": "medical-657-v1",
+  "original_glossary_sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "files": [
+    {
+      "path": "app/asr/whisperlivekit_client.py",
+      "bytes": 18205,
+      "sha256": "e1fca9cb2e2f86629acb86af1f884d580628bfb1e6baf277877f675f36ac8cde"
+    },
+    {
+      "path": "app/terminology/rollout.py",
+      "bytes": 11049,
+      "sha256": "7a53af7dec0257aefbe8f6feade2b44c2d9809bfa2f8c86cd6d0fb7ec1aeb884"
+    },
+    {
+      "path": "app/terminology/streaming_policy.py",
+      "bytes": 8220,
+      "sha256": "1105e5c275ce85d9338cd813544b52b4af844c20264d32eaada1b56a3f2f2231"
+    },
+    {
+      "path": "backups/glossary-soft-v2/app/asr/whisperlivekit_client.py",
+      "bytes": 18033,
+      "sha256": "2e48a80b79aaa9db97511198b30a43d36773e02499a46dcdd841825cb4a1adc3"
+    },
+    {
+      "path": "backups/glossary-soft-v2/app/main.py",
+      "bytes": 26347,
+      "sha256": "bdbb7e8e2f0fba4ae40bd3aab2d904e3e23a8dd261b324c3ae2afd5c383adeb6"
+    },
+    {
+      "path": "backups/glossary-soft-v2/app/terminology/rollout.py",
+      "bytes": 10489,
+      "sha256": "2709fae7844b682609672c3bc8e7fab49adfb1f011ce1c3dd7508d97dae177f5"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/baseline.json",
+      "bytes": 170378,
+      "sha256": "695e764750bde62baf74bc86068de5279fa21c0d1fb22a271efe392b7133d504"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/browser_results.json",
+      "bytes": 47848,
+      "sha256": "808e614c346c755099ff446c70baefc7826b2d0b2f5ca875a12fa8af822ea248"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/browser_tests.log",
+      "bytes": 134858,
+      "sha256": "8d3fed13d63968c9296aa86b94aeb820a8a900f26ae006950688011358f48596"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/first_reading.json",
+      "bytes": 163141,
+      "sha256": "2a133954831a5d3ac132d52ced663fc7c5eac20914ce741aef7ab0cb0d25d603"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/first_reading_glossary-api.err.log",
+      "bytes": 705863,
+      "sha256": "9cc6a52a9263fe2ca4acbc76e77dd1a6b9d76722221d23ac4a9f978c5839c2ff"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/first_reading_glossary-api.out.log",
+      "bytes": 38896,
+      "sha256": "98c6a51b85e9adc66d418ab39849abda33e7f8a3cd81c6885f72c390d4d636e3"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/guard_controls.json",
+      "bytes": 75912,
+      "sha256": "f725750ff1efb7d89b399f00d706478a97a5a1caba8a25d5d414601e653ae6b7"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/preservation_final.json",
+      "bytes": 193611,
+      "sha256": "59027c0c0509f0cd62ab6aa724bbe0e4f0ce749e1d3ca3596717d194fe1b20c5"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/readiness.json",
+      "bytes": 753,
+      "sha256": "88a2393c3031b25d46b9b70ead31916e6b530392c56303adf1e407efb4dc97f8"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/reading_replay.json",
+      "bytes": 67516,
+      "sha256": "2b36443ba54c3a743ad4c7692b9c4ef5e55b72d2ce54c3e9df0b8cfa3f7f9fa9"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/replay.log",
+      "bytes": 291,
+      "sha256": "ce1b9203ffa063c84fae1ebdcc8b57eb7c49c9c9164fb28e9beb45e5324968ac"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/streaming_tests.log",
+      "bytes": 1593,
+      "sha256": "1404e358d757cc07ae8148007831adf4313ce1af1c558d690b80b0e23426f8e8"
+    },
+    {
+      "path": "benchmarks/glossary_soft_v2/tests.log",
+      "bytes": 78009,
+      "sha256": "c9bbbca7b02c3bca62c0926905fa4b53f042d061c353850df0fcf9ac9a5bd738"
+    },
+    {
+      "path": "benchmarks/replay_reading_soft_v2.py",
+      "bytes": 5078,
+      "sha256": "e320677e23eab546d5d924bdef64e832f9eb37fc9ba959abd02b34423305382c"
+    },
+    {
+      "path": "GLOSSARY_STREAMING_FIX.txt",
+      "bytes": 5634,
+      "sha256": "cebbc1b1b0cba7e3c40d51a575ff2ada77f1be8206d83481bc0df8f4477076e1"
+    },
+    {
+      "path": "tests/test_medical_streaming.py",
+      "bytes": 6159,
+      "sha256": "1d29c7e9a833df402781bd0ba9c3717fc657bf0efceae48178ecb27b11178586"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "status": "same_ten_terms_context_comparison_complete",
+  "terms": 10,
+  "thresholds_retuned": false,
+  "raw_audio_occurrences": 34,
+  "model_observations": 102,
+  "profiles": [
+    {
+      "model": "small",
+      "profile": "raw",
+      "word_errors": 148,
+      "reference_words": 4204,
+      "wer": 0.035204567078972404,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "individualized",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "postselection_veto",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "preselection_guards",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "raw",
+      "word_errors": 117,
+      "reference_words": 4204,
+      "wer": 0.027830637488106564,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "individualized",
+      "word_errors": 110,
+      "reference_words": 4204,
+      "wer": 0.026165556612749764,
+      "simulated_corrections": 11,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 1
+    },
+    {
+      "model": "medium",
+      "profile": "postselection_veto",
+      "word_errors": 110,
+      "reference_words": 4204,
+      "wer": 0.026165556612749764,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "preselection_guards",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_corrections": 11,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "raw",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "individualized",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 1,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "postselection_veto",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 1,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "preselection_guards",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 1,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    }
+  ],
+  "context_cases": [
+    {
+      "profile": "individualized",
+      "positive_cases": 73,
+      "positive_exact_outputs": 71,
+      "negative_cases": 50,
+      "undesired_negative_changes": 29,
+      "failed_case_ids": [
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C020",
+        "C022",
+        "C023",
+        "C035",
+        "C047",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C068",
+        "C070",
+        "C071",
+        "C083",
+        "C092",
+        "C094",
+        "C095",
+        "C104",
+        "C105",
+        "C106",
+        "C107",
+        "C108",
+        "C116",
+        "C118",
+        "C119",
+        "C121",
+        "C122"
+      ]
+    },
+    {
+      "profile": "postselection_veto",
+      "positive_cases": 73,
+      "positive_exact_outputs": 71,
+      "negative_cases": 50,
+      "undesired_negative_changes": 0,
+      "failed_case_ids": [
+        "C121",
+        "C122"
+      ]
+    },
+    {
+      "profile": "preselection_guards",
+      "positive_cases": 73,
+      "positive_exact_outputs": 73,
+      "negative_cases": 50,
+      "undesired_negative_changes": 0,
+      "failed_case_ids": []
+    }
+  ],
+  "prior_constructed_summary": [
+    {
+      "profile": "individualized",
+      "positive_cases": 50,
+      "recovered": 38,
+      "negative_cases": 139,
+      "negative_triggers": 0
+    },
+    {
+      "profile": "postselection_veto",
+      "positive_cases": 50,
+      "recovered": 38,
+      "negative_cases": 139,
+      "negative_triggers": 0
+    },
+    {
+      "profile": "preselection_guards",
+      "positive_cases": 50,
+      "recovered": 38,
+      "negative_cases": 139,
+      "negative_triggers": 0
+    }
+  ],
+  "unit_tests_passed": true,
+  "integration_performed": false,
+  "production_code_modified": false,
+  "independent_speech_or_clinical_validation": false
+}

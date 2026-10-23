@@ -1,4 +1,4 @@
-html, body { margin: 0; width: 100%; height: 100%; background: transparent !important; overflow: hidden; }
+html, body { margin: 0; width: 100%; height: 100%; background: #001264 !important; overflow: hidden; }
 body { pointer-events: none; }
 #overlay-canvas { position: absolute; transform-origin: 0 0; }
 #caption-stage { position: absolute; display: flex; justify-content: center; align-items: center;

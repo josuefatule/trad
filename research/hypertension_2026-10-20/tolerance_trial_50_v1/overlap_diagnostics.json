@@ -1,0 +1,332 @@
+[
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "failed_contexts": 7,
+    "example_case_id": "N0049",
+    "input": "They discussed elvated blood pressure by this test.",
+    "expected": "They discussed elevated blood pressure by this test.",
+    "isolated_output": "They discussed elevated blood pressure by this test.",
+    "all50_output": "They discussed elvated blood pressure by this test.",
+    "isolated_recovers": true,
+    "all50_recovers": false,
+    "exact_reservations": [
+      {
+        "source": "blood pressure",
+        "canonical": "blood pressure",
+        "start": 23,
+        "end": 37,
+        "start_token": 3,
+        "end_token": 5,
+        "confidence": 1.0,
+        "action": "auto",
+        "rule": "canonical_form"
+      }
+    ],
+    "auto_fuzzy_intended_candidates": [
+      {
+        "source": "elvated blood pressure",
+        "canonical": "elevated blood pressure",
+        "start": 15,
+        "end": 37,
+        "start_token": 2,
+        "end_token": 5,
+        "confidence": 0.9790243902439024,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "overlapping_reserved_exact": [
+          {
+            "source": "blood pressure",
+            "canonical": "blood pressure",
+            "start": 23,
+            "end": 37,
+            "start_token": 3,
+            "end_token": 5,
+            "confidence": 1.0,
+            "action": "auto",
+            "rule": "canonical_form"
+          }
+        ]
+      }
+    ],
+    "intended_selected_after_exact_reservation": false,
+    "diagnosis": "Exact subterms reserve overlapping tokens before fuzzy phrase selection; raising/lowering tolerance alone does not change that priority.",
+    "post_checking_diagnostic": true,
+    "threshold_or_guard_changed": false
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "canonical_en": "target systolic blood pressure",
+    "failed_contexts": 7,
+    "example_case_id": "N0085",
+    "input": "They discussed target sytolic blood pressure by this test.",
+    "expected": "They discussed target systolic blood pressure by this test.",
+    "isolated_output": "They discussed target systolic blood pressure by this test.",
+    "all50_output": "They discussed target sytolic blood pressure by this test.",
+    "isolated_recovers": true,
+    "all50_recovers": false,
+    "exact_reservations": [
+      {
+        "source": "blood pressure",
+        "canonical": "blood pressure",
+        "start": 30,
+        "end": 44,
+        "start_token": 4,
+        "end_token": 6,
+        "confidence": 1.0,
+        "action": "auto",
+        "rule": "canonical_form"
+      }
+    ],
+    "auto_fuzzy_intended_candidates": [
+      {
+        "source": "target sytolic blood pressure",
+        "canonical": "target systolic blood pressure",
+        "start": 15,
+        "end": 44,
+        "start_token": 2,
+        "end_token": 6,
+        "confidence": 0.9838823153181964,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "overlapping_reserved_exact": [
+          {
+            "source": "blood pressure",
+            "canonical": "blood pressure",
+            "start": 30,
+            "end": 44,
+            "start_token": 4,
+            "end_token": 6,
+            "confidence": 1.0,
+            "action": "auto",
+            "rule": "canonical_form"
+          }
+        ]
+      }
+    ],
+    "intended_selected_after_exact_reservation": false,
+    "diagnosis": "Exact subterms reserve overlapping tokens before fuzzy phrase selection; raising/lowering tolerance alone does not change that priority.",
+    "post_checking_diagnostic": true,
+    "threshold_or_guard_changed": false
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "canonical_en": "isometric resistance exercise",
+    "failed_contexts": 7,
+    "example_case_id": "N0181",
+    "input": "They discussed isometric resstance exercise by this test.",
+    "expected": "They discussed isometric resistance exercise by this test.",
+    "isolated_output": "They discussed isometric resistance exercise by this test.",
+    "all50_output": "They discussed isometric resstance exercise by this test.",
+    "isolated_recovers": true,
+    "all50_recovers": false,
+    "exact_reservations": [
+      {
+        "source": "exercise",
+        "canonical": "exercise",
+        "start": 35,
+        "end": 43,
+        "start_token": 4,
+        "end_token": 5,
+        "confidence": 1.0,
+        "action": "auto",
+        "rule": "canonical_form"
+      }
+    ],
+    "auto_fuzzy_intended_candidates": [
+      {
+        "source": "isometric resstance exercise",
+        "canonical": "isometric resistance exercise",
+        "start": 15,
+        "end": 43,
+        "start_token": 2,
+        "end_token": 5,
+        "confidence": 0.9836146971201588,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "overlapping_reserved_exact": [
+          {
+            "source": "exercise",
+            "canonical": "exercise",
+            "start": 35,
+            "end": 43,
+            "start_token": 4,
+            "end_token": 5,
+            "confidence": 1.0,
+            "action": "auto",
+            "rule": "canonical_form"
+          }
+        ]
+      }
+    ],
+    "intended_selected_after_exact_reservation": false,
+    "diagnosis": "Exact subterms reserve overlapping tokens before fuzzy phrase selection; raising/lowering tolerance alone does not change that priority.",
+    "post_checking_diagnostic": true,
+    "threshold_or_guard_changed": false
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "canonical_en": "non-elevated blood pressure",
+    "failed_contexts": 7,
+    "example_case_id": "N0325",
+    "input": "They discussed non-elvated blood pressure by this test.",
+    "expected": "They discussed non-elevated blood pressure by this test.",
+    "isolated_output": "They discussed non-elevated blood pressure by this test.",
+    "all50_output": "They discussed non-elvated blood pressure by this test.",
+    "isolated_recovers": true,
+    "all50_recovers": false,
+    "exact_reservations": [
+      {
+        "source": "blood pressure",
+        "canonical": "blood pressure",
+        "start": 27,
+        "end": 41,
+        "start_token": 4,
+        "end_token": 6,
+        "confidence": 1.0,
+        "action": "auto",
+        "rule": "canonical_form"
+      }
+    ],
+    "auto_fuzzy_intended_candidates": [
+      {
+        "source": "non-elvated blood pressure",
+        "canonical": "non-elevated blood pressure",
+        "start": 15,
+        "end": 41,
+        "start_token": 2,
+        "end_token": 6,
+        "confidence": 0.9819349658771578,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "overlapping_reserved_exact": [
+          {
+            "source": "blood pressure",
+            "canonical": "blood pressure",
+            "start": 27,
+            "end": 41,
+            "start_token": 4,
+            "end_token": 6,
+            "confidence": 1.0,
+            "action": "auto",
+            "rule": "canonical_form"
+          }
+        ]
+      }
+    ],
+    "intended_selected_after_exact_reservation": false,
+    "diagnosis": "Exact subterms reserve overlapping tokens before fuzzy phrase selection; raising/lowering tolerance alone does not change that priority.",
+    "post_checking_diagnostic": true,
+    "threshold_or_guard_changed": false
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "canonical_en": "renin-independent aldosterone production",
+    "failed_contexts": 7,
+    "example_case_id": "N0373",
+    "input": "They discussed renin-indpendent aldosterone production by this test.",
+    "expected": "They discussed renin-independent aldosterone production by this test.",
+    "isolated_output": "They discussed renin-independent aldosterone production by this test.",
+    "all50_output": "They discussed renin-indpendent aldosterone production by this test.",
+    "isolated_recovers": true,
+    "all50_recovers": false,
+    "exact_reservations": [
+      {
+        "source": "aldosterone",
+        "canonical": "aldosterone",
+        "start": 32,
+        "end": 43,
+        "start_token": 4,
+        "end_token": 5,
+        "confidence": 1.0,
+        "action": "auto",
+        "rule": "canonical_form"
+      }
+    ],
+    "auto_fuzzy_intended_candidates": [
+      {
+        "source": "renin-indpendent aldosterone production",
+        "canonical": "renin-independent aldosterone production",
+        "start": 15,
+        "end": 54,
+        "start_token": 2,
+        "end_token": 6,
+        "confidence": 0.9881394139067107,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "overlapping_reserved_exact": [
+          {
+            "source": "aldosterone",
+            "canonical": "aldosterone",
+            "start": 32,
+            "end": 43,
+            "start_token": 4,
+            "end_token": 5,
+            "confidence": 1.0,
+            "action": "auto",
+            "rule": "canonical_form"
+          }
+        ]
+      }
+    ],
+    "intended_selected_after_exact_reservation": false,
+    "diagnosis": "Exact subterms reserve overlapping tokens before fuzzy phrase selection; raising/lowering tolerance alone does not change that priority.",
+    "post_checking_diagnostic": true,
+    "threshold_or_guard_changed": false
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "canonical_en": "diastolic blood pressure",
+    "failed_contexts": 7,
+    "example_case_id": "N0589",
+    "input": "They discussed diatolic blood pressure by this test.",
+    "expected": "They discussed diastolic blood pressure by this test.",
+    "isolated_output": "They discussed diastolic blood pressure by this test.",
+    "all50_output": "They discussed diatolic blood pressure by this test.",
+    "isolated_recovers": true,
+    "all50_recovers": false,
+    "exact_reservations": [
+      {
+        "source": "blood pressure",
+        "canonical": "blood pressure",
+        "start": 24,
+        "end": 38,
+        "start_token": 3,
+        "end_token": 5,
+        "confidence": 1.0,
+        "action": "auto",
+        "rule": "canonical_form"
+      }
+    ],
+    "auto_fuzzy_intended_candidates": [
+      {
+        "source": "diatolic blood pressure",
+        "canonical": "diastolic blood pressure",
+        "start": 15,
+        "end": 38,
+        "start_token": 2,
+        "end_token": 5,
+        "confidence": 0.9799604156358238,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "overlapping_reserved_exact": [
+          {
+            "source": "blood pressure",
+            "canonical": "blood pressure",
+            "start": 24,
+            "end": 38,
+            "start_token": 3,
+            "end_token": 5,
+            "confidence": 1.0,
+            "action": "auto",
+            "rule": "canonical_form"
+          }
+        ]
+      }
+    ],
+    "intended_selected_after_exact_reservation": false,
+    "diagnosis": "Exact subterms reserve overlapping tokens before fuzzy phrase selection; raising/lowering tolerance alone does not change that priority.",
+    "post_checking_diagnostic": true,
+    "threshold_or_guard_changed": false
+  }
+]

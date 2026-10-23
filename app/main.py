@@ -8,7 +8,7 @@ import json
 import subprocess
 import getpass
 from contextlib import asynccontextmanager
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass, field, replace
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 from uuid import uuid4
@@ -27,9 +27,13 @@ from app.captions.terminology_normalizer import NormalizerConfig
 from app.translation import TranslationConfig
 from app.overlay.config import CaptionConfig
 from app.overlay.hub import CaptionHub
+from app.overlay.style import OverlayStyleStore
 from app.operator_control import OperatorAuthority, OperatorBrowser, OperatorConfig, local_request, operational_error
 from app.translation.engine import provider_from_config
 from app.reliability import OperationalRun, ReliabilityConfig, SafeLogFilter, incident
+from app.session_direction import DEFAULT_DIRECTION, direction_from_id
+from app.terminology.rollout import GlossaryConfig, RolloutController
+from app.launcher_network import network_status
 
 ROOT = Path(__file__).resolve().parent
 
@@ -38,6 +42,8 @@ ROOT = Path(__file__).resolve().parent
 class Settings:
     wlk_url: str = os.getenv("WLK_WS_URL", "ws://localhost:8000/asr")
     language: str = os.getenv("CAPTIONS_LANGUAGE", "es")
+    direction: dict | None = None
+    require_language_ack: bool = False
     log_raw: bool = os.getenv("CAPTIONS_LOG_RAW", "0") == "1"
     log_dir: str = os.getenv("CAPTIONS_LOG_DIR", str(ROOT.parent / "logs"))
     connect_timeout: float = float(os.getenv("CAPTIONS_CONNECT_TIMEOUT", "15"))
@@ -48,6 +54,7 @@ class Settings:
     captions: CaptionConfig = field(default_factory=CaptionConfig.from_env)
     operator: OperatorConfig = field(default_factory=OperatorConfig.from_env)
     reliability: ReliabilityConfig = field(default_factory=ReliabilityConfig.from_env)
+    glossary: GlossaryConfig = field(default_factory=GlossaryConfig.from_env)
 
     def __post_init__(self):
         if not math.isfinite(self.connect_timeout) or not 0<self.connect_timeout<=60:
@@ -61,6 +68,14 @@ def create_app(settings=None):
     logger = logging.getLogger("captions")
     authority = OperatorAuthority()
     run = OperationalRun(settings.reliability)
+    glossary = RolloutController(settings.glossary)
+    overlay_style = OverlayStyleStore()
+    session_open = False
+    closure_acknowledged = True
+
+    def inactive_safe():
+        return (not session_open and hub.state not in {"connecting", "live", "draining"}
+                and (run.outcome != "incomplete" or closure_acknowledged))
     admin_code = secrets.token_urlsafe(32)
     admin_path = ROOT.parent / ".runtime" / f"operator-{os.getpid()}.json"
 
@@ -110,15 +125,18 @@ def create_app(settings=None):
 
     app = FastAPI(lifespan=lifespan)
     hub = CaptionHub(settings.captions)
+    hub.overlay_style = overlay_style.to_dict()
     app.state.caption_hub = hub
     app.state.operational_run=run
     app.state.operator_authority=authority
+    app.state.glossary_rollout=glossary
     app.mount("/static", StaticFiles(directory=ROOT / "static"), name="static")
 
     @app.get("/health")
     async def health():
         # App liveness only. WLK readiness is verified during each handshake.
-        return {"status": "ok", "language": settings.language, "wlk_check": "on_session_connect"}
+        return {"status": "ok", "language": settings.language, "wlk_check": "on_session_connect",
+                "glossary": glossary.status(), "launcher_version": "mvp-launcher-v1", "server_pid": os.getpid()}
 
     @app.get("/")
     async def index():
@@ -140,7 +158,8 @@ def create_app(settings=None):
             token = authority.issue()
         except ValueError:
             raise HTTPException(429, "Too many operator tabs")
-        return JSONResponse({"protocol_version": 1, "capabilities": {"operator_console": 1, "captions_clear": 1,"operator_recovery":1},
+        return JSONResponse({"protocol_version": 1, "capabilities": {"operator_console": 1, "captions_clear": 1,"operator_recovery":1,"session_direction":1},
+                             "default_direction": DEFAULT_DIRECTION,
                              "control_token": token,"resume_secret":authority.resume_secrets[token],
                              "server_pid":os.getpid(), "diagnostics_config": asdict(settings.operator)},
                             headers={"Cache-Control": "no-store"})
@@ -151,7 +170,8 @@ def create_app(settings=None):
         data=await request.json()
         try:token=authority.resume(request.headers.get("x-operator-token"),data.get("resume_secret"))
         except (ValueError,AttributeError):raise HTTPException(403,"Recovery authorization rejected")
-        return JSONResponse({"protocol_version":1,"capabilities":{"operator_console":1,"captions_clear":1,"operator_recovery":1},
+        return JSONResponse({"protocol_version":1,"capabilities":{"operator_console":1,"captions_clear":1,"operator_recovery":1,"session_direction":1},
+            "default_direction": DEFAULT_DIRECTION,
             "control_token":token,"resume_secret":authority.resume_secrets[token],"server_pid":os.getpid(),
             "diagnostics_config":asdict(settings.operator)},headers={"Cache-Control":"no-store"})
 
@@ -197,6 +217,22 @@ def create_app(settings=None):
         rearmed=bool(run.translator and run.translator.rearm())
         return {"protocol_version":1,"rearmed":rearmed}
 
+    @app.post("/api/operator/acknowledge-stop")
+    async def acknowledge_stop(request: Request):
+        nonlocal closure_acknowledged
+        token = request.headers.get("x-operator-token")
+        if not local_request(request, require_origin=True) or not authority.valid(token) or authority.owner != token:
+            raise HTTPException(403, "Current session owner required")
+        data = await request.json()
+        if not authority.valid(token) or authority.owner != token:
+            raise HTTPException(403, "Current session owner required")
+        if (session_open or hub.state in {"connecting", "live", "draining"} or
+                not isinstance(data, dict) or data.get("session_id") != hub.session_id or run.outcome != "incomplete"):
+            raise HTTPException(409, "Session must be fully closed with an incomplete outcome")
+        closure_acknowledged = True
+        # Acknowledge loss, never rewrite the outcome or replay failed text.
+        return {"protocol_version": 1, "acknowledged": True, "session_id": hub.session_id}
+
     @app.get("/api/operator/status")
     async def operator_status(request: Request):
         token = request.headers.get("x-operator-token")
@@ -209,11 +245,55 @@ def create_app(settings=None):
         try:cursor=max(0,int(request.query_params.get("after_event","0")))
         except ValueError:raise HTTPException(400,"Invalid history cursor")
         return JSONResponse({"protocol_version": 1, **hub.diagnostics(), "caption_config": settings.captions.to_dict(),
+                "overlay_style": hub.overlay_style,
                 "reliability":run.health(hub,None if authority.owner_seen is None else time.monotonic()-authority.owner_seen),
                 "operator_history":run.journal_snapshot(cursor),
                 "translator": translator, "translator_verified": hub.last_success_sequence > 0,
                 "owns_session": authority.owner == token,
-                "can_start": hub.state not in {"connecting", "live", "draining"}},headers={"Cache-Control":"no-store"})
+                "session_open": session_open, "can_change_direction": inactive_safe(),
+                "glossary": glossary.status(), "can_change_glossary": inactive_safe(),
+                "network": network_status(),
+                "requires_stop_acknowledgement": not session_open and run.outcome == "incomplete" and not closure_acknowledged,
+                "can_start": inactive_safe()},headers={"Cache-Control":"no-store"})
+
+    @app.post("/api/operator/overlay-style")
+    async def change_overlay_style(request: Request):
+        token = request.headers.get("x-operator-token")
+        if not local_request(request, require_origin=True) or not authority.valid(token):
+            raise HTTPException(403, "Local operator authorization required")
+        try:
+            data = await request.json()
+            if not authority.valid(token) or (authority.owner is not None and authority.owner != token):
+                raise HTTPException(403, "Current session owner required")
+            if not isinstance(data, dict) or not data or set(data) - {"text_color", "background_color"}:
+                raise ValueError("Invalid style")
+            for value in data.values():
+                overlay_style.validate(value)
+            applied = overlay_style.save(data.get("text_color"), data.get("background_color"))
+        except (ValueError, TypeError):
+            raise HTTPException(400, "Invalid overlay color; use #RRGGBB")
+        except OSError:
+            raise HTTPException(503, "Could not save overlay color")
+        hub.overlay_style = applied
+        hub._event("overlay_style", overlay_style=applied)
+        return {"protocol_version": 1, "overlay_style": applied}
+
+    @app.post("/api/operator/glossary")
+    async def change_glossary(request: Request):
+        token=request.headers.get("x-operator-token")
+        if not local_request(request,require_origin=True) or not authority.valid(token):
+            raise HTTPException(403,"Local operator authorization required")
+        try:data=await request.json()
+        except ValueError:raise HTTPException(400,"Invalid glossary JSON")
+        if not authority.valid(token) or (authority.owner is not None and authority.owner!=token):
+            raise HTTPException(403,"Current session owner required")
+        if not inactive_safe():raise HTTPException(409,"Stop the session before changing the glossary")
+        if not isinstance(data,dict):raise HTTPException(400,"Invalid glossary configuration")
+        try:applied=glossary.change(data.get('mode'),data.get('generation'))
+        except RuntimeError:raise HTTPException(409,"Glossary changed; refresh the operator console")
+        except ValueError:raise HTTPException(400,"Invalid or unavailable glossary mode")
+        except OSError:raise HTTPException(503,"Could not save glossary mode; previous mode remains active")
+        return {"protocol_version":1,"glossary":applied}
 
     @app.post("/api/operator/clear")
     async def clear_captions(request: Request):
@@ -330,25 +410,50 @@ def create_app(settings=None):
 
     @app.websocket("/ws/session")
     async def session(browser: WebSocket):
+        nonlocal session_open, closure_acknowledged
         protocols = [item.strip() for item in browser.headers.get("sec-websocket-protocol", "").split(",")]
         token = protocols[1] if len(protocols) == 2 and protocols[0] == "operator.v1" else None
         if not local_request(browser, require_origin=True) or not authority.valid(token):
             await browser.close(code=4403)
             return
+        values = browser.query_params.getlist("direction")
+        try:
+            if len(values) > 1:
+                raise ValueError("Duplicate direction")
+            direction = direction_from_id(values[0]) if values else None
+        except ValueError:
+            await browser.close(code=4400)
+            return
+        session_settings = (replace(settings, language=direction.source_language,
+            direction=direction.to_dict(), require_language_ack=True,
+            translation=replace(settings.translation, source_language=direction.source_language,
+                                target_language=direction.target_language)) if direction else settings)
+        if direction is None and settings.translation.source_language == settings.language:
+            legacy_id = f"{settings.language}-{settings.translation.target_language}"
+            if legacy_id in {"en-es", "es-en"}:
+                session_settings = replace(settings, direction=direction_from_id(legacy_id).to_dict())
         await browser.accept(subprotocol="operator.v1")
         session_id = uuid4().hex[:12]
         logger.info("session=%s browser connected", session_id)
         owns_session = False
         try:
-            hub.begin(session_id)
+            if not authority.valid(token):
+                raise ValueError("Operator authorization expired before START")
+            if not inactive_safe():
+                raise ValueError("An audio session is already active or its incomplete closure needs acknowledgement")
+            # Snapshot mode/release for the entire session; queued text is immutable.
+            session_settings=replace(session_settings,glossary=replace(settings.glossary,mode=glossary.status()['effective_mode']))
+            hub.begin(session_id, direction=session_settings.direction)
+            session_open = True
+            closure_acknowledged = False
             owns_session = True
             authority.owner = token
             authority.owner_seen=time.monotonic()
             run.reset(session_id);run.outcome="in_progress";run.transition("RECOVERING","connecting_wlk")
             run.owner_age_getter=lambda:None if authority.owner_seen is None else time.monotonic()-authority.owner_seen
-            adapter=OperatorBrowser(browser, session_id,run)
+            adapter=OperatorBrowser(browser, session_id,run, direction=session_settings.direction)
             run.capture_sender=adapter.send_json
-            await relay(adapter, settings, session_id, caption_hub=hub)
+            await relay(adapter, session_settings, session_id, caption_hub=hub)
         except WebSocketDisconnect:
             if owns_session and run.session_id==session_id:
                 hub.set_state(session_id, "disconnected")
@@ -373,8 +478,11 @@ def create_app(settings=None):
                 await browser.close()
             except (RuntimeError, WebSocketDisconnect):
                 pass
+            finally:
+                if owns_session and run.session_id==session_id:
+                    run.capture_sender=None
+                    session_open = False
             logger.info("session=%s session closed", session_id)
-            if owns_session and run.session_id==session_id:run.capture_sender=None
 
     return app
 

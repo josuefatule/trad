@@ -1,0 +1,60 @@
+{
+  "frozen_at_utc": "2026-10-22T04:28:52.459483+00:00",
+  "scope": "Remaining 37 reference-covered concepts",
+  "corrected_rules_unchanged": true,
+  "grid": [
+    0.86,
+    0.88,
+    0.9,
+    0.92,
+    0.94,
+    0.96,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "previous60_thresholds_unchanged": true,
+  "calibration": "New terms only, corrected rules, per-term constructed calibration. Max recovery with zero negative fuzzy triggers; tie to higher threshold. No useful recovery means exact-only.",
+  "checking": "Exact duplicates excluded across constructed splits before calibration; freeze decisions before cached speech and combined checking. No retuning.",
+  "source_hashes": [
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/evaluate_remaining.py",
+      "sha256": "970944f87ac6ef01e34996fb83e88dcbc2f6ea83e6ac7e5b0e6c94b202dc620c"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/boundary_normalizer.py",
+      "sha256": "3250673007d91fa7423cf9a72ad3e32d287621a8ce6452c7618862f6f7478bdd"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/lab_normalizer.py",
+      "sha256": "364b8685aaa1d11e3764d8de704a4caa823b05d60d7e5d070022c33c378cac1c"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/evaluate_context.py",
+      "sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/evaluate_50.py",
+      "sha256": "d88808312a9e4e2ce89192ab625a72d101e42e0252a50e64f5d1a75324e16ded"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/evaluate_trial.py",
+      "sha256": "b07c63bd4bc58e38508c43df8903f9880f50599b2ed45a58a9ed0f5fff8f10ef"
+    },
+    {
+      "path": "app/captions/terminology_normalizer.py",
+      "sha256": "0b1ddfb6d760ca7ad891cb88c0ef1b17f625f5b46b5072a6b583eac4f8fcf0cf"
+    },
+    {
+      "path": "trad_lab/metrics.py",
+      "sha256": "53154d9418bee8245f909d7b1163c328c5de883e8053eb9b6104b34c62c5a61d"
+    }
+  ],
+  "selection_sha256": "efc524282f4ed633b72e836d6fae83398b2ff16b10cf16e539fdf18005cef76e",
+  "variants_sha256": "7ddf1076f0c0f8d496df4d6b6e41a3989ebd2efb96f8050e85d4140d936383ad",
+  "independent_holdout": false,
+  "previously_explored_audio": true,
+  "new_asr_inference": false,
+  "integration_performed": false,
+  "write_boundary": "C:\\live-captions\\research\\hypertension_2026-10-20\\remaining_terms_trial_37_v1"
+}

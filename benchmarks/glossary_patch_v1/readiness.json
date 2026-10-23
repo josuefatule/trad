@@ -1,0 +1,45 @@
+{
+  "checked_utc": "2026-10-22T07:10:30.616102+00:00",
+  "operator_url": "http://localhost:8010/operator",
+  "api_status": "ok",
+  "server_pid": 15596,
+  "glossary": {
+    "mode": "soft",
+    "effective_mode": "soft",
+    "generation": 0,
+    "policy_version": "medical-streaming-v2",
+    "patch": {
+      "enabled": true,
+      "state": "active",
+      "error": null,
+      "version": "medical-corrections-v1",
+      "observed_repair_rules": 1,
+      "review_only_forms": 2,
+      "format_recognition": {
+        "en": 62,
+        "es": 4
+      }
+    },
+    "version": "medical-657-v1",
+    "concepts": 657,
+    "evaluated_english": 97,
+    "fuzzy_english": 80,
+    "exact_only_english": 577,
+    "error": null,
+    "forced_by_environment": false
+  },
+  "asr_health": {
+    "status": "ok",
+    "backend": "faster-whisper",
+    "ready": true
+  },
+  "state": "waiting",
+  "can_start": true,
+  "session_open": false,
+  "current_translator_verified": false,
+  "patch_live_voice_test": false,
+  "patch_live_deepl_test": false,
+  "patch_obs_test": false,
+  "previous_capture_closed_cleanly": true,
+  "ready_screenshot": "benchmarks/glossary_patch_v1/ready.png"
+}

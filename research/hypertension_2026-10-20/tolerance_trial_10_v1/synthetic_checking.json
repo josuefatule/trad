@@ -1,0 +1,4436 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0012"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0007",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaiing salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.979024,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0008",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaiinng salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0009",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaixning salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.97996,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0010",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaizing salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0011",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contai ning salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0012",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodiumcontaining salts",
+        "changes": []
+      },
+      {
+        "case_id": "T0014",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "young adults",
+        "changes": []
+      },
+      {
+        "case_id": "T0016",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-glucose cotransporter 2 inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0018",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "urine albumin-to-creatinine ratio",
+        "changes": []
+      },
+      {
+        "case_id": "T0020",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium reduction",
+        "changes": []
+      },
+      {
+        "case_id": "T0022",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "tonic-clonic seizures",
+        "changes": []
+      },
+      {
+        "case_id": "T0024",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "spot urine sample",
+        "changes": []
+      },
+      {
+        "case_id": "T0026",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cortical blindness",
+        "changes": []
+      },
+      {
+        "case_id": "T0028",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "non-dipping pattern",
+        "changes": []
+      },
+      {
+        "case_id": "T0030",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "dual combination therapy",
+        "changes": []
+      },
+      {
+        "case_id": "T0032",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "National Institutes of Health",
+        "changes": []
+      },
+      {
+        "case_id": "T0034",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "potassium-enriched salt substitute",
+        "changes": []
+      },
+      {
+        "case_id": "T0036",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "plasma concentration",
+        "changes": []
+      },
+      {
+        "case_id": "T0038",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed potassium-containing salts today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0040",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-was never containing salts",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "profile": "individualized",
+    "threshold": 0.94,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0012"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0007",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaiing salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.979024,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0008",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaiinng salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0009",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaixning salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.97996,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0010",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contaizing salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0011",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium-containing salts",
+        "changes": [
+          {
+            "source": "sodium-contai ning salts",
+            "replacement": "sodium-containing salts",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "sodium-containing salts"
+          }
+        ]
+      },
+      {
+        "case_id": "T0012",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodiumcontaining salts",
+        "changes": []
+      },
+      {
+        "case_id": "T0014",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "young adults",
+        "changes": []
+      },
+      {
+        "case_id": "T0016",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-glucose cotransporter 2 inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0018",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "urine albumin-to-creatinine ratio",
+        "changes": []
+      },
+      {
+        "case_id": "T0020",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium reduction",
+        "changes": []
+      },
+      {
+        "case_id": "T0022",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "tonic-clonic seizures",
+        "changes": []
+      },
+      {
+        "case_id": "T0024",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "spot urine sample",
+        "changes": []
+      },
+      {
+        "case_id": "T0026",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "cortical blindness",
+        "changes": []
+      },
+      {
+        "case_id": "T0028",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "non-dipping pattern",
+        "changes": []
+      },
+      {
+        "case_id": "T0030",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "dual combination therapy",
+        "changes": []
+      },
+      {
+        "case_id": "T0032",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "National Institutes of Health",
+        "changes": []
+      },
+      {
+        "case_id": "T0034",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "potassium-enriched salt substitute",
+        "changes": []
+      },
+      {
+        "case_id": "T0036",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "plasma concentration",
+        "changes": []
+      },
+      {
+        "case_id": "T0038",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed potassium-containing salts today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0040",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-was never containing salts",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0052"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0047",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsortion",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 18,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.974981,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0048",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsortpion",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.951316,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0049",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsorxption",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.976299,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0050",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsorztion",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.951316,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0051",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsor ption",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0052",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodiumreabsorption",
+        "changes": []
+      },
+      {
+        "case_id": "T0054",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "dietary sodium restriction",
+        "changes": []
+      },
+      {
+        "case_id": "T0056",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary sodium excretion",
+        "changes": []
+      },
+      {
+        "case_id": "T0058",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "vasodilation",
+        "changes": []
+      },
+      {
+        "case_id": "T0060",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "smoking cessation",
+        "changes": []
+      },
+      {
+        "case_id": "T0062",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "low-sodium diet",
+        "changes": []
+      },
+      {
+        "case_id": "T0064",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "secondary prevention",
+        "changes": []
+      },
+      {
+        "case_id": "T0066",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "diuretics",
+        "changes": []
+      },
+      {
+        "case_id": "T0068",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-glucose cotransporter 2 inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0070",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "device calibration",
+        "changes": []
+      },
+      {
+        "case_id": "T0072",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "social deprivation",
+        "changes": []
+      },
+      {
+        "case_id": "T0074",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary potassium excretion",
+        "changes": []
+      },
+      {
+        "case_id": "T0076",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "postpartum hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0078",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed potassium reabsorption today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0080",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium was never reabsorption",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "profile": "individualized",
+    "threshold": 0.94,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0052"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0047",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsortion",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 18,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.974981,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0048",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsortpion",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.951316,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0049",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsorxption",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.976299,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0050",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsorztion",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.951316,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0051",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "sodium reabsorption",
+        "changes": [
+          {
+            "source": "sodium reabsor ption",
+            "replacement": "sodium reabsorption",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "sodium reabsorption"
+          }
+        ]
+      },
+      {
+        "case_id": "T0052",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodiumreabsorption",
+        "changes": []
+      },
+      {
+        "case_id": "T0054",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "dietary sodium restriction",
+        "changes": []
+      },
+      {
+        "case_id": "T0056",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary sodium excretion",
+        "changes": []
+      },
+      {
+        "case_id": "T0058",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "vasodilation",
+        "changes": []
+      },
+      {
+        "case_id": "T0060",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "smoking cessation",
+        "changes": []
+      },
+      {
+        "case_id": "T0062",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "low-sodium diet",
+        "changes": []
+      },
+      {
+        "case_id": "T0064",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "secondary prevention",
+        "changes": []
+      },
+      {
+        "case_id": "T0066",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "diuretics",
+        "changes": []
+      },
+      {
+        "case_id": "T0068",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-glucose cotransporter 2 inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0070",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "device calibration",
+        "changes": []
+      },
+      {
+        "case_id": "T0072",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "social deprivation",
+        "changes": []
+      },
+      {
+        "case_id": "T0074",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary potassium excretion",
+        "changes": []
+      },
+      {
+        "case_id": "T0076",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "postpartum hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0078",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed potassium reabsorption today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0080",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium was never reabsorption",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 2,
+    "missed_positive_case_ids": [
+      "T0092"
+    ],
+    "negative_trigger_case_ids": [
+      "T0118",
+      "T0120"
+    ],
+    "results": [
+      {
+        "case_id": "T0087",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "cardiovascular events",
+        "changes": [
+          {
+            "source": "cardiovasular events",
+            "replacement": "cardiovascular events",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.977486,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      },
+      {
+        "case_id": "T0088",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "cardiovascular events",
+        "changes": [
+          {
+            "source": "cardiovasuclar events",
+            "replacement": "cardiovascular events",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.956071,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      },
+      {
+        "case_id": "T0089",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "cardiovascular events",
+        "changes": [
+          {
+            "source": "cardiovasxcular events",
+            "replacement": "cardiovascular events",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.978559,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      },
+      {
+        "case_id": "T0090",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "cardiovascular events",
+        "changes": [
+          {
+            "source": "cardiovaszular events",
+            "replacement": "cardiovascular events",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.956071,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      },
+      {
+        "case_id": "T0091",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "cardiovascular events",
+        "changes": [
+          {
+            "source": "cardiovas cular events",
+            "replacement": "cardiovascular events",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      },
+      {
+        "case_id": "T0092",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascularevents",
+        "changes": []
+      },
+      {
+        "case_id": "T0094",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular death",
+        "changes": []
+      },
+      {
+        "case_id": "T0096",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0098",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular risk factors",
+        "changes": []
+      },
+      {
+        "case_id": "T0100",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "microvascular remodeling",
+        "changes": []
+      },
+      {
+        "case_id": "T0102",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "10-year cardiovascular disease risk",
+        "changes": []
+      },
+      {
+        "case_id": "T0104",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "atherosclerotic cardiovascular disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0106",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "vascular injury",
+        "changes": []
+      },
+      {
+        "case_id": "T0108",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "vascular fibrosis",
+        "changes": []
+      },
+      {
+        "case_id": "T0110",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiac arrhythmia",
+        "changes": []
+      },
+      {
+        "case_id": "T0112",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal revascularization",
+        "changes": []
+      },
+      {
+        "case_id": "T0114",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "vascular smooth muscle cells",
+        "changes": []
+      },
+      {
+        "case_id": "T0116",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "mandibular advancement device",
+        "changes": []
+      },
+      {
+        "case_id": "T0118",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": false,
+        "output": "They discussed cardiovascular events today.",
+        "changes": [
+          {
+            "source": "cardiovascular event",
+            "replacement": "cardiovascular events",
+            "start": 15,
+            "end": 35,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.977486,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      },
+      {
+        "case_id": "T0120",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": false,
+        "output": "cardiovascular events events",
+        "changes": [
+          {
+            "source": "cardiovascular was never",
+            "replacement": "cardiovascular events",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.941675,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "profile": "individualized",
+    "threshold": 1.0,
+    "positive_cases": 6,
+    "recovered": 1,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0087",
+      "T0088",
+      "T0089",
+      "T0090",
+      "T0092"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0087",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovasular events",
+        "changes": []
+      },
+      {
+        "case_id": "T0088",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovasuclar events",
+        "changes": []
+      },
+      {
+        "case_id": "T0089",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovasxcular events",
+        "changes": []
+      },
+      {
+        "case_id": "T0090",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovaszular events",
+        "changes": []
+      },
+      {
+        "case_id": "T0091",
+        "threshold": 1.0,
+        "triggered": true,
+        "recovered": true,
+        "output": "cardiovascular events",
+        "changes": [
+          {
+            "source": "cardiovas cular events",
+            "replacement": "cardiovascular events",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "cardiovascular events"
+          }
+        ]
+      },
+      {
+        "case_id": "T0092",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascularevents",
+        "changes": []
+      },
+      {
+        "case_id": "T0094",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular death",
+        "changes": []
+      },
+      {
+        "case_id": "T0096",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0098",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular risk factors",
+        "changes": []
+      },
+      {
+        "case_id": "T0100",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "microvascular remodeling",
+        "changes": []
+      },
+      {
+        "case_id": "T0102",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "10-year cardiovascular disease risk",
+        "changes": []
+      },
+      {
+        "case_id": "T0104",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "atherosclerotic cardiovascular disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0106",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "vascular injury",
+        "changes": []
+      },
+      {
+        "case_id": "T0108",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "vascular fibrosis",
+        "changes": []
+      },
+      {
+        "case_id": "T0110",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiac arrhythmia",
+        "changes": []
+      },
+      {
+        "case_id": "T0112",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal revascularization",
+        "changes": []
+      },
+      {
+        "case_id": "T0114",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "vascular smooth muscle cells",
+        "changes": []
+      },
+      {
+        "case_id": "T0116",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mandibular advancement device",
+        "changes": []
+      },
+      {
+        "case_id": "T0118",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed cardiovascular event today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0120",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular was never events",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 1,
+    "missed_positive_case_ids": [
+      "T0132"
+    ],
+    "negative_trigger_case_ids": [
+      "T0158"
+    ],
+    "results": [
+      {
+        "case_id": "T0127",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "tyrosine kinase inhibitors",
+        "changes": [
+          {
+            "source": "tyrosine kinase inhibiors",
+            "replacement": "tyrosine kinase inhibitors",
+            "start": 0,
+            "end": 25,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.981602,
+            "canonical": "tyrosine kinase inhibitors"
+          }
+        ]
+      },
+      {
+        "case_id": "T0128",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "tyrosine kinase inhibitors",
+        "changes": [
+          {
+            "source": "tyrosine kinase inhibiotrs",
+            "replacement": "tyrosine kinase inhibitors",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.963942,
+            "canonical": "tyrosine kinase inhibitors"
+          }
+        ]
+      },
+      {
+        "case_id": "T0129",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "tyrosine kinase inhibitors",
+        "changes": [
+          {
+            "source": "tyrosine kinase inhibixtors",
+            "replacement": "tyrosine kinase inhibitors",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.982326,
+            "canonical": "tyrosine kinase inhibitors"
+          }
+        ]
+      },
+      {
+        "case_id": "T0130",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "tyrosine kinase inhibitors",
+        "changes": [
+          {
+            "source": "tyrosine kinase inhibizors",
+            "replacement": "tyrosine kinase inhibitors",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.963942,
+            "canonical": "tyrosine kinase inhibitors"
+          }
+        ]
+      },
+      {
+        "case_id": "T0131",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "tyrosine kinase inhibitors",
+        "changes": [
+          {
+            "source": "tyrosine kinase inhibi tors",
+            "replacement": "tyrosine kinase inhibitors",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "tyrosine kinase inhibitors"
+          }
+        ]
+      },
+      {
+        "case_id": "T0132",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosinekinase inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0134",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "direct renin inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0136",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-glucose cotransporter 2 inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0138",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "acute kidney injury",
+        "changes": []
+      },
+      {
+        "case_id": "T0140",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "type 2 diabetes mellitus",
+        "changes": []
+      },
+      {
+        "case_id": "T0142",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "tonic-clonic seizures",
+        "changes": []
+      },
+      {
+        "case_id": "T0144",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "chronic kidney disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0146",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "thyroid-stimulating hormone",
+        "changes": []
+      },
+      {
+        "case_id": "T0148",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "modifiable risk factors",
+        "changes": []
+      },
+      {
+        "case_id": "T0150",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "urine albumin-to-creatinine ratio",
+        "changes": []
+      },
+      {
+        "case_id": "T0152",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "atrial fibrillation",
+        "changes": []
+      },
+      {
+        "case_id": "T0154",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal insufficiency",
+        "changes": []
+      },
+      {
+        "case_id": "T0156",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "silent cerebral infarcts",
+        "changes": []
+      },
+      {
+        "case_id": "T0158",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": false,
+        "output": "They discussed tyrosine kinase inhibitors today.",
+        "changes": [
+          {
+            "source": "tyrosine kinase inhibitor",
+            "replacement": "tyrosine kinase inhibitors",
+            "start": 15,
+            "end": 40,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.981602,
+            "canonical": "tyrosine kinase inhibitors"
+          }
+        ]
+      },
+      {
+        "case_id": "T0160",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosine was never kinase inhibitors",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "profile": "individualized",
+    "threshold": 1.0,
+    "positive_cases": 6,
+    "recovered": 1,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0127",
+      "T0128",
+      "T0129",
+      "T0130",
+      "T0132"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0127",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosine kinase inhibiors",
+        "changes": []
+      },
+      {
+        "case_id": "T0128",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosine kinase inhibiotrs",
+        "changes": []
+      },
+      {
+        "case_id": "T0129",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosine kinase inhibixtors",
+        "changes": []
+      },
+      {
+        "case_id": "T0130",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosine kinase inhibizors",
+        "changes": []
+      },
+      {
+        "case_id": "T0131",
+        "threshold": 1.0,
+        "triggered": true,
+        "recovered": true,
+        "output": "tyrosine kinase inhibitors",
+        "changes": [
+          {
+            "source": "tyrosine kinase inhibi tors",
+            "replacement": "tyrosine kinase inhibitors",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "tyrosine kinase inhibitors"
+          }
+        ]
+      },
+      {
+        "case_id": "T0132",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosinekinase inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0134",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "direct renin inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0136",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "sodium-glucose cotransporter 2 inhibitors",
+        "changes": []
+      },
+      {
+        "case_id": "T0138",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "acute kidney injury",
+        "changes": []
+      },
+      {
+        "case_id": "T0140",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "type 2 diabetes mellitus",
+        "changes": []
+      },
+      {
+        "case_id": "T0142",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "tonic-clonic seizures",
+        "changes": []
+      },
+      {
+        "case_id": "T0144",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "chronic kidney disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0146",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "thyroid-stimulating hormone",
+        "changes": []
+      },
+      {
+        "case_id": "T0148",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "modifiable risk factors",
+        "changes": []
+      },
+      {
+        "case_id": "T0150",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "urine albumin-to-creatinine ratio",
+        "changes": []
+      },
+      {
+        "case_id": "T0152",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "atrial fibrillation",
+        "changes": []
+      },
+      {
+        "case_id": "T0154",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal insufficiency",
+        "changes": []
+      },
+      {
+        "case_id": "T0156",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "silent cerebral infarcts",
+        "changes": []
+      },
+      {
+        "case_id": "T0158",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed tyrosine kinase inhibitor today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0160",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "tyrosine was never kinase inhibitors",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0172"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0167",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 18,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.973322,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0168",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCDV risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.948191,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0169",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCxVD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.974825,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0170",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCzD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.948191,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0171",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASC VD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0172",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "tenyear ASCVD risk",
+        "changes": []
+      },
+      {
+        "case_id": "T0174",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular risk",
+        "changes": []
+      },
+      {
+        "case_id": "T0176",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "atherosclerosis",
+        "changes": []
+      },
+      {
+        "case_id": "T0178",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "evidence-based review",
+        "changes": []
+      },
+      {
+        "case_id": "T0180",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "exercise",
+        "changes": []
+      },
+      {
+        "case_id": "T0182",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular risk factors",
+        "changes": []
+      },
+      {
+        "case_id": "T0184",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "sedentary behavior",
+        "changes": []
+      },
+      {
+        "case_id": "T0186",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal ischemia",
+        "changes": []
+      },
+      {
+        "case_id": "T0188",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "adrenal hyperplasia",
+        "changes": []
+      },
+      {
+        "case_id": "T0190",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "white matter lesions",
+        "changes": []
+      },
+      {
+        "case_id": "T0192",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "bilateral primary aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0194",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "open-label trial",
+        "changes": []
+      },
+      {
+        "case_id": "T0196",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "left ventricular mass index",
+        "changes": []
+      },
+      {
+        "case_id": "T0198",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed five-year ASCVD risk today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0200",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "ten-was never year ASCVD risk",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "profile": "individualized",
+    "threshold": 0.94,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0172"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0167",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 18,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.973322,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0168",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCDV risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.948191,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0169",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCxVD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.974825,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0170",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASCzD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.948191,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0171",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "ten-year ASCVD risk",
+        "changes": [
+          {
+            "source": "ten-year ASC VD risk",
+            "replacement": "ten-year ASCVD risk",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "ten-year ASCVD risk"
+          }
+        ]
+      },
+      {
+        "case_id": "T0172",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "tenyear ASCVD risk",
+        "changes": []
+      },
+      {
+        "case_id": "T0174",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular risk",
+        "changes": []
+      },
+      {
+        "case_id": "T0176",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "atherosclerosis",
+        "changes": []
+      },
+      {
+        "case_id": "T0178",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "evidence-based review",
+        "changes": []
+      },
+      {
+        "case_id": "T0180",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "exercise",
+        "changes": []
+      },
+      {
+        "case_id": "T0182",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular risk factors",
+        "changes": []
+      },
+      {
+        "case_id": "T0184",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "sedentary behavior",
+        "changes": []
+      },
+      {
+        "case_id": "T0186",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal ischemia",
+        "changes": []
+      },
+      {
+        "case_id": "T0188",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "adrenal hyperplasia",
+        "changes": []
+      },
+      {
+        "case_id": "T0190",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "white matter lesions",
+        "changes": []
+      },
+      {
+        "case_id": "T0192",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "bilateral primary aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0194",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "open-label trial",
+        "changes": []
+      },
+      {
+        "case_id": "T0196",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "left ventricular mass index",
+        "changes": []
+      },
+      {
+        "case_id": "T0198",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed five-year ASCVD risk today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0200",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "ten-was never year ASCVD risk",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 13,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0212"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0207",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Instittes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 28,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.983282,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0208",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Instittues of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 29,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.967175,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0209",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Institxutes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 30,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.983882,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0210",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Institztes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 29,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.967175,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0211",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Instit utes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 30,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0212",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "NationalInstitutes of Health",
+        "changes": []
+      },
+      {
+        "case_id": "T0214",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "family history of hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0216",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "secondary causes of hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0218",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "perinatal death",
+        "changes": []
+      },
+      {
+        "case_id": "T0220",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "medication titration",
+        "changes": []
+      },
+      {
+        "case_id": "T0222",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "millimeters of mercury",
+        "changes": []
+      },
+      {
+        "case_id": "T0224",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "myocardial ischemia",
+        "changes": []
+      },
+      {
+        "case_id": "T0226",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "gestational age",
+        "changes": []
+      },
+      {
+        "case_id": "T0228",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "nonfatal myocardial infarction",
+        "changes": []
+      },
+      {
+        "case_id": "T0230",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "triple combination therapy",
+        "changes": []
+      },
+      {
+        "case_id": "T0232",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0234",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "nocturnal hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0236",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "hospitalization for heart failure",
+        "changes": []
+      },
+      {
+        "case_id": "T0238",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "National was never Institutes of Health",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "profile": "individualized",
+    "threshold": 0.96,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 13,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0212"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0207",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Instittes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 28,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.983282,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0208",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Instittues of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 29,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.967175,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0209",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Institxutes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 30,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.983882,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0210",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Institztes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 29,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.967175,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0211",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "National Institutes of Health",
+        "changes": [
+          {
+            "source": "National Instit utes of Health",
+            "replacement": "National Institutes of Health",
+            "start": 0,
+            "end": 30,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "National Institutes of Health"
+          }
+        ]
+      },
+      {
+        "case_id": "T0212",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "NationalInstitutes of Health",
+        "changes": []
+      },
+      {
+        "case_id": "T0214",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "family history of hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0216",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "secondary causes of hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0218",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "perinatal death",
+        "changes": []
+      },
+      {
+        "case_id": "T0220",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "medication titration",
+        "changes": []
+      },
+      {
+        "case_id": "T0222",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "millimeters of mercury",
+        "changes": []
+      },
+      {
+        "case_id": "T0224",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "myocardial ischemia",
+        "changes": []
+      },
+      {
+        "case_id": "T0226",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "gestational age",
+        "changes": []
+      },
+      {
+        "case_id": "T0228",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "nonfatal myocardial infarction",
+        "changes": []
+      },
+      {
+        "case_id": "T0230",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "triple combination therapy",
+        "changes": []
+      },
+      {
+        "case_id": "T0232",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "cardiovascular disease",
+        "changes": []
+      },
+      {
+        "case_id": "T0234",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "nocturnal hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0236",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "hospitalization for heart failure",
+        "changes": []
+      },
+      {
+        "case_id": "T0238",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "National was never Institutes of Health",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 2,
+    "missed_positive_case_ids": [
+      "T0250"
+    ],
+    "negative_trigger_case_ids": [
+      "T0276",
+      "T0278"
+    ],
+    "results": [
+      {
+        "case_id": "T0245",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "mineralocorticoid receptor",
+        "changes": [
+          {
+            "source": "mineralocoricoid receptor",
+            "replacement": "mineralocorticoid receptor",
+            "start": 0,
+            "end": 25,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.981993,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      },
+      {
+        "case_id": "T0246",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "mineralocorticoid receptor",
+        "changes": [
+          {
+            "source": "mineralocoritcoid receptor",
+            "replacement": "mineralocorticoid receptor",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.964692,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      },
+      {
+        "case_id": "T0247",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "mineralocorticoid receptor",
+        "changes": [
+          {
+            "source": "mineralocorxticoid receptor",
+            "replacement": "mineralocorticoid receptor",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.982686,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      },
+      {
+        "case_id": "T0248",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "mineralocorticoid receptor",
+        "changes": [
+          {
+            "source": "mineralocorzicoid receptor",
+            "replacement": "mineralocorticoid receptor",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.964692,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      },
+      {
+        "case_id": "T0249",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "mineralocorticoid receptor",
+        "changes": [
+          {
+            "source": "mineralocor ticoid receptor",
+            "replacement": "mineralocorticoid receptor",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      },
+      {
+        "case_id": "T0250",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocorticoidreceptor",
+        "changes": []
+      },
+      {
+        "case_id": "T0252",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocorticoid receptor antagonist therapy",
+        "changes": []
+      },
+      {
+        "case_id": "T0254",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "nonsteroidal mineralocorticoid receptor antagonist",
+        "changes": []
+      },
+      {
+        "case_id": "T0256",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "glucocorticoid-remediable aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0258",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "acute aortic dissection",
+        "changes": []
+      },
+      {
+        "case_id": "T0260",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "medication reconciliation",
+        "changes": []
+      },
+      {
+        "case_id": "T0262",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "home blood pressure monitoring",
+        "changes": []
+      },
+      {
+        "case_id": "T0264",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "inter-arm blood pressure difference",
+        "changes": []
+      },
+      {
+        "case_id": "T0266",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "amiloride",
+        "changes": []
+      },
+      {
+        "case_id": "T0268",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "practice point",
+        "changes": []
+      },
+      {
+        "case_id": "T0270",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "angiotensin II receptor blockers",
+        "changes": []
+      },
+      {
+        "case_id": "T0272",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "baroreceptor reflex",
+        "changes": []
+      },
+      {
+        "case_id": "T0274",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "fetal growth restriction",
+        "changes": []
+      },
+      {
+        "case_id": "T0276",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": false,
+        "output": "They discussed mineralocorticoid receptor today.",
+        "changes": [
+          {
+            "source": "mineralocorticoid receptors",
+            "replacement": "mineralocorticoid receptor",
+            "start": 15,
+            "end": 42,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.982686,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      },
+      {
+        "case_id": "T0278",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": false,
+        "output": "mineralocorticoid receptor receptor",
+        "changes": [
+          {
+            "source": "mineralocorticoid was never",
+            "replacement": "mineralocorticoid receptor",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.91,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "profile": "individualized",
+    "threshold": 1.0,
+    "positive_cases": 6,
+    "recovered": 1,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0245",
+      "T0246",
+      "T0247",
+      "T0248",
+      "T0250"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0245",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocoricoid receptor",
+        "changes": []
+      },
+      {
+        "case_id": "T0246",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocoritcoid receptor",
+        "changes": []
+      },
+      {
+        "case_id": "T0247",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocorxticoid receptor",
+        "changes": []
+      },
+      {
+        "case_id": "T0248",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocorzicoid receptor",
+        "changes": []
+      },
+      {
+        "case_id": "T0249",
+        "threshold": 1.0,
+        "triggered": true,
+        "recovered": true,
+        "output": "mineralocorticoid receptor",
+        "changes": [
+          {
+            "source": "mineralocor ticoid receptor",
+            "replacement": "mineralocorticoid receptor",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "mineralocorticoid receptor"
+          }
+        ]
+      },
+      {
+        "case_id": "T0250",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocorticoidreceptor",
+        "changes": []
+      },
+      {
+        "case_id": "T0252",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocorticoid receptor antagonist therapy",
+        "changes": []
+      },
+      {
+        "case_id": "T0254",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "nonsteroidal mineralocorticoid receptor antagonist",
+        "changes": []
+      },
+      {
+        "case_id": "T0256",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "glucocorticoid-remediable aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0258",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "acute aortic dissection",
+        "changes": []
+      },
+      {
+        "case_id": "T0260",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "medication reconciliation",
+        "changes": []
+      },
+      {
+        "case_id": "T0262",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "home blood pressure monitoring",
+        "changes": []
+      },
+      {
+        "case_id": "T0264",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "inter-arm blood pressure difference",
+        "changes": []
+      },
+      {
+        "case_id": "T0266",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "amiloride",
+        "changes": []
+      },
+      {
+        "case_id": "T0268",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "practice point",
+        "changes": []
+      },
+      {
+        "case_id": "T0270",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "angiotensin II receptor blockers",
+        "changes": []
+      },
+      {
+        "case_id": "T0272",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "baroreceptor reflex",
+        "changes": []
+      },
+      {
+        "case_id": "T0274",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "fetal growth restriction",
+        "changes": []
+      },
+      {
+        "case_id": "T0276",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed mineralocorticoid receptors today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0278",
+        "threshold": 1.0,
+        "triggered": false,
+        "recovered": false,
+        "output": "mineralocorticoid was never receptor",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0290"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0285",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosternism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.977486,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0286",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosternoism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.956071,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0287",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosterxonism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.978559,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0288",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosterznism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.956071,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0289",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldoster onism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0290",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "primaryaldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0292",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary aldosterone",
+        "changes": []
+      },
+      {
+        "case_id": "T0294",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "hyperaldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0296",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "aldosterone",
+        "changes": []
+      },
+      {
+        "case_id": "T0298",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "glucocorticoid-remediable aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0300",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "plasma aldosterone concentration",
+        "changes": []
+      },
+      {
+        "case_id": "T0302",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "pulmonary congestion",
+        "changes": []
+      },
+      {
+        "case_id": "T0304",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal artery stenosis",
+        "changes": []
+      },
+      {
+        "case_id": "T0306",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "coronary artery calcium",
+        "changes": []
+      },
+      {
+        "case_id": "T0308",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "hyperparathyroidism",
+        "changes": []
+      },
+      {
+        "case_id": "T0310",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "aldosterone suppression test",
+        "changes": []
+      },
+      {
+        "case_id": "T0312",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "primordial prevention",
+        "changes": []
+      },
+      {
+        "case_id": "T0314",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "dietary potassium",
+        "changes": []
+      },
+      {
+        "case_id": "T0316",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed secondary aldosteronism today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0318",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "primary was never aldosteronism",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "profile": "individualized",
+    "threshold": 0.94,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0290"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0285",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosternism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 20,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.977486,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0286",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosternoism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.956071,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0287",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosterxonism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.978559,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0288",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldosterznism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.956071,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0289",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "primary aldosteronism",
+        "changes": [
+          {
+            "source": "primary aldoster onism",
+            "replacement": "primary aldosteronism",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "primary aldosteronism"
+          }
+        ]
+      },
+      {
+        "case_id": "T0290",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "primaryaldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0292",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary aldosterone",
+        "changes": []
+      },
+      {
+        "case_id": "T0294",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "hyperaldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0296",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "aldosterone",
+        "changes": []
+      },
+      {
+        "case_id": "T0298",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "glucocorticoid-remediable aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0300",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "plasma aldosterone concentration",
+        "changes": []
+      },
+      {
+        "case_id": "T0302",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "pulmonary congestion",
+        "changes": []
+      },
+      {
+        "case_id": "T0304",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "renal artery stenosis",
+        "changes": []
+      },
+      {
+        "case_id": "T0306",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "coronary artery calcium",
+        "changes": []
+      },
+      {
+        "case_id": "T0308",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "hyperparathyroidism",
+        "changes": []
+      },
+      {
+        "case_id": "T0310",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "aldosterone suppression test",
+        "changes": []
+      },
+      {
+        "case_id": "T0312",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "primordial prevention",
+        "changes": []
+      },
+      {
+        "case_id": "T0314",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "dietary potassium",
+        "changes": []
+      },
+      {
+        "case_id": "T0316",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed secondary aldosteronism today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0318",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "primary was never aldosteronism",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0330"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0325",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systoic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.979024,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0326",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systoilc blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0327",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systoxlic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.97996,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0328",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systozic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0329",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systo lic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0330",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "systolicblood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0332",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "target systolic blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0334",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "daytime blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0336",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "normal blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0338",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "supine blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0340",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "out-of-office blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0342",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "automated office blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0344",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "elevated blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0346",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "oscillometric blood pressure monitor",
+        "changes": []
+      },
+      {
+        "case_id": "T0348",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "non-elevated blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0350",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "standard blood pressure control",
+        "changes": []
+      },
+      {
+        "case_id": "T0352",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "blood pressure reading",
+        "changes": []
+      },
+      {
+        "case_id": "T0354",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "nocturnal blood pressure dipping",
+        "changes": []
+      },
+      {
+        "case_id": "T0356",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed diastolic blood pressure today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0358",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "systolic was never blood pressure",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "profile": "individualized",
+    "threshold": 0.94,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0330"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0325",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systoic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 22,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.979024,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0326",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systoilc blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0327",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systoxlic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.97996,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0328",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systozic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 23,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.959006,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0329",
+        "threshold": 0.94,
+        "triggered": true,
+        "recovered": true,
+        "output": "systolic blood pressure",
+        "changes": [
+          {
+            "source": "systo lic blood pressure",
+            "replacement": "systolic blood pressure",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "systolic blood pressure"
+          }
+        ]
+      },
+      {
+        "case_id": "T0330",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "systolicblood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0332",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "target systolic blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0334",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "daytime blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0336",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "normal blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0338",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "supine blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0340",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "out-of-office blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0342",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "automated office blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0344",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "elevated blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0346",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "oscillometric blood pressure monitor",
+        "changes": []
+      },
+      {
+        "case_id": "T0348",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "non-elevated blood pressure",
+        "changes": []
+      },
+      {
+        "case_id": "T0350",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "standard blood pressure control",
+        "changes": []
+      },
+      {
+        "case_id": "T0352",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "blood pressure reading",
+        "changes": []
+      },
+      {
+        "case_id": "T0354",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "nocturnal blood pressure dipping",
+        "changes": []
+      },
+      {
+        "case_id": "T0356",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed diastolic blood pressure today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0358",
+        "threshold": 0.94,
+        "triggered": false,
+        "recovered": false,
+        "output": "systolic was never blood pressure",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "profile": "uniform_090",
+    "threshold": 0.9,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0370"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0365",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associaion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 25,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.981602,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0366",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associaiton",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.963942,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0367",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associaxtion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.982326,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0368",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associazion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.963942,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0369",
+        "threshold": 0.9,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associa tion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0370",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "AmericanHeart Association",
+        "changes": []
+      },
+      {
+        "case_id": "T0372",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "pediatric hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0374",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "atrial fibrillation",
+        "changes": []
+      },
+      {
+        "case_id": "T0376",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "glomerular hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0378",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary sodium excretion",
+        "changes": []
+      },
+      {
+        "case_id": "T0380",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "American College of Cardiology",
+        "changes": []
+      },
+      {
+        "case_id": "T0382",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "potassium-enriched salt substitute",
+        "changes": []
+      },
+      {
+        "case_id": "T0384",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "severe hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0386",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "apparent treatment-resistant hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0388",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "vasodilation",
+        "changes": []
+      },
+      {
+        "case_id": "T0390",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "biochemical adherence testing",
+        "changes": []
+      },
+      {
+        "case_id": "T0392",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "left ventricular function",
+        "changes": []
+      },
+      {
+        "case_id": "T0394",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "lateralizing primary aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0396",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed European Heart Association today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0398",
+        "threshold": 0.9,
+        "triggered": false,
+        "recovered": false,
+        "output": "American was never Heart Association",
+        "changes": []
+      }
+    ]
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "profile": "individualized",
+    "threshold": 0.96,
+    "positive_cases": 6,
+    "recovered": 5,
+    "negative_cases": 14,
+    "negative_triggers": 0,
+    "missed_positive_case_ids": [
+      "T0370"
+    ],
+    "negative_trigger_case_ids": [],
+    "results": [
+      {
+        "case_id": "T0365",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associaion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 25,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.981602,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0366",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associaiton",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.963942,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0367",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associaxtion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.982326,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0368",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associazion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 26,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.963942,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0369",
+        "threshold": 0.96,
+        "triggered": true,
+        "recovered": true,
+        "output": "American Heart Association",
+        "changes": [
+          {
+            "source": "American Heart Associa tion",
+            "replacement": "American Heart Association",
+            "start": 0,
+            "end": 27,
+            "rule": "glossary_fuzzy",
+            "confidence": 1.0,
+            "canonical": "American Heart Association"
+          }
+        ]
+      },
+      {
+        "case_id": "T0370",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "AmericanHeart Association",
+        "changes": []
+      },
+      {
+        "case_id": "T0372",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "pediatric hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0374",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "atrial fibrillation",
+        "changes": []
+      },
+      {
+        "case_id": "T0376",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "glomerular hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0378",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "urinary sodium excretion",
+        "changes": []
+      },
+      {
+        "case_id": "T0380",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "American College of Cardiology",
+        "changes": []
+      },
+      {
+        "case_id": "T0382",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "potassium-enriched salt substitute",
+        "changes": []
+      },
+      {
+        "case_id": "T0384",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "severe hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0386",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "apparent treatment-resistant hypertension",
+        "changes": []
+      },
+      {
+        "case_id": "T0388",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "vasodilation",
+        "changes": []
+      },
+      {
+        "case_id": "T0390",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "biochemical adherence testing",
+        "changes": []
+      },
+      {
+        "case_id": "T0392",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "left ventricular function",
+        "changes": []
+      },
+      {
+        "case_id": "T0394",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "lateralizing primary aldosteronism",
+        "changes": []
+      },
+      {
+        "case_id": "T0396",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "They discussed European Heart Association today.",
+        "changes": []
+      },
+      {
+        "case_id": "T0398",
+        "threshold": 0.96,
+        "triggered": false,
+        "recovered": false,
+        "output": "American was never Heart Association",
+        "changes": []
+      }
+    ]
+  }
+]

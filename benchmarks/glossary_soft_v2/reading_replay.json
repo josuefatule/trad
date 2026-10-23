@@ -1,0 +1,1514 @@
+{
+  "policy": "medical-streaming-v2",
+  "scope": "Same saved reading; text replay with recorded fragment-release times and a controlled word stream. Not a replay of missing full ASR snapshots; no voice inference, live DeepL or OBS test.",
+  "input_text": "Today we are discussing hyper tension and hypotension. Hyper tension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hyper tension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+  "observed_original_segments": 33,
+  "observed_original_split_phrases": [
+    {
+      "phrase": "orthostatic hypotension",
+      "cut": 325
+    },
+    {
+      "phrase": "physical inactivity",
+      "cut": 634
+    },
+    {
+      "phrase": "shortness of breath",
+      "cut": 900
+    },
+    {
+      "phrase": "10 mm of mercury",
+      "cut": 538
+    }
+  ],
+  "comparisons": [
+    {
+      "schedule": "recorded_fragment_release_times",
+      "profiles": [
+        {
+          "mode": "off",
+          "segments": 23,
+          "rows": [
+            {
+              "raw": "Today we are discussing hyper tension and hypotension.",
+              "normalized": "Today we are discussing hyper tension and hypotension.",
+              "reason": "punctuation",
+              "emitted_at": 9.385,
+              "latency_ms": 2525.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Hyper tension means high blood pressure and",
+              "normalized": "Hyper tension means high blood pressure and",
+              "reason": "soft_max_age",
+              "emitted_at": 15.51600000000326,
+              "latency_ms": 3563.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hypotension means low blood pressure.",
+              "normalized": "hypotension means low blood pressure.",
+              "reason": "punctuation",
+              "emitted_at": 16.416,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "These terms describe different conditions and should remain clearly distinct.",
+              "normalized": "These terms describe different conditions and should remain clearly distinct.",
+              "reason": "punctuation",
+              "emitted_at": 21.166,
+              "latency_ms": 3072.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The first patient has resistance,",
+              "normalized": "The first patient has resistance,",
+              "reason": "soft_max_age",
+              "emitted_at": 27.872,
+              "latency_ms": 3340.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hyper tension and chronic kidney disease.",
+              "normalized": "hyper tension and chronic kidney disease.",
+              "reason": "punctuation",
+              "emitted_at": 28.572,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The second patient has orthostatic hypotension,",
+              "normalized": "The second patient has orthostatic hypotension,",
+              "reason": "target_words",
+              "emitted_at": 36.719000000011874,
+              "latency_ms": 4125.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "there is no evidence of primary outlawed",
+              "normalized": "there is no evidence of primary outlawed",
+              "reason": "soft_max_age",
+              "emitted_at": 40.469000000011874,
+              "latency_ms": 3750.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "in either patient.",
+              "normalized": "in either patient.",
+              "reason": "punctuation",
+              "emitted_at": 41.369,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The report includes systolic blood pressure,",
+              "normalized": "The report includes systolic blood pressure,",
+              "reason": "soft_max_age",
+              "emitted_at": 47.807,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the astolic blood pressure, high rate and kidney function.",
+              "normalized": "the astolic blood pressure, high rate and kidney function.",
+              "reason": "punctuation",
+              "emitted_at": 49.869,
+              "latency_ms": 2962.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Blood pressure increase by 10 mm of mercury.",
+              "normalized": "Blood pressure increase by 10 mm of mercury.",
+              "reason": "punctuation",
+              "emitted_at": 54.041,
+              "latency_ms": 2072.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The recorded dose was 5 mg,",
+              "normalized": "The recorded dose was 5 mg,",
+              "reason": "soft_max_age",
+              "emitted_at": 60.325,
+              "latency_ms": 3340.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "not 15 mg.",
+              "normalized": "not 15 mg.",
+              "reason": "punctuation",
+              "emitted_at": 60.525,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "We also reviewed physical activity and physical inactivity.",
+              "normalized": "We also reviewed physical activity and physical inactivity.",
+              "reason": "punctuation",
+              "emitted_at": 65.307,
+              "latency_ms": 1932.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The patient discussed cardiovascular risks,",
+              "normalized": "The patient discussed cardiovascular risks,",
+              "reason": "soft_max_age",
+              "emitted_at": 73.875,
+              "latency_ms": 4172.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "lifestyle modifications and pharmacological therapy.",
+              "normalized": "lifestyle modifications and pharmacological therapy.",
+              "reason": "punctuation",
+              "emitted_at": 74.775,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Several blood pressure measurements were recorded by the clinical team.",
+              "normalized": "Several blood pressure measurements were recorded by the clinical team.",
+              "reason": "punctuation",
+              "emitted_at": 80.728,
+              "latency_ms": 2446.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Finally,",
+              "normalized": "Finally,",
+              "reason": "soft_max_age",
+              "emitted_at": 86.266,
+              "latency_ms": 3391.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the report states that there is no",
+              "normalized": "the report states that there is no",
+              "reason": "soft_max_age",
+              "emitted_at": 87.075,
+              "latency_ms": 3309.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "edema, no chest pain and no shortness of breath.",
+              "normalized": "edema, no chest pain and no shortness of breath.",
+              "reason": "punctuation",
+              "emitted_at": 89.572,
+              "latency_ms": 2697.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "This negative findings,",
+              "normalized": "This negative findings,",
+              "reason": "soft_max_age",
+              "emitted_at": 97.29700000002049,
+              "latency_ms": 3562.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "most remain unchanged in the translation",
+              "normalized": "most remain unchanged in the translation",
+              "reason": "session_end",
+              "emitted_at": 100.83500000001513,
+              "latency_ms": 3538.0,
+              "corrections": [],
+              "terminology_context": ""
+            }
+          ],
+          "normalized": "Today we are discussing hyper tension and hypotension. Hyper tension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hyper tension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+          "split_phrases": [],
+          "boundary_bypasses": [],
+          "corrections": 0
+        },
+        {
+          "mode": "soft",
+          "segments": 18,
+          "rows": [
+            {
+              "raw": "Today we are discussing hyper tension and hypotension.",
+              "normalized": "Today we are discussing hypertension and hypotension.",
+              "reason": "punctuation",
+              "emitted_at": 9.385,
+              "latency_ms": 2525.0,
+              "corrections": [
+                {
+                  "source": "hyper tension",
+                  "replacement": "hypertension",
+                  "start": 24,
+                  "end": 37,
+                  "rule": "medical_token_join",
+                  "confidence": 1.0,
+                  "canonical": "hypertension"
+                }
+              ],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nhypertension = hipertensión arterial\nhypotension = hipotensión"
+            },
+            {
+              "raw": "Hyper tension means high blood pressure and hypotension means low blood pressure.",
+              "normalized": "Hypertension means high blood pressure and hypotension means low blood pressure.",
+              "reason": "punctuation",
+              "emitted_at": 16.416,
+              "latency_ms": 4463.0,
+              "corrections": [
+                {
+                  "source": "Hyper tension",
+                  "replacement": "Hypertension",
+                  "start": 0,
+                  "end": 13,
+                  "rule": "medical_token_join",
+                  "confidence": 1.0,
+                  "canonical": "hypertension"
+                }
+              ],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nhypertension = hipertensión arterial\nblood pressure = presión arterial\nhypotension = hipotensión"
+            },
+            {
+              "raw": "These terms describe different conditions and should remain clearly distinct.",
+              "normalized": "These terms describe different conditions and should remain clearly distinct.",
+              "reason": "punctuation",
+              "emitted_at": 21.166,
+              "latency_ms": 3072.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The first patient has resistance, hyper tension and chronic kidney disease.",
+              "normalized": "The first patient has resistance, hypertension and chronic kidney disease.",
+              "reason": "punctuation",
+              "emitted_at": 28.572,
+              "latency_ms": 4040.0,
+              "corrections": [
+                {
+                  "source": "hyper tension",
+                  "replacement": "hypertension",
+                  "start": 34,
+                  "end": 47,
+                  "rule": "medical_token_join",
+                  "confidence": 1.0,
+                  "canonical": "hypertension"
+                }
+              ],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nhypertension = hipertensión arterial\nchronic kidney disease = enfermedad renal crónica"
+            },
+            {
+              "raw": "The second patient has orthostatic hypotension,",
+              "normalized": "The second patient has orthostatic hypotension,",
+              "reason": "hard_max_age",
+              "emitted_at": 38.119,
+              "latency_ms": 5525.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\northostatic hypotension = hipotensión ortostática"
+            },
+            {
+              "raw": "there is no evidence of primary outlawed",
+              "normalized": "there is no evidence of primary outlawed",
+              "reason": "soft_max_age",
+              "emitted_at": 40.469000000011874,
+              "latency_ms": 3750.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "in either patient.",
+              "normalized": "in either patient.",
+              "reason": "punctuation",
+              "emitted_at": 41.369,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The report includes systolic blood pressure, the astolic blood pressure,",
+              "normalized": "The report includes systolic blood pressure, the astolic blood pressure,",
+              "reason": "target_words",
+              "emitted_at": 48.969000000011874,
+              "latency_ms": 4562.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nsystolic blood pressure = presión arterial sistólica\nblood pressure = presión arterial"
+            },
+            {
+              "raw": "high rate and kidney function.",
+              "normalized": "high rate and kidney function.",
+              "reason": "punctuation",
+              "emitted_at": 49.869,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nkidney function = función renal"
+            },
+            {
+              "raw": "Blood pressure increase by 10 mm of mercury.",
+              "normalized": "Blood pressure increase by 10 mm of mercury.",
+              "reason": "punctuation",
+              "emitted_at": 54.041,
+              "latency_ms": 2072.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nblood pressure = presión arterial"
+            },
+            {
+              "raw": "The recorded dose was 5 mg, not 15 mg.",
+              "normalized": "The recorded dose was 5 mg, not 15 mg.",
+              "reason": "punctuation",
+              "emitted_at": 60.525,
+              "latency_ms": 3540.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "We also reviewed physical activity and physical inactivity.",
+              "normalized": "We also reviewed physical activity and physical inactivity.",
+              "reason": "punctuation",
+              "emitted_at": 65.307,
+              "latency_ms": 1932.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nphysical activity = actividad física\nphysical inactivity = inactividad física"
+            },
+            {
+              "raw": "The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy.",
+              "normalized": "The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy.",
+              "reason": "punctuation",
+              "emitted_at": 74.775,
+              "latency_ms": 5072.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\npharmacological therapy = tratamiento farmacológico"
+            },
+            {
+              "raw": "Several blood pressure measurements were recorded by the clinical team.",
+              "normalized": "Several blood pressure measurements were recorded by the clinical team.",
+              "reason": "punctuation",
+              "emitted_at": 80.728,
+              "latency_ms": 2446.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nblood pressure = presión arterial"
+            },
+            {
+              "raw": "Finally, the report states that there is no edema,",
+              "normalized": "Finally, the report states that there is no edema,",
+              "reason": "target_words",
+              "emitted_at": 88.375,
+              "latency_ms": 5500.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "no chest pain and no shortness of breath.",
+              "normalized": "no chest pain and no shortness of breath.",
+              "reason": "punctuation",
+              "emitted_at": 89.572,
+              "latency_ms": 1197.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nchest pain = dolor torácico"
+            },
+            {
+              "raw": "This negative findings,",
+              "normalized": "This negative findings,",
+              "reason": "hard_max_age",
+              "emitted_at": 99.297,
+              "latency_ms": 5562.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "most remain unchanged in the translation",
+              "normalized": "most remain unchanged in the translation",
+              "reason": "session_end",
+              "emitted_at": 100.83500000001513,
+              "latency_ms": 3538.0,
+              "corrections": [],
+              "terminology_context": ""
+            }
+          ],
+          "normalized": "Today we are discussing hypertension and hypotension. Hypertension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hypertension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+          "split_phrases": [],
+          "boundary_bypasses": [],
+          "corrections": 3
+        },
+        {
+          "mode": "shadow",
+          "segments": 23,
+          "rows": [
+            {
+              "raw": "Today we are discussing hyper tension and hypotension.",
+              "normalized": "Today we are discussing hyper tension and hypotension.",
+              "reason": "punctuation",
+              "emitted_at": 9.385,
+              "latency_ms": 2525.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Hyper tension means high blood pressure and",
+              "normalized": "Hyper tension means high blood pressure and",
+              "reason": "soft_max_age",
+              "emitted_at": 15.51600000000326,
+              "latency_ms": 3563.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hypotension means low blood pressure.",
+              "normalized": "hypotension means low blood pressure.",
+              "reason": "punctuation",
+              "emitted_at": 16.416,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "These terms describe different conditions and should remain clearly distinct.",
+              "normalized": "These terms describe different conditions and should remain clearly distinct.",
+              "reason": "punctuation",
+              "emitted_at": 21.166,
+              "latency_ms": 3072.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The first patient has resistance,",
+              "normalized": "The first patient has resistance,",
+              "reason": "soft_max_age",
+              "emitted_at": 27.872,
+              "latency_ms": 3340.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hyper tension and chronic kidney disease.",
+              "normalized": "hyper tension and chronic kidney disease.",
+              "reason": "punctuation",
+              "emitted_at": 28.572,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The second patient has orthostatic hypotension,",
+              "normalized": "The second patient has orthostatic hypotension,",
+              "reason": "target_words",
+              "emitted_at": 36.719000000011874,
+              "latency_ms": 4125.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "there is no evidence of primary outlawed",
+              "normalized": "there is no evidence of primary outlawed",
+              "reason": "soft_max_age",
+              "emitted_at": 40.469000000011874,
+              "latency_ms": 3750.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "in either patient.",
+              "normalized": "in either patient.",
+              "reason": "punctuation",
+              "emitted_at": 41.369,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The report includes systolic blood pressure,",
+              "normalized": "The report includes systolic blood pressure,",
+              "reason": "soft_max_age",
+              "emitted_at": 47.807,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the astolic blood pressure, high rate and kidney function.",
+              "normalized": "the astolic blood pressure, high rate and kidney function.",
+              "reason": "punctuation",
+              "emitted_at": 49.869,
+              "latency_ms": 2962.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Blood pressure increase by 10 mm of mercury.",
+              "normalized": "Blood pressure increase by 10 mm of mercury.",
+              "reason": "punctuation",
+              "emitted_at": 54.041,
+              "latency_ms": 2072.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The recorded dose was 5 mg,",
+              "normalized": "The recorded dose was 5 mg,",
+              "reason": "soft_max_age",
+              "emitted_at": 60.325,
+              "latency_ms": 3340.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "not 15 mg.",
+              "normalized": "not 15 mg.",
+              "reason": "punctuation",
+              "emitted_at": 60.525,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "We also reviewed physical activity and physical inactivity.",
+              "normalized": "We also reviewed physical activity and physical inactivity.",
+              "reason": "punctuation",
+              "emitted_at": 65.307,
+              "latency_ms": 1932.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The patient discussed cardiovascular risks,",
+              "normalized": "The patient discussed cardiovascular risks,",
+              "reason": "soft_max_age",
+              "emitted_at": 73.875,
+              "latency_ms": 4172.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "lifestyle modifications and pharmacological therapy.",
+              "normalized": "lifestyle modifications and pharmacological therapy.",
+              "reason": "punctuation",
+              "emitted_at": 74.775,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Several blood pressure measurements were recorded by the clinical team.",
+              "normalized": "Several blood pressure measurements were recorded by the clinical team.",
+              "reason": "punctuation",
+              "emitted_at": 80.728,
+              "latency_ms": 2446.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Finally,",
+              "normalized": "Finally,",
+              "reason": "soft_max_age",
+              "emitted_at": 86.266,
+              "latency_ms": 3391.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the report states that there is no",
+              "normalized": "the report states that there is no",
+              "reason": "soft_max_age",
+              "emitted_at": 87.075,
+              "latency_ms": 3309.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "edema, no chest pain and no shortness of breath.",
+              "normalized": "edema, no chest pain and no shortness of breath.",
+              "reason": "punctuation",
+              "emitted_at": 89.572,
+              "latency_ms": 2697.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "This negative findings,",
+              "normalized": "This negative findings,",
+              "reason": "soft_max_age",
+              "emitted_at": 97.29700000002049,
+              "latency_ms": 3562.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "most remain unchanged in the translation",
+              "normalized": "most remain unchanged in the translation",
+              "reason": "session_end",
+              "emitted_at": 100.83500000001513,
+              "latency_ms": 3538.0,
+              "corrections": [],
+              "terminology_context": ""
+            }
+          ],
+          "normalized": "Today we are discussing hyper tension and hypotension. Hyper tension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hyper tension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+          "split_phrases": [],
+          "boundary_bypasses": [],
+          "corrections": 0
+        }
+      ]
+    },
+    {
+      "schedule": "controlled_word_stream_400ms",
+      "profiles": [
+        {
+          "mode": "off",
+          "segments": 31,
+          "rows": [
+            {
+              "raw": "Today we are discussing hyper tension and",
+              "normalized": "Today we are discussing hyper tension and",
+              "reason": "soft_max_age",
+              "emitted_at": 3.3,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hypotension.",
+              "normalized": "hypotension.",
+              "reason": "punctuation",
+              "emitted_at": 3.7,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Hyper tension means high blood pressure and",
+              "normalized": "Hyper tension means high blood pressure and",
+              "reason": "soft_max_age",
+              "emitted_at": 6.5,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hypotension means low blood pressure.",
+              "normalized": "hypotension means low blood pressure.",
+              "reason": "punctuation",
+              "emitted_at": 8.5,
+              "latency_ms": 2500.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "These terms describe different conditions and should",
+              "normalized": "These terms describe different conditions and should",
+              "reason": "soft_max_age",
+              "emitted_at": 11.3,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "remain clearly distinct.",
+              "normalized": "remain clearly distinct.",
+              "reason": "punctuation",
+              "emitted_at": 12.5,
+              "latency_ms": 1700.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The first patient has resistance,",
+              "normalized": "The first patient has resistance,",
+              "reason": "soft_max_age",
+              "emitted_at": 15.3,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hyper tension and chronic kidney disease.",
+              "normalized": "hyper tension and chronic kidney disease.",
+              "reason": "punctuation",
+              "emitted_at": 16.8,
+              "latency_ms": 2800.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The second patient has orthostatic hypotension,",
+              "normalized": "The second patient has orthostatic hypotension,",
+              "reason": "soft_max_age",
+              "emitted_at": 19.8,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "there is no evidence of primary outlawed",
+              "normalized": "there is no evidence of primary outlawed",
+              "reason": "soft_max_age",
+              "emitted_at": 22.1,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "in either patient.",
+              "normalized": "in either patient.",
+              "reason": "punctuation",
+              "emitted_at": 23.200000000000003,
+              "latency_ms": 1600.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The report includes systolic blood pressure,",
+              "normalized": "The report includes systolic blood pressure,",
+              "reason": "soft_max_age",
+              "emitted_at": 26.1,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the astolic blood pressure,",
+              "normalized": "the astolic blood pressure,",
+              "reason": "soft_max_age",
+              "emitted_at": 28.6,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "high rate and kidney function.",
+              "normalized": "high rate and kidney function.",
+              "reason": "punctuation",
+              "emitted_at": 29.200000000000003,
+              "latency_ms": 2400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Blood pressure increase by 10 mm of",
+              "normalized": "Blood pressure increase by 10 mm of",
+              "reason": "soft_max_age",
+              "emitted_at": 32.1,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "mercury.",
+              "normalized": "mercury.",
+              "reason": "punctuation",
+              "emitted_at": 32.5,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The recorded dose was 5 mg,",
+              "normalized": "The recorded dose was 5 mg,",
+              "reason": "soft_max_age",
+              "emitted_at": 35.4,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "not 15 mg.",
+              "normalized": "not 15 mg.",
+              "reason": "punctuation",
+              "emitted_at": 36.1,
+              "latency_ms": 1700.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "We also reviewed physical activity and physical",
+              "normalized": "We also reviewed physical activity and physical",
+              "reason": "soft_max_age",
+              "emitted_at": 39.0,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "inactivity.",
+              "normalized": "inactivity.",
+              "reason": "punctuation",
+              "emitted_at": 39.3,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The patient discussed cardiovascular risks,",
+              "normalized": "The patient discussed cardiovascular risks,",
+              "reason": "soft_max_age",
+              "emitted_at": 42.2,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "lifestyle modifications and pharmacological therapy.",
+              "normalized": "lifestyle modifications and pharmacological therapy.",
+              "reason": "punctuation",
+              "emitted_at": 43.3,
+              "latency_ms": 2500.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Several blood pressure measurements were recorded by",
+              "normalized": "Several blood pressure measurements were recorded by",
+              "reason": "soft_max_age",
+              "emitted_at": 46.2,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the clinical team.",
+              "normalized": "the clinical team.",
+              "reason": "punctuation",
+              "emitted_at": 47.3,
+              "latency_ms": 1700.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Finally,",
+              "normalized": "Finally,",
+              "reason": "soft_max_age",
+              "emitted_at": 50.2,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the report states that there is no",
+              "normalized": "the report states that there is no",
+              "reason": "soft_max_age",
+              "emitted_at": 50.6,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "edema,",
+              "normalized": "edema,",
+              "reason": "soft_max_age",
+              "emitted_at": 53.4,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "no chest pain and no shortness of",
+              "normalized": "no chest pain and no shortness of",
+              "reason": "soft_max_age",
+              "emitted_at": 53.8,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "breath.",
+              "normalized": "breath.",
+              "reason": "punctuation",
+              "emitted_at": 54.1,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "This negative findings,",
+              "normalized": "This negative findings,",
+              "reason": "soft_max_age",
+              "emitted_at": 57.800000000000004,
+              "latency_ms": 4200.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "most remain unchanged in the translation",
+              "normalized": "most remain unchanged in the translation",
+              "reason": "session_end",
+              "emitted_at": 57.900000000000006,
+              "latency_ms": 3100.0,
+              "corrections": [],
+              "terminology_context": ""
+            }
+          ],
+          "normalized": "Today we are discussing hyper tension and hypotension. Hyper tension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hyper tension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+          "split_phrases": [
+            {
+              "phrase": "physical inactivity",
+              "cut": 634
+            },
+            {
+              "phrase": "shortness of breath",
+              "cut": 900
+            },
+            {
+              "phrase": "10 mm of mercury",
+              "cut": 538
+            }
+          ],
+          "boundary_bypasses": [],
+          "corrections": 0
+        },
+        {
+          "mode": "soft",
+          "segments": 22,
+          "rows": [
+            {
+              "raw": "Today we are discussing hyper tension and hypotension.",
+              "normalized": "Today we are discussing hypertension and hypotension.",
+              "reason": "punctuation",
+              "emitted_at": 3.7,
+              "latency_ms": 3700.0,
+              "corrections": [
+                {
+                  "source": "hyper tension",
+                  "replacement": "hypertension",
+                  "start": 24,
+                  "end": 37,
+                  "rule": "medical_token_join",
+                  "confidence": 1.0,
+                  "canonical": "hypertension"
+                }
+              ],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nhypertension = hipertensión arterial\nhypotension = hipotensión"
+            },
+            {
+              "raw": "Hyper tension means high blood pressure and hypotension",
+              "normalized": "Hypertension means high blood pressure and hypotension",
+              "reason": "soft_max_age",
+              "emitted_at": 6.800000000000001,
+              "latency_ms": 3600.0,
+              "corrections": [
+                {
+                  "source": "Hyper tension",
+                  "replacement": "Hypertension",
+                  "start": 0,
+                  "end": 13,
+                  "rule": "medical_token_join",
+                  "confidence": 1.0,
+                  "canonical": "hypertension"
+                }
+              ],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nhypertension = hipertensión arterial\nblood pressure = presión arterial\nhypotension = hipotensión"
+            },
+            {
+              "raw": "means low blood pressure.",
+              "normalized": "means low blood pressure.",
+              "reason": "punctuation",
+              "emitted_at": 8.5,
+              "latency_ms": 2100.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nblood pressure = presión arterial"
+            },
+            {
+              "raw": "These terms describe different conditions and should remain",
+              "normalized": "These terms describe different conditions and should remain",
+              "reason": "soft_max_age",
+              "emitted_at": 11.600000000000001,
+              "latency_ms": 3600.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "clearly distinct.",
+              "normalized": "clearly distinct.",
+              "reason": "punctuation",
+              "emitted_at": 12.5,
+              "latency_ms": 1300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The first patient has resistance, hyper tension",
+              "normalized": "The first patient has resistance, hypertension",
+              "reason": "soft_max_age",
+              "emitted_at": 15.3,
+              "latency_ms": 3300.0,
+              "corrections": [
+                {
+                  "source": "hyper tension",
+                  "replacement": "hypertension",
+                  "start": 34,
+                  "end": 47,
+                  "rule": "medical_token_join",
+                  "confidence": 1.0,
+                  "canonical": "hypertension"
+                }
+              ],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nhypertension = hipertensión arterial"
+            },
+            {
+              "raw": "and chronic kidney disease.",
+              "normalized": "and chronic kidney disease.",
+              "reason": "punctuation",
+              "emitted_at": 16.8,
+              "latency_ms": 2000.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nchronic kidney disease = enfermedad renal crónica"
+            },
+            {
+              "raw": "The second patient has orthostatic hypotension,",
+              "normalized": "The second patient has orthostatic hypotension,",
+              "reason": "hard_max_age",
+              "emitted_at": 22.0,
+              "latency_ms": 5600.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\northostatic hypotension = hipotensión ortostática"
+            },
+            {
+              "raw": "there is no evidence of primary outlawed",
+              "normalized": "there is no evidence of primary outlawed",
+              "reason": "soft_max_age",
+              "emitted_at": 22.1,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "in either patient.",
+              "normalized": "in either patient.",
+              "reason": "punctuation",
+              "emitted_at": 23.200000000000003,
+              "latency_ms": 1600.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The report includes systolic blood pressure, the astolic blood pressure,",
+              "normalized": "The report includes systolic blood pressure, the astolic blood pressure,",
+              "reason": "soft_max_age",
+              "emitted_at": 27.200000000000003,
+              "latency_ms": 4400.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nsystolic blood pressure = presión arterial sistólica\nblood pressure = presión arterial"
+            },
+            {
+              "raw": "high rate and kidney function.",
+              "normalized": "high rate and kidney function.",
+              "reason": "punctuation",
+              "emitted_at": 29.200000000000003,
+              "latency_ms": 2400.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nkidney function = función renal"
+            },
+            {
+              "raw": "Blood pressure increase by 10 mm of mercury.",
+              "normalized": "Blood pressure increase by 10 mm of mercury.",
+              "reason": "punctuation",
+              "emitted_at": 32.5,
+              "latency_ms": 3700.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nblood pressure = presión arterial"
+            },
+            {
+              "raw": "The recorded dose was 5 mg, not 15",
+              "normalized": "The recorded dose was 5 mg, not 15",
+              "reason": "soft_max_age",
+              "emitted_at": 35.7,
+              "latency_ms": 3700.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "mg.",
+              "normalized": "mg.",
+              "reason": "punctuation",
+              "emitted_at": 36.1,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "We also reviewed physical activity and physical inactivity.",
+              "normalized": "We also reviewed physical activity and physical inactivity.",
+              "reason": "punctuation",
+              "emitted_at": 39.3,
+              "latency_ms": 3700.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nphysical activity = actividad física\nphysical inactivity = inactividad física"
+            },
+            {
+              "raw": "The patient discussed cardiovascular risks, lifestyle modifications",
+              "normalized": "The patient discussed cardiovascular risks, lifestyle modifications",
+              "reason": "soft_max_age",
+              "emitted_at": 42.2,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "and pharmacological therapy.",
+              "normalized": "and pharmacological therapy.",
+              "reason": "punctuation",
+              "emitted_at": 43.3,
+              "latency_ms": 1700.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\npharmacological therapy = tratamiento farmacológico"
+            },
+            {
+              "raw": "Several blood pressure measurements were recorded by the clinical team.",
+              "normalized": "Several blood pressure measurements were recorded by the clinical team.",
+              "reason": "punctuation",
+              "emitted_at": 47.3,
+              "latency_ms": 4500.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nblood pressure = presión arterial"
+            },
+            {
+              "raw": "Finally, the report states that there is no edema,",
+              "normalized": "Finally, the report states that there is no edema,",
+              "reason": "soft_max_age",
+              "emitted_at": 50.800000000000004,
+              "latency_ms": 4000.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "no chest pain and no shortness of breath.",
+              "normalized": "no chest pain and no shortness of breath.",
+              "reason": "punctuation",
+              "emitted_at": 54.1,
+              "latency_ms": 3700.0,
+              "corrections": [],
+              "terminology_context": "Medical terminology reference for this passage (EN → ES):\nchest pain = dolor torácico"
+            },
+            {
+              "raw": "This negative findings, most remain unchanged in the translation",
+              "normalized": "This negative findings, most remain unchanged in the translation",
+              "reason": "session_end",
+              "emitted_at": 57.900000000000006,
+              "latency_ms": 4300.0,
+              "corrections": [],
+              "terminology_context": ""
+            }
+          ],
+          "normalized": "Today we are discussing hypertension and hypotension. Hypertension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hypertension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+          "split_phrases": [],
+          "boundary_bypasses": [],
+          "corrections": 3
+        },
+        {
+          "mode": "shadow",
+          "segments": 31,
+          "rows": [
+            {
+              "raw": "Today we are discussing hyper tension and",
+              "normalized": "Today we are discussing hyper tension and",
+              "reason": "soft_max_age",
+              "emitted_at": 3.3,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hypotension.",
+              "normalized": "hypotension.",
+              "reason": "punctuation",
+              "emitted_at": 3.7,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Hyper tension means high blood pressure and",
+              "normalized": "Hyper tension means high blood pressure and",
+              "reason": "soft_max_age",
+              "emitted_at": 6.5,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hypotension means low blood pressure.",
+              "normalized": "hypotension means low blood pressure.",
+              "reason": "punctuation",
+              "emitted_at": 8.5,
+              "latency_ms": 2500.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "These terms describe different conditions and should",
+              "normalized": "These terms describe different conditions and should",
+              "reason": "soft_max_age",
+              "emitted_at": 11.3,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "remain clearly distinct.",
+              "normalized": "remain clearly distinct.",
+              "reason": "punctuation",
+              "emitted_at": 12.5,
+              "latency_ms": 1700.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The first patient has resistance,",
+              "normalized": "The first patient has resistance,",
+              "reason": "soft_max_age",
+              "emitted_at": 15.3,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "hyper tension and chronic kidney disease.",
+              "normalized": "hyper tension and chronic kidney disease.",
+              "reason": "punctuation",
+              "emitted_at": 16.8,
+              "latency_ms": 2800.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The second patient has orthostatic hypotension,",
+              "normalized": "The second patient has orthostatic hypotension,",
+              "reason": "soft_max_age",
+              "emitted_at": 19.8,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "there is no evidence of primary outlawed",
+              "normalized": "there is no evidence of primary outlawed",
+              "reason": "soft_max_age",
+              "emitted_at": 22.1,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "in either patient.",
+              "normalized": "in either patient.",
+              "reason": "punctuation",
+              "emitted_at": 23.200000000000003,
+              "latency_ms": 1600.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The report includes systolic blood pressure,",
+              "normalized": "The report includes systolic blood pressure,",
+              "reason": "soft_max_age",
+              "emitted_at": 26.1,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the astolic blood pressure,",
+              "normalized": "the astolic blood pressure,",
+              "reason": "soft_max_age",
+              "emitted_at": 28.6,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "high rate and kidney function.",
+              "normalized": "high rate and kidney function.",
+              "reason": "punctuation",
+              "emitted_at": 29.200000000000003,
+              "latency_ms": 2400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Blood pressure increase by 10 mm of",
+              "normalized": "Blood pressure increase by 10 mm of",
+              "reason": "soft_max_age",
+              "emitted_at": 32.1,
+              "latency_ms": 3300.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "mercury.",
+              "normalized": "mercury.",
+              "reason": "punctuation",
+              "emitted_at": 32.5,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The recorded dose was 5 mg,",
+              "normalized": "The recorded dose was 5 mg,",
+              "reason": "soft_max_age",
+              "emitted_at": 35.4,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "not 15 mg.",
+              "normalized": "not 15 mg.",
+              "reason": "punctuation",
+              "emitted_at": 36.1,
+              "latency_ms": 1700.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "We also reviewed physical activity and physical",
+              "normalized": "We also reviewed physical activity and physical",
+              "reason": "soft_max_age",
+              "emitted_at": 39.0,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "inactivity.",
+              "normalized": "inactivity.",
+              "reason": "punctuation",
+              "emitted_at": 39.3,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "The patient discussed cardiovascular risks,",
+              "normalized": "The patient discussed cardiovascular risks,",
+              "reason": "soft_max_age",
+              "emitted_at": 42.2,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "lifestyle modifications and pharmacological therapy.",
+              "normalized": "lifestyle modifications and pharmacological therapy.",
+              "reason": "punctuation",
+              "emitted_at": 43.3,
+              "latency_ms": 2500.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Several blood pressure measurements were recorded by",
+              "normalized": "Several blood pressure measurements were recorded by",
+              "reason": "soft_max_age",
+              "emitted_at": 46.2,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the clinical team.",
+              "normalized": "the clinical team.",
+              "reason": "punctuation",
+              "emitted_at": 47.3,
+              "latency_ms": 1700.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "Finally,",
+              "normalized": "Finally,",
+              "reason": "soft_max_age",
+              "emitted_at": 50.2,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "the report states that there is no",
+              "normalized": "the report states that there is no",
+              "reason": "soft_max_age",
+              "emitted_at": 50.6,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "edema,",
+              "normalized": "edema,",
+              "reason": "soft_max_age",
+              "emitted_at": 53.4,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "no chest pain and no shortness of",
+              "normalized": "no chest pain and no shortness of",
+              "reason": "soft_max_age",
+              "emitted_at": 53.8,
+              "latency_ms": 3400.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "breath.",
+              "normalized": "breath.",
+              "reason": "punctuation",
+              "emitted_at": 54.1,
+              "latency_ms": 900.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "This negative findings,",
+              "normalized": "This negative findings,",
+              "reason": "soft_max_age",
+              "emitted_at": 57.800000000000004,
+              "latency_ms": 4200.0,
+              "corrections": [],
+              "terminology_context": ""
+            },
+            {
+              "raw": "most remain unchanged in the translation",
+              "normalized": "most remain unchanged in the translation",
+              "reason": "session_end",
+              "emitted_at": 57.900000000000006,
+              "latency_ms": 3100.0,
+              "corrections": [],
+              "terminology_context": ""
+            }
+          ],
+          "normalized": "Today we are discussing hyper tension and hypotension. Hyper tension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hyper tension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+          "split_phrases": [
+            {
+              "phrase": "physical inactivity",
+              "cut": 634
+            },
+            {
+              "phrase": "shortness of breath",
+              "cut": 900
+            },
+            {
+              "phrase": "10 mm of mercury",
+              "cut": 538
+            }
+          ],
+          "boundary_bypasses": [],
+          "corrections": 0
+        }
+      ]
+    }
+  ]
+}

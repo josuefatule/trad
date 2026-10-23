@@ -25,6 +25,7 @@ class TranslationRequest:
     ready_at: float | None = None
     normalization_latency_ms: float | None = None
     timing: TranslationTiming | None = None
+    terminology_context: str = ""
 
     def to_dict(self):
         return asdict(self)
@@ -51,6 +52,8 @@ class TranslationResult:
     ready_at: float | None = None
     normalization_latency_ms: float | None = None
     timing: TranslationTiming | None = None
+    source_language: str = "es"
+    target_language: str = "en"
 
     def to_dict(self):
         return asdict(self)

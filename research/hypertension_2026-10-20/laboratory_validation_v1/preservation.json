@@ -1,0 +1,19 @@
+{
+  "files_checked": 943,
+  "strictly_protected_files_checked": 732,
+  "all_original_glossaries_research_package_corpus_cached_asr_unchanged": true,
+  "other_snapshot_drift": [
+    {
+      "path": "trad_lab/m5c2r/test_presentation.cjs",
+      "before_sha256": "2a555383ff3d8a6dfa4a60ec7113e93dd2353c578a4d36516d7a645387c8d01a",
+      "observed_sha256": "592fd85273bdaf2b0a6cdd6200c3cc6dc15313b3ae1936d4fc3498bdefe9187d",
+      "decision": "outside_this_task_write_boundary_not_reverted"
+    }
+  ],
+  "authored_paths": [
+    "trad_lab/glossary_package.py",
+    "tests/test_glossary_package.py",
+    "research\\hypertension_2026-10-20\\laboratory_validation_v1/"
+  ],
+  "app_code_config_services_and_translation_not_modified_or_started": true
+}

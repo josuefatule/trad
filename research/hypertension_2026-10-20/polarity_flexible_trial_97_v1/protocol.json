@@ -1,0 +1,76 @@
+{
+  "frozen_at_utc": "2026-10-22T04:44:00.476143+00:00",
+  "same_97_terms": true,
+  "exact_only_17_unchanged": true,
+  "thresholds": "For each existing active threshold T use min(T, cap). Caps are fixed at .92, .90 and .88 before replay; no ASR-based selection or retuning.",
+  "pressure_policy": "Before selection require unchanged ordered direction signature. Visible hyper/hypo roots and exact split forms are preserved. Near forms without visible direction abstain as ambiguous.",
+  "profiles": [
+    "previous97",
+    "direction_guard_same",
+    "old_guard_cap090",
+    "direction_guard_cap092",
+    "direction_guard_cap090",
+    "direction_guard_cap088"
+  ],
+  "source_hashes": [
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/run_flexible.py",
+      "sha256": "6701c6ac031644ac4547e0fa82b5445d708c57eadfe6f65e969558af8867dd3e"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/pressure_guard.py",
+      "sha256": "1278fe5d599a660065e50f3781026f7267cfc1add8f0c224a895efe9cbd02c03"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/test_pressure.py",
+      "sha256": "c8da7c009f73e2d3e5d43825c366bdee170865bdffd420eff47cef5ca72b6656"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/boundary_normalizer.py",
+      "sha256": "3250673007d91fa7423cf9a72ad3e32d287621a8ce6452c7618862f6f7478bdd"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/lab_normalizer.py",
+      "sha256": "364b8685aaa1d11e3764d8de704a4caa823b05d60d7e5d070022c33c378cac1c"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/evaluate_context.py",
+      "sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3"
+    },
+    {
+      "path": "app/captions/terminology_normalizer.py",
+      "sha256": "0b1ddfb6d760ca7ad891cb88c0ef1b17f625f5b46b5072a6b583eac4f8fcf0cf"
+    },
+    {
+      "path": "trad_lab/metrics.py",
+      "sha256": "53154d9418bee8245f909d7b1163c328c5de883e8053eb9b6104b34c62c5a61d"
+    }
+  ],
+  "frozen_data": [
+    {
+      "name": "inputs.json",
+      "sha256": "2a6adb47d90a781c72990c6d95b2241d806f09a262c8060978d0e05ae5058b7c"
+    },
+    {
+      "name": "pressure_cases.json",
+      "sha256": "14e19cf594ae8c3c10e13c5ec37d1c74cabfbee61db29e95aa3016270d07406a"
+    },
+    {
+      "name": "constructed_cases.json",
+      "sha256": "92225575be00fc9e3157132f13ab2bed4f4d43b715e0d053ab98ff9f50dcf010"
+    },
+    {
+      "name": "context_cases.json",
+      "sha256": "2ce9dfcf1c8ac7de3650a32e45e8adb7d2ebfc9ae8781c357be842ee6833c1d7"
+    },
+    {
+      "name": "existing_regression_cases.json",
+      "sha256": "1d398b041a592810c04c24eb2609b88956a1332d48904dd1dac12f2f8aef7515"
+    }
+  ],
+  "prior_failures_used_for_development": true,
+  "independent_holdout": false,
+  "new_asr_inference": false,
+  "write_boundary": "C:\\live-captions\\research\\hypertension_2026-10-20\\polarity_flexible_trial_97_v1",
+  "integration_performed": false
+}

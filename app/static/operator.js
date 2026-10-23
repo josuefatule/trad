@@ -4,6 +4,11 @@ const ui = new OperatorConsole.ConsoleView($);
 globalThis.OperatorUI = ui;
 let active = null;
 let captureWindow=null,monitor=null;
+let captureDeviceId=null,preferredInput=null;
+try {
+  const saved=JSON.parse(localStorage.getItem("trad-audio-input-v1"));
+  if(typeof saved?.deviceId==="string" && saved.deviceId && typeof saved.label==="string")preferredInput=saved;
+} catch {}
 const historyPanels=["partial","confirmed","segments","pending","ready","normalized","normalized-segments","english","english-segments","corrections"];
 function newHistory(sessionId=null) {
   return {readyIds:new Set(),normalizedSegments:[],translatedSegments:[],translationResults:new Map(),nextTranslationSequence:1,sessionId,truncated:0};
@@ -67,7 +72,7 @@ function renderSegmentation(s, result, normalization) {
   for (const segment of result.ready_segments) {
     if (s.readyIds.has(segment.id)) continue;
     const item = normalizedById.get(segment.id);
-    if (!item) throw new Error("El backend no envió NORMALIZED ES. Reinicia FastAPI y recarga esta página.");
+    if (!item) throw new Error("El backend no envió el texto normalizado. Reinicia FastAPI y recarga esta página.");
     s.readyIds.add(segment.id);
     $("ready").textContent += `[${segment.id}] [${stamp(segment.start_time)} → ${stamp(segment.end_time)}] ${segment.reason} · ${segment.word_count} palabras · ${Math.round(segment.latency_ms)} ms\n${segment.text}\n\n`;
     s.normalizedSegments.push(item.normalized_text);
@@ -155,13 +160,28 @@ async function microphones(permission = false) {
     const temporary = await navigator.mediaDevices.getUserMedia({audio: true});
     temporary.getTracks().forEach(track => track.stop());
   }
-  const selected = $("microphone").value;
+  const selected = $("microphone").value || preferredInput?.deviceId || "";
   const devices = (await navigator.mediaDevices.enumerateDevices()).filter(d => d.kind === "audioinput");
+  const missing=selected && !devices.some(d=>d.deviceId===selected);
   $("microphone").replaceChildren(new Option("Predeterminado", ""),
-    ...devices.map((d, i) => new Option(d.label || `Micrófono ${i + 1}`, d.deviceId)));
-  if (devices.some(d => d.deviceId === selected)) $("microphone").value = selected;
+    ...devices.map((d, i) => new Option(d.label || `Micrófono ${i + 1}`, d.deviceId)),
+    ...(missing?[new Option(`${preferredInput?.label || "Entrada seleccionada"} · no disponible`,selected)]:[]));
+  $("microphone").value = selected;
   $("selected-microphone").textContent=$("microphone").selectedOptions?.[0]?.textContent || "Predeterminado";
 }
+$("microphone").onchange=()=>{
+  if(ui.localActive)return;
+  const deviceId=$("microphone").value;
+  preferredInput=deviceId?{deviceId,label:$("microphone").selectedOptions?.[0]?.textContent || "Entrada de audio"}:null;
+  try {
+    if(preferredInput)localStorage.setItem("trad-audio-input-v1",JSON.stringify(preferredInput));
+    else localStorage.removeItem("trad-audio-input-v1");
+  } catch {}
+  $("selected-microphone").textContent=$("microphone").selectedOptions?.[0]?.textContent || "Predeterminado";
+};
+navigator.mediaDevices.addEventListener?.("devicechange",()=>{
+  if(!ui.localActive && !active)microphones().catch(error=>ui.error(error));
+});
 async function release(s) {
   if (s.releasing) return s.releasing;
   s.releasing = (async () => {
@@ -183,6 +203,7 @@ async function fail(s, error) {
   debug($("error").textContent);
   s.socket?.close();
   await release(s);
+  if(ui.captureMode)window.opener?.postMessage({type:"capture_failed"},location.origin);
   if (active === s) { active = null; controls(false); }
   $("capture").textContent = "Micrófono inactivo";
 }
@@ -234,6 +255,11 @@ $("refresh").onclick = () => microphones(true).catch(error => ui.error(error));
 $("clear").onclick = () => ui.clear();
 $("recover-owner").onclick=async()=>{const input=$("recovery-code");const code=input.value;input.value="";await ui.command("recover",{admin_code:code});};
 $("rearm-translator").onclick=()=>ui.command("translator-reset");
+$("acknowledge-stop").onclick=()=>ui.command("acknowledge-stop");
+$("direction").onchange=()=>{
+  if(ui.canSelectDirection() && ["en-es","es-en"].includes($("direction").value))ui.directionId=$("direction").value;
+  ui.render();
+};
 $("start").onclick = async () => {
   if(active || !await ui.ready || $("start").disabled)return;
   if(ui.recovery && !ui.captureMode){
@@ -241,10 +267,13 @@ $("start").onclick = async () => {
     captureWindow=window.open("/capture","_blank","popup,width=620,height=420");
     if(!captureWindow){$("error").textContent="Permite ventanas emergentes para abrir CAPTURE. El audio necesita una ventana que permanezca abierta.";return;}
     ui.localActive=true;ui.phaseTo("STARTING");
+    ui.startPending=true;ui.pendingSessionId=ui.snapshot?.session_id;
+    captureWindow.requestedDirection=ui.directionId;
     $("control-notice").textContent="Mantén CAPTURE abierta. Puedes recargar esta consola sin cortar audio.";
     return;
   }
   const s = newHistory();
+  s.direction=ui.directionSupported?ui.directionId:null;
   active = s;
   controls(true);
   ui.phaseTo("STARTING");ui.startedAt=Date.now();
@@ -257,13 +286,16 @@ $("start").onclick = async () => {
   try {
     // Create/resume in the click gesture, before waiting for WLK.
     s.context = new AudioContext();
-    const deviceId = $("microphone").value;
+    // CAPTURE may receive START before its asynchronous device list is ready.
+    // Keep the exact operator selection independently of the popup's <select>.
+    const deviceId = captureDeviceId ?? $("microphone").value;
     s.stream = await navigator.mediaDevices.getUserMedia({audio: deviceId ? {deviceId: {exact: deviceId}} : true});
     // A same-origin capture popup receives START via postMessage. Obtain its
     // capture stream before resume so Chromium's WebAudio policy permits it.
     await s.context.resume();
     s.stream.getAudioTracks()[0].onended = () => { if (active === s && !s.stopping) fail(s, new Error("Micrófono desconectado")); };
-    const socket = s.socket = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws/session`, ["operator.v1",ui.token]);
+    const directionQuery=s.direction?`?direction=${encodeURIComponent(s.direction)}`:"";
+    const socket = s.socket = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws/session${directionQuery}`, ["operator.v1",ui.token]);
     s.timer = setTimeout(() => fail(s, new Error("Timeout al conectar con WLK")), 120000);
     socket.onmessage = async event => {
       if (active !== s) return;
@@ -275,6 +307,8 @@ $("start").onclick = async () => {
         debug(`${data.type} ${data.state || data.payload?.type || data.payload?.status || ""}`);
         if(data.type==="operator_command" && data.command==="stop"){await $("stop").onclick();return;}
         if (data.type === "config") {
+          if(s.direction && (data.capabilities?.session_direction!==1 || data.direction?.id!==s.direction))
+            throw Error("Backend incompatible: direction was not confirmed");
           if(data.capabilities?.operator_console!==1 || data.capabilities?.captions_clear!==1)throw Error("Backend incompatible con M6");
           if (data.capabilities?.terminology_normalizer !== 1) {
             throw new Error("Backend anterior a Milestone 3.1. Reinicia FastAPI y recarga esta página.");
@@ -343,16 +377,26 @@ $("stop").onclick = async () => {
   } catch (error) { await fail(s, error); }
 };
 window.addEventListener("beforeunload", () => {
+  if(ui.captureMode)window.opener?.postMessage({type:"capture_closed"},location.origin);
   active?.stream?.getTracks().forEach(track => track.stop());
   active?.socket?.close();
 });
 window.addEventListener("message",async event=>{
   if(event.origin!==location.origin)return;
+  if(!ui.captureMode && event.source===captureWindow && ["capture_failed","capture_closed"].includes(event.data?.type) && ui.startPending){
+    ui.startPending=false;ui.localActive=false;await ui.refresh();
+  }
   if(!ui.captureMode && event.source===captureWindow && event.data?.type==="capture_ready"){
-    captureWindow.postMessage({type:"capture_start",token:ui.token,deviceId:$("microphone").value},location.origin);
+    captureWindow.postMessage({type:"capture_start",token:ui.token,deviceId:$("microphone").value,direction:captureWindow.requestedDirection},location.origin);
   }
   if(ui.captureMode && event.source===window.opener && event.data?.type==="capture_start" && !active){
-    await ui.ready;ui.token=event.data.token;$("microphone").value=event.data.deviceId || "";
+    await ui.ready;ui.token=event.data.token;
+    captureDeviceId=typeof event.data.deviceId==="string"?event.data.deviceId:"";
+    $("microphone").value=captureDeviceId;
+    if(ui.directionSupported){
+      if(!["en-es","es-en"].includes(event.data.direction))return;
+      ui.directionId=event.data.direction;ui.render();
+    }
     $("start").disabled=false;await $("start").onclick();
   }
 });

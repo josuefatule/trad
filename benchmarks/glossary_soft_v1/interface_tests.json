@@ -1,0 +1,17 @@
+[
+  {
+    "test": "tests/test_glossary_control.cjs",
+    "passed": true,
+    "output": "PASS: glossary selector changes, active-session lock, environment override and failed change"
+  },
+  {
+    "test": "tests/test_operator_console.cjs",
+    "passed": true,
+    "output": "PASS: operator state machine, auth, CLEAR/history, EOF, metrics, sustained alerts, old backend and microphone errors"
+  },
+  {
+    "test": "tests/test_reliability.cjs",
+    "passed": true,
+    "output": "PASS: isolated capture, refresh/resume without audio restart, owner STOP/EOF, journal restore/dedup and visible UI bounds"
+  }
+]

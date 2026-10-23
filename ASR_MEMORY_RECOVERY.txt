@@ -1,0 +1,54 @@
+RECUPERACIÓN DE ASR — 22 OCTUBRE 2026
+
+Causa observada: WhisperLiveKit registró CUDA error: out of memory. La sesión
+12ecae586ee1 había producido 41 traducciones y acabó con stop_timeout y cierre
+incompleto. La interfaz USB sí había entregado señal. Copias del fallo y del
+historial quedan en benchmarks/asr_memory_v1; no se borró ni se declaró
+completado ese cierre.
+
+Mitigación reversible: mismo modelo small y GPU, con --audio-max-len 10 y
+--max-context-tokens 96, opciones soportadas por WLK 0.2.26 instalado.
+Limita contexto de reconocimiento, sin recortar el historial de captions.
+Menor contexto podría afectar continuidad o reconocimiento: sigue pendiente
+la evaluación con una sesión real prolongada en español.
+
+RestartASR en Start-TRAD.ps1 permite recuperar solo el reconocedor propio
+cuando no hay captura activa. No reinicia la API ni borra historial. La
+recuperación local del cierre anterior se reconoció explícitamente. Operator
+muestra STOPPED y permite otra sesión, manteniendo el resultado incompleto.
+Se conserva Español → English y se seleccionó la interfaz USB exacta; su
+selección persistió al recargar Chrome. Los scripts llevan versión en su URL
+para cargar estos controles actualizados.
+
+VERIFICACIÓN
+
+- Carga real de 180 segundos sobre ASR, fixture inglés de 60 segundos repetido
+  tres veces: 720 paquetes PCM, texto recibido y cierre ready_to_stop.
+  Resultado PASS en load-test.json. Sin micrófono ni DeepL.
+- Dos observaciones durante carga: 2813 y 2921 MiB ocupados de 8188 MiB.
+  No constituyen medición continua del pico de memoria.
+- 10 pruebas Python: perfil acotado/reversión y contrato bidireccional.
+- 3 suites JavaScript: controles/recuperación, captura e interfaz USB.
+- 30 controles del lanzador en PowerShell 5 y 7.
+- Comprobación local de ASR/API/UI/657 conceptos/overlay HTTP y WebSocket:
+  PASS en readiness.json, sin iniciar sesión ni solicitar traducción.
+- No se certifica con esta prueba una conferencia completa ni precisión
+  clínica o acústica en español. La siguiente lectura real la inicia el usuario.
+
+REPETIR
+
+Abrir http://localhost:8010/operator y pulsar START SESSION. Entrada:
+Microphone (USB AUDIO DEVICE) (2f6e:4e02). Dirección: Español → English.
+La otra laptop abre http://10.10.4.214:3000/overlay mientras siga vigente esa IP.
+
+REVERSIÓN
+
+Con captura cerrada, en la misma consola PowerShell:
+
+    $env:TRAD_ASR_MEMORY_PROFILE = 'legacy'
+    .\Start-TRAD.ps1 -Action RestartASR
+
+Para volver al ajuste actual: sustituir legacy por bounded. El modo legacy
+restaura exactamente los argumentos anteriores y puede reproducir el fallo.
+Copias del código anterior a este ajuste: backups/asr-memory-v1.
+Glosario original, investigación y evidencias anteriores se conservan intactos.

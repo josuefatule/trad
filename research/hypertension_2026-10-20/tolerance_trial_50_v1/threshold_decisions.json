@@ -1,0 +1,7195 @@
+[
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "canonical_en": "resistant hypertension",
+    "preferred_es": "hipertensión resistente",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00006"
+        ],
+        "negative_trigger_case_ids": [
+          "F01873"
+        ]
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00006"
+        ],
+        "negative_trigger_case_ids": [
+          "F01873"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00006"
+        ],
+        "negative_trigger_case_ids": [
+          "F01873"
+        ]
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00006"
+        ],
+        "negative_trigger_case_ids": [
+          "F01873"
+        ]
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00006"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 16,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00002",
+          "F00004",
+          "F00006"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 16,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00001",
+          "F00002",
+          "F00003",
+          "F00004",
+          "F00006"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 16,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00001",
+          "F00002",
+          "F00003",
+          "F00004",
+          "F00006"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 16,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00001",
+          "F00002",
+          "F00003",
+          "F00004",
+          "F00006"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "canonical_en": "spironolactone",
+    "preferred_es": "espironolactona",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00039",
+          "F00040",
+          "F00041",
+          "F00042",
+          "F00043"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "canonical_en": "cardiometabolic risk",
+    "preferred_es": "riesgo cardiometabólico",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00074",
+          "F00076",
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00073",
+          "F00074",
+          "F00075",
+          "F00076",
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00073",
+          "F00074",
+          "F00075",
+          "F00076",
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00073",
+          "F00074",
+          "F00075",
+          "F00076",
+          "F00078"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "canonical_en": "heart disease",
+    "preferred_es": "cardiopatía",
+    "selected_auto_threshold": 0.92,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00112",
+          "F00114",
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00112",
+          "F00114",
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00111",
+          "F00112",
+          "F00113",
+          "F00114",
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00111",
+          "F00112",
+          "F00113",
+          "F00114",
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00111",
+          "F00112",
+          "F00113",
+          "F00114",
+          "F00116"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "preferred_es": "presión arterial elevada",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00150",
+          "F00152",
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00149",
+          "F00150",
+          "F00151",
+          "F00152",
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00149",
+          "F00150",
+          "F00151",
+          "F00152",
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00149",
+          "F00150",
+          "F00151",
+          "F00152",
+          "F00154"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "preferred_es": "presión arterial",
+    "selected_auto_threshold": 0.92,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00188",
+          "F00190",
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00188",
+          "F00190",
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00187",
+          "F00188",
+          "F00189",
+          "F00190",
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00187",
+          "F00188",
+          "F00189",
+          "F00190",
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00187",
+          "F00188",
+          "F00189",
+          "F00190",
+          "F00192"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "canonical_en": "cardiovascular risk",
+    "preferred_es": "riesgo cardiovascular",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00226",
+          "F00228",
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00225",
+          "F00226",
+          "F00227",
+          "F00228",
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00225",
+          "F00226",
+          "F00227",
+          "F00228",
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00225",
+          "F00226",
+          "F00227",
+          "F00228",
+          "F00230"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "canonical_en": "target systolic blood pressure",
+    "preferred_es": "objetivo de presión arterial sistólica",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00264",
+          "F00266",
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00263",
+          "F00264",
+          "F00265",
+          "F00266",
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00263",
+          "F00264",
+          "F00265",
+          "F00266",
+          "F00268"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "canonical_en": "hormone replacement therapy",
+    "preferred_es": "terapia hormonal de reemplazo",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00304",
+          "F00306",
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00303",
+          "F00304",
+          "F00305",
+          "F00306",
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00303",
+          "F00304",
+          "F00305",
+          "F00306",
+          "F00308"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "canonical_en": "immunosuppressive agents",
+    "preferred_es": "inmunosupresores",
+    "selected_auto_threshold": 1.0,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00346"
+        ],
+        "negative_trigger_case_ids": [
+          "F01881"
+        ]
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00346"
+        ],
+        "negative_trigger_case_ids": [
+          "F01881"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00346"
+        ],
+        "negative_trigger_case_ids": [
+          "F01881"
+        ]
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00346"
+        ],
+        "negative_trigger_case_ids": [
+          "F01881"
+        ]
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00346"
+        ],
+        "negative_trigger_case_ids": [
+          "F01881"
+        ]
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00346"
+        ],
+        "negative_trigger_case_ids": [
+          "F01881"
+        ]
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F00342",
+          "F00344",
+          "F00346"
+        ],
+        "negative_trigger_case_ids": [
+          "F01881"
+        ]
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00341",
+          "F00342",
+          "F00343",
+          "F00344",
+          "F00346"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00341",
+          "F00342",
+          "F00343",
+          "F00344",
+          "F00346"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "canonical_en": "diuretics",
+    "preferred_es": "diuréticos",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00379",
+          "F00380",
+          "F00381",
+          "F00382",
+          "F00383"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "canonical_en": "atherosclerosis",
+    "preferred_es": "aterosclerosis",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00413",
+          "F00414",
+          "F00415",
+          "F00416",
+          "F00417"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "preferred_es": "hipertensión arterial",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00447",
+          "F00448",
+          "F00449",
+          "F00450",
+          "F00451"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "canonical_en": "micrograms per deciliter",
+    "preferred_es": "microgramos por decilitro",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00481",
+          "F00482",
+          "F00483",
+          "F00484",
+          "F00485",
+          "F00486"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "canonical_en": "incidence",
+    "preferred_es": "incidencia",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00519",
+          "F00520",
+          "F00521",
+          "F00522",
+          "F00523"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "canonical_en": "isometric resistance exercise",
+    "preferred_es": "ejercicio isométrico de fuerza",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00554",
+          "F00556",
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00553",
+          "F00554",
+          "F00555",
+          "F00556",
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00553",
+          "F00554",
+          "F00555",
+          "F00556",
+          "F00558"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "canonical_en": "pharmacological therapy",
+    "preferred_es": "tratamiento farmacológico",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00592",
+          "F00594",
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 2,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00591",
+          "F00592",
+          "F00594",
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00591",
+          "F00592",
+          "F00593",
+          "F00594",
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00591",
+          "F00592",
+          "F00593",
+          "F00594",
+          "F00596"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "canonical_en": "as low as reasonably achievable",
+    "preferred_es": "tan baja como sea razonablemente alcanzable",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00630",
+          "F00632",
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00629",
+          "F00630",
+          "F00631",
+          "F00632",
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00629",
+          "F00630",
+          "F00631",
+          "F00632",
+          "F00634"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "canonical_en": "weight loss",
+    "preferred_es": "pérdida de peso",
+    "selected_auto_threshold": 0.9,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00668",
+          "F00670",
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00668",
+          "F00670",
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00667",
+          "F00668",
+          "F00669",
+          "F00670",
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00667",
+          "F00668",
+          "F00669",
+          "F00670",
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00667",
+          "F00668",
+          "F00669",
+          "F00670",
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00667",
+          "F00668",
+          "F00669",
+          "F00670",
+          "F00672"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "canonical_en": "renin suppression",
+    "preferred_es": "supresión de renina",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00706",
+          "F00708",
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00705",
+          "F00706",
+          "F00707",
+          "F00708",
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00705",
+          "F00706",
+          "F00707",
+          "F00708",
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00705",
+          "F00706",
+          "F00707",
+          "F00708",
+          "F00710"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "canonical_en": "hypotension",
+    "preferred_es": "hipotensión",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00743",
+          "F00744",
+          "F00745",
+          "F00746",
+          "F00747"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "canonical_en": "chronic kidney disease",
+    "preferred_es": "enfermedad renal crónica",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00778",
+          "F00780",
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00777",
+          "F00778",
+          "F00779",
+          "F00780",
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00777",
+          "F00778",
+          "F00779",
+          "F00780",
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00777",
+          "F00778",
+          "F00779",
+          "F00780",
+          "F00782"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "canonical_en": "blood pressure target",
+    "preferred_es": "objetivo de presión arterial",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00816",
+          "F00818",
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00815",
+          "F00816",
+          "F00817",
+          "F00818",
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00815",
+          "F00816",
+          "F00817",
+          "F00818",
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00815",
+          "F00816",
+          "F00817",
+          "F00818",
+          "F00820"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "canonical_en": "exercise",
+    "preferred_es": "ejercicio",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00853",
+          "F00854",
+          "F00855",
+          "F00856",
+          "F00857"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "canonical_en": "prehypertension",
+    "preferred_es": "prehipertensión",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00887",
+          "F00888",
+          "F00889",
+          "F00890",
+          "F00891"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "canonical_en": "millimoles per day",
+    "preferred_es": "milimoles por día",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00922",
+          "F00924",
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00921",
+          "F00922",
+          "F00923",
+          "F00924",
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00921",
+          "F00922",
+          "F00923",
+          "F00924",
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00921",
+          "F00922",
+          "F00923",
+          "F00924",
+          "F00926"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "canonical_en": "micrograms per day",
+    "preferred_es": "microgramos por día",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00959",
+          "F00960",
+          "F00961",
+          "F00962",
+          "F00963",
+          "F00964"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "canonical_en": "non-elevated blood pressure",
+    "preferred_es": "presión arterial no elevada",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00998",
+          "F01000",
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00997",
+          "F00998",
+          "F00999",
+          "F01000",
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F00997",
+          "F00998",
+          "F00999",
+          "F01000",
+          "F01002"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "canonical_en": "alcohol intake",
+    "preferred_es": "consumo de alcohol",
+    "selected_auto_threshold": 0.92,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01036",
+          "F01038",
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01036",
+          "F01038",
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01035",
+          "F01036",
+          "F01037",
+          "F01038",
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01035",
+          "F01036",
+          "F01037",
+          "F01038",
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01035",
+          "F01036",
+          "F01037",
+          "F01038",
+          "F01040"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "canonical_en": "serious adverse events",
+    "preferred_es": "eventos adversos graves",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01074",
+          "F01076",
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01073",
+          "F01074",
+          "F01075",
+          "F01076",
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01073",
+          "F01074",
+          "F01075",
+          "F01076",
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 15,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01073",
+          "F01074",
+          "F01075",
+          "F01076",
+          "F01078"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "canonical_en": "salt loading",
+    "preferred_es": "sobrecarga de sodio",
+    "selected_auto_threshold": 0.92,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01114",
+          "F01116",
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 2,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01113",
+          "F01114",
+          "F01116",
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01113",
+          "F01114",
+          "F01115",
+          "F01116",
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01113",
+          "F01114",
+          "F01115",
+          "F01116",
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01113",
+          "F01114",
+          "F01115",
+          "F01116",
+          "F01118"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "canonical_en": "renin-independent aldosterone production",
+    "preferred_es": "producción de aldosterona independiente de renina",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01152",
+          "F01154",
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01151",
+          "F01152",
+          "F01153",
+          "F01154",
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01151",
+          "F01152",
+          "F01153",
+          "F01154",
+          "F01156"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "canonical_en": "mineralocorticoid receptor antagonists",
+    "preferred_es": "antagonistas del receptor de mineralocorticoides",
+    "selected_auto_threshold": 1.0,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "F01194"
+        ],
+        "negative_trigger_case_ids": [
+          "F01201",
+          "F01919"
+        ]
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "F01194"
+        ],
+        "negative_trigger_case_ids": [
+          "F01201",
+          "F01919"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "F01194"
+        ],
+        "negative_trigger_case_ids": [
+          "F01201",
+          "F01919"
+        ]
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "F01194"
+        ],
+        "negative_trigger_case_ids": [
+          "F01201",
+          "F01919"
+        ]
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "F01194"
+        ],
+        "negative_trigger_case_ids": [
+          "F01201",
+          "F01919"
+        ]
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 16,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "F01194"
+        ],
+        "negative_trigger_case_ids": [
+          "F01201",
+          "F01919"
+        ]
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 16,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "F01190",
+          "F01192",
+          "F01194"
+        ],
+        "negative_trigger_case_ids": [
+          "F01201",
+          "F01919"
+        ]
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 16,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01189",
+          "F01190",
+          "F01191",
+          "F01192",
+          "F01194"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 16,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01189",
+          "F01190",
+          "F01191",
+          "F01192",
+          "F01194"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "canonical_en": "urinary aldosterone",
+    "preferred_es": "aldosterona urinaria",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01230",
+          "F01232",
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01229",
+          "F01230",
+          "F01231",
+          "F01232",
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01229",
+          "F01230",
+          "F01231",
+          "F01232",
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01229",
+          "F01230",
+          "F01231",
+          "F01232",
+          "F01234"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "canonical_en": "oral contraceptives",
+    "preferred_es": "anticonceptivos orales",
+    "selected_auto_threshold": 1.0,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01272"
+        ],
+        "negative_trigger_case_ids": [
+          "F01923"
+        ]
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01272"
+        ],
+        "negative_trigger_case_ids": [
+          "F01923"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01272"
+        ],
+        "negative_trigger_case_ids": [
+          "F01923"
+        ]
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01272"
+        ],
+        "negative_trigger_case_ids": [
+          "F01923"
+        ]
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01272"
+        ],
+        "negative_trigger_case_ids": [
+          "F01923"
+        ]
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01268",
+          "F01270",
+          "F01272"
+        ],
+        "negative_trigger_case_ids": [
+          "F01923"
+        ]
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01267",
+          "F01268",
+          "F01269",
+          "F01270",
+          "F01272"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01267",
+          "F01268",
+          "F01269",
+          "F01270",
+          "F01272"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01267",
+          "F01268",
+          "F01269",
+          "F01270",
+          "F01272"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "canonical_en": "hypokalemic metabolic alkalosis",
+    "preferred_es": "alcalosis metabólica hipopotasémica",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01310"
+        ],
+        "negative_trigger_case_ids": [
+          "F01925"
+        ]
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01310"
+        ],
+        "negative_trigger_case_ids": [
+          "F01925"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01310"
+        ],
+        "negative_trigger_case_ids": [
+          "F01925"
+        ]
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01310"
+        ],
+        "negative_trigger_case_ids": [
+          "F01925"
+        ]
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01310"
+        ],
+        "negative_trigger_case_ids": [
+          "F01925"
+        ]
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01310"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01306",
+          "F01308",
+          "F01310"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01305",
+          "F01306",
+          "F01307",
+          "F01308",
+          "F01310"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01305",
+          "F01306",
+          "F01307",
+          "F01308",
+          "F01310"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "preferred_es": "aldosterona",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01343",
+          "F01344",
+          "F01345",
+          "F01346",
+          "F01347"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "canonical_en": "physical activity",
+    "preferred_es": "actividad física",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01382"
+        ],
+        "negative_trigger_case_ids": [
+          "F01389"
+        ]
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01382"
+        ],
+        "negative_trigger_case_ids": [
+          "F01389"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01382"
+        ],
+        "negative_trigger_case_ids": [
+          "F01389"
+        ]
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01382"
+        ],
+        "negative_trigger_case_ids": [
+          "F01389"
+        ]
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01382"
+        ],
+        "negative_trigger_case_ids": [
+          "F01389"
+        ]
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01378",
+          "F01380",
+          "F01382"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01377",
+          "F01378",
+          "F01379",
+          "F01380",
+          "F01382"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01377",
+          "F01378",
+          "F01379",
+          "F01380",
+          "F01382"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01377",
+          "F01378",
+          "F01379",
+          "F01380",
+          "F01382"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "canonical_en": "meta-analysis",
+    "preferred_es": "metaanálisis",
+    "selected_auto_threshold": 0.92,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 4,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 4,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 4,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 4,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 2,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01416",
+          "F01418",
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 2,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01416",
+          "F01418",
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01415",
+          "F01416",
+          "F01417",
+          "F01418",
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01415",
+          "F01416",
+          "F01417",
+          "F01418",
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01415",
+          "F01416",
+          "F01417",
+          "F01418",
+          "F01419",
+          "F01420"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "preferred_es": "enfermedad cardiovascular",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01454",
+          "F01456",
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01453",
+          "F01454",
+          "F01455",
+          "F01456",
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01453",
+          "F01454",
+          "F01455",
+          "F01456",
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01453",
+          "F01454",
+          "F01455",
+          "F01456",
+          "F01458"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "canonical_en": "evidence-based review",
+    "preferred_es": "revisión basada en la evidencia",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01492",
+          "F01494",
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01491",
+          "F01492",
+          "F01493",
+          "F01494",
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01491",
+          "F01492",
+          "F01493",
+          "F01494",
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01491",
+          "F01492",
+          "F01493",
+          "F01494",
+          "F01496"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "canonical_en": "direct renin concentration",
+    "preferred_es": "concentración directa de renina",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01530",
+          "F01532",
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01529",
+          "F01530",
+          "F01531",
+          "F01532",
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01529",
+          "F01530",
+          "F01531",
+          "F01532",
+          "F01534"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "canonical_en": "alcohol moderation",
+    "preferred_es": "moderación del consumo de alcohol",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01568",
+          "F01570",
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01567",
+          "F01568",
+          "F01569",
+          "F01570",
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01567",
+          "F01568",
+          "F01569",
+          "F01570",
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01567",
+          "F01568",
+          "F01569",
+          "F01570",
+          "F01572"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "canonical_en": "subclinical atherosclerosis",
+    "preferred_es": "aterosclerosis subclínica",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01606",
+          "F01608",
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01605",
+          "F01606",
+          "F01607",
+          "F01608",
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01605",
+          "F01606",
+          "F01607",
+          "F01608",
+          "F01610"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "canonical_en": "older adults",
+    "preferred_es": "adultos mayores",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01648"
+        ],
+        "negative_trigger_case_ids": [
+          "F01929"
+        ]
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01648"
+        ],
+        "negative_trigger_case_ids": [
+          "F01929"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01648"
+        ],
+        "negative_trigger_case_ids": [
+          "F01929"
+        ]
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01648"
+        ],
+        "negative_trigger_case_ids": [
+          "F01929"
+        ]
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "F01644",
+          "F01646",
+          "F01648"
+        ],
+        "negative_trigger_case_ids": [
+          "F01929"
+        ]
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 2,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01643",
+          "F01644",
+          "F01646",
+          "F01648"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01643",
+          "F01644",
+          "F01645",
+          "F01646",
+          "F01648"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01643",
+          "F01644",
+          "F01645",
+          "F01646",
+          "F01648"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01643",
+          "F01644",
+          "F01645",
+          "F01646",
+          "F01648"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "canonical_en": "healthy diet",
+    "preferred_es": "alimentación saludable",
+    "selected_auto_threshold": 0.92,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01682",
+          "F01684",
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 2,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01681",
+          "F01682",
+          "F01684",
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01681",
+          "F01682",
+          "F01683",
+          "F01684",
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01681",
+          "F01682",
+          "F01683",
+          "F01684",
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01681",
+          "F01682",
+          "F01683",
+          "F01684",
+          "F01686"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "canonical_en": "co-chair",
+    "preferred_es": "copresidente",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 0,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01719",
+          "F01720",
+          "F01721",
+          "F01722",
+          "F01723",
+          "F01724"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "canonical_en": "blood pressure control",
+    "preferred_es": "control de la presión arterial",
+    "selected_auto_threshold": 0.94,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 3,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01758",
+          "F01760",
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01757",
+          "F01758",
+          "F01759",
+          "F01760",
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01757",
+          "F01758",
+          "F01759",
+          "F01760",
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01757",
+          "F01758",
+          "F01759",
+          "F01760",
+          "F01762"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "canonical_en": "prevalence",
+    "preferred_es": "prevalencia",
+    "selected_auto_threshold": null,
+    "mode": "exact_only_no_useful_guarded_fuzzy_recovery",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 5,
+        "recovered": 0,
+        "negative_cases": 12,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01795",
+          "F01796",
+          "F01797",
+          "F01798",
+          "F01799"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "No useful positive recovery with zero negative triggers; fuzzy remains disabled in this research profile",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "canonical_en": "diastolic blood pressure",
+    "preferred_es": "presión arterial diastólica",
+    "selected_auto_threshold": 0.96,
+    "mode": "fuzzy_with_frozen_guards",
+    "calibration_grid": [
+      {
+        "threshold": 0.86,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.88,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.92,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.98,
+        "positive_cases": 6,
+        "recovered": 2,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01829",
+          "F01830",
+          "F01832",
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 0.99,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01829",
+          "F01830",
+          "F01831",
+          "F01832",
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      {
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "F01829",
+          "F01830",
+          "F01831",
+          "F01832",
+          "F01834"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    ],
+    "tested_zero_negative_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "reason": "Highest constructed recovery with zero negatives; higher threshold breaks ties",
+    "guards_sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+    "selection_phase": "constructed_calibration_only_before_speech_checking",
+    "operational_approval": false
+  }
+]

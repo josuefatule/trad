@@ -1,0 +1,657 @@
+1|blood pressure|presión arterial|AF0001:aliases_en:BP; AF0002:variants_es:tensión arterial; AF0003:abbreviation:BP; AF0004:inherited_aliases:BP
+2|hypertension|hipertensión arterial|AF0005:aliases_en:systemic hypertension; AF0006:aliases_en:HTN; AF0007:variants_es:hipertensión; AF0008:variants_es:HTA; AF0009:variants_es:presión arterial alta; AF0010:variants_es:hipertenso; AF0011:abbreviation:HTN; AF0012:abbreviation:HTA; AF0013:inherited_aliases:HTN; AF0014:grouped_lexical_form:high blood pressure; AF0015:grouped_lexical_form:arterial hypertension; AF0016:grouped_lexical_form:hypertensive
+3|primary hypertension|hipertensión primaria|AF0017:aliases_en:essential hypertension; AF0018:variants_es:hipertensión esencial; AF0019:inherited_aliases:essential hypertension
+4|secondary hypertension|hipertensión secundaria|
+5|drug-induced hypertension|hipertensión inducida por fármacos|AF0020:aliases_en:medication-induced hypertension; AF0021:variants_es:hipertensión farmacológica; AF0022:inherited_aliases:medication-induced hypertension
+6|hypertension in pregnancy|hipertensión en el embarazo|
+7|normotension|normotensión|AF0023:variants_es:normotenso; AF0024:grouped_lexical_form:normotensive
+8|elevated blood pressure|presión arterial elevada|AF0025:aliases_en:elevated BP; AF0026:inherited_aliases:elevated BP
+9|non-elevated blood pressure|presión arterial no elevada|AF0027:aliases_en:non-elevated BP; AF0028:inherited_aliases:non-elevated BP
+10|normal blood pressure|presión arterial normal|AF0029:aliases_en:normal BP; AF0030:inherited_aliases:normal BP
+11|systolic blood pressure|presión arterial sistólica|AF0031:aliases_en:SBP; AF0032:aliases_en:systolic BP; AF0033:variants_es:PAS; AF0034:variants_es:presión sistólica; AF0035:abbreviation:SBP; AF0036:abbreviation:PAS; AF0037:inherited_aliases:SBP; AF0038:inherited_aliases:systolic BP; AF0039:grouped_lexical_form:systolic pressure
+12|diastolic blood pressure|presión arterial diastólica|AF0040:aliases_en:DBP; AF0041:aliases_en:diastolic BP; AF0042:variants_es:PAD; AF0043:variants_es:presión diastólica; AF0044:abbreviation:DBP; AF0045:abbreviation:PAD; AF0046:inherited_aliases:DBP; AF0047:inherited_aliases:diastolic BP; AF0048:grouped_lexical_form:diastolic pressure
+13|mean arterial pressure|presión arterial media|AF0049:aliases_en:MAP; AF0050:variants_es:PAM; AF0051:abbreviation:MAP; AF0052:abbreviation:PAM; AF0053:inherited_aliases:MAP
+14|pulse pressure|presión de pulso|AF0054:variants_es:presión diferencial
+15|blood pressure reading|lectura de presión arterial|
+16|blood pressure measurement|medición de la presión arterial|
+17|blood pressure classification|clasificación de la presión arterial|AF0055:aliases_en:blood pressure categories; AF0056:inherited_aliases:blood pressure categories
+18|blood pressure threshold|umbral de presión arterial|
+19|blood pressure target|objetivo de presión arterial|AF0057:aliases_en:target blood pressure; AF0058:variants_es:meta de presión arterial; AF0059:inherited_aliases:target blood pressure
+20|blood pressure control|control de la presión arterial|AF0060:variants_es:control tensional
+21|blood pressure variability|variabilidad de la presión arterial|AF0061:variants_es:variabilidad tensional
+22|office blood pressure|presión arterial en consultorio|AF0062:aliases_en:office BP; AF0063:aliases_en:clinic blood pressure; AF0064:aliases_en:clinic BP; AF0065:variants_es:presión arterial en consulta; AF0066:inherited_aliases:office BP; AF0067:inherited_aliases:clinic blood pressure; AF0068:inherited_aliases:clinic BP
+23|home blood pressure monitoring|monitorización domiciliaria de la presión arterial|AF0069:aliases_en:HBPM; AF0070:variants_es:automedición domiciliaria de la presión arterial; AF0071:variants_es:AMPA; AF0072:abbreviation:HBPM; AF0073:abbreviation:AMPA; AF0074:inherited_aliases:HBPM
+24|ambulatory blood pressure monitoring|monitorización ambulatoria de la presión arterial|AF0075:aliases_en:ABPM; AF0076:variants_es:MAPA; AF0077:abbreviation:ABPM; AF0078:abbreviation:MAPA; AF0079:inherited_aliases:ABPM
+25|out-of-office blood pressure|presión arterial fuera del consultorio|AF0080:variants_es:presión arterial fuera de consulta
+26|automated office blood pressure|presión arterial automatizada en consultorio|AF0081:aliases_en:AOBP; AF0082:abbreviation:AOBP; AF0083:inherited_aliases:AOBP
+27|white-coat hypertension|hipertensión de bata blanca|AF0084:aliases_en:white coat hypertension; AF0085:variants_es:hipertensión de guardapolvo blanco; AF0086:inherited_aliases:white coat hypertension
+28|white-coat effect|efecto de bata blanca|AF0087:aliases_en:white coat effect; AF0088:inherited_aliases:white coat effect
+29|masked hypertension|hipertensión enmascarada|
+30|nocturnal hypertension|hipertensión nocturna|
+31|resistant hypertension|hipertensión resistente|
+32|apparent treatment-resistant hypertension|hipertensión aparentemente resistente al tratamiento|AF0089:aliases_en:aTRH; AF0090:inherited_aliases:aTRH
+33|pseudo-resistant hypertension|hipertensión seudorresistente|AF0091:aliases_en:pseudoresistant hypertension; AF0092:variants_es:hipertensión pseudorresistente; AF0093:inherited_aliases:pseudoresistant hypertension
+34|uncontrolled hypertension|hipertensión no controlada|
+35|controlled hypertension|hipertensión controlada|
+36|stage 1 hypertension|hipertensión en estadio 1|AF0094:aliases_en:stage one hypertension; AF0095:variants_es:hipertensión en etapa 1; AF0096:inherited_aliases:stage one hypertension
+37|stage 2 hypertension|hipertensión en estadio 2|AF0097:aliases_en:stage two hypertension; AF0098:variants_es:hipertensión en etapa 2; AF0099:inherited_aliases:stage two hypertension
+38|prehypertension|prehipertensión|AF0100:aliases_en:pre-hypertension; AF0101:inherited_aliases:pre-hypertension
+39|isolated systolic hypertension|hipertensión sistólica aislada|
+40|severe hypertension|hipertensión grave|AF0102:variants_es:hipertensión severa
+41|hypertensive emergency|emergencia hipertensiva|
+42|orthostatic hypotension|hipotensión ortostática|AF0103:aliases_en:postural hypotension; AF0104:variants_es:hipotensión postural; AF0105:inherited_aliases:postural hypotension
+43|hypotension|hipotensión|AF0106:aliases_en:low blood pressure; AF0107:variants_es:presión arterial baja; AF0108:inherited_aliases:low blood pressure
+44|European Society of Cardiology|Sociedad Europea de Cardiología|AF0109:aliases_en:ESC; AF0110:variants_es:ESC; AF0111:abbreviation:ESC; AF0112:abbreviation:ESC; AF0113:inherited_aliases:ESC
+45|American Heart Association|Asociación Americana del Corazón|AF0114:aliases_en:AHA; AF0115:variants_es:American Heart Association; AF0116:variants_es:AHA; AF0117:abbreviation:AHA; AF0118:abbreviation:AHA; AF0119:inherited_aliases:AHA
+46|American College of Cardiology|Colegio Americano de Cardiología|AF0120:aliases_en:ACC; AF0121:variants_es:American College of Cardiology; AF0122:variants_es:ACC; AF0123:abbreviation:ACC; AF0124:abbreviation:ACC; AF0125:inherited_aliases:ACC
+47|2024 ESC guidelines|guía ESC de 2024|AF0126:aliases_en:2024 ESC Guidelines for the Management of Elevated Blood Pressure and Hypertension; AF0127:inherited_aliases:2024 ESC Guidelines for the Management of Elevated Blood Pressure and Hypertension
+48|2018 ESC/ESH guidelines|guía ESC/ESH de 2018|
+49|2017 ACC/AHA guideline|guía ACC/AHA de 2017|AF0128:aliases_en:2017 ACC/AHA hypertension guideline; AF0129:inherited_aliases:2017 ACC/AHA hypertension guideline
+50|JNC 7 guideline|guía JNC 7|AF0130:aliases_en:Seventh Report of the Joint National Committee; AF0131:inherited_aliases:Seventh Report of the Joint National Committee
+51|JNC 8 report|informe JNC 8|AF0132:aliases_en:Eighth Joint National Committee; AF0133:inherited_aliases:Eighth Joint National Committee
+52|guideline recommendations|recomendaciones de la guía|
+53|clinical practice guidelines|guías de práctica clínica|AF0134:variants_es:GPC; AF0135:abbreviation:GPC
+54|guideline-driven management|manejo basado en guías|AF0136:aliases_en:guideline-directed management; AF0137:variants_es:manejo orientado por guías; AF0138:inherited_aliases:guideline-directed management
+55|evidence-based medicine|medicina basada en la evidencia|
+56|evidence-based review|revisión basada en la evidencia|
+57|clinical implications|implicaciones clínicas|
+58|treatment algorithm|algoritmo de tratamiento|AF0139:aliases_en:treatment algorithms; AF0140:inherited_aliases:treatment algorithms
+59|treatment threshold|umbral de tratamiento|
+60|treatment goal|objetivo terapéutico|AF0141:aliases_en:treatment goals; AF0142:variants_es:meta de tratamiento; AF0143:inherited_aliases:treatment goals
+61|target systolic blood pressure|objetivo de presión arterial sistólica|
+62|clinical decision-making|toma de decisiones clínicas|
+63|shared decision-making|toma de decisiones compartida|
+64|risk assessment|evaluación del riesgo|
+65|risk stratification|estratificación del riesgo|
+66|cardiovascular risk|riesgo cardiovascular|AF0144:variants_es:riesgo de enfermedad cardiovascular; AF0145:grouped_lexical_form:cardiovascular disease risk
+67|cardiovascular risk factors|factores de riesgo cardiovascular|
+68|atherosclerotic cardiovascular disease|enfermedad cardiovascular aterosclerótica|AF0146:aliases_en:ASCVD; AF0147:variants_es:ECVA; AF0148:abbreviation:ASCVD; AF0149:abbreviation:ECVA; AF0150:inherited_aliases:ASCVD
+69|ten-year ASCVD risk|riesgo de enfermedad cardiovascular aterosclerótica a 10 años|AF0151:aliases_en:10-year ASCVD risk; AF0152:inherited_aliases:10-year ASCVD risk
+70|cardiovascular disease|enfermedad cardiovascular|AF0153:aliases_en:CVD; AF0154:variants_es:ECV; AF0155:abbreviation:CVD; AF0156:abbreviation:ECV; AF0157:inherited_aliases:CVD
+71|cardiovascular events|eventos cardiovasculares|AF0158:aliases_en:CVD events; AF0159:inherited_aliases:CVD events
+72|cardiovascular mortality|mortalidad cardiovascular|
+73|all-cause mortality|mortalidad por todas las causas|AF0160:variants_es:mortalidad total
+74|cardiovascular prevention|prevención cardiovascular|
+75|primordial prevention|prevención primordial|
+76|primary prevention|prevención primaria|
+77|secondary prevention|prevención secundaria|
+78|prevalence|prevalencia|
+79|incidence|incidencia|
+80|cohort study|estudio de cohortes|
+81|randomized controlled trial|ensayo clínico aleatorizado controlado|AF0161:aliases_en:RCT; AF0162:aliases_en:randomised controlled trial; AF0163:variants_es:ensayo controlado aleatorizado; AF0164:variants_es:ECA; AF0165:abbreviation:RCT; AF0166:abbreviation:ECA; AF0167:inherited_aliases:RCT; AF0168:inherited_variants:randomised controlled trial
+82|meta-analysis|metaanálisis|AF0169:variants_es:meta-análisis
+83|network meta-analysis|metaanálisis en red|
+84|hazard ratio|razón de riesgos instantáneos|AF0170:aliases_en:hazard ratios; AF0171:variants_es:cociente de riesgos instantáneos; AF0172:variants_es:hazard ratio; AF0173:inherited_aliases:hazard ratios
+85|absolute risk reduction|reducción absoluta del riesgo|AF0174:variants_es:RAR; AF0175:abbreviation:RAR
+86|number needed to treat|número necesario a tratar|AF0176:aliases_en:NNT; AF0177:variants_es:número de pacientes que es necesario tratar; AF0178:variants_es:NNT; AF0179:abbreviation:NNT; AF0180:abbreviation:NNT; AF0181:inherited_aliases:NNT
+87|serious adverse events|eventos adversos graves|
+88|clinical trial|ensayo clínico|
+89|SPRINT trial|ensayo SPRINT|AF0182:aliases_en:Systolic Blood Pressure Intervention Trial; AF0183:abbreviation:SPRINT; AF0184:inherited_aliases:Systolic Blood Pressure Intervention Trial
+90|ACCORD trial|ensayo ACCORD|AF0185:aliases_en:Action to Control Cardiovascular Risk in Diabetes; AF0186:abbreviation:ACCORD; AF0187:inherited_aliases:Action to Control Cardiovascular Risk in Diabetes
+91|CARDIA study|estudio CARDIA|AF0188:aliases_en:Coronary Artery Risk Development in Young Adults; AF0189:inherited_aliases:Coronary Artery Risk Development in Young Adults
+92|REGARDS study|estudio REGARDS|AF0190:aliases_en:Reasons for Geographic and Racial Differences in Stroke; AF0191:abbreviation:REGARDS; AF0192:inherited_aliases:Reasons for Geographic and Racial Differences in Stroke
+93|NHANES|NHANES|AF0193:aliases_en:National Health and Nutrition Examination Survey; AF0194:abbreviation:NHANES; AF0195:inherited_aliases:National Health and Nutrition Examination Survey
+94|National Institutes of Health|Institutos Nacionales de Salud de Estados Unidos|AF0196:aliases_en:NIH; AF0197:variants_es:NIH; AF0198:abbreviation:NIH; AF0199:abbreviation:NIH; AF0200:inherited_aliases:NIH
+95|Task Force|grupo de trabajo|
+96|co-chair|copresidente|AF0201:aliases_en:co-chairperson; AF0202:variants_es:coordinador conjunto; AF0203:inherited_aliases:co-chairperson
+97|primary aldosteronism|aldosteronismo primario|AF0204:aliases_en:PA; AF0205:variants_es:hiperaldosteronismo primario; AF0206:abbreviation:PA; AF0207:inherited_aliases:PA
+98|hyperaldosteronism|hiperaldosteronismo|
+99|secondary aldosteronism|aldosteronismo secundario|AF0208:variants_es:hiperaldosteronismo secundario
+100|renin|renina|
+101|plasma renin activity|actividad de renina plasmática|AF0209:aliases_en:PRA; AF0210:variants_es:actividad plasmática de renina; AF0211:variants_es:ARP; AF0212:abbreviation:PRA; AF0213:abbreviation:ARP; AF0214:inherited_aliases:PRA
+102|direct renin concentration|concentración directa de renina|AF0215:aliases_en:DRC; AF0216:variants_es:CDR; AF0217:abbreviation:DRC; AF0218:abbreviation:CDR; AF0219:inherited_aliases:DRC
+103|renin suppression|supresión de renina|AF0220:aliases_en:suppressed renin; AF0221:variants_es:renina suprimida; AF0222:inherited_aliases:suppressed renin
+104|aldosterone|aldosterona|
+105|plasma aldosterone concentration|concentración plasmática de aldosterona|AF0223:aliases_en:PAC; AF0224:abbreviation:PAC; AF0225:inherited_aliases:PAC
+106|urinary aldosterone|aldosterona urinaria|
+107|aldosterone-to-renin ratio|cociente aldosterona/renina|AF0226:aliases_en:ARR; AF0227:aliases_en:aldosterone renin ratio; AF0228:variants_es:relación aldosterona-renina; AF0229:variants_es:ratio aldosterona-renina; AF0230:variants_es:ARR; AF0231:abbreviation:ARR; AF0232:abbreviation:ARR; AF0233:inherited_aliases:ARR; AF0234:inherited_aliases:aldosterone renin ratio
+108|aldosterone production|producción de aldosterona|
+109|autonomous aldosterone secretion|secreción autónoma de aldosterona|
+110|renin-independent aldosterone production|producción de aldosterona independiente de renina|
+111|renin-angiotensin system|sistema renina-angiotensina|AF0235:aliases_en:RAS; AF0236:variants_es:SRA; AF0237:abbreviation:RAS; AF0238:abbreviation:SRA; AF0239:inherited_aliases:RAS
+112|renin-angiotensin-aldosterone system|sistema renina-angiotensina-aldosterona|AF0240:aliases_en:RAAS; AF0241:aliases_en:renin–angiotensin–aldosterone system; AF0242:variants_es:SRAA; AF0243:abbreviation:RAAS; AF0244:abbreviation:SRAA; AF0245:inherited_aliases:RAAS; AF0246:inherited_variants:renin–angiotensin–aldosterone system
+113|angiotensin II|angiotensina II|AF0247:aliases_en:angiotensin 2; AF0248:inherited_aliases:angiotensin 2
+114|angiotensin-converting enzyme|enzima convertidora de angiotensina|AF0249:aliases_en:ACE; AF0250:variants_es:ECA; AF0251:abbreviation:ACE; AF0252:abbreviation:ECA; AF0253:inherited_aliases:ACE
+115|mineralocorticoid receptor|receptor de mineralocorticoides|AF0254:aliases_en:MR; AF0255:abbreviation:MR; AF0256:inherited_aliases:MR
+116|mineralocorticoid receptor antagonists|antagonistas del receptor de mineralocorticoides|AF0257:aliases_en:MRAs; AF0258:aliases_en:MRA; AF0259:variants_es:ARM; AF0260:abbreviation:MRAs; AF0261:abbreviation:MRA; AF0262:abbreviation:ARM; AF0263:inherited_aliases:MRAs; AF0264:inherited_aliases:MRA
+117|aldosterone suppression test|prueba de supresión de aldosterona|AF0265:aliases_en:aldosterone suppression testing; AF0266:inherited_aliases:aldosterone suppression testing
+118|salt loading|sobrecarga de sodio|AF0267:aliases_en:sodium loading; AF0268:variants_es:carga salina; AF0269:inherited_aliases:sodium loading
+119|renal sodium retention|retención renal de sodio|
+120|sodium reabsorption|reabsorción de sodio|
+121|urinary sodium excretion|excreción urinaria de sodio|
+122|urinary potassium excretion|excreción urinaria de potasio|
+123|extracellular fluid volume|volumen de líquido extracelular|AF0270:aliases_en:extracellular volume; AF0271:variants_es:volumen extracelular; AF0272:inherited_aliases:extracellular volume
+124|extracellular volume expansion|expansión del volumen extracelular|
+125|serum potassium|potasio sérico|
+126|plasma potassium|potasio plasmático|
+127|hypokalemia|hipopotasemia|AF0273:aliases_en:low blood potassium; AF0274:aliases_en:hypokalaemia; AF0275:variants_es:hipokalemia; AF0276:inherited_aliases:low blood potassium; AF0277:inherited_variants:hypokalaemia
+128|hyperkalemia|hiperpotasemia|AF0278:aliases_en:high blood potassium; AF0279:aliases_en:hyperkalaemia; AF0280:variants_es:hiperkalemia; AF0281:inherited_aliases:high blood potassium; AF0282:inherited_variants:hyperkalaemia
+129|hyponatremia|hiponatremia|AF0283:aliases_en:hyponatraemia; AF0284:inherited_variants:hyponatraemia
+130|hypernatremia|hipernatremia|AF0285:aliases_en:hypernatraemia; AF0286:inherited_variants:hypernatraemia
+131|metabolic alkalosis|alcalosis metabólica|
+132|hypokalemic metabolic alkalosis|alcalosis metabólica hipopotasémica|AF0287:aliases_en:hypokalaemic metabolic alkalosis; AF0288:inherited_variants:hypokalaemic metabolic alkalosis
+133|adrenal gland|glándula suprarrenal|AF0289:variants_es:glándula adrenal
+134|aldosterone-producing adenoma|adenoma productor de aldosterona|AF0290:aliases_en:APA; AF0291:abbreviation:APA; AF0292:inherited_aliases:APA
+135|adrenal hyperplasia|hiperplasia suprarrenal|AF0293:variants_es:hiperplasia adrenal
+136|bilateral adrenal hyperplasia|hiperplasia suprarrenal bilateral|
+137|adrenalectomy|adrenalectomía|AF0294:variants_es:suprarrenalectomía
+138|chronic kidney disease|enfermedad renal crónica|AF0295:aliases_en:CKD; AF0296:variants_es:ERC; AF0297:abbreviation:CKD; AF0298:abbreviation:ERC; AF0299:inherited_aliases:CKD
+139|kidney function|función renal|AF0300:aliases_en:renal function; AF0301:inherited_aliases:renal function
+140|estimated glomerular filtration rate|tasa de filtración glomerular estimada|AF0302:aliases_en:eGFR; AF0303:variants_es:TFGe; AF0304:variants_es:filtrado glomerular estimado; AF0305:abbreviation:TFGe; AF0306:inherited_aliases:eGFR
+141|renal artery stenosis|estenosis de la arteria renal|
+142|renal insufficiency|insuficiencia renal|
+143|renal ischemia|isquemia renal|AF0307:aliases_en:renal ischaemia; AF0308:inherited_variants:renal ischaemia
+144|albuminuria|albuminuria|
+145|proteinuria|proteinuria|
+146|microalbuminuria|microalbuminuria|
+147|secondary causes of hypertension|causas secundarias de hipertensión|
+148|endocrine hypertension|hipertensión endocrina|
+149|antihypertensive therapy|tratamiento antihipertensivo|
+150|antihypertensive drug therapy|tratamiento farmacológico antihipertensivo|
+151|antihypertensive medication|medicamento antihipertensivo|AF0309:aliases_en:blood pressure medication; AF0310:variants_es:fármaco antihipertensivo; AF0311:inherited_aliases:blood pressure medication
+152|pharmacological therapy|tratamiento farmacológico|AF0312:aliases_en:pharmacologic therapy; AF0313:inherited_variants:pharmacologic therapy
+153|non-pharmacological therapy|tratamiento no farmacológico|AF0314:aliases_en:nonpharmacologic therapy; AF0315:aliases_en:non-pharmacologic therapy; AF0316:inherited_aliases:nonpharmacologic therapy; AF0317:inherited_variants:non-pharmacologic therapy
+154|first-line therapy|tratamiento de primera línea|AF0318:aliases_en:first-line treatment; AF0319:inherited_aliases:first-line treatment
+155|combination therapy|tratamiento combinado|
+156|single-pill combination|combinación en un solo comprimido|AF0320:variants_es:combinación en una sola pastilla
+157|medication adherence|adherencia a la medicación|AF0321:aliases_en:treatment adherence; AF0322:variants_es:adherencia farmacológica; AF0323:inherited_aliases:treatment adherence
+158|medication titration|ajuste gradual de la dosis|AF0324:aliases_en:dose titration; AF0325:variants_es:titulación de dosis; AF0326:inherited_aliases:dose titration
+159|angiotensin-converting enzyme inhibitors|inhibidores de la enzima convertidora de angiotensina|AF0327:aliases_en:ACE inhibitors; AF0328:aliases_en:ACEIs; AF0329:variants_es:IECA; AF0330:abbreviation:ACEIs; AF0331:abbreviation:IECA; AF0332:inherited_aliases:ACE inhibitors; AF0333:inherited_aliases:ACEIs
+160|angiotensin II receptor blockers|antagonistas de los receptores de angiotensina II|AF0334:aliases_en:ARBs; AF0335:aliases_en:ARB; AF0336:variants_es:ARA-II; AF0337:variants_es:bloqueadores de los receptores de angiotensina II; AF0338:abbreviation:ARBs; AF0339:abbreviation:ARB; AF0340:abbreviation:ARA-II; AF0341:inherited_aliases:ARBs; AF0342:inherited_aliases:ARB
+161|calcium channel blockers|bloqueadores de los canales de calcio|AF0343:aliases_en:CCBs; AF0344:aliases_en:CCB; AF0345:variants_es:calcioantagonistas; AF0346:variants_es:BCC; AF0347:abbreviation:CCBs; AF0348:abbreviation:CCB; AF0349:abbreviation:BCC; AF0350:inherited_aliases:CCBs; AF0351:inherited_aliases:CCB
+162|beta blockers|betabloqueadores|AF0352:aliases_en:beta-adrenergic blockers; AF0353:aliases_en:beta-blockers; AF0354:variants_es:betabloqueantes; AF0355:inherited_aliases:beta-adrenergic blockers; AF0356:inherited_variants:beta-blockers
+163|alpha blockers|alfabloqueadores|AF0357:aliases_en:alpha-adrenergic blockers; AF0358:aliases_en:alpha-blockers; AF0359:variants_es:alfabloqueantes; AF0360:inherited_aliases:alpha-adrenergic blockers; AF0361:inherited_variants:alpha-blockers
+164|alpha-2 receptor agonists|agonistas de los receptores alfa-2|
+165|diuretics|diuréticos|AF0362:aliases_en:diuretic therapy; AF0363:inherited_aliases:diuretic therapy
+166|thiazide diuretics|diuréticos tiazídicos|AF0364:aliases_en:thiazide-type diuretics; AF0365:inherited_aliases:thiazide-type diuretics
+167|thiazide-like diuretics|diuréticos similares a las tiazidas|
+168|loop diuretics|diuréticos de asa|
+169|potassium-sparing diuretics|diuréticos ahorradores de potasio|
+170|mineralocorticoid receptor antagonist therapy|tratamiento con antagonistas del receptor de mineralocorticoides|
+171|nonsteroidal anti-inflammatory drugs|antiinflamatorios no esteroideos|AF0366:aliases_en:NSAIDs; AF0367:aliases_en:NSAID; AF0368:aliases_en:non-steroidal anti-inflammatory drugs; AF0369:variants_es:AINE; AF0370:abbreviation:NSAIDs; AF0371:abbreviation:NSAID; AF0372:abbreviation:AINE; AF0373:inherited_aliases:NSAIDs; AF0374:inherited_aliases:NSAID; AF0375:inherited_variants:non-steroidal anti-inflammatory drugs
+172|oral contraceptives|anticonceptivos orales|
+173|hormone replacement therapy|terapia hormonal de reemplazo|AF0376:aliases_en:hormonal replacement therapy; AF0377:variants_es:tratamiento hormonal sustitutivo; AF0378:inherited_aliases:hormonal replacement therapy
+174|immunosuppressive agents|inmunosupresores|AF0379:aliases_en:immunosuppressants; AF0380:variants_es:fármacos inmunosupresores; AF0381:inherited_aliases:immunosuppressants
+175|recombinant human erythropoietin|eritropoyetina humana recombinante|
+176|tyrosine kinase inhibitors|inhibidores de tirosina cinasa|AF0382:variants_es:inhibidores de tirosina quinasa
+177|antidepressants|antidepresivos|
+178|spironolactone|espironolactona|
+179|eplerenone|eplerenona|
+180|hydrochlorothiazide|hidroclorotiazida|AF0383:aliases_en:HCTZ; AF0384:abbreviation:HCTZ; AF0385:inherited_aliases:HCTZ
+181|chlorthalidone|clortalidona|
+182|indapamide|indapamida|
+183|furosemide|furosemida|
+184|amiloride|amilorida|
+185|triamterene|triamtereno|
+186|lisinopril|lisinopril|
+187|enalapril|enalapril|
+188|ramipril|ramipril|
+189|losartan|losartán|AF0386:variants_es:losartan
+190|valsartan|valsartán|AF0387:variants_es:valsartan
+191|candesartan|candesartán|AF0388:variants_es:candesartan
+192|olmesartan|olmesartán|AF0389:variants_es:olmesartan
+193|telmisartan|telmisartán|AF0390:variants_es:telmisartan
+194|metoprolol|metoprolol|
+195|carvedilol|carvedilol|
+196|atenolol|atenolol|
+197|bisoprolol|bisoprolol|
+198|nebivolol|nebivolol|
+199|labetalol|labetalol|
+200|amlodipine|amlodipino|AF0391:variants_es:amlodipina
+201|nifedipine|nifedipino|AF0392:variants_es:nifedipina
+202|diltiazem|diltiazem|
+203|verapamil|verapamilo|AF0393:variants_es:verapamil
+204|hydralazine|hidralazina|
+205|clonidine|clonidina|
+206|coronary artery disease|enfermedad arterial coronaria|AF0394:aliases_en:CAD; AF0395:variants_es:enfermedad de las arterias coronarias; AF0396:abbreviation:CAD; AF0397:inherited_aliases:CAD
+207|coronary heart disease|cardiopatía coronaria|AF0398:aliases_en:CHD; AF0399:abbreviation:CHD; AF0400:inherited_aliases:CHD
+208|atherosclerosis|aterosclerosis|
+209|subclinical atherosclerosis|aterosclerosis subclínica|
+210|coronary artery calcium|calcio coronario|AF0401:aliases_en:CAC; AF0402:variants_es:calcificación coronaria; AF0403:abbreviation:CAC; AF0404:inherited_aliases:CAC
+211|coronary calcium score|puntuación de calcio coronario|AF0405:aliases_en:coronary artery calcium score; AF0406:inherited_aliases:coronary artery calcium score
+212|myocardial infarction|infarto de miocardio|AF0407:aliases_en:MI; AF0408:aliases_en:heart attack; AF0409:abbreviation:MI; AF0410:inherited_aliases:MI; AF0411:inherited_aliases:heart attack
+213|stroke|accidente cerebrovascular|AF0412:aliases_en:cerebrovascular accident; AF0413:variants_es:ictus; AF0414:variants_es:ACV; AF0415:abbreviation:ACV; AF0416:inherited_aliases:cerebrovascular accident
+214|ischemic stroke|accidente cerebrovascular isquémico|AF0417:aliases_en:ischaemic stroke; AF0418:variants_es:ictus isquémico; AF0419:inherited_variants:ischaemic stroke
+215|hemorrhagic stroke|accidente cerebrovascular hemorrágico|AF0420:aliases_en:haemorrhagic stroke; AF0421:variants_es:ictus hemorrágico; AF0422:inherited_variants:haemorrhagic stroke
+216|heart failure|insuficiencia cardíaca|AF0423:aliases_en:HF; AF0424:variants_es:falla cardíaca; AF0425:abbreviation:HF; AF0426:inherited_aliases:HF
+217|heart failure with reduced ejection fraction|insuficiencia cardíaca con fracción de eyección reducida|AF0427:aliases_en:HFrEF; AF0428:variants_es:ICFEr; AF0429:abbreviation:HFrEF; AF0430:abbreviation:ICFEr; AF0431:inherited_aliases:HFrEF
+218|heart failure with preserved ejection fraction|insuficiencia cardíaca con fracción de eyección preservada|AF0432:aliases_en:HFpEF; AF0433:variants_es:ICFEp; AF0434:abbreviation:HFpEF; AF0435:abbreviation:ICFEp; AF0436:inherited_aliases:HFpEF
+219|left ventricular function|función ventricular izquierda|
+220|left ventricular hypertrophy|hipertrofia ventricular izquierda|AF0437:aliases_en:LVH; AF0438:variants_es:HVI; AF0439:abbreviation:LVH; AF0440:abbreviation:HVI; AF0441:inherited_aliases:LVH
+221|left ventricular ejection fraction|fracción de eyección ventricular izquierda|AF0442:aliases_en:LVEF; AF0443:variants_es:FEVI; AF0444:abbreviation:LVEF; AF0445:abbreviation:FEVI; AF0446:inherited_aliases:LVEF
+222|ejection fraction|fracción de eyección|AF0447:variants_es:FE; AF0448:abbreviation:FE
+223|pulmonary edema|edema pulmonar|AF0449:aliases_en:pulmonary oedema; AF0450:inherited_variants:pulmonary oedema
+224|pulmonary congestion|congestión pulmonar|
+225|atrial fibrillation|fibrilación auricular|AF0451:aliases_en:AF; AF0452:aliases_en:AFib; AF0453:variants_es:FA; AF0454:abbreviation:AF; AF0455:abbreviation:AFib; AF0456:abbreviation:FA; AF0457:inherited_aliases:AF; AF0458:inherited_aliases:AFib
+226|cardiac arrhythmia|arritmia cardíaca|AF0459:aliases_en:arrhythmia; AF0460:inherited_aliases:arrhythmia
+227|vascular dementia|demencia vascular|
+228|peripheral artery disease|enfermedad arterial periférica|AF0461:aliases_en:PAD; AF0462:variants_es:EAP; AF0463:abbreviation:PAD; AF0464:abbreviation:EAP; AF0465:inherited_aliases:PAD
+229|cardiometabolic risk|riesgo cardiometabólico|
+230|hypertension-mediated organ damage|daño orgánico mediado por hipertensión|AF0466:aliases_en:HMOD; AF0467:variants_es:DOMH; AF0468:abbreviation:HMOD; AF0469:abbreviation:DOMH; AF0470:inherited_aliases:HMOD
+231|target-organ damage|daño de órgano diana|AF0471:variants_es:daño de órgano blanco
+232|diabetes mellitus|diabetes mellitus|
+233|type 2 diabetes mellitus|diabetes mellitus tipo 2|AF0472:aliases_en:type 2 diabetes; AF0473:aliases_en:T2DM; AF0474:variants_es:diabetes tipo 2; AF0475:variants_es:DM2; AF0476:abbreviation:T2DM; AF0477:abbreviation:DM2; AF0478:inherited_aliases:type 2 diabetes; AF0479:inherited_aliases:T2DM
+234|obesity|obesidad|
+235|obstructive sleep apnea|apnea obstructiva del sueño|AF0480:aliases_en:OSA; AF0481:aliases_en:obstructive sleep apnoea; AF0482:variants_es:síndrome de apnea obstructiva del sueño; AF0483:variants_es:SAOS; AF0484:abbreviation:OSA; AF0485:abbreviation:SAOS; AF0486:inherited_aliases:OSA; AF0487:inherited_variants:obstructive sleep apnoea
+236|heart disease|cardiopatía|
+237|chest pain|dolor torácico|
+238|lifestyle modification|modificación del estilo de vida|AF0488:aliases_en:lifestyle modifications; AF0489:variants_es:cambios en el estilo de vida; AF0490:variants_es:manejo del estilo de vida; AF0491:inherited_aliases:lifestyle modifications; AF0492:grouped_lexical_form:lifestyle management
+239|healthy diet|alimentación saludable|AF0493:aliases_en:healthy dietary pattern; AF0494:variants_es:dieta saludable; AF0495:inherited_aliases:healthy dietary pattern
+240|DASH diet|dieta DASH|AF0496:aliases_en:Dietary Approaches to Stop Hypertension; AF0497:inherited_aliases:Dietary Approaches to Stop Hypertension
+241|Mediterranean diet|dieta mediterránea|
+242|weight loss|pérdida de peso|AF0498:variants_es:reducción de peso
+243|body mass index|índice de masa corporal|AF0499:aliases_en:BMI; AF0500:variants_es:IMC; AF0501:abbreviation:BMI; AF0502:abbreviation:IMC; AF0503:inherited_aliases:BMI
+244|dietary sodium restriction|restricción de sodio en la alimentación|AF0504:aliases_en:sodium restriction; AF0505:variants_es:restricción dietética de sodio; AF0506:inherited_aliases:sodium restriction
+245|sodium reduction|reducción del consumo de sodio|
+246|low-sodium diet|dieta baja en sodio|AF0507:variants_es:dieta hiposódica
+247|dietary potassium|potasio de la dieta|AF0508:variants_es:potasio dietético
+248|potassium-rich diet|dieta rica en potasio|
+249|potassium-enriched salt substitute|sustituto de sal enriquecido con potasio|AF0509:aliases_en:potassium-supplemented salt; AF0510:aliases_en:potassium-enriched salt substitutes; AF0511:inherited_aliases:potassium-supplemented salt; AF0512:inherited_aliases:potassium-enriched salt substitutes
+250|sodium-containing salts|sales que contienen sodio|
+251|salt intake|consumo de sal|
+252|potassium intake|ingesta de potasio|AF0513:variants_es:consumo de potasio
+253|sugar-sweetened beverages|bebidas azucaradas|AF0514:aliases_en:sugary drinks; AF0515:variants_es:bebidas endulzadas con azúcar; AF0516:inherited_aliases:sugary drinks
+254|physical activity|actividad física|
+255|exercise|ejercicio|
+256|aerobic exercise|ejercicio aeróbico|AF0517:aliases_en:aerobic training; AF0518:inherited_aliases:aerobic training
+257|dynamic resistance exercise|ejercicio de fuerza dinámico|AF0519:aliases_en:dynamic resistance training; AF0520:variants_es:ejercicio dinámico de resistencia; AF0521:inherited_aliases:dynamic resistance training
+258|isometric resistance exercise|ejercicio isométrico de fuerza|AF0522:aliases_en:isometric resistance training; AF0523:variants_es:ejercicio de resistencia isométrica; AF0524:inherited_aliases:isometric resistance training
+259|smoking cessation|abandono del tabaco|AF0525:variants_es:cesación tabáquica
+260|alcohol moderation|moderación del consumo de alcohol|AF0526:aliases_en:moderation of alcohol consumption; AF0527:inherited_aliases:moderation of alcohol consumption
+261|alcohol intake|consumo de alcohol|
+262|dietary counseling|asesoramiento nutricional|AF0528:aliases_en:dietary counselling; AF0529:variants_es:consejería nutricional; AF0530:inherited_variants:dietary counselling
+263|patient-centered care|atención centrada en el paciente|AF0531:aliases_en:patient-centred care; AF0532:inherited_aliases:patient-centred care
+264|frailty|fragilidad|AF0533:aliases_en:frail patients; AF0534:inherited_aliases:frail patients
+265|millimeters of mercury|milímetros de mercurio|AF0535:aliases_en:mmHg; AF0536:aliases_en:mm Hg; AF0537:aliases_en:millimetres of mercury; AF0538:variants_es:mmHg; AF0539:variants_es:mm Hg; AF0540:inherited_aliases:mmHg; AF0541:inherited_aliases:mm Hg; AF0542:inherited_variants:millimetres of mercury
+266|milligrams per day|miligramos por día|AF0543:aliases_en:mg/day; AF0544:variants_es:mg/día; AF0545:inherited_aliases:mg/day
+267|milligrams per deciliter|miligramos por decilitro|AF0546:aliases_en:mg/dL; AF0547:variants_es:mg/dL; AF0548:inherited_aliases:mg/dL
+268|millimoles per day|milimoles por día|AF0549:aliases_en:mmol/day; AF0550:variants_es:mmol/día; AF0551:inherited_aliases:mmol/day
+269|micrograms per day|microgramos por día|AF0552:aliases_en:µg/day; AF0553:aliases_en:mcg/day; AF0554:variants_es:µg/día; AF0555:inherited_aliases:µg/day; AF0556:inherited_aliases:mcg/day
+270|micrograms per deciliter|microgramos por decilitro|AF0557:aliases_en:µg/dL; AF0558:aliases_en:mcg/dL; AF0559:variants_es:µg/dL; AF0560:inherited_aliases:µg/dL; AF0561:inherited_aliases:mcg/dL
+271|nanograms per deciliter|nanogramos por decilitro|AF0562:aliases_en:ng/dL; AF0563:variants_es:ng/dL; AF0564:inherited_aliases:ng/dL
+272|plasma concentration|concentración plasmática|AF0565:variants_es:niveles plasmáticos; AF0566:grouped_lexical_form:plasma levels
+273|24-hour urine collection|recolección de orina de 24 horas|AF0567:variants_es:recogida de orina de 24 horas
+274|24-hour blood pressure monitoring|monitorización de la presión arterial de 24 horas|
+275|blood pressure cuff|manguito de presión arterial|AF0568:variants_es:brazalete de presión arterial
+276|oscillometric blood pressure monitor|monitor oscilométrico de presión arterial|AF0569:aliases_en:oscillometric device; AF0570:variants_es:tensiómetro oscilométrico; AF0571:inherited_aliases:oscillometric device
+277|Korotkoff sounds|ruidos de Korotkoff|AF0572:variants_es:sonidos de Korotkoff
+278|arterial stiffness|rigidez arterial|
+279|inter-arm blood pressure difference|diferencia de presión arterial entre brazos|AF0573:aliases_en:inter-arm difference; AF0574:variants_es:diferencia interbraquial de presión arterial; AF0575:inherited_aliases:inter-arm difference
+280|blood pressure-lowering treatment|tratamiento para reducir la presión arterial|AF0576:aliases_en:BP-lowering treatment; AF0577:inherited_aliases:BP-lowering treatment
+281|clinical outcomes|desenlaces clínicos|AF0578:variants_es:resultados clínicos
+282|pharmacologic management|manejo farmacológico|AF0579:aliases_en:pharmacological management; AF0580:inherited_variants:pharmacological management
+283|patient follow-up|seguimiento del paciente|
+284|clinical guidelines implementation|implementación de guías de práctica clínica|AF0581:aliases_en:guideline implementation; AF0582:inherited_aliases:guideline implementation
+285|as low as reasonably achievable|tan baja como sea razonablemente alcanzable|AF0583:aliases_en:ALARA; AF0584:abbreviation:ALARA; AF0585:inherited_aliases:ALARA
+286|angiotensinogen|angiotensinógeno|
+287|angiotensin I|angiotensina I|AF0586:aliases_en:Ang I
+288|angiotensin-converting enzyme 2|enzima convertidora de angiotensina 2|AF0587:aliases_en:ACE2; AF0588:variants_es:ECA2; AF0589:abbreviation:ACE2; AF0590:abbreviation:ECA2
+289|angiotensin-(1–7)|angiotensina (1-7)|AF0591:aliases_en:angiotensin-(1-7); AF0592:aliases_en:Ang-(1-7)
+290|angiotensin II type 1 receptor|receptor de angiotensina II tipo 1|AF0593:aliases_en:AT1 receptor; AF0594:variants_es:receptor AT1
+291|angiotensin II type 2 receptor|receptor de angiotensina II tipo 2|AF0595:aliases_en:AT2 receptor; AF0596:variants_es:receptor AT2
+292|Mas receptor|receptor Mas|
+293|prorenin|prorrenina|AF0597:aliases_en:pro-renin
+294|juxtaglomerular cells|células yuxtaglomerulares|
+295|macula densa|mácula densa|
+296|renal perfusion pressure|presión de perfusión renal|
+297|pressure natriuresis|natriuresis por presión|AF0598:variants_es:relación presión-natriuresis
+298|salt sensitivity|sensibilidad a la sal|
+299|vasoconstriction|vasoconstricción|
+300|vasodilation|vasodilatación|AF0599:aliases_en:vasodilatation
+301|endothelial dysfunction|disfunción endotelial|
+302|vascular injury|lesión vascular|
+303|renal medullary blood flow|flujo sanguíneo medular renal|
+304|natriuresis|natriuresis|
+305|diuresis|diuresis|
+306|epithelial sodium channel|canal epitelial de sodio|AF0600:aliases_en:ENaC; AF0601:abbreviation:ENaC
+307|cortical collecting duct|conducto colector cortical|AF0602:variants_es:túbulo colector cortical
+308|vascular smooth muscle cells|células del músculo liso vascular|
+309|vascular remodeling|remodelado vascular|AF0603:aliases_en:vascular remodelling; AF0604:variants_es:remodelación vascular
+310|vascular fibrosis|fibrosis vascular|
+311|oxidative stress|estrés oxidativo|
+312|sympathetic activation|activación simpática|AF0605:variants_es:hiperactividad simpática
+313|autonomic nervous system|sistema nervioso autónomo|
+314|sympathetic nervous system|sistema nervioso simpático|
+315|baroreceptor reflex|reflejo barorreceptor|AF0606:aliases_en:baroreflex; AF0607:variants_es:barorreflejo
+316|systemic vascular resistance|resistencia vascular sistémica|AF0608:aliases_en:SVR; AF0609:variants_es:RVS; AF0610:variants_es:resistencia vascular periférica; AF0611:abbreviation:SVR; AF0612:abbreviation:RVS; AF0613:grouped_lexical_form:peripheral vascular resistance
+317|heart rate variability|variabilidad de la frecuencia cardíaca|AF0614:aliases_en:HRV; AF0615:abbreviation:HRV
+318|vascular calcification|calcificación vascular|
+319|microvascular remodeling|remodelado microvascular|AF0616:variants_es:remodelación microvascular
+320|inflammation|inflamación|
+321|cardiac output|gasto cardíaco|AF0617:aliases_en:CO; AF0618:variants_es:volumen minuto cardíaco; AF0619:abbreviation:CO
+322|stroke volume|volumen sistólico|AF0620:aliases_en:SV; AF0621:abbreviation:SV
+323|heart rate|frecuencia cardíaca|AF0622:aliases_en:HR; AF0623:variants_es:FC; AF0624:abbreviation:HR; AF0625:abbreviation:FC
+324|arterial compliance|compliancia arterial|
+325|baroreflex sensitivity|sensibilidad barorrefleja|AF0626:aliases_en:BRS; AF0627:abbreviation:BRS
+326|nitric oxide|óxido nítrico|AF0628:aliases_en:NO; AF0629:abbreviation:NO
+327|endothelin-1|endotelina 1|AF0630:aliases_en:ET-1; AF0631:abbreviation:ET-1
+328|norepinephrine|noradrenalina|AF0632:aliases_en:noradrenaline; AF0633:variants_es:norepinefrina
+329|epinephrine|adrenalina|AF0634:aliases_en:adrenaline; AF0635:variants_es:epinefrina
+330|vasopressin|vasopresina|AF0636:aliases_en:antidiuretic hormone; AF0637:variants_es:hormona antidiurética
+331|auscultatory blood pressure measurement|medición auscultatoria de la presión arterial|
+332|oscillometric blood pressure measurement|medición oscilométrica de la presión arterial|
+333|sphygmomanometer|esfigmomanómetro|AF0638:variants_es:tensiómetro
+334|mercury sphygmomanometer|esfigmomanómetro de mercurio|
+335|aneroid sphygmomanometer|esfigmomanómetro aneroide|
+336|hybrid sphygmomanometer|esfigmomanómetro híbrido|
+337|cuff size|tamaño del manguito|AF0639:variants_es:tamaño del brazalete
+338|arm circumference|circunferencia del brazo|AF0640:variants_es:perímetro braquial
+339|cuff bladder|cámara inflable del manguito|
+340|cuff inflation|inflado del manguito|
+341|cuff deflation|desinflado del manguito|
+342|brachial artery|arteria braquial|AF0641:variants_es:arteria humeral
+343|radial pulse|pulso radial|
+344|stethoscope|estetoscopio|AF0642:variants_es:fonendoscopio
+345|observer bias|sesgo del observador|
+346|measurement error|error de medición|
+347|device calibration|calibración del dispositivo|
+348|validated blood pressure monitor|monitor de presión arterial validado|AF0643:variants_es:tensiómetro validado
+349|unattended automated office blood pressure|presión arterial automatizada en consultorio sin observador|AF0644:aliases_en:unattended AOBP
+350|daytime blood pressure|presión arterial diurna|AF0645:aliases_en:awake blood pressure
+351|nighttime blood pressure|presión arterial nocturna|AF0646:aliases_en:asleep blood pressure
+352|24-hour average blood pressure|presión arterial media de 24 horas|
+353|masked uncontrolled hypertension|hipertensión enmascarada no controlada|AF0647:aliases_en:MUCH; AF0648:abbreviation:MUCH
+354|blood pressure telemonitoring|telemonitorización de la presión arterial|AF0649:variants_es:telemonitoreo de la presión arterial
+355|standardized office blood pressure|presión arterial estandarizada en consultorio|
+356|attended automated office blood pressure|presión arterial automatizada en consultorio con observador|AF0650:aliases_en:attended AOBP
+357|standing blood pressure|presión arterial de pie|AF0651:variants_es:presión arterial en bipedestación
+358|supine blood pressure|presión arterial en decúbito supino|
+359|seated blood pressure|presión arterial sentado|AF0652:variants_es:presión arterial en sedestación
+360|cuffless blood pressure device|dispositivo de presión arterial sin manguito|
+361|nocturnal blood pressure dipping|descenso nocturno de la presión arterial|AF0653:aliases_en:nocturnal dipping
+362|non-dipping pattern|patrón sin descenso nocturno|AF0654:aliases_en:non-dipping; AF0655:aliases_en:non-dipper pattern; AF0656:variants_es:patrón non-dipper
+363|reverse-dipping pattern|patrón de ascenso nocturno|AF0657:aliases_en:reverse dipping; AF0658:aliases_en:riser pattern; AF0659:variants_es:patrón de descenso nocturno inverso
+364|extreme-dipping pattern|patrón de descenso nocturno extremo|AF0660:aliases_en:extreme dipping
+365|night-to-day blood pressure ratio|cociente de presión arterial noche/día|AF0661:variants_es:relación noche-día
+366|refractory hypertension|hipertensión refractaria|AF0662:aliases_en:RfHTN; AF0663:abbreviation:RfHTN
+367|isolated diastolic hypertension|hipertensión diastólica aislada|
+368|systolic-diastolic hypertension|hipertensión sistólica y diastólica|AF0664:variants_es:hipertensión sistodiastólica
+369|renovascular hypertension|hipertensión renovascular|
+370|renal parenchymal hypertension|hipertensión de origen parenquimatoso renal|AF0665:variants_es:hipertensión renal parenquimatosa
+371|secondary hypertension screening|detección de hipertensión secundaria|AF0666:variants_es:tamizaje de hipertensión secundaria; AF0667:variants_es:cribado de hipertensión secundaria
+372|controlled resistant hypertension|hipertensión resistente controlada|
+373|true resistant hypertension|hipertensión resistente verdadera|
+374|hypertensive urgency|urgencia hipertensiva|
+375|malignant hypertension|hipertensión maligna|
+376|sustained hypertension|hipertensión sostenida|
+377|labile hypertension|hipertensión lábil|
+378|low-renin hypertension|hipertensión con renina baja|
+379|supine hypertension|hipertensión en decúbito supino|AF0668:variants_es:hipertensión supina
+380|adrenal venous sampling|muestreo venoso suprarrenal|AF0669:aliases_en:adrenal vein sampling; AF0670:aliases_en:AVS; AF0671:variants_es:cateterismo de venas suprarrenales; AF0672:abbreviation:AVS
+381|adrenal computed tomography|tomografía computarizada suprarrenal|AF0673:aliases_en:adrenal CT
+382|adrenal lateralization|lateralización suprarrenal|
+383|lateralizing primary aldosteronism|aldosteronismo primario lateralizado|
+384|bilateral primary aldosteronism|aldosteronismo primario bilateral|
+385|autonomous cortisol secretion|secreción autónoma de cortisol|AF0674:aliases_en:ACS; AF0675:abbreviation:ACS
+386|overnight dexamethasone suppression test|prueba de supresión nocturna con dexametasona|AF0676:aliases_en:overnight DST
+387|Cushing syndrome|síndrome de Cushing|AF0677:aliases_en:Cushing's syndrome
+388|adrenal adenoma|adenoma suprarrenal|
+389|normokalemia|normopotasemia|AF0678:aliases_en:normokalaemia; AF0679:variants_es:normokalemia
+390|pheochromocytoma|feocromocitoma|AF0680:aliases_en:phaeochromocytoma
+391|paraganglioma|paraganglioma|
+392|plasma free metanephrines|metanefrinas libres plasmáticas|
+393|urinary fractionated metanephrines|metanefrinas fraccionadas urinarias|
+394|metanephrine|metanefrina|
+395|normetanephrine|normetanefrina|
+396|catecholamines|catecolaminas|
+397|preoperative alpha blockade|bloqueo alfaadrenérgico preoperatorio|
+398|hypovolemia|hipovolemia|AF0681:aliases_en:hypovolaemia
+399|hyperthyroidism|hipertiroidismo|
+400|hypothyroidism|hipotiroidismo|
+401|thyroid-stimulating hormone|hormona estimulante de la tiroides|AF0682:aliases_en:TSH; AF0683:variants_es:tirotropina; AF0684:abbreviation:TSH
+402|hyperparathyroidism|hiperparatiroidismo|
+403|parathyroid hormone|hormona paratiroidea|AF0685:aliases_en:PTH; AF0686:variants_es:paratohormona; AF0687:abbreviation:PTH
+404|acromegaly|acromegalia|
+405|Liddle syndrome|síndrome de Liddle|AF0688:aliases_en:Liddle's syndrome
+406|glucocorticoid-remediable aldosteronism|aldosteronismo remediable con glucocorticoides|AF0689:aliases_en:glucocorticoid-remediable hyperaldosteronism; AF0690:variants_es:hiperaldosteronismo sensible a glucocorticoides
+407|licorice-induced hypertension|hipertensión inducida por regaliz|AF0691:aliases_en:liquorice-induced hypertension
+408|coarctation of the aorta|coartación de la aorta|AF0692:aliases_en:aortic coarctation
+409|24-hour urinary free cortisol|cortisol libre urinario de 24 horas|
+410|renal Doppler ultrasonography|ecografía Doppler renal|AF0693:variants_es:ultrasonografía Doppler renal
+411|renal ultrasound|ecografía renal|AF0694:variants_es:ultrasonografía renal
+412|computed tomography angiography|angiografía por tomografía computarizada|AF0695:aliases_en:CT angiography; AF0696:aliases_en:CTA; AF0697:variants_es:angiotomografía; AF0698:variants_es:angio-TC; AF0699:abbreviation:CTA
+413|magnetic resonance angiography|angiografía por resonancia magnética|AF0700:aliases_en:MR angiography; AF0701:aliases_en:MRA; AF0702:variants_es:angiorresonancia; AF0703:abbreviation:MRA
+414|fibromuscular dysplasia|displasia fibromuscular|AF0704:aliases_en:FMD; AF0705:abbreviation:FMD
+415|saline infusion test|prueba de infusión salina|
+416|oral sodium loading test|prueba de sobrecarga oral de sodio|
+417|captopril challenge test|prueba de desafío con captopril|AF0706:variants_es:prueba de captopril
+418|fludrocortisone suppression test|prueba de supresión con fludrocortisona|
+419|apparent mineralocorticoid excess|exceso aparente de mineralocorticoides|AF0707:aliases_en:AME; AF0708:abbreviation:AME
+420|Gordon syndrome|síndrome de Gordon|AF0709:aliases_en:pseudohypoaldosteronism type II; AF0710:variants_es:seudohipoaldosteronismo tipo II
+421|congenital adrenal hyperplasia|hiperplasia suprarrenal congénita|
+422|glomerular filtration rate|tasa de filtración glomerular|AF0711:aliases_en:GFR; AF0712:variants_es:TFG; AF0713:abbreviation:GFR; AF0714:abbreviation:TFG
+423|measured glomerular filtration rate|tasa de filtración glomerular medida|AF0715:aliases_en:mGFR
+424|serum creatinine|creatinina sérica|
+425|cystatin C|cistatina C|
+426|creatinine-based estimated glomerular filtration rate|tasa de filtración glomerular estimada con creatinina|AF0716:aliases_en:eGFRcr
+427|creatinine-cystatin C estimated glomerular filtration rate|tasa de filtración glomerular estimada con creatinina y cistatina C|AF0717:aliases_en:eGFRcr-cys
+428|urine albumin-to-creatinine ratio|cociente albúmina/creatinina en orina|AF0718:aliases_en:urinary albumin-to-creatinine ratio; AF0719:aliases_en:UACR; AF0720:variants_es:relación albúmina-creatinina urinaria; AF0721:variants_es:RAC; AF0722:abbreviation:UACR; AF0723:abbreviation:RAC
+429|urine protein-to-creatinine ratio|cociente proteína/creatinina en orina|AF0724:aliases_en:urinary protein-to-creatinine ratio; AF0725:aliases_en:UPCR; AF0726:abbreviation:UPCR
+430|albumin excretion rate|tasa de excreción de albúmina|AF0727:aliases_en:AER; AF0728:abbreviation:AER
+431|moderately increased albuminuria|albuminuria moderadamente aumentada|
+432|severely increased albuminuria|albuminuria gravemente aumentada|AF0729:variants_es:albuminuria severamente aumentada
+433|kidney failure|falla renal|AF0730:variants_es:fallo renal
+434|acute kidney injury|lesión renal aguda|AF0731:aliases_en:AKI; AF0732:variants_es:LRA; AF0733:abbreviation:AKI; AF0734:abbreviation:LRA
+435|kidney disease progression|progresión de la enfermedad renal|
+436|kidney replacement therapy|tratamiento de reemplazo renal|AF0735:aliases_en:KRT; AF0736:variants_es:terapia de reemplazo renal; AF0737:variants_es:TRR; AF0738:abbreviation:KRT; AF0739:abbreviation:TRR
+437|hemodialysis|hemodiálisis|AF0740:aliases_en:haemodialysis
+438|kidney transplant recipient|receptor de trasplante renal|AF0741:aliases_en:KTR; AF0742:abbreviation:KTR
+439|hematuria|hematuria|AF0743:aliases_en:haematuria
+440|urinalysis|análisis de orina|AF0744:variants_es:uroanálisis
+441|first morning urine sample|primera muestra de orina de la mañana|
+442|spot urine sample|muestra aislada de orina|
+443|sodium-glucose cotransporter 2 inhibitors|inhibidores del cotransportador de sodio-glucosa tipo 2|AF0745:aliases_en:SGLT2 inhibitors; AF0746:variants_es:iSGLT2
+444|nonsteroidal mineralocorticoid receptor antagonist|antagonista no esteroideo del receptor de mineralocorticoides|AF0747:aliases_en:nonsteroidal MRA; AF0748:variants_es:ARM no esteroideo
+445|finerenone|finerenona|
+446|hyperuricemia|hiperuricemia|
+447|hyperglycemia|hiperglucemia|AF0749:aliases_en:hyperglycaemia
+448|captopril|captopril|
+449|benazepril|benazepril|
+450|fosinopril|fosinopril|
+451|perindopril|perindopril|
+452|quinapril|quinapril|
+453|trandolapril|trandolapril|
+454|moexipril|moexipril|
+455|irbesartan|irbesartán|AF0750:variants_es:irbesartan
+456|azilsartan|azilsartán|AF0751:variants_es:azilsartan
+457|felodipine|felodipino|AF0752:variants_es:felodipina
+458|nicardipine|nicardipino|AF0753:variants_es:nicardipina
+459|bumetanide|bumetanida|
+460|torsemide|torasemida|AF0754:aliases_en:torasemide
+461|doxazosin|doxazosina|
+462|prazosin|prazosina|
+463|terazosin|terazosina|
+464|methyldopa|metildopa|
+465|guanfacine|guanfacina|
+466|minoxidil|minoxidil|
+467|vasodilators|vasodilatadores|
+468|angioedema|angioedema|
+469|reflex tachycardia|taquicardia refleja|
+470|bradycardia|bradicardia|
+471|dry cough|tos seca|
+472|fluid retention|retención de líquidos|
+473|lorundrostat|lorundrostat|
+474|aldosterone synthase inhibitor|inhibidor de la aldosterona sintasa|
+475|midodrine|midodrina|
+476|droxidopa|droxidopa|
+477|aliskiren|aliskireno|
+478|clevidipine|clevidipino|AF0755:variants_es:clevidipina
+479|esmolol|esmolol|
+480|sodium nitroprusside|nitroprusiato de sodio|
+481|nitroglycerin|nitroglicerina|AF0756:aliases_en:glyceryl trinitrate
+482|fenoldopam|fenoldopam|
+483|urapidil|urapidilo|AF0757:variants_es:urapidil
+484|baxdrostat|baxdrostat|
+485|zilebesiran|zilebesirán|AF0758:variants_es:zilebesiran
+486|monotherapy|monoterapia|
+487|dual combination therapy|tratamiento combinado doble|AF0759:variants_es:biterapia antihipertensiva
+488|triple combination therapy|tratamiento combinado triple|AF0760:variants_es:triterapia antihipertensiva
+489|fixed-dose combination|combinación de dosis fijas|AF0761:aliases_en:FDC; AF0762:abbreviation:FDC
+490|polypill|polipíldora|
+491|maximum tolerated dose|dosis máxima tolerada|AF0763:aliases_en:maximally tolerated dose
+492|dose escalation|aumento progresivo de la dosis|
+493|treatment intensification|intensificación del tratamiento|
+494|medication nonadherence|falta de adherencia a la medicación|AF0764:aliases_en:medication non-adherence
+495|treatment persistence|persistencia del tratamiento|
+496|therapeutic inertia|inercia terapéutica|AF0765:aliases_en:clinical inertia
+497|pill burden|carga de comprimidos|AF0766:variants_es:carga de medicación
+498|directly observed therapy|tratamiento directamente observado|AF0767:aliases_en:DOT; AF0768:abbreviation:DOT
+499|biochemical adherence testing|pruebas bioquímicas de adherencia|
+500|medication reconciliation|conciliación de la medicación|
+501|multidisciplinary team-based care|atención por un equipo multidisciplinario|AF0769:variants_es:atención multidisciplinaria
+502|renal denervation|denervación renal|AF0770:aliases_en:RDN; AF0771:abbreviation:RDN
+503|catheter-based renal denervation|denervación renal mediante catéter|AF0772:variants_es:denervación renal por catéter
+504|radiofrequency renal denervation|denervación renal por radiofrecuencia|
+505|ultrasound renal denervation|denervación renal por ultrasonido|
+506|alcohol-mediated renal denervation|denervación renal mediada por alcohol|
+507|renal revascularization|revascularización renal|
+508|percutaneous transluminal renal angioplasty|angioplastia renal transluminal percutánea|AF0773:aliases_en:PTRA; AF0774:abbreviation:PTRA
+509|renal artery stenting|colocación de stent en la arteria renal|
+510|sham procedure|procedimiento simulado|AF0775:aliases_en:sham intervention
+511|acute target-organ damage|daño agudo de órgano diana|AF0776:variants_es:daño agudo de órgano blanco
+512|asymptomatic markedly elevated blood pressure|presión arterial marcadamente elevada asintomática|
+513|hypertensive encephalopathy|encefalopatía hipertensiva|
+514|acute aortic dissection|disección aórtica aguda|
+515|acute heart failure|insuficiencia cardíaca aguda|
+516|myocardial ischemia|isquemia miocárdica|AF0777:aliases_en:myocardial ischaemia
+517|fibrinoid necrosis|necrosis fibrinoide|
+518|microangiopathy|microangiopatía|
+519|retinal hemorrhages|hemorragias retinianas|AF0778:aliases_en:retinal haemorrhages
+520|cotton-wool spots|exudados algodonosos|AF0779:variants_es:manchas algodonosas
+521|papilledema|papiledema|AF0780:aliases_en:papilloedema
+522|disseminated intravascular coagulation|coagulación intravascular diseminada|AF0781:aliases_en:DIC; AF0782:variants_es:CID; AF0783:abbreviation:DIC; AF0784:abbreviation:CID
+523|focal neurological deficit|déficit neurológico focal|
+524|cortical blindness|ceguera cortical|
+525|tonic-clonic seizures|convulsiones tonicoclónicas|
+526|intravenous antihypertensive therapy|tratamiento antihipertensivo intravenoso|
+527|posterior reversible encephalopathy syndrome|síndrome de encefalopatía posterior reversible|AF0785:aliases_en:PRES; AF0786:abbreviation:PRES
+528|thrombotic microangiopathy|microangiopatía trombótica|AF0787:aliases_en:TMA; AF0788:abbreviation:TMA
+529|flash pulmonary edema|edema pulmonar de aparición súbita|AF0789:variants_es:edema agudo de pulmón de inicio brusco
+530|hypertensive disorders of pregnancy|trastornos hipertensivos del embarazo|AF0790:aliases_en:HDP; AF0791:abbreviation:HDP
+531|chronic hypertension in pregnancy|hipertensión crónica en el embarazo|
+532|gestational hypertension|hipertensión gestacional|
+533|preeclampsia|preeclampsia|AF0792:aliases_en:pre-eclampsia
+534|eclampsia|eclampsia|
+535|postpartum hypertension|hipertensión posparto|AF0793:variants_es:hipertensión postparto
+536|postpartum preeclampsia|preeclampsia posparto|AF0794:aliases_en:post-partum preeclampsia
+537|fetal growth restriction|restricción del crecimiento fetal|AF0795:aliases_en:FGR; AF0796:variants_es:RCF; AF0797:abbreviation:FGR; AF0798:abbreviation:RCF
+538|small for gestational age|pequeño para la edad gestacional|AF0799:aliases_en:SGA; AF0800:variants_es:PEG; AF0801:abbreviation:SGA; AF0802:abbreviation:PEG
+539|placental insufficiency|insuficiencia placentaria|
+540|placental abruption|desprendimiento prematuro de placenta|AF0803:aliases_en:abruptio placentae
+541|preterm birth|parto prematuro|AF0804:variants_es:nacimiento pretérmino
+542|perinatal death|muerte perinatal|
+543|maternal organ dysfunction|disfunción orgánica materna|
+544|thrombocytopenia|trombocitopenia|AF0805:variants_es:plaquetopenia
+545|hemolysis|hemólisis|AF0806:aliases_en:haemolysis
+546|liver dysfunction|disfunción hepática|
+547|gestational age|edad gestacional|
+548|superimposed preeclampsia|preeclampsia sobreagregada|AF0807:variants_es:preeclampsia superpuesta
+549|preeclampsia with severe features|preeclampsia con características graves|
+550|HELLP syndrome|síndrome HELLP|
+551|magnesium sulfate|sulfato de magnesio|
+552|low-dose aspirin|ácido acetilsalicílico en dosis bajas|AF0808:variants_es:aspirina en dosis bajas
+553|soluble fms-like tyrosine kinase-1|tirosina cinasa soluble 1 similar a fms|AF0809:aliases_en:sFlt-1
+554|placental growth factor|factor de crecimiento placentario|AF0810:aliases_en:PlGF; AF0811:abbreviation:PlGF
+555|hypertensive retinopathy|retinopatía hipertensiva|
+556|glomerular hypertension|hipertensión glomerular|
+557|glomerulosclerosis|glomeruloesclerosis|
+558|white matter lesions|lesiones de la sustancia blanca|
+559|silent cerebral infarcts|infartos cerebrales silentes|AF0812:variants_es:infartos cerebrales asintomáticos
+560|cerebral microbleeds|microhemorragias cerebrales|
+561|brain atrophy|atrofia cerebral|AF0813:variants_es:atrofia encefálica
+562|cognitive impairment|deterioro cognitivo|
+563|left atrial enlargement|agrandamiento de la aurícula izquierda|AF0814:variants_es:dilatación de la aurícula izquierda
+564|left ventricular dilatation|dilatación ventricular izquierda|AF0815:aliases_en:left ventricular dilation
+565|left ventricular mass index|índice de masa ventricular izquierda|AF0816:aliases_en:LVMI; AF0817:abbreviation:LVMI
+566|diastolic dysfunction|disfunción diastólica|
+567|systolic dysfunction|disfunción sistólica|
+568|pulse wave velocity|velocidad de la onda de pulso|AF0818:aliases_en:PWV; AF0819:variants_es:VOP; AF0820:abbreviation:PWV; AF0821:abbreviation:VOP
+569|ankle-brachial index|índice tobillo-brazo|AF0822:aliases_en:ABI; AF0823:variants_es:ITB; AF0824:abbreviation:ABI; AF0825:abbreviation:ITB
+570|echocardiography|ecocardiografía|
+571|electrocardiogram|electrocardiograma|AF0826:aliases_en:ECG; AF0827:aliases_en:EKG; AF0828:abbreviation:ECG; AF0829:abbreviation:EKG
+572|fundoscopy|oftalmoscopia|AF0830:aliases_en:funduscopy; AF0831:variants_es:examen de fondo de ojo
+573|aortic dilatation|dilatación aórtica|AF0832:aliases_en:aortic dilation
+574|aortic aneurysm|aneurisma aórtico|
+575|bicuspid aortic valve|válvula aórtica bicúspide|AF0833:aliases_en:BAV; AF0834:abbreviation:BAV
+576|transient ischemic attack|ataque isquémico transitorio|AF0835:aliases_en:transient ischaemic attack; AF0836:aliases_en:TIA; AF0837:variants_es:accidente isquémico transitorio; AF0838:variants_es:AIT; AF0839:abbreviation:TIA; AF0840:abbreviation:AIT
+577|mild cognitive impairment|deterioro cognitivo leve|AF0841:aliases_en:MCI; AF0842:abbreviation:MCI
+578|modifiable risk factors|factores de riesgo modificables|
+579|nonmodifiable risk factors|factores de riesgo no modificables|AF0843:aliases_en:non-modifiable risk factors
+580|family history of hypertension|antecedentes familiares de hipertensión|
+581|physical inactivity|inactividad física|
+582|sedentary behavior|comportamiento sedentario|AF0844:aliases_en:sedentary behaviour; AF0845:variants_es:conducta sedentaria
+583|air pollution|contaminación atmosférica|
+584|noise pollution|contaminación acústica|
+585|psychosocial stress|estrés psicosocial|
+586|social deprivation|privación social|
+587|healthcare access|acceso a la atención de salud|AF0846:aliases_en:health care access
+588|sodium chloride|cloruro de sodio|AF0847:aliases_en:NaCl; AF0848:abbreviation:NaCl
+589|potassium chloride|cloruro de potasio|AF0849:aliases_en:KCl; AF0850:abbreviation:KCl
+590|sleep quality|calidad del sueño|
+591|pediatric hypertension|hipertensión pediátrica|AF0851:aliases_en:paediatric hypertension
+592|blood pressure percentile|percentil de presión arterial|
+593|older adults|adultos mayores|AF0852:variants_es:personas mayores
+594|young adults|adultos jóvenes|
+595|limited life expectancy|esperanza de vida limitada|
+596|autonomic dysfunction|disfunción autonómica|
+597|cerebral hypoperfusion|hipoperfusión cerebral|
+598|continuous positive airway pressure|presión positiva continua en la vía aérea|AF0853:aliases_en:CPAP; AF0854:abbreviation:CPAP
+599|intermittent hypoxemia|hipoxemia intermitente|AF0855:aliases_en:intermittent hypoxaemia
+600|sleep fragmentation|fragmentación del sueño|
+601|polysomnography|polisomnografía|
+602|apnea-hypopnea index|índice de apnea-hipopnea|AF0856:aliases_en:AHI; AF0857:variants_es:IAH; AF0858:abbreviation:AHI; AF0859:abbreviation:IAH
+603|mandibular advancement device|dispositivo de avance mandibular|
+604|ALLHAT trial|ensayo ALLHAT|AF0860:abbreviation:ALLHAT
+605|PATHWAY-2 trial|ensayo PATHWAY-2|
+606|CLICK trial|ensayo CLICK|
+607|BPROAD trial|ensayo BPROAD|
+608|STEP trial|ensayo STEP|
+609|SSaSS trial|ensayo SSaSS|
+610|ESPRIT trial|ensayo ESPRIT|
+611|Advance-HTN trial|ensayo Advance-HTN|
+612|CHAP trial|ensayo CHAP|AF0861:abbreviation:CHAP
+613|HYVET trial|ensayo HYVET|
+614|ACCOMPLISH trial|ensayo ACCOMPLISH|
+615|ASCOT-BPLA trial|ensayo ASCOT-BPLA|
+616|RADIANCE-HTN TRIO trial|ensayo RADIANCE-HTN TRIO|
+617|SPYRAL HTN-OFF MED trial|ensayo SPYRAL HTN-OFF MED|
+618|SPYRAL HTN-ON MED trial|ensayo SPYRAL HTN-ON MED|
+619|intensive blood pressure control|control intensivo de la presión arterial|
+620|standard blood pressure control|control estándar de la presión arterial|
+621|primary outcome|desenlace primario|AF0862:variants_es:resultado principal
+622|secondary outcome|desenlace secundario|
+623|composite outcome|desenlace compuesto|AF0863:variants_es:criterio de valoración compuesto
+624|cardiovascular death|muerte cardiovascular|
+625|nonfatal myocardial infarction|infarto de miocardio no mortal|AF0864:aliases_en:non-fatal myocardial infarction
+626|nonfatal stroke|accidente cerebrovascular no mortal|AF0865:aliases_en:non-fatal stroke
+627|hospitalization for heart failure|hospitalización por insuficiencia cardíaca|
+628|relative risk|riesgo relativo|AF0866:aliases_en:risk ratio; AF0867:aliases_en:RR; AF0868:abbreviation:RR
+629|confidence interval|intervalo de confianza|AF0869:aliases_en:CI; AF0870:variants_es:IC; AF0871:abbreviation:CI; AF0872:abbreviation:IC
+630|intention-to-treat analysis|análisis por intención de tratar|AF0873:aliases_en:ITT analysis
+631|per-protocol analysis|análisis por protocolo|
+632|crossover trial|ensayo cruzado|AF0874:aliases_en:cross-over trial
+633|double-blind trial|ensayo doble ciego|AF0875:aliases_en:double-masked trial
+634|placebo-controlled trial|ensayo controlado con placebo|
+635|cluster-randomized trial|ensayo aleatorizado por conglomerados|AF0876:aliases_en:cluster-randomised trial
+636|open-label trial|ensayo abierto|
+637|sham-controlled trial|ensayo controlado con procedimiento simulado|
+638|symptomatic hypotension|hipotensión sintomática|
+639|class of recommendation|clase de recomendación|AF0877:aliases_en:COR; AF0878:abbreviation:COR
+640|level of evidence|nivel de evidencia|AF0879:aliases_en:LOE; AF0880:abbreviation:LOE
+641|certainty of evidence|certeza de la evidencia|
+642|practice point|punto de práctica|
+643|odds ratio|razón de momios|AF0881:aliases_en:OR; AF0882:variants_es:odds ratio; AF0883:variants_es:razón de posibilidades; AF0884:abbreviation:OR
+644|number needed to harm|número necesario para dañar|AF0885:aliases_en:NNH; AF0886:abbreviation:NNH
+645|relative risk reduction|reducción relativa del riesgo|AF0887:aliases_en:RRR; AF0888:abbreviation:RRR
+646|2025 AHA/ACC guideline|guía AHA/ACC de 2025|AF0889:aliases_en:2025 ACC/AHA guideline
+647|2021 KDIGO blood pressure guideline|guía KDIGO de presión arterial de 2021|
+648|2024 KDIGO CKD guideline|guía KDIGO de enfermedad renal crónica de 2024|
+649|2025 ESC pregnancy guidelines|guía ESC de embarazo de 2025|
+650|PREVENT equations|ecuaciones PREVENT|AF0890:aliases_en:PREVENT risk equations; AF0891:abbreviation:PREVENT
+651|SCORE2|SCORE2|AF0892:aliases_en:Systematic COronary Risk Evaluation 2; AF0893:abbreviation:SCORE2
+652|SCORE2-OP|SCORE2-OP|
+653|SCORE2-Diabetes|SCORE2-Diabetes|
+654|10-year cardiovascular disease risk|riesgo de enfermedad cardiovascular a 10 años|AF0894:aliases_en:ten-year cardiovascular disease risk
+655|dihydropyridine calcium channel blockers|bloqueadores de los canales de calcio dihidropiridínicos|AF0895:aliases_en:dihydropyridine CCBs; AF0896:variants_es:calcioantagonistas dihidropiridínicos
+656|non-dihydropyridine calcium channel blockers|bloqueadores de los canales de calcio no dihidropiridínicos|AF0897:aliases_en:non-dihydropyridine CCBs; AF0898:variants_es:calcioantagonistas no dihidropiridínicos
+657|direct renin inhibitors|inhibidores directos de la renina|AF0899:aliases_en:DRIs; AF0900:abbreviation:DRIs

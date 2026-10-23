@@ -27,11 +27,13 @@ class CaptionHub:
     def __init__(self, config, *, subscriber_limit=32, queue_size=64, clock=time.time,
                  monotonic_clock=time.monotonic):
         self.config = config
+        self.overlay_style = {"text_color": "#ffffff", "background_color": "#001264"}
         self.subscriber_limit = subscriber_limit
         self.queue_size = queue_size
         self.clock = clock
         self.monotonic_clock = monotonic_clock
         self.session_id = None
+        self.direction = None
         self.state = "waiting"
         self.sequence = 0
         self.last_success_sequence = 0
@@ -61,6 +63,7 @@ class CaptionHub:
         self.event_id += 1
         message = {"type": kind, "protocol_version": self.protocol_version,
                    "event_id": self.event_id, "session_id": self.session_id,
+                   "direction": self.direction,
                    "visual_generation": self.visual_generation,
                    "cleared_through_sequence": self.cleared_through_sequence, **values}
         for subscriber in tuple(self.subscribers):
@@ -83,7 +86,9 @@ class CaptionHub:
                         or self.state in {"waiting", "connecting", "disconnected", "error"}):
             caption = None
         return {"type": "snapshot", "protocol_version": self.protocol_version,
+                "overlay_style": self.overlay_style,
                 "event_id": self.event_id, "session_id": self.session_id,
+                "direction": self.direction,
                 "state": self.state, "sequence": self.sequence,
                 "visual_generation": self.visual_generation,
                 "cleared_through_sequence": self.cleared_through_sequence,
@@ -107,10 +112,11 @@ class CaptionHub:
         self.subscribers.discard(subscriber)
         subscriber.closed.set()
 
-    def begin(self, session_id):
+    def begin(self, session_id, *, direction=None):
         if self.state in {"connecting", "live", "draining"}:
             raise ValueError("An audio session is already active; stop it before START")
         self.session_id = session_id
+        self.direction = direction
         self.sequence = 0
         self.last_success_sequence = 0
         self.visual_generation = 0
@@ -169,6 +175,10 @@ class CaptionHub:
         if result.session_id != self.session_id or self.state not in {"live", "draining"}:
             self.stale_events += 1
             return False
+        if self.direction and (result.source_language != self.direction["source_language"] or
+                               result.target_language != self.direction["target_language"]):
+            self.stale_events += 1
+            return False
         if result.sequence <= self.sequence:
             return False
         if result.sequence != self.sequence + 1:
@@ -202,6 +212,7 @@ class CaptionHub:
         self.last_caption = {"session_id": result.session_id, "sequence": result.sequence,
                              "segment_id": result.segment_id, "text": text,
                              "provider": result.provider, "published_at": now,
+                             "source_language": result.source_language, "target_language": result.target_language,
                              "expires_at": now + self.config.max_display_ms / 1000,
                              "published_mono_ms": published_mono * 1000,
                              "timing": asdict(result.timing) if result.timing else None,
@@ -218,6 +229,7 @@ class CaptionHub:
 
     def diagnostics(self):
         return {"session_id": self.session_id, "state": self.state,
+                "direction": self.direction,
                 "visual_generation": self.visual_generation,
                 "cleared_through_sequence": self.cleared_through_sequence,
                 "sequence": self.sequence,

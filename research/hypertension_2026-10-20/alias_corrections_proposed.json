@@ -1,0 +1,1074 @@
+{
+  "policy": "Research overlay, not a runtime glossary. Apply no automatic substitutions. Raw research inventory, original glossary and operational candidate remain byte-identical.",
+  "input_dataset_sha256": "bdcb40eea6c84e20ff327859eeac23f3b3194b3de9cfdd5553d6444e99e588c2",
+  "exclude_from_strict_alias_sets": [
+    {
+      "form_id": "UF0008",
+      "concept_id": "HTN_97cf39b495a5",
+      "canonical_en": "hypertension",
+      "language": "es",
+      "form": "hipertenso",
+      "occurrence_ids": [
+        "AF0010"
+      ],
+      "proposed_action": "Es adjetivo o persona; conservar hipertenso/hipertensa según la frase, sin convertirlo en el nombre de la enfermedad."
+    },
+    {
+      "form_id": "UF0011",
+      "concept_id": "HTN_97cf39b495a5",
+      "canonical_en": "hypertension",
+      "language": "en",
+      "form": "hypertensive",
+      "occurrence_ids": [
+        "AF0016"
+      ],
+      "proposed_action": "Adjetivo o sustantivo de persona; no sustituir por hypertension. Mantener separado en una propuesta gramatical."
+    },
+    {
+      "form_id": "UF0016",
+      "concept_id": "HTN_fc59510c3032",
+      "canonical_en": "normotension",
+      "language": "es",
+      "form": "normotenso",
+      "occurrence_ids": [
+        "AF0023"
+      ],
+      "proposed_action": "Persona o adjetivo frente a estado fisiológico; no sustituir por normotensión."
+    },
+    {
+      "form_id": "UF0017",
+      "concept_id": "HTN_fc59510c3032",
+      "canonical_en": "normotension",
+      "language": "en",
+      "form": "normotensive",
+      "occurrence_ids": [
+        "AF0024"
+      ],
+      "proposed_action": "Adjetivo/persona frente a nombre de estado; conservar categoría gramatical."
+    },
+    {
+      "form_id": "UF0077",
+      "concept_id": "HTN_4ab0f32c0a4c",
+      "canonical_en": "JNC 8 report",
+      "language": "en",
+      "form": "Eighth Joint National Committee",
+      "occurrence_ids": [
+        "AF0132",
+        "AF0133"
+      ],
+      "proposed_action": "Comité y documento no son la misma entidad. Usar JNC 8 report para el informe; retener el comité solo como entidad relacionada."
+    },
+    {
+      "form_id": "UF0117",
+      "concept_id": "HTN_c55b21ee723a",
+      "canonical_en": "co-chair",
+      "language": "es",
+      "form": "coordinador conjunto",
+      "occurrence_ids": [
+        "AF0202"
+      ],
+      "proposed_action": "La coordinación conjunta no garantiza el cargo de copresidente. Mantener copresidente; no promover el cargo alternativo a alias."
+    },
+    {
+      "form_id": "UF0199",
+      "concept_id": "HTN_18261da1ebb6",
+      "canonical_en": "diuretics",
+      "language": "en",
+      "form": "diuretic therapy",
+      "occurrence_ids": [
+        "AF0362",
+        "AF0363"
+      ],
+      "proposed_action": "Clase de fármacos frente a tratamiento. Conservar diuretic therapy como expresión relacionada: tratamiento con diuréticos."
+    },
+    {
+      "form_id": "UF0292",
+      "concept_id": "HTN_1e31d99ae148",
+      "canonical_en": "frailty",
+      "language": "en",
+      "form": "frail patients",
+      "occurrence_ids": [
+        "AF0533",
+        "AF0534"
+      ],
+      "proposed_action": "Condición frente a grupo de personas. Conservar frail patients como pacientes con fragilidad, sin colapsarlo con frailty."
+    },
+    {
+      "form_id": "UF0336",
+      "concept_id": "HTN_a440318f5b79",
+      "canonical_en": "pressure natriuresis",
+      "language": "es",
+      "form": "relación presión-natriuresis",
+      "occurrence_ids": [
+        "AF0598"
+      ],
+      "proposed_action": "El fenómeno y su relación o curva de respuesta no son cadenas intercambiables. Mantener la relación como expresión relacionada."
+    },
+    {
+      "form_id": "UF0342",
+      "concept_id": "HTN_07b5d1683c1e",
+      "canonical_en": "sympathetic activation",
+      "language": "es",
+      "form": "hiperactividad simpática",
+      "occurrence_ids": [
+        "AF0605"
+      ],
+      "proposed_action": "La activación no implica necesariamente hiperactividad. Conservar activación simpática; hiperactividad queda relacionada con un grado de actividad aumentado."
+    },
+    {
+      "form_id": "UF0471",
+      "concept_id": "HTN_7865f1343d17",
+      "canonical_en": "pill burden",
+      "language": "es",
+      "form": "carga de medicación",
+      "occurrence_ids": [
+        "AF0766"
+      ],
+      "proposed_action": "Carga de medicación es más amplia que número de comprimidos. Proponer número de comprimidos/pastillas como aclaración contextual; no sustituir por dosis total."
+    }
+  ],
+  "retain_only_with_conditions": [
+    {
+      "form_id": "UF0024",
+      "concept_id": "HTN_ce88c1a364ff",
+      "form": "presión sistólica",
+      "language": "es",
+      "condition": "Exige contexto de presión arterial; no completar automáticamente si se trata de una cavidad o circuito pulmonar."
+    },
+    {
+      "form_id": "UF0025",
+      "concept_id": "HTN_ce88c1a364ff",
+      "form": "systolic pressure",
+      "language": "en",
+      "condition": "Exige contexto de presión arterial; no añadir el territorio arterial sistémico a una medida de otra localización."
+    },
+    {
+      "form_id": "UF0029",
+      "concept_id": "HTN_69524c07e2bc",
+      "form": "presión diastólica",
+      "language": "es",
+      "condition": "Exige contexto arterial; puede describir otra presión diastólica si se elimina la localización."
+    },
+    {
+      "form_id": "UF0030",
+      "concept_id": "HTN_69524c07e2bc",
+      "form": "diastolic pressure",
+      "language": "en",
+      "condition": "Conservar el territorio de medición; arterial no se debe inferir de diastolic aislado."
+    },
+    {
+      "form_id": "UF0034",
+      "concept_id": "HTN_f79b9cb816a3",
+      "form": "blood pressure categories",
+      "language": "en",
+      "condition": "Categorías y sistema de clasificación se relacionan, pero no designan el mismo objeto en toda frase; preservar estructura de clasificación."
+    },
+    {
+      "form_id": "UF0044",
+      "concept_id": "HTN_e4fa389210bd",
+      "form": "automedición domiciliaria de la presión arterial",
+      "language": "es",
+      "condition": "Forma clínica de AMPA; verificar quién mide y el ámbito domiciliario. No equiparar todo seguimiento remoto o medición por un profesional con automedición."
+    },
+    {
+      "form_id": "UF0084",
+      "concept_id": "HTN_1801e881de4c",
+      "form": "riesgo de enfermedad cardiovascular",
+      "language": "es",
+      "condition": "Exige el mismo desenlace y horizonte temporal; no completar ASCVD, diez años ni una ecuación concreta."
+    },
+    {
+      "form_id": "UF0085",
+      "concept_id": "HTN_1801e881de4c",
+      "form": "cardiovascular disease risk",
+      "language": "en",
+      "condition": "Conservar desenlace y horizonte; el riesgo cardiovascular genérico no identifica por sí solo una calculadora."
+    },
+    {
+      "form_id": "UF0126",
+      "concept_id": "HTN_6eaf977b00ec",
+      "form": "suppressed renin",
+      "language": "en",
+      "condition": "Proceso de supresión frente a hallazgo de renina suprimida; conservar tiempo, mecanismo y construcción de la oración."
+    },
+    {
+      "form_id": "UF0127",
+      "concept_id": "HTN_6eaf977b00ec",
+      "form": "renina suprimida",
+      "language": "es",
+      "condition": "Hallazgo frente a proceso; no inferir prueba de supresión ni diagnóstico de aldosteronismo."
+    },
+    {
+      "form_id": "UF0149",
+      "concept_id": "HTN_74715dd1c10a",
+      "form": "extracellular volume",
+      "language": "en",
+      "condition": "Expresión abreviada válida cuando el compartimento es líquido; no extender a todo volumen extracelular de una técnica de imagen."
+    },
+    {
+      "form_id": "UF0150",
+      "concept_id": "HTN_74715dd1c10a",
+      "form": "volumen extracelular",
+      "language": "es",
+      "condition": "Requiere contexto de líquido extracelular; mantener el compartimento y la técnica de medición."
+    },
+    {
+      "form_id": "UF0171",
+      "concept_id": "HTN_015add4e7c55",
+      "form": "blood pressure medication",
+      "language": "en",
+      "condition": "Expresión de divulgación; confirmar que reduce la PA. No inferir fármaco ni indicación a partir de una referencia genérica a presión arterial."
+    },
+    {
+      "form_id": "UF0178",
+      "concept_id": "HTN_293eb322616c",
+      "form": "treatment adherence",
+      "language": "en",
+      "condition": "Adherencia al tratamiento puede incluir dieta, ejercicio u otras intervenciones. Conservar el calificador farmacológico cuando es el objeto."
+    },
+    {
+      "form_id": "UF0180",
+      "concept_id": "HTN_90d4d5df0cdf",
+      "form": "dose titration",
+      "language": "en",
+      "condition": "Ajuste de dosis de una medicación en este contexto; no presupone aumento, fármaco concreto o pauta."
+    },
+    {
+      "form_id": "UF0200",
+      "concept_id": "HTN_2315cb859e3f",
+      "form": "thiazide-type diuretics",
+      "language": "en",
+      "condition": "La extensión varía por autor: KDIGO 2012 lo usa como grupo amplio que incluye thiazide-like. No mapear universalmente a tiazidas estructurales; conservar el término del documento y sus ejemplos."
+    },
+    {
+      "form_id": "UF0249",
+      "concept_id": "HTN_fb86038ecada",
+      "form": "arrhythmia",
+      "language": "en",
+      "condition": "La abreviación lexical requiere contexto cardíaco; no ampliar a un diagnóstico o subtipo específico."
+    },
+    {
+      "form_id": "UF0261",
+      "concept_id": "HTN_67ae2e7ca5b5",
+      "form": "síndrome de apnea obstructiva del sueño",
+      "language": "es",
+      "condition": "Mantener la palabra síndrome cuando aparece; no convertir un evento de apnea aislado en síndrome ni perder el carácter obstructivo."
+    },
+    {
+      "form_id": "UF0265",
+      "concept_id": "HTN_58ff1710a6fe",
+      "form": "manejo del estilo de vida",
+      "language": "es",
+      "condition": "Manejo incluye evaluación y seguimiento; modificación designa cambio. Conservar como expresión relacionada bajo contexto, no sustitución literal."
+    },
+    {
+      "form_id": "UF0266",
+      "concept_id": "HTN_58ff1710a6fe",
+      "form": "lifestyle management",
+      "language": "en",
+      "condition": "Manejo y modificación tienen alcance distinto; no convertir seguimiento o consejo en modificación ya realizada."
+    },
+    {
+      "form_id": "UF0267",
+      "concept_id": "HTN_23003a7c53dc",
+      "form": "healthy dietary pattern",
+      "language": "en",
+      "condition": "Patrón y dieta son formulaciones relacionadas en recomendaciones; no convertirlo en un régimen específico como DASH."
+    },
+    {
+      "form_id": "UF0273",
+      "concept_id": "HTN_d5f7ec4c74ec",
+      "form": "sodium restriction",
+      "language": "en",
+      "condition": "Exige contexto de ingesta dietética; no reemplazar una restricción en otro medio o procedimiento."
+    },
+    {
+      "form_id": "UF0277",
+      "concept_id": "HTN_8ded5b0bc81d",
+      "form": "potassium-supplemented salt",
+      "language": "en",
+      "condition": "Confirmar que se usa como sustituto de sal y conserva la composición del producto; no inferir porcentaje o dosis de potasio."
+    },
+    {
+      "form_id": "UF0280",
+      "concept_id": "HTN_f238539d62d7",
+      "form": "sugary drinks",
+      "language": "en",
+      "condition": "Forma coloquial; verificar presencia de azúcar añadido en la definición del estudio. No incluir automáticamente bebidas sin azúcar añadido."
+    },
+    {
+      "form_id": "UF0282",
+      "concept_id": "HTN_bd3740c054f3",
+      "form": "aerobic training",
+      "language": "en",
+      "condition": "Entrenamiento es un programa; ejercicio puede ser una actividad aislada. Conservar duración y modalidad."
+    },
+    {
+      "form_id": "UF0283",
+      "concept_id": "HTN_9f7e988429eb",
+      "form": "dynamic resistance training",
+      "language": "en",
+      "condition": "Programa de entrenamiento frente a ejercicio; conservar dinámico y de fuerza, sin inferir resistencia aeróbica."
+    },
+    {
+      "form_id": "UF0284",
+      "concept_id": "HTN_9f7e988429eb",
+      "form": "ejercicio dinámico de resistencia",
+      "language": "es",
+      "condition": "Resistencia se usa aquí como fuerza contra carga; no confundir con resistencia cardiorrespiratoria."
+    },
+    {
+      "form_id": "UF0285",
+      "concept_id": "HTN_be068174bf76",
+      "form": "isometric resistance training",
+      "language": "en",
+      "condition": "Conservar isométrico y la diferencia entre ejercicio y programa de entrenamiento."
+    },
+    {
+      "form_id": "UF0286",
+      "concept_id": "HTN_be068174bf76",
+      "form": "ejercicio de resistencia isométrica",
+      "language": "es",
+      "condition": "Conservar contracción isométrica de fuerza; no convertir en ejercicio dinámico o aeróbico."
+    },
+    {
+      "form_id": "UF0312",
+      "concept_id": "HTN_bb6a727d2682",
+      "form": "niveles plasmáticos",
+      "language": "es",
+      "condition": "Confirmar analito, muestra y magnitud; niveles no implica actividad ni unidades concretas."
+    },
+    {
+      "form_id": "UF0313",
+      "concept_id": "HTN_bb6a727d2682",
+      "form": "plasma levels",
+      "language": "en",
+      "condition": "Niveles es una expresión informal de concentración solo si el analito y la muestra son explícitos; no inferir actividad de renina."
+    },
+    {
+      "form_id": "UF0316",
+      "concept_id": "HTN_e73ce78bac75",
+      "form": "oscillometric device",
+      "language": "en",
+      "condition": "Dispositivo oscilométrico es más amplio fuera del contexto de PA; conservar el tipo de medida."
+    },
+    {
+      "form_id": "UF0319",
+      "concept_id": "HTN_9814c63d18cd",
+      "form": "inter-arm difference",
+      "language": "en",
+      "condition": "Expresión elíptica: exigir que la diferencia sea de PA, no de circunferencia u otra medida."
+    },
+    {
+      "form_id": "UF0324",
+      "concept_id": "HTN_1461e740924a",
+      "form": "guideline implementation",
+      "language": "en",
+      "condition": "Exige guías de práctica clínica, sin inferir una guía o versión concreta."
+    },
+    {
+      "form_id": "UF0347",
+      "concept_id": "HTN_1e4b9f34a68a",
+      "form": "resistencia vascular periférica",
+      "language": "es",
+      "condition": "Validar circulación sistémica y magnitud; periférica no autoriza inferir territorio pulmonar."
+    },
+    {
+      "form_id": "UF0348",
+      "concept_id": "HTN_1e4b9f34a68a",
+      "form": "peripheral vascular resistance",
+      "language": "en",
+      "condition": "Uso fisiológico contextual; preservar circulación sistémica. No confundir resistencia vascular pulmonar ni expandir PVR sin definición."
+    },
+    {
+      "form_id": "UF0372",
+      "concept_id": "HTN_3a2b05370dcb",
+      "form": "awake blood pressure",
+      "language": "en",
+      "condition": "Periodo del reloj y vigilia no son idénticos. Usar diario de sueño y definición del protocolo; no intercambiar automáticamente en trabajadores por turnos."
+    },
+    {
+      "form_id": "UF0373",
+      "concept_id": "HTN_c10787c36c00",
+      "form": "asleep blood pressure",
+      "language": "en",
+      "condition": "Noche y sueño pueden diferir. Usar diario/protocolo y conservar el periodo informado."
+    },
+    {
+      "form_id": "UF0387",
+      "concept_id": "HTN_96e9c067e48f",
+      "form": "relación noche-día",
+      "language": "es",
+      "condition": "Exigir PA y sentido noche/día; no invertir numerador y denominador ni inferir porcentaje de descenso."
+    },
+    {
+      "form_id": "UF0396",
+      "concept_id": "HTN_80e560c436f7",
+      "form": "cateterismo de venas suprarrenales",
+      "language": "es",
+      "condition": "El cateterismo es el acceso; confirmar muestreo de sangre suprarrenal. No equiparar una intervención venosa sin toma de muestras con AVS."
+    },
+    {
+      "form_id": "UF0465",
+      "concept_id": "HTN_b11a365c1e0e",
+      "form": "biterapia antihipertensiva",
+      "language": "es",
+      "condition": "Exige contexto antihipertensivo y dos componentes; no asumir un único comprimido."
+    },
+    {
+      "form_id": "UF0466",
+      "concept_id": "HTN_84e2adba4b70",
+      "form": "triterapia antihipertensiva",
+      "language": "es",
+      "condition": "Exige contexto antihipertensivo y tres componentes; no asumir dosis fija o un único comprimido."
+    },
+    {
+      "form_id": "UF0470",
+      "concept_id": "HTN_af578385a1b7",
+      "form": "clinical inertia",
+      "language": "en",
+      "condition": "La literatura usa ambos términos de forma intercambiable en falta de inicio/intensificación indicada. Retener en ese contexto; no atribuir inercia a toda ausencia de cambio terapéutico."
+    },
+    {
+      "form_id": "UF0473",
+      "concept_id": "HTN_91e6979ae1a3",
+      "form": "atención multidisciplinaria",
+      "language": "es",
+      "condition": "Varios profesionales no prueban trabajo coordinado en equipo. Mantener el atributo de equipo cuando es parte del modelo."
+    },
+    {
+      "form_id": "UF0506",
+      "concept_id": "HTN_bc88b7581c59",
+      "form": "dilatación de la aurícula izquierda",
+      "language": "es",
+      "condition": "Confirmar medida de tamaño/volumen auricular y criterio de la técnica; no inferir hipertrofia, fibrilación o umbral."
+    },
+    {
+      "form_id": "UF0548",
+      "concept_id": "HTN_b35b3e988fc5",
+      "form": "double-masked trial",
+      "language": "en",
+      "condition": "Variantes de enmascaramiento: conservar a quién se ocultó la asignación; doble no identifica por sí solo los dos grupos."
+    },
+    {
+      "form_id": "UF0557",
+      "concept_id": "HTN_fc1d22db340b",
+      "form": "2025 ACC/AHA guideline",
+      "language": "en",
+      "condition": "El orden de las sociedades puede variar; mantener año y tema de hipertensión. En 2025 existen otras guías AHA/ACC, incluida ACS."
+    }
+  ],
+  "abbreviation_expansion_proposals": [
+    {
+      "correction_id": "AE001",
+      "concept_id": "HTN_e4fa389210bd",
+      "canonical_en": "home blood pressure monitoring",
+      "form": "AMPA",
+      "language": "es",
+      "field": "abbreviations.expansion",
+      "previous": "monitorización domiciliaria de la presión arterial",
+      "proposed": "automedida de la presión arterial",
+      "reason": "Restituir auto-medición en la expansión de AMPA; el término genérico de monitorización domiciliaria no expande sus letras. S29, glosario, usa automedida de la presión arterial por parte del paciente.",
+      "source_ids": [
+        "S29"
+      ],
+      "basis": "explicit_glossary_definition",
+      "action": "research_proposal_only_not_applied",
+      "automatic_substitution_approved": false
+    },
+    {
+      "correction_id": "AE002",
+      "concept_id": "HTN_67ae2e7ca5b5",
+      "canonical_en": "obstructive sleep apnea",
+      "form": "SAOS",
+      "language": "es",
+      "field": "abbreviations.expansion",
+      "previous": "apnea obstructiva del sueño",
+      "proposed": "síndrome de apnea obstructiva del sueño",
+      "reason": "Restituir síndrome; la expansión heredada omitía la S. No inferir diagnóstico por un episodio de apnea.",
+      "source_ids": [
+        "S29"
+      ],
+      "basis": "explicit_glossary_definition",
+      "action": "research_proposal_only_not_applied",
+      "automatic_substitution_approved": false
+    },
+    {
+      "correction_id": "AE003",
+      "concept_id": "HTN_0114ad465a4c",
+      "canonical_en": "mineralocorticoid receptor antagonists",
+      "form": "MRA",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "mineralocorticoid receptor antagonists",
+      "proposed": "mineralocorticoid receptor antagonist",
+      "reason": "Proponer expansión singular para esta forma sin s; conservar el plural como variante separada. El número final siempre depende de la oración, pues algunas fuentes usan la sigla sin flexión para la clase.",
+      "source_ids": [
+        "S71",
+        "S29"
+      ],
+      "basis": "editorial_grammatical_number_proposal_with_class_context",
+      "action": "research_proposal_only_not_applied",
+      "automatic_substitution_approved": false
+    },
+    {
+      "correction_id": "AE004",
+      "concept_id": "HTN_d9b6ff80f476",
+      "canonical_en": "angiotensin II receptor blockers",
+      "form": "ARB",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "angiotensin II receptor blockers",
+      "proposed": "angiotensin II receptor blocker",
+      "reason": "Proponer expansión singular para esta forma sin s; conservar el plural como variante separada. El número final siempre depende de la oración, pues algunas fuentes usan la sigla sin flexión para la clase.",
+      "source_ids": [
+        "S71",
+        "S32"
+      ],
+      "basis": "editorial_grammatical_number_proposal_with_class_context",
+      "action": "research_proposal_only_not_applied",
+      "automatic_substitution_approved": false
+    },
+    {
+      "correction_id": "AE005",
+      "concept_id": "HTN_130dff595337",
+      "canonical_en": "calcium channel blockers",
+      "form": "CCB",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "calcium channel blockers",
+      "proposed": "calcium channel blocker",
+      "reason": "Proponer expansión singular para esta forma sin s; conservar el plural como variante separada. El número final siempre depende de la oración, pues algunas fuentes usan la sigla sin flexión para la clase.",
+      "source_ids": [
+        "S71",
+        "S29"
+      ],
+      "basis": "editorial_grammatical_number_proposal_with_class_context",
+      "action": "research_proposal_only_not_applied",
+      "automatic_substitution_approved": false
+    },
+    {
+      "correction_id": "AE006",
+      "concept_id": "HTN_74f76b30d806",
+      "canonical_en": "nonsteroidal anti-inflammatory drugs",
+      "form": "NSAID",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "nonsteroidal anti-inflammatory drugs",
+      "proposed": "nonsteroidal anti-inflammatory drug",
+      "reason": "Proponer expansión singular para esta forma sin s; conservar el plural como variante separada. El número final siempre depende de la oración, pues algunas fuentes usan la sigla sin flexión para la clase.",
+      "source_ids": [
+        "S05",
+        "S29"
+      ],
+      "basis": "editorial_grammatical_number_proposal_with_class_context",
+      "action": "research_proposal_only_not_applied",
+      "automatic_substitution_approved": false
+    }
+  ],
+  "abbreviation_other_meanings_proposals": [
+    {
+      "concept_id": "HTN_cca214c43d15",
+      "form": "MAP",
+      "language": "en",
+      "previous": [
+        "mean arterial pressure",
+        "palabra inglesa map"
+      ],
+      "proposed_distinct_meanings": [
+        "palabra inglesa map"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "mean arterial pressure",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_3feefe243332",
+      "form": "ECA",
+      "language": "es",
+      "previous": [
+        "enzima convertidora de angiotensina",
+        "ensayo controlado aleatorizado"
+      ],
+      "proposed_distinct_meanings": [
+        "enzima convertidora de angiotensina"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "ensayo controlado aleatorizado",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_173615f28213",
+      "form": "RAR",
+      "language": "es",
+      "previous": [
+        "ratio aldosterona-renina",
+        "reducción absoluta del riesgo"
+      ],
+      "proposed_distinct_meanings": [
+        "ratio aldosterona-renina"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "reducción absoluta del riesgo",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_dcd292247cbd",
+      "form": "PA",
+      "language": "en",
+      "previous": [
+        "primary aldosteronism (EN)",
+        "presión arterial (ES)",
+        "pulmonary artery (EN)"
+      ],
+      "proposed_distinct_meanings": [
+        "presión arterial (ES)",
+        "pulmonary artery (EN)"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "primary aldosteronism (EN)",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_e2601a1dc5c2",
+      "form": "PRA",
+      "language": "en",
+      "previous": [
+        "plasma renin activity",
+        "panel-reactive antibody"
+      ],
+      "proposed_distinct_meanings": [
+        "panel-reactive antibody"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "plasma renin activity",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_1d322d2c80e0",
+      "form": "PAC",
+      "language": "en",
+      "previous": [
+        "plasma aldosterone concentration",
+        "premature atrial contraction"
+      ],
+      "proposed_distinct_meanings": [
+        "premature atrial contraction"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "plasma aldosterone concentration",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_351e3115ce6d",
+      "form": "RAS",
+      "language": "en",
+      "previous": [
+        "renin-angiotensin system",
+        "renal artery stenosis",
+        "RAS gene family"
+      ],
+      "proposed_distinct_meanings": [
+        "renal artery stenosis",
+        "RAS gene family"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "renin-angiotensin system",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_95c847b235dd",
+      "form": "ACE",
+      "language": "en",
+      "previous": [
+        "angiotensin-converting enzyme",
+        "adverse childhood experiences"
+      ],
+      "proposed_distinct_meanings": [
+        "adverse childhood experiences"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "angiotensin-converting enzyme",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_95c847b235dd",
+      "form": "ECA",
+      "language": "es",
+      "previous": [
+        "enzima convertidora de angiotensina",
+        "ensayo controlado aleatorizado"
+      ],
+      "proposed_distinct_meanings": [
+        "ensayo controlado aleatorizado"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "enzima convertidora de angiotensina",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_a05dadb4b409",
+      "form": "MR",
+      "language": "en",
+      "previous": [
+        "mineralocorticoid receptor",
+        "magnetic resonance",
+        "mitral regurgitation"
+      ],
+      "proposed_distinct_meanings": [
+        "magnetic resonance",
+        "mitral regurgitation"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "mineralocorticoid receptor",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_0114ad465a4c",
+      "form": "MRAs",
+      "language": "en",
+      "previous": [
+        "mineralocorticoid receptor antagonists",
+        "plural de angiografía por RM en algunos discursos"
+      ],
+      "proposed_distinct_meanings": [],
+      "remove_self_expansions": [
+        {
+          "value": "mineralocorticoid receptor antagonists",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [
+        {
+          "value": "plural de angiografía por RM en algunos discursos",
+          "reason": "Descripción vaga o plural inferido sin acepción y fuente específicas; retirar del campo de significados verificados."
+        }
+      ],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_0114ad465a4c",
+      "form": "MRA",
+      "language": "en",
+      "previous": [
+        "mineralocorticoid receptor antagonist",
+        "magnetic resonance angiography"
+      ],
+      "proposed_distinct_meanings": [
+        "magnetic resonance angiography"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "mineralocorticoid receptor antagonist",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_a4f97a1e45b5",
+      "form": "APA",
+      "language": "en",
+      "previous": [
+        "aldosterone-producing adenoma",
+        "sigla de varias sociedades"
+      ],
+      "proposed_distinct_meanings": [],
+      "remove_self_expansions": [
+        {
+          "value": "aldosterone-producing adenoma",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [
+        {
+          "value": "sigla de varias sociedades",
+          "reason": "Descripción vaga o plural inferido sin acepción y fuente específicas; retirar del campo de significados verificados."
+        }
+      ],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_4a97a2620aef",
+      "form": "MI",
+      "language": "en",
+      "previous": [
+        "myocardial infarction",
+        "mitral insufficiency"
+      ],
+      "proposed_distinct_meanings": [
+        "mitral insufficiency"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "myocardial infarction",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_09417dacb727",
+      "form": "AF",
+      "language": "en",
+      "previous": [
+        "atrial fibrillation",
+        "otras abreviaturas según especialidad"
+      ],
+      "proposed_distinct_meanings": [],
+      "remove_self_expansions": [
+        {
+          "value": "atrial fibrillation",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [
+        {
+          "value": "otras abreviaturas según especialidad",
+          "reason": "Descripción vaga o plural inferido sin acepción y fuente específicas; retirar del campo de significados verificados."
+        }
+      ],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_037c29d33df0",
+      "form": "HRV",
+      "language": "en",
+      "previous": [
+        "heart rate variability (EN)",
+        "hipertensión renovascular (ES en S29)"
+      ],
+      "proposed_distinct_meanings": [
+        "hipertensión renovascular (ES en S29)"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "heart rate variability (EN)",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_c6e2a2151a5c",
+      "form": "CO",
+      "language": "en",
+      "previous": [
+        "cardiac output",
+        "carbon monoxide"
+      ],
+      "proposed_distinct_meanings": [
+        "carbon monoxide"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "cardiac output",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_2e060091f636",
+      "form": "HR",
+      "language": "en",
+      "previous": [
+        "heart rate",
+        "hazard ratio"
+      ],
+      "proposed_distinct_meanings": [
+        "hazard ratio"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "heart rate",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_c044a9939be3",
+      "form": "NO",
+      "language": "en",
+      "previous": [
+        "nitric oxide",
+        "negación"
+      ],
+      "proposed_distinct_meanings": [
+        "negación"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "nitric oxide",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_2320a39a5ea0",
+      "form": "ACS",
+      "language": "en",
+      "previous": [
+        "autonomous cortisol secretion",
+        "acute coronary syndrome"
+      ],
+      "proposed_distinct_meanings": [
+        "acute coronary syndrome"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "autonomous cortisol secretion",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_889dab4e3c8c",
+      "form": "MRA",
+      "language": "en",
+      "previous": [
+        "mineralocorticoid receptor antagonist",
+        "magnetic resonance angiography"
+      ],
+      "proposed_distinct_meanings": [],
+      "remove_self_expansions": [
+        {
+          "value": "mineralocorticoid receptor antagonist",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        },
+        {
+          "value": "magnetic resonance angiography",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    },
+    {
+      "concept_id": "HTN_f3279006c3e0",
+      "form": "IC",
+      "language": "es",
+      "previous": [
+        "intervalo de confianza",
+        "insuficiencia cardíaca"
+      ],
+      "proposed_distinct_meanings": [
+        "insuficiencia cardíaca"
+      ],
+      "remove_self_expansions": [
+        {
+          "value": "intervalo de confianza",
+          "reason": "Es la propia expansión o su variante de número, no otra acepción."
+        }
+      ],
+      "demote_to_unverified_notes": [],
+      "policy": "Retained historical alternatives are context warnings; only the separate evidence register marks specifically checked external meanings.",
+      "action": "research_proposal_only_not_applied"
+    }
+  ],
+  "block_unconditional_expansion_of": [
+    "pad",
+    "eca",
+    "mra"
+  ],
+  "external_homograph_forms": [
+    "PA",
+    "HRV",
+    "RAR",
+    "ARR",
+    "PRA",
+    "PAC",
+    "ACS",
+    "FMD",
+    "IAH",
+    "PEG",
+    "CI",
+    "RR",
+    "IC",
+    "HR",
+    "MR",
+    "RAS"
+  ],
+  "automatic_substitution_approved": false
+}

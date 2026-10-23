@@ -1,0 +1,58 @@
+# canonical | English attestation alternatives | Spanish attestation alternatives
+JNC 7 guideline|JNC 7;JNC-7;Seventh Report of the Joint National Committee|JNC 7;JNC-7;Séptimo Informe del Comité Nacional Conjunto
+JNC 8 report|JNC 8;JNC-8|JNC 8;JNC-8;Octavo Informe
+guideline-driven management|guideline-directed management;guideline-directed treatment|manejo basado en las guías de práctica clínica;manejo basado en guías;manejo conforme a las guías;tratamiento dirigido por guías;terapias médicas conformes a la guía
+evidence-based review|evidence-based review|revisión basada en la evidencia;revisión basada en evidencias
+ten-year ASCVD risk|10-year ASCVD risk;10-year risk of ASCVD;10-year atherosclerotic cardiovascular disease risk|riesgo de enfermedad cardiovascular aterosclerótica;riesgo de ECVA a 10 años
+primordial prevention|primordial prevention|prevención primordial
+CARDIA study|CARDIA study;Coronary Artery Risk Development in Young Adults|estudio CARDIA;Coronary Artery Risk Development in Young Adults
+REGARDS study|REGARDS study|estudio REGARDS;REGARDS es un estudio
+NHANES|NHANES|NHANES
+co-chair|co-chair|copresidente
+renin-independent aldosterone production|renin-independent aldosterone production|producción autónoma de aldosterona, independiente de la actividad de renina;independiente de la secreción de renina;independiente de renina
+hypokalemic metabolic alkalosis|hypokalemic metabolic alkalosis;hypokalaemic metabolic alkalosis|alcalosis metabólica hipopotasémica;alcalosis metabólica hipokalémica
+medication titration|medication titration|titulación a dosis creciente;titulación de dosis;ajuste gradual de la dosis
+mineralocorticoid receptor antagonist therapy|MRA therapy;MRA treatment;MR antagonist therapy;mineralocorticoid receptor antagonist treatment|tratamiento con antagonistas del MR;tratamiento con antagonistas del receptor de mineralocorticoides
+subclinical atherosclerosis|subclinical atherosclerosis|aterosclerosis subclínica;ateroesclerosis subclínica
+sodium-containing salts|sodium-containing salts;salts containing sodium|sales que contienen sodio;sales de sodio;sales sódicas
+alcohol moderation|moderate alcohol consumption|moderación del consumo de alcohol
+micrograms per day|µg/day;µg/d;µg/24 h;µg/24h;mcg/day;mcg/d;micrograms per day;micrograms/day|microgramos por día;µg/día;mcg/24h;µg/24 h
+micrograms per deciliter|µg/dL|µg/dL;mcg/dl;microgramos por decilitro
+clinical guidelines implementation|implementation of clinical practice guidelines;guideline implementation;implementation of guidelines|implementación de guías de práctica clínica;implementación de las guías de práctica clínica
+arterial compliance|arterial compliance|compliancia arterial
+hybrid sphygmomanometer|hybrid sphygmomanometer|esfigmomanómetro híbrido;esfigmomanómetros híbridos;comprenden los dispositivos aneroides y los híbridos
+attended automated office blood pressure|attended AOBP|con asistencia de un profesional de la salud;medición automática con observador;medición automatizada con observador
+renal parenchymal hypertension|renal parenchymal hypertension;hypertension due to renal parenchymal disease|hipertensión por enfermedad renal parenquimatosay;hipertensión por enfermedad renal parenquimatosa
+adrenal lateralization|adrenal lateralization|lateralización en la secreción de aldosterona;lateralización suprarrenal
+lateralizing primary aldosteronism|lateralizing PA;lateralizing primary aldosteronism|HAP que lateraliza;HAP lateralizado
+overnight dexamethasone suppression test|overnight dexamethasone suppression test|prueba nocturna con un miligramo;prueba de supresión nocturna con dexametasona;test de supresión nocturna con dexametasona
+preoperative alpha blockade|preoperative alpha blockade;preoperative alpha-blockade;preoperative α-blockade|bloqueo alfaadrenérgico preoperatorio;bloqueo alfa preoperatorio;bloqueo alfa-adrenérgico preoperatorio
+licorice-induced hypertension|licorice-induced hypertension;liquorice-induced hypertension|hipertensión por ingesta de regaliz;hipertensión inducida por regaliz
+albumin excretion rate|albumin excretion rate|tasa de excreción de albúmina
+spot urine sample|spot urine sample|muestra de orina aislada;muestra aislada de orina;muestra puntual de orina
+biochemical adherence testing|biochemical adherence testing;biochemical testing of adherence;biochemical assessment of adherence;chemical adherence testing|pruebas bioquímicas que valoran;pruebas bioquímicas de adherencia;evaluación bioquímica de la adherencia
+alcohol-mediated renal denervation|alcohol-mediated renal denervation|denervación renal mediada por alcohol
+renal artery stenting|renal artery stenting|colocación de un stent arterial;stent en la arteria renal;stents en las arterias renales;implantación de stent renal;implantación de stents renales
+asymptomatic markedly elevated blood pressure|asymptomatic markedly elevated blood pressure;asymptomatic markedly elevated BP|presión arterial marcadamente elevada asintomática;presión arterial marcadamente elevada sin síntomas
+focal neurological deficit|focal neurological deficit|déficit neurológico focal
+intravenous antihypertensive therapy|intravenous antihypertensive medication;intravenous antihypertensive treatment;intravenous antihypertensive drugs|administración de medicamentos intravenosos;antihipertensivos intravenosos;tratamiento antihipertensivo intravenoso;fármacos antihipertensivos intravenosos
+flash pulmonary edema|flash pulmonary oedema;flash pulmonary edema|edema pulmonar de aparición súbita;edema agudo de pulmón de inicio brusco;edema pulmonar súbito;edema pulmonar flash
+postpartum preeclampsia|postpartum preeclampsia;postpartum pre-eclampsia|preeclampsia posparto;preeclampsia postparto
+perinatal death|perinatal death|muerte perinatal;muertes perinatales
+glomerular hypertension|glomerular hypertension|hipertensión glomerular
+blood pressure percentile|BP percentile;blood pressure percentile|percentil (Pc) 95 del promedio de PA;percentil de presión arterial;percentiles de PA;percentil de PA
+cerebral hypoperfusion|cerebral hypoperfusion|hipoperfusión cerebral
+intermittent hypoxemia|intermittent hypoxaemia;intermittent hypoxemia|hipoxemia intermitente
+CLICK trial|CLICK trial;Chlorthalidone in Chronic Kidney Disease|ensayo CLICK;estudio CLICK
+BPROAD trial|BPROAD trial;Blood Pressure Control Target in Diabetes;BPROAD|ensayo Blood Pressure Control Target in Diabetes;estudio BPROAD
+ESPRIT trial|ESPRIT trials;ESPRIT trial|ESPRIT
+Advance-HTN trial|Advance-HTN trial|ADVANCE-HTN
+HYVET trial|HYVET trial;Hypertension in the Very Elderly Trial|ensayo HYVET;estudio HYVET
+ASCOT-BPLA trial|ASCOT-BPLA;Anglo-Scandinavian Cardiac Outcomes Trial|ASCOT-BPLA
+RADIANCE-HTN TRIO trial|RADIANCE-HTN TRIO|RADIANCE-HTN TRIO
+SPYRAL HTN-OFF MED trial|SPYRAL HTN-OFF MED trial;SPYRAL HTN-OFF MED|SPYRAL HTN-OFF MED
+standard blood pressure control|standard blood pressure control|control estándar de la presión arterial;tratamiento estándar;control estándar de la PA
+nonfatal stroke|nonfatal stroke;non-fatal stroke|ictus no mortal;accidente cerebrovascular no mortal;ictus no fatal;ACV no mortal
+odds ratio|odds ratio|razón de momios;razón de posibilidades
+2021 KDIGO blood pressure guideline|KDIGO 2021 Clinical Practice Guideline|Guía de Práctica Clínica KDIGO 2021 para el Manejo de la Presión Arterial
+2024 KDIGO CKD guideline|KDIGO 2024 Clinical Practice Guideline|guía KDIGO 2024;guías KDIGO 2024

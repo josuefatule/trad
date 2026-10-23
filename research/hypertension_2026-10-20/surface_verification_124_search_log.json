@@ -1,0 +1,1070 @@
+{
+  "policy": "Priority-domain searches first, then complementary Spanish primary/institutional sources and exact-form followups. A query with no useful results is not evidence that the phrase does not exist anywhere.",
+  "batch_count": 57,
+  "query_count": 228,
+  "batches": [
+    {
+      "batch": "01",
+      "queries": [
+        "\"hipertensión farmacológica\" (site:who.int OR site:pubmed.ncbi.nlm.nih.gov OR site:heart.org OR site:escardio.org)",
+        "\"variabilidad tensional\" (site:pubmed.ncbi.nlm.nih.gov OR site:heart.org OR site:escardio.org)",
+        "\"presión arterial en consulta\" (site:heart.org OR site:who.int)",
+        "\"automedición domiciliaria de la presión arterial\" (site:who.int OR site:pubmed.ncbi.nlm.nih.gov OR site:heart.org)"
+      ],
+      "domains": null,
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search01.web.txt",
+      "snapshot_sha256": "af3dc59c03f96c2b2a0bc46e1c9a97f3255c3f296b976504122dba4d170fe377"
+    },
+    {
+      "batch": "02",
+      "queries": [
+        "\"presión arterial fuera de consulta\" (site:heart.org OR site:who.int OR site:pubmed.ncbi.nlm.nih.gov)",
+        "\"stage two hypertension\" (site:heart.org OR site:acc.org OR site:who.int)",
+        "\"2017 ACC/AHA hypertension guideline\" site:acc.org",
+        "\"guideline-directed management\" site:acc.org hypertension"
+      ],
+      "domains": null,
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search02.web.txt",
+      "snapshot_sha256": "18dd5b9e47df4c7a89a669432ceed796ca7f763272fb74a9fbd0e12fd55f4759"
+    },
+    {
+      "batch": "03",
+      "queries": [
+        "\"manejo orientado por guías\" hipertensión",
+        "\"meta de tratamiento\" hipertensión (site:who.int OR site:heart.org)",
+        "\"coordinador conjunto\" (site:who.int OR site:escardio.org OR site:heart.org)",
+        "\"carga salina\" aldosteronismo (site:pubmed.ncbi.nlm.nih.gov OR site:who.int)"
+      ],
+      "domains": null,
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search03.web.txt",
+      "snapshot_sha256": "66905dfe04c884994556ca54d4642a497f10d248dd8071f120ccfd9574a74c6d"
+    },
+    {
+      "batch": "04",
+      "queries": [
+        "\"hyponatraemia\"",
+        "\"hypernatraemia\"",
+        "\"hypokalaemic metabolic alkalosis\"",
+        "\"nonpharmacologic therapy\" hypertension"
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search04.web.txt",
+      "snapshot_sha256": "7c2c3d1f59d3f0d11da15af06e09dbbf8bce2ab5a2080ebbb4f3dd215940c8cc"
+    },
+    {
+      "batch": "05",
+      "queries": [
+        "\"non-pharmacologic therapy\" hypertension",
+        "\"alpha-adrenergic blockers\"",
+        "\"hormonal replacement therapy\"",
+        "\"tratamiento hormonal sustitutivo\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search05.web.txt",
+      "snapshot_sha256": "857a9651036a81f93c7174d62f5426c9be94432a4b9ee959152e4713570f4d12"
+    },
+    {
+      "batch": "06",
+      "queries": [
+        "\"immunosuppressants\" hypertension",
+        "\"haemorrhagic stroke\"",
+        "\"AFib\" \"atrial fibrillation\" site:heart.org",
+        "\"healthy dietary pattern\" site:heart.org"
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search06.web.txt",
+      "snapshot_sha256": "dd9a7750ba7290737a53fa43f48dc89a88aaef186bea19e303c4724e0b84fc09"
+    },
+    {
+      "batch": "07",
+      "queries": [
+        "\"restricción dietética de sodio\"",
+        "\"potassium-supplemented salt\"",
+        "\"sugary drinks\" site:heart.org",
+        "\"bebidas endulzadas con azúcar\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search07.web.txt",
+      "snapshot_sha256": "bb0447e61c3fa016d8e5e5595723110267b37841913e2a525e2f079de81014a2"
+    },
+    {
+      "batch": "08",
+      "queries": [
+        "\"aerobic training\" hypertension",
+        "\"ejercicio dinámico de resistencia\"",
+        "\"ejercicio de resistencia isométrica\"",
+        "\"moderation of alcohol consumption\" hypertension"
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search08.web.txt",
+      "snapshot_sha256": "5689fb5ddbbe4c39b9eb245ffec35a7c299c82f509ed572d5cd8bc834f28325b"
+    },
+    {
+      "batch": "09",
+      "queries": [
+        "\"dietary counselling\" hypertension",
+        "\"millimetres of mercury\"",
+        "\"µg/day\" aldosterone",
+        "\"mcg/day\" hypertension"
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search09.web.txt",
+      "snapshot_sha256": "5e179577494d0344fc525adc6df06c3f7aa760235db00b1b3b56bf81107db88d"
+    },
+    {
+      "batch": "10",
+      "queries": [
+        "\"µg/día\" aldosterona",
+        "\"mcg/dL\" aldosterone",
+        "\"µg/dL\" aldosterona",
+        "\"plasma levels\" aldosterone"
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search10.web.txt",
+      "snapshot_sha256": "94d06c60c37fd3130349d9d0dee3168eec2bab09c5ec7887e35302ac555e0681"
+    },
+    {
+      "batch": "11",
+      "queries": [
+        "\"brazalete de presión arterial\"",
+        "\"tensiómetro oscilométrico\"",
+        "\"diferencia interbraquial de presión arterial\"",
+        "\"relación presión-natriuresis\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "metadata_provenance": "Reconstructed from the actual explicit tool arguments in this session.",
+      "snapshot_file": "source_cache/surface124_search11.web.txt",
+      "snapshot_sha256": "1f08c3d898b1727f9e02e8ab4281ff30e3f72bdf91f5e6e74bfeab77058bda83"
+    },
+    {
+      "batch": "12",
+      "queries": [
+        "\"vasodilatation\" hypertension",
+        "\"systemic vascular resistance\" \"SVR\"",
+        "\"baroreflex sensitivity\" \"BRS\"",
+        "\"fonendoscopio\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search12.web.txt",
+      "snapshot_sha256": "c31db916b8946d7cc5b459093e35dbc00eb1e19823dd360195ff27e6f7f8bad6"
+    },
+    {
+      "batch": "13",
+      "queries": [
+        "\"tensiómetro validado\"",
+        "\"awake blood pressure\"",
+        "\"asleep blood pressure\"",
+        "\"telemonitoreo de la presión arterial\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search13.web.txt",
+      "snapshot_sha256": "60c040096c18f6534ead26ddfc4ef5b2d27e2a129f18d200e99dab1d800811eb"
+    },
+    {
+      "batch": "14",
+      "queries": [
+        "\"presión arterial en sedestación\"",
+        "\"non-dipper pattern\"",
+        "\"riser pattern\" blood pressure",
+        "\"patrón de descenso nocturno inverso\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search14.web.txt",
+      "snapshot_sha256": "3013e82ae8d2b3cb46baf1d831ce3fdfae84e4aa7fd54bd2da4080f48d57ee19"
+    },
+    {
+      "batch": "15",
+      "queries": [
+        "\"relación noche-día\" presión",
+        "\"RfHTN\" hypertension",
+        "\"hipertensión sistodiastólica\"",
+        "\"hipertensión renal parenquimatosa\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search15.web.txt",
+      "snapshot_sha256": "da04c74f28037065c68981a4f4f66cb1b82e98c3f3fa914ada284dcaef70ad75"
+    },
+    {
+      "batch": "16",
+      "queries": [
+        "\"tamizaje de hipertensión secundaria\"",
+        "\"cateterismo de venas suprarrenales\"",
+        "\"overnight DST\"",
+        "\"tirotropina\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search16.web.txt",
+      "snapshot_sha256": "8c0d9b9154491b949b4b8295410355b8b3a24c014d3802b0e20afbdd67298e5a"
+    },
+    {
+      "batch": "17",
+      "queries": [
+        "\"paratohormona\"",
+        "\"glucocorticoid-remediable hyperaldosteronism\"",
+        "\"hiperaldosteronismo sensible a glucocorticoides\"",
+        "\"liquorice-induced hypertension\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search17.web.txt",
+      "snapshot_sha256": "67dda7ceb210c729b8736340bcd17377a34b49f701025702d2f6ba847e0fe4ed"
+    },
+    {
+      "batch": "18",
+      "queries": [
+        "\"ultrasonografía Doppler renal\"",
+        "\"computed tomography angiography\" \"CTA\"",
+        "\"prueba de captopril\"",
+        "\"pseudohypoaldosteronism type II\" \"Gordon\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search18.web.txt",
+      "snapshot_sha256": "2830f2f73b175c39caee3a7f876cfba32553c59650e256250e7d14a166892b2a"
+    },
+    {
+      "batch": "19",
+      "queries": [
+        "\"seudohipoaldosteronismo tipo II\"",
+        "\"urine albumin\" \"UACR\" site:kdigo.org",
+        "\"relación albúmina-creatinina urinaria\"",
+        "\"urinary protein-to-creatinine ratio\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search19.web.txt",
+      "snapshot_sha256": "dc209cb408ff60c01f10a4c0718edd8b666cc4a1a742690bfcc3e4587ddcc5e3"
+    },
+    {
+      "batch": "20",
+      "queries": [
+        "\"urine protein\" \"UPCR\" site:kdigo.org",
+        "\"albuminuria severamente aumentada\"",
+        "\"torasemide\"",
+        "\"clevidipina\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search20.web.txt",
+      "snapshot_sha256": "933b4a38c030c22327e53a36277be541eced5a047e0747d733fd8125a062763b"
+    },
+    {
+      "batch": "21",
+      "queries": [
+        "\"biterapia antihipertensiva\"",
+        "\"triterapia antihipertensiva\"",
+        "\"fixed-dose combination\" \"FDC\"",
+        "\"carga de medicación\" \"comprimidos\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search21.web.txt",
+      "snapshot_sha256": "9dfa836be262778edad3092641db6ad3fa4a6220237daa62867ef93fb35c744b"
+    },
+    {
+      "batch": "22",
+      "queries": [
+        "\"directly observed therapy\" \"DOT\" hypertension",
+        "\"daño agudo de órgano blanco\"",
+        "\"retinal haemorrhages\" hypertension",
+        "\"manchas algodonosas\" retina"
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search22.web.txt",
+      "snapshot_sha256": "25b5891eebfa1c6c54ab447edf447313eeafc99f3dd215a81fa1802ffefda4a0"
+    },
+    {
+      "batch": "23",
+      "queries": [
+        "\"disseminated intravascular coagulation\" \"DIC\"",
+        "\"thrombotic microangiopathy\" \"TMA\"",
+        "\"edema agudo de pulmón de inicio brusco\"",
+        "\"hipertensión postparto\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search23.web.txt",
+      "snapshot_sha256": "edb93b39433e78eed99a60df1f651e38a4b9f380030c94e8af65756a59177271"
+    },
+    {
+      "batch": "24",
+      "queries": [
+        "\"post-partum preeclampsia\"",
+        "\"fetal growth restriction\" \"FGR\"",
+        "\"restricción del crecimiento fetal\" \"RCF\"",
+        "\"nacimiento pretérmino\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search24.web.txt",
+      "snapshot_sha256": "416886fefccfec8ff539360043c8846db9a5f1f4dc226b7e6c7f632cecf71c56"
+    },
+    {
+      "batch": "25",
+      "queries": [
+        "\"plaquetopenia\"",
+        "\"aspirina en dosis bajas\" site:who.int",
+        "\"infartos cerebrales asintomáticos\"",
+        "\"atrofia encefálica\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search25.web.txt",
+      "snapshot_sha256": "6f774a9b5c4892f6856f51fcccfc07738a3362497399fcaddda17e9fb68afb26"
+    },
+    {
+      "batch": "26",
+      "queries": [
+        "\"left ventricular dilation\"",
+        "\"funduscopy\"",
+        "\"examen de fondo de ojo\" site:who.int",
+        "\"bicuspid aortic valve\" \"BAV\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search26.web.txt",
+      "snapshot_sha256": "daaf2e5edd74f6089870a4805e5b927e438f569740966e5afac879a0db217af9"
+    },
+    {
+      "batch": "27",
+      "queries": [
+        "\"non-modifiable risk factors\"",
+        "\"health care access\"",
+        "\"potassium chloride\" \"KCl\"",
+        "\"paediatric hypertension\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search27.web.txt",
+      "snapshot_sha256": "3566ce5e054ef61c406f87a331b1e0969bed18bfb304a8cc39ebee4c2cb73e74"
+    },
+    {
+      "batch": "28",
+      "queries": [
+        "\"intermittent hypoxaemia\"",
+        "\"criterio de valoración compuesto\"",
+        "\"non-fatal myocardial infarction\"",
+        "\"non-fatal stroke\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search28.web.txt",
+      "snapshot_sha256": "791940165054f5aab36b76809d770c59e8c434a336bcb6b0480675ca8b83619a"
+    },
+    {
+      "batch": "29",
+      "queries": [
+        "\"ITT analysis\" \"intention\"",
+        "\"cross-over trial\"",
+        "\"double-masked trial\"",
+        "\"class of recommendation\" \"COR\" site:acc.org"
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search29.web.txt",
+      "snapshot_sha256": "2e413953786b0448df602a1b7e83befc4fd811037c7d063d08301cb7e52d6c58"
+    },
+    {
+      "batch": "30",
+      "queries": [
+        "\"level of evidence\" \"LOE\" site:acc.org",
+        "\"relative risk reduction\" \"RRR\"",
+        "\"2025 ACC/AHA guideline\" hypertension",
+        "\"PREVENT risk equations\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search30.web.txt",
+      "snapshot_sha256": "ce99089c088c7a3cead6b226c1b2ff1871f1fb43629c3017d7a720744f0bdc2c"
+    },
+    {
+      "batch": "31",
+      "queries": [
+        "\"ten-year cardiovascular disease risk\"",
+        "\"calcioantagonistas dihidropiridínicos\"",
+        "\"calcioantagonistas no dihidropiridínicos\"",
+        "\"heart rate variability\" \"HRV\""
+      ],
+      "domains": [
+        "escardio.org",
+        "acc.org",
+        "heart.org",
+        "pubmed.ncbi.nlm.nih.gov",
+        "who.int",
+        "kdigo.org"
+      ],
+      "date": "2026-10-21",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search31.web.txt",
+      "snapshot_sha256": "c357cd96ec66afa7ecb8100d9581d6411b9d9229bc4038c98ed917bad48caf4f"
+    },
+    {
+      "batch": "32",
+      "queries": [
+        "\"stage two hypertension\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"potassium-supplemented salt\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"glucocorticoid-remediable hyperaldosteronism\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"potassium chloride (KCl)\" site:pubmed.ncbi.nlm.nih.gov"
+      ],
+      "date": "2026-10-21",
+      "phase": "targeted_followup_or_complementary_primary",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search32.web.txt",
+      "snapshot_sha256": "2e8a5e785928cb12b2c4e487f34b825352f15a9fbf02d5d9a264c0af61cdde8d"
+    },
+    {
+      "batch": "33",
+      "queries": [
+        "\"paediatric hypertension\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"cross-over trial\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"2025 ACC/AHA guideline\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"post-partum preeclampsia\" site:pubmed.ncbi.nlm.nih.gov"
+      ],
+      "date": "2026-10-21",
+      "phase": "targeted_followup_or_complementary_primary",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search33.web.txt",
+      "snapshot_sha256": "07fa7477479e9c8e0654d290bd09ce31c6ea76ac598b22427bf4a9fa1fe5ca73"
+    },
+    {
+      "batch": "34",
+      "queries": [
+        "\"hipertensión farmacológica\" cardiologia",
+        "\"variabilidad tensional\" site:secardiologia.es",
+        "\"presión arterial en consulta\" site:secardiologia.es",
+        "\"presión arterial fuera de consulta\" site:secardiologia.es"
+      ],
+      "date": "2026-10-21",
+      "phase": "targeted_followup_or_complementary_primary",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search34.web.txt",
+      "snapshot_sha256": "61018aa4b5ff7c13fc63cedab0ad17f877b998581d6a1d1bdd6d7f995e4459a9"
+    },
+    {
+      "batch": "35",
+      "queries": [
+        "\"manejo orientado por guías\"",
+        "\"meta de tratamiento\" \"hipertensión\" site:heart.org",
+        "\"coordinador conjunto\" site:who.int",
+        "\"carga salina\" site:seen.es"
+      ],
+      "date": "2026-10-21",
+      "phase": "targeted_followup_or_complementary_primary",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search35.web.txt",
+      "snapshot_sha256": "c56c0b38344176c112c8a0b6544f6a6e6e3644142882f017eb95d1ee32c4716a"
+    },
+    {
+      "batch": "36",
+      "queries": [
+        "\"restricción dietética de sodio\" hipertensión",
+        "\"ejercicio dinámico de resistencia\" hipertensión",
+        "\"ejercicio de resistencia isométrica\" hipertensión",
+        "\"µg/día\" aldosterona"
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search36.web.txt",
+      "snapshot_sha256": "a896d99057ca32f00c8f25e444cdc12cc6898acedb54037d44a87271cfb7919e"
+    },
+    {
+      "batch": "37",
+      "queries": [
+        "\"tensiómetro oscilométrico\"",
+        "\"diferencia interbraquial de presión arterial\"",
+        "\"relación presión-natriuresis\"",
+        "\"fonendoscopio\" \"presión arterial\""
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search37.web.txt",
+      "snapshot_sha256": "71e28bbbdbf6bac62a28be4a33a99963babd78cf39dced9dbded20bdcb5b202b"
+    },
+    {
+      "batch": "38",
+      "queries": [
+        "\"tensiómetro validado\"",
+        "\"telemonitoreo de la presión arterial\"",
+        "\"presión arterial en sedestación\"",
+        "\"patrón de descenso nocturno inverso\""
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search38.web.txt",
+      "snapshot_sha256": "a7fa9c835cdbcd90dae46ea2db05be4287d0ea2d913961c176b6961661e27231"
+    },
+    {
+      "batch": "39",
+      "queries": [
+        "\"relación noche-día\" \"presión\"",
+        "\"hipertensión sistodiastólica\"",
+        "\"hipertensión renal parenquimatosa\"",
+        "\"tamizaje de hipertensión secundaria\""
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search39.web.txt",
+      "snapshot_sha256": "95dfa28ad3ebf2268cbebe423dd31ed2cb8b32a9967cf8e83dc9eef3c4569f25"
+    },
+    {
+      "batch": "40",
+      "queries": [
+        "\"hiperaldosteronismo sensible a glucocorticoides\"",
+        "\"ultrasonografía Doppler renal\"",
+        "\"relación albúmina-creatinina urinaria\"",
+        "\"albuminuria severamente aumentada\""
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search40.web.txt",
+      "snapshot_sha256": "837ca20dc08a336b579a22612f8894e7507de06977e81004f0a4ea4ff5f88c24"
+    },
+    {
+      "batch": "41",
+      "queries": [
+        "\"clevidipina\"",
+        "\"biterapia antihipertensiva\"",
+        "\"triterapia antihipertensiva\"",
+        "\"carga de medicación\""
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search41.web.txt",
+      "snapshot_sha256": "15a1e778ad9252aab0ed2f613104b2f4da4fef52be581319e43910490f65b06c"
+    },
+    {
+      "batch": "42",
+      "queries": [
+        "\"daño agudo de órgano blanco\"",
+        "\"manchas algodonosas\"",
+        "\"edema agudo de pulmón de inicio brusco\"",
+        "\"hipertensión postparto\""
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search42.web.txt",
+      "snapshot_sha256": "a07d974add84c11c50b1e65087031fae41978faddccdec87c58894563be699fd"
+    },
+    {
+      "batch": "43",
+      "queries": [
+        "\"RCF\" \"restricción del crecimiento fetal\" site:secardiologia.es",
+        "\"infartos cerebrales asintomáticos\"",
+        "\"presión arterial en consulta\" site:heart.org",
+        "\"presión arterial fuera de consulta\""
+      ],
+      "domains": [
+        "secardiologia.es",
+        "seen.es",
+        "scielo.org",
+        "scielo.org.mx",
+        "scielo.isciii.es",
+        "paho.org",
+        "medlineplus.gov",
+        "cochrane.org"
+      ],
+      "date": "2026-10-21",
+      "phase": "complementary_primary_spanish",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search43.web.txt",
+      "snapshot_sha256": "978e2116d78b712c7d628d83bf34107955a8eadf0c5f26173a3d75b385b2cb17"
+    },
+    {
+      "batch": "44",
+      "queries": [
+        "\"variabilidad tensional\"",
+        "\"presión arterial en consulta\"",
+        "\"presión arterial fuera de consulta\"",
+        "\"stage two hypertension\""
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search44.web.txt",
+      "snapshot_sha256": "bd8e3cc6361ccabb24cd18f60148ed958116a36050e8f58198c554bf010210bc"
+    },
+    {
+      "batch": "45",
+      "queries": [
+        "\"hipertensión farmacológica\"",
+        "\"manejo orientado por guías\"",
+        "\"meta de tratamiento\" hipertensión",
+        "\"carga salina\" aldosteronismo"
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search45.web.txt",
+      "snapshot_sha256": "2820cfe392405124969d6aad7aa19675dd2d724ac4ede9dd47d07f57dda892be"
+    },
+    {
+      "batch": "46",
+      "queries": [
+        "\"potassium-supplemented salt\"",
+        "\"ejercicio dinámico de resistencia\"",
+        "\"ejercicio de resistencia isométrica\"",
+        "\"diferencia interbraquial de presión arterial\""
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search46.web.txt",
+      "snapshot_sha256": "83338c2835ec73098796b436cc445df5db7d6911ab6e641a40b4948da26f2b7b"
+    },
+    {
+      "batch": "47",
+      "queries": [
+        "\"telemonitoreo de la presión arterial\"",
+        "\"presión arterial en sedestación\"",
+        "\"patrón de descenso nocturno inverso\"",
+        "\"hipertensión renal parenquimatosa\""
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search47.web.txt",
+      "snapshot_sha256": "30823acdb7d92a25ec6bc90ee824cf1881b834b091fb9c5f578bb79c442a1340"
+    },
+    {
+      "batch": "48",
+      "queries": [
+        "\"tamizaje de hipertensión secundaria\"",
+        "\"hiperaldosteronismo sensible a glucocorticoides\"",
+        "\"ultrasonografía Doppler renal\"",
+        "\"albuminuria severamente aumentada\""
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search48.web.txt",
+      "snapshot_sha256": "71fcc1a263892e3a90a5d0d278c9d227700cebc21b0a4a807796f8a2d9c26a47"
+    },
+    {
+      "batch": "49",
+      "queries": [
+        "\"clevidipina\"",
+        "\"biterapia antihipertensiva\"",
+        "\"triterapia antihipertensiva\"",
+        "\"carga de medicación\""
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search49.web.txt",
+      "snapshot_sha256": "0f324c512516700082d24c3ab122ecdfa84f0ef5c6919e8b9949c0d75be2d291"
+    },
+    {
+      "batch": "50",
+      "queries": [
+        "\"daño agudo de órgano blanco\"",
+        "\"edema agudo de pulmón de inicio brusco\"",
+        "\"restricción del crecimiento fetal\" \"RCF\"",
+        "\"hipertensión farmacológica\" inducida"
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search50.web.txt",
+      "snapshot_sha256": "b42d586486919fe51b2b4f54c59094098b9e165e6ed3eccdd5781b758ad2e55b"
+    },
+    {
+      "batch": "51",
+      "queries": [
+        "\"hipertensión farmacológica\" site:scielo.org.mx",
+        "\"manejo orientado por guías\" site:secardiologia.es",
+        "\"KCl\" site:who.int \"potassium chloride\"",
+        "\"potassium-supplemented salt\" site:heart.org OR site:pubmed.ncbi.nlm.nih.gov"
+      ],
+      "date": "2026-10-21",
+      "phase": "exact_surface_followup_unrestricted_discovery_primary_sources_only_for_acceptance",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search51.web.txt",
+      "snapshot_sha256": "77c633b428616fb73fd5aa7664a25330f5cf9d626c671d5cb387ddd2aadd2797"
+    },
+    {
+      "batch": "52",
+      "queries": [
+        "\"variabilidad tensional\" site:pubmed.ncbi.nlm.nih.gov OR site:scielo.org.ar OR site:scielo.isciii.es",
+        "\"RCF\" \"restricción del crecimiento fetal\" site:scielo.org.mx OR site:pubmed.ncbi.nlm.nih.gov OR site:scielo.cl",
+        "\"clevidipina\" site:secardiologia.es OR site:scielo.isciii.es OR site:revistanefrologia.com",
+        "\"hipertensión renal parenquimatosa\" site:who.int OR site:scielo.org.mx"
+      ],
+      "date": "2026-10-21",
+      "phase": "primary_source_followup_of_remaining_forms",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search52.web.txt",
+      "snapshot_sha256": "25a780c5b531f6d812a6a9d48a63e33e81fc81aae729cdde12334a0e043892d6"
+    },
+    {
+      "batch": "53",
+      "queries": [
+        "\"presión arterial fuera de consulta\" hipertensión guía",
+        "\"meta de tratamiento\" hipertensión guía",
+        "\"ejercicio dinámico de resistencia\" cardiología",
+        "\"ejercicio de resistencia isométrica\" guía"
+      ],
+      "date": "2026-10-21",
+      "phase": "primary_source_followup_of_remaining_forms",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search53.web.txt",
+      "snapshot_sha256": "dfeab563727840b2663646fdee9156a07f893717b8b8a358184f409039f02262"
+    },
+    {
+      "batch": "54",
+      "queries": [
+        "\"diferencia interbraquial de presión arterial\" estudio",
+        "\"presión arterial en sedestación\" hipertensión guía",
+        "\"tamizaje de hipertensión secundaria\" consenso",
+        "\"ultrasonografía Doppler renal\" hipertensión artículo"
+      ],
+      "date": "2026-10-21",
+      "phase": "primary_source_followup_of_remaining_forms",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search54.web.txt",
+      "snapshot_sha256": "c89ee12eae88eeb2160363610991f25cdd65d956e68ee7ca6bd8e15195689e2b"
+    },
+    {
+      "batch": "55",
+      "queries": [
+        "\"biterapia antihipertensiva\" estudio",
+        "\"triterapia antihipertensiva\" estudio",
+        "\"daño agudo de órgano blanco\" hipertensión consenso",
+        "\"edema agudo de pulmón de inicio brusco\""
+      ],
+      "date": "2026-10-21",
+      "phase": "primary_source_followup_of_remaining_forms",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search55.web.txt",
+      "snapshot_sha256": "893d500c177e0f2835712eef430a47c313c03417cc08d995fcabd0020a290188"
+    },
+    {
+      "batch": "56",
+      "queries": [
+        "\"tirotropina\" \"TSH\" site:medlineplus.gov/spanish",
+        "\"relación presión-natriuresis\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"ejercicio de resistencia isométrica\" site:secardiologia.es OR site:scielo.org.mx",
+        "\"telemonitoreo de la presión arterial\" site:paho.org OR site:pubmed.ncbi.nlm.nih.gov"
+      ],
+      "date": "2026-10-21",
+      "phase": "specific_language_and_scope_check",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search56.web.txt",
+      "snapshot_sha256": "d824217d04d9155c62a07be53945ae55288a8b10d0a6a991b43072c5b69c26eb"
+    },
+    {
+      "batch": "57",
+      "queries": [
+        "\"prueba de captopril\" \"aldosteronismo\" site:pubmed.ncbi.nlm.nih.gov OR site:who.int OR site:seen.es",
+        "\"prueba de captopril\" \"renovascular\" site:who.int",
+        "\"potassium-supplemented salt\" site:pubmed.ncbi.nlm.nih.gov",
+        "\"ejercicio de resistencia isométrica\" site:pubmed.ncbi.nlm.nih.gov"
+      ],
+      "date": "2026-10-21",
+      "phase": "differential_meaning_and_evidence_strength_check",
+      "metadata_provenance": "Saved with the actual tool call.",
+      "snapshot_file": "source_cache/surface124_search57.web.txt",
+      "snapshot_sha256": "8d34a7fd8f3960124e1039ee42f47a5df81fb55b40b50ecbd13732374ef2563c"
+    }
+  ]
+}

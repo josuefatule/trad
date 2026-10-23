@@ -1,0 +1,345 @@
+{
+  "status": "laboratory_only_both_revisions_preserved",
+  "same_sixty": true,
+  "same_thresholds": true,
+  "result": "Lower lexical word error in all three models versus the previous sixty-term profile; no observed context regressions in the refined replay.",
+  "model_comparison": [
+    {
+      "model": "small",
+      "old_word_errors": 136,
+      "new_word_errors": 131,
+      "old_wer": 0.03235014272121789,
+      "new_wer": 0.03116079923882017,
+      "fewer_word_errors": 5,
+      "reference_words": 4204,
+      "relative_word_error_reduction": 0.03676470588235294
+    },
+    {
+      "model": "medium",
+      "old_word_errors": 113,
+      "new_word_errors": 107,
+      "old_wer": 0.026879162702188392,
+      "new_wer": 0.02545195052331113,
+      "fewer_word_errors": 6,
+      "reference_words": 4204,
+      "relative_word_error_reduction": 0.05309734513274336
+    },
+    {
+      "model": "large-v3-turbo",
+      "old_word_errors": 137,
+      "new_word_errors": 131,
+      "old_wer": 0.03258801141769743,
+      "new_wer": 0.03116079923882017,
+      "fewer_word_errors": 6,
+      "reference_words": 4204,
+      "relative_word_error_reduction": 0.043795620437956206
+    }
+  ],
+  "ablation": [
+    {
+      "model": "small",
+      "profile": "raw",
+      "word_errors": 148,
+      "reference_words": 4204,
+      "wer": 0.035204567078972404,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "previous10",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "old60",
+      "word_errors": 136,
+      "reference_words": 4204,
+      "wer": 0.03235014272121789,
+      "simulated_changes": 18,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "variants_only",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 13,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "variants_and_number",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 12,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "all_fixes",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 12,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "raw",
+      "word_errors": 117,
+      "reference_words": 4204,
+      "wer": 0.027830637488106564,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "previous10",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "old60",
+      "word_errors": 113,
+      "reference_words": 4204,
+      "wer": 0.026879162702188392,
+      "simulated_changes": 21,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "variants_only",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_changes": 16,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "variants_and_number",
+      "word_errors": 107,
+      "reference_words": 4204,
+      "wer": 0.02545195052331113,
+      "simulated_changes": 14,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "all_fixes",
+      "word_errors": 107,
+      "reference_words": 4204,
+      "wer": 0.02545195052331113,
+      "simulated_changes": 14,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "raw",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "previous10",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "old60",
+      "word_errors": 137,
+      "reference_words": 4204,
+      "wer": 0.03258801141769743,
+      "simulated_changes": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "variants_only",
+      "word_errors": 133,
+      "reference_words": 4204,
+      "wer": 0.03163653663177926,
+      "simulated_changes": 5,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "variants_and_number",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 3,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "all_fixes",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 3,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    }
+  ],
+  "constructed_checking": [
+    {
+      "profile": "old60",
+      "positive_cases": 300,
+      "positive_correct": 171,
+      "negative_cases": 806,
+      "negative_changed": 0
+    },
+    {
+      "profile": "all_fixes",
+      "positive_cases": 300,
+      "positive_correct": 206,
+      "negative_cases": 806,
+      "negative_changed": 0
+    }
+  ],
+  "context_checking": [
+    {
+      "profile": "old60",
+      "positive_cases": 423,
+      "positive_correct": 283,
+      "negative_cases": 300,
+      "negative_changed": 0
+    },
+    {
+      "profile": "all_fixes",
+      "positive_cases": 423,
+      "positive_correct": 332,
+      "negative_cases": 300,
+      "negative_changed": 0
+    }
+  ],
+  "improved_contexts": 49,
+  "regressed_contexts": 0,
+  "context_gains_by_term": [
+    {
+      "concept_id": "HTN_ce88c1a364ff",
+      "canonical_en": "systolic blood pressure",
+      "improved_cases": 7
+    },
+    {
+      "concept_id": "HTN_1f6c35b66555",
+      "canonical_en": "elevated blood pressure",
+      "improved_cases": 7
+    },
+    {
+      "concept_id": "HTN_56f653079e24",
+      "canonical_en": "target systolic blood pressure",
+      "improved_cases": 7
+    },
+    {
+      "concept_id": "HTN_be068174bf76",
+      "canonical_en": "isometric resistance exercise",
+      "improved_cases": 7
+    },
+    {
+      "concept_id": "HTN_f48ce01048ba",
+      "canonical_en": "non-elevated blood pressure",
+      "improved_cases": 7
+    },
+    {
+      "concept_id": "HTN_ee45bdae9c43",
+      "canonical_en": "renin-independent aldosterone production",
+      "improved_cases": 7
+    },
+    {
+      "concept_id": "HTN_69524c07e2bc",
+      "canonical_en": "diastolic blood pressure",
+      "improved_cases": 7
+    }
+  ],
+  "original_six_overlap_failures_fixed": 42,
+  "registered_variants_preserved_without_equivalence_approval": 15,
+  "old_corpus_changes": 49,
+  "new_corpus_changes": 29,
+  "removed_changes": 20,
+  "introduced_changes": 0,
+  "remaining_change_assessments": {
+    "neutral": 6,
+    "improved": 22,
+    "worsened": 1
+  },
+  "first_attempt_context_regressions": 2,
+  "first_attempt_retained": true,
+  "identifier_refinement_designed_after_first_attempt": true,
+  "refined_policy_retuned_after_replay": false,
+  "regression_probes": [
+    {
+      "profile": "old60",
+      "cases": 153,
+      "passed": 95
+    },
+    {
+      "profile": "variants_only",
+      "cases": 153,
+      "passed": 101
+    },
+    {
+      "profile": "variants_and_number",
+      "cases": 153,
+      "passed": 147
+    },
+    {
+      "profile": "all_fixes",
+      "cases": 153,
+      "passed": 153
+    }
+  ],
+  "unit_tests_passed": 15,
+  "output_verification_tests_passed": 11,
+  "unique_reference_occurrences": 251,
+  "correlated_model_observations": 753,
+  "independent_holdout": false,
+  "new_asr_inference": false,
+  "controlled_intonation_variants_tested": 0,
+  "clinical_adjudication": false,
+  "preservation": {
+    "files_checked": 1068,
+    "strictly_protected_files_checked": 857,
+    "original_and_prior_evidence_unchanged": true,
+    "other_workspace_observations": [],
+    "new_directory": "C:\\live-captions\\research\\hypertension_2026-10-20\\lexical_controls_trial_60_v1",
+    "integration_performed": false
+  },
+  "integration_performed": false
+}

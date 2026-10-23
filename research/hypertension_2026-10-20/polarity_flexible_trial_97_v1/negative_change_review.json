@@ -1,0 +1,346 @@
+[
+  {
+    "dataset": "pressure",
+    "profile": "direction_guard_same",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "pressure",
+    "profile": "direction_guard_cap092",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "pressure",
+    "profile": "direction_guard_cap090",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "pressure",
+    "profile": "direction_guard_cap088",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "constructed",
+    "profile": "direction_guard_same",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "constructed",
+    "profile": "direction_guard_cap092",
+    "cases": 3,
+    "unique_input_output_pairs": 3,
+    "examples": [
+      {
+        "input": "physical inactivity",
+        "output": "physical activity",
+        "case_ids": [
+          "fifty:F01284"
+        ],
+        "changes": [
+          {
+            "source": "physical inactivity",
+            "replacement": "physical activity",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.948529,
+            "canonical": "physical activity"
+          }
+        ]
+      },
+      {
+        "input": "aldosterone-producing adenoma",
+        "output": "aldosterone production adenoma",
+        "case_ids": [
+          "fifty:F01362"
+        ],
+        "changes": [
+          {
+            "source": "aldosterone-producing",
+            "replacement": "aldosterone production",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.935678,
+            "canonical": "aldosterone production"
+          }
+        ]
+      },
+      {
+        "input": "They discussed hyperkalemic metabolic alkalosis today.",
+        "output": "They discussed hypokalemic metabolic alkalosis today.",
+        "case_ids": [
+          "fifty:F01926"
+        ],
+        "changes": [
+          {
+            "source": "hyperkalemic metabolic alkalosis",
+            "replacement": "hypokalemic metabolic alkalosis",
+            "start": 15,
+            "end": 47,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.95569,
+            "canonical": "hypokalemic metabolic alkalosis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "constructed",
+    "profile": "direction_guard_cap090",
+    "cases": 9,
+    "unique_input_output_pairs": 4,
+    "examples": [
+      {
+        "input": "seated blood pressure",
+        "output": "elevated blood pressure",
+        "case_ids": [
+          "fifty:F00162",
+          "fifty:F01010",
+          "fifty:F01788",
+          "new37:R00628",
+          "new37:R00700",
+          "new37:R01291"
+        ],
+        "changes": [
+          {
+            "source": "seated blood pressure",
+            "replacement": "elevated blood pressure",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.914091,
+            "canonical": "elevated blood pressure"
+          }
+        ]
+      },
+      {
+        "input": "physical inactivity",
+        "output": "physical activity",
+        "case_ids": [
+          "fifty:F01284"
+        ],
+        "changes": [
+          {
+            "source": "physical inactivity",
+            "replacement": "physical activity",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.948529,
+            "canonical": "physical activity"
+          }
+        ]
+      },
+      {
+        "input": "aldosterone-producing adenoma",
+        "output": "aldosterone production adenoma",
+        "case_ids": [
+          "fifty:F01362"
+        ],
+        "changes": [
+          {
+            "source": "aldosterone-producing",
+            "replacement": "aldosterone production",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.935678,
+            "canonical": "aldosterone production"
+          }
+        ]
+      },
+      {
+        "input": "They discussed hyperkalemic metabolic alkalosis today.",
+        "output": "They discussed hypokalemic metabolic alkalosis today.",
+        "case_ids": [
+          "fifty:F01926"
+        ],
+        "changes": [
+          {
+            "source": "hyperkalemic metabolic alkalosis",
+            "replacement": "hypokalemic metabolic alkalosis",
+            "start": 15,
+            "end": 47,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.95569,
+            "canonical": "hypokalemic metabolic alkalosis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "constructed",
+    "profile": "direction_guard_cap088",
+    "cases": 13,
+    "unique_input_output_pairs": 5,
+    "examples": [
+      {
+        "input": "nocturnal blood pressure dipping",
+        "output": "normal blood pressure dipping",
+        "case_ids": [
+          "ten:T0354",
+          "fifty:F00296",
+          "fifty:F01024",
+          "new37:R00704"
+        ],
+        "changes": [
+          {
+            "source": "nocturnal blood pressure",
+            "replacement": "normal blood pressure",
+            "start": 0,
+            "end": 24,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.895122,
+            "canonical": "normal blood pressure"
+          }
+        ]
+      },
+      {
+        "input": "seated blood pressure",
+        "output": "elevated blood pressure",
+        "case_ids": [
+          "fifty:F00162",
+          "fifty:F01010",
+          "fifty:F01788",
+          "new37:R00628",
+          "new37:R00700",
+          "new37:R01291"
+        ],
+        "changes": [
+          {
+            "source": "seated blood pressure",
+            "replacement": "elevated blood pressure",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.914091,
+            "canonical": "elevated blood pressure"
+          }
+        ]
+      },
+      {
+        "input": "physical inactivity",
+        "output": "physical activity",
+        "case_ids": [
+          "fifty:F01284"
+        ],
+        "changes": [
+          {
+            "source": "physical inactivity",
+            "replacement": "physical activity",
+            "start": 0,
+            "end": 19,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.948529,
+            "canonical": "physical activity"
+          }
+        ]
+      },
+      {
+        "input": "aldosterone-producing adenoma",
+        "output": "aldosterone production adenoma",
+        "case_ids": [
+          "fifty:F01362"
+        ],
+        "changes": [
+          {
+            "source": "aldosterone-producing",
+            "replacement": "aldosterone production",
+            "start": 0,
+            "end": 21,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.935678,
+            "canonical": "aldosterone production"
+          }
+        ]
+      },
+      {
+        "input": "They discussed hyperkalemic metabolic alkalosis today.",
+        "output": "They discussed hypokalemic metabolic alkalosis today.",
+        "case_ids": [
+          "fifty:F01926"
+        ],
+        "changes": [
+          {
+            "source": "hyperkalemic metabolic alkalosis",
+            "replacement": "hypokalemic metabolic alkalosis",
+            "start": 15,
+            "end": 47,
+            "rule": "glossary_fuzzy",
+            "confidence": 0.95569,
+            "canonical": "hypokalemic metabolic alkalosis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "context",
+    "profile": "direction_guard_same",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "context",
+    "profile": "direction_guard_cap092",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "context",
+    "profile": "direction_guard_cap090",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "context",
+    "profile": "direction_guard_cap088",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "regression",
+    "profile": "direction_guard_same",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "regression",
+    "profile": "direction_guard_cap092",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "regression",
+    "profile": "direction_guard_cap090",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  },
+  {
+    "dataset": "regression",
+    "profile": "direction_guard_cap088",
+    "cases": 0,
+    "unique_input_output_pairs": 0,
+    "examples": []
+  }
+]

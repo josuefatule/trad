@@ -1,0 +1,73 @@
+VALIDACIÓN DEL PAQUETE DEPURADO — LABORATORIO AISLADO
+Resultado: evaluación terminada con hallazgos; sin integración en TRAD.
+El paquete NO queda habilitado para reemplazos automáticos ni para fuzzy por defecto.
+
+Se verificó el manifiesto del paquete congelado. Se ejecutaron 72 pruebas unitarias distintas, todas satisfactorias.
+Estas pruebas del validador son distintas de las pruebas de cobertura: estas últimas detectaron limitaciones reales.
+
+COBERTURA CON EL NORMALIZADOR REAL
+1.881 comprobaciones: 1.314 formas canónicas EN/ES y 567 alternativas.
+Se encontraron 14 faltas de reconocimiento completo: 12 formas canónicas de 8 conceptos y 2 alternativas.
+La causa observable es el tratamiento de barras y paréntesis por el delimitador actual.
+El cargador admite esas entradas, pero eso no asegura que puedan reconocerse como una forma completa.
+No cambian el estado de verificación bilingüe de los 657 conceptos ni invalidan sus traducciones.
+Las formas afectadas son:
+- en: 2018 ESC/ESH guidelines [HTN_e1b4e5196458]
+- en: 2017 ACC/AHA guideline [HTN_b2e17b4f8177]
+- en: angiotensin-(1–7) [HTN_e39302d764b9]
+- en: 2025 AHA/ACC guideline [HTN_fc1d22db340b]
+- es: guía ESC/ESH de 2018 [HTN_e1b4e5196458]
+- es: guía ACC/AHA de 2017 [HTN_b2e17b4f8177]
+- es: cociente aldosterona/renina [HTN_c7c107126607]
+- es: angiotensina (1-7) [HTN_e39302d764b9]
+- es: cociente de presión arterial noche/día [HTN_96e9c067e48f]
+- es: cociente albúmina/creatinina en orina [HTN_b962d6ee32b1]
+- es: cociente proteína/creatinina en orina [HTN_34a93ba5e9c3]
+- es: guía AHA/ACC de 2025 [HTN_fc1d22db340b]
+- en: 2017 ACC/AHA hypertension guideline [UF0075]
+- en: angiotensin-(1-7) [UF0329]
+
+PRUEBAS DE CONTRASTE Y SUGERENCIAS
+150 casos: 30 frases construidas y 120 lados de los 60 pares similares ya documentados.
+Con observación exacta: 0 cambios aplicados y 0 selecciones indebidas en esos casos.
+Se preservaron negaciones, cifras, unidades, símbolos, siglas ambiguas y diferencias entre conceptos.
+El perfil observado usa suggest y desactiva fuzzy solo en una subclase del laboratorio; no es la configuración LIVE.
+La prueba separada del matcher fuzzy existente produjo 9 propuestas en 30 frases construidas:
+7 son inadecuadas según revisión editorial del asistente y 2 corresponden a erratas sintéticas esperadas.
+Ejemplos prioritarios:
+- No edema -> angioedema, tanto en inglés como en español.
+- carga de medicación se -> carga de comprimidos, aunque el alias estricto estaba excluido.
+- potassium is not -> potassium intake: la propuesta absorbe una negación.
+No se aplicó ninguna. No basta retirar un alias si fuzzy puede reconstruir la equivalencia insegura.
+El modo suggest nativo también propone ajustes de espaciado. El control estricto no aplica ni esos ajustes.
+
+COMPARACIÓN CON TRANSCRIPCIONES DE AUDIO YA EXISTENTES
+Tres conferencias, 36.96 minutos únicos, 4.204 palabras de referencia por modelo.
+Se reutilizaron nueve inferencias baseline (tres modelos por tres audios), con hashes verificados.
+No se ejecutó nuevo reconocimiento, ni se inició servicio alguno ni se llamó a DeepL.
+Comparación con/sin paquete sobre exactamente las mismas hipótesis:
+- small: WER 3.52% -> 3.52%; 256 reconocimientos/sugerencias, 44 de grafía distinta.
+- medium: WER 2.78% -> 2.78%; 257 reconocimientos/sugerencias, 44 de grafía distinta.
+- large-v3-turbo: WER 3.14% -> 3.14%; 273 reconocimientos/sugerencias, 25 de grafía distinta.
+El texto controlado permanece idéntico en los 829 segmentos. Por diseño, esto NO demuestra mejora de reconocimiento.
+Los déficits/excesos léxicos se registran para revisión; conceptos anidados pueden solaparse y no son errores clínicos certificados.
+Tiempo de observación exacta por segmento: mediana 10.87 ms; p95 20.79 ms; máximo 35.35 ms.
+Una sola pasada local. Se excluyen ASR, red, traducción, construcción del adaptador y scoring; no equivale a latencia LIVE.
+
+LÍMITES Y DECISIÓN
+La correspondencia estática de 657 pares es consistente en ambas direcciones; no se evaluó la salida del proveedor de traducción.
+Las pruebas españolas son de texto construido; no se dispone aquí de audio español con referencia clínica adjudicada.
+Las referencias inglesas de TurboScribe son provisionales. No hubo revisión clínica independiente.
+No se estima una tasa clínica de falsos positivos/negativos ni se certifican dosis o recomendaciones.
+Antes de un piloto habrá que resolver las 14 formas y las propuestas fuzzy inseguras en trabajo separado.
+Las posibles correcciones están documentadas en findings.json y NO se implementaron.
+
+PRESERVACIÓN Y ARCHIVOS
+732 archivos estrictamente protegidos mantienen sus huellas: investigación previa, paquete depurado, glosarios, corpus y ASR guardado, además de las bibliotecas centrales consultadas.
+Se añadieron únicamente trad_lab/glossary_package.py, tests/test_glossary_package.py y esta carpeta de resultados.
+Los cambios concurrentes observados fuera de este alcance constan en preservation_final.json y no se revirtieron.
+surface_checks.json: cada forma y las 14 faltas de cobertura.
+adversarial_results.json y fuzzy_diagnostics.json: entradas, sugerencias y resultados sin edición de evidencias.
+corpus_comparison.json y corpus_*.json: métricas, segmentos, tiempos y sugerencias locales.
+test_results.json y focused_regression_tests.json: pruebas iniciales y regresiones de los hallazgos.
+evaluation_manifest.json conserva las huellas de la medición inicial; manifest.json protege la entrega completa.

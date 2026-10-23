@@ -1,0 +1,276 @@
+{
+  "saline infusion test": {
+    "support": "supported",
+    "source_ids": [
+      "S54"
+    ],
+    "locator": "Extractos indexados, párrafo Four different confirmatory tests y abreviaturas"
+  },
+  "oral sodium loading test": {
+    "support": "supported",
+    "source_ids": [
+      "S54"
+    ],
+    "locator": "Extractos indexados, párrafo Four different confirmatory tests y abreviaturas"
+  },
+  "captopril challenge test": {
+    "support": "supported",
+    "source_ids": [
+      "S54"
+    ],
+    "locator": "Extractos indexados, párrafo Four different confirmatory tests y abreviaturas"
+  },
+  "fludrocortisone suppression test": {
+    "support": "supported",
+    "source_ids": [
+      "S54"
+    ],
+    "locator": "Extractos indexados, párrafo Four different confirmatory tests y abreviaturas"
+  },
+  "apparent mineralocorticoid excess": {
+    "support": "supported",
+    "source_ids": [
+      "S53"
+    ],
+    "locator": "Resumen y palabras clave; verificación conceptual, traducción individual pendiente"
+  },
+  "Gordon syndrome": {
+    "support": "supported",
+    "source_ids": [
+      "S53"
+    ],
+    "locator": "Resumen y palabras clave; verificación conceptual, traducción individual pendiente"
+  },
+  "congenital adrenal hyperplasia": {
+    "support": "supported",
+    "source_ids": [
+      "S53"
+    ],
+    "locator": "Resumen y palabras clave; verificación conceptual, traducción individual pendiente"
+  },
+  "low-renin hypertension": {
+    "support": "supported",
+    "source_ids": [
+      "S56"
+    ],
+    "locator": "Resumen Low-Renin Hypertension"
+  },
+  "supine hypertension": {
+    "support": "supported",
+    "source_ids": [
+      "S52"
+    ],
+    "locator": "Resúmenes EN y ES paralelos: supine hypertension / hipertensión supina"
+  },
+  "magnesium sulfate": {
+    "support": "supported",
+    "source_ids": [
+      "S55",
+      "S29"
+    ],
+    "locator": "Resúmenes bilingües EsSalud; S29 sección 10.4.1"
+  },
+  "low-dose aspirin": {
+    "support": "supported",
+    "source_ids": [
+      "S62"
+    ],
+    "locator": "Diapositivas oficiales ESC 2025 indexadas y noticia oficial; medicamento, no recomendación universal"
+  },
+  "HELLP syndrome": {
+    "support": "supported",
+    "source_ids": [
+      "S57",
+      "S47"
+    ],
+    "locator": "Palabras clave S57; desenlace primario CHAP S47"
+  },
+  "preeclampsia with severe features": {
+    "support": "supported",
+    "source_ids": [
+      "S57",
+      "S47"
+    ],
+    "locator": "Palabras clave S57; desenlace primario CHAP S47"
+  },
+  "baxdrostat": {
+    "support": "supported",
+    "source_ids": [
+      "S48"
+    ],
+    "locator": "Título del ensayo BaxHTN, sin afirmación regulatoria"
+  },
+  "zilebesiran": {
+    "support": "supported",
+    "source_ids": [
+      "S49"
+    ],
+    "locator": "Resumen KARDIA-2; forma española conservada provisionalmente"
+  },
+  "aliskiren": {
+    "support": "supported",
+    "source_ids": [
+      "S61"
+    ],
+    "locator": "Tabla indexada de medicamentos; sin traslado de estatus regulatorio histórico"
+  },
+  "clevidipine": {
+    "support": "supported",
+    "source_ids": [
+      "S61"
+    ],
+    "locator": "Tabla indexada de medicamentos; sin traslado de estatus regulatorio histórico"
+  },
+  "esmolol": {
+    "support": "supported",
+    "source_ids": [
+      "S61"
+    ],
+    "locator": "Tabla indexada de medicamentos; sin traslado de estatus regulatorio histórico"
+  },
+  "JNC 8 report": {
+    "support": "supported",
+    "source_ids": [
+      "S58"
+    ],
+    "locator": "Título de informe citado en referencia primaria enlazada; no Eighth Joint National Committee como alias"
+  },
+  "REGARDS study": {
+    "support": "supported",
+    "source_ids": [
+      "S59"
+    ],
+    "locator": "Título y resumen de objetivos y diseño"
+  },
+  "NHANES": {
+    "support": "supported",
+    "source_ids": [
+      "S60"
+    ],
+    "locator": "Definición oficial de nombre y sigla"
+  },
+  "risk assessment": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "risk stratification": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "treatment algorithm": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "treatment goal": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "target systolic blood pressure": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "shared decision-making": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "clinical practice guidelines": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "guideline recommendations": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "clinical outcomes": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "patient follow-up": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "blood pressure-lowering treatment": {
+    "support": "supported",
+    "source_ids": [
+      "S02",
+      "S29"
+    ],
+    "locator": "S02 puntos 1,6-9; S29 secciones 6,8.3.5,11 y tablas de recomendaciones: respaldo conceptual"
+  },
+  "cardiac output": {
+    "support": "supported", "source_ids": ["S63", "S64"], "locator": "S63 extracto; S64 objetivo y palabras clave EN/ES"
+  },
+  "stroke volume": {
+    "support": "supported", "source_ids": ["S63", "S64"], "locator": "S63 extracto; S64 objetivo y palabras clave EN/ES"
+  },
+  "heart rate": {
+    "support": "supported", "source_ids": ["S63", "S07"], "locator": "S63 extracto y S07 mecanismo de betabloqueadores"
+  },
+  "posterior reversible encephalopathy syndrome": {
+    "support": "supported", "source_ids": ["S66"], "locator": "Resumen de estudio observacional; no sinónimo estricto de encefalopatía hipertensiva"
+  },
+  "superimposed preeclampsia": {
+    "support": "supported", "source_ids": ["S67"], "locator": "Resumen Diagnosis of hypertensive disorders in pregnancy"
+  },
+  "myocardial infarction": {
+    "variants_es": [],
+    "note": "Infarto de miocardio no implica fase aguda: no exportar infarto agudo como sinónimo absoluto."
+  },
+  "small for gestational age": {
+    "source_ids": [
+      "S47",
+      "S51"
+    ],
+    "locator": "S47 desenlace de seguridad; S51 título y definición en español"
+  },
+  "fetal growth restriction": {
+    "note": "Restricción patológica del crecimiento: no equivalente a clasificación de tamaño pequeño para edad gestacional. Verificación bilingüe individual aún pendiente."
+  },
+  "ACCORD trial": {
+    "source_ids": [
+      "S46",
+      "S29"
+    ],
+    "locator": "S46 resumen y componente de intervención de presión arterial; S29 abreviaturas"
+  }
+}

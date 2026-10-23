@@ -1,0 +1,49 @@
+{
+  "scope": "Initial completed pass before extending the same boundary controls to exact formatting matches. No thresholds changed.",
+  "files": [
+    {
+      "name": "context_cases.json",
+      "sha256": "38026101d3deeec0797bb7dfe7a70b93d420c400ccd0d5dedbde6afd3f03cf56"
+    },
+    {
+      "name": "context_comparison.json",
+      "sha256": "74d4d3aff245b55a6591c89a577c767357b65ff6e63f71af4af47efe85dcd17d"
+    },
+    {
+      "name": "evaluate_context.py",
+      "sha256": "facaef94aa2007fe505febf6f8e9979e70171fb5ce55257e16797756af0a27c1"
+    },
+    {
+      "name": "preservation.json",
+      "sha256": "2ed185d65a58ca6a2d1259c3f8320900504a12b0b0cd0fe05300a78fdaf72bd3"
+    },
+    {
+      "name": "prior_constructed_comparison.json",
+      "sha256": "54d93916138fc25cc2f85e2735f52a3017d8eac5cbc0c9175c064203857fe174"
+    },
+    {
+      "name": "protocol.json",
+      "sha256": "c9518bbdf1677d556230688616a49552a9507320254e7674474191bb9d119f74"
+    },
+    {
+      "name": "speech_comparison.json",
+      "sha256": "406b2c28fe23fcae0806356864f72fc892c781c28856b5d1b0e6e8acb9991a1d"
+    },
+    {
+      "name": "summary.json",
+      "sha256": "6d16ad0d2a40cc84c60c0e440750b684abe8ab5e14a84dca8bc781de31bbf7f4"
+    },
+    {
+      "name": "term_results.json",
+      "sha256": "3645b935e50cc5cb68a6699e062fc9a3345687715d1bf64e9d3881bbfc00bd72"
+    },
+    {
+      "name": "test_context.py",
+      "sha256": "5c22a3a530fcd28b532cfe2b25909bae70c5402061d931eba4c60ee377f02a93"
+    },
+    {
+      "name": "test_results.json",
+      "sha256": "9ab50abee13aaebe7f269200ad61cec2ad922d702b2b977ba14db6493d70e263"
+    }
+  ]
+}

@@ -1,0 +1,3931 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "canonical_en": "sodium-containing salts",
+    "preferred_es": "sales que contienen sodio",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "sodium-containing salts"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "canonical_en": "sodium reabsorption",
+    "preferred_es": "reabsorción de sodio",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "sodium reabsorption"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "preferred_es": "eventos cardiovasculares",
+    "reference_occurrences_by_file": {
+      "cardio_02": 4,
+      "cardio_03": 3
+    },
+    "reference_forms": [
+      "cardiovascular events",
+      "CVD events"
+    ],
+    "group": "previous60",
+    "threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "previous60_corrected": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "new37_uniform090": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "new37_individualized": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "combined97_uniform_new37": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "combined97_individualized": {
+        "observations": 21,
+        "exact_reference_form": 21
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "canonical_en": "tyrosine kinase inhibitors",
+    "preferred_es": "inhibidores de tirosina cinasa",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "tyrosine kinase inhibitors"
+    ],
+    "group": "previous60",
+    "threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "canonical_en": "ten-year ASCVD risk",
+    "preferred_es": "riesgo de enfermedad cardiovascular aterosclerótica a 10 años",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "ten-year ASCVD risk",
+      "10-year ASCVD risk"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "canonical_en": "National Institutes of Health",
+    "preferred_es": "Institutos Nacionales de Salud de Estados Unidos",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "National Institutes of Health"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "canonical_en": "mineralocorticoid receptor",
+    "preferred_es": "receptor de mineralocorticoides",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "mineralocorticoid receptor"
+    ],
+    "group": "previous60",
+    "threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "preferred_es": "aldosteronismo primario",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 9
+    },
+    "reference_forms": [
+      "primary aldosteronism"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 30,
+        "exact_reference_form": 12
+      },
+      "previous60_corrected": {
+        "observations": 30,
+        "exact_reference_form": 29
+      },
+      "new37_uniform090": {
+        "observations": 30,
+        "exact_reference_form": 12
+      },
+      "new37_individualized": {
+        "observations": 30,
+        "exact_reference_form": 12
+      },
+      "combined97_uniform_new37": {
+        "observations": 30,
+        "exact_reference_form": 29
+      },
+      "combined97_individualized": {
+        "observations": 30,
+        "exact_reference_form": 29
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "preferred_es": "presión arterial sistólica",
+    "reference_occurrences_by_file": {
+      "cardio_02": 3,
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "systolic blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "previous60_corrected": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "new37_uniform090": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "new37_individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "combined97_uniform_new37": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "combined97_individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "preferred_es": "Asociación Americana del Corazón",
+    "reference_occurrences_by_file": {
+      "cardio_02": 4
+    },
+    "reference_forms": [
+      "American Heart Association"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "previous60_corrected": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "new37_uniform090": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "new37_individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "combined97_uniform_new37": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "combined97_individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "canonical_en": "resistant hypertension",
+    "preferred_es": "hipertensión resistente",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 4
+    },
+    "reference_forms": [
+      "resistant hypertension"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "previous60_corrected": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "new37_uniform090": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "new37_individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "combined97_uniform_new37": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "combined97_individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "canonical_en": "spironolactone",
+    "preferred_es": "espironolactona",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "spironolactone"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "canonical_en": "cardiometabolic risk",
+    "preferred_es": "riesgo cardiometabólico",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "cardiometabolic risk"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "canonical_en": "heart disease",
+    "preferred_es": "cardiopatía",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "heart disease"
+    ],
+    "group": "previous60",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "preferred_es": "presión arterial elevada",
+    "reference_occurrences_by_file": {
+      "cardio_01": 5,
+      "cardio_02": 3,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "elevated blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 27,
+        "exact_reference_form": 27
+      },
+      "previous60_corrected": {
+        "observations": 27,
+        "exact_reference_form": 27
+      },
+      "new37_uniform090": {
+        "observations": 27,
+        "exact_reference_form": 27
+      },
+      "new37_individualized": {
+        "observations": 27,
+        "exact_reference_form": 27
+      },
+      "combined97_uniform_new37": {
+        "observations": 27,
+        "exact_reference_form": 27
+      },
+      "combined97_individualized": {
+        "observations": 27,
+        "exact_reference_form": 27
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "preferred_es": "presión arterial",
+    "reference_occurrences_by_file": {
+      "cardio_01": 15,
+      "cardio_02": 32,
+      "cardio_03": 21
+    },
+    "reference_forms": [
+      "blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 204,
+        "exact_reference_form": 201
+      },
+      "previous60_corrected": {
+        "observations": 204,
+        "exact_reference_form": 201
+      },
+      "new37_uniform090": {
+        "observations": 204,
+        "exact_reference_form": 201
+      },
+      "new37_individualized": {
+        "observations": 204,
+        "exact_reference_form": 201
+      },
+      "combined97_uniform_new37": {
+        "observations": 204,
+        "exact_reference_form": 201
+      },
+      "combined97_individualized": {
+        "observations": 204,
+        "exact_reference_form": 201
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "canonical_en": "cardiovascular risk",
+    "preferred_es": "riesgo cardiovascular",
+    "reference_occurrences_by_file": {
+      "cardio_02": 2
+    },
+    "reference_forms": [
+      "cardiovascular risk"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "canonical_en": "target systolic blood pressure",
+    "preferred_es": "objetivo de presión arterial sistólica",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "target systolic blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "canonical_en": "hormone replacement therapy",
+    "preferred_es": "terapia hormonal de reemplazo",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "hormone replacement therapy",
+      "hormonal replacement therapy"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "canonical_en": "immunosuppressive agents",
+    "preferred_es": "inmunosupresores",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "immunosuppressive agents",
+      "immunosuppressants"
+    ],
+    "group": "previous60",
+    "threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "canonical_en": "diuretics",
+    "preferred_es": "diuréticos",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "diuretics"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "canonical_en": "atherosclerosis",
+    "preferred_es": "aterosclerosis",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "atherosclerosis"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "preferred_es": "hipertensión arterial",
+    "reference_occurrences_by_file": {
+      "cardio_01": 8,
+      "cardio_02": 20,
+      "cardio_03": 27
+    },
+    "reference_forms": [
+      "hypertension",
+      "systemic hypertension",
+      "high blood pressure",
+      "arterial hypertension"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 165,
+        "exact_reference_form": 165
+      },
+      "previous60_corrected": {
+        "observations": 165,
+        "exact_reference_form": 165
+      },
+      "new37_uniform090": {
+        "observations": 165,
+        "exact_reference_form": 165
+      },
+      "new37_individualized": {
+        "observations": 165,
+        "exact_reference_form": 165
+      },
+      "combined97_uniform_new37": {
+        "observations": 165,
+        "exact_reference_form": 165
+      },
+      "combined97_individualized": {
+        "observations": 165,
+        "exact_reference_form": 165
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "canonical_en": "micrograms per deciliter",
+    "preferred_es": "microgramos por decilitro",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "micrograms per deciliter"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "canonical_en": "incidence",
+    "preferred_es": "incidencia",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "incidence"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "canonical_en": "isometric resistance exercise",
+    "preferred_es": "ejercicio isométrico de fuerza",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "isometric resistance exercise"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "canonical_en": "pharmacological therapy",
+    "preferred_es": "tratamiento farmacológico",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1,
+      "cardio_02": 3,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "pharmacological therapy",
+      "pharmacologic therapy"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "previous60_corrected": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "new37_uniform090": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "new37_individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "combined97_uniform_new37": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "combined97_individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "canonical_en": "as low as reasonably achievable",
+    "preferred_es": "tan baja como sea razonablemente alcanzable",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "as low as reasonably achievable"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "canonical_en": "weight loss",
+    "preferred_es": "pérdida de peso",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "weight loss"
+    ],
+    "group": "previous60",
+    "threshold": 0.9,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "canonical_en": "renin suppression",
+    "preferred_es": "supresión de renina",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "renin suppression"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "canonical_en": "hypotension",
+    "preferred_es": "hipotensión",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "hypotension",
+      "low blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "canonical_en": "chronic kidney disease",
+    "preferred_es": "enfermedad renal crónica",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1,
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "chronic kidney disease"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "canonical_en": "blood pressure target",
+    "preferred_es": "objetivo de presión arterial",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "blood pressure target",
+      "target blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "canonical_en": "exercise",
+    "preferred_es": "ejercicio",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "exercise"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "canonical_en": "prehypertension",
+    "preferred_es": "prehipertensión",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "prehypertension",
+      "pre-hypertension"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 1
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "canonical_en": "millimoles per day",
+    "preferred_es": "milimoles por día",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "millimoles per day"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "canonical_en": "micrograms per day",
+    "preferred_es": "microgramos por día",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "micrograms per day"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "canonical_en": "non-elevated blood pressure",
+    "preferred_es": "presión arterial no elevada",
+    "reference_occurrences_by_file": {
+      "cardio_01": 2
+    },
+    "reference_forms": [
+      "non-elevated blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "canonical_en": "alcohol intake",
+    "preferred_es": "consumo de alcohol",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "alcohol intake"
+    ],
+    "group": "previous60",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "canonical_en": "serious adverse events",
+    "preferred_es": "eventos adversos graves",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "serious adverse events"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "canonical_en": "salt loading",
+    "preferred_es": "sobrecarga de sodio",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "salt loading",
+      "sodium loading"
+    ],
+    "group": "previous60",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "canonical_en": "renin-independent aldosterone production",
+    "preferred_es": "producción de aldosterona independiente de renina",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "renin-independent aldosterone production"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 0
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "canonical_en": "mineralocorticoid receptor antagonists",
+    "preferred_es": "antagonistas del receptor de mineralocorticoides",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "mineralocorticoid receptor antagonists"
+    ],
+    "group": "previous60",
+    "threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "canonical_en": "urinary aldosterone",
+    "preferred_es": "aldosterona urinaria",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "urinary aldosterone"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "canonical_en": "oral contraceptives",
+    "preferred_es": "anticonceptivos orales",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "oral contraceptives"
+    ],
+    "group": "previous60",
+    "threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "canonical_en": "hypokalemic metabolic alkalosis",
+    "preferred_es": "alcalosis metabólica hipopotasémica",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "hypokalemic metabolic alkalosis",
+      "hypokalaemic metabolic alkalosis"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "preferred_es": "aldosterona",
+    "reference_occurrences_by_file": {
+      "cardio_03": 9
+    },
+    "reference_forms": [
+      "aldosterone"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 27,
+        "exact_reference_form": 8
+      },
+      "previous60_corrected": {
+        "observations": 27,
+        "exact_reference_form": 11
+      },
+      "new37_uniform090": {
+        "observations": 27,
+        "exact_reference_form": 11
+      },
+      "new37_individualized": {
+        "observations": 27,
+        "exact_reference_form": 10
+      },
+      "combined97_uniform_new37": {
+        "observations": 27,
+        "exact_reference_form": 12
+      },
+      "combined97_individualized": {
+        "observations": 27,
+        "exact_reference_form": 11
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "canonical_en": "physical activity",
+    "preferred_es": "actividad física",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "physical activity"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "canonical_en": "meta-analysis",
+    "preferred_es": "metaanálisis",
+    "reference_occurrences_by_file": {
+      "cardio_02": 2
+    },
+    "reference_forms": [
+      "meta-analysis"
+    ],
+    "group": "previous60",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "preferred_es": "enfermedad cardiovascular",
+    "reference_occurrences_by_file": {
+      "cardio_02": 6,
+      "cardio_03": 4
+    },
+    "reference_forms": [
+      "cardiovascular disease"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 30,
+        "exact_reference_form": 30
+      },
+      "previous60_corrected": {
+        "observations": 30,
+        "exact_reference_form": 30
+      },
+      "new37_uniform090": {
+        "observations": 30,
+        "exact_reference_form": 30
+      },
+      "new37_individualized": {
+        "observations": 30,
+        "exact_reference_form": 30
+      },
+      "combined97_uniform_new37": {
+        "observations": 30,
+        "exact_reference_form": 30
+      },
+      "combined97_individualized": {
+        "observations": 30,
+        "exact_reference_form": 30
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "canonical_en": "evidence-based review",
+    "preferred_es": "revisión basada en la evidencia",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "evidence-based review"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "canonical_en": "direct renin concentration",
+    "preferred_es": "concentración directa de renina",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "direct renin concentration"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "canonical_en": "alcohol moderation",
+    "preferred_es": "moderación del consumo de alcohol",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "alcohol moderation",
+      "moderation of alcohol consumption"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "canonical_en": "subclinical atherosclerosis",
+    "preferred_es": "aterosclerosis subclínica",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "subclinical atherosclerosis"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "canonical_en": "older adults",
+    "preferred_es": "adultos mayores",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "older adults"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "canonical_en": "healthy diet",
+    "preferred_es": "alimentación saludable",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "healthy diet"
+    ],
+    "group": "previous60",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "canonical_en": "co-chair",
+    "preferred_es": "copresidente",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "co-chair",
+      "co-chairperson"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "canonical_en": "blood pressure control",
+    "preferred_es": "control de la presión arterial",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "blood pressure control"
+    ],
+    "group": "previous60",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "previous60_corrected": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_uniform090": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_uniform_new37": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "canonical_en": "prevalence",
+    "preferred_es": "prevalencia",
+    "reference_occurrences_by_file": {
+      "cardio_01": 2,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "prevalence"
+    ],
+    "group": "previous60",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "previous60_corrected": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_uniform090": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_uniform_new37": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "canonical_en": "diastolic blood pressure",
+    "preferred_es": "presión arterial diastólica",
+    "reference_occurrences_by_file": {
+      "cardio_02": 2
+    },
+    "reference_forms": [
+      "diastolic blood pressure"
+    ],
+    "group": "previous60",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_6a0750665576",
+    "canonical_en": "network meta-analysis",
+    "preferred_es": "metaanálisis en red",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "network meta-analysis"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_55597a586adc",
+    "canonical_en": "metabolic alkalosis",
+    "preferred_es": "alcalosis metabólica",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "metabolic alkalosis"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c61cf036297b",
+    "canonical_en": "extracellular volume expansion",
+    "preferred_es": "expansión del volumen extracelular",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "extracellular volume expansion"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_c3df62c85359",
+    "canonical_en": "atherosclerotic cardiovascular disease",
+    "preferred_es": "enfermedad cardiovascular aterosclerótica",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "atherosclerotic cardiovascular disease"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_9c147fb0dd01",
+    "canonical_en": "primordial prevention",
+    "preferred_es": "prevención primordial",
+    "reference_occurrences_by_file": {
+      "cardio_02": 2,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "primordial prevention"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "previous60_corrected": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_uniform090": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_uniform_new37": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_8c53930b9fb6",
+    "canonical_en": "primary hypertension",
+    "preferred_es": "hipertensión primaria",
+    "reference_occurrences_by_file": {
+      "cardio_03": 4
+    },
+    "reference_forms": [
+      "primary hypertension",
+      "essential hypertension"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "previous60_corrected": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "new37_uniform090": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "new37_individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "combined97_uniform_new37": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "combined97_individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_813c32e37386",
+    "canonical_en": "kidney function",
+    "preferred_es": "función renal",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "kidney function",
+      "renal function"
+    ],
+    "group": "new37",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_7f88a520a565",
+    "canonical_en": "young adults",
+    "preferred_es": "adultos jóvenes",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 3
+    },
+    "reference_forms": [
+      "young adults"
+    ],
+    "group": "new37",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "previous60_corrected": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "new37_uniform090": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "new37_individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "combined97_uniform_new37": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "combined97_individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_367a095cd401",
+    "canonical_en": "millimeters of mercury",
+    "preferred_es": "milímetros de mercurio",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "millimeters of mercury"
+    ],
+    "group": "new37",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 5
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 5
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 5
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 5
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 5
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 5
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_883353142120",
+    "canonical_en": "orthostatic hypotension",
+    "preferred_es": "hipotensión ortostática",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "orthostatic hypotension",
+      "postural hypotension"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_b5c94b0468ed",
+    "canonical_en": "recombinant human erythropoietin",
+    "preferred_es": "eritropoyetina humana recombinante",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "recombinant human erythropoietin"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_9a1d14495070",
+    "canonical_en": "antihypertensive therapy",
+    "preferred_es": "tratamiento antihipertensivo",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "antihypertensive therapy"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_1ba7573640bb",
+    "canonical_en": "stroke",
+    "preferred_es": "accidente cerebrovascular",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "stroke",
+      "cerebrovascular accident"
+    ],
+    "group": "new37",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_65a8ad331229",
+    "canonical_en": "urinary sodium excretion",
+    "preferred_es": "excreción urinaria de sodio",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "urinary sodium excretion"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_67290e2a4f79",
+    "canonical_en": "secondary hypertension",
+    "preferred_es": "hipertensión secundaria",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "secondary hypertension"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "previous60_corrected": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_uniform090": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_uniform_new37": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_fc25c9ee65b4",
+    "canonical_en": "vascular dementia",
+    "preferred_es": "demencia vascular",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "vascular dementia"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_4c28630c39b7",
+    "canonical_en": "beta blockers",
+    "preferred_es": "betabloqueadores",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "beta blockers",
+      "beta-adrenergic blockers",
+      "beta-blockers"
+    ],
+    "group": "new37",
+    "threshold": 0.92,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_015add4e7c55",
+    "canonical_en": "antihypertensive medication",
+    "preferred_es": "medicamento antihipertensivo",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "antihypertensive medication"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 0
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 0
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 1
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_da157827508d",
+    "canonical_en": "normal blood pressure",
+    "preferred_es": "presión arterial normal",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "normal blood pressure"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_b82e725f2d5b",
+    "canonical_en": "pharmacologic management",
+    "preferred_es": "manejo farmacológico",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "pharmacologic management",
+      "pharmacological management"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_351e3115ce6d",
+    "canonical_en": "renin-angiotensin system",
+    "preferred_es": "sistema renina-angiotensina",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "renin-angiotensin system"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 1
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_8d698ec69088",
+    "canonical_en": "American College of Cardiology",
+    "preferred_es": "Colegio Americano de Cardiología",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "American College of Cardiology"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_e28dac3635a0",
+    "canonical_en": "coronary artery calcium",
+    "preferred_es": "calcio coronario",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "coronary artery calcium"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_3265c21da577",
+    "canonical_en": "antihypertensive drug therapy",
+    "preferred_es": "tratamiento farmacológico antihipertensivo",
+    "reference_occurrences_by_file": {
+      "cardio_02": 5,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "antihypertensive drug therapy"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 18,
+        "exact_reference_form": 17
+      },
+      "previous60_corrected": {
+        "observations": 18,
+        "exact_reference_form": 17
+      },
+      "new37_uniform090": {
+        "observations": 18,
+        "exact_reference_form": 18
+      },
+      "new37_individualized": {
+        "observations": 18,
+        "exact_reference_form": 18
+      },
+      "combined97_uniform_new37": {
+        "observations": 18,
+        "exact_reference_form": 18
+      },
+      "combined97_individualized": {
+        "observations": 18,
+        "exact_reference_form": 18
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_5418fb6ca9f7",
+    "canonical_en": "clinical implications",
+    "preferred_es": "implicaciones clínicas",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "clinical implications"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_7007c7b6a276",
+    "canonical_en": "urinary potassium excretion",
+    "preferred_es": "excreción urinaria de potasio",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "urinary potassium excretion"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_d5f7ec4c74ec",
+    "canonical_en": "dietary sodium restriction",
+    "preferred_es": "restricción de sodio en la alimentación",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "dietary sodium restriction"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_46c99f93e124",
+    "canonical_en": "potassium-rich diet",
+    "preferred_es": "dieta rica en potasio",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "potassium-rich diet"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_62d56e18d9ed",
+    "canonical_en": "non-pharmacological therapy",
+    "preferred_es": "tratamiento no farmacológico",
+    "reference_occurrences_by_file": {
+      "cardio_02": 3
+    },
+    "reference_forms": [
+      "non-pharmacological therapy",
+      "nonpharmacologic therapy",
+      "non-pharmacologic therapy"
+    ],
+    "group": "new37",
+    "threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "previous60_corrected": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_uniform090": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "new37_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_uniform_new37": {
+        "observations": 9,
+        "exact_reference_form": 9
+      },
+      "combined97_individualized": {
+        "observations": 9,
+        "exact_reference_form": 9
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_9b521b6aa481",
+    "canonical_en": "dietary potassium",
+    "preferred_es": "potasio de la dieta",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "dietary potassium"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_58ff1710a6fe",
+    "canonical_en": "lifestyle modification",
+    "preferred_es": "modificación del estilo de vida",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "lifestyle modification"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_e2601a1dc5c2",
+    "canonical_en": "plasma renin activity",
+    "preferred_es": "actividad de renina plasmática",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "plasma renin activity"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_b2841ea0bccc",
+    "canonical_en": "milligrams per day",
+    "preferred_es": "miligramos por día",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "milligrams per day"
+    ],
+    "group": "new37",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_0a86f46a7678",
+    "canonical_en": "antidepressants",
+    "preferred_es": "antidepresivos",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "antidepressants"
+    ],
+    "group": "new37",
+    "threshold": null,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_8a14bff08d83",
+    "canonical_en": "potassium intake",
+    "preferred_es": "ingesta de potasio",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "potassium intake"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_725551b71cd2",
+    "canonical_en": "aldosterone production",
+    "preferred_es": "producción de aldosterona",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "aldosterone production"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 0
+      },
+      "previous60_corrected": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "new37_uniform090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "new37_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      },
+      "combined97_uniform_new37": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "combined97_individualized": {
+        "observations": 3,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_81c0b5abec49",
+    "canonical_en": "all-cause mortality",
+    "preferred_es": "mortalidad por todas las causas",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "all-cause mortality"
+    ],
+    "group": "new37",
+    "threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "previous60_corrected": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_uniform090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "new37_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_uniform_new37": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "combined97_individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  }
+]

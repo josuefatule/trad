@@ -1,0 +1,15 @@
+{
+  "validation_execution_complete": true,
+  "laboratory_result": "completed_with_findings",
+  "all_unit_tests_passed": true,
+  "unique_unit_tests_passed": 72,
+  "surface_coverage_passed": false,
+  "surface_misses": 14,
+  "exact_adversarial_cases_passed": 150,
+  "inappropriate_fuzzy_suggestions": 7,
+  "runtime_activation_approved": false,
+  "integration_performed": false,
+  "original_and_evidence_hashes_preserved": true,
+  "package_manifest_sha256": "a475080f469c8efbc18beaf0067b1d3694f888f6051fb482cbb5bacfc762703a",
+  "clinical_or_provider_validation_claimed": false
+}

@@ -1,7 +1,13 @@
 .venv/
+.venv-wlk/
 __pycache__/
 *.pyc
 logs/
 .env
 .runtime/
 .vscode/
+
+# Local session logs and downloaded research caches are kept on this PC.
+benchmarks/**/*.log
+research/**/source_cache/
+research/**/*.zip

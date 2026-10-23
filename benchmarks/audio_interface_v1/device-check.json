@@ -1,0 +1,10 @@
+{
+  "windows_device": "USB AUDIO DEVICE",
+  "operator_input": "Microphone (USB AUDIO DEVICE) (2f6e:4e02)",
+  "windows_present": true,
+  "sound_recorder_signal_confirmed_by_user": true,
+  "operator_permission_refresh_succeeded": true,
+  "operator_reload_restored_selection": true,
+  "usb_live_asr_test_performed": false,
+  "translation_requested": false
+}

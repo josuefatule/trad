@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "package_version": "1.0.0-research",
+  "kind": "inputs_and_precedence",
+  "status": "research_preparation_only",
+  "integrated": false,
+  "runtime_approved": false,
+  "automatic_substitution_approved": false,
+  "baseline_recorded_at_utc": "2026-10-22T02:08:47.122601+00:00",
+  "inputs": [
+    {
+      "path": "research/hypertension_2026-10-20/hypertension_research_en_es.json",
+      "bytes": 2748906,
+      "sha256": "bdcb40eea6c84e20ff327859eeac23f3b3194b3de9cfdd5553d6444e99e588c2"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/bilingual_verification.json",
+      "bytes": 1160306,
+      "sha256": "823dda8200ea075d3b066fe46558022e915f4d34fe256b1dde2a8cc0c68156a1"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_inventory.json",
+      "bytes": 519322,
+      "sha256": "103364a107cefcbed0018a616a0af1aedf3b718bb8871fa013f675b08f5f829d"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_review_decisions.json",
+      "bytes": 1770065,
+      "sha256": "01756db6cd3f309156f7571f23852c1724922b958bbe119669c03afa34e9418b"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_corrections_proposed.json",
+      "bytes": 41160,
+      "sha256": "9b88f7bc3934b829d5e4f4c325cb236f31dae5dc4a804df84b60128397478dde"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124.json",
+      "bytes": 237079,
+      "sha256": "344e4766148b436dcea2777f23bafb6292989b36bd5eb549a858c5d0c1103892"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_corrections.json",
+      "bytes": 12175,
+      "sha256": "5427257074ac6b31875263c90551f04d173a23727183ee31f86f4659d0801a62"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/session3_terminology_corrections.json",
+      "bytes": 1203,
+      "sha256": "309f4b2799a6bcf143af1b1639dd206031593ca780e66b7f8ba131e3ee5796fd"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/sources.json",
+      "bytes": 131267,
+      "sha256": "75acd78f9cdcaeb0d1d9af007a753099782171b39f7ce608e142dec7e2dcb157"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_source_catalog.json",
+      "bytes": 15218,
+      "sha256": "a315b7f23ab94debc279bc18f9e99fe093ac95bbd425cfe91bc02566af35e3e8"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_sources.json",
+      "bytes": 82096,
+      "sha256": "0e2e23c5f1cbdb4ceec8d0992b9988e982d21512359d3abe84cc2e387be691da"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_definition_evidence.json",
+      "bytes": 28378,
+      "sha256": "870979086d991baffe75dfd597a6d1361947c8db5cac33f7d0c714d6ab0f6b4b"
+    },
+    {
+      "path": "glossaries/medical_base_en.json",
+      "bytes": 42577,
+      "sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896"
+    },
+    {
+      "path": "glossaries/medical_base.json",
+      "bytes": 2329,
+      "sha256": "d8c09dbb234eb8c2c256e1bdad68013cceea2db3d7ac557db799772e0af53b37"
+    },
+    {
+      "path": "glossaries/conference.json",
+      "bytes": 58,
+      "sha256": "a711330ff91dcb2ecefa9866684087345bb1d34a9ecb663935d6641791857004"
+    },
+    {
+      "path": "app/captions/terminology_normalizer.py",
+      "bytes": 19598,
+      "sha256": "0b1ddfb6d760ca7ad891cb88c0ef1b17f625f5b46b5072a6b583eac4f8fcf0cf"
+    }
+  ],
+  "precedence": [
+    "Canonical pairs: dataset agrees with bilingual_verification.json; retain stable IDs and exact labels.",
+    "Alias inventory + alias_review_decisions.json + alias_corrections_proposed.json.",
+    "surface_verification_124.json and its corrections override older evidence/eligibility only; retain prior restrictions.",
+    "All resulting views remain observation-only; no operational approval is inferred."
+  ],
+  "not_used_as_release_source": "medical_base_en_extended_candidate.json: frozen earlier 640-entry candidate",
+  "write_boundary": "Only this integration_candidate directory; no application import, configuration, network or live session."
+}

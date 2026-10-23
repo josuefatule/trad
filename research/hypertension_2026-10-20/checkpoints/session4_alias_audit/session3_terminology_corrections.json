@@ -1,0 +1,27 @@
+{
+  "updated_at_utc": "2026-10-21T04:08:23+00:00",
+  "corrections": [
+    {
+      "id": "HTN_ab697e405d94",
+      "canonical_en": "arterial compliance",
+      "field": "preferred_es",
+      "previous": "distensibilidad arterial",
+      "corrected": "compliancia arterial",
+      "reason": "Preferencia española más precisa, atestada; no se declara sinonimia universal con distensibilidad.",
+      "scope": "research_dataset_only",
+      "original_and_candidate_modified": false,
+      "reviewed_at_utc": "2026-10-21T04:08:23+00:00"
+    },
+    {
+      "id": "HTN_52a96921d6d9",
+      "canonical_en": "asymptomatic markedly elevated blood pressure",
+      "field": "preferred_es",
+      "previous": "presión arterial marcadamente elevada sin síntomas",
+      "corrected": "presión arterial marcadamente elevada asintomática",
+      "reason": "Denominación técnica atestada; se añade contexto de ausencia de daño orgánico agudo y se evita interpretar sin síntomas como exclusión de todo síntoma inespecífico.",
+      "scope": "research_dataset_only",
+      "original_and_candidate_modified": false,
+      "reviewed_at_utc": "2026-10-21T04:08:23+00:00"
+    }
+  ]
+}

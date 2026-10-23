@@ -1,0 +1,111 @@
+TRAD — ARRANQUE, INTERFAZ USB Y OVERLAY ABIERTO
+22 de octubre de 2026 (America/La_Paz)
+
+ARRANQUE
+
+    cd C:\live-captions
+    .\Start-TRAD.ps1
+
+Se muestran las IPv4 actuales. Si hay varias, selecciona la IP de la interfaz
+Wi-Fi/Ethernet que usas. La IP de la PC overlay es opcional e informativa.
+Enter omite ese dato y mantiene la publicación para cualquier visor.
+Se admiten perfiles Public y Private: no es necesario cambiar el perfil.
+
+Operator: http://localhost:8010/operator
+Overlay remoto: http://IP_DE_ESTA_PC:3000/overlay
+
+IP de Wi-Fi observada en esta sesión: 10.10.4.214.
+URL actual: http://10.10.4.214:3000/overlay
+10.0.0.88 pertenecía a la red anterior y ya no está asignada.
+Consulta de nuevo la dirección cuando cambies de red.
+
+Para arrancar en esta red sin preguntas:
+
+    .\Start-TRAD.ps1 -LocalIP 10.10.4.214 -SkipPrompts
+
+Para arrancar exclusivamente en esta PC:
+
+    .\Start-TRAD.ps1 -LocalOnly
+
+No se descarga ningún modelo ni se modifican .env o los entornos instalados.
+ASR usa small/CUDA y el adaptador bidireccional existente; TRAD conserva los
+657 conceptos y su implementación reversible. El arranque no abre el micrófono
+ni inicia una traducción. -NoBrowser evita abrir una pestaña nueva.
+
+AUDIO INTERFACE
+
+La entrada activa detectada por Windows y Operator es:
+
+    Microphone (USB AUDIO DEVICE) (2f6e:4e02)
+
+Selecciona esa entrada concreta, evitando depender de Predeterminado.
+Operator guarda la selección en el almacenamiento local de ese navegador.
+Una recarga la restaura. Otro navegador puede requerir seleccionarla una vez.
+Permitir / actualizar solicita acceso local y actualiza la lista, sin abrir
+una sesión de ASR ni enviar audio al traductor.
+
+CAPTURE recibe el ID exacto aunque su lista de dispositivos aún esté cargando.
+Si el dispositivo desaparece se muestra como no disponible; no se sustituye
+silenciosamente por el micrófono integrado. Durante una sesión no se cambia
+la entrada por eventos de conexión/desconexión. El PCM/remuestreo se conserva.
+
+El usuario confirmó señal mediante Sound Recorder. Se comprobó en Operator
+el acceso local al dispositivo y que la selección se conserva al recargar.
+La lectura real con ASR/DeepL se inicia manualmente con START SESSION.
+
+PUBLICACIÓN
+
+Cualquier equipo que pueda alcanzar la IP local y TCP 3000 puede ver el overlay.
+No se exige una IP de receptor ni un perfil de Windows Private. Windows puede
+solicitar UAC para crear/retirar la regla TRAD-MVP-Overlay: TCP 3000, RemoteAddress
+Any y Profile Any, limitada a la IP/interfaz local seleccionada. Se conserva
+activo el firewall general y el perfil original de Windows.
+
+La puerta entrega overlay, sus recursos y WebSocket de visualización.
+Operator y CAPTURE se mantienen en loopback. No se comparten sus credenciales.
+No se configura el router ni publicación por Internet. La URL debe abrirse en
+la otra PC o como Browser Source de OBS (1920x1080).
+
+COMPROBAR Y CERRAR
+
+Si el reconocedor se detuvo por memoria, con CAPTURE cerrado:
+
+    .\Start-TRAD.ps1 -Action RestartASR
+
+Reinicia solo el reconocedor propio. Conserva API, overlay e historial y no
+abre audio ni solicita traducciones. Rechaza una captura aún activa.
+El perfil de memoria predeterminado limita la ventana acústica a 10 segundos
+y el contexto del decodificador a 96 tokens; conserva el historial de captions.
+Para volver temporalmente a los argumentos anteriores, con captura cerrada:
+
+    $env:TRAD_ASR_MEMORY_PROFILE = 'legacy'
+    .\Start-TRAD.ps1 -Action RestartASR
+
+Para restaurar el perfil acotado, usa 'bounded' y repite RestartASR.
+La reversión puede reproducir el consumo que motivó este ajuste.
+Diagnóstico y prueba: ASR_MEMORY_RECOVERY.txt y benchmarks/asr_memory_v1.
+
+    .\Start-TRAD.ps1 -Action Test
+    .\Start-TRAD.ps1 -Action Status
+    .\Start-TRAD.ps1 -Action Stop
+
+Test comprueba ASR, API, UI, glosario/correcciones y overlay HTTP/WebSocket local,
+sin captura ni traducción. El script tools/smoke_trad.py acepta adicionalmente
+--check-published-overlay para comprobar la URL LAN desde un entorno que permita
+sockets LAN. En este agente esa conexión por terminal devolvió WinError 10013;
+la misma URL sí cargó en el navegador y Operator registró el visor conectado.
+No se confunde ese ensayo desde la propia laptop con uno desde otra PC física.
+
+Stop requiere detener la sesión en Operator. Cierra solo los servicios propios
+y retira su regla de firewall. Los procesos se verifican por PID, fecha y run-id;
+los servidores anteriores al lanzador se conservan. El glosario puede cambiarse
+entre Activo para pruebas, Observación y Desactivado desde Operator detenido.
+
+PRESERVACIÓN Y EVIDENCIA
+
+Glosario original, releases, investigación y evidencias anteriores intactos.
+Copias previas: backups/audio-interface-v1 y backups/open-overlay-v1.
+Evidencia nueva: benchmarks/audio_interface_v1 y benchmarks/open_overlay_v1.
+Se conservan también fallos intermedios; los informes finales indican el estado
+vigente. Queda pendiente la lectura real y la comprobación desde el equipo de
+proyección. Las pruebas de navegador aislado usan audio simulado, sin DeepL.

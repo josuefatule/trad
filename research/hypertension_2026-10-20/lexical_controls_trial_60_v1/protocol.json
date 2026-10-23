@@ -1,0 +1,43 @@
+{
+  "frozen_at_utc": "2026-10-22T04:08:18.135689+00:00",
+  "same_sixty": true,
+  "same_thresholds": true,
+  "prior_failures_used_to_design_rules": true,
+  "independent_holdout": false,
+  "selection_sha256": "4f33c2d7eb7197711fbce4d76273a78c6e14f11ee92115248a71bb2b133eb242",
+  "thresholds_sha256": "90e29659e515bc2131733eae4ee370c0319c5325971b2df59c88d45357934452",
+  "sources": [
+    {
+      "name": "lab_normalizer.py",
+      "sha256": "364b8685aaa1d11e3764d8de704a4caa823b05d60d7e5d070022c33c378cac1c"
+    },
+    {
+      "name": "evaluate_controls.py",
+      "sha256": "d7ada18fec053ac0a340ed98b45254dc2e67981206aef481f91740dccaf52076"
+    },
+    {
+      "name": "test_controls.py",
+      "sha256": "8279d413fd000fc534ed46748d089fe07aa42e4c7c530e055d454c9ccd3665cc"
+    },
+    {
+      "name": "variant_preservation.json",
+      "sha256": "6ceec2215f8159a5a38e97e97d8b4702cb1df675dd8395a4db180272fa98afb7"
+    },
+    {
+      "name": "regression_cases.json",
+      "sha256": "e0b53ff56474684b8cdbf923dec0f0867267447ccb37f475e04470911b6b77eb"
+    }
+  ],
+  "variants": "Preserve registered English reviewable_variant spans verbatim; this does not approve equivalence or substitution.",
+  "plurals": "Reject regular and declared irregular number changes in either direction before candidate selection; no inflected replacement generation.",
+  "overlaps": "Promote a guarded automatic phrase only over fully contained exact proper subphrases also contained in its canonical token sequence; preserve all other exact conflicts.",
+  "profiles": [
+    "old60",
+    "variants_only",
+    "variants_and_number",
+    "all_fixes"
+  ],
+  "write_boundary": "C:\\live-captions\\research\\hypertension_2026-10-20\\lexical_controls_trial_60_v1",
+  "new_asr_inference": false,
+  "integration_performed": false
+}

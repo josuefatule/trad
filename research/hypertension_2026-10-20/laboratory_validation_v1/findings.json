@@ -1,0 +1,371 @@
+{
+  "completed_at_utc": "2026-10-22T02:32:32.496330+00:00",
+  "integration_performed": false,
+  "conclusion": "Validation completed with findings. Do not activate automatic replacement or the default fuzzy path.",
+  "integrity_and_unit_checks_passed": true,
+  "unique_unit_tests_passed": 72,
+  "canonical_complete_span_misses": [
+    {
+      "kind": "canonical",
+      "id": "HTN_e1b4e5196458",
+      "language": "en",
+      "text": "2018 ESC/ESH guidelines",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_b2e17b4f8177",
+      "language": "en",
+      "text": "2017 ACC/AHA guideline",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_e39302d764b9",
+      "language": "en",
+      "text": "angiotensin-(1–7)",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_fc1d22db340b",
+      "language": "en",
+      "text": "2025 AHA/ACC guideline",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_e1b4e5196458",
+      "language": "es",
+      "text": "guía ESC/ESH de 2018",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_b2e17b4f8177",
+      "language": "es",
+      "text": "guía ACC/AHA de 2017",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_c7c107126607",
+      "language": "es",
+      "text": "cociente aldosterona/renina",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_e39302d764b9",
+      "language": "es",
+      "text": "angiotensina (1-7)",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_96e9c067e48f",
+      "language": "es",
+      "text": "cociente de presión arterial noche/día",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_b962d6ee32b1",
+      "language": "es",
+      "text": "cociente albúmina/creatinina en orina",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_34a93ba5e9c3",
+      "language": "es",
+      "text": "cociente proteína/creatinina en orina",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    },
+    {
+      "kind": "canonical",
+      "id": "HTN_fc1d22db340b",
+      "language": "es",
+      "text": "guía AHA/ACC de 2025",
+      "full_span_target_found": false,
+      "controlled_text_identical": true,
+      "native_spacing_changes": 0
+    }
+  ],
+  "alternative_complete_span_misses": [
+    {
+      "kind": "alternative",
+      "id": "UF0075",
+      "language": "en",
+      "text": "2017 ACC/AHA hypertension guideline",
+      "bucket": "reviewable_variant",
+      "expected_full_span_target": true,
+      "canonical_graphic_identity": false,
+      "full_span_target_found": false,
+      "controlled_text_identical": true
+    },
+    {
+      "kind": "alternative",
+      "id": "UF0329",
+      "language": "en",
+      "text": "angiotensin-(1-7)",
+      "bucket": "reviewable_variant",
+      "expected_full_span_target": true,
+      "canonical_graphic_identity": true,
+      "full_span_target_found": false,
+      "controlled_text_identical": true
+    }
+  ],
+  "affected_canonical_concept_ids": [
+    "HTN_34a93ba5e9c3",
+    "HTN_96e9c067e48f",
+    "HTN_b2e17b4f8177",
+    "HTN_b962d6ee32b1",
+    "HTN_c7c107126607",
+    "HTN_e1b4e5196458",
+    "HTN_e39302d764b9",
+    "HTN_fc1d22db340b"
+  ],
+  "incomplete_span_explanation": "The runtime span joiner accepts whitespace/hyphens only; slash and parenthesis spellings can load but do not match as complete forms.",
+  "exact_adversarial_cases": 150,
+  "exact_adversarial_failures": [],
+  "exact_lab_profile": "657 canonical names per language, 124 EN/141 ES query variants, all suggest; fuzzy disabled in laboratory subclass only.",
+  "default_fuzzy_editorial_reviews": [
+    {
+      "case_id": "A001",
+      "input": "No hypertension; potassium is not low.",
+      "suggestion": {
+        "source": "potassium is not",
+        "candidate": "potassium intake",
+        "start": 17,
+        "end": 33,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.931429,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_8a14bff08d83",
+        "review_required": true
+      },
+      "editorial_assessment": "inappropriate_in_constructed_case",
+      "reason": "La propuesta absorbe is not: inventa ingesta de potasio desde una frase con negación.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A015",
+      "input": "La carga de medicación se preparó en farmacia.",
+      "suggestion": {
+        "source": "carga de medicación se",
+        "candidate": "carga de comprimidos",
+        "start": 3,
+        "end": 25,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.86721,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_7865f1343d17",
+        "review_required": true
+      },
+      "editorial_assessment": "inappropriate_in_constructed_case",
+      "reason": "Reintroduce mediante semejanza una equivalencia excluida: preparación/carga de medicación no equivale a carga de comprimidos.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A018",
+      "input": "The 2025 ACC/AHA guideline needs an explicit topic.",
+      "suggestion": {
+        "source": "guideline needs an",
+        "candidate": "guideline recommendations",
+        "start": 17,
+        "end": 35,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.902083,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_f285e85c972e",
+        "review_required": true
+      },
+      "editorial_assessment": "inappropriate_in_constructed_case",
+      "reason": "Convierte guideline needs an en recomendaciones sin respaldo en la frase; la referencia sigue necesitando tema.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A019",
+      "input": "SPYRAL HTN-OFF MED and SPYRAL HTN-ON MED are different arms.",
+      "suggestion": {
+        "source": "SPYRAL HTN-OFF MED and SPYRAL",
+        "candidate": "SPYRAL HTN-OFF MED trial",
+        "start": 0,
+        "end": 29,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.918889,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_8b09e2cea13f",
+        "review_required": true
+      },
+      "editorial_assessment": "inappropriate_in_constructed_case",
+      "reason": "El intervalo absorbe and SPYRAL de la rama siguiente; no preserva el límite entre brazos.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A022",
+      "input": "Left is not right, and severe is not serious.",
+      "suggestion": {
+        "source": "severe is not",
+        "candidate": "severe hypertension",
+        "start": 23,
+        "end": 36,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.862929,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_4144dc9b2f73",
+        "review_required": true
+      },
+      "editorial_assessment": "inappropriate_in_constructed_case",
+      "reason": "Añade hipertensión a severe is not, perdiendo la negación y el contraste de gravedad.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A027",
+      "input": "  No edema,please;keep 5 mg.  ",
+      "suggestion": {
+        "source": "No edema",
+        "candidate": "angioedema",
+        "start": 2,
+        "end": 10,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.9,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_51910881d7c6",
+        "review_required": true
+      },
+      "editorial_assessment": "inappropriate_in_constructed_case",
+      "reason": "No edema es negación de edema; no debe sugerirse angioedema.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A028",
+      "input": "  No edema,por favor;conservar 5 mg.  ",
+      "suggestion": {
+        "source": "No edema",
+        "candidate": "angioedema",
+        "start": 2,
+        "end": 10,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.9,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_51910881d7c6",
+        "review_required": true
+      },
+      "editorial_assessment": "inappropriate_in_constructed_case",
+      "reason": "No edema es negación de edema también en español; no debe sugerirse angioedema.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A029",
+      "input": "The transcript contains hyper tenson.",
+      "suggestion": {
+        "source": "hyper tenson",
+        "candidate": "hypertension",
+        "start": 24,
+        "end": 36,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.983333,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_97cf39b495a5",
+        "review_required": true
+      },
+      "editorial_assessment": "expected_constructed_spelling_suggestion_only",
+      "reason": "Errata sintética introducida deliberadamente; coincidencia esperada, sin aprobación automática.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    },
+    {
+      "case_id": "A030",
+      "input": "They discussed primary aldosteronizm.",
+      "suggestion": {
+        "source": "primary aldosteronizm",
+        "candidate": "primary aldosteronism",
+        "start": 15,
+        "end": 36,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.956071,
+        "cross_segment": false,
+        "previous_segment_id": null,
+        "concept_id": "HTN_dcd292247cbd",
+        "review_required": true
+      },
+      "editorial_assessment": "expected_constructed_spelling_suggestion_only",
+      "reason": "Errata sintética introducida deliberadamente; coincidencia esperada, sin aprobación automática.",
+      "assessed_by": "assistant",
+      "independent_clinician_review": "not_performed",
+      "automatic_substitution_approved": false
+    }
+  ],
+  "inappropriate_constructed_fuzzy_suggestions": 7,
+  "expected_constructed_spelling_suggestions": 2,
+  "original_text_changes_applied": 0,
+  "native_spacing_corrections_not_applied": 829,
+  "segment_timing": {
+    "n": 829,
+    "median_ms": 10.868,
+    "p95_ms": 20.7869,
+    "max_ms": 35.3505
+  },
+  "translation_pair_consistency": "657 unique EN/ES pairs consistent with stable concept IDs; provider output, grammar and Spanish ASR not evaluated.",
+  "clinical_false_positive_rate": null,
+  "clinical_false_negative_rate": null,
+  "prospective_actions_not_implemented": [
+    "Define a punctuation-aware exact matcher with tests for slash, parentheses, units and chemical identities; do not strip punctuation globally.",
+    "Keep default fuzzy disabled for a future pilot until negation, exclusions, reference identity and trial-arm spans have explicit safeguards.",
+    "Adjudicate real suggestions and add recorded Spanish examples plus isolated provider-translation tests before claiming clinical or bidirectional quality."
+  ],
+  "limits": [
+    "References are provisional and not certified clinical ground truth.",
+    "Nine cached hypotheses come from three recordings; they are not nine independent recordings.",
+    "WER unchanged follows from preserving input; no ASR improvement was measured.",
+    "Synthetic form misses and seven unsuitable suggestions do not estimate a population clinical error rate.",
+    "CPU times are one local pass over offline ASR segments, not READY/live/end-to-end latency."
+  ]
+}

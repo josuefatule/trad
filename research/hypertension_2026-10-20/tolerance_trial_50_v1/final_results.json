@@ -1,0 +1,283 @@
+{
+  "experiment": "Fifty additional randomly selected English terms; research only",
+  "conclusion_es": "La ampliación no mejora el error léxico global frente a los diez términos con controles; no está lista para incorporarse.",
+  "selected_new_terms": 50,
+  "random_pool": 87,
+  "previous_ten_excluded": true,
+  "seed": 17039792620311577075,
+  "individualized_fuzzy_candidates": 37,
+  "exact_only": 13,
+  "threshold_grid": [
+    0.86,
+    0.88,
+    0.9,
+    0.92,
+    0.94,
+    0.96,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "unique_reference_occurrences_new50": 217,
+  "correlated_model_observations_new50": 651,
+  "corpus_reference_words_per_model": 4204,
+  "incremental_comparison": [
+    {
+      "model": "small",
+      "previous10_word_errors": 132,
+      "combined60_word_errors": 136,
+      "delta_word_errors": 4,
+      "reference_words": 4204,
+      "previous10_wer": 0.03139866793529972,
+      "combined60_wer": 0.03235014272121789
+    },
+    {
+      "model": "medium",
+      "previous10_word_errors": 109,
+      "combined60_word_errors": 113,
+      "delta_word_errors": 4,
+      "reference_words": 4204,
+      "previous10_wer": 0.025927687916270217,
+      "combined60_wer": 0.026879162702188392
+    },
+    {
+      "model": "large-v3-turbo",
+      "previous10_word_errors": 132,
+      "combined60_word_errors": 137,
+      "delta_word_errors": 5,
+      "reference_words": 4204,
+      "previous10_wer": 0.03139866793529972,
+      "combined60_wer": 0.03258801141769743
+    }
+  ],
+  "synthetic_comparison": [
+    {
+      "profile": "uniform090_guarded",
+      "positive_cases": 250,
+      "recovered": 185,
+      "negative_cases": 667,
+      "negative_triggers": 8
+    },
+    {
+      "profile": "individualized_unguarded",
+      "positive_cases": 250,
+      "recovered": 168,
+      "negative_cases": 667,
+      "negative_triggers": 1
+    },
+    {
+      "profile": "individualized_guarded",
+      "positive_cases": 250,
+      "recovered": 168,
+      "negative_cases": 667,
+      "negative_triggers": 0
+    }
+  ],
+  "context_comparison": [
+    {
+      "profile": "uniform090_guarded",
+      "positive_cases": 350,
+      "positive_correct": 217,
+      "calibration_repairable_contexts": 259,
+      "repairable_contexts_correct": 217,
+      "negative_cases": 250,
+      "undesired_negative_changes": 1
+    },
+    {
+      "profile": "individualized_unguarded",
+      "positive_cases": 350,
+      "positive_correct": 217,
+      "calibration_repairable_contexts": 259,
+      "repairable_contexts_correct": 217,
+      "negative_cases": 250,
+      "undesired_negative_changes": 93
+    },
+    {
+      "profile": "individualized_guarded",
+      "positive_cases": 350,
+      "positive_correct": 217,
+      "calibration_repairable_contexts": 259,
+      "repairable_contexts_correct": 217,
+      "negative_cases": 250,
+      "undesired_negative_changes": 0
+    }
+  ],
+  "correction_review": {
+    "status": "review_complete_frozen_trial_not_integrated",
+    "conclusion": "No aggregate lexical improvement from the fifty-term expansion; retain as research and do not approve the profile for integration.",
+    "correction_counts": {
+      "lexically_neutral": 6,
+      "lexical_agreement_worsened": 17,
+      "lexical_agreement_improved": 4
+    },
+    "per_model": [
+      {
+        "model": "small",
+        "changes": 8,
+        "assessment_counts": {
+          "lexically_neutral": 2,
+          "lexical_agreement_worsened": 5,
+          "lexical_agreement_improved": 1
+        },
+        "word_error_delta": 4,
+        "canonicalization_changes": 4,
+        "plural_losses": 1,
+        "by_term": [
+          {
+            "canonical": "blood pressure",
+            "changes": 1,
+            "word_error_delta": 0
+          },
+          {
+            "canonical": "evidence-based review",
+            "changes": 1,
+            "word_error_delta": 0
+          },
+          {
+            "canonical": "diastolic blood pressure",
+            "changes": 1,
+            "word_error_delta": 1
+          },
+          {
+            "canonical": "pharmacological therapy",
+            "changes": 4,
+            "word_error_delta": 4
+          },
+          {
+            "canonical": "hypokalemic metabolic alkalosis",
+            "changes": 1,
+            "word_error_delta": -1
+          }
+        ]
+      },
+      {
+        "model": "medium",
+        "changes": 10,
+        "assessment_counts": {
+          "lexical_agreement_worsened": 6,
+          "lexically_neutral": 2,
+          "lexical_agreement_improved": 2
+        },
+        "word_error_delta": 4,
+        "canonicalization_changes": 4,
+        "plural_losses": 2,
+        "by_term": [
+          {
+            "canonical": "cardiovascular risk",
+            "changes": 1,
+            "word_error_delta": 1
+          },
+          {
+            "canonical": "blood pressure",
+            "changes": 1,
+            "word_error_delta": 0
+          },
+          {
+            "canonical": "resistant hypertension",
+            "changes": 1,
+            "word_error_delta": 0
+          },
+          {
+            "canonical": "diastolic blood pressure",
+            "changes": 1,
+            "word_error_delta": 1
+          },
+          {
+            "canonical": "pharmacological therapy",
+            "changes": 4,
+            "word_error_delta": 4
+          },
+          {
+            "canonical": "renin-independent aldosterone production",
+            "changes": 1,
+            "word_error_delta": -1
+          },
+          {
+            "canonical": "urinary aldosterone",
+            "changes": 1,
+            "word_error_delta": -1
+          }
+        ]
+      },
+      {
+        "model": "large-v3-turbo",
+        "changes": 9,
+        "assessment_counts": {
+          "lexical_agreement_worsened": 6,
+          "lexically_neutral": 2,
+          "lexical_agreement_improved": 1
+        },
+        "word_error_delta": 5,
+        "canonicalization_changes": 4,
+        "plural_losses": 2,
+        "by_term": [
+          {
+            "canonical": "cardiovascular risk",
+            "changes": 1,
+            "word_error_delta": 1
+          },
+          {
+            "canonical": "blood pressure",
+            "changes": 1,
+            "word_error_delta": 0
+          },
+          {
+            "canonical": "resistant hypertension",
+            "changes": 1,
+            "word_error_delta": 0
+          },
+          {
+            "canonical": "diastolic blood pressure",
+            "changes": 1,
+            "word_error_delta": 1
+          },
+          {
+            "canonical": "pharmacological therapy",
+            "changes": 4,
+            "word_error_delta": 4
+          },
+          {
+            "canonical": "renin-independent aldosterone production",
+            "changes": 1,
+            "word_error_delta": -1
+          }
+        ]
+      }
+    ],
+    "simulated_new50_changes": 27,
+    "term_literal_agreement_counts": {
+      "unchanged": 45,
+      "worsened": 1,
+      "improved": 4
+    },
+    "extra_context_overlap_failures": 42,
+    "affected_overlap_terms": 6,
+    "plural_guard_gaps": [
+      "diastolic blood pressures",
+      "cardiovascular risks"
+    ],
+    "lexical_variant_record_id": "UF0173",
+    "thresholds_retuned_after_checking": false,
+    "frozen_guards_changed": false,
+    "controlled_intonation_variants_tested": 0,
+    "new_asr_inference": false,
+    "independent_clinical_adjudication": false,
+    "integration_performed": false
+  },
+  "previous_regressions_passed": 7,
+  "verification_tests_passed": 12,
+  "preservation": {
+    "files_checked": 1032,
+    "strictly_protected_files_checked": 821,
+    "original_glossaries_all_prior_research_package_audio_and_asr_unchanged": true,
+    "other_snapshot_observations": [],
+    "authored_directory": "C:\\live-captions\\research\\hypertension_2026-10-20\\tolerance_trial_50_v1",
+    "integration_performed": false
+  },
+  "postchecking_diagnostics_not_used_to_retune": true,
+  "original_glossary_sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "no_new_audio_or_asr_inference": true,
+  "controlled_intonation_variants_tested": 0,
+  "independent_clinical_validation": false,
+  "integration_performed": false
+}

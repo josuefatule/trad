@@ -1,0 +1,26 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const nodes = new Map();
+const get = id => {
+  if (!nodes.has(id)) nodes.set(id, {textContent:'', hidden:false, href:'', removeAttribute(key){delete this[key];}});
+  return nodes.get(id);
+};
+const ui = {ready:Promise.resolve(), snapshot:{network:{local_ip:'10.0.0.88',local_ips:['10.0.0.88'],overlay_pc_ip:null,lan_enabled:false}},render(){}};
+vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../app/static/launcher_network.js'),'utf8'), {OperatorUI:ui,document:{getElementById:get}});
+ui.render();
+assert.equal(get('this-pc-ip').textContent,'10.0.0.88');
+assert.equal(get('overlay-pc-ip').textContent,'Sin configurar');
+assert.equal(get('lan-overlay-url').hidden,true);
+Object.assign(ui.snapshot.network,{overlay_pc_ip:'10.0.0.105',lan_enabled:true,overlay_url:'http://10.0.0.88:3000/overlay'});
+ui.render();
+assert.equal(get('overlay-pc-ip').textContent,'10.0.0.105');
+assert.equal(get('lan-overlay-url').href,'http://10.0.0.88:3000/overlay');
+assert.equal(get('lan-overlay-url').hidden,false);
+ui.snapshot.network.lan_enabled=false;ui.render();
+assert.equal(get('lan-overlay-url').hidden,true);
+assert.equal(get('lan-overlay-url').href,undefined);
+Object.assign(ui.snapshot.network,{lan_enabled:true,overlay_access:'any',overlay_pc_ip:null});ui.render();
+assert.match(get('overlay-pc-ip').textContent,/Opcional/);
+assert.match(get('network-info').textContent,/cualquier equipo/);
+console.log('PASS: IP local, PC overlay, URL remota y retirada de enlace al cerrar LAN.');

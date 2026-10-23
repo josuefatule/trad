@@ -1,0 +1,2018 @@
+[
+  {
+    "source": "existing_regression_cases.json",
+    "total": 153,
+    "negative_rewrites": 0,
+    "expected_matches": 153,
+    "rows": [
+      {
+        "case_id": "R0001",
+        "kind": "registered_variant_preservation",
+        "text": "systemic hypertension",
+        "expected": "systemic hypertension",
+        "positive": false,
+        "actual": "systemic hypertension"
+      },
+      {
+        "case_id": "R0002",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed systemic hypertension by this test.",
+        "expected": "They discussed systemic hypertension by this test.",
+        "positive": false,
+        "actual": "They discussed systemic hypertension by this test."
+      },
+      {
+        "case_id": "R0003",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of systemic hypertension; keep ≥5 mg.",
+        "expected": "No evidence of systemic hypertension; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of systemic hypertension; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0004",
+        "kind": "registered_variant_preservation",
+        "text": "high blood pressure",
+        "expected": "high blood pressure",
+        "positive": false,
+        "actual": "high blood pressure"
+      },
+      {
+        "case_id": "R0005",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed high blood pressure by this test.",
+        "expected": "They discussed high blood pressure by this test.",
+        "positive": false,
+        "actual": "They discussed high blood pressure by this test."
+      },
+      {
+        "case_id": "R0006",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of high blood pressure; keep ≥5 mg.",
+        "expected": "No evidence of high blood pressure; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of high blood pressure; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0007",
+        "kind": "registered_variant_preservation",
+        "text": "arterial hypertension",
+        "expected": "arterial hypertension",
+        "positive": false,
+        "actual": "arterial hypertension"
+      },
+      {
+        "case_id": "R0008",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed arterial hypertension by this test.",
+        "expected": "They discussed arterial hypertension by this test.",
+        "positive": false,
+        "actual": "They discussed arterial hypertension by this test."
+      },
+      {
+        "case_id": "R0009",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of arterial hypertension; keep ≥5 mg.",
+        "expected": "No evidence of arterial hypertension; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of arterial hypertension; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0010",
+        "kind": "registered_variant_preservation",
+        "text": "target blood pressure",
+        "expected": "target blood pressure",
+        "positive": false,
+        "actual": "target blood pressure"
+      },
+      {
+        "case_id": "R0011",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed target blood pressure by this test.",
+        "expected": "They discussed target blood pressure by this test.",
+        "positive": false,
+        "actual": "They discussed target blood pressure by this test."
+      },
+      {
+        "case_id": "R0012",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of target blood pressure; keep ≥5 mg.",
+        "expected": "No evidence of target blood pressure; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of target blood pressure; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0013",
+        "kind": "registered_variant_preservation",
+        "text": "pre-hypertension",
+        "expected": "pre-hypertension",
+        "positive": false,
+        "actual": "pre-hypertension"
+      },
+      {
+        "case_id": "R0014",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed pre-hypertension by this test.",
+        "expected": "They discussed pre-hypertension by this test.",
+        "positive": false,
+        "actual": "They discussed pre-hypertension by this test."
+      },
+      {
+        "case_id": "R0015",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of pre-hypertension; keep ≥5 mg.",
+        "expected": "No evidence of pre-hypertension; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of pre-hypertension; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0016",
+        "kind": "registered_variant_preservation",
+        "text": "low blood pressure",
+        "expected": "low blood pressure",
+        "positive": false,
+        "actual": "low blood pressure"
+      },
+      {
+        "case_id": "R0017",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed low blood pressure by this test.",
+        "expected": "They discussed low blood pressure by this test.",
+        "positive": false,
+        "actual": "They discussed low blood pressure by this test."
+      },
+      {
+        "case_id": "R0018",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of low blood pressure; keep ≥5 mg.",
+        "expected": "No evidence of low blood pressure; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of low blood pressure; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0019",
+        "kind": "registered_variant_preservation",
+        "text": "10-year ASCVD risk",
+        "expected": "10-year ASCVD risk",
+        "positive": false,
+        "actual": "10-year ASCVD risk"
+      },
+      {
+        "case_id": "R0020",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed 10-year ASCVD risk by this test.",
+        "expected": "They discussed 10-year ASCVD risk by this test.",
+        "positive": false,
+        "actual": "They discussed 10-year ASCVD risk by this test."
+      },
+      {
+        "case_id": "R0021",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of 10-year ASCVD risk; keep ≥5 mg.",
+        "expected": "No evidence of 10-year ASCVD risk; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of 10-year ASCVD risk; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0022",
+        "kind": "registered_variant_preservation",
+        "text": "CVD events",
+        "expected": "CVD events",
+        "positive": false,
+        "actual": "CVD events"
+      },
+      {
+        "case_id": "R0023",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed CVD events by this test.",
+        "expected": "They discussed CVD events by this test.",
+        "positive": false,
+        "actual": "They discussed CVD events by this test."
+      },
+      {
+        "case_id": "R0024",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of CVD events; keep ≥5 mg.",
+        "expected": "No evidence of CVD events; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of CVD events; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0025",
+        "kind": "registered_variant_preservation",
+        "text": "co-chairperson",
+        "expected": "co-chairperson",
+        "positive": false,
+        "actual": "co-chairperson"
+      },
+      {
+        "case_id": "R0026",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed co-chairperson by this test.",
+        "expected": "They discussed co-chairperson by this test.",
+        "positive": false,
+        "actual": "They discussed co-chairperson by this test."
+      },
+      {
+        "case_id": "R0027",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of co-chairperson; keep ≥5 mg.",
+        "expected": "No evidence of co-chairperson; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of co-chairperson; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0028",
+        "kind": "registered_variant_preservation",
+        "text": "sodium loading",
+        "expected": "sodium loading",
+        "positive": false,
+        "actual": "sodium loading"
+      },
+      {
+        "case_id": "R0029",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed sodium loading by this test.",
+        "expected": "They discussed sodium loading by this test.",
+        "positive": false,
+        "actual": "They discussed sodium loading by this test."
+      },
+      {
+        "case_id": "R0030",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of sodium loading; keep ≥5 mg.",
+        "expected": "No evidence of sodium loading; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of sodium loading; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0031",
+        "kind": "registered_variant_preservation",
+        "text": "hypokalaemic metabolic alkalosis",
+        "expected": "hypokalaemic metabolic alkalosis",
+        "positive": false,
+        "actual": "hypokalaemic metabolic alkalosis"
+      },
+      {
+        "case_id": "R0032",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed hypokalaemic metabolic alkalosis by this test.",
+        "expected": "They discussed hypokalaemic metabolic alkalosis by this test.",
+        "positive": false,
+        "actual": "They discussed hypokalaemic metabolic alkalosis by this test."
+      },
+      {
+        "case_id": "R0033",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of hypokalaemic metabolic alkalosis; keep ≥5 mg.",
+        "expected": "No evidence of hypokalaemic metabolic alkalosis; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of hypokalaemic metabolic alkalosis; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0034",
+        "kind": "registered_variant_preservation",
+        "text": "pharmacologic therapy",
+        "expected": "pharmacologic therapy",
+        "positive": false,
+        "actual": "pharmacologic therapy"
+      },
+      {
+        "case_id": "R0035",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed pharmacologic therapy by this test.",
+        "expected": "They discussed pharmacologic therapy by this test.",
+        "positive": false,
+        "actual": "They discussed pharmacologic therapy by this test."
+      },
+      {
+        "case_id": "R0036",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of pharmacologic therapy; keep ≥5 mg.",
+        "expected": "No evidence of pharmacologic therapy; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of pharmacologic therapy; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0037",
+        "kind": "registered_variant_preservation",
+        "text": "hormonal replacement therapy",
+        "expected": "hormonal replacement therapy",
+        "positive": false,
+        "actual": "hormonal replacement therapy"
+      },
+      {
+        "case_id": "R0038",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed hormonal replacement therapy by this test.",
+        "expected": "They discussed hormonal replacement therapy by this test.",
+        "positive": false,
+        "actual": "They discussed hormonal replacement therapy by this test."
+      },
+      {
+        "case_id": "R0039",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of hormonal replacement therapy; keep ≥5 mg.",
+        "expected": "No evidence of hormonal replacement therapy; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of hormonal replacement therapy; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0040",
+        "kind": "registered_variant_preservation",
+        "text": "immunosuppressants",
+        "expected": "immunosuppressants",
+        "positive": false,
+        "actual": "immunosuppressants"
+      },
+      {
+        "case_id": "R0041",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed immunosuppressants by this test.",
+        "expected": "They discussed immunosuppressants by this test.",
+        "positive": false,
+        "actual": "They discussed immunosuppressants by this test."
+      },
+      {
+        "case_id": "R0042",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of immunosuppressants; keep ≥5 mg.",
+        "expected": "No evidence of immunosuppressants; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of immunosuppressants; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0043",
+        "kind": "registered_variant_preservation",
+        "text": "moderation of alcohol consumption",
+        "expected": "moderation of alcohol consumption",
+        "positive": false,
+        "actual": "moderation of alcohol consumption"
+      },
+      {
+        "case_id": "R0044",
+        "kind": "registered_variant_preservation",
+        "text": "They discussed moderation of alcohol consumption by this test.",
+        "expected": "They discussed moderation of alcohol consumption by this test.",
+        "positive": false,
+        "actual": "They discussed moderation of alcohol consumption by this test."
+      },
+      {
+        "case_id": "R0045",
+        "kind": "registered_variant_preservation",
+        "text": "No evidence of moderation of alcohol consumption; keep ≥5 mg.",
+        "expected": "No evidence of moderation of alcohol consumption; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of moderation of alcohol consumption; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0046",
+        "kind": "singular_plural_preservation",
+        "text": "sodium-containing salt",
+        "expected": "sodium-containing salt",
+        "positive": false,
+        "actual": "sodium-containing salt"
+      },
+      {
+        "case_id": "R0047",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed sodium-containing salt by this test.",
+        "expected": "They discussed sodium-containing salt by this test.",
+        "positive": false,
+        "actual": "They discussed sodium-containing salt by this test."
+      },
+      {
+        "case_id": "R0048",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of sodium-containing salt; keep ≥5 mg.",
+        "expected": "No evidence of sodium-containing salt; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of sodium-containing salt; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0049",
+        "kind": "singular_plural_preservation",
+        "text": "cardiovascular event",
+        "expected": "cardiovascular event",
+        "positive": false,
+        "actual": "cardiovascular event"
+      },
+      {
+        "case_id": "R0050",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed cardiovascular event by this test.",
+        "expected": "They discussed cardiovascular event by this test.",
+        "positive": false,
+        "actual": "They discussed cardiovascular event by this test."
+      },
+      {
+        "case_id": "R0051",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of cardiovascular event; keep ≥5 mg.",
+        "expected": "No evidence of cardiovascular event; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of cardiovascular event; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0052",
+        "kind": "singular_plural_preservation",
+        "text": "tyrosine kinase inhibitor",
+        "expected": "tyrosine kinase inhibitor",
+        "positive": false,
+        "actual": "tyrosine kinase inhibitor"
+      },
+      {
+        "case_id": "R0053",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed tyrosine kinase inhibitor by this test.",
+        "expected": "They discussed tyrosine kinase inhibitor by this test.",
+        "positive": false,
+        "actual": "They discussed tyrosine kinase inhibitor by this test."
+      },
+      {
+        "case_id": "R0054",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of tyrosine kinase inhibitor; keep ≥5 mg.",
+        "expected": "No evidence of tyrosine kinase inhibitor; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of tyrosine kinase inhibitor; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0055",
+        "kind": "singular_plural_preservation",
+        "text": "ten-year ASCVD risks",
+        "expected": "ten-year ASCVD risks",
+        "positive": false,
+        "actual": "ten-year ASCVD risks"
+      },
+      {
+        "case_id": "R0056",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed ten-year ASCVD risks by this test.",
+        "expected": "They discussed ten-year ASCVD risks by this test.",
+        "positive": false,
+        "actual": "They discussed ten-year ASCVD risks by this test."
+      },
+      {
+        "case_id": "R0057",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of ten-year ASCVD risks; keep ≥5 mg.",
+        "expected": "No evidence of ten-year ASCVD risks; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of ten-year ASCVD risks; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0058",
+        "kind": "singular_plural_preservation",
+        "text": "mineralocorticoid receptors",
+        "expected": "mineralocorticoid receptors",
+        "positive": false,
+        "actual": "mineralocorticoid receptors"
+      },
+      {
+        "case_id": "R0059",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed mineralocorticoid receptors by this test.",
+        "expected": "They discussed mineralocorticoid receptors by this test.",
+        "positive": false,
+        "actual": "They discussed mineralocorticoid receptors by this test."
+      },
+      {
+        "case_id": "R0060",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of mineralocorticoid receptors; keep ≥5 mg.",
+        "expected": "No evidence of mineralocorticoid receptors; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of mineralocorticoid receptors; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0061",
+        "kind": "singular_plural_preservation",
+        "text": "systolic blood pressures",
+        "expected": "systolic blood pressures",
+        "positive": false,
+        "actual": "systolic blood pressures"
+      },
+      {
+        "case_id": "R0062",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed systolic blood pressures by this test.",
+        "expected": "They discussed systolic blood pressures by this test.",
+        "positive": false,
+        "actual": "They discussed systolic blood pressures by this test."
+      },
+      {
+        "case_id": "R0063",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of systolic blood pressures; keep ≥5 mg.",
+        "expected": "No evidence of systolic blood pressures; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of systolic blood pressures; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0064",
+        "kind": "singular_plural_preservation",
+        "text": "cardiometabolic risks",
+        "expected": "cardiometabolic risks",
+        "positive": false,
+        "actual": "cardiometabolic risks"
+      },
+      {
+        "case_id": "R0065",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed cardiometabolic risks by this test.",
+        "expected": "They discussed cardiometabolic risks by this test.",
+        "positive": false,
+        "actual": "They discussed cardiometabolic risks by this test."
+      },
+      {
+        "case_id": "R0066",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of cardiometabolic risks; keep ≥5 mg.",
+        "expected": "No evidence of cardiometabolic risks; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of cardiometabolic risks; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0067",
+        "kind": "singular_plural_preservation",
+        "text": "heart diseases",
+        "expected": "heart diseases",
+        "positive": false,
+        "actual": "heart diseases"
+      },
+      {
+        "case_id": "R0068",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed heart diseases by this test.",
+        "expected": "They discussed heart diseases by this test.",
+        "positive": false,
+        "actual": "They discussed heart diseases by this test."
+      },
+      {
+        "case_id": "R0069",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of heart diseases; keep ≥5 mg.",
+        "expected": "No evidence of heart diseases; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of heart diseases; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0070",
+        "kind": "singular_plural_preservation",
+        "text": "elevated blood pressures",
+        "expected": "elevated blood pressures",
+        "positive": false,
+        "actual": "elevated blood pressures"
+      },
+      {
+        "case_id": "R0071",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed elevated blood pressures by this test.",
+        "expected": "They discussed elevated blood pressures by this test.",
+        "positive": false,
+        "actual": "They discussed elevated blood pressures by this test."
+      },
+      {
+        "case_id": "R0072",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of elevated blood pressures; keep ≥5 mg.",
+        "expected": "No evidence of elevated blood pressures; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of elevated blood pressures; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0073",
+        "kind": "singular_plural_preservation",
+        "text": "blood pressures",
+        "expected": "blood pressures",
+        "positive": false,
+        "actual": "blood pressures"
+      },
+      {
+        "case_id": "R0074",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed blood pressures by this test.",
+        "expected": "They discussed blood pressures by this test.",
+        "positive": false,
+        "actual": "They discussed blood pressures by this test."
+      },
+      {
+        "case_id": "R0075",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of blood pressures; keep ≥5 mg.",
+        "expected": "No evidence of blood pressures; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of blood pressures; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0076",
+        "kind": "singular_plural_preservation",
+        "text": "cardiovascular risks",
+        "expected": "cardiovascular risks",
+        "positive": false,
+        "actual": "cardiovascular risks"
+      },
+      {
+        "case_id": "R0077",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed cardiovascular risks by this test.",
+        "expected": "They discussed cardiovascular risks by this test.",
+        "positive": false,
+        "actual": "They discussed cardiovascular risks by this test."
+      },
+      {
+        "case_id": "R0078",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of cardiovascular risks; keep ≥5 mg.",
+        "expected": "No evidence of cardiovascular risks; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of cardiovascular risks; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0079",
+        "kind": "singular_plural_preservation",
+        "text": "target systolic blood pressures",
+        "expected": "target systolic blood pressures",
+        "positive": false,
+        "actual": "target systolic blood pressures"
+      },
+      {
+        "case_id": "R0080",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed target systolic blood pressures by this test.",
+        "expected": "They discussed target systolic blood pressures by this test.",
+        "positive": false,
+        "actual": "They discussed target systolic blood pressures by this test."
+      },
+      {
+        "case_id": "R0081",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of target systolic blood pressures; keep ≥5 mg.",
+        "expected": "No evidence of target systolic blood pressures; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of target systolic blood pressures; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0082",
+        "kind": "singular_plural_preservation",
+        "text": "hormone replacement therapies",
+        "expected": "hormone replacement therapies",
+        "positive": false,
+        "actual": "hormone replacement therapies"
+      },
+      {
+        "case_id": "R0083",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed hormone replacement therapies by this test.",
+        "expected": "They discussed hormone replacement therapies by this test.",
+        "positive": false,
+        "actual": "They discussed hormone replacement therapies by this test."
+      },
+      {
+        "case_id": "R0084",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of hormone replacement therapies; keep ≥5 mg.",
+        "expected": "No evidence of hormone replacement therapies; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of hormone replacement therapies; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0085",
+        "kind": "singular_plural_preservation",
+        "text": "immunosuppressive agent",
+        "expected": "immunosuppressive agent",
+        "positive": false,
+        "actual": "immunosuppressive agent"
+      },
+      {
+        "case_id": "R0086",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed immunosuppressive agent by this test.",
+        "expected": "They discussed immunosuppressive agent by this test.",
+        "positive": false,
+        "actual": "They discussed immunosuppressive agent by this test."
+      },
+      {
+        "case_id": "R0087",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of immunosuppressive agent; keep ≥5 mg.",
+        "expected": "No evidence of immunosuppressive agent; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of immunosuppressive agent; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0088",
+        "kind": "singular_plural_preservation",
+        "text": "pharmacological therapies",
+        "expected": "pharmacological therapies",
+        "positive": false,
+        "actual": "pharmacological therapies"
+      },
+      {
+        "case_id": "R0089",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed pharmacological therapies by this test.",
+        "expected": "They discussed pharmacological therapies by this test.",
+        "positive": false,
+        "actual": "They discussed pharmacological therapies by this test."
+      },
+      {
+        "case_id": "R0090",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of pharmacological therapies; keep ≥5 mg.",
+        "expected": "No evidence of pharmacological therapies; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of pharmacological therapies; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0091",
+        "kind": "singular_plural_preservation",
+        "text": "chronic kidney diseases",
+        "expected": "chronic kidney diseases",
+        "positive": false,
+        "actual": "chronic kidney diseases"
+      },
+      {
+        "case_id": "R0092",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed chronic kidney diseases by this test.",
+        "expected": "They discussed chronic kidney diseases by this test.",
+        "positive": false,
+        "actual": "They discussed chronic kidney diseases by this test."
+      },
+      {
+        "case_id": "R0093",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of chronic kidney diseases; keep ≥5 mg.",
+        "expected": "No evidence of chronic kidney diseases; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of chronic kidney diseases; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0094",
+        "kind": "singular_plural_preservation",
+        "text": "blood pressure targets",
+        "expected": "blood pressure targets",
+        "positive": false,
+        "actual": "blood pressure targets"
+      },
+      {
+        "case_id": "R0095",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed blood pressure targets by this test.",
+        "expected": "They discussed blood pressure targets by this test.",
+        "positive": false,
+        "actual": "They discussed blood pressure targets by this test."
+      },
+      {
+        "case_id": "R0096",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of blood pressure targets; keep ≥5 mg.",
+        "expected": "No evidence of blood pressure targets; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of blood pressure targets; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0097",
+        "kind": "singular_plural_preservation",
+        "text": "non-elevated blood pressures",
+        "expected": "non-elevated blood pressures",
+        "positive": false,
+        "actual": "non-elevated blood pressures"
+      },
+      {
+        "case_id": "R0098",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed non-elevated blood pressures by this test.",
+        "expected": "They discussed non-elevated blood pressures by this test.",
+        "positive": false,
+        "actual": "They discussed non-elevated blood pressures by this test."
+      },
+      {
+        "case_id": "R0099",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of non-elevated blood pressures; keep ≥5 mg.",
+        "expected": "No evidence of non-elevated blood pressures; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of non-elevated blood pressures; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0100",
+        "kind": "singular_plural_preservation",
+        "text": "serious adverse event",
+        "expected": "serious adverse event",
+        "positive": false,
+        "actual": "serious adverse event"
+      },
+      {
+        "case_id": "R0101",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed serious adverse event by this test.",
+        "expected": "They discussed serious adverse event by this test.",
+        "positive": false,
+        "actual": "They discussed serious adverse event by this test."
+      },
+      {
+        "case_id": "R0102",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of serious adverse event; keep ≥5 mg.",
+        "expected": "No evidence of serious adverse event; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of serious adverse event; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0103",
+        "kind": "singular_plural_preservation",
+        "text": "mineralocorticoid receptor antagonist",
+        "expected": "mineralocorticoid receptor antagonist",
+        "positive": false,
+        "actual": "mineralocorticoid receptor antagonist"
+      },
+      {
+        "case_id": "R0104",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed mineralocorticoid receptor antagonist by this test.",
+        "expected": "They discussed mineralocorticoid receptor antagonist by this test.",
+        "positive": false,
+        "actual": "They discussed mineralocorticoid receptor antagonist by this test."
+      },
+      {
+        "case_id": "R0105",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of mineralocorticoid receptor antagonist; keep ≥5 mg.",
+        "expected": "No evidence of mineralocorticoid receptor antagonist; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of mineralocorticoid receptor antagonist; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0106",
+        "kind": "singular_plural_preservation",
+        "text": "oral contraceptive",
+        "expected": "oral contraceptive",
+        "positive": false,
+        "actual": "oral contraceptive"
+      },
+      {
+        "case_id": "R0107",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed oral contraceptive by this test.",
+        "expected": "They discussed oral contraceptive by this test.",
+        "positive": false,
+        "actual": "They discussed oral contraceptive by this test."
+      },
+      {
+        "case_id": "R0108",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of oral contraceptive; keep ≥5 mg.",
+        "expected": "No evidence of oral contraceptive; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of oral contraceptive; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0109",
+        "kind": "singular_plural_preservation",
+        "text": "physical activities",
+        "expected": "physical activities",
+        "positive": false,
+        "actual": "physical activities"
+      },
+      {
+        "case_id": "R0110",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed physical activities by this test.",
+        "expected": "They discussed physical activities by this test.",
+        "positive": false,
+        "actual": "They discussed physical activities by this test."
+      },
+      {
+        "case_id": "R0111",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of physical activities; keep ≥5 mg.",
+        "expected": "No evidence of physical activities; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of physical activities; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0112",
+        "kind": "singular_plural_preservation",
+        "text": "meta-analyses",
+        "expected": "meta-analyses",
+        "positive": false,
+        "actual": "meta-analyses"
+      },
+      {
+        "case_id": "R0113",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed meta-analyses by this test.",
+        "expected": "They discussed meta-analyses by this test.",
+        "positive": false,
+        "actual": "They discussed meta-analyses by this test."
+      },
+      {
+        "case_id": "R0114",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of meta-analyses; keep ≥5 mg.",
+        "expected": "No evidence of meta-analyses; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of meta-analyses; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0115",
+        "kind": "singular_plural_preservation",
+        "text": "cardiovascular diseases",
+        "expected": "cardiovascular diseases",
+        "positive": false,
+        "actual": "cardiovascular diseases"
+      },
+      {
+        "case_id": "R0116",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed cardiovascular diseases by this test.",
+        "expected": "They discussed cardiovascular diseases by this test.",
+        "positive": false,
+        "actual": "They discussed cardiovascular diseases by this test."
+      },
+      {
+        "case_id": "R0117",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of cardiovascular diseases; keep ≥5 mg.",
+        "expected": "No evidence of cardiovascular diseases; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of cardiovascular diseases; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0118",
+        "kind": "singular_plural_preservation",
+        "text": "evidence-based reviews",
+        "expected": "evidence-based reviews",
+        "positive": false,
+        "actual": "evidence-based reviews"
+      },
+      {
+        "case_id": "R0119",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed evidence-based reviews by this test.",
+        "expected": "They discussed evidence-based reviews by this test.",
+        "positive": false,
+        "actual": "They discussed evidence-based reviews by this test."
+      },
+      {
+        "case_id": "R0120",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of evidence-based reviews; keep ≥5 mg.",
+        "expected": "No evidence of evidence-based reviews; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of evidence-based reviews; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0121",
+        "kind": "singular_plural_preservation",
+        "text": "older adult",
+        "expected": "older adult",
+        "positive": false,
+        "actual": "older adult"
+      },
+      {
+        "case_id": "R0122",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed older adult by this test.",
+        "expected": "They discussed older adult by this test.",
+        "positive": false,
+        "actual": "They discussed older adult by this test."
+      },
+      {
+        "case_id": "R0123",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of older adult; keep ≥5 mg.",
+        "expected": "No evidence of older adult; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of older adult; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0124",
+        "kind": "singular_plural_preservation",
+        "text": "healthy diets",
+        "expected": "healthy diets",
+        "positive": false,
+        "actual": "healthy diets"
+      },
+      {
+        "case_id": "R0125",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed healthy diets by this test.",
+        "expected": "They discussed healthy diets by this test.",
+        "positive": false,
+        "actual": "They discussed healthy diets by this test."
+      },
+      {
+        "case_id": "R0126",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of healthy diets; keep ≥5 mg.",
+        "expected": "No evidence of healthy diets; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of healthy diets; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0127",
+        "kind": "singular_plural_preservation",
+        "text": "co-chairs",
+        "expected": "co-chairs",
+        "positive": false,
+        "actual": "co-chairs"
+      },
+      {
+        "case_id": "R0128",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed co-chairs by this test.",
+        "expected": "They discussed co-chairs by this test.",
+        "positive": false,
+        "actual": "They discussed co-chairs by this test."
+      },
+      {
+        "case_id": "R0129",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of co-chairs; keep ≥5 mg.",
+        "expected": "No evidence of co-chairs; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of co-chairs; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0130",
+        "kind": "singular_plural_preservation",
+        "text": "diastolic blood pressures",
+        "expected": "diastolic blood pressures",
+        "positive": false,
+        "actual": "diastolic blood pressures"
+      },
+      {
+        "case_id": "R0131",
+        "kind": "singular_plural_preservation",
+        "text": "They discussed diastolic blood pressures by this test.",
+        "expected": "They discussed diastolic blood pressures by this test.",
+        "positive": false,
+        "actual": "They discussed diastolic blood pressures by this test."
+      },
+      {
+        "case_id": "R0132",
+        "kind": "singular_plural_preservation",
+        "text": "No evidence of diastolic blood pressures; keep ≥5 mg.",
+        "expected": "No evidence of diastolic blood pressures; keep ≥5 mg.",
+        "positive": false,
+        "actual": "No evidence of diastolic blood pressures; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0133",
+        "kind": "known_overlap_repair",
+        "text": "They discussed elvated blood pressure by this test.",
+        "expected": "They discussed elevated blood pressure by this test.",
+        "positive": true,
+        "actual": "They discussed elevated blood pressure by this test."
+      },
+      {
+        "case_id": "R0134",
+        "kind": "known_overlap_repair",
+        "text": "They discussed target sytolic blood pressure by this test.",
+        "expected": "They discussed target systolic blood pressure by this test.",
+        "positive": true,
+        "actual": "They discussed target systolic blood pressure by this test."
+      },
+      {
+        "case_id": "R0135",
+        "kind": "known_overlap_repair",
+        "text": "They discussed isometric resstance exercise by this test.",
+        "expected": "They discussed isometric resistance exercise by this test.",
+        "positive": true,
+        "actual": "They discussed isometric resistance exercise by this test."
+      },
+      {
+        "case_id": "R0136",
+        "kind": "known_overlap_repair",
+        "text": "They discussed non-elvated blood pressure by this test.",
+        "expected": "They discussed non-elevated blood pressure by this test.",
+        "positive": true,
+        "actual": "They discussed non-elevated blood pressure by this test."
+      },
+      {
+        "case_id": "R0137",
+        "kind": "known_overlap_repair",
+        "text": "They discussed renin-indpendent aldosterone production by this test.",
+        "expected": "They discussed renin-independent aldosterone production by this test.",
+        "positive": true,
+        "actual": "They discussed renin-independent aldosterone production by this test."
+      },
+      {
+        "case_id": "R0138",
+        "kind": "known_overlap_repair",
+        "text": "They discussed diatolic blood pressure by this test.",
+        "expected": "They discussed diastolic blood pressure by this test.",
+        "positive": true,
+        "actual": "They discussed diastolic blood pressure by this test."
+      },
+      {
+        "case_id": "R0139",
+        "kind": "previous_regression",
+        "text": "primary allosteronism by this test",
+        "expected": "primary aldosteronism by this test",
+        "positive": true,
+        "actual": "primary aldosteronism by this test"
+      },
+      {
+        "case_id": "R0140",
+        "kind": "previous_regression",
+        "text": "No primary allosteronism by this test; keep ≥5 mg.",
+        "expected": "No primary aldosteronism by this test; keep ≥5 mg.",
+        "positive": true,
+        "actual": "No primary aldosteronism by this test; keep ≥5 mg."
+      },
+      {
+        "case_id": "R0141",
+        "kind": "previous_regression",
+        "text": "the 10-year ASCVD risk",
+        "expected": "the 10-year ASCVD risk",
+        "positive": false,
+        "actual": "the 10-year ASCVD risk"
+      },
+      {
+        "case_id": "R0142",
+        "kind": "previous_regression",
+        "text": "secondary hypertension",
+        "expected": "secondary hypertension",
+        "positive": false,
+        "actual": "secondary hypertension"
+      },
+      {
+        "case_id": "R0143",
+        "kind": "previous_regression",
+        "text": "systolic blood pressure",
+        "expected": "systolic blood pressure",
+        "positive": false,
+        "actual": "systolic blood pressure"
+      },
+      {
+        "case_id": "R0144",
+        "kind": "previous_regression",
+        "text": "cardiovascular event",
+        "expected": "cardiovascular event",
+        "positive": false,
+        "actual": "cardiovascular event"
+      },
+      {
+        "case_id": "R0145",
+        "kind": "previous_regression",
+        "text": "mineralocorticoid receptors",
+        "expected": "mineralocorticoid receptors",
+        "positive": false,
+        "actual": "mineralocorticoid receptors"
+      },
+      {
+        "case_id": "R0146",
+        "kind": "additional_boundary_or_context",
+        "text": "tag_pharmacologic therapy",
+        "expected": "tag_pharmacologic therapy",
+        "positive": false,
+        "actual": "tag_pharmacologic therapy"
+      },
+      {
+        "case_id": "R0147",
+        "kind": "additional_boundary_or_context",
+        "text": "tag_elvated blood pressure",
+        "expected": "tag_elvated blood pressure",
+        "positive": false,
+        "actual": "tag_elvated blood pressure"
+      },
+      {
+        "case_id": "R0148",
+        "kind": "additional_boundary_or_context",
+        "text": "nonelevated blood pressure",
+        "expected": "nonelevated blood pressure",
+        "positive": false,
+        "actual": "nonelevated blood pressure"
+      },
+      {
+        "case_id": "R0149",
+        "kind": "additional_boundary_or_context",
+        "text": "cardiovascular not risk",
+        "expected": "cardiovascular not risk",
+        "positive": false,
+        "actual": "cardiovascular not risk"
+      },
+      {
+        "case_id": "R0150",
+        "kind": "additional_boundary_or_context",
+        "text": "diastolic by blood pressure",
+        "expected": "diastolic by blood pressure",
+        "positive": false,
+        "actual": "diastolic by blood pressure"
+      },
+      {
+        "case_id": "R0151",
+        "kind": "additional_boundary_or_context",
+        "text": "primary allosteronism by not 5 mg",
+        "expected": "primary aldosteronism by not 5 mg",
+        "positive": true,
+        "actual": "primary aldosteronism by not 5 mg"
+      },
+      {
+        "case_id": "R0152",
+        "kind": "additional_boundary_or_context",
+        "text": "diastolic bloood pressures",
+        "expected": "diastolic bloood pressures",
+        "positive": false,
+        "actual": "diastolic bloood pressures"
+      },
+      {
+        "case_id": "R0153",
+        "kind": "additional_boundary_or_context",
+        "text": "cardiovascular riks by patients",
+        "expected": "cardiovascular risk by patients",
+        "positive": true,
+        "actual": "cardiovascular risk by patients"
+      }
+    ]
+  },
+  {
+    "source": "pressure_cases.json",
+    "total": 97,
+    "negative_rewrites": 0,
+    "expected_matches": 96,
+    "rows": [
+      {
+        "text": "resistant hypotension",
+        "expected": "resistant hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0001",
+        "actual": "resistant hypotension"
+      },
+      {
+        "text": "They discussed resistant hypotension by this test.",
+        "expected": "They discussed resistant hypotension by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0002",
+        "actual": "They discussed resistant hypotension by this test."
+      },
+      {
+        "text": "No resistant hypotension; keep ≥5 mg.",
+        "expected": "No resistant hypotension; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0003",
+        "actual": "No resistant hypotension; keep ≥5 mg."
+      },
+      {
+        "text": "tag_resistant hypotension",
+        "expected": "tag_resistant hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0004",
+        "actual": "tag_resistant hypotension"
+      },
+      {
+        "text": "resistant hypertension",
+        "expected": "resistant hypertension",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0005",
+        "actual": "resistant hypertension"
+      },
+      {
+        "text": "RESISTANT HYPERTENSION",
+        "expected": "RESISTANT HYPERTENSION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0006",
+        "actual": "RESISTANT HYPERTENSION"
+      },
+      {
+        "text": "hypotension",
+        "expected": "hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0007",
+        "actual": "hypotension"
+      },
+      {
+        "text": "They discussed hypotension by this test.",
+        "expected": "They discussed hypotension by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0008",
+        "actual": "They discussed hypotension by this test."
+      },
+      {
+        "text": "No hypotension; keep ≥5 mg.",
+        "expected": "No hypotension; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0009",
+        "actual": "No hypotension; keep ≥5 mg."
+      },
+      {
+        "text": "tag_hypotension",
+        "expected": "tag_hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0010",
+        "actual": "tag_hypotension"
+      },
+      {
+        "text": "hypertension",
+        "expected": "hypertension",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0011",
+        "actual": "hypertension"
+      },
+      {
+        "text": "HYPERTENSION",
+        "expected": "HYPERTENSION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0012",
+        "actual": "HYPERTENSION"
+      },
+      {
+        "text": "hypertension",
+        "expected": "hypertension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0013",
+        "actual": "hypertension"
+      },
+      {
+        "text": "They discussed hypertension by this test.",
+        "expected": "They discussed hypertension by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0014",
+        "actual": "They discussed hypertension by this test."
+      },
+      {
+        "text": "No hypertension; keep ≥5 mg.",
+        "expected": "No hypertension; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0015",
+        "actual": "No hypertension; keep ≥5 mg."
+      },
+      {
+        "text": "tag_hypertension",
+        "expected": "tag_hypertension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0016",
+        "actual": "tag_hypertension"
+      },
+      {
+        "text": "hypotension",
+        "expected": "hypotension",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0017",
+        "actual": "hypotension"
+      },
+      {
+        "text": "HYPOTENSION",
+        "expected": "HYPOTENSION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0018",
+        "actual": "HYPOTENSION"
+      },
+      {
+        "text": "prehypotension",
+        "expected": "prehypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0019",
+        "actual": "prehypotension"
+      },
+      {
+        "text": "They discussed prehypotension by this test.",
+        "expected": "They discussed prehypotension by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0020",
+        "actual": "They discussed prehypotension by this test."
+      },
+      {
+        "text": "No prehypotension; keep ≥5 mg.",
+        "expected": "No prehypotension; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0021",
+        "actual": "No prehypotension; keep ≥5 mg."
+      },
+      {
+        "text": "tag_prehypotension",
+        "expected": "tag_prehypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0022",
+        "actual": "tag_prehypotension"
+      },
+      {
+        "text": "prehypertension",
+        "expected": "prehypertension",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0023",
+        "actual": "prehypertension"
+      },
+      {
+        "text": "PREHYPERTENSION",
+        "expected": "PREHYPERTENSION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0024",
+        "actual": "PREHYPERTENSION"
+      },
+      {
+        "text": "primary hypotension",
+        "expected": "primary hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0025",
+        "actual": "primary hypotension"
+      },
+      {
+        "text": "They discussed primary hypotension by this test.",
+        "expected": "They discussed primary hypotension by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0026",
+        "actual": "They discussed primary hypotension by this test."
+      },
+      {
+        "text": "No primary hypotension; keep ≥5 mg.",
+        "expected": "No primary hypotension; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0027",
+        "actual": "No primary hypotension; keep ≥5 mg."
+      },
+      {
+        "text": "tag_primary hypotension",
+        "expected": "tag_primary hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0028",
+        "actual": "tag_primary hypotension"
+      },
+      {
+        "text": "primary hypertension",
+        "expected": "primary hypertension",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0029",
+        "actual": "primary hypertension"
+      },
+      {
+        "text": "PRIMARY HYPERTENSION",
+        "expected": "PRIMARY HYPERTENSION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0030",
+        "actual": "PRIMARY HYPERTENSION"
+      },
+      {
+        "text": "orthostatic hypertension",
+        "expected": "orthostatic hypertension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0031",
+        "actual": "orthostatic hypertension"
+      },
+      {
+        "text": "They discussed orthostatic hypertension by this test.",
+        "expected": "They discussed orthostatic hypertension by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0032",
+        "actual": "They discussed orthostatic hypertension by this test."
+      },
+      {
+        "text": "No orthostatic hypertension; keep ≥5 mg.",
+        "expected": "No orthostatic hypertension; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0033",
+        "actual": "No orthostatic hypertension; keep ≥5 mg."
+      },
+      {
+        "text": "tag_orthostatic hypertension",
+        "expected": "tag_orthostatic hypertension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0034",
+        "actual": "tag_orthostatic hypertension"
+      },
+      {
+        "text": "orthostatic hypotension",
+        "expected": "orthostatic hypotension",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0035",
+        "actual": "orthostatic hypotension"
+      },
+      {
+        "text": "ORTHOSTATIC HYPOTENSION",
+        "expected": "ORTHOSTATIC HYPOTENSION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0036",
+        "actual": "ORTHOSTATIC HYPOTENSION"
+      },
+      {
+        "text": "antihypotensive therapy",
+        "expected": "antihypotensive therapy",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0037",
+        "actual": "antihypotensive therapy"
+      },
+      {
+        "text": "They discussed antihypotensive therapy by this test.",
+        "expected": "They discussed antihypotensive therapy by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0038",
+        "actual": "They discussed antihypotensive therapy by this test."
+      },
+      {
+        "text": "No antihypotensive therapy; keep ≥5 mg.",
+        "expected": "No antihypotensive therapy; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0039",
+        "actual": "No antihypotensive therapy; keep ≥5 mg."
+      },
+      {
+        "text": "tag_antihypotensive therapy",
+        "expected": "tag_antihypotensive therapy",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0040",
+        "actual": "tag_antihypotensive therapy"
+      },
+      {
+        "text": "antihypertensive therapy",
+        "expected": "antihypertensive therapy",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0041",
+        "actual": "antihypertensive therapy"
+      },
+      {
+        "text": "ANTIHYPERTENSIVE THERAPY",
+        "expected": "ANTIHYPERTENSIVE THERAPY",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0042",
+        "actual": "ANTIHYPERTENSIVE THERAPY"
+      },
+      {
+        "text": "secondary hypotension",
+        "expected": "secondary hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0043",
+        "actual": "secondary hypotension"
+      },
+      {
+        "text": "They discussed secondary hypotension by this test.",
+        "expected": "They discussed secondary hypotension by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0044",
+        "actual": "They discussed secondary hypotension by this test."
+      },
+      {
+        "text": "No secondary hypotension; keep ≥5 mg.",
+        "expected": "No secondary hypotension; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0045",
+        "actual": "No secondary hypotension; keep ≥5 mg."
+      },
+      {
+        "text": "tag_secondary hypotension",
+        "expected": "tag_secondary hypotension",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0046",
+        "actual": "tag_secondary hypotension"
+      },
+      {
+        "text": "secondary hypertension",
+        "expected": "secondary hypertension",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0047",
+        "actual": "secondary hypertension"
+      },
+      {
+        "text": "SECONDARY HYPERTENSION",
+        "expected": "SECONDARY HYPERTENSION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0048",
+        "actual": "SECONDARY HYPERTENSION"
+      },
+      {
+        "text": "antihypotensive medication",
+        "expected": "antihypotensive medication",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0049",
+        "actual": "antihypotensive medication"
+      },
+      {
+        "text": "They discussed antihypotensive medication by this test.",
+        "expected": "They discussed antihypotensive medication by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0050",
+        "actual": "They discussed antihypotensive medication by this test."
+      },
+      {
+        "text": "No antihypotensive medication; keep ≥5 mg.",
+        "expected": "No antihypotensive medication; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0051",
+        "actual": "No antihypotensive medication; keep ≥5 mg."
+      },
+      {
+        "text": "tag_antihypotensive medication",
+        "expected": "tag_antihypotensive medication",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0052",
+        "actual": "tag_antihypotensive medication"
+      },
+      {
+        "text": "antihypertensive medication",
+        "expected": "antihypertensive medication",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0053",
+        "actual": "antihypertensive medication"
+      },
+      {
+        "text": "ANTIHYPERTENSIVE MEDICATION",
+        "expected": "ANTIHYPERTENSIVE MEDICATION",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0054",
+        "actual": "ANTIHYPERTENSIVE MEDICATION"
+      },
+      {
+        "text": "antihypotensive drug therapy",
+        "expected": "antihypotensive drug therapy",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0055",
+        "actual": "antihypotensive drug therapy"
+      },
+      {
+        "text": "They discussed antihypotensive drug therapy by this test.",
+        "expected": "They discussed antihypotensive drug therapy by this test.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0056",
+        "actual": "They discussed antihypotensive drug therapy by this test."
+      },
+      {
+        "text": "No antihypotensive drug therapy; keep ≥5 mg.",
+        "expected": "No antihypotensive drug therapy; keep ≥5 mg.",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0057",
+        "actual": "No antihypotensive drug therapy; keep ≥5 mg."
+      },
+      {
+        "text": "tag_antihypotensive drug therapy",
+        "expected": "tag_antihypotensive drug therapy",
+        "kind": "opposite_direction_no_rewrite",
+        "positive": false,
+        "case_id": "P0058",
+        "actual": "tag_antihypotensive drug therapy"
+      },
+      {
+        "text": "antihypertensive drug therapy",
+        "expected": "antihypertensive drug therapy",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0059",
+        "actual": "antihypertensive drug therapy"
+      },
+      {
+        "text": "ANTIHYPERTENSIVE DRUG THERAPY",
+        "expected": "ANTIHYPERTENSIVE DRUG THERAPY",
+        "kind": "already_correct_pressure_term",
+        "positive": false,
+        "case_id": "P0060",
+        "actual": "ANTIHYPERTENSIVE DRUG THERAPY"
+      },
+      {
+        "text": "primary hypetension",
+        "expected": "primary hypetension",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0061",
+        "actual": "primary hypetension"
+      },
+      {
+        "text": "They discussed primary hypetension by this test.",
+        "expected": "They discussed primary hypetension by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0062",
+        "actual": "They discussed primary hypetension by this test."
+      },
+      {
+        "text": "No primary hypetension; keep ≥5 mg.",
+        "expected": "No primary hypetension; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0063",
+        "actual": "No primary hypetension; keep ≥5 mg."
+      },
+      {
+        "text": "secondary hypetension",
+        "expected": "secondary hypetension",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0064",
+        "actual": "secondary hypetension"
+      },
+      {
+        "text": "They discussed secondary hypetension by this test.",
+        "expected": "They discussed secondary hypetension by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0065",
+        "actual": "They discussed secondary hypetension by this test."
+      },
+      {
+        "text": "No secondary hypetension; keep ≥5 mg.",
+        "expected": "No secondary hypetension; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0066",
+        "actual": "No secondary hypetension; keep ≥5 mg."
+      },
+      {
+        "text": "resistant hypetension",
+        "expected": "resistant hypetension",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0067",
+        "actual": "resistant hypetension"
+      },
+      {
+        "text": "They discussed resistant hypetension by this test.",
+        "expected": "They discussed resistant hypetension by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0068",
+        "actual": "They discussed resistant hypetension by this test."
+      },
+      {
+        "text": "No resistant hypetension; keep ≥5 mg.",
+        "expected": "No resistant hypetension; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0069",
+        "actual": "No resistant hypetension; keep ≥5 mg."
+      },
+      {
+        "text": "orthostatic hypetension",
+        "expected": "orthostatic hypetension",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0070",
+        "actual": "orthostatic hypetension"
+      },
+      {
+        "text": "They discussed orthostatic hypetension by this test.",
+        "expected": "They discussed orthostatic hypetension by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0071",
+        "actual": "They discussed orthostatic hypetension by this test."
+      },
+      {
+        "text": "No orthostatic hypetension; keep ≥5 mg.",
+        "expected": "No orthostatic hypetension; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0072",
+        "actual": "No orthostatic hypetension; keep ≥5 mg."
+      },
+      {
+        "text": "antihypetensive medication",
+        "expected": "antihypetensive medication",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0073",
+        "actual": "antihypetensive medication"
+      },
+      {
+        "text": "They discussed antihypetensive medication by this test.",
+        "expected": "They discussed antihypetensive medication by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0074",
+        "actual": "They discussed antihypetensive medication by this test."
+      },
+      {
+        "text": "No antihypetensive medication; keep ≥5 mg.",
+        "expected": "No antihypetensive medication; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0075",
+        "actual": "No antihypetensive medication; keep ≥5 mg."
+      },
+      {
+        "text": "hypetension",
+        "expected": "hypetension",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0076",
+        "actual": "hypetension"
+      },
+      {
+        "text": "They discussed hypetension by this test.",
+        "expected": "They discussed hypetension by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0077",
+        "actual": "They discussed hypetension by this test."
+      },
+      {
+        "text": "No hypetension; keep ≥5 mg.",
+        "expected": "No hypetension; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0078",
+        "actual": "No hypetension; keep ≥5 mg."
+      },
+      {
+        "text": "hypetensive",
+        "expected": "hypetensive",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0079",
+        "actual": "hypetensive"
+      },
+      {
+        "text": "They discussed hypetensive by this test.",
+        "expected": "They discussed hypetensive by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0080",
+        "actual": "They discussed hypetensive by this test."
+      },
+      {
+        "text": "No hypetensive; keep ≥5 mg.",
+        "expected": "No hypetensive; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0081",
+        "actual": "No hypetensive; keep ≥5 mg."
+      },
+      {
+        "text": "hipertension",
+        "expected": "hipertension",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0082",
+        "actual": "hipertension"
+      },
+      {
+        "text": "They discussed hipertension by this test.",
+        "expected": "They discussed hipertension by this test.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0083",
+        "actual": "They discussed hipertension by this test."
+      },
+      {
+        "text": "No hipertension; keep ≥5 mg.",
+        "expected": "No hipertension; keep ≥5 mg.",
+        "kind": "ambiguous_direction_abstain",
+        "positive": false,
+        "case_id": "P0084",
+        "actual": "No hipertension; keep ≥5 mg."
+      },
+      {
+        "text": "primary hypertenson by this test",
+        "expected": "primary hypertension by this test",
+        "kind": "same_direction_or_disjoint_repair",
+        "positive": true,
+        "case_id": "P0085",
+        "actual": "primary hypertension by this test"
+      },
+      {
+        "text": "orthostatic hypotenson by this test",
+        "expected": "orthostatic hypotension by this test",
+        "kind": "same_direction_or_disjoint_repair",
+        "positive": true,
+        "case_id": "P0086",
+        "actual": "orthostatic hypotension by this test"
+      },
+      {
+        "text": "primary hyper tension by this test",
+        "expected": "primary hypertension by this test",
+        "kind": "same_direction_or_disjoint_repair",
+        "positive": true,
+        "case_id": "P0087",
+        "actual": "primary hypertension by this test"
+      },
+      {
+        "text": "No orthostatic hypo tension; keep ≥5 mg.",
+        "expected": "No orthostatic hypotension; keep ≥5 mg.",
+        "kind": "same_direction_or_disjoint_repair",
+        "positive": true,
+        "case_id": "P0088",
+        "actual": "No orthostatic hypotension; keep ≥5 mg."
+      },
+      {
+        "text": "antihypertension medication",
+        "expected": "antihypertensive medication",
+        "kind": "same_direction_or_disjoint_repair",
+        "positive": true,
+        "case_id": "P0089",
+        "actual": "antihypertension medication"
+      },
+      {
+        "text": "primary hypotension; urinary allosterone",
+        "expected": "primary hypotension; urinary aldosterone",
+        "kind": "same_direction_or_disjoint_repair",
+        "positive": true,
+        "case_id": "P0090",
+        "actual": "primary hypotension; urinary aldosterone"
+      },
+      {
+        "text": "tag_primary hypetension; urinary allosterone",
+        "expected": "tag_primary hypetension; urinary aldosterone",
+        "kind": "same_direction_or_disjoint_repair",
+        "positive": true,
+        "case_id": "P0091",
+        "actual": "tag_primary hypetension; urinary aldosterone"
+      },
+      {
+        "text": "hypertension and hypotension",
+        "expected": "hypertension and hypotension",
+        "kind": "mixed_or_protected_context",
+        "positive": false,
+        "case_id": "P0092",
+        "actual": "hypertension and hypotension"
+      },
+      {
+        "text": "hypotension and hypertension",
+        "expected": "hypotension and hypertension",
+        "kind": "mixed_or_protected_context",
+        "positive": false,
+        "case_id": "P0093",
+        "actual": "hypotension and hypertension"
+      },
+      {
+        "text": "No hypertension; hypotension by this test.",
+        "expected": "No hypertension; hypotension by this test.",
+        "kind": "mixed_or_protected_context",
+        "positive": false,
+        "case_id": "P0094",
+        "actual": "No hypertension; hypotension by this test."
+      },
+      {
+        "text": "primary hypo not tension",
+        "expected": "primary hypo not tension",
+        "kind": "mixed_or_protected_context",
+        "positive": false,
+        "case_id": "P0095",
+        "actual": "primary hypo not tension"
+      },
+      {
+        "text": "primary hyper 5 tension",
+        "expected": "primary hyper 5 tension",
+        "kind": "mixed_or_protected_context",
+        "positive": false,
+        "case_id": "P0096",
+        "actual": "primary hyper 5 tension"
+      },
+      {
+        "text": "tag_primary hyper tension",
+        "expected": "tag_primary hyper tension",
+        "kind": "mixed_or_protected_context",
+        "positive": false,
+        "case_id": "P0097",
+        "actual": "tag_primary hyper tension"
+      }
+    ]
+  }
+]

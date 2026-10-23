@@ -1,0 +1,182 @@
+{
+  "files": [
+    {
+      "name": "audio_examples/01_HTN_b77b3ada1555.wav",
+      "bytes": 96684,
+      "sha256": "498bc2b65da5683235290ea82e7ca17497805fcc3a33e4dd93c3e1798a4f1753"
+    },
+    {
+      "name": "audio_examples/02_HTN_017909dfbe03_context.wav",
+      "bytes": 203564,
+      "sha256": "4f65c7c01c68c92f4567d9b2f7fc93d57cd515e60fcba796b61d5c60258e4491"
+    },
+    {
+      "name": "audio_examples/03_HTN_33721e7d10bc_context.wav",
+      "bytes": 385964,
+      "sha256": "089a085e85a62ae183a764b8564e34da78c18942f375632e4b6faa27a49dc5b5"
+    },
+    {
+      "name": "audio_examples/04_HTN_f48198e7872f_context.wav",
+      "bytes": 238764,
+      "sha256": "ac2e44a5fda445c0b8a34e22f5598e6444d9419da41d0e55d6f4cd9da26e3438"
+    },
+    {
+      "name": "audio_examples/05_HTN_a9290515a379_context.wav",
+      "bytes": 234924,
+      "sha256": "402021a64bcbc0629d807b50219296fce3a6864fbc901adba31732971c0dfe34"
+    },
+    {
+      "name": "audio_examples/06_HTN_de7d5a3bf89e_context.wav",
+      "bytes": 401964,
+      "sha256": "e2ce22054cb5f12392849a9400be8f7a792771439fd0da6fe497468cccd44a36"
+    },
+    {
+      "name": "audio_examples/07_HTN_a05dadb4b409_context.wav",
+      "bytes": 251564,
+      "sha256": "b0978d796e5f78bfb7a1ee1d9d255b5f6f55238cc1d2a2e1f36b91adac2fedd2"
+    },
+    {
+      "name": "audio_examples/08_HTN_dcd292247cbd_context.wav",
+      "bytes": 231084,
+      "sha256": "b7814033be02cd6831c847429184de4d5c6494642aabed6f9e2eb84eb4487367"
+    },
+    {
+      "name": "audio_examples/09_HTN_ce88c1a364ff_context.wav",
+      "bytes": 278444,
+      "sha256": "e22649d10afa1fe8d664cb93c8d21717dee02dbc532c389fcb8ffab6f80ff87e"
+    },
+    {
+      "name": "audio_examples/10_HTN_78bad0122173_context.wav",
+      "bytes": 165806,
+      "sha256": "8bcb890c2ac2e7b938e64e6422ae1db42d8b889b06b24c6d32931d9be25eed9d"
+    },
+    {
+      "name": "audio_examples.json",
+      "bytes": 899,
+      "sha256": "059fbd71f8c38f4b5aefca3cf4e846c2e26e52893a466dec61a2ee1fc473a258"
+    },
+    {
+      "name": "audio_review_examples.json",
+      "bytes": 8832,
+      "sha256": "fe84097ad5001e280222eade6416a35211aa4296eb13fb497062d03bbd0adbe7"
+    },
+    {
+      "name": "baseline.json",
+      "bytes": 194754,
+      "sha256": "5cea299f613a62d6973e8cf5acf5a5561e3481e800486539d7890ae2d429a3c8"
+    },
+    {
+      "name": "calibration_results.json",
+      "bytes": 409090,
+      "sha256": "6695bae78d03540611c37dd49ad8c17925ddcdacceee7c53cd62fdfa6718d0ac"
+    },
+    {
+      "name": "checking_overlap_audit.json",
+      "bytes": 6987,
+      "sha256": "4be955196360861622abb6e9451dafd5e6973f457114739d0a590df03ba2a4e5"
+    },
+    {
+      "name": "constructed_cases.json",
+      "bytes": 115720,
+      "sha256": "91ef44c23d9c15700337e9de5f708b22a555e64c7a75f8279c44a4b81414b311"
+    },
+    {
+      "name": "correction_review.json",
+      "bytes": 17758,
+      "sha256": "4ead7cc90e1cd981f577f3eef90150c16193eb9a771330274ce6a148ae2ee01c"
+    },
+    {
+      "name": "evaluate_trial.py",
+      "bytes": 22381,
+      "sha256": "b07c63bd4bc58e38508c43df8903f9880f50599b2ed45a58a9ed0f5fff8f10ef"
+    },
+    {
+      "name": "final_results.json",
+      "bytes": 1186,
+      "sha256": "904b9f44b3023a45a2c38a2b6a838a9fd057c23683cf1874475e3eb0f847c9b9"
+    },
+    {
+      "name": "preservation.json",
+      "bytes": 323,
+      "sha256": "fa0483cba4751630dd9733f8867607a376206a320fca2a131a8a0725881e1343"
+    },
+    {
+      "name": "preservation_final.json",
+      "bytes": 323,
+      "sha256": "fa0483cba4751630dd9733f8867607a376206a320fca2a131a8a0725881e1343"
+    },
+    {
+      "name": "protocol.json",
+      "bytes": 1978,
+      "sha256": "2d28486be506c46f72764e8377fcd571f31e8cb9f6a9caf967588d8cc7a7aaa4"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 2634,
+      "sha256": "dca845ddf5ac8e6b0a0b448b30bbdaf8ec6f3297a39228e05fdf695a85d77880"
+    },
+    {
+      "name": "real_speech_checking.json",
+      "bytes": 515407,
+      "sha256": "982eb08a6ded9ce4afbc2a4a099c011ecbe75e7e0f114035479c1b4a03575b2d"
+    },
+    {
+      "name": "reference_occurrences.json",
+      "bytes": 15406,
+      "sha256": "31205ae76acab075896b62a72fc7e4ef964581b2a3a900c3e734cc3348116981"
+    },
+    {
+      "name": "REPORT.txt",
+      "bytes": 6418,
+      "sha256": "cbff803d245007994e8b2313c0815e7e3e3182a536ad7fa2a5b8ebd527d3568e"
+    },
+    {
+      "name": "review_trial.py",
+      "bytes": 16211,
+      "sha256": "e76307967e431925c013ed52be51d397dd88617a477ded09a814eafbce799e11"
+    },
+    {
+      "name": "selection.json",
+      "bytes": 34346,
+      "sha256": "e1c00a05782878d60a171ace872aac50b18a9ee3b1fa4263bd949f52ef295cde"
+    },
+    {
+      "name": "summary.json",
+      "bytes": 2968,
+      "sha256": "5d8fb73cc4306f34a606235c61f4c2a76b331662ab66a273cdc8e6d0e87bafde"
+    },
+    {
+      "name": "synthetic_checking.json",
+      "bytes": 117669,
+      "sha256": "c8b9f7a978993d4a0f4dda00ee87794b0223954bf423860cd4b6bf638879d2c8"
+    },
+    {
+      "name": "term_results.json",
+      "bytes": 14813,
+      "sha256": "e14c12f40a735267563d7e2fc728001744a866599ce54b0a8555d92897d8505f"
+    },
+    {
+      "name": "test_results.json",
+      "bytes": 1827,
+      "sha256": "d53c8fd92f6c53c02db097ccdeb4c5587484f1c8e557d36071a817e824c4ca13"
+    },
+    {
+      "name": "test_trial.py",
+      "bytes": 4330,
+      "sha256": "14a479494c6f4dfe3afcead9cc144ad8bb01c626fd43988e51bde009edf6a113"
+    },
+    {
+      "name": "threshold_decisions.json",
+      "bytes": 34068,
+      "sha256": "c08fb49d295399ab2e3c1827ac3606ea18ce71eed1be48636a42107861ad3928"
+    }
+  ],
+  "integration_performed": false,
+  "frozen_input_hashes": {
+    "selection.json": "e1c00a05782878d60a171ace872aac50b18a9ee3b1fa4263bd949f52ef295cde",
+    "protocol.json": "2d28486be506c46f72764e8377fcd571f31e8cb9f6a9caf967588d8cc7a7aaa4",
+    "threshold_decisions.json": "c08fb49d295399ab2e3c1827ac3606ea18ce71eed1be48636a42107861ad3928",
+    "real_speech_checking.json": "982eb08a6ded9ce4afbc2a4a099c011ecbe75e7e0f114035479c1b4a03575b2d",
+    "term_results.json": "e14c12f40a735267563d7e2fc728001744a866599ce54b0a8555d92897d8505f"
+  }
+}

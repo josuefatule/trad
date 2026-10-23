@@ -1,0 +1,262 @@
+{
+  "exact_duplicate_checking_case_ids": [
+    "T0012",
+    "T0052",
+    "T0092",
+    "T0132",
+    "T0172",
+    "T0212",
+    "T0250",
+    "T0290",
+    "T0330",
+    "T0370"
+  ],
+  "excluded_from_nonoverlap_summary": true,
+  "reason": "The merged-word generator repeats the same input across splits. Original outputs are retained; no threshold is changed after checking.",
+  "nonoverlap_checking": [
+    {
+      "concept_id": "HTN_b77b3ada1555",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_b77b3ada1555",
+      "profile": "individualized",
+      "threshold": 0.94,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_017909dfbe03",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_017909dfbe03",
+      "profile": "individualized",
+      "threshold": 0.94,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_33721e7d10bc",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 2,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": [
+        "T0118",
+        "T0120"
+      ]
+    },
+    {
+      "concept_id": "HTN_33721e7d10bc",
+      "profile": "individualized",
+      "threshold": 1.0,
+      "positive_cases": 5,
+      "recovered": 1,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [
+        "T0087",
+        "T0088",
+        "T0089",
+        "T0090"
+      ],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_f48198e7872f",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 1,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": [
+        "T0158"
+      ]
+    },
+    {
+      "concept_id": "HTN_f48198e7872f",
+      "profile": "individualized",
+      "threshold": 1.0,
+      "positive_cases": 5,
+      "recovered": 1,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [
+        "T0127",
+        "T0128",
+        "T0129",
+        "T0130"
+      ],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_a9290515a379",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_a9290515a379",
+      "profile": "individualized",
+      "threshold": 0.94,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_de7d5a3bf89e",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 13,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_de7d5a3bf89e",
+      "profile": "individualized",
+      "threshold": 0.96,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 13,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_a05dadb4b409",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 2,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": [
+        "T0276",
+        "T0278"
+      ]
+    },
+    {
+      "concept_id": "HTN_a05dadb4b409",
+      "profile": "individualized",
+      "threshold": 1.0,
+      "positive_cases": 5,
+      "recovered": 1,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [
+        "T0245",
+        "T0246",
+        "T0247",
+        "T0248"
+      ],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_dcd292247cbd",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_dcd292247cbd",
+      "profile": "individualized",
+      "threshold": 0.94,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_ce88c1a364ff",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_ce88c1a364ff",
+      "profile": "individualized",
+      "threshold": 0.94,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_78bad0122173",
+      "profile": "uniform_090",
+      "threshold": 0.9,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    },
+    {
+      "concept_id": "HTN_78bad0122173",
+      "profile": "individualized",
+      "threshold": 0.96,
+      "positive_cases": 5,
+      "recovered": 5,
+      "negative_cases": 14,
+      "negative_triggers": 0,
+      "missed_positive_case_ids": [],
+      "negative_trigger_case_ids": []
+    }
+  ],
+  "independence_limit": "Other variants still share a construction recipe. This is not independent speech validation."
+}

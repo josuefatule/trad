@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-10-22T05:36:01.597366+00:00",
+  "operator_url": "http://localhost:8010/operator",
+  "api_status": "ok",
+  "glossary": {
+    "mode": "soft",
+    "effective_mode": "soft",
+    "generation": 0,
+    "version": "medical-657-v1",
+    "concepts": 657,
+    "evaluated_english": 97,
+    "fuzzy_english": 80,
+    "exact_only_english": 577,
+    "error": null,
+    "forced_by_environment": false
+  },
+  "asr_health": {
+    "status": "ok",
+    "backend": "faster-whisper",
+    "ready": true
+  },
+  "models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "faster-whisper/small",
+        "object": "model",
+        "owned_by": "whisperlivekit"
+      }
+    ]
+  },
+  "operator_state": "waiting",
+  "can_start": true,
+  "translator": {
+    "state": "ready",
+    "provider": "deepl",
+    "message": "DeepL provider ready"
+  },
+  "translator_verified": false,
+  "physical_microphone_test": false,
+  "live_deepl_test": false,
+  "obs_test": false
+}

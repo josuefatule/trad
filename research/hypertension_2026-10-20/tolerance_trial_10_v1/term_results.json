@@ -1,0 +1,592 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "canonical_en": "sodium-containing salts",
+    "preferred_es": "sales que contienen sodio",
+    "selected_auto_threshold": 0.94,
+    "safe_tested_grid_points": [
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_b77b3ada1555",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0012"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      "individualized": {
+        "concept_id": "HTN_b77b3ada1555",
+        "profile": "individualized",
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0012"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "uniform_090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "canonical_en": "sodium reabsorption",
+    "preferred_es": "reabsorción de sodio",
+    "selected_auto_threshold": 0.94,
+    "safe_tested_grid_points": [
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_017909dfbe03",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0052"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      "individualized": {
+        "concept_id": "HTN_017909dfbe03",
+        "profile": "individualized",
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0052"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "uniform_090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "preferred_es": "eventos cardiovasculares",
+    "selected_auto_threshold": 1.0,
+    "safe_tested_grid_points": [
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_33721e7d10bc",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "T0092"
+        ],
+        "negative_trigger_case_ids": [
+          "T0118",
+          "T0120"
+        ]
+      },
+      "individualized": {
+        "concept_id": "HTN_33721e7d10bc",
+        "profile": "individualized",
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0087",
+          "T0088",
+          "T0089",
+          "T0090",
+          "T0092"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "uniform_090": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "individualized": {
+        "observations": 21,
+        "exact_reference_form": 21
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "canonical_en": "tyrosine kinase inhibitors",
+    "preferred_es": "inhibidores de tirosina cinasa",
+    "selected_auto_threshold": 1.0,
+    "safe_tested_grid_points": [
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_f48198e7872f",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 1,
+        "missed_positive_case_ids": [
+          "T0132"
+        ],
+        "negative_trigger_case_ids": [
+          "T0158"
+        ]
+      },
+      "individualized": {
+        "concept_id": "HTN_f48198e7872f",
+        "profile": "individualized",
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0127",
+          "T0128",
+          "T0129",
+          "T0130",
+          "T0132"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "uniform_090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "canonical_en": "ten-year ASCVD risk",
+    "preferred_es": "riesgo de enfermedad cardiovascular aterosclerótica a 10 años",
+    "selected_auto_threshold": 0.94,
+    "safe_tested_grid_points": [
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_a9290515a379",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0172"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      "individualized": {
+        "concept_id": "HTN_a9290515a379",
+        "profile": "individualized",
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0172"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "uniform_090": {
+        "observations": 6,
+        "exact_reference_form": 0
+      },
+      "individualized": {
+        "observations": 6,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "canonical_en": "National Institutes of Health",
+    "preferred_es": "Institutos Nacionales de Salud de Estados Unidos",
+    "selected_auto_threshold": 0.96,
+    "safe_tested_grid_points": [
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_de7d5a3bf89e",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0212"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      "individualized": {
+        "concept_id": "HTN_de7d5a3bf89e",
+        "profile": "individualized",
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 13,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0212"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "uniform_090": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "canonical_en": "mineralocorticoid receptor",
+    "preferred_es": "receptor de mineralocorticoides",
+    "selected_auto_threshold": 1.0,
+    "safe_tested_grid_points": [
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_a05dadb4b409",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 2,
+        "missed_positive_case_ids": [
+          "T0250"
+        ],
+        "negative_trigger_case_ids": [
+          "T0276",
+          "T0278"
+        ]
+      },
+      "individualized": {
+        "concept_id": "HTN_a05dadb4b409",
+        "profile": "individualized",
+        "threshold": 1.0,
+        "positive_cases": 6,
+        "recovered": 1,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0245",
+          "T0246",
+          "T0247",
+          "T0248",
+          "T0250"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "uniform_090": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "preferred_es": "aldosteronismo primario",
+    "selected_auto_threshold": 0.94,
+    "safe_tested_grid_points": [
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_dcd292247cbd",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0290"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      "individualized": {
+        "concept_id": "HTN_dcd292247cbd",
+        "profile": "individualized",
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0290"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 30,
+        "exact_reference_form": 12
+      },
+      "uniform_090": {
+        "observations": 30,
+        "exact_reference_form": 29
+      },
+      "individualized": {
+        "observations": 30,
+        "exact_reference_form": 29
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "preferred_es": "presión arterial sistólica",
+    "selected_auto_threshold": 0.94,
+    "safe_tested_grid_points": [
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_ce88c1a364ff",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0330"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      "individualized": {
+        "concept_id": "HTN_ce88c1a364ff",
+        "profile": "individualized",
+        "threshold": 0.94,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0330"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "uniform_090": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "preferred_es": "Asociación Americana del Corazón",
+    "selected_auto_threshold": 0.96,
+    "safe_tested_grid_points": [
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "synthetic_checking": {
+      "uniform_090": {
+        "concept_id": "HTN_78bad0122173",
+        "profile": "uniform_090",
+        "threshold": 0.9,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0370"
+        ],
+        "negative_trigger_case_ids": []
+      },
+      "individualized": {
+        "concept_id": "HTN_78bad0122173",
+        "profile": "individualized",
+        "threshold": 0.96,
+        "positive_cases": 6,
+        "recovered": 5,
+        "negative_cases": 14,
+        "negative_triggers": 0,
+        "missed_positive_case_ids": [
+          "T0370"
+        ],
+        "negative_trigger_case_ids": []
+      }
+    },
+    "real_speech": {
+      "raw": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "uniform_090": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      }
+    },
+    "operational_approval": false
+  }
+]

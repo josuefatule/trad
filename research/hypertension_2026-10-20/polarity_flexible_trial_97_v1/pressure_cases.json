@@ -1,0 +1,681 @@
+[
+  {
+    "text": "resistant hypotension",
+    "expected": "resistant hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0001"
+  },
+  {
+    "text": "They discussed resistant hypotension by this test.",
+    "expected": "They discussed resistant hypotension by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0002"
+  },
+  {
+    "text": "No resistant hypotension; keep ≥5 mg.",
+    "expected": "No resistant hypotension; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0003"
+  },
+  {
+    "text": "tag_resistant hypotension",
+    "expected": "tag_resistant hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0004"
+  },
+  {
+    "text": "resistant hypertension",
+    "expected": "resistant hypertension",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0005"
+  },
+  {
+    "text": "RESISTANT HYPERTENSION",
+    "expected": "RESISTANT HYPERTENSION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0006"
+  },
+  {
+    "text": "hypotension",
+    "expected": "hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0007"
+  },
+  {
+    "text": "They discussed hypotension by this test.",
+    "expected": "They discussed hypotension by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0008"
+  },
+  {
+    "text": "No hypotension; keep ≥5 mg.",
+    "expected": "No hypotension; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0009"
+  },
+  {
+    "text": "tag_hypotension",
+    "expected": "tag_hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0010"
+  },
+  {
+    "text": "hypertension",
+    "expected": "hypertension",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0011"
+  },
+  {
+    "text": "HYPERTENSION",
+    "expected": "HYPERTENSION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0012"
+  },
+  {
+    "text": "hypertension",
+    "expected": "hypertension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0013"
+  },
+  {
+    "text": "They discussed hypertension by this test.",
+    "expected": "They discussed hypertension by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0014"
+  },
+  {
+    "text": "No hypertension; keep ≥5 mg.",
+    "expected": "No hypertension; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0015"
+  },
+  {
+    "text": "tag_hypertension",
+    "expected": "tag_hypertension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0016"
+  },
+  {
+    "text": "hypotension",
+    "expected": "hypotension",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0017"
+  },
+  {
+    "text": "HYPOTENSION",
+    "expected": "HYPOTENSION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0018"
+  },
+  {
+    "text": "prehypotension",
+    "expected": "prehypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0019"
+  },
+  {
+    "text": "They discussed prehypotension by this test.",
+    "expected": "They discussed prehypotension by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0020"
+  },
+  {
+    "text": "No prehypotension; keep ≥5 mg.",
+    "expected": "No prehypotension; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0021"
+  },
+  {
+    "text": "tag_prehypotension",
+    "expected": "tag_prehypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0022"
+  },
+  {
+    "text": "prehypertension",
+    "expected": "prehypertension",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0023"
+  },
+  {
+    "text": "PREHYPERTENSION",
+    "expected": "PREHYPERTENSION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0024"
+  },
+  {
+    "text": "primary hypotension",
+    "expected": "primary hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0025"
+  },
+  {
+    "text": "They discussed primary hypotension by this test.",
+    "expected": "They discussed primary hypotension by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0026"
+  },
+  {
+    "text": "No primary hypotension; keep ≥5 mg.",
+    "expected": "No primary hypotension; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0027"
+  },
+  {
+    "text": "tag_primary hypotension",
+    "expected": "tag_primary hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0028"
+  },
+  {
+    "text": "primary hypertension",
+    "expected": "primary hypertension",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0029"
+  },
+  {
+    "text": "PRIMARY HYPERTENSION",
+    "expected": "PRIMARY HYPERTENSION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0030"
+  },
+  {
+    "text": "orthostatic hypertension",
+    "expected": "orthostatic hypertension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0031"
+  },
+  {
+    "text": "They discussed orthostatic hypertension by this test.",
+    "expected": "They discussed orthostatic hypertension by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0032"
+  },
+  {
+    "text": "No orthostatic hypertension; keep ≥5 mg.",
+    "expected": "No orthostatic hypertension; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0033"
+  },
+  {
+    "text": "tag_orthostatic hypertension",
+    "expected": "tag_orthostatic hypertension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0034"
+  },
+  {
+    "text": "orthostatic hypotension",
+    "expected": "orthostatic hypotension",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0035"
+  },
+  {
+    "text": "ORTHOSTATIC HYPOTENSION",
+    "expected": "ORTHOSTATIC HYPOTENSION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0036"
+  },
+  {
+    "text": "antihypotensive therapy",
+    "expected": "antihypotensive therapy",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0037"
+  },
+  {
+    "text": "They discussed antihypotensive therapy by this test.",
+    "expected": "They discussed antihypotensive therapy by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0038"
+  },
+  {
+    "text": "No antihypotensive therapy; keep ≥5 mg.",
+    "expected": "No antihypotensive therapy; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0039"
+  },
+  {
+    "text": "tag_antihypotensive therapy",
+    "expected": "tag_antihypotensive therapy",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0040"
+  },
+  {
+    "text": "antihypertensive therapy",
+    "expected": "antihypertensive therapy",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0041"
+  },
+  {
+    "text": "ANTIHYPERTENSIVE THERAPY",
+    "expected": "ANTIHYPERTENSIVE THERAPY",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0042"
+  },
+  {
+    "text": "secondary hypotension",
+    "expected": "secondary hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0043"
+  },
+  {
+    "text": "They discussed secondary hypotension by this test.",
+    "expected": "They discussed secondary hypotension by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0044"
+  },
+  {
+    "text": "No secondary hypotension; keep ≥5 mg.",
+    "expected": "No secondary hypotension; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0045"
+  },
+  {
+    "text": "tag_secondary hypotension",
+    "expected": "tag_secondary hypotension",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0046"
+  },
+  {
+    "text": "secondary hypertension",
+    "expected": "secondary hypertension",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0047"
+  },
+  {
+    "text": "SECONDARY HYPERTENSION",
+    "expected": "SECONDARY HYPERTENSION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0048"
+  },
+  {
+    "text": "antihypotensive medication",
+    "expected": "antihypotensive medication",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0049"
+  },
+  {
+    "text": "They discussed antihypotensive medication by this test.",
+    "expected": "They discussed antihypotensive medication by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0050"
+  },
+  {
+    "text": "No antihypotensive medication; keep ≥5 mg.",
+    "expected": "No antihypotensive medication; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0051"
+  },
+  {
+    "text": "tag_antihypotensive medication",
+    "expected": "tag_antihypotensive medication",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0052"
+  },
+  {
+    "text": "antihypertensive medication",
+    "expected": "antihypertensive medication",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0053"
+  },
+  {
+    "text": "ANTIHYPERTENSIVE MEDICATION",
+    "expected": "ANTIHYPERTENSIVE MEDICATION",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0054"
+  },
+  {
+    "text": "antihypotensive drug therapy",
+    "expected": "antihypotensive drug therapy",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0055"
+  },
+  {
+    "text": "They discussed antihypotensive drug therapy by this test.",
+    "expected": "They discussed antihypotensive drug therapy by this test.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0056"
+  },
+  {
+    "text": "No antihypotensive drug therapy; keep ≥5 mg.",
+    "expected": "No antihypotensive drug therapy; keep ≥5 mg.",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0057"
+  },
+  {
+    "text": "tag_antihypotensive drug therapy",
+    "expected": "tag_antihypotensive drug therapy",
+    "kind": "opposite_direction_no_rewrite",
+    "positive": false,
+    "case_id": "P0058"
+  },
+  {
+    "text": "antihypertensive drug therapy",
+    "expected": "antihypertensive drug therapy",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0059"
+  },
+  {
+    "text": "ANTIHYPERTENSIVE DRUG THERAPY",
+    "expected": "ANTIHYPERTENSIVE DRUG THERAPY",
+    "kind": "already_correct_pressure_term",
+    "positive": false,
+    "case_id": "P0060"
+  },
+  {
+    "text": "primary hypetension",
+    "expected": "primary hypetension",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0061"
+  },
+  {
+    "text": "They discussed primary hypetension by this test.",
+    "expected": "They discussed primary hypetension by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0062"
+  },
+  {
+    "text": "No primary hypetension; keep ≥5 mg.",
+    "expected": "No primary hypetension; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0063"
+  },
+  {
+    "text": "secondary hypetension",
+    "expected": "secondary hypetension",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0064"
+  },
+  {
+    "text": "They discussed secondary hypetension by this test.",
+    "expected": "They discussed secondary hypetension by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0065"
+  },
+  {
+    "text": "No secondary hypetension; keep ≥5 mg.",
+    "expected": "No secondary hypetension; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0066"
+  },
+  {
+    "text": "resistant hypetension",
+    "expected": "resistant hypetension",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0067"
+  },
+  {
+    "text": "They discussed resistant hypetension by this test.",
+    "expected": "They discussed resistant hypetension by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0068"
+  },
+  {
+    "text": "No resistant hypetension; keep ≥5 mg.",
+    "expected": "No resistant hypetension; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0069"
+  },
+  {
+    "text": "orthostatic hypetension",
+    "expected": "orthostatic hypetension",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0070"
+  },
+  {
+    "text": "They discussed orthostatic hypetension by this test.",
+    "expected": "They discussed orthostatic hypetension by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0071"
+  },
+  {
+    "text": "No orthostatic hypetension; keep ≥5 mg.",
+    "expected": "No orthostatic hypetension; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0072"
+  },
+  {
+    "text": "antihypetensive medication",
+    "expected": "antihypetensive medication",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0073"
+  },
+  {
+    "text": "They discussed antihypetensive medication by this test.",
+    "expected": "They discussed antihypetensive medication by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0074"
+  },
+  {
+    "text": "No antihypetensive medication; keep ≥5 mg.",
+    "expected": "No antihypetensive medication; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0075"
+  },
+  {
+    "text": "hypetension",
+    "expected": "hypetension",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0076"
+  },
+  {
+    "text": "They discussed hypetension by this test.",
+    "expected": "They discussed hypetension by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0077"
+  },
+  {
+    "text": "No hypetension; keep ≥5 mg.",
+    "expected": "No hypetension; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0078"
+  },
+  {
+    "text": "hypetensive",
+    "expected": "hypetensive",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0079"
+  },
+  {
+    "text": "They discussed hypetensive by this test.",
+    "expected": "They discussed hypetensive by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0080"
+  },
+  {
+    "text": "No hypetensive; keep ≥5 mg.",
+    "expected": "No hypetensive; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0081"
+  },
+  {
+    "text": "hipertension",
+    "expected": "hipertension",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0082"
+  },
+  {
+    "text": "They discussed hipertension by this test.",
+    "expected": "They discussed hipertension by this test.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0083"
+  },
+  {
+    "text": "No hipertension; keep ≥5 mg.",
+    "expected": "No hipertension; keep ≥5 mg.",
+    "kind": "ambiguous_direction_abstain",
+    "positive": false,
+    "case_id": "P0084"
+  },
+  {
+    "text": "primary hypertenson by this test",
+    "expected": "primary hypertension by this test",
+    "kind": "same_direction_or_disjoint_repair",
+    "positive": true,
+    "case_id": "P0085"
+  },
+  {
+    "text": "orthostatic hypotenson by this test",
+    "expected": "orthostatic hypotension by this test",
+    "kind": "same_direction_or_disjoint_repair",
+    "positive": true,
+    "case_id": "P0086"
+  },
+  {
+    "text": "primary hyper tension by this test",
+    "expected": "primary hypertension by this test",
+    "kind": "same_direction_or_disjoint_repair",
+    "positive": true,
+    "case_id": "P0087"
+  },
+  {
+    "text": "No orthostatic hypo tension; keep ≥5 mg.",
+    "expected": "No orthostatic hypotension; keep ≥5 mg.",
+    "kind": "same_direction_or_disjoint_repair",
+    "positive": true,
+    "case_id": "P0088"
+  },
+  {
+    "text": "antihypertension medication",
+    "expected": "antihypertensive medication",
+    "kind": "same_direction_or_disjoint_repair",
+    "positive": true,
+    "case_id": "P0089"
+  },
+  {
+    "text": "primary hypotension; urinary allosterone",
+    "expected": "primary hypotension; urinary aldosterone",
+    "kind": "same_direction_or_disjoint_repair",
+    "positive": true,
+    "case_id": "P0090"
+  },
+  {
+    "text": "tag_primary hypetension; urinary allosterone",
+    "expected": "tag_primary hypetension; urinary aldosterone",
+    "kind": "same_direction_or_disjoint_repair",
+    "positive": true,
+    "case_id": "P0091"
+  },
+  {
+    "text": "hypertension and hypotension",
+    "expected": "hypertension and hypotension",
+    "kind": "mixed_or_protected_context",
+    "positive": false,
+    "case_id": "P0092"
+  },
+  {
+    "text": "hypotension and hypertension",
+    "expected": "hypotension and hypertension",
+    "kind": "mixed_or_protected_context",
+    "positive": false,
+    "case_id": "P0093"
+  },
+  {
+    "text": "No hypertension; hypotension by this test.",
+    "expected": "No hypertension; hypotension by this test.",
+    "kind": "mixed_or_protected_context",
+    "positive": false,
+    "case_id": "P0094"
+  },
+  {
+    "text": "primary hypo not tension",
+    "expected": "primary hypo not tension",
+    "kind": "mixed_or_protected_context",
+    "positive": false,
+    "case_id": "P0095"
+  },
+  {
+    "text": "primary hyper 5 tension",
+    "expected": "primary hyper 5 tension",
+    "kind": "mixed_or_protected_context",
+    "positive": false,
+    "case_id": "P0096"
+  },
+  {
+    "text": "tag_primary hyper tension",
+    "expected": "tag_primary hyper tension",
+    "kind": "mixed_or_protected_context",
+    "positive": false,
+    "case_id": "P0097"
+  }
+]

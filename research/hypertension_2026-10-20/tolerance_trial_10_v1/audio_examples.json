@@ -1,0 +1,17 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "canonical_en": "sodium-containing salts",
+    "path": "C:\\live-captions\\research\\hypertension_2026-10-20\\tolerance_trial_10_v1\\audio_examples\\01_HTN_b77b3ada1555.wav",
+    "sha256": "498bc2b65da5683235290ea82e7ca17497805fcc3a33e4dd93c3e1798a4f1753",
+    "source_wav": "C:\\live-captions\\logs\\trad_lab\\20261020T074247Z\\evaluation\\inputs\\cardio_01.16k.wav",
+    "source_sha256": "5906e72a0581187087f1c5f2616ac760aea61b4271f8d11d741cc94dc389cada",
+    "first_sample": 3363200,
+    "last_sample_exclusive": 3411520,
+    "sample_rate": 16000,
+    "expected_provisional_reference": "sodium-containing salts",
+    "asr_aligned_phrase": "sodium containing salts",
+    "locator": "Approximate cached ASR word timestamps, verified token mapping; not manually certified acoustic boundaries.",
+    "manipulated_prosody": false
+  }
+]

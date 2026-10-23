@@ -140,6 +140,7 @@ class TranslationEngine:
     def __init__(self, config, provider, session_id, on_result=None, *, status=None,
                  monotonic_clock=time.monotonic, sleep=asyncio.sleep, jitter=None):
         self.config = config
+        self.terminology_context = None
         self.provider = provider
         self.session_id = session_id
         self.on_result = on_result
@@ -252,6 +253,16 @@ class TranslationEngine:
         self._next_sequence += 1
         context = tuple(self._context) if self.config.context_segments else ()
         now = time.time()
+        terminology_context = ""
+        if self.terminology_context and isinstance(normalized_text, str) and normalized_text.strip():
+            try:
+                terminology_context = self.terminology_context(
+                    normalized_text, self.config.source_language, self.config.target_language
+                )
+                if not isinstance(terminology_context, str):
+                    terminology_context = ""
+            except Exception:
+                logger.warning("session=%s glossary_context_unavailable fallback=plain_translation", self.session_id)
         request = TranslationRequest(
             session_id=self.session_id,
             segment_id=str(segment_id),
@@ -266,6 +277,7 @@ class TranslationEngine:
             ready_at=ready_at,
             normalization_latency_ms=normalization_latency_ms,
             timing=replace(timing or TranslationTiming(), queued_mono=self._clock()),
+            terminology_context=terminology_context,
         )
         if not isinstance(normalized_text, str) or not normalized_text.strip():
             result = self._failure(request, "invalid_segment: normalized_text is empty", 0, now, now)
@@ -341,7 +353,8 @@ class TranslationEngine:
                     self.provider.name, True, None, attempts, request.queued_at,
                     started_wall, completed, round(queue_delay, 3), round(latency, 3),
                     request.asr_first_seen_at, request.ready_at,
-                    request.normalization_latency_ms, timing)
+                    request.normalization_latency_ms, timing,
+                    request.source_language, request.target_language)
                 logger.info("session=%s translation_completed segment_id=%s sequence=%d "
                             "attempt_count=%d latency_ms=%.3f",
                             request.session_id, request.segment_id, request.sequence,
@@ -410,7 +423,8 @@ class TranslationEngine:
             False, error, attempts, request.queued_at, started, completed,
             round(queue_delay, 3), round(latency, 3), request.asr_first_seen_at,
             request.ready_at, request.normalization_latency_ms,
-            replace(request.timing or TranslationTiming(), translation_completed_mono=self._clock()))
+            replace(request.timing or TranslationTiming(), translation_completed_mono=self._clock()),
+            request.source_language, request.target_language)
 
     async def _store_result(self, result, generation):
         if generation != self._generation or result.session_id != self.session_id:

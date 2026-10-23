@@ -1,0 +1,286 @@
+{
+  "version": "medical-corrections-v1",
+  "base_version": "medical-657-v1",
+  "observed_repairs": [
+    {
+      "source": "primary adosterizm",
+      "target": "primary aldosteronism"
+    }
+  ],
+  "review_only": [
+    {
+      "source": "resisted hypertension",
+      "target": "resistant hypertension"
+    },
+    {
+      "source": "resisted hyper tension",
+      "target": "resistant hypertension"
+    }
+  ],
+  "format_recognition": [
+    {
+      "concept_id": "HTN_2767d28f15ca",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_f48ce01048ba",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_cee544e9fe5c",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_184d3d9675f4",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_f8945e33857b",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_4a2b4d9ba4ff",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_5dba62d2aa6a",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_fb95da26d020",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_1b881806cbc3",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_7e17f880a489",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_dd6b4162af35",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_81c0b5abec49",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_6a0750665576",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_c7c107126607",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_ee45bdae9c43",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_351e3115ce6d",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_351e3115ce6d",
+      "language": "es"
+    },
+    {
+      "concept_id": "HTN_a1cf320438eb",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_a1cf320438eb",
+      "language": "es"
+    },
+    {
+      "concept_id": "HTN_95c847b235dd",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_a4f97a1e45b5",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_62d56e18d9ed",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_edadf7d85522",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_c53b022cc089",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_9ef028db31ca",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_3e6099c74202",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_c67046868ba3",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_74f76b30d806",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_3a9a76be539c",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_e23159e5051a",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_b350d15d2048",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_46c99f93e124",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_8ded5b0bc81d",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_b77b3ada1555",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_f238539d62d7",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_75afc87af23f",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_9814c63d18cd",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_dcae24a51c83",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_282a14628fd4",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_e570e6cac3f0",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_1cf4ceb2ef7b",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_8083066f4118",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_96e9c067e48f",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_df21fce6ced5",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_0975739ade4f",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_cec28ace449f",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_8909ed6fb46f",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_9ebc2ef8e698",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_b578af2a91df",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_b962d6ee32b1",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_34a93ba5e9c3",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_a72efe860fab",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_91e6979ae1a3",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_0ba0a84ce69d",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_dabd6a557ead",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_9412e69eba77",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_1c4586f0bfb0",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_b513d085e872",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_fa41e26c3499",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_15c1e9680b2f",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_15c1e9680b2f",
+      "language": "es"
+    },
+    {
+      "concept_id": "HTN_6064e20541c2",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_6064e20541c2",
+      "language": "es"
+    },
+    {
+      "concept_id": "HTN_30e8e09a8300",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_694cd068e5a1",
+      "language": "en"
+    },
+    {
+      "concept_id": "HTN_d4477e83d156",
+      "language": "en"
+    }
+  ]
+}

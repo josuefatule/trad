@@ -1,0 +1,1341 @@
+{
+  "rows": [
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:1",
+      "sequence": 1,
+      "visual_generation": 0,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193673.968,
+        "ready_mono": 193677.718,
+        "normalized_completed_mono": 193677.734,
+        "queued_mono": 193677.734,
+        "translation_started_mono": 193677.734,
+        "translation_completed_mono": 193677.75,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193677750.0,
+      "asr_to_ready_ms": 3750.0,
+      "ready_to_normalized_ms": 16.0,
+      "ready_to_translation_started_ms": 16.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 32.0,
+      "asr_to_hub_ms": 3782.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193673.968,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 1,
+        "visual_generation": 0,
+        "renderer_delay_ms": 7.200000017881393,
+        "paint_delay_ms": 25,
+        "browser_received_ms": 9398,
+        "browser_rendered_ms": 9423,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 1,
+        "visible_line_count": 1,
+        "rolled_out_lines": 0,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 3.399999976158142,
+        "delivery_uncertainty_ms": 15.825000002980232,
+        "ready_to_visible_estimate_ms": 60.39999997615814,
+        "asr_to_visible_estimate_ms": 3810.399999976158,
+        "observer_id": 1,
+        "received_at": 1792649130.6439605,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 28.4
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:2",
+      "sequence": 2,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193677.718,
+        "ready_mono": 193681.656,
+        "normalized_completed_mono": 193681.703,
+        "queued_mono": 193681.703,
+        "translation_started_mono": 193681.703,
+        "translation_completed_mono": 193681.718,
+        "provider_attempts_ms": [
+          15.0
+        ]
+      },
+      "published_mono_ms": 193681718.0,
+      "asr_to_ready_ms": 3938.0,
+      "ready_to_normalized_ms": 47.0,
+      "ready_to_translation_started_ms": 47.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 15.0,
+      "provider_last_attempt_ms": 15.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 62.0,
+      "asr_to_hub_ms": 4000.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 15.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193677.718,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 2,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.29999998211860657,
+        "paint_delay_ms": 15.599999994039536,
+        "browser_received_ms": 13357.600000023842,
+        "browser_rendered_ms": 13373.200000017881,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 1,
+        "visible_line_count": 1,
+        "rolled_out_lines": 0,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.825000002980232,
+        "ready_to_visible_estimate_ms": 77.59999999403954,
+        "asr_to_visible_estimate_ms": 4015.5999999940395,
+        "observer_id": 1,
+        "received_at": 1792649134.594294,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 15.6
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:3",
+      "sequence": 3,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193680.796,
+        "ready_mono": 193685.921,
+        "normalized_completed_mono": 193685.937,
+        "queued_mono": 193685.937,
+        "translation_started_mono": 193685.937,
+        "translation_completed_mono": 193685.953,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193685953.0,
+      "asr_to_ready_ms": 5125.0,
+      "ready_to_normalized_ms": 16.0,
+      "ready_to_translation_started_ms": 16.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 32.0,
+      "asr_to_hub_ms": 5157.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193680.796,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 3,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.30000001192092896,
+        "paint_delay_ms": 8.200000017881393,
+        "browser_received_ms": 4197.0999999940395,
+        "browser_rendered_ms": 4205.300000011921,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 2,
+        "visible_line_count": 1,
+        "rolled_out_lines": 0,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.924999997019768,
+        "ready_to_visible_estimate_ms": 40.20000001788139,
+        "asr_to_visible_estimate_ms": 5165.200000017881,
+        "observer_id": 2,
+        "received_at": 1792649138.8271458,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 8.2
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:4",
+      "sequence": 4,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193685.078,
+        "ready_mono": 193690.656,
+        "normalized_completed_mono": 193690.671,
+        "queued_mono": 193690.671,
+        "translation_started_mono": 193690.671,
+        "translation_completed_mono": 193690.687,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193690687.0,
+      "asr_to_ready_ms": 5578.0,
+      "ready_to_normalized_ms": 15.0,
+      "ready_to_translation_started_ms": 15.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 31.0,
+      "asr_to_hub_ms": 5609.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193685.078,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 4,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.5,
+        "paint_delay_ms": 12.200000017881393,
+        "browser_received_ms": 8926.699999988079,
+        "browser_rendered_ms": 8938.90000000596,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 3,
+        "visible_line_count": 1,
+        "rolled_out_lines": 0,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.924999997019768,
+        "ready_to_visible_estimate_ms": 43.20000001788139,
+        "asr_to_visible_estimate_ms": 5621.200000017881,
+        "observer_id": 2,
+        "received_at": 1792649143.560743,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 12.2
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:5",
+      "sequence": 5,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193688.359,
+        "ready_mono": 193694.109,
+        "normalized_completed_mono": 193694.14,
+        "queued_mono": 193694.14,
+        "translation_started_mono": 193694.14,
+        "translation_completed_mono": 193694.156,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193694156.0,
+      "asr_to_ready_ms": 5750.0,
+      "ready_to_normalized_ms": 31.0,
+      "ready_to_translation_started_ms": 31.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 47.0,
+      "asr_to_hub_ms": 5797.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193688.359,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 5,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.4000000059604645,
+        "paint_delay_ms": 7.9000000059604645,
+        "browser_received_ms": 12397.5,
+        "browser_rendered_ms": 12405.40000000596,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 4,
+        "visible_line_count": 2,
+        "rolled_out_lines": 0,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.924999997019768,
+        "ready_to_visible_estimate_ms": 54.900000005960464,
+        "asr_to_visible_estimate_ms": 5804.9000000059605,
+        "observer_id": 2,
+        "received_at": 1792649147.0272217,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 7.9
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:6",
+      "sequence": 6,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193693.234,
+        "ready_mono": 193695.953,
+        "normalized_completed_mono": 193695.968,
+        "queued_mono": 193695.968,
+        "translation_started_mono": 193695.968,
+        "translation_completed_mono": 193695.984,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193695984.0,
+      "asr_to_ready_ms": 2719.0,
+      "ready_to_normalized_ms": 15.0,
+      "ready_to_translation_started_ms": 15.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 31.0,
+      "asr_to_hub_ms": 2750.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193693.234,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 6,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.4000000059604645,
+        "paint_delay_ms": 12.5,
+        "browser_received_ms": 14227,
+        "browser_rendered_ms": 14239.5,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 5,
+        "visible_line_count": 2,
+        "rolled_out_lines": 0,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.924999997019768,
+        "ready_to_visible_estimate_ms": 43.5,
+        "asr_to_visible_estimate_ms": 2762.5,
+        "observer_id": 2,
+        "received_at": 1792649148.861322,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 12.5
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:7",
+      "sequence": 7,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193695.093,
+        "ready_mono": 193698.468,
+        "normalized_completed_mono": 193698.484,
+        "queued_mono": 193698.484,
+        "translation_started_mono": 193698.484,
+        "translation_completed_mono": 193698.5,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193698500.0,
+      "asr_to_ready_ms": 3375.0,
+      "ready_to_normalized_ms": 16.0,
+      "ready_to_translation_started_ms": 16.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 32.0,
+      "asr_to_hub_ms": 3407.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193695.093,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 7,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.4000000059604645,
+        "paint_delay_ms": 7.699999988079071,
+        "browser_received_ms": 16746.90000000596,
+        "browser_rendered_ms": 16754.59999999404,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 6,
+        "visible_line_count": 2,
+        "rolled_out_lines": 0,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.924999997019768,
+        "ready_to_visible_estimate_ms": 39.69999998807907,
+        "asr_to_visible_estimate_ms": 3414.699999988079,
+        "observer_id": 2,
+        "received_at": 1792649151.3764005,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 7.7
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:8",
+      "sequence": 8,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193698.234,
+        "ready_mono": 193702.187,
+        "normalized_completed_mono": 193702.218,
+        "queued_mono": 193702.218,
+        "translation_started_mono": 193702.218,
+        "translation_completed_mono": 193702.234,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193702234.0,
+      "asr_to_ready_ms": 3953.0,
+      "ready_to_normalized_ms": 31.0,
+      "ready_to_translation_started_ms": 31.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 47.0,
+      "asr_to_hub_ms": 4000.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193698.234,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 8,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.5,
+        "paint_delay_ms": 12.900000005960464,
+        "browser_received_ms": 20475.19999998808,
+        "browser_rendered_ms": 20488.09999999404,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 4,
+        "visible_line_count": 2,
+        "rolled_out_lines": 1,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.925000011920929,
+        "ready_to_visible_estimate_ms": 59.900000005960464,
+        "asr_to_visible_estimate_ms": 4012.9000000059605,
+        "observer_id": 2,
+        "received_at": 1792649155.1098862,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 12.9
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:9",
+      "sequence": 9,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193703.312,
+        "ready_mono": 193706.687,
+        "normalized_completed_mono": 193706.703,
+        "queued_mono": 193706.703,
+        "translation_started_mono": 193706.703,
+        "translation_completed_mono": 193706.718,
+        "provider_attempts_ms": [
+          15.0
+        ]
+      },
+      "published_mono_ms": 193706718.0,
+      "asr_to_ready_ms": 3375.0,
+      "ready_to_normalized_ms": 16.0,
+      "ready_to_translation_started_ms": 16.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 15.0,
+      "provider_last_attempt_ms": 15.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 31.0,
+      "asr_to_hub_ms": 3406.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 15.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193703.312,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 9,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.4000000059604645,
+        "paint_delay_ms": 14.199999988079071,
+        "browser_received_ms": 24957,
+        "browser_rendered_ms": 24971.19999998808,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 5,
+        "visible_line_count": 2,
+        "rolled_out_lines": 1,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.925000011920929,
+        "ready_to_visible_estimate_ms": 45.19999998807907,
+        "asr_to_visible_estimate_ms": 3420.199999988079,
+        "observer_id": 2,
+        "received_at": 1792649159.5930767,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 14.2
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:10",
+      "sequence": 10,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193706.593,
+        "ready_mono": 193711.046,
+        "normalized_completed_mono": 193711.062,
+        "queued_mono": 193711.062,
+        "translation_started_mono": 193711.062,
+        "translation_completed_mono": 193711.078,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193711078.0,
+      "asr_to_ready_ms": 4453.0,
+      "ready_to_normalized_ms": 16.0,
+      "ready_to_translation_started_ms": 16.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 32.0,
+      "asr_to_hub_ms": 4485.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193706.593,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 10,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.30000001192092896,
+        "paint_delay_ms": 5.300000011920929,
+        "browser_received_ms": 29316.69999998808,
+        "browser_rendered_ms": 29322,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 6,
+        "visible_line_count": 2,
+        "rolled_out_lines": 1,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.925000011920929,
+        "ready_to_visible_estimate_ms": 37.30000001192093,
+        "asr_to_visible_estimate_ms": 4490.300000011921,
+        "observer_id": 2,
+        "received_at": 1792649163.9439557,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 5.3
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:11",
+      "sequence": 11,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193710.203,
+        "ready_mono": 193716.328,
+        "normalized_completed_mono": 193716.343,
+        "queued_mono": 193716.359,
+        "translation_started_mono": 193716.359,
+        "translation_completed_mono": 193716.375,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193716375.0,
+      "asr_to_ready_ms": 6125.0,
+      "ready_to_normalized_ms": 15.0,
+      "ready_to_translation_started_ms": 31.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 47.0,
+      "asr_to_hub_ms": 6172.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 32.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193710.203,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 11,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.19999998807907104,
+        "paint_delay_ms": 3.699999988079071,
+        "browser_received_ms": 34617,
+        "browser_rendered_ms": 34620.69999998808,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 4,
+        "visible_line_count": 2,
+        "rolled_out_lines": 2,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.875,
+        "ready_to_visible_estimate_ms": 50.69999998807907,
+        "asr_to_visible_estimate_ms": 6175.699999988079,
+        "observer_id": 2,
+        "received_at": 1792649169.2424784,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 3.7
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:12",
+      "sequence": 12,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193715.5,
+        "ready_mono": 193719.093,
+        "normalized_completed_mono": 193719.109,
+        "queued_mono": 193719.109,
+        "translation_started_mono": 193719.109,
+        "translation_completed_mono": 193719.125,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193719125.0,
+      "asr_to_ready_ms": 3593.0,
+      "ready_to_normalized_ms": 16.0,
+      "ready_to_translation_started_ms": 16.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 32.0,
+      "asr_to_hub_ms": 3625.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193715.5,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 12,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.19999998807907104,
+        "paint_delay_ms": 2.9000000059604645,
+        "browser_received_ms": 37367,
+        "browser_rendered_ms": 37369.90000000596,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 5,
+        "visible_line_count": 2,
+        "rolled_out_lines": 2,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.875,
+        "ready_to_visible_estimate_ms": 34.900000005960464,
+        "asr_to_visible_estimate_ms": 3627.9000000059605,
+        "observer_id": 2,
+        "received_at": 1792649171.991897,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 2.9
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:13",
+      "sequence": 13,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193718.265,
+        "ready_mono": 193723.656,
+        "normalized_completed_mono": 193723.687,
+        "queued_mono": 193723.687,
+        "translation_started_mono": 193723.687,
+        "translation_completed_mono": 193723.703,
+        "provider_attempts_ms": [
+          16.0
+        ]
+      },
+      "published_mono_ms": 193723703.0,
+      "asr_to_ready_ms": 5391.0,
+      "ready_to_normalized_ms": 31.0,
+      "ready_to_translation_started_ms": 31.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 16.0,
+      "provider_last_attempt_ms": 16.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 47.0,
+      "asr_to_hub_ms": 5438.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 16.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193718.265,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 13,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.30000001192092896,
+        "paint_delay_ms": 7,
+        "browser_received_ms": 41946.09999999404,
+        "browser_rendered_ms": 41953.09999999404,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 6,
+        "visible_line_count": 2,
+        "rolled_out_lines": 2,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.875,
+        "ready_to_visible_estimate_ms": 54,
+        "asr_to_visible_estimate_ms": 5445,
+        "observer_id": 2,
+        "received_at": 1792649176.5748665,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 7.0
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:14",
+      "sequence": 14,
+      "visual_generation": 1,
+      "backend_clock": "time.monotonic seconds in isolated ASGI process",
+      "timing": {
+        "asr_first_seen_mono": 193722.812,
+        "ready_mono": 193727.562,
+        "normalized_completed_mono": 193727.578,
+        "queued_mono": 193727.578,
+        "translation_started_mono": 193727.578,
+        "translation_completed_mono": 193727.593,
+        "provider_attempts_ms": [
+          15.0
+        ]
+      },
+      "published_mono_ms": 193727593.0,
+      "asr_to_ready_ms": 4750.0,
+      "ready_to_normalized_ms": 16.0,
+      "ready_to_translation_started_ms": 16.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 15.0,
+      "provider_last_attempt_ms": 15.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 31.0,
+      "asr_to_hub_ms": 4781.0,
+      "translation_queue_depth": 0,
+      "normalized_to_translation_ms": 15.0,
+      "capture_started_mono": null,
+      "first_partial_seen_mono": null,
+      "first_confirmed_seen_mono": 193722.812,
+      "observer": {
+        "session_id": "1e046ddd9035",
+        "sequence": 14,
+        "visual_generation": 1,
+        "renderer_delay_ms": 0.19999998807907104,
+        "paint_delay_ms": 2.9000000059604645,
+        "browser_received_ms": 45834,
+        "browser_rendered_ms": 45836.90000000596,
+        "visual_queue_depth": 0,
+        "visible_caption_count": 4,
+        "visible_line_count": 2,
+        "rolled_out_lines": 3,
+        "coalesced_render_updates": 0,
+        "hub_delivery_estimate_ms": 0,
+        "delivery_uncertainty_ms": 15.875,
+        "ready_to_visible_estimate_ms": 33.900000005960464,
+        "asr_to_visible_estimate_ms": 4783.9000000059605,
+        "observer_id": 2,
+        "received_at": 1792649180.4586937,
+        "render_measurement": "double_requestAnimationFrame_estimate"
+      },
+      "translation_to_paint_estimate_ms": 2.9
+    }
+  ],
+  "summary_ms": {
+    "asr_to_ready_ms": {
+      "n": 14,
+      "min": 2719.0,
+      "median": 4203.0,
+      "mean": 4419.642857142857,
+      "p90": 5750.0,
+      "p95": 6125.0,
+      "max": 6125.0
+    },
+    "ready_to_normalized_ms": {
+      "n": 14,
+      "min": 15.0,
+      "median": 16.0,
+      "mean": 21.214285714285715,
+      "p90": 31.0,
+      "p95": 47.0,
+      "max": 47.0
+    },
+    "normalized_to_translation_ms": {
+      "n": 14,
+      "min": 15.0,
+      "median": 16.0,
+      "mean": 16.928571428571427,
+      "p90": 16.0,
+      "p95": 32.0,
+      "max": 32.0
+    },
+    "translation_queue_delay_ms": {
+      "n": 14,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "provider_total_ms": {
+      "n": 14,
+      "min": 15.0,
+      "median": 16.0,
+      "mean": 15.785714285714286,
+      "p90": 16.0,
+      "p95": 16.0,
+      "max": 16.0
+    },
+    "translation_to_hub_ms": {
+      "n": 14,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "asr_to_hub_ms": {
+      "n": 14,
+      "min": 2750.0,
+      "median": 4242.5,
+      "mean": 4457.785714285715,
+      "p90": 5797.0,
+      "p95": 6172.0,
+      "max": 6172.0
+    },
+    "translation_to_paint_estimate_ms": {
+      "n": 14,
+      "min": 2.9,
+      "median": 8.05,
+      "mean": 10.1,
+      "p90": 15.6,
+      "p95": 28.4,
+      "max": 28.4
+    }
+  },
+  "paint_samples_missing": 0,
+  "queue_depth_at_publish": {
+    "n": 14,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0,
+    "p90": 0,
+    "p95": 0,
+    "max": 0
+  },
+  "requests": [
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:1",
+      "sequence": 1,
+      "raw_text": "La hipertensión arterial es una condición cardiovascular",
+      "normalized_text": "La hipertensión arterial es una condición cardiovascular",
+      "context_segments": [],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649130.594567,
+      "asr_first_seen_at": 4.796999999991385,
+      "ready_at": 8.546999999991385,
+      "normalization_latency_ms": 10.6544,
+      "timing": {
+        "asr_first_seen_mono": 193673.968,
+        "ready_mono": 193677.718,
+        "normalized_completed_mono": 193677.734,
+        "queued_mono": 193677.734,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": "Medical terminology reference for this passage (ES → EN):\nhipertensión arterial = hypertension"
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:2",
+      "sequence": 2,
+      "raw_text": "caracterizada por una elevación persistente de la presión arterial",
+      "normalized_text": "caracterizada por una elevación persistente de la presión arterial",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:1",
+          "sequence": 1,
+          "normalized_text": "La hipertensión arterial es una condición cardiovascular"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649134.5628426,
+      "asr_first_seen_at": 8.546999999991385,
+      "ready_at": 12.48499999998603,
+      "normalization_latency_ms": 43.5829,
+      "timing": {
+        "asr_first_seen_mono": 193677.718,
+        "ready_mono": 193681.656,
+        "normalized_completed_mono": 193681.703,
+        "queued_mono": 193681.703,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": "Medical terminology reference for this passage (ES → EN):\npresión arterial = blood pressure"
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:3",
+      "sequence": 3,
+      "raw_text": "systólica y/o diastólica.",
+      "normalized_text": "sistólica y/o diastólica.",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:1",
+          "sequence": 1,
+          "normalized_text": "La hipertensión arterial es una condición cardiovascular"
+        },
+        {
+          "segment_id": "1e046ddd9035:2",
+          "sequence": 2,
+          "normalized_text": "caracterizada por una elevación persistente de la presión arterial"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649138.8075953,
+      "asr_first_seen_at": 11.625,
+      "ready_at": 16.75,
+      "normalization_latency_ms": 18.1937,
+      "timing": {
+        "asr_first_seen_mono": 193680.796,
+        "ready_mono": 193685.921,
+        "normalized_completed_mono": 193685.937,
+        "queued_mono": 193685.937,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:4",
+      "sequence": 4,
+      "raw_text": "Suficio patología involucra mecanismos complejos,",
+      "normalized_text": "Fisiopatología involucra mecanismos complejos,",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:2",
+          "sequence": 2,
+          "normalized_text": "caracterizada por una elevación persistente de la presión arterial"
+        },
+        {
+          "segment_id": "1e046ddd9035:3",
+          "sequence": 3,
+          "normalized_text": "sistólica y/o diastólica."
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649143.5363846,
+      "asr_first_seen_at": 15.90700000000652,
+      "ready_at": 21.48499999998603,
+      "normalization_latency_ms": 17.4678,
+      "timing": {
+        "asr_first_seen_mono": 193685.078,
+        "ready_mono": 193690.656,
+        "normalized_completed_mono": 193690.671,
+        "queued_mono": 193690.671,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:5",
+      "sequence": 5,
+      "raw_text": "incluyendo la activación del sistema herenina angiotensina al",
+      "normalized_text": "incluyendo la activación del sistema herenina angiotensina al",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:3",
+          "sequence": 3,
+          "normalized_text": "sistólica y/o diastólica."
+        },
+        {
+          "segment_id": "1e046ddd9035:4",
+          "sequence": 4,
+          "normalized_text": "Fisiopatología involucra mecanismos complejos,"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649147.0112085,
+      "asr_first_seen_at": 19.187999999994645,
+      "ready_at": 24.937999999994645,
+      "normalization_latency_ms": 32.4967,
+      "timing": {
+        "asr_first_seen_mono": 193688.359,
+        "ready_mono": 193694.109,
+        "normalized_completed_mono": 193694.14,
+        "queued_mono": 193694.14,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:6",
+      "sequence": 6,
+      "raw_text": "dosterona.",
+      "normalized_text": "dosterona.",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:4",
+          "sequence": 4,
+          "normalized_text": "Fisiopatología involucra mecanismos complejos,"
+        },
+        {
+          "segment_id": "1e046ddd9035:5",
+          "sequence": 5,
+          "normalized_text": "incluyendo la activación del sistema herenina angiotensina al"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649148.8347487,
+      "asr_first_seen_at": 24.062999999994645,
+      "ready_at": 26.78200000000652,
+      "normalization_latency_ms": 16.3011,
+      "timing": {
+        "asr_first_seen_mono": 193693.234,
+        "ready_mono": 193695.953,
+        "normalized_completed_mono": 193695.968,
+        "queued_mono": 193695.968,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:7",
+      "sequence": 7,
+      "raw_text": "El aumento de la resistencia vascular periférica",
+      "normalized_text": "El aumento de la resistencia vascular periférica",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:5",
+          "sequence": 5,
+          "normalized_text": "incluyendo la activación del sistema herenina angiotensina al"
+        },
+        {
+          "segment_id": "1e046ddd9035:6",
+          "sequence": 6,
+          "normalized_text": "dosterona."
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649151.3467822,
+      "asr_first_seen_at": 25.921999999991385,
+      "ready_at": 29.296999999991385,
+      "normalization_latency_ms": 17.9107,
+      "timing": {
+        "asr_first_seen_mono": 193695.093,
+        "ready_mono": 193698.468,
+        "normalized_completed_mono": 193698.484,
+        "queued_mono": 193698.484,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:8",
+      "sequence": 8,
+      "raw_text": "y alteraciones en la función endotelial.",
+      "normalized_text": "y alteraciones en la función endotelial.",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:6",
+          "sequence": 6,
+          "normalized_text": "dosterona."
+        },
+        {
+          "segment_id": "1e046ddd9035:7",
+          "sequence": 7,
+          "normalized_text": "El aumento de la resistencia vascular periférica"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649155.0822818,
+      "asr_first_seen_at": 29.062999999994645,
+      "ready_at": 33.01600000000326,
+      "normalization_latency_ms": 27.5535,
+      "timing": {
+        "asr_first_seen_mono": 193698.234,
+        "ready_mono": 193702.187,
+        "normalized_completed_mono": 193702.218,
+        "queued_mono": 193702.218,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:9",
+      "sequence": 9,
+      "raw_text": "En pacientes y pertencios, la exposición prolongada",
+      "normalized_text": "En pacientes y pertencios, la exposición prolongada",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:7",
+          "sequence": 7,
+          "normalized_text": "El aumento de la resistencia vascular periférica"
+        },
+        {
+          "segment_id": "1e046ddd9035:8",
+          "sequence": 8,
+          "normalized_text": "y alteraciones en la función endotelial."
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649159.5692809,
+      "asr_first_seen_at": 34.14100000000326,
+      "ready_at": 37.51600000000326,
+      "normalization_latency_ms": 20.6686,
+      "timing": {
+        "asr_first_seen_mono": 193703.312,
+        "ready_mono": 193706.687,
+        "normalized_completed_mono": 193706.703,
+        "queued_mono": 193706.703,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:10",
+      "sequence": 10,
+      "raw_text": "a niveles elevados de presión puede producir",
+      "normalized_text": "a niveles elevados de presión puede producir",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:8",
+          "sequence": 8,
+          "normalized_text": "y alteraciones en la función endotelial."
+        },
+        {
+          "segment_id": "1e046ddd9035:9",
+          "sequence": 9,
+          "normalized_text": "En pacientes y pertencios, la exposición prolongada"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649163.9349298,
+      "asr_first_seen_at": 37.421999999991385,
+      "ready_at": 41.875,
+      "normalization_latency_ms": 26.747,
+      "timing": {
+        "asr_first_seen_mono": 193706.593,
+        "ready_mono": 193711.046,
+        "normalized_completed_mono": 193711.062,
+        "queued_mono": 193711.062,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:11",
+      "sequence": 11,
+      "raw_text": "hipertrofia ventricular izquierda,",
+      "normalized_text": "hipertrofia ventricular izquierda,",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:9",
+          "sequence": 9,
+          "normalized_text": "En pacientes y pertencios, la exposición prolongada"
+        },
+        {
+          "segment_id": "1e046ddd9035:10",
+          "sequence": 10,
+          "normalized_text": "a niveles elevados de presión puede producir"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649169.217202,
+      "asr_first_seen_at": 41.03200000000652,
+      "ready_at": 47.15700000000652,
+      "normalization_latency_ms": 27.1951,
+      "timing": {
+        "asr_first_seen_mono": 193710.203,
+        "ready_mono": 193716.328,
+        "normalized_completed_mono": 193716.343,
+        "queued_mono": 193716.359,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": "Medical terminology reference for this passage (ES → EN):\nhipertrofia ventricular izquierda = left ventricular hypertrophy"
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:12",
+      "sequence": 12,
+      "raw_text": "remodelado vascular, disfunción renal y un incremento",
+      "normalized_text": "remodelado vascular, disfunción renal y un incremento",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:10",
+          "sequence": 10,
+          "normalized_text": "a niveles elevados de presión puede producir"
+        },
+        {
+          "segment_id": "1e046ddd9035:11",
+          "sequence": 11,
+          "normalized_text": "hipertrofia ventricular izquierda,"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649171.9808605,
+      "asr_first_seen_at": 46.328999999997905,
+      "ready_at": 49.921999999991385,
+      "normalization_latency_ms": 15.1083,
+      "timing": {
+        "asr_first_seen_mono": 193715.5,
+        "ready_mono": 193719.093,
+        "normalized_completed_mono": 193719.109,
+        "queued_mono": 193719.109,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": "Medical terminology reference for this passage (ES → EN):\nremodelado vascular = vascular remodeling"
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:13",
+      "sequence": 13,
+      "raw_text": "significativo del riesgo de accidentes cerebrovascular e",
+      "normalized_text": "significativo del riesgo de accidentes cerebrovascular e",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:11",
+          "sequence": 11,
+          "normalized_text": "hipertrofia ventricular izquierda,"
+        },
+        {
+          "segment_id": "1e046ddd9035:12",
+          "sequence": 12,
+          "normalized_text": "remodelado vascular, disfunción renal y un incremento"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649176.5505953,
+      "asr_first_seen_at": 49.094000000011874,
+      "ready_at": 54.48499999998603,
+      "normalization_latency_ms": 32.1566,
+      "timing": {
+        "asr_first_seen_mono": 193718.265,
+        "ready_mono": 193723.656,
+        "normalized_completed_mono": 193723.687,
+        "queued_mono": 193723.687,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    },
+    {
+      "session_id": "1e046ddd9035",
+      "segment_id": "1e046ddd9035:14",
+      "sequence": 14,
+      "raw_text": "infarto agudo de miocardio.",
+      "normalized_text": "infarto agudo de miocardio.",
+      "context_segments": [
+        {
+          "segment_id": "1e046ddd9035:12",
+          "sequence": 12,
+          "normalized_text": "remodelado vascular, disfunción renal y un incremento"
+        },
+        {
+          "segment_id": "1e046ddd9035:13",
+          "sequence": 13,
+          "normalized_text": "significativo del riesgo de accidentes cerebrovascular e"
+        }
+      ],
+      "source_language": "es",
+      "target_language": "en",
+      "queued_at": 1792649180.4446578,
+      "asr_first_seen_at": 53.64100000000326,
+      "ready_at": 58.39100000000326,
+      "normalization_latency_ms": 21.5838,
+      "timing": {
+        "asr_first_seen_mono": 193722.812,
+        "ready_mono": 193727.562,
+        "normalized_completed_mono": 193727.578,
+        "queued_mono": 193727.578,
+        "translation_started_mono": null,
+        "translation_completed_mono": null,
+        "provider_attempts_ms": []
+      },
+      "terminology_context": ""
+    }
+  ],
+  "queue_max": 1,
+  "first_session_outcome": "complete",
+  "second_session_words": "No presenta edema. La dosis es 5 mg.",
+  "generated_utc": "2026-10-22T06:06:25.239808+00:00",
+  "scope": "AUTOMATED: fake PCM + recorded WLK receive timing + fake provider + real Chrome; not OBS/DeepL/physical speech",
+  "fixture_sha256": "6e4850702c084614cf62ad72a824d7f51384b16ea4c3416fadc7c764749d55b7",
+  "event_count": 888
+}

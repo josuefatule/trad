@@ -1,0 +1,102 @@
+{
+  "sealed_at_utc": "2026-10-22T04:58:12.769234+00:00",
+  "files": [
+    {
+      "name": "baseline.json",
+      "bytes": 237209,
+      "sha256": "ec78d37f5953bdc24dd4d6b74491b48a3dae9794e0f2e9c1123872384c2f6d49"
+    },
+    {
+      "name": "constructed_cases.json",
+      "bytes": 338102,
+      "sha256": "92225575be00fc9e3157132f13ab2bed4f4d43b715e0d053ab98ff9f50dcf010"
+    },
+    {
+      "name": "constructed_comparison.json",
+      "bytes": 6026326,
+      "sha256": "6d1a1d29fff35e66535b46c1ab854ba1e1c1cbe7ff9f83da15e8db6237745670"
+    },
+    {
+      "name": "context_cases.json",
+      "bytes": 252778,
+      "sha256": "2ce9dfcf1c8ac7de3650a32e45e8adb7d2ebfc9ae8781c357be842ee6833c1d7"
+    },
+    {
+      "name": "context_comparison.json",
+      "bytes": 4721875,
+      "sha256": "231c353766aae5046afeec239599acfdf367abc81b94b5bfa07ae9c4b3c91a58"
+    },
+    {
+      "name": "development_tests.json",
+      "bytes": 2280,
+      "sha256": "1d9b534e149759163e39a8c8a2b2f5cbb6ed0ba5f00c02d84579db2d6a405cb2"
+    },
+    {
+      "name": "existing_regression_cases.json",
+      "bytes": 34043,
+      "sha256": "1d398b041a592810c04c24eb2609b88956a1332d48904dd1dac12f2f8aef7515"
+    },
+    {
+      "name": "inputs.json",
+      "bytes": 481206,
+      "sha256": "2a6adb47d90a781c72990c6d95b2241d806f09a262c8060978d0e05ae5058b7c"
+    },
+    {
+      "name": "pressure_cases.json",
+      "bytes": 19727,
+      "sha256": "14e19cf594ae8c3c10e13c5ec37d1c74cabfbee61db29e95aa3016270d07406a"
+    },
+    {
+      "name": "pressure_comparison.json",
+      "bytes": 326496,
+      "sha256": "b0cad51fa82217555409e9db4fc65319b579b8fbdb30f752ae08a7e1ac668d2c"
+    },
+    {
+      "name": "pressure_refined.py",
+      "bytes": 3790,
+      "sha256": "05c2302133b756734b26b3bc4fb56e6e3a8b58f91f7d995853ee7cc245c797a6"
+    },
+    {
+      "name": "protocol.json",
+      "bytes": 1311,
+      "sha256": "f5b8e4638c2b5267f72867857dd8a2b5bce2b35e4f9c864db0f34bb805f0c598"
+    },
+    {
+      "name": "regression_comparison.json",
+      "bytes": 520161,
+      "sha256": "801661315b6f2c8e401aa4396a91d20551ea70139bfda8c15e8af34eee891be5"
+    },
+    {
+      "name": "run_refined.py",
+      "bytes": 13182,
+      "sha256": "82f7f48791e585104fd8685a959a0e6e6fa22cb8f796089b33a1d77c87567397"
+    },
+    {
+      "name": "speech_comparison.json",
+      "bytes": 9368362,
+      "sha256": "13deaab1139cc417359ed994d5a7692dccdb1ec58c796386ad9120fd3a669498"
+    },
+    {
+      "name": "summary.json",
+      "bytes": 14219,
+      "sha256": "1156b33b84d1e5d8f6d5a70ae7f385c8abadc52f487dec11d3c0240cd06c679d"
+    },
+    {
+      "name": "term_results.json",
+      "bytes": 127413,
+      "sha256": "7063f776177cef2fe1f536badc797f8e866f1f3441d7dad909519241454da4a4"
+    },
+    {
+      "name": "test_outputs_refined.py",
+      "bytes": 2549,
+      "sha256": "72366e75062e2e8ce04626c514d964d1462a313836d8fa036642fe9c2c5cc617"
+    },
+    {
+      "name": "test_refined.py",
+      "bytes": 1575,
+      "sha256": "97a9a935391fa795ae689a72d5b6c5ee013ea974cccd20604e1efdd5cdb95bf5"
+    }
+  ],
+  "original_and_prior_evidence_unchanged": true,
+  "integration_performed": false
+}

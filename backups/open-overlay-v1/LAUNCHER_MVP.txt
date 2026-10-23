@@ -1,0 +1,122 @@
+TRAD — ARRANQUE UNIFICADO DEL MVP
+22 de octubre de 2026
+
+USO DIARIO
+
+En PowerShell:
+
+    cd C:\live-captions
+    .\Start-TRAD.ps1
+
+Se muestran las IPv4 reales de esta PC y sus perfiles de Windows. Se pregunta
+la IP de la PC que mostrará el overlay. Enter permite trabajar solo en esta PC.
+Si hay varias interfaces, se pide seleccionar la IPv4 local de la lista.
+La IP de la PC overlay es la del equipo receptor, no una dirección que se
+asigna a esta PC ni una IP que se escribe en la URL del servidor.
+
+El lanzador comprueba los entornos existentes, inicia el modelo small ya
+instalado y espera ASR listo en localhost:8000 y TRAD en 127.0.0.1:8010.
+Usa el adaptador bidireccional actual y el glosario médico reversible.
+No descarga modelos, no instala dependencias y no modifica .env.
+Abre http://localhost:8010/operator. El micrófono sigue inactivo.
+
+Operator muestra IP DE ESTA PC, IP DE LA PC OVERLAY y, al publicar por red,
+la URL que debe abrirse en el navegador/OBS del equipo receptor.
+
+    .\Start-TRAD.ps1 -LocalOnly
+    .\Start-TRAD.ps1 -OverlayIP 10.0.0.105 -LocalIP 10.0.0.88
+
+El segundo comando es solo un ejemplo: sustituir ambas IP por las actuales.
+No reutilizar las IP del ejemplo sin comprobarlas. Para no abrir navegador,
+añadir -NoBrowser. El límite de espera predeterminado es 180 segundos;
+puede indicarse -TimeoutSeconds 300 si la carga del modelo lo requiere.
+
+RED Y PC DE OVERLAY
+
+La publicación remota utiliza http://IP_DE_ESTA_PC:3000/overlay. Solo entrega
+la página, los recursos del renderer, su configuración y su WebSocket de lectura.
+La puerta admite exclusivamente la IP del receptor indicada. Operator,
+captura, archivos privados y controles permanecen fuera de esa puerta.
+Se conservan las dos direcciones EN→ES y ES→EN del runtime actual.
+
+La interfaz debe pertenecer a una red de confianza clasificada como Private
+y tener activo su firewall. Windows pedirá elevación UAC únicamente para
+crear/retirar la regla TCP 3000, limitada a la IP local, la IP receptora,
+la interfaz y el perfil Private. No se cambia automáticamente el perfil,
+la dirección IP, el router, el firewall general ni la ExecutionPolicy.
+Un ping sin respuesta no prueba que el navegador remoto falle.
+
+La conexión observada durante esta prueba es Wi-Fi 10.0.0.88, perfil Public.
+Se dejó igual. Por ello el ensayo real fue local. Antes de usar dos PCs,
+seleccionar una red privada de confianza y comprobar su perfil en Windows.
+El valor real del receptor se introduce al arrancar; no se fijó una IP supuesta.
+
+COMPROBAR Y CERRAR
+
+    .\Start-TRAD.ps1 -Action Status
+    .\Start-TRAD.ps1 -Action Test
+    .\Start-TRAD.ps1 -Action Stop
+
+Test verifica ASR listo, Operator, recursos, los 657 conceptos y el parche,
+normalización médica fuera de sesión y overlay HTTP/WebSocket con sincronización.
+No abre micrófono, no inicia sesión, no publica captions en la sesión real ni
+solicita traducción. Requiere que Operator esté completamente detenido.
+Informe de la última prueba: .runtime\launcher\last-test.json.
+
+Stop requiere detener primero la sesión desde Operator. Cierra solo los
+procesos creados por este lanzador, comprobando PID, fecha, comando y run-id.
+La API y la puerta se cierran ordenadamente. El ASR propio se termina únicamente
+después de confirmar que no hay sesión activa. Retira su regla de firewall.
+Los servidores que ya estaban abiertos se reutilizan y no se cierran con Stop.
+Si hay que cambiar la PC de overlay, ejecutar Stop y arrancar con la nueva IP.
+
+Los errores conservan logs individuales en .runtime\launcher. Un puerto ocupado
+por otro programa se rechaza, sin cerrarlo. Si falla un arranque, se intenta
+cerrar solamente lo creado en ese intento y retirar su regla nueva.
+
+REVERSIBILIDAD
+
+El glosario original, los releases médicos y las evidencias anteriores no se
+modificaron. Operator conserva Activo para pruebas / Observación / Desactivado.
+El lanzador no obliga un modo distinto del guardado por el usuario.
+Test exige soft y el parche activo; si se ha desactivado intencionalmente,
+informará esa diferencia en lugar de afirmar que se validó el glosario activo.
+
+Puede cerrarse el lanzador con Stop y volver al arranque manual documentado.
+Los hooks añadidos en main.py solo informan versión/PID y red en el status
+autorizado. Los cambios previos de traducción y normalización quedan intactos.
+Copias previas a esta tarea: backups\launcher-v1. No restaurar archivos a ciegas
+después de nuevas modificaciones; comparar antes de recuperar una copia.
+
+PRUEBAS EFECTUADAS Y LÍMITES
+
+PASS: arranque local de ASR/API desde cero, reutilización sin duplicados,
+cierre de ambos con cero listeners restantes y reinicio final.
+PASS: Stop conservó el ASR que era anterior al lanzador en la primera prueba.
+PASS: comando Test sobre el runtime real, sin micrófono ni traducción.
+PASS: 47 pruebas Python (incluyen 9 de red/puerta), 25 controles de PowerShell
+en cada versión 5.1/7 y cuatro suites JavaScript.
+PASS: recorrido sintético Hub real → WebSocket loopback → puerta → cliente,
+caption y CLEAR; rechazo de comandos del visor y rutas Operator.
+La prueba sintética usó una aplicación aislada con traducción deshabilitada.
+Las IP de fixtures no se asignaron a Windows ni abrieron firewall.
+PASS: Operator observado en Chrome, IDLE, IP local visible y glosario activo.
+
+Evidencias nuevas: benchmarks\launcher_v1. El informe de preservación compara
+929 archivos protegidos, incluyendo investigación, releases, evidencias anteriores,
+glosario original, .env y los segmentadores originales.
+
+Pendientes: apertura real para la IP del equipo receptor, comprobación física
+entre las dos PCs, OBS/proyección y lectura con audio/traducción. Este ensayo
+no certifica reconocimiento de voz, calidad de traducción ni latencia física.
+
+INCIDENCIA DE ARRANQUE RESUELTA
+
+Se detecto que procesos iniciados desde PowerShell podian heredar las tuberias
+de la consola invocante y retrasar el siguiente comando. Se sustituyo el
+arranque persistente por un proceso separado, sin consola y con close_fds.
+La secuencia real posterior confirmo ARRANQUE DEVOLVIO EL CONTROL y PRUEBA
+ENCADENADA COMPLETADA (detached-start.log y detached-smoke.log).
+El fallo intermedio test-final-revision.log corresponde a una comprobacion
+que solo pudo avanzar al detener deliberadamente aquellos servicios; se
+conserva y no es la evidencia final. final-smoke.json es el resultado vigente.

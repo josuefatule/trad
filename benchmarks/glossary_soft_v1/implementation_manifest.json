@@ -1,0 +1,209 @@
+{
+  "version": "medical-657-v1",
+  "generated_utc": "2026-10-22T05:36:56.691027+00:00",
+  "scope": "Reversible soft runtime; research unchanged; no live DeepL/voice/OBS certification",
+  "python_tests_passed": 124,
+  "interface_suites_passed": 3,
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "103dbdf0e92828bfb685523d2fef464456d4972cbc856b1aa169ed9f689489af",
+      "bytes": 1629
+    },
+    {
+      "path": "app/asr/whisperlivekit_client.py",
+      "sha256": "2e48a80b79aaa9db97511198b30a43d36773e02499a46dcdd841825cb4a1adc3",
+      "bytes": 18033
+    },
+    {
+      "path": "app/main.py",
+      "sha256": "bdbb7e8e2f0fba4ae40bd3aab2d904e3e23a8dd261b324c3ae2afd5c383adeb6",
+      "bytes": 26347
+    },
+    {
+      "path": "app/static/glossary_control.js",
+      "sha256": "2d8b0b8dca11903ba87cb6a78bbe38e32a7ad38f3bb603174e9da6475063d220",
+      "bytes": 1886
+    },
+    {
+      "path": "app/templates/operator.html",
+      "sha256": "11e37613b1a3889bdae7d927a646191eeffc37b250b09a1805977b43d62c1136",
+      "bytes": 5412
+    },
+    {
+      "path": "app/terminology/__init__.py",
+      "sha256": "e059e981b91657e6e06f2ffa28894409a4ecf5d7f262414eb0409263e6bbf751",
+      "bytes": 64
+    },
+    {
+      "path": "app/terminology/boundary_policy.py",
+      "sha256": "1ed4fe608f4b9169441de448e9bd5cca65dade0a0dae67477747c366785726be",
+      "bytes": 1951
+    },
+    {
+      "path": "app/terminology/context_guards.py",
+      "sha256": "5ecfabd0cba9283da919821a5a0a8a9a6358e95c86a33a70af30fd2d38412881",
+      "bytes": 5832
+    },
+    {
+      "path": "app/terminology/guarded_matcher.py",
+      "sha256": "c7a2f60253b8ce01271d2c18d4457dea22fbf64242343c8125dd3177c7f13471",
+      "bytes": 3779
+    },
+    {
+      "path": "app/terminology/lexical.py",
+      "sha256": "45a3f3049d4d2144ca3be736ac80af18d22dda1fe912fcb3f49e7a51cdbd9b78",
+      "bytes": 1595
+    },
+    {
+      "path": "app/terminology/matching_policy.py",
+      "sha256": "cb5fb410a5b1e2e56f90e81362199dde124935b8c1c3f319b6779f1aff681f0d",
+      "bytes": 5259
+    },
+    {
+      "path": "app/terminology/pressure_base.py",
+      "sha256": "daec83cbb8b03592e014c15614c217576731e3e04e28db57f183dc8ed96dc623",
+      "bytes": 2521
+    },
+    {
+      "path": "app/terminology/rollout.py",
+      "sha256": "2709fae7844b682609672c3bc8e7fab49adfb1f011ce1c3dd7508d97dae177f5",
+      "bytes": 10489
+    },
+    {
+      "path": "app/translation/engine.py",
+      "sha256": "267c8a4c0b91ce70790712773718928f4820e5c2bc92b4676f01783b4a584702",
+      "bytes": 24442
+    },
+    {
+      "path": "app/translation/models.py",
+      "sha256": "8b05a5c464cfcea6c2dc594726079508e88940ea98ecd1069942731eebd897b2",
+      "bytes": 1533
+    },
+    {
+      "path": "app/translation/providers.py",
+      "sha256": "6c81bd25505abb79a4b1ad422eb67022f00a2785dc9dd5c607d8047da977ca94",
+      "bytes": 4593
+    },
+    {
+      "path": "backups/glossary-soft-v1/.env.example",
+      "sha256": "91a0bc6cca629afc49ca34e469c7c8aefe24a77b0e5b66bcf4ae5ba2f68b1992",
+      "bytes": 1395
+    },
+    {
+      "path": "backups/glossary-soft-v1/app/asr/whisperlivekit_client.py",
+      "sha256": "6c39e1979e3ef19e594dfeceb7d89b128fb666518a9239e78a36531d6af3f6dc",
+      "bytes": 17555
+    },
+    {
+      "path": "backups/glossary-soft-v1/app/main.py",
+      "sha256": "6ca6529da616da1f5cd6793e61712842f60c7b69823ddc5099cf8b3785583e17",
+      "bytes": 24504
+    },
+    {
+      "path": "backups/glossary-soft-v1/app/templates/operator.html",
+      "sha256": "56c63bf14c34635988671bc8d924542682c8490e52d4f4b65443c55dab11cda4",
+      "bytes": 5002
+    },
+    {
+      "path": "backups/glossary-soft-v1/app/translation/engine.py",
+      "sha256": "ef4f89966562e3fc3353e22ed165895ef50c27814c8f475b7108c9cbab18c1b5",
+      "bytes": 23755
+    },
+    {
+      "path": "backups/glossary-soft-v1/app/translation/models.py",
+      "sha256": "65ce3285925fea11dd6ecf07ab77290a7a225b549562315ee34fc0f7785f2dca",
+      "bytes": 1498
+    },
+    {
+      "path": "backups/glossary-soft-v1/app/translation/providers.py",
+      "sha256": "7c34d41e91822fc5abec6e5e8644e6dede3b38058300eb6c3c1a3c2c0567e4a9",
+      "bytes": 4453
+    },
+    {
+      "path": "benchmarks/evaluate_soft_glossary.py",
+      "sha256": "de0f693abdc0c13fc8c32bca26eaa1ffdf58a0c5b99079a07b28d3603d0f3b67",
+      "bytes": 4792
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/baseline.json",
+      "sha256": "47a3bc9630e66d03fd818184436dd6f30c1c27be70ab9119af1033b8ee33e8bd",
+      "bytes": 169097
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/browser_results.json",
+      "sha256": "1dc276289407339484320ff07bd190c0c0cd45e45dde01814834dc978c86fe48",
+      "bytes": 56443
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/browser_tests.log",
+      "sha256": "8c59aaef82e0ff00615316bc7068a7cbc04c3a5d2dee0e7e6c2f3c8100b963b0",
+      "bytes": 139709
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/interface_tests.json",
+      "sha256": "4e1e9a53b00b777e7af942244c7f3112e98958005257b36394ac18d6281ce190",
+      "bytes": 623
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/preservation_final.json",
+      "sha256": "6ea12e3c51508fe53e6cba7df8b6f6d8fcf632c0a8305891a7c63e042e2ff2f0",
+      "bytes": 191831
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/readiness.json",
+      "sha256": "80843c42ac77d94b9673546b33abda1949015f1226dbd4404e79d22b919a5a13",
+      "bytes": 1009
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/reliability_tests.log",
+      "sha256": "75a96d7340e039b92dda153c317098317c95b989889270e14cafa8df9c444ace",
+      "bytes": 17166
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/replay.log",
+      "sha256": "73939f5baa0e7d55aa02ec5cc52f9c0d75e469a90d9695fd5f5dfd80a1e31c2f",
+      "bytes": 452
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/replay_results.json",
+      "sha256": "547d83e225fade41f71e97ea2321635540ed5d7900873f5c9b1d306e45124b11",
+      "bytes": 196006
+    },
+    {
+      "path": "benchmarks/glossary_soft_v1/tests.log",
+      "sha256": "79accd54ce6c00c45be1e875006169b5b0b3854bed8df63091dfbfb3dd08949b",
+      "bytes": 59518
+    },
+    {
+      "path": "glossaries/releases/medical-657-v1/bundle.json",
+      "sha256": "6957e4b9cf9c5c51a747e7e302c296bcc320d49538982c7eec79a49509ed0548",
+      "bytes": 340300
+    },
+    {
+      "path": "glossaries/releases/medical-657-v1/manifest.json",
+      "sha256": "12c8a9b74c44f50b24d8e66cdae360a514229bbe267db5286b768db2dea90ceb",
+      "bytes": 974
+    },
+    {
+      "path": "GLOSSARY_SOFT_IMPLEMENTATION.txt",
+      "sha256": "21bb670533a100713f6e0e276851cc1db488ab6c544b95a114bb3fb808d55e2a",
+      "bytes": 8357
+    },
+    {
+      "path": "tests/test_glossary_control.cjs",
+      "sha256": "7f0fc1a6b1416f062a368e7743dbeda8c6902544b0b7fc43e794aa5a434c34a6",
+      "bytes": 2123
+    },
+    {
+      "path": "tests/test_soft_glossary.py",
+      "sha256": "b5268fff2fbc4509c5ac3d03345cfb96ec8a4194b77765056c87c8c887029ab5",
+      "bytes": 14170
+    },
+    {
+      "path": "tools/build_soft_glossary.py",
+      "sha256": "874fb78630cc5f74a5d46cdeda27900403845e78ac2032f167437fb263e999f9",
+      "bytes": 7164
+    }
+  ]
+}

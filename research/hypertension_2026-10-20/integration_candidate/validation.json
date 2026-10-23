@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "package_version": "1.0.0-research",
+  "kind": "package_structural_checks_not_clinical_or_audio_validation",
+  "status": "research_preparation_only",
+  "integrated": false,
+  "runtime_approved": false,
+  "automatic_substitution_approved": false,
+  "passed": true,
+  "test_output": "test_106_literal_acceptances_do_not_override_safety (__main__.PackageChecks.test_106_literal_acceptances_do_not_override_safety) ... ok\ntest_12_strict_exclusions_include_all_old_11 (__main__.PackageChecks.test_12_strict_exclusions_include_all_old_11) ... ok\ntest_13_unsupported_forms_not_in_review_selection (__main__.PackageChecks.test_13_unsupported_forms_not_in_review_selection) ... ok\ntest_abbreviation_changes_exactly_6_plus_22 (__main__.PackageChecks.test_abbreviation_changes_exactly_6_plus_22) ... ok\ntest_all_567_forms_and_900_occurrences_once (__main__.PackageChecks.test_all_567_forms_and_900_occurrences_once) ... ok\ntest_all_657_canonical_pairs_exactly_preserved (__main__.PackageChecks.test_all_657_canonical_pairs_exactly_preserved) ... ok\ntest_all_referenced_source_and_definition_ids_resolve (__main__.PackageChecks.test_all_referenced_source_and_definition_ids_resolve) ... ok\ntest_bilingual_view_has_no_aliases_or_direction_activation (__main__.PackageChecks.test_bilingual_view_has_no_aliases_or_direction_activation) ... ok\ntest_clinical_and_reference_guards_preserved (__main__.PackageChecks.test_clinical_and_reference_guards_preserved) ... ok\ntest_each_language_view_covers_657_and_has_only_review_variants (__main__.PackageChecks.test_each_language_view_covers_657_and_has_only_review_variants) ... ok\ntest_existing_glossary_conflicts_not_selected (__main__.PackageChecks.test_existing_glossary_conflicts_not_selected) ... ok\ntest_latest_124_records_override_evidence_without_losing_history (__main__.PackageChecks.test_latest_124_records_override_evidence_without_losing_history) ... ok\ntest_negative_case_accent_and_hyphen_collision_detected (__main__.PackageChecks.test_negative_case_accent_and_hyphen_collision_detected) ... ok\ntest_negative_literal_hit_cannot_promote_excluded_alias (__main__.PackageChecks.test_negative_literal_hit_cannot_promote_excluded_alias) ... ok\ntest_negative_overlay_wrong_baseline_or_unknown_decision_rejected (__main__.PackageChecks.test_negative_overlay_wrong_baseline_or_unknown_decision_rejected) ... ok\ntest_negative_overlay_wrong_concept_rejected (__main__.PackageChecks.test_negative_overlay_wrong_concept_rejected) ... ok\ntest_negative_unknown_status_fails_closed (__main__.PackageChecks.test_negative_unknown_status_fails_closed) ... ok\ntest_no_operational_policies_or_approvals_anywhere_in_payload (__main__.PackageChecks.test_no_operational_policies_or_approvals_anywhere_in_payload) ... ok\ntest_old_47_context_conditions_preserved (__main__.PackageChecks.test_old_47_context_conditions_preserved) ... ok\ntest_pad_eca_mra_retained_as_restricted_collisions (__main__.PackageChecks.test_pad_eca_mra_retained_as_restricted_collisions) ... ok\ntest_selected_review_forms_have_no_multi_concept_collision (__main__.PackageChecks.test_selected_review_forms_have_no_multi_concept_collision) ... ok\ntest_specific_latest_semantic_restrictions (__main__.PackageChecks.test_specific_latest_semantic_restrictions) ... ok\ntest_units_and_inflections_remain_exact_surface_strings (__main__.PackageChecks.test_units_and_inflections_remain_exact_surface_strings) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.358s\n\nOK\n",
+  "protection": {
+    "existing_files_checked": 807,
+    "research_and_glossary_files_checked": 597,
+    "all_existing_research_and_glossaries_byte_identical": true,
+    "all_existing_files_byte_identical": false,
+    "unchanged_existing_files": 804,
+    "changes_observed_outside_write_boundary": [
+      {
+        "path": "trad_lab/m5c2r/evidence.js",
+        "baseline_sha256": "e9a1b90e98d309960ca6c1106ad6e90b0fa0391b988394f601bc0ac7f6f3c230",
+        "observed_sha256": "88565a0796c8d6cd9f12712895e38686149de6aea3519e6691096d7846403a98",
+        "status": "observed_change_outside_builder_write_boundary_not_reverted"
+      },
+      {
+        "path": "trad_lab/m5c2r/prepare.py",
+        "baseline_sha256": "2d19b3559baa3e808f651581ba8437308864eb6481b22bbe7981cab0a9430ad3",
+        "observed_sha256": "70b7b3e44cd03634d522ddfed8e0c14b2e175f8d053d7dc34bfffdaf1ba185b5",
+        "status": "observed_change_outside_builder_write_boundary_not_reverted"
+      },
+      {
+        "path": "trad_lab/m5c2r/test_recorder.cjs",
+        "baseline_sha256": "c499fa297b0b3bd39f0e5ea280d6df417daa9190b86eecd01850430e8242ed08",
+        "observed_sha256": "5201578231f31146ccff50c7b665d0f7e42e36f1375c9abb5562327d05da7902",
+        "status": "observed_change_outside_builder_write_boundary_not_reverted"
+      }
+    ],
+    "additions_observed_outside_write_boundary": [
+      "trad_lab/m5c2r/check_evidence.py",
+      "trad_lab/m5c2r/test_capture.cjs"
+    ],
+    "builder_write_boundary": "integration_candidate only; observations are not reverted or attributed to an actor",
+    "production_connected": false,
+    "runtime_or_audio_tests_run": false
+  },
+  "concepts": 657,
+  "alternative_forms": 567,
+  "bucket_counts": {
+    "context_required": 43,
+    "definition_required": 211,
+    "excluded_strict_equivalence": 12,
+    "held_for_evidence": 12,
+    "preserve_inflection": 5,
+    "preserve_unit_symbol": 19,
+    "reviewable_variant": 265
+  },
+  "latest_decisions_applied": 124,
+  "abbreviation_changes": 28,
+  "query_review_variants": 265,
+  "internal_cross_language_collision_groups": 3,
+  "internal_same_language_collision_groups": 2,
+  "existing_glossary_relations": {
+    "same_concept_overlap": 472,
+    "conflicting_concept_targets": 1,
+    "unresolved_existing_target": 2
+  },
+  "automatic_substitutions_approved": 0,
+  "independent_clinician_review": "not_performed"
+}

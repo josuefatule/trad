@@ -1,0 +1,248 @@
+[
+  {
+    "input": "primary allosteronism by this test",
+    "expected": "primary aldosteronism by this test",
+    "output": "primary aldosteronism by this test",
+    "passed": true,
+    "changes": [
+      {
+        "source": "primary allosteronism",
+        "replacement": "primary aldosteronism",
+        "start": 0,
+        "end": 21,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.956071,
+        "canonical": "primary aldosteronism"
+      }
+    ],
+    "blocked": [
+      {
+        "source": "primary allosteronism by",
+        "canonical": "primary aldosteronism",
+        "start": 0,
+        "end": 24,
+        "confidence": 0.9627272727272728,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "function_word_sequence_changed",
+          "no_lossless_token_alignment"
+        ],
+        "alignment": null
+      }
+    ]
+  },
+  {
+    "input": "No primary allosteronism by this test; keep ≥5 mg.",
+    "expected": "No primary aldosteronism by this test; keep ≥5 mg.",
+    "output": "No primary aldosteronism by this test; keep ≥5 mg.",
+    "passed": true,
+    "changes": [
+      {
+        "source": "primary allosteronism",
+        "replacement": "primary aldosteronism",
+        "start": 3,
+        "end": 24,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.956071,
+        "canonical": "primary aldosteronism"
+      }
+    ],
+    "blocked": [
+      {
+        "source": "No primary allosteronism",
+        "canonical": "primary aldosteronism",
+        "start": 0,
+        "end": 24,
+        "confidence": 0.8738095238095238,
+        "action": "suggest",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "function_word_sequence_changed",
+          "negation_changed",
+          "no_lossless_token_alignment"
+        ],
+        "alignment": null
+      },
+      {
+        "source": "primary allosteronism by",
+        "canonical": "primary aldosteronism",
+        "start": 3,
+        "end": 27,
+        "confidence": 0.9627272727272728,
+        "action": "auto",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "function_word_sequence_changed",
+          "no_lossless_token_alignment"
+        ],
+        "alignment": null
+      }
+    ]
+  },
+  {
+    "input": "the 10-year ASCVD risk",
+    "expected": "the 10-year ASCVD risk",
+    "output": "the 10-year ASCVD risk",
+    "passed": true,
+    "changes": [],
+    "blocked": [
+      {
+        "source": "10-year ASCVD risk",
+        "canonical": "ten-year ASCVD risk",
+        "start": 4,
+        "end": 22,
+        "confidence": 0.8666085440278989,
+        "action": "suggest",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "literal_quantity_or_unit_changed",
+          "no_lossless_token_alignment"
+        ],
+        "alignment": null
+      },
+      {
+        "source": "the 10-year ASCVD risk",
+        "canonical": "ten-year ASCVD risk",
+        "start": 0,
+        "end": 22,
+        "confidence": 0.93125,
+        "action": "suggest",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "function_word_sequence_changed",
+          "literal_quantity_or_unit_changed",
+          "no_lossless_token_alignment"
+        ],
+        "alignment": null
+      }
+    ]
+  },
+  {
+    "input": "secondary hypertension",
+    "expected": "secondary hypertension",
+    "output": "secondary hypertension",
+    "passed": true,
+    "changes": [],
+    "blocked": []
+  },
+  {
+    "input": "systolic blood pressure",
+    "expected": "systolic blood pressure",
+    "output": "systolic blood pressure",
+    "passed": true,
+    "changes": [],
+    "blocked": [
+      {
+        "source": "systolic blood pressure",
+        "canonical": "diastolic blood pressure",
+        "start": 0,
+        "end": 23,
+        "confidence": 0.8998020781791193,
+        "action": "suggest",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "opposed_qualifier_or_grammatical_number_changed"
+        ],
+        "alignment": [
+          [
+            [
+              "systolic"
+            ],
+            "diastolic"
+          ],
+          [
+            [
+              "blood"
+            ],
+            "blood"
+          ],
+          [
+            [
+              "pressure"
+            ],
+            "pressure"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "input": "cardiovascular event",
+    "expected": "cardiovascular event",
+    "output": "cardiovascular event",
+    "passed": true,
+    "changes": [],
+    "blocked": [
+      {
+        "source": "cardiovascular event",
+        "canonical": "cardiovascular events",
+        "start": 0,
+        "end": 20,
+        "confidence": 0.9774859287054408,
+        "action": "suggest",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "opposed_qualifier_or_grammatical_number_changed"
+        ],
+        "alignment": [
+          [
+            [
+              "cardiovascular"
+            ],
+            "cardiovascular"
+          ],
+          [
+            [
+              "event"
+            ],
+            "events"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "input": "mineralocorticoid receptors",
+    "expected": "mineralocorticoid receptors",
+    "output": "mineralocorticoid receptors",
+    "passed": true,
+    "changes": [],
+    "blocked": [
+      {
+        "source": "mineralocorticoid receptors",
+        "canonical": "mineralocorticoid receptor",
+        "start": 0,
+        "end": 27,
+        "confidence": 0.9826859045504994,
+        "action": "suggest",
+        "rule": "glossary_fuzzy",
+        "accepted": false,
+        "reasons": [
+          "opposed_qualifier_or_grammatical_number_changed"
+        ],
+        "alignment": [
+          [
+            [
+              "mineralocorticoid"
+            ],
+            "mineralocorticoid"
+          ],
+          [
+            [
+              "receptors"
+            ],
+            "receptor"
+          ]
+        ]
+      }
+    ]
+  }
+]

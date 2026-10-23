@@ -1,0 +1,1474 @@
+[
+  {
+    "id": "A001",
+    "language": "en",
+    "text": "No hypertension; potassium is not low.",
+    "category": "negation",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A002",
+    "language": "es",
+    "text": "No hay hipertensión ni hipopotasemia.",
+    "category": "negation",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A003",
+    "language": "en",
+    "text": "The record says 5 mg, not 50 mg; BP <140/90 mmHg.",
+    "category": "dose_comparator",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A004",
+    "language": "es",
+    "text": "Constan 5 mg, no 50 mg; presión arterial ≥140/90 mmHg.",
+    "category": "dose_comparator",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A005",
+    "language": "en",
+    "text": "Keep -5%, 0.5 mg, 5 µg/dL and 5 mg/dL distinct.",
+    "category": "unit_prefix_sign",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A006",
+    "language": "es",
+    "text": "Conservar −5%, 0,5 mg, 5 μg/dL y 5 mg/dL.",
+    "category": "unit_prefix_sign",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A007",
+    "language": "en",
+    "text": "MRA is undefined in this sentence.",
+    "category": "ambiguous_abbreviation",
+    "protected_forms": [
+      "MRA"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A008",
+    "language": "es",
+    "text": "ECA no tiene definición local.",
+    "category": "ambiguous_abbreviation",
+    "protected_forms": [
+      "ECA"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A009",
+    "language": "es",
+    "text": "PAD no tiene definición local.",
+    "category": "ambiguous_abbreviation",
+    "protected_forms": [
+      "PAD"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A010",
+    "language": "en",
+    "text": "PAD has no local definition.",
+    "category": "ambiguous_abbreviation",
+    "protected_forms": [
+      "PAD"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A011",
+    "language": "en",
+    "text": "HR, PA, HRV, RR and CI need local definitions.",
+    "category": "ambiguous_abbreviation",
+    "protected_forms": [
+      "HR",
+      "PA",
+      "HRV",
+      "RR",
+      "CI"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A012",
+    "language": "es",
+    "text": "IC, RAR y PA necesitan definición local.",
+    "category": "ambiguous_abbreviation",
+    "protected_forms": [
+      "IC",
+      "RAR",
+      "PA"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A013",
+    "language": "es",
+    "text": "El coordinador conjunto organizó la reunión.",
+    "category": "rejected_alias",
+    "protected_forms": [
+      "coordinador conjunto"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A014",
+    "language": "es",
+    "text": "Se discutió la relación presión-natriuresis.",
+    "category": "rejected_alias",
+    "protected_forms": [
+      "relación presión-natriuresis"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A015",
+    "language": "es",
+    "text": "La carga de medicación se preparó en farmacia.",
+    "category": "rejected_alias",
+    "protected_forms": [
+      "carga de medicación"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A016",
+    "language": "es",
+    "text": "La frase hipertensión farmacológica resulta ambigua.",
+    "category": "rejected_alias",
+    "protected_forms": [
+      "hipertensión farmacológica"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A017",
+    "language": "es",
+    "text": "La prueba de captopril necesita especificar el protocolo.",
+    "category": "diagnostic_purpose",
+    "protected_forms": [
+      "prueba de captopril"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A018",
+    "language": "en",
+    "text": "The 2025 ACC/AHA guideline needs an explicit topic.",
+    "category": "reference_identity",
+    "protected_forms": [
+      "2025 ACC/AHA guideline"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A019",
+    "language": "en",
+    "text": "SPYRAL HTN-OFF MED and SPYRAL HTN-ON MED are different arms.",
+    "category": "trial_arm",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A020",
+    "language": "en",
+    "text": "Keep SPRINT, ESPRIT, STEP and STEP-1 distinct.",
+    "category": "trial_identity",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A021",
+    "language": "en",
+    "text": "ACE and ACE2; AT1 and AT2; HFrEF and HFpEF.",
+    "category": "subtype_identity",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A022",
+    "language": "en",
+    "text": "Left is not right, and severe is not serious.",
+    "category": "clinical_polarity",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A023",
+    "language": "es",
+    "text": "Sistólica no es diastólica; alta no es baja.",
+    "category": "clinical_polarity",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A024",
+    "language": "en",
+    "text": "She will map the route and check the HR policy.",
+    "category": "nonmedical_negative",
+    "protected_forms": [
+      "HR"
+    ],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A025",
+    "language": "en",
+    "text": "The orange suitcase is beside the wooden chair.",
+    "category": "nonmedical_negative",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A026",
+    "language": "es",
+    "text": "La maleta naranja está junto a la silla de madera.",
+    "category": "nonmedical_negative",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A027",
+    "language": "en",
+    "text": "  No edema,please;keep 5 mg.  ",
+    "category": "spacing_native_only",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A028",
+    "language": "es",
+    "text": "  No edema,por favor;conservar 5 mg.  ",
+    "category": "spacing_native_only",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A029",
+    "language": "en",
+    "text": "The transcript contains hyper tenson.",
+    "category": "synthetic_split_typo",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "A030",
+    "language": "en",
+    "text": "They discussed primary aldosteronizm.",
+    "category": "synthetic_typo",
+    "protected_forms": [],
+    "origin": "fixed_constructed_case_not_recorded_speech"
+  },
+  {
+    "id": "NP001a",
+    "language": "es",
+    "text": "presión arterial alta",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_ee6fe3240e4f",
+    "expected_concept_id": "HTN_97cf39b495a5",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP001b",
+    "language": "es",
+    "text": "presión arterial baja",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_97cf39b495a5",
+    "expected_concept_id": "HTN_ee6fe3240e4f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP002a",
+    "language": "es",
+    "text": "presión sistólica",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_69524c07e2bc",
+    "expected_concept_id": "HTN_ce88c1a364ff",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP002b",
+    "language": "es",
+    "text": "presión diastólica",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_ce88c1a364ff",
+    "expected_concept_id": "HTN_69524c07e2bc",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP003a",
+    "language": "es",
+    "text": "meta de presión arterial",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_ab0938bb8a9b",
+    "expected_concept_id": "HTN_21aa1e2a0a86",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP003b",
+    "language": "es",
+    "text": "lectura de presión arterial",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_21aa1e2a0a86",
+    "expected_concept_id": "HTN_ab0938bb8a9b",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP004a",
+    "language": "es",
+    "text": "hipertensión en etapa 1",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_05927d0a6a03",
+    "expected_concept_id": "HTN_8db016d88b4d",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP004b",
+    "language": "es",
+    "text": "hipertensión en etapa 2",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8db016d88b4d",
+    "expected_concept_id": "HTN_05927d0a6a03",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP005a",
+    "language": "es",
+    "text": "receptor AT1",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9adaf9f0c4c9",
+    "expected_concept_id": "HTN_b8d2cf20edaf",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP005b",
+    "language": "es",
+    "text": "receptor AT2",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_b8d2cf20edaf",
+    "expected_concept_id": "HTN_9adaf9f0c4c9",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP006a",
+    "language": "es",
+    "text": "presión arterial en bipedestación",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_92d75169c430",
+    "expected_concept_id": "HTN_56f284469e19",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP006b",
+    "language": "es",
+    "text": "presión arterial en sedestación",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_56f284469e19",
+    "expected_concept_id": "HTN_92d75169c430",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP007a",
+    "language": "es",
+    "text": "biterapia antihipertensiva",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_84e2adba4b70",
+    "expected_concept_id": "HTN_b11a365c1e0e",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP007b",
+    "language": "es",
+    "text": "triterapia antihipertensiva",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_b11a365c1e0e",
+    "expected_concept_id": "HTN_84e2adba4b70",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP008a",
+    "language": "es",
+    "text": "calcioantagonistas dihidropiridínicos",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_d4477e83d156",
+    "expected_concept_id": "HTN_49866f6cfaa1",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP008b",
+    "language": "es",
+    "text": "calcioantagonistas no dihidropiridínicos",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_49866f6cfaa1",
+    "expected_concept_id": "HTN_d4477e83d156",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP009a",
+    "language": "es",
+    "text": "presión arterial elevada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_f48ce01048ba",
+    "expected_concept_id": "HTN_1f6c35b66555",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP009b",
+    "language": "es",
+    "text": "presión arterial no elevada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_1f6c35b66555",
+    "expected_concept_id": "HTN_f48ce01048ba",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP010a",
+    "language": "es",
+    "text": "presión arterial sistólica",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_69524c07e2bc",
+    "expected_concept_id": "HTN_ce88c1a364ff",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP010b",
+    "language": "es",
+    "text": "presión arterial diastólica",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_ce88c1a364ff",
+    "expected_concept_id": "HTN_69524c07e2bc",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP011a",
+    "language": "es",
+    "text": "hipertensión no controlada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_0dbfbbb61094",
+    "expected_concept_id": "HTN_8608a7c05ed4",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP011b",
+    "language": "es",
+    "text": "hipertensión controlada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8608a7c05ed4",
+    "expected_concept_id": "HTN_0dbfbbb61094",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP012a",
+    "language": "es",
+    "text": "hipertensión en estadio 1",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_05927d0a6a03",
+    "expected_concept_id": "HTN_8db016d88b4d",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP012b",
+    "language": "es",
+    "text": "hipertensión en estadio 2",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8db016d88b4d",
+    "expected_concept_id": "HTN_05927d0a6a03",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP013a",
+    "language": "es",
+    "text": "hipertensión sistólica aislada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_65a364b6a896",
+    "expected_concept_id": "HTN_be66e539fd81",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP013b",
+    "language": "es",
+    "text": "hipertensión diastólica aislada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_be66e539fd81",
+    "expected_concept_id": "HTN_65a364b6a896",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP014a",
+    "language": "es",
+    "text": "emergencia hipertensiva",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_3c45527d0208",
+    "expected_concept_id": "HTN_e07ec2ba2d1e",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP014b",
+    "language": "es",
+    "text": "urgencia hipertensiva",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e07ec2ba2d1e",
+    "expected_concept_id": "HTN_3c45527d0208",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP015a",
+    "language": "es",
+    "text": "prevención primordial",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_788e89243e34",
+    "expected_concept_id": "HTN_9c147fb0dd01",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP015b",
+    "language": "es",
+    "text": "prevención primaria",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9c147fb0dd01",
+    "expected_concept_id": "HTN_788e89243e34",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP016a",
+    "language": "es",
+    "text": "ensayo SPRINT",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_418a9b8ed5a9",
+    "expected_concept_id": "HTN_22fd06c13194",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP016b",
+    "language": "es",
+    "text": "ensayo ESPRIT",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_22fd06c13194",
+    "expected_concept_id": "HTN_418a9b8ed5a9",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP017a",
+    "language": "es",
+    "text": "angiotensina II",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_5375a218e008",
+    "expected_concept_id": "HTN_9da3b56d1bcd",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP017b",
+    "language": "es",
+    "text": "angiotensina I",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9da3b56d1bcd",
+    "expected_concept_id": "HTN_5375a218e008",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP018a",
+    "language": "es",
+    "text": "enzima convertidora de angiotensina",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_dac662f6ef1f",
+    "expected_concept_id": "HTN_95c847b235dd",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP018b",
+    "language": "es",
+    "text": "enzima convertidora de angiotensina 2",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_95c847b235dd",
+    "expected_concept_id": "HTN_dac662f6ef1f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP019a",
+    "language": "es",
+    "text": "tasa de filtración glomerular estimada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8fb4ea01465f",
+    "expected_concept_id": "HTN_6f615a3d25c5",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP019b",
+    "language": "es",
+    "text": "tasa de filtración glomerular medida",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_6f615a3d25c5",
+    "expected_concept_id": "HTN_8fb4ea01465f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP020a",
+    "language": "es",
+    "text": "tratamiento farmacológico",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_62d56e18d9ed",
+    "expected_concept_id": "HTN_1e5b2c8f44aa",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP020b",
+    "language": "es",
+    "text": "tratamiento no farmacológico",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_1e5b2c8f44aa",
+    "expected_concept_id": "HTN_62d56e18d9ed",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP021a",
+    "language": "es",
+    "text": "insuficiencia cardíaca con fracción de eyección reducida",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_fa313c8be930",
+    "expected_concept_id": "HTN_e4cdd5e1f9b8",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP021b",
+    "language": "es",
+    "text": "insuficiencia cardíaca con fracción de eyección preservada",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e4cdd5e1f9b8",
+    "expected_concept_id": "HTN_fa313c8be930",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP022a",
+    "language": "es",
+    "text": "actividad física",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_effbb277226f",
+    "expected_concept_id": "HTN_50b4fc97bb14",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP022b",
+    "language": "es",
+    "text": "inactividad física",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_50b4fc97bb14",
+    "expected_concept_id": "HTN_effbb277226f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP023a",
+    "language": "es",
+    "text": "receptor de angiotensina II tipo 1",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9adaf9f0c4c9",
+    "expected_concept_id": "HTN_b8d2cf20edaf",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP023b",
+    "language": "es",
+    "text": "receptor de angiotensina II tipo 2",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_b8d2cf20edaf",
+    "expected_concept_id": "HTN_9adaf9f0c4c9",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP024a",
+    "language": "es",
+    "text": "inflado del manguito",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_3f080bd74d22",
+    "expected_concept_id": "HTN_81eab97180b4",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP024b",
+    "language": "es",
+    "text": "desinflado del manguito",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_81eab97180b4",
+    "expected_concept_id": "HTN_3f080bd74d22",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP025a",
+    "language": "es",
+    "text": "presión arterial automatizada en consultorio sin observador",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_7a7149e08b17",
+    "expected_concept_id": "HTN_e7edf1c35258",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP025b",
+    "language": "es",
+    "text": "presión arterial automatizada en consultorio con observador",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e7edf1c35258",
+    "expected_concept_id": "HTN_7a7149e08b17",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP026a",
+    "language": "es",
+    "text": "disfunción diastólica",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_83a6865ff877",
+    "expected_concept_id": "HTN_a0b18808071a",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP026b",
+    "language": "es",
+    "text": "disfunción sistólica",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_a0b18808071a",
+    "expected_concept_id": "HTN_83a6865ff877",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP027a",
+    "language": "es",
+    "text": "factores de riesgo modificables",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_28bddd9d03fe",
+    "expected_concept_id": "HTN_3061ea0c569a",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP027b",
+    "language": "es",
+    "text": "factores de riesgo no modificables",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_3061ea0c569a",
+    "expected_concept_id": "HTN_28bddd9d03fe",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP028a",
+    "language": "es",
+    "text": "ensayo SPYRAL HTN-OFF MED",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_2bf1d385e126",
+    "expected_concept_id": "HTN_8b09e2cea13f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP028b",
+    "language": "es",
+    "text": "ensayo SPYRAL HTN-ON MED",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8b09e2cea13f",
+    "expected_concept_id": "HTN_2bf1d385e126",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP029a",
+    "language": "es",
+    "text": "bloqueadores de los canales de calcio dihidropiridínicos",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_d4477e83d156",
+    "expected_concept_id": "HTN_49866f6cfaa1",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP029b",
+    "language": "es",
+    "text": "bloqueadores de los canales de calcio no dihidropiridínicos",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_49866f6cfaa1",
+    "expected_concept_id": "HTN_d4477e83d156",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP030a",
+    "language": "en",
+    "text": "stage one hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_05927d0a6a03",
+    "expected_concept_id": "HTN_8db016d88b4d",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP030b",
+    "language": "en",
+    "text": "stage two hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8db016d88b4d",
+    "expected_concept_id": "HTN_05927d0a6a03",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP031a",
+    "language": "en",
+    "text": "stage one hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_05927d0a6a03",
+    "expected_concept_id": "HTN_8db016d88b4d",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP031b",
+    "language": "en",
+    "text": "stage 2 hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8db016d88b4d",
+    "expected_concept_id": "HTN_05927d0a6a03",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP032a",
+    "language": "en",
+    "text": "stage two hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8db016d88b4d",
+    "expected_concept_id": "HTN_05927d0a6a03",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP032b",
+    "language": "en",
+    "text": "stage 1 hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_05927d0a6a03",
+    "expected_concept_id": "HTN_8db016d88b4d",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP033a",
+    "language": "en",
+    "text": "angiotensin 2",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_5375a218e008",
+    "expected_concept_id": "HTN_9da3b56d1bcd",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP033b",
+    "language": "en",
+    "text": "angiotensin I",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9da3b56d1bcd",
+    "expected_concept_id": "HTN_5375a218e008",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP034a",
+    "language": "en",
+    "text": "pharmacologic therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_62d56e18d9ed",
+    "expected_concept_id": "HTN_1e5b2c8f44aa",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP034b",
+    "language": "en",
+    "text": "nonpharmacologic therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_1e5b2c8f44aa",
+    "expected_concept_id": "HTN_62d56e18d9ed",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP035a",
+    "language": "en",
+    "text": "pharmacologic therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_62d56e18d9ed",
+    "expected_concept_id": "HTN_1e5b2c8f44aa",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP035b",
+    "language": "en",
+    "text": "non-pharmacologic therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_1e5b2c8f44aa",
+    "expected_concept_id": "HTN_62d56e18d9ed",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP036a",
+    "language": "en",
+    "text": "AT1 receptor",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9adaf9f0c4c9",
+    "expected_concept_id": "HTN_b8d2cf20edaf",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP036b",
+    "language": "en",
+    "text": "AT2 receptor",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_b8d2cf20edaf",
+    "expected_concept_id": "HTN_9adaf9f0c4c9",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP037a",
+    "language": "en",
+    "text": "unattended AOBP",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_7a7149e08b17",
+    "expected_concept_id": "HTN_e7edf1c35258",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP037b",
+    "language": "en",
+    "text": "attended AOBP",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e7edf1c35258",
+    "expected_concept_id": "HTN_7a7149e08b17",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP038a",
+    "language": "en",
+    "text": "medication non-adherence",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_293eb322616c",
+    "expected_concept_id": "HTN_e9e9c8fca346",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP038b",
+    "language": "en",
+    "text": "medication adherence",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e9e9c8fca346",
+    "expected_concept_id": "HTN_293eb322616c",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP039a",
+    "language": "en",
+    "text": "non-modifiable risk factors",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_3061ea0c569a",
+    "expected_concept_id": "HTN_28bddd9d03fe",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP039b",
+    "language": "en",
+    "text": "modifiable risk factors",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_28bddd9d03fe",
+    "expected_concept_id": "HTN_3061ea0c569a",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP040a",
+    "language": "en",
+    "text": "2025 ACC/AHA guideline",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_b2e17b4f8177",
+    "expected_concept_id": "HTN_fc1d22db340b",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP040b",
+    "language": "en",
+    "text": "2017 ACC/AHA guideline",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_fc1d22db340b",
+    "expected_concept_id": "HTN_b2e17b4f8177",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP041a",
+    "language": "en",
+    "text": "dihydropyridine CCBs",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_d4477e83d156",
+    "expected_concept_id": "HTN_49866f6cfaa1",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP041b",
+    "language": "en",
+    "text": "non-dihydropyridine CCBs",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_49866f6cfaa1",
+    "expected_concept_id": "HTN_d4477e83d156",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP042a",
+    "language": "en",
+    "text": "elevated blood pressure",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_f48ce01048ba",
+    "expected_concept_id": "HTN_1f6c35b66555",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP042b",
+    "language": "en",
+    "text": "non-elevated blood pressure",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_1f6c35b66555",
+    "expected_concept_id": "HTN_f48ce01048ba",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP043a",
+    "language": "en",
+    "text": "elevated blood pressure",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_92d75169c430",
+    "expected_concept_id": "HTN_1f6c35b66555",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP043b",
+    "language": "en",
+    "text": "seated blood pressure",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_1f6c35b66555",
+    "expected_concept_id": "HTN_92d75169c430",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP044a",
+    "language": "en",
+    "text": "uncontrolled hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_0dbfbbb61094",
+    "expected_concept_id": "HTN_8608a7c05ed4",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP044b",
+    "language": "en",
+    "text": "controlled hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8608a7c05ed4",
+    "expected_concept_id": "HTN_0dbfbbb61094",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP045a",
+    "language": "en",
+    "text": "stage 1 hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_05927d0a6a03",
+    "expected_concept_id": "HTN_8db016d88b4d",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP045b",
+    "language": "en",
+    "text": "stage 2 hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8db016d88b4d",
+    "expected_concept_id": "HTN_05927d0a6a03",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP046a",
+    "language": "en",
+    "text": "isolated systolic hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_65a364b6a896",
+    "expected_concept_id": "HTN_be66e539fd81",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP046b",
+    "language": "en",
+    "text": "isolated diastolic hypertension",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_be66e539fd81",
+    "expected_concept_id": "HTN_65a364b6a896",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP047a",
+    "language": "en",
+    "text": "hypertensive emergency",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_3c45527d0208",
+    "expected_concept_id": "HTN_e07ec2ba2d1e",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP047b",
+    "language": "en",
+    "text": "hypertensive urgency",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e07ec2ba2d1e",
+    "expected_concept_id": "HTN_3c45527d0208",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP048a",
+    "language": "en",
+    "text": "SPRINT trial",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_418a9b8ed5a9",
+    "expected_concept_id": "HTN_22fd06c13194",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP048b",
+    "language": "en",
+    "text": "ESPRIT trial",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_22fd06c13194",
+    "expected_concept_id": "HTN_418a9b8ed5a9",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP049a",
+    "language": "en",
+    "text": "angiotensin II",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_5375a218e008",
+    "expected_concept_id": "HTN_9da3b56d1bcd",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP049b",
+    "language": "en",
+    "text": "angiotensin I",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9da3b56d1bcd",
+    "expected_concept_id": "HTN_5375a218e008",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP050a",
+    "language": "en",
+    "text": "angiotensin-converting enzyme",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_dac662f6ef1f",
+    "expected_concept_id": "HTN_95c847b235dd",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP050b",
+    "language": "en",
+    "text": "angiotensin-converting enzyme 2",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_95c847b235dd",
+    "expected_concept_id": "HTN_dac662f6ef1f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP051a",
+    "language": "en",
+    "text": "antihypertensive therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_3265c21da577",
+    "expected_concept_id": "HTN_9a1d14495070",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP051b",
+    "language": "en",
+    "text": "antihypertensive drug therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9a1d14495070",
+    "expected_concept_id": "HTN_3265c21da577",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP052a",
+    "language": "en",
+    "text": "pharmacological therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_62d56e18d9ed",
+    "expected_concept_id": "HTN_1e5b2c8f44aa",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP052b",
+    "language": "en",
+    "text": "non-pharmacological therapy",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_1e5b2c8f44aa",
+    "expected_concept_id": "HTN_62d56e18d9ed",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP053a",
+    "language": "en",
+    "text": "medication adherence",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e9e9c8fca346",
+    "expected_concept_id": "HTN_293eb322616c",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP053b",
+    "language": "en",
+    "text": "medication nonadherence",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_293eb322616c",
+    "expected_concept_id": "HTN_e9e9c8fca346",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP054a",
+    "language": "en",
+    "text": "heart failure with reduced ejection fraction",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_fa313c8be930",
+    "expected_concept_id": "HTN_e4cdd5e1f9b8",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP054b",
+    "language": "en",
+    "text": "heart failure with preserved ejection fraction",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e4cdd5e1f9b8",
+    "expected_concept_id": "HTN_fa313c8be930",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP055a",
+    "language": "en",
+    "text": "physical activity",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_effbb277226f",
+    "expected_concept_id": "HTN_50b4fc97bb14",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP055b",
+    "language": "en",
+    "text": "physical inactivity",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_50b4fc97bb14",
+    "expected_concept_id": "HTN_effbb277226f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP056a",
+    "language": "en",
+    "text": "angiotensin II type 1 receptor",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_9adaf9f0c4c9",
+    "expected_concept_id": "HTN_b8d2cf20edaf",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP056b",
+    "language": "en",
+    "text": "angiotensin II type 2 receptor",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_b8d2cf20edaf",
+    "expected_concept_id": "HTN_9adaf9f0c4c9",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP057a",
+    "language": "en",
+    "text": "unattended automated office blood pressure",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_7a7149e08b17",
+    "expected_concept_id": "HTN_e7edf1c35258",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP057b",
+    "language": "en",
+    "text": "attended automated office blood pressure",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_e7edf1c35258",
+    "expected_concept_id": "HTN_7a7149e08b17",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP058a",
+    "language": "en",
+    "text": "modifiable risk factors",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_28bddd9d03fe",
+    "expected_concept_id": "HTN_3061ea0c569a",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP058b",
+    "language": "en",
+    "text": "nonmodifiable risk factors",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_3061ea0c569a",
+    "expected_concept_id": "HTN_28bddd9d03fe",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP059a",
+    "language": "en",
+    "text": "SPYRAL HTN-OFF MED trial",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_2bf1d385e126",
+    "expected_concept_id": "HTN_8b09e2cea13f",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP059b",
+    "language": "en",
+    "text": "SPYRAL HTN-ON MED trial",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_8b09e2cea13f",
+    "expected_concept_id": "HTN_2bf1d385e126",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP060a",
+    "language": "en",
+    "text": "dihydropyridine calcium channel blockers",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_d4477e83d156",
+    "expected_concept_id": "HTN_49866f6cfaa1",
+    "origin": "inherited_near_form_guard"
+  },
+  {
+    "id": "NP060b",
+    "language": "en",
+    "text": "non-dihydropyridine calcium channel blockers",
+    "category": "near_form_pair",
+    "protected_forms": [],
+    "forbidden_concept_id": "HTN_49866f6cfaa1",
+    "expected_concept_id": "HTN_d4477e83d156",
+    "origin": "inherited_near_form_guard"
+  }
+]

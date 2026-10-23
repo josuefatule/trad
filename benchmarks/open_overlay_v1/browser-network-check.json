@@ -1,0 +1,10 @@
+{
+  "url": "http://10.10.4.214:3000/overlay",
+  "browser_page_loaded": true,
+  "operator_overlay_clients_observed": 1,
+  "tested_from_this_laptop": true,
+  "tested_from_other_laptop": false,
+  "terminal_lan_socket_error": "WinError 10013",
+  "local_smoke_pass": true,
+  "translation_requested": false
+}

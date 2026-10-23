@@ -1,0 +1,313 @@
+# Formato: @categoría|fuentes separadas por coma|localizador|respaldo (supported/pending).
+# Filas: inglés|español preferido|alternativas EN separadas por ;|alternativas ES separadas por ;|nota.
+@classification|S02,S06,S29|S02 puntos 1,4; S29 secciones 3,5,6|supported
+blood pressure|presión arterial||tensión arterial|Magnitud; no una enfermedad.
+high blood pressure|hipertensión arterial||presión arterial alta|Forma clínica general agrupada con hypertension; no confundir con la categoría elevated blood pressure.
+hypertension|hipertensión arterial|systemic hypertension|hipertensión;HTA|Solo circulación sistémica.
+arterial hypertension|hipertensión arterial|||Agrupada con hypertension en el conteo conceptual.
+primary hypertension|hipertensión primaria||hipertensión esencial|
+secondary hypertension|hipertensión secundaria|||
+drug-induced hypertension|hipertensión inducida por fármacos||hipertensión farmacológica|
+hypertension in pregnancy|hipertensión en el embarazo|||Categoría paraguas; no equivale a hipertensión gestacional ni preeclampsia.
+normotension|normotensión|||
+normotensive|normotenso|||Forma adjetiva agrupada con normotension.
+hypertensive|hipertenso|||Forma adjetiva agrupada con hypertension; concordancia según contexto.
+elevated blood pressure|presión arterial elevada|||Categoría dependiente de sociedad y año.
+non-elevated blood pressure|presión arterial no elevada|||Categoría ESC; no sustituir por normal sin contexto.
+normal blood pressure|presión arterial normal|||Clasificación dependiente de sociedad y año.
+systolic blood pressure|presión arterial sistólica||PAS|
+diastolic blood pressure|presión arterial diastólica||PAD|
+mean arterial pressure|presión arterial media||PAM|MAP también puede ser una palabra inglesa; no expandir sin contexto.
+pulse pressure|presión de pulso||presión diferencial|Diferencia sistólica menos diastólica; no frecuencia del pulso.
+systolic pressure|presión sistólica|||Agrupada con systolic blood pressure en contexto arterial.
+diastolic pressure|presión diastólica|||Agrupada con diastolic blood pressure en contexto arterial.
+@measurement|S08,S29|S08 extractos BP Measurement; S29 sección 5, pp. 19-25|supported
+blood pressure reading|lectura de presión arterial|||
+blood pressure measurement|medición de la presión arterial|||
+blood pressure classification|clasificación de la presión arterial|||
+blood pressure threshold|umbral de presión arterial|||
+blood pressure target|objetivo de presión arterial||meta de presión arterial|
+blood pressure control|control de la presión arterial||control tensional|
+blood pressure variability|variabilidad de la presión arterial||variabilidad tensional|
+office blood pressure|presión arterial en consultorio||presión arterial en consulta|No equivale necesariamente a medición estandarizada.
+home blood pressure monitoring|monitorización domiciliaria de la presión arterial||automedición domiciliaria de la presión arterial;AMPA|HBPM no garantiza técnica correcta.
+ambulatory blood pressure monitoring|monitorización ambulatoria de la presión arterial||MAPA|No significa simplemente medir al caminar.
+out-of-office blood pressure|presión arterial fuera del consultorio||presión arterial fuera de consulta|
+automated office blood pressure|presión arterial automatizada en consultorio|||
+white-coat hypertension|hipertensión de bata blanca||hipertensión de guardapolvo blanco|Fenotipo sin tratamiento; distinguir efecto de bata blanca.
+white-coat effect|efecto de bata blanca|||No fusionar con hipertensión de bata blanca.
+masked hypertension|hipertensión enmascarada|||Distinguir de hipertensión enmascarada no controlada en pacientes tratados.
+nocturnal hypertension|hipertensión nocturna|||No equivale al patrón non-dipping.
+@classification|S09,S11,S29|S09 resumen; S11 resumen; S29 secciones 7.5,9.12-9.13|supported
+resistant hypertension|hipertensión resistente|||Confirmar adherencia y excluir efecto de bata blanca; no equivale a refractaria.
+apparent treatment-resistant hypertension|hipertensión aparentemente resistente al tratamiento|||No afirma resistencia verdadera.
+pseudo-resistant hypertension|hipertensión seudorresistente||hipertensión pseudorresistente|
+uncontrolled hypertension|hipertensión no controlada|||No equivale a resistente.
+controlled hypertension|hipertensión controlada|||
+stage 1 hypertension|hipertensión en estadio 1||hipertensión en etapa 1|Marco AHA/ACC; conservar número y sociedad.
+stage 2 hypertension|hipertensión en estadio 2||hipertensión en etapa 2|Marco AHA/ACC; no convertir estadio en grado ESC/ESH.
+prehypertension|prehipertensión|||Categoría histórica, no equivalente universal a elevated blood pressure.
+isolated systolic hypertension|hipertensión sistólica aislada|||
+severe hypertension|hipertensión grave||hipertensión severa|No implica daño agudo por sí sola.
+hypertensive emergency|emergencia hipertensiva|||Requiere daño orgánico agudo; distinta de urgencia hipertensiva.
+orthostatic hypotension|hipotensión ortostática||hipotensión postural|
+hypotension|hipotensión||presión arterial baja|
+@guidelines|S01,S02,S03,S29|Páginas oficiales; S29 abreviaturas y preámbulo|supported
+European Society of Cardiology|Sociedad Europea de Cardiología||ESC|
+American Heart Association|Asociación Americana del Corazón||American Heart Association;AHA|Conservar nombre institucional en inglés si el congreso lo usa.
+American College of Cardiology|Colegio Americano de Cardiología||American College of Cardiology;ACC|
+2024 ESC guidelines|guía ESC de 2024|||Vigente en catálogo consultado; corrigendum publicado en 2025.
+2018 ESC/ESH guidelines|guía ESC/ESH de 2018|||Histórica; conservar año, no actualizar silenciosamente.
+2017 ACC/AHA guideline|guía ACC/AHA de 2017|||Reemplazada por guía de 2025; término válido en citas históricas.
+@conference_language|S29,S34|S29 preámbulo y tablas; respaldo temático, no atestación individual|pending
+JNC 7 guideline|guía JNC 7|||Falta cotejar el título y expansiones del original con documento primario.
+JNC 8 report|informe JNC 8|||El alias Eighth Joint National Committee no es el título del informe; requiere revisión.
+guideline recommendations|recomendaciones de la guía|||
+clinical practice guidelines|guías de práctica clínica||GPC|
+guideline-driven management|manejo basado en guías||manejo orientado por guías|
+evidence-based medicine|medicina basada en la evidencia|||
+evidence-based review|revisión basada en la evidencia|||
+clinical implications|implicaciones clínicas|||
+treatment algorithm|algoritmo de tratamiento|||
+treatment threshold|umbral de tratamiento|||
+treatment goal|objetivo terapéutico||meta de tratamiento|
+target systolic blood pressure|objetivo de presión arterial sistólica|||
+clinical decision-making|toma de decisiones clínicas|||
+shared decision-making|toma de decisiones compartida|||
+risk assessment|evaluación del riesgo|||
+risk stratification|estratificación del riesgo|||No equivale a estimación del riesgo.
+@risk_prevention|S02,S06,S29|S02 puntos 1,5,6; S29 secciones 4,6|supported
+cardiovascular risk|riesgo cardiovascular|||
+cardiovascular risk factors|factores de riesgo cardiovascular|||
+atherosclerotic cardiovascular disease|enfermedad cardiovascular aterosclerótica||ECVA|
+ten-year ASCVD risk|riesgo de enfermedad cardiovascular aterosclerótica a 10 años|||No equivale al riesgo cardiovascular total PREVENT.
+cardiovascular disease|enfermedad cardiovascular||ECV|
+cardiovascular events|eventos cardiovasculares|||
+cardiovascular mortality|mortalidad cardiovascular|||
+all-cause mortality|mortalidad por todas las causas||mortalidad total|
+cardiovascular prevention|prevención cardiovascular|||
+primordial prevention|prevención primordial|||Evitar la aparición de factores de riesgo; distinta de prevención primaria.
+primary prevention|prevención primaria|||
+secondary prevention|prevención secundaria|||
+@research_methods|S18,S19,S20,S36|Resúmenes de ensayos; estadística y diseños|supported
+prevalence|prevalencia|||No equivale a incidencia.
+incidence|incidencia|||No equivale a prevalencia.
+cohort study|estudio de cohortes|||
+randomized controlled trial|ensayo clínico aleatorizado controlado||ensayo controlado aleatorizado;ECA|ECA en español también designa enzima convertidora de angiotensina.
+meta-analysis|metaanálisis||meta-análisis|
+network meta-analysis|metaanálisis en red|||No equivalente al metaanálisis por pares.
+hazard ratio|razón de riesgos instantáneos||cociente de riesgos instantáneos;hazard ratio|No sustituir por riesgo relativo ni odds ratio.
+absolute risk reduction|reducción absoluta del riesgo||RAR|RAR también ratio aldosterona-renina en español.
+number needed to treat|número necesario a tratar||número de pacientes que es necesario tratar;NNT|
+serious adverse events|eventos adversos graves|||Grave (serious) y de intensidad severa (severe) no son equivalentes regulatorios.
+clinical trial|ensayo clínico|||
+@clinical_trials|S18,S29|S18 registro SPRINT; S29 abreviaturas|supported
+SPRINT trial|ensayo SPRINT|||Conservar acrónimo y distinguir el ensayo de sus análisis secundarios.
+ACCORD trial|ensayo ACCORD|||ACCORD incluyó varios componentes; especificar ACCORD-BP cuando corresponda.
+@clinical_trials|S29|Original y menciones bibliográficas; falta cotejo de registros primarios|pending
+CARDIA study|estudio CARDIA|||
+REGARDS study|estudio REGARDS|||
+NHANES|NHANES|||Encuesta, no ensayo aleatorizado.
+National Institutes of Health|Institutos Nacionales de Salud de Estados Unidos||NIH|
+Task Force|grupo de trabajo|||
+co-chair|copresidente||coordinador conjunto|Adaptar género según persona.
+@endocrine_renal|S10,S30,S31,S29|S10 recomendaciones; S30 nombres alternativos; S29 secciones 7.6,9.14|supported
+primary aldosteronism|aldosteronismo primario||hiperaldosteronismo primario|PA en español suele significar presión arterial. No convertir todo hiperaldosteronismo en primario.
+hyperaldosteronism|hiperaldosteronismo|||Incluye formas primarias y secundarias; no sinónimo absoluto de primary aldosteronism.
+secondary aldosteronism|aldosteronismo secundario||hiperaldosteronismo secundario|
+renin|renina|||
+plasma renin activity|actividad de renina plasmática||actividad plasmática de renina;ARP|PRA en inglés; distinta de concentración directa.
+direct renin concentration|concentración directa de renina||CDR|
+renin suppression|supresión de renina||renina suprimida|No equivale a hipoaldosteronismo.
+aldosterone|aldosterona|||
+plasma aldosterone concentration|concentración plasmática de aldosterona|||PAC también premature atrial contractions.
+urinary aldosterone|aldosterona urinaria|||
+aldosterone-to-renin ratio|cociente aldosterona/renina||relación aldosterona-renina;ratio aldosterona-renina;ARR|Unidades y método de renina condicionan interpretación; no umbral universal.
+aldosterone production|producción de aldosterona|||
+autonomous aldosterone secretion|secreción autónoma de aldosterona|||
+renin-independent aldosterone production|producción de aldosterona independiente de renina|||
+renin-angiotensin system|sistema renina-angiotensina||SRA|RAS puede significar estenosis de arteria renal o familia de genes.
+renin-angiotensin-aldosterone system|sistema renina-angiotensina-aldosterona||SRAA|
+angiotensin II|angiotensina II|||No fusionar con angiotensina I ni angiotensina (1-7).
+angiotensin-converting enzyme|enzima convertidora de angiotensina||ECA|
+mineralocorticoid receptor|receptor de mineralocorticoides|||MR también mitral regurgitation o magnetic resonance.
+mineralocorticoid receptor antagonists|antagonistas del receptor de mineralocorticoides||ARM|MRA también angiografía por resonancia magnética.
+aldosterone suppression test|prueba de supresión de aldosterona|||
+salt loading|sobrecarga de sodio||carga salina|Procedimiento diagnóstico; no consejo dietético.
+renal sodium retention|retención renal de sodio|||
+sodium reabsorption|reabsorción de sodio|||
+urinary sodium excretion|excreción urinaria de sodio|||
+urinary potassium excretion|excreción urinaria de potasio|||
+extracellular fluid volume|volumen de líquido extracelular||volumen extracelular|
+extracellular volume expansion|expansión del volumen extracelular|||
+serum potassium|potasio sérico|||No fusionar con plasma potassium: cambia la muestra.
+plasma potassium|potasio plasmático|||
+hypokalemia|hipopotasemia||hipokalemia|No confundir con hipocalcemia ni hiperpotasemia.
+hyperkalemia|hiperpotasemia||hiperkalemia|No confundir con hipopotasemia.
+hyponatremia|hiponatremia|||
+hypernatremia|hipernatremia|||
+metabolic alkalosis|alcalosis metabólica|||
+hypokalemic metabolic alkalosis|alcalosis metabólica hipopotasémica|||
+adrenal gland|glándula suprarrenal||glándula adrenal|
+aldosterone-producing adenoma|adenoma productor de aldosterona|||APA también sigla de sociedades e instituciones.
+adrenal hyperplasia|hiperplasia suprarrenal||hiperplasia adrenal|No asumir bilateralidad.
+bilateral adrenal hyperplasia|hiperplasia suprarrenal bilateral|||
+adrenalectomy|adrenalectomía||suprarrenalectomía|No implica unilateralidad por sí sola.
+@kidney|S05,S16,S29|S05 nomenclatura y capítulo 1; S16 resumen; S29 tabla 13|supported
+chronic kidney disease|enfermedad renal crónica||ERC|
+kidney function|función renal|||
+estimated glomerular filtration rate|tasa de filtración glomerular estimada||TFGe;filtrado glomerular estimado|No igual a GFR medida ni depuración de creatinina.
+renal artery stenosis|estenosis de la arteria renal|||No demuestra por sí sola hipertensión renovascular.
+renal insufficiency|insuficiencia renal|||Término inespecífico; no convertir automáticamente en ERC ni kidney failure.
+renal ischemia|isquemia renal|||
+albuminuria|albuminuria|||Subconjunto de proteinuria; no equivalencia absoluta.
+proteinuria|proteinuria|||
+microalbuminuria|microalbuminuria|||Término histórico; generalmente albuminuria moderadamente aumentada en la clasificación actual.
+secondary causes of hypertension|causas secundarias de hipertensión|||
+endocrine hypertension|hipertensión endocrina|||
+@treatment|S02,S07,S09,S29,S32|S02 punto 8; S29 secciones 7.4.2,8.3; S32 clases|supported
+antihypertensive therapy|tratamiento antihipertensivo|||Especificar si farmacológico o no farmacológico.
+antihypertensive drug therapy|tratamiento farmacológico antihipertensivo|||No incluir intervenciones en esta equivalencia.
+antihypertensive medication|medicamento antihipertensivo||fármaco antihipertensivo|
+pharmacological therapy|tratamiento farmacológico|||
+non-pharmacological therapy|tratamiento no farmacológico|||
+first-line therapy|tratamiento de primera línea|||
+combination therapy|tratamiento combinado|||No implica comprimido único.
+single-pill combination|combinación en un solo comprimido||combinación en una sola pastilla|
+medication adherence|adherencia a la medicación||adherencia farmacológica|Distinguir persistencia; treatment adherence es más amplio.
+medication titration|ajuste gradual de la dosis||titulación de dosis|No implica siempre aumento.
+angiotensin-converting enzyme inhibitors|inhibidores de la enzima convertidora de angiotensina||IECA|
+angiotensin II receptor blockers|antagonistas de los receptores de angiotensina II||ARA-II;bloqueadores de los receptores de angiotensina II|
+calcium channel blockers|bloqueadores de los canales de calcio||calcioantagonistas;BCC|
+beta blockers|betabloqueadores||betabloqueantes|
+alpha blockers|alfabloqueadores||alfabloqueantes|
+alpha-2 receptor agonists|agonistas de los receptores alfa-2|||
+diuretics|diuréticos|||diuretic therapy designa tratamiento, no el fármaco.
+thiazide diuretics|diuréticos tiazídicos|||
+thiazide-like diuretics|diuréticos similares a las tiazidas|||No fusionar con tiazidas como equivalencia química.
+loop diuretics|diuréticos de asa|||
+potassium-sparing diuretics|diuréticos ahorradores de potasio|||Categoría que no equivale solo a ARM.
+mineralocorticoid receptor antagonist therapy|tratamiento con antagonistas del receptor de mineralocorticoides|||
+nonsteroidal anti-inflammatory drugs|antiinflamatorios no esteroideos||AINE|
+oral contraceptives|anticonceptivos orales|||
+hormone replacement therapy|terapia hormonal de reemplazo||tratamiento hormonal sustitutivo|
+immunosuppressive agents|inmunosupresores||fármacos inmunosupresores|
+recombinant human erythropoietin|eritropoyetina humana recombinante|||
+tyrosine kinase inhibitors|inhibidores de tirosina cinasa||inhibidores de tirosina quinasa|
+antidepressants|antidepresivos|||
+@medications|S07,S29,S33|S07 nombres genéricos; S29 secciones 8.3,9.13; S33 clortalidona|supported
+spironolactone|espironolactona|||
+eplerenone|eplerenona|||
+hydrochlorothiazide|hidroclorotiazida|||
+chlorthalidone|clortalidona|||Forma española contrastada con NLM.
+indapamide|indapamida|||
+furosemide|furosemida|||
+amiloride|amilorida|||
+triamterene|triamtereno|||
+lisinopril|lisinopril|||
+enalapril|enalapril|||
+ramipril|ramipril|||
+losartan|losartán||losartan|
+valsartan|valsartán||valsartan|
+candesartan|candesartán||candesartan|
+olmesartan|olmesartán||olmesartan|No equiparar base y profármaco medoxomilo sin contexto.
+telmisartan|telmisartán||telmisartan|
+metoprolol|metoprolol|||No intercambiar formulaciones de liberación.
+carvedilol|carvedilol|||
+atenolol|atenolol|||
+bisoprolol|bisoprolol|||
+nebivolol|nebivolol|||
+labetalol|labetalol|||
+amlodipine|amlodipino||amlodipina|
+nifedipine|nifedipino||nifedipina|No intercambiar liberación inmediata y prolongada.
+diltiazem|diltiazem|||
+verapamil|verapamilo||verapamil|
+hydralazine|hidralazina|||
+clonidine|clonidina|||
+@organ_damage|S02,S05,S29|S29 sección 4 figura 2; secciones 7.4,9.8-9.10|supported
+coronary artery disease|enfermedad arterial coronaria||enfermedad de las arterias coronarias|
+coronary heart disease|cardiopatía coronaria|||Cercana a CAD; no asumir equivalencia anatómica estricta.
+atherosclerosis|aterosclerosis|||No confundir con arteriosclerosis.
+subclinical atherosclerosis|aterosclerosis subclínica|||
+coronary artery calcium|calcio coronario||calcificación coronaria|
+coronary calcium score|puntuación de calcio coronario|||Medida, no equivalente al calcio anatómico.
+myocardial infarction|infarto de miocardio||infarto agudo de miocardio|Conservar calificativo acute cuando esté presente.
+stroke|accidente cerebrovascular||ictus;ACV|No equivale solo a infarto cerebral.
+ischemic stroke|accidente cerebrovascular isquémico||ictus isquémico|
+hemorrhagic stroke|accidente cerebrovascular hemorrágico||ictus hemorrágico|
+heart failure|insuficiencia cardíaca||falla cardíaca|
+heart failure with reduced ejection fraction|insuficiencia cardíaca con fracción de eyección reducida||ICFEr|
+heart failure with preserved ejection fraction|insuficiencia cardíaca con fracción de eyección preservada||ICFEp|
+left ventricular function|función ventricular izquierda|||
+left ventricular hypertrophy|hipertrofia ventricular izquierda||HVI|
+left ventricular ejection fraction|fracción de eyección ventricular izquierda||FEVI|No omitir lateralidad.
+ejection fraction|fracción de eyección||FE|No asumir que sea ventricular izquierda.
+pulmonary edema|edema pulmonar|||No equivale a hipertensión pulmonar ni solo congestión.
+pulmonary congestion|congestión pulmonar|||
+atrial fibrillation|fibrilación auricular||FA|
+cardiac arrhythmia|arritmia cardíaca|||
+vascular dementia|demencia vascular|||
+peripheral artery disease|enfermedad arterial periférica||EAP|
+cardiometabolic risk|riesgo cardiometabólico|||
+hypertension-mediated organ damage|daño orgánico mediado por hipertensión||DOMH|
+target-organ damage|daño de órgano diana||daño de órgano blanco|Más amplio que DOMH; distinguir agudo y crónico.
+diabetes mellitus|diabetes mellitus|||
+type 2 diabetes mellitus|diabetes mellitus tipo 2||diabetes tipo 2;DM2|
+obesity|obesidad|||
+obstructive sleep apnea|apnea obstructiva del sueño||síndrome de apnea obstructiva del sueño;SAOS|
+heart disease|cardiopatía|||Término general, no solo enfermedad coronaria.
+cardiovascular disease risk|riesgo de enfermedad cardiovascular|||Agrupado con cardiovascular risk en contexto general.
+chest pain|dolor torácico|||No implica angina ni infarto.
+@lifestyle|S02,S06,S25,S29|S02 punto 5; S29 sección 8.2|supported
+lifestyle modification|modificación del estilo de vida||cambios en el estilo de vida|
+lifestyle management|manejo del estilo de vida|||Agrupado como variante contextual de intervención en el estilo de vida.
+healthy diet|alimentación saludable||dieta saludable|
+DASH diet|dieta DASH|||Conservar acrónimo.
+Mediterranean diet|dieta mediterránea|||
+weight loss|pérdida de peso||reducción de peso|
+body mass index|índice de masa corporal||IMC|
+dietary sodium restriction|restricción de sodio en la alimentación||restricción dietética de sodio|
+sodium reduction|reducción del consumo de sodio|||Contexto dietético; no reducir sodio sérico.
+low-sodium diet|dieta baja en sodio||dieta hiposódica|
+dietary potassium|potasio de la dieta||potasio dietético|
+potassium-rich diet|dieta rica en potasio|||No recomendación universal en ERC con riesgo de hiperpotasemia.
+potassium-enriched salt substitute|sustituto de sal enriquecido con potasio|||No equivale a suplemento de potasio.
+sodium-containing salts|sales que contienen sodio|||
+salt intake|consumo de sal|||Sal y sodio no son magnitudes intercambiables.
+potassium intake|ingesta de potasio||consumo de potasio|
+sugar-sweetened beverages|bebidas azucaradas||bebidas endulzadas con azúcar|
+physical activity|actividad física|||Más amplia que ejercicio.
+exercise|ejercicio|||
+aerobic exercise|ejercicio aeróbico|||
+dynamic resistance exercise|ejercicio de fuerza dinámico||ejercicio dinámico de resistencia|Resistencia muscular, no confundir con ejercicio aeróbico de resistencia.
+isometric resistance exercise|ejercicio isométrico de fuerza||ejercicio de resistencia isométrica|
+smoking cessation|abandono del tabaco||cesación tabáquica|
+alcohol moderation|moderación del consumo de alcohol|||
+alcohol intake|consumo de alcohol|||
+dietary counseling|asesoramiento nutricional||consejería nutricional|
+patient-centered care|atención centrada en el paciente|||
+frailty|fragilidad|||frail patients no es un alias sustituible de frailty.
+@units_measurement|S04,S08,S10,S29|Unidades en tablas y medición; no autorización de conversiones numéricas|supported
+millimeters of mercury|milímetros de mercurio||mmHg;mm Hg|
+milligrams per day|miligramos por día||mg/día|
+milligrams per deciliter|miligramos por decilitro||mg/dL|
+millimoles per day|milimoles por día||mmol/día|
+micrograms per day|microgramos por día||µg/día|
+micrograms per deciliter|microgramos por decilitro||µg/dL|
+nanograms per deciliter|nanogramos por decilitro||ng/dL|
+plasma concentration|concentración plasmática|||
+plasma levels|niveles plasmáticos|||Agrupado con concentración plasmática solo en contexto de analito.
+24-hour urine collection|recolección de orina de 24 horas||recogida de orina de 24 horas|
+24-hour blood pressure monitoring|monitorización de la presión arterial de 24 horas|||No convertir cualquier HBPM en MAPA.
+blood pressure cuff|manguito de presión arterial||brazalete de presión arterial|
+oscillometric blood pressure monitor|monitor oscilométrico de presión arterial||tensiómetro oscilométrico|
+Korotkoff sounds|ruidos de Korotkoff||sonidos de Korotkoff|
+arterial stiffness|rigidez arterial|||No equivale a aterosclerosis.
+inter-arm blood pressure difference|diferencia de presión arterial entre brazos||diferencia interbraquial de presión arterial|
+@conference_language|S29|Respaldo temático: secciones 8-11; verificación lexical pendiente|pending
+blood pressure-lowering treatment|tratamiento para reducir la presión arterial|||Puede incluir intervenciones no farmacológicas.
+clinical outcomes|desenlaces clínicos||resultados clínicos|
+pharmacologic management|manejo farmacológico|||
+patient follow-up|seguimiento del paciente|||
+clinical guidelines implementation|implementación de guías de práctica clínica|||
+as low as reasonably achievable|tan baja como sea razonablemente alcanzable|||ALARA depende de contexto; no convertir en objetivo numérico ni confundir con radioprotección.

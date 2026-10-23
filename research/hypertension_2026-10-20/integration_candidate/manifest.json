@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "package_version": "1.0.0-research",
+  "kind": "package_integrity_manifest",
+  "status": "research_preparation_only",
+  "integrated": false,
+  "runtime_approved": false,
+  "automatic_substitution_approved": false,
+  "files": [
+    {
+      "name": "concepts.json",
+      "bytes": 2925181,
+      "sha256": "edb18e7687a233ee36b66d6e2bc1685cd1ad2dcc1e5bd2c1de7bccb89b360337"
+    },
+    {
+      "name": "form_decisions.json",
+      "bytes": 1460722,
+      "sha256": "22576b41acac067f47729f0e8526a646ad9ebe92809f845c4397e0395b818f40"
+    },
+    {
+      "name": "normalization_en.json",
+      "bytes": 218458,
+      "sha256": "0ea1661d7b8db7881debd3ec3bf97852f75febef61d94e99c95c74a2a0cbe03f"
+    },
+    {
+      "name": "normalization_es.json",
+      "bytes": 219164,
+      "sha256": "ea9f91bf1a20797184b87eb34d1c6b97329f18a4bfcc2db28b19c2bf6a819b0f"
+    },
+    {
+      "name": "translation_en_es.json",
+      "bytes": 1128269,
+      "sha256": "77c3a06b659928a7476505c0ea3503673a93c754654abe88030239bee709f982"
+    },
+    {
+      "name": "restrictions.json",
+      "bytes": 155199,
+      "sha256": "996780729f5e2f3db1d284ed7aabb71aeb11ddf3b459a6dde54fc033cce20e81"
+    },
+    {
+      "name": "collisions.json",
+      "bytes": 288770,
+      "sha256": "02803f6a98a0fce977904940554e3fb24bf576c15c9709958cb73e19e0ce84d1"
+    },
+    {
+      "name": "sources.json",
+      "bytes": 233736,
+      "sha256": "44b5ba9796a3a85fe9f3ddbeab8cbc1f6532b34e1acd1b678b50937448e00412"
+    },
+    {
+      "name": "changes_applied.json",
+      "bytes": 14601,
+      "sha256": "0605275a80603a1ab0661d898b3d600a4374293cce8bfcd7e45e1a18e133376e"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 4146,
+      "sha256": "ecb4a19b8b9a8561588e5076640a20d88748d6ff85f332e856cfe278a8fe1bb6"
+    },
+    {
+      "name": "protected_files.json",
+      "bytes": 159758,
+      "sha256": "04cf2cbd768a833e8c1d2a7776d73abe4d229e9050b4bfef176e15379744c8f9"
+    },
+    {
+      "name": "build_package.py",
+      "bytes": 28394,
+      "sha256": "b2221801d1a7b30634190a9f4e7a03ce3f3f8bafff8fe05fc90e080a54bb90ff"
+    },
+    {
+      "name": "test_package.py",
+      "bytes": 13604,
+      "sha256": "9c664bd0175cae8d3d12b9c27a3fc265f4dd5e37283452358c9f7e12a9f015ac"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 5376,
+      "sha256": "44993a94c9dafceb8d44abdc6ef5b7eff34080ccf83ae28ec5115ecb413222d3"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 6005,
+      "sha256": "c3b2aa34270d04285ecbc007565a146bb7cefaf034a1ad83e70a5df88fe23986"
+    }
+  ],
+  "self_hash_excluded": true
+}

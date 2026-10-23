@@ -1,0 +1,1117 @@
+{
+  "updated_at": "2026-10-21T00:18:01-04:00",
+  "started_at_utc": "2026-10-20T20:08:31+00:00",
+  "checkpoint_at_utc": "2026-10-21T04:18:01+00:00",
+  "observed_wall_clock_minutes": 106.25,
+  "effective_research_hours_measured": null,
+  "time_accounting": "Sum of three observed session intervals, including research, curation and validation; both idle gaps are excluded. Active research hours were not separately measured; three effective hours are not claimed.",
+  "requested_effective_work_hours": 3,
+  "status": "all_657_requested_bilingual_pairs_completed_no_integration",
+  "counts": {
+    "original_operational_entries": 294,
+    "curated_lexical_rows": 667,
+    "research_concept_records": 657,
+    "explicitly_grouped_extra_lexical_rows": 10,
+    "literature_supported_research_candidates": 657,
+    "pending_targeted_source_verification": 0,
+    "translations_crosschecked_in_external_en_es_sources": 657,
+    "translations_pending_individual_source_check": 0,
+    "independently_clinician_validated_concepts": 0,
+    "new_operational_suggest_only_entries": 346,
+    "held_new_lexical_rows": 26,
+    "candidate_operational_entries": 640,
+    "removed_unsafe_aliases": 12,
+    "research_alias_collisions": 1,
+    "original_exact_form_collisions": 0,
+    "original_fuzzy_canonical_screening_pairs": 32,
+    "consulted_sources": 191,
+    "sources_cited_by_individual_bilingual_crosschecks": 132,
+    "newly_verified_translations_this_session": 57,
+    "previous_verified_translations_retained": 600,
+    "preferred_es_corrections_this_session": 2
+  },
+  "cycles_completed": [
+    {
+      "cycle": "A",
+      "work": "Original schema, tokenizer, loading, duplicates and runtime integration audited."
+    },
+    {
+      "cycle": "B1",
+      "work": "Current general guidelines, measurement, classification and bilingual official sources consulted."
+    },
+    {
+      "cycle": "C1",
+      "work": "Detected acronym collisions, disease distinctions and source-access limitations."
+    },
+    {
+      "cycle": "D1",
+      "work": "Consulted NLM Spanish, SEC translation and Endocrine Society 2025 to address ambiguity."
+    },
+    {
+      "cycle": "B2",
+      "work": "Curated renal, endocrine, physiology, drugs, pregnancy, organ damage and trial vocabulary."
+    },
+    {
+      "cycle": "C2",
+      "work": "Grouped lexical duplicates, separated translation verification and retained source limitations."
+    },
+    {
+      "cycle": "D2",
+      "work": "Reproduced unsafe baseline substitutions and removed those aliases only in candidate."
+    },
+    {
+      "cycle": "V1",
+      "work": "Parsed JSON, loaded actual normalizer and ran adversarial text checks."
+    },
+    {
+      "cycle": "D3",
+      "work": "Targeted external checks for physiology, obstetric terminology, confirmation tests and alternate acronym meanings; unresolved proposals remain flagged."
+    },
+    {
+      "cycle": "V2",
+      "work": "Final cross-file integrity checks, source-reference checks, hashes and archive verification."
+    },
+    {
+      "cycle": "B3",
+      "work": "Individual EN/ES attestation search across full guideline copies, official translations, primary publications and indexed abstracts."
+    },
+    {
+      "cycle": "C3",
+      "work": "Editorial review of 609 discovered pairs; excluded 9 insufficient matches and replaced four Spanish bibliography hits with Spanish AHA medication lists."
+    },
+    {
+      "cycle": "D4",
+      "work": "Retained 52 prior pairs and verified 548 pending translations; recorded paired sources, attested forms, locators, hashes and semantic notes."
+    },
+    {
+      "cycle": "V3",
+      "work": "Cross-file counts, 1,200 attestations, source language/URL/locator checks, immutable glossary and candidate hashes, and archive integrity."
+    },
+    {
+      "cycle": "B4",
+      "work": "Targeted primary/official source checks for all final 57 pending records, maintaining priority domains and adding specialist Spanish texts."
+    },
+    {
+      "cycle": "C4",
+      "work": "Resolved clinically important qualifier ambiguities, CARDIA/CARDia collision, English-only bibliography hits and two Spanish research preferences."
+    },
+    {
+      "cycle": "D5",
+      "work": "Recorded 57 explicit editorial decisions with bilingual sources, attested forms, locators and hashes; preserved prior 600 records unchanged."
+    },
+    {
+      "cycle": "V4",
+      "work": "Validated 657 decisions, 1,314 attestations, cross-file counts, source-copy hashes, unchanged protected files and ZIP integrity."
+    }
+  ],
+  "category_counts": {
+    "classification": 41,
+    "measurement": 51,
+    "guidelines": 10,
+    "conference_language": 22,
+    "risk_prevention": 30,
+    "research_methods": 38,
+    "clinical_trials": 23,
+    "endocrine_renal": 83,
+    "kidney": 37,
+    "treatment": 54,
+    "medications": 69,
+    "organ_damage": 55,
+    "lifestyle": 27,
+    "units_measurement": 15,
+    "physiology": 45,
+    "emergencies": 19,
+    "pregnancy": 25,
+    "special_populations": 13
+  },
+  "categories_initial_pass_completed": [
+    "classification",
+    "clinical_trials",
+    "conference_language",
+    "emergencies",
+    "endocrine_renal",
+    "guidelines",
+    "kidney",
+    "lifestyle",
+    "measurement",
+    "medications",
+    "organ_damage",
+    "physiology",
+    "pregnancy",
+    "research_methods",
+    "risk_prevention",
+    "special_populations",
+    "treatment",
+    "units_measurement"
+  ],
+  "categories_fully_verified": [
+    "classification",
+    "measurement",
+    "guidelines",
+    "conference_language",
+    "risk_prevention",
+    "research_methods",
+    "clinical_trials",
+    "endocrine_renal",
+    "kidney",
+    "treatment",
+    "medications",
+    "organ_damage",
+    "lifestyle",
+    "units_measurement",
+    "physiology",
+    "emergencies",
+    "pregnancy",
+    "special_populations"
+  ],
+  "categories_pending": [],
+  "pending_concept_ids": [],
+  "pending_translation_ids": [],
+  "original_sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "original_modified": false,
+  "sources_used": [
+    {
+      "id": "S03",
+      "url": "https://www.acc.org/About-ACC/Press-Releases/2025/08/13/20/03/New-high-blood-pressure-guideline-emphasizes-prevention-early-treatment-to-reduce-CVD-risk",
+      "access_level": "official_summary_read",
+      "bilingual_attestation_count": 5
+    },
+    {
+      "id": "S04",
+      "url": "https://kdigo.org/wp-content/uploads/2021/03/Top-10-Takeaways-Clinicians-KDIGO-BP-Guideline.pdf",
+      "access_level": "full_pdf_selected_sections_read",
+      "bilingual_attestation_count": 4
+    },
+    {
+      "id": "S05",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "access_level": "full_pdf_selected_sections_read",
+      "bilingual_attestation_count": 47
+    },
+    {
+      "id": "S06",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/hypertension",
+      "access_level": "full_html_read",
+      "bilingual_attestation_count": 34
+    },
+    {
+      "id": "S07",
+      "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications",
+      "access_level": "full_html_read",
+      "bilingual_attestation_count": 13
+    },
+    {
+      "id": "S10",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "access_level": "official_recommendations_read",
+      "bilingual_attestation_count": 14
+    },
+    {
+      "id": "S13",
+      "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2022/04/01/03/19/CHAP",
+      "access_level": "official_trial_summary_read",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38804130/",
+      "access_level": "indexed_abstract_read",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29565029/",
+      "access_level": "indexed_abstract_figures_and_full_text_excerpts",
+      "bilingual_attestation_count": 5
+    },
+    {
+      "id": "S22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39555827/",
+      "access_level": "indexed_abstract_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S24",
+      "url": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2024/10/14/19/44/effects-of-catheter-based",
+      "access_level": "official_summary_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38205630/",
+      "access_level": "indexed_abstract_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "access_level": "full_pdf_selected_sections_read",
+      "bilingual_attestation_count": 380
+    },
+    {
+      "id": "S30",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-de-renina/",
+      "access_level": "full_html_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S31",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-de-aldosterona/",
+      "access_level": "indexed_selected_sections_read",
+      "bilingual_attestation_count": 3
+    },
+    {
+      "id": "S32",
+      "url": "https://medlineplus.gov/spanish/ency/article/007484.htm",
+      "access_level": "full_html_read",
+      "bilingual_attestation_count": 5
+    },
+    {
+      "id": "S33",
+      "url": "https://www.medlineplus.gov/spanish/druginfo/meds/a682342-es.html",
+      "access_level": "indexed_selected_sections_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S39",
+      "url": "https://newsroom.heart.org/news/la-nueva-guia-sobre-la-presion-arterial-alta-enfatiza-la-prevencion-y-el-tratamiento-temprano-para-reducir-el-riesgo-de-ecv",
+      "access_level": "indexed_excerpts_only_direct_open_failed",
+      "bilingual_attestation_count": 3
+    },
+    {
+      "id": "S40",
+      "url": "https://www.acc.org/latest-in-cardiology/articles/2024/11/05/11/55/new-blood-pressure-target-for-individuals-at-high-risk",
+      "access_level": "indexed_selected_sections_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S41",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25987662/",
+      "access_level": "indexed_abstract_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S50",
+      "url": "https://www.escardio.org/news/news-room/congress-news/2025-guidelines-cvd-pregnancy/",
+      "access_level": "official_summary_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S51",
+      "url": "https://medlineplus.gov/spanish/ency/article/002302.htm",
+      "access_level": "indexed_html_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S57",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38669914/",
+      "access_level": "indexed_abstract_and_keywords_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S58",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24352797/",
+      "access_level": "bibliographic_record_verified_in_linked_primary_citation",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S59",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15990444/",
+      "access_level": "indexed_abstract_excerpt_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S61",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7101636/",
+      "access_level": "indexed_table_excerpts_read",
+      "bilingual_attestation_count": 11
+    },
+    {
+      "id": "S66",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39588420/",
+      "access_level": "indexed_abstract_read",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S71",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 444
+    },
+    {
+      "id": "S72",
+      "url": "https://static.elsevier.es/nad/kdigo2024.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 21
+    },
+    {
+      "id": "S73",
+      "url": "https://www.seen.es/ModulGEX/workspace/publico/modulos/web/docs/apartados/230/300819_095918_9241185157.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 22
+    },
+    {
+      "id": "S75",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8547789/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S76",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 15
+    },
+    {
+      "id": "S77",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/medicion-de-la-presion-arterial/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S78",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11033231/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 5
+    },
+    {
+      "id": "S79",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7094457/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 6
+    },
+    {
+      "id": "S80",
+      "url": "https://www.stroke.org/es/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 17
+    },
+    {
+      "id": "S83",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6824480/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 12
+    },
+    {
+      "id": "S84",
+      "url": "https://www.asacirujanos.com/revista/2024/35/3/16",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 6
+    },
+    {
+      "id": "S88",
+      "url": "https://colegiodeenfermeros.org.ar/wp-content/uploads/2000/10/Especificaciones-tecnicas-de-la-OMS-para-dispositivos-electronicos.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 8
+    },
+    {
+      "id": "S89",
+      "url": "https://semap.org/wp-content/uploads/simple-file-list/Guia_2018_ESC_ESH_HTA.pdf",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 34
+    },
+    {
+      "id": "S90",
+      "url": "https://scielo.isciii.es/scielo.php?lng=es&nrm=iso&pid=S2529-850X2021000100010&script=sci_arttext",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 6
+    },
+    {
+      "id": "S91",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 14
+    },
+    {
+      "id": "S92",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530990/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 9
+    },
+    {
+      "id": "S93",
+      "url": "https://svmi.web.ve/back160522/wh/documentos/HTA-LASH.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 27
+    },
+    {
+      "id": "S94",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11522727/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 7
+    },
+    {
+      "id": "S95",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9575330/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S96",
+      "url": "https://newsroom.heart.org/news/las-ecuaciones-prevent-pueden-mejorar-y-personalizar-la-atencion-en-adultos-con-presion-alta",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S97",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10616052/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S98",
+      "url": "https://secardiologia.es/images/2024/Gu%C3%ADas/Gui%CC%81a-ESC-2025-manejo-ECV-y-embarazo.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 6
+    },
+    {
+      "id": "S99",
+      "url": "https://es.cochrane.org/es/glosario",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 4
+    },
+    {
+      "id": "S100",
+      "url": "https://es.cochrane.org/sites/es.cochrane.org/files/uploads/manual_cochrane_510_web.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 7
+    },
+    {
+      "id": "S101",
+      "url": "https://www.cancer.gov/espanol/publicaciones/diccionarios/diccionario-cancer/def/cociente-de-riesgos-instantaneos",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S102",
+      "url": "https://www.cdc.gov/high-blood-pressure/es/about/acerca-de-la-presion-arterial-alta.html",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S104",
+      "url": "https://www.nia.nih.gov/espanol/deterioro-cognitivo-leve",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S105",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34851584/",
+      "access_level": "indexed_spanish_abstract_read",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S106",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30383082/",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S107",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39078908/",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S108",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35064971/",
+      "access_level": "indexed_excerpt_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S109",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11273899/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S110",
+      "url": "https://medlineplus.gov/lab-tests/aldosterone-test/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S111",
+      "url": "https://www.nia.nih.gov/health/memory-loss-and-forgetfulness/what-mild-cognitive-impairment",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S112",
+      "url": "https://static.elsevier.es/nefro/monografias/1/318/318_061120201940.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S113",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304541212703992",
+      "access_level": "indexed_excerpt_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S114",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36990308/",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S117",
+      "url": "https://www.seep.es/images/site/publicaciones/oficialesSEEP/consenso/cap30.pdf",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 3
+    },
+    {
+      "id": "S118",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3894504/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S119",
+      "url": "https://www.revistanefrologia.com/index.php?p=revista&pii=x0211699504030032&r=100&tipo=pdf-simple",
+      "access_level": "not_accessible_in_continuation_or_challenge_only",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S120",
+      "url": "https://www.scielo.org.mx/scielo.php?pid=S1405-99402012000400008&script=sci_arttext",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S121",
+      "url": "https://www.scielo.org.mx/scielo.php?pid=S0301-696X2018000400317&script=sci_arttext_plus&tlng=es",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S122",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31795491/",
+      "access_level": "indexed_excerpt_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S123",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1663969/",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S124",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24968081/",
+      "access_level": "indexed_excerpt_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S125",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29534844/",
+      "access_level": "indexed_bilingual_author_keywords_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S126",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38349318/",
+      "access_level": "indexed_spanish_abstract_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S127",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25866131/",
+      "access_level": "indexed_spanish_original_title_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S128",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2396173/",
+      "access_level": "indexed_spanish_original_title_read",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S129",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11497200/",
+      "access_level": "indexed_excerpt_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S130",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11219475/",
+      "access_level": "indexed_excerpt_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S131",
+      "url": "https://secardiologia.es/blog/15689-control-intensivo-de-la-presion-arterial-en-pacientes-con-diabetes-tipo-2",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S132",
+      "url": "https://www.acc.org/latest-in-cardiology/clinical-trials/2025/03/27/15/49/advance-htn",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S134",
+      "url": "https://www.iacs.es/wp-content/uploads/2021/06/281_Nefropatia_diabetes_IACS.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S135",
+      "url": "https://nefrologiaaldia.org/articulo/2025-guias-kdigo-internacionales-en-espanol-de-poliquistosis-renal-autosomica-dominante/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S136",
+      "url": "https://encolombia.com/medicina/revistas-medicas/academedicina/vam-128/presion-arterial/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S141",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0716864025000719",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 3
+    },
+    {
+      "id": "S142",
+      "url": "https://www.who.int/es/news/item/01-07-2017-dr-tedros-takes-office-as-who-director-general",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S143",
+      "url": "https://www.cdc.gov/nchs/nhanes/participant/spanish/participant-es.htm",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S144",
+      "url": "https://www.caci.org.ar/seguridad-y-eficacia-de-la-denervacion-renal-mediada-por-alcohol-resultados-del-ensayo-target-bp/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S145",
+      "url": "https://www.solatcolombia.org/archives/ATEROMA%20V22N1.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S146",
+      "url": "https://www3.paho.org/hq/dmdocuments/2010/jnc7_interactivo.pdf",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S147",
+      "url": "https://link.springer.com/article/10.1186/s12872-015-0161-7",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S148",
+      "url": "https://www.cancer.gov/espanol/publicaciones/diccionarios/diccionario-cancer/def/oportunidad-relativa",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S149",
+      "url": "https://www.heart.org/en/news/2023/09/11/el-dolor-en-las-piernas-al-caminar-podria-ser-sintoma-de-un-problema-arterial",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S150",
+      "url": "https://newsroom.heart.org/news/redefinicion-de-riesgo-prevencion-y-tratamiento-de-las-enfermedades-cardiacas",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S151",
+      "url": "https://secardiologia.es/blog/5411-enfermedad-coronaria-estable-icual-es-el-grado-de-control-en-prevencion-secundaria",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S152",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35099884/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S153",
+      "url": "https://www.medlineplus.gov/spanish/ency/article/000701.htm",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S154",
+      "url": "https://www.medlineplus.gov/spanish/ency/patientinstructions/000606.htm",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S155",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000606.htm",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S156",
+      "url": "https://newsroom.heart.org/news/ver-la-television-por-un-tiempo-moderado-o-considerable-en-la-mediana-edad-se-vincula-con-un-posterior-deterioro-cognitivo-y-de-la-salud-cerebral",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S157",
+      "url": "https://professional.heart.org/en/science-news/cardiovascular-risk-reduction-in-high-risk-pediatric-patients/top-things-to-know",
+      "access_level": "web_extract_read_partial_document",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S158",
+      "url": "https://repositorio.binasss.sa.cr/server/api/core/bitstreams/dd1125d8-782a-4d89-89b0-88d3892055db/content",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S159",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37696419/",
+      "access_level": "indexed_bilingual_author_keywords_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S160",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25843225/",
+      "access_level": "indexed_bilingual_author_keywords_read_not_full_article",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S161",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34210635/",
+      "access_level": "indexed_bilingual_author_keywords_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S162",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1291662/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S163",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28276791/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S164",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41209582/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S165",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10395882/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S166",
+      "url": "https://secardiologia.es/blog/15900-lp-a-elevada-y-su-asociacion-con-la-aterosclerosis-subclinica",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S167",
+      "url": "https://campusvirtual.farmacoterapia-sanidadmadrid.org/CURSOS/logic/Consejeria_sanidad/uso_seguro_medicamentos/uso_seguro_medicamento_enfermeria/03/03/es/pdf/anexo6.pdf",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S168",
+      "url": "https://www.saha.org.ar/uploads/pdf/1760367723.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S169",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12748199/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S170",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35459368/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S171",
+      "url": "https://www.cun.es/diccionario-medico/terminos/prueba-dexametasona",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S172",
+      "url": "https://revistas.sena.edu.co/index.php/rediis/article/download/2076/2337/7908",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S173",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27864838/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S175",
+      "url": "https://secardiologia.es/images/publicaciones/libros/2007-sec-monografia-rinon.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S176",
+      "url": "https://cima.aemps.es/cima/pdfs/es/ft/39858/FT_39858.html.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S177",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/437205/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S178",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30354718/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S179",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32081241/",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S180",
+      "url": "https://revistachilenadeanestesia.cl/revchilanestv50n02-03/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S181",
+      "url": "https://www.archivoscardiologia.com/files/acm_23_93_supl-2_001-013.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S183",
+      "url": "https://favaloro.edu.ar/files/eBook-Prevencion-Cardiovascular-Sanchez-2da-eicion.pdf",
+      "access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S182",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/como-entender-sus-resultados-de-pruebas-de-laboratorio/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S184",
+      "url": "https://www.scielo.org.mx/scielo.php?lng=es&nrm=iso&pid=S1405-99402024000300366&script=sci_arttext&tlng=es",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S185",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9119310/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S186",
+      "url": "https://www.davila.cl/wp-content/uploads/2025/11/Revista-Cienti%CC%81fica-Volumen-2.-Nu%CC%81mero-1.pdf",
+      "access_level": "indexed_excerpt_block_35_lines_read_not_full_article",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S187",
+      "url": "https://medlineplus.gov/spanish/ency/article/003781.htm",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S188",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/8034801/",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 2
+    },
+    {
+      "id": "S190",
+      "url": "https://www.scielo.org.mx/scielo.php?lng=es&nrm=iso&pid=S0300-90412022000600530&script=sci_arttext_plus&tlng=es",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    },
+    {
+      "id": "S191",
+      "url": "https://secardiologia.es/blog/10559-titulacion-de-dosis-en-ic-con-fe-reducida-mucho-por-medir-mucho-por-hacer",
+      "access_level": "downloaded_html_available_selected_terminology_checked",
+      "bilingual_attestation_count": 1
+    }
+  ],
+  "open_questions": [
+    "Independent clinician/terminologist review remains unperformed.",
+    "Individual approval of all aliases, abbreviations and inflections remains outside the completed canonical-pair crosscheck.",
+    "No ASR, live translation or latency evaluation was performed; runtime integration requires a separate authorized task.",
+    "Terminology verification does not establish exhaustive current clinical recommendations, drug approvals, doses or diagnostic thresholds."
+  ],
+  "next_research_line": "All 657 requested canonical bilingual pairs are crosschecked. No canonical translation IDs remain pending. Any future work should address independent specialist review or individual alias/context validation; do not modify the original glossary or integrate without a separate request.",
+  "deep_research_connector": "not_available_in_exposed_tools_or_plugin_search",
+  "continuity_files": [
+    "bilingual_verification.json",
+    "bilingual_decisions.json",
+    "session3_verification.json",
+    "session3_review_decisions.json",
+    "session3_terminology_corrections.json",
+    "source_access_index.json",
+    "sources.json",
+    "finalize_657.py",
+    "checkpoints/session2_600_verified",
+    "checkpoints/session1_52_verified"
+  ],
+  "background_work": false,
+  "scheduled_automation": false,
+  "commits_created": false,
+  "integration_performed": false,
+  "final_artifact_integrity_checks": "pass",
+  "final_original_sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "sessions": [
+    {
+      "id": "session1",
+      "started_at_utc": "2026-10-20T20:08:31+00:00",
+      "ended_at_utc": "2026-10-20T20:36:06+00:00",
+      "observed_wall_clock_minutes": 27.58,
+      "verified_before": 0,
+      "verified_after": 52
+    },
+    {
+      "id": "session2",
+      "started_at_utc": "2026-10-20T22:18:30+00:00",
+      "ended_at_utc": "2026-10-20T23:00:06+00:00",
+      "observed_wall_clock_minutes": 41.6,
+      "verified_before": 52,
+      "verified_after": 600
+    },
+    {
+      "id": "session3",
+      "started_at_utc": "2026-10-21T03:40:57+00:00",
+      "ended_at_utc": "2026-10-21T04:18:01+00:00",
+      "observed_wall_clock_minutes": 37.07,
+      "verified_before": 600,
+      "verified_after": 657
+    }
+  ],
+  "target": {
+    "verified_bilingual_concepts": 657,
+    "achieved": true,
+    "verification_scope": "Canonical EN/preferred ES individual external-source crosscheck by assistant, not independent clinician review"
+  },
+  "category_translation_counts": {
+    "classification": {
+      "total": 41,
+      "verified": 41,
+      "pending": 0
+    },
+    "measurement": {
+      "total": 51,
+      "verified": 51,
+      "pending": 0
+    },
+    "guidelines": {
+      "total": 10,
+      "verified": 10,
+      "pending": 0
+    },
+    "conference_language": {
+      "total": 22,
+      "verified": 22,
+      "pending": 0
+    },
+    "risk_prevention": {
+      "total": 30,
+      "verified": 30,
+      "pending": 0
+    },
+    "research_methods": {
+      "total": 38,
+      "verified": 38,
+      "pending": 0
+    },
+    "clinical_trials": {
+      "total": 23,
+      "verified": 23,
+      "pending": 0
+    },
+    "endocrine_renal": {
+      "total": 83,
+      "verified": 83,
+      "pending": 0
+    },
+    "kidney": {
+      "total": 37,
+      "verified": 37,
+      "pending": 0
+    },
+    "treatment": {
+      "total": 54,
+      "verified": 54,
+      "pending": 0
+    },
+    "medications": {
+      "total": 69,
+      "verified": 69,
+      "pending": 0
+    },
+    "organ_damage": {
+      "total": 55,
+      "verified": 55,
+      "pending": 0
+    },
+    "lifestyle": {
+      "total": 27,
+      "verified": 27,
+      "pending": 0
+    },
+    "units_measurement": {
+      "total": 15,
+      "verified": 15,
+      "pending": 0
+    },
+    "physiology": {
+      "total": 45,
+      "verified": 45,
+      "pending": 0
+    },
+    "emergencies": {
+      "total": 19,
+      "verified": 19,
+      "pending": 0
+    },
+    "pregnancy": {
+      "total": 25,
+      "verified": 25,
+      "pending": 0
+    },
+    "special_populations": {
+      "total": 13,
+      "verified": 13,
+      "pending": 0
+    }
+  },
+  "candidate_modified_in_continuation": false,
+  "candidate_sha256": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45"
+}

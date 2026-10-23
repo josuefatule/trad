@@ -1,0 +1,27 @@
+{
+  "files": {
+    "Start-TRAD.ps1": "58565f0a30738427ddd88ef20f7a8a390dcdcf889570d5fe80030239709a5666",
+    "app/lan_gateway.py": "7ab96d7540f338ee057f9a13dc2b8d26d9161959fc2940ffef446cff02bc22cb",
+    "app/launcher_network.py": "02bf4f20020c97aad9a6eeaed9cfa219da9c8e6c6922d0ada48373816922a668",
+    "app/static/launcher_network.js": "8f9b5cfeb3b81276c408374d739dbaf7b29a78b16e4f5ba7f6c109cbfd70fee6",
+    "app/static/operator.js": "0d0511e928cc93f81950faa261e4eb3ec268b0ddbac6ed279b765d9696815612",
+    "tools/smoke_trad.py": "d6846207c7931ff2b2778002c8e667b85ee6d640202dab20f137442f3ca9a85a",
+    "tests/test_launcher.py": "c630131ee12882e491d629f1ae8f73af31c405a6b58e4c21e84961884d687fbe",
+    "tests/check_launcher.ps1": "91820528a758dc4daf79c9f4deff44ba3d51194ac26b398cedd3df6a96b6660b",
+    "tests/test_audio_input.cjs": "a49dcdcc74e2bc177cabb5f2d6ea929ca6a76e6594175553e425199150324095",
+    "tests/test_launcher_network.cjs": "60cadc0067ab95a3948c74a294d4d2b112c8a35557abd4a6e112e64d558159ad",
+    "README.md": "5f0ccde20b02f3ebdef4f7f764283a3fa8572c1de8f1255436935735bd53d2ee",
+    "INSTALL_WINDOWS.md": "2e5fcc28edce00dc3829c4d2b66e30db7dce01bed90f9f5d0d09ecf66bfd6f56",
+    "LAUNCHER_MVP.txt": "c08f2182b3b4417bbcc75784d94f2e1c87b6698f7c3f59cc65ba76c9e3d435d2"
+  },
+  "python_regression_tests": 49,
+  "browser_regression_tests": 1,
+  "powershell_checks_per_version": 28,
+  "javascript_suites": 5,
+  "preservation": {
+    "protected_files": 967,
+    "changed": [],
+    "result": "PASS",
+    "checked_utc": "2026-10-22T14:47:41.572360+00:00"
+  }
+}

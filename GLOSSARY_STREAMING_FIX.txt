@@ -1,0 +1,105 @@
+CORRECCIÓN DE SEGMENTACIÓN Y SEPARACIONES — 22 OCTUBRE 2026
+Política activa: medical-streaming-v2
+Paquete de datos conservado: medical-657-v1, 657 conceptos bilingües
+
+QUÉ CAMBIA
+
+En modo «Activo para pruebas», el selector de cortes protege las expresiones
+médicas completas presentes en el texto, incluidas variantes de preservación.
+Evita terminar en conectores o negaciones pendientes, y evita publicar como
+fragmento aislado una introducción corta seguida de coma, como «Finally,».
+
+Se protegen especialmente orthostatic hypotension, physical inactivity,
+shortness of breath y mm of mercury. La forma ASR «the astolic blood pressure»
+se mantiene junta para traducción, sin convertirla en sistólica ni diastólica.
+Las formas partidas hyper tension e hypo tension se unen respectivamente como
+hypertension e hypotension, conservando mayúsculas y la dirección original.
+No se usan aproximaciones fonéticas generales para esa unión. Se respetan
+identificadores, negaciones, «by», cifras y unidades.
+
+La espera de una expresión incompleta tiene un margen adicional máximo de
+1,5 segundos sobre el límite duro existente: con los ajustes predeterminados,
+7 segundos desde el primer carácter pendiente. Al alcanzar el límite de
+palabras se conserva el control de recursos; una excepción forzada queda en
+la auditoría como medical_boundary_bypass. STOP vacía el texto restante.
+Una pausa prolongada puede, por tanto, agotar la protección: la espera no es
+indefinida. Se respeta la estabilización del texto antes de publicar el final
+de un fragmento; esto evita perder puntuación que ASR aún está añadiendo.
+
+REVERSIÓN
+
+El mismo control existente revierte también estas dos correcciones:
+STOP SESSION → esperar cierre → «Desactivado / volver al anterior» → START.
+En «Observación» tampoco cambian los cortes ni el texto publicado; las uniones
+solo aparecen como propuestas. La selección sigue siendo persistente.
+El ajuste de emergencia TRAD_GLOSSARY_MODE=off mantiene su prioridad.
+
+No se modificaron el segmentador base, el normalizador original, el glosario
+original, el paquete de datos v1 ni los archivos de investigación. Las reglas
+de segmentación se aplican mediante una clase independiente únicamente en modo
+soft. Las copias anteriores del código conectado están en backups/glossary-soft-v2.
+
+PRUEBA CON EL MISMO TEXTO DEL USUARIO
+
+Se conservó la auditoría de la primera lectura en:
+  benchmarks/glossary_soft_v2/first_reading.json
+También se conservaron copias de sus registros antes de reiniciar FastAPI.
+
+La lectura original produjo 33 fragmentos y cero correcciones. Se reprodujo
+su mismo texto de dos formas controladas:
+
+  Entrada de reproducción                  Anterior     Nueva política
+  Fragmentos y tiempos de salida guardados      23              18
+  Una palabra cada 400 milisegundos             31              22
+
+Las cifras de la reproducción y las 33 salidas originales tienen relojes de
+entrada distintos: no deben interpretarse como una comparación directa de
+latencia real. No se dispone aquí de todos los snapshots ASR de esa lectura
+ni de su audio. Se trata de una prueba del texto y sus cortes, no de una nueva
+inferencia de voz, prueba de pronunciación ni evaluación real de DeepL/OBS.
+
+En ambas reproducciones:
+  - Se unen las tres apariciones de hyper tension.
+  - No se parten las cinco expresiones comprobadas: orthostatic hypotension,
+    physical inactivity, shortness of breath, hyper tension y 10 mm of mercury.
+  - No se pierden ni duplican palabras del RAW.
+  - Se conserva exactamente «5 mg, not 15 mg».
+  - Desactivar o poner en observación conserva el texto previo sin las uniones.
+
+Se mantienen sin reconstrucción los errores «primary outlawed», «high rate»
+y «the astolic blood pressure». Esta corrección no recupera por sí sola los
+términos que el reconocimiento perdió ni convierte quince en cincuenta.
+
+VERIFICACIONES
+
+Los 153 controles anteriores coinciden con lo esperado. De los 97 controles
+de presión, 96 coinciden; se mantiene la abstención previa ante
+«antihypertension medication». Ninguno de los 233 controles negativos se
+reescribe. Se añadieron pruebas de dirección hyper/hypo, identificadores,
+espera acotada, continuación tardía, cierre y reversión del segmentador.
+
+Una reproducción adicional de los 888 eventos ASR históricos conserva todas
+las palabras y su puntuación, en orden, sin revisiones tardías de texto emitido.
+Las pruebas del transporte, traductor, control y navegador utilizan servicios
+simulados: no envían solicitudes facturables al proveedor.
+
+Resultados detallados y comprobación final:
+  benchmarks/glossary_soft_v2/reading_replay.json
+  benchmarks/glossary_soft_v2/guard_controls.json
+  benchmarks/glossary_soft_v2/tests.log
+  benchmarks/glossary_soft_v2/browser_tests.log
+  benchmarks/glossary_soft_v2/browser_results.json
+  benchmarks/glossary_soft_v2/preservation_final.json
+  benchmarks/glossary_soft_v2/implementation_manifest.json
+  benchmarks/glossary_soft_v2/readiness.json
+
+PARA REPETIR LA LECTURA
+
+Recargar completamente http://localhost:8010/operator con Ctrl+F5 en Chrome
+o Edge. Elegir English → Español y «Activo para pruebas». Leer el mismo texto
+a ritmo natural, mantener abierta CAPTURE y terminar con STOP SESSION.
+
+Comprobar que NORMALIZED EN muestra hypertension donde RAW muestra hyper
+tension. Revisar que las expresiones médicas lleguen completas a traducción
+y comparar después con una sesión desactivada si se desea verificar reversión.
+La nueva prueba física debe confirmar la mejora real de traducción y latencia.

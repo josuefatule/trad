@@ -1,0 +1,28 @@
+{
+  "frozen_before_trial": true,
+  "language": "en",
+  "random_selection_manifest": "selection.json",
+  "tolerance_grid": [
+    0.86,
+    0.88,
+    0.9,
+    0.92,
+    0.94,
+    0.96,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "baseline_auto_threshold": 0.9,
+  "baseline_suggest_threshold": 0.86,
+  "mechanism": "Actual TerminologyNormalizer fuzzy matcher in CPU-only laboratory. Per-term auto threshold varied; no changes in original config.",
+  "selection_data": "Constructed spelling/split variants plus distinct concept and context negatives derived from frozen guards; these are NOT pronunciations.",
+  "checking_data": "Existing raw ASR from the three cached baseline models, aligned to unchanged provisional references; previously explored corpus, not an independent unseen test.",
+  "prosody": "Existing natural recordings only. Different models on the same recording are not different intonations. No synthetic pronunciation or new independent speaker is claimed.",
+  "automatic_live_application": false,
+  "protection": "No updates to original glossary, package, prior research/evidence, application, provider, service or model weights.",
+  "threshold_choice": "For each term choose maximum constructed-positive recovery among thresholds with zero constructed hard-negative triggers; tie-break toward higher threshold. If none is safe, disable automatic fuzzy for that term. Expose training and checking separately.",
+  "comparison": "Uniform .90 vs individualized grid vs exact-only; candidate text changes are simulated in new research artifacts only. Clinical critical-cue differences reviewed separately from lexical WER.",
+  "threshold_boundary_rule": "At auto=.86, suggest=.85 to satisfy strict loader ordering; at all other grid points suggest=.86. Baseline remains exactly .90/.86.",
+  "scope": "Ten randomly sampled glossary concepts in recorded English references, including organization names. No rerolling after inspecting selection."
+}

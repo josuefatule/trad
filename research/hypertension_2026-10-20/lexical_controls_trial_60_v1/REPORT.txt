@@ -1,0 +1,152 @@
+CORRECCIÓN EN LABORATORIO: VARIANTES, PLURALES Y SOLAPAMIENTOS
+Mismos 60 términos, mismos umbrales y mismo corpus. Investigación, sin integración en TRAD.
+
+RESULTADO
+La revisión final reduce el error léxico en los tres modelos respecto al perfil anterior de sesenta términos.
+Se reparan los fallos de contexto conocidos sin perder casos que antes pasaban. No se cambiaron los umbrales ni se seleccionaron otros términos.
+El resultado es de desarrollo sobre datos ya explorados, con referencias provisionales. No constituye validación clínica independiente.
+
+COMPARACIÓN PRINCIPAL
+WER = errores de palabras / 4.204 palabras de referencia por modelo; menor es mejor.
+Modelo | 60 anteriores | 60 con correcciones de laboratorio | Errores menos
+small | 3.24% (136) | 3.12% (131) | 5
+medium | 2.69% (113) | 2.55% (107) | 6
+large-v3-turbo | 3.26% (137) | 3.12% (131) | 6
+
+CONTRIBUCIÓN DE CADA REGLA
+Errores de palabras sobre las mismas transcripciones completas; no se generaron nuevas inferencias.
+Modelo | Crudo | 10 anteriores | 60 anteriores | Conservar variantes | Además conservar número | Además resolver solapamientos y proteger identificadores
+small | 148 | 132 | 136 | 132 | 131 | 131
+medium | 117 | 109 | 113 | 109 | 107 | 107
+large-v3-turbo | 132 | 132 | 137 | 133 | 131 | 131
+La mejora WER en este corpus procede de evitar modificaciones innecesarias de variantes y plurales. Resolver solapamientos mejora los contextos construidos, pero no añade una mejora WER adicional en estas grabaciones.
+El perfil de diez se muestra como referencia histórica y reutiliza sus salidas guardadas; no se recalibró.
+
+REGLAS CAMBIADAS SOLO EN ESTA CARPETA DE INVESTIGACIÓN
+1. Variantes: se conservan literalmente los tramos de las 15 formas inglesas reviewable_variant asociadas a estos conceptos en el paquete anterior. No se expanden ni sustituyen por el canónico.
+   Incluye pharmacologic therapy. Su registro previo permite consulta de investigación y localización literal; no aprueba equivalencia estricta ni sustitución automática. Preservar el texto no añade esa aprobación.
+   Las variantes no se incorporan al glosario ni se habilitan como reglas de sustitución. Se conservan también cuando aparecen junto a una errata corregible fuera de su tramo.
+2. Singular/plural: se rechazan cambios de número en ambas direcciones antes de seleccionar candidatos. Se reconocen terminaciones regulares y una lista explícita de irregulares; las reglas están registradas en el código local del ensayo.
+   Así se mantienen diastolic blood pressures y cardiovascular risks. No se generan automáticamente formas flexionadas como reemplazo.
+   Es un bloqueo conservador, no un analizador morfológico completo. Puede dejar sin corregir una errata cuando también existe flexión; ese coste se conserva en los resultados.
+3. Solapamientos: una frase aproximada que supera su umbral y todos los controles puede desplazar una coincidencia exacta corta solo si esta queda completamente dentro del tramo y es una subexpresión propia de su forma canónica.
+   No desplaza coincidencias exactas ajenas o mayores; no desplaza formas protegidas. Se conservan las prioridades de confianza entre candidatos competidores.
+4. Identificadores: se propaga la protección de una frase que sería admisible salvo por empezar dentro de un identificador; sus fragmentos internos tampoco pueden reescribirse.
+   La protección se limita a ese tramo y permite reparar una errata independiente en otra parte de la misma frase.
+
+ENSAYO INTERMEDIO CONSERVADO
+La primera revisión mejoró las recuperaciones, pero produjo dos cambios no deseados: tag_target sytolic blood pressure y tag_non-elvated blood pressure.
+El control protegía el principio del término, pero un candidato más corto podía empezar después de un espacio o guion y modificar el sufijo.
+Se mantuvieron intactos sus resultados en la carpeta principal, con first_replay_manifest.json. Su contexto registra 49 recuperaciones adicionales y 2 regresiones.
+La segunda revisión se guardó en boundary_refinement_v2, con política congelada antes de repetir la prueba. Conserva las 49 mejoras y elimina ambas regresiones.
+Se declara expresamente este desarrollo guiado por los errores observados; no se presenta como evaluación sobre un conjunto independiente.
+
+COMPROBACIONES CONSTRUIDAS CON LOS SESENTA TÉRMINOS ACTIVOS
+Se reutilizaron las particiones de checking previas y se excluyeron sus duplicados exactos de calibración. No se volvió a calibrar.
+Los totales no se comparan directamente con la anterior tabla por término: aquí los sesenta están activos juntos y se incluyen los diez iniciales.
+Perfil | Positivos recuperados | Negativos modificados
+old60 | 171/300 | 0/806
+all_fixes | 206/300 | 0/806
+
+CONTEXTO Y LÍMITES DE PALABRA
+Perfil | Positivos correctos | Negativos modificados
+old60 | 283/423 | 0/300
+all_fixes | 332/423 | 0/300
+Mejoras de contexto: 49; casos que antes pasaban y ahora fallan: 0.
+Se recuperan los 42 casos de las seis expresiones detectadas en la expansión anterior y siete casos adicionales de systolic blood pressure, que también quedaba bloqueada al convivir con blood pressure.
+Los 91 contextos positivos restantes pertenecen a los trece términos dejados deliberadamente en coincidencia exacta; no se elevaron sus permisos para aumentar el resultado.
+Los 153 controles declarados de variantes/plurales, solapamientos y regresiones previas pasan en la revisión final. Son pruebas de desarrollo, no una muestra independiente de uso real.
+Se conserva primary allosteronism by this test -> primary aldosteronism by this test, sin eliminar by.
+En las nueve transcripciones con la política final se conservan las secuencias medidas de conectores/negaciones/cifras y unidades. Estos canales no detectan todos los cambios de significado.
+
+AUDITORÍA DE CAMBIOS EN LAS TRANSCRIPCIONES
+Cambios simulados antes: 49. Después: 29. Se retiran 20 y se introducen 0 cambios nuevos frente al perfil anterior.
+Se evitan doce canonicalizaciones de pharmacologic therapy y cinco pérdidas de plural. También desaparecen tres cambios de mayúsculas que eran neutros para WER.
+De los 29 cambios que permanecen, 22 mejoran la concordancia léxica al aplicarse por separado, 6 son neutros y 1 la empeora.
+Queda un desacuerdo conocido: en medium/cardio_03 se cambia primary allosteronism por primary aldosteronism, mientras la referencia provisional también escribe primary allosteronism.
+No se ha decidido mediante escucha o adjudicación clínica cuál texto refleja mejor el audio. El desacuerdo se mantiene visible en correction_review.json y no se oculta tras la mejora global.
+change_comparison.json enumera los cambios retirados y su efecto aislado. La distancia de palabras es una métrica léxica, no una medida de daño clínico.
+
+DECISIONES DE LOS MISMOS SESENTA TÉRMINOS
+Umbral = score heurístico congelado, no probabilidad. Exacto = fuzzy deshabilitado.
+Coincidencias = forma literal de la referencia inglesa sobre tres modelos correlacionados; términos anidados pueden compartir palabras. No es exactitud conceptual.
+N.º | Inglés / Español | Umbral intacto | Coincidencias antes -> después / observaciones
+01 | sodium-containing salts / sales que contienen sodio | 0.94 | 3 -> 3 / 3
+02 | sodium reabsorption / reabsorción de sodio | 0.94 | 3 -> 3 / 3
+03 | cardiovascular events / eventos cardiovasculares | 1.00 | 21 -> 21 / 21
+04 | tyrosine kinase inhibitors / inhibidores de tirosina cinasa | 1.00 | 3 -> 3 / 3
+05 | ten-year ASCVD risk / riesgo de enfermedad cardiovascular aterosclerótica a 10 años | 0.94 | 2 -> 2 / 6
+06 | National Institutes of Health / Institutos Nacionales de Salud de Estados Unidos | 0.96 | 3 -> 3 / 3
+07 | mineralocorticoid receptor / receptor de mineralocorticoides | 1.00 | 6 -> 6 / 6
+08 | primary aldosteronism / aldosteronismo primario | 0.94 | 29 -> 29 / 30
+09 | systolic blood pressure / presión arterial sistólica | 0.94 | 15 -> 15 / 15
+10 | American Heart Association / Asociación Americana del Corazón | 0.96 | 12 -> 12 / 12
+11 | resistant hypertension / hipertensión resistente | 0.94 | 15 -> 15 / 15
+12 | spironolactone / espironolactona | Exacto | 2 -> 2 / 3
+13 | cardiometabolic risk / riesgo cardiometabólico | 0.94 | 3 -> 3 / 3
+14 | heart disease / cardiopatía | 0.92 | 3 -> 3 / 3
+15 | elevated blood pressure / presión arterial elevada | 0.94 | 27 -> 27 / 27
+16 | blood pressure / presión arterial | 0.92 | 201 -> 201 / 204
+17 | cardiovascular risk / riesgo cardiovascular | 0.94 | 6 -> 6 / 6
+18 | target systolic blood pressure / objetivo de presión arterial sistólica | 0.96 | 3 -> 3 / 3
+19 | hormone replacement therapy / terapia hormonal de reemplazo | 0.96 | 3 -> 3 / 3
+20 | immunosuppressive agents / inmunosupresores | 1.00 | 3 -> 3 / 3
+21 | diuretics / diuréticos | Exacto | 3 -> 3 / 3
+22 | atherosclerosis / aterosclerosis | Exacto | 3 -> 3 / 3
+23 | hypertension / hipertensión arterial | Exacto | 165 -> 165 / 165
+24 | micrograms per deciliter / microgramos por decilitro | Exacto | 3 -> 3 / 3
+25 | incidence / incidencia | Exacto | 3 -> 3 / 3
+26 | isometric resistance exercise / ejercicio isométrico de fuerza | 0.96 | 2 -> 2 / 3
+27 | pharmacological therapy / tratamiento farmacológico | 0.94 | 3 -> 15 / 15
+28 | as low as reasonably achievable / tan baja como sea razonablemente alcanzable | 0.96 | 3 -> 3 / 3
+29 | weight loss / pérdida de peso | 0.90 | 6 -> 6 / 6
+30 | renin suppression / supresión de renina | 0.94 | 3 -> 3 / 3
+31 | hypotension / hipotensión | Exacto | 2 -> 2 / 3
+32 | chronic kidney disease / enfermedad renal crónica | 0.94 | 6 -> 6 / 6
+33 | blood pressure target / objetivo de presión arterial | 0.94 | 3 -> 3 / 3
+34 | exercise / ejercicio | Exacto | 6 -> 6 / 6
+35 | prehypertension / prehipertensión | Exacto | 1 -> 1 / 3
+36 | millimoles per day / milimoles por día | 0.94 | 6 -> 6 / 6
+37 | micrograms per day / microgramos por día | Exacto | 6 -> 6 / 6
+38 | non-elevated blood pressure / presión arterial no elevada | 0.96 | 6 -> 6 / 6
+39 | alcohol intake / consumo de alcohol | 0.92 | 3 -> 3 / 3
+40 | serious adverse events / eventos adversos graves | 0.94 | 3 -> 3 / 3
+41 | salt loading / sobrecarga de sodio | 0.92 | 3 -> 3 / 3
+42 | renin-independent aldosterone production / producción de aldosterona independiente de renina | 0.96 | 2 -> 2 / 3
+43 | mineralocorticoid receptor antagonists / antagonistas del receptor de mineralocorticoides | 1.00 | 3 -> 3 / 3
+44 | urinary aldosterone / aldosterona urinaria | 0.94 | 2 -> 2 / 3
+45 | oral contraceptives / anticonceptivos orales | 1.00 | 3 -> 3 / 3
+46 | hypokalemic metabolic alkalosis / alcalosis metabólica hipopotasémica | 0.96 | 3 -> 3 / 3
+47 | aldosterone / aldosterona | Exacto | 11 -> 11 / 27
+48 | physical activity / actividad física | 0.96 | 3 -> 3 / 3
+49 | meta-analysis / metaanálisis | 0.92 | 6 -> 6 / 6
+50 | cardiovascular disease / enfermedad cardiovascular | 0.94 | 30 -> 30 / 30
+51 | evidence-based review / revisión basada en la evidencia | 0.94 | 3 -> 3 / 3
+52 | direct renin concentration / concentración directa de renina | 0.96 | 3 -> 3 / 3
+53 | alcohol moderation / moderación del consumo de alcohol | 0.94 | 3 -> 3 / 3
+54 | subclinical atherosclerosis / aterosclerosis subclínica | 0.96 | 3 -> 3 / 3
+55 | older adults / adultos mayores | 0.96 | 3 -> 3 / 3
+56 | healthy diet / alimentación saludable | 0.92 | 3 -> 3 / 3
+57 | co-chair / copresidente | Exacto | 3 -> 3 / 3
+58 | blood pressure control / control de la presión arterial | 0.94 | 9 -> 9 / 9
+59 | prevalence / prevalencia | Exacto | 9 -> 9 / 9
+60 | diastolic blood pressure / presión arterial diastólica | 0.96 | 6 -> 6 / 6
+
+ALCANCE Y CONSERVACIÓN
+Se reutilizaron tres archivos de voz natural y nueve transcripciones de small, medium y large-v3-turbo: 251 apariciones únicas y 753 observaciones correlacionadas de los sesenta conceptos.
+Los archivos 02/03 podrían pertenecer a una misma charla. Las referencias son provisionales y el corpus ya había sido explorado.
+No hubo grabaciones nuevas, nuevas inferencias ASR ni variaciones controladas de entonación/acento/velocidad. Las erratas construidas son texto, no pronunciaciones verificadas.
+No se extrapola el resultado a los 657 conceptos, español, otros hablantes o funcionamiento en directo. No se modificó ningún umbral ni se repitió el sorteo.
+Pasaron 15 pruebas de las reglas finales y 11 verificaciones de las salidas, las regresiones, las entradas congeladas y la conservación de evidencias.
+Se comprobaron 1068 archivos de la instantánea, incluidos 857 protegidos estrictamente. Observaciones de cambios ajenos a esta tarea: 0.
+Las huellas del glosario original, todos los ensayos anteriores, el paquete depurado, las evidencias, los audios/referencias, ASR guardados y las bibliotecas de aplicación utilizadas permanecen iguales.
+Solo se escribieron archivos nuevos en lexical_controls_trial_60_v1. La versión final está en boundary_refinement_v2; ambos ensayos y sus protocolos se conservan.
+El informe no cambia el estado de aprobación del paquete. No se conectó, desplegó ni integró nada en TRAD.
+
+ARCHIVOS PARA REVISIÓN
+final_results.json: resumen y comparaciones. change_comparison.json: cambios retirados y conservados.
+boundary_refinement_v2/speech_comparison.json: métricas, texto simulado y auditorías de los seis perfiles.
+boundary_refinement_v2/context_comparison.json y constructed_comparison.json: resultados por caso, incluidos fallos.
+boundary_refinement_v2/correction_review.json: revisión léxica de los cambios finales.
+selection.json y thresholds.json: entradas originales intactas. Ambos protocol.json: reglas y huellas congeladas.
+first_replay_manifest.json conserva el ensayo intermedio; manifest.json sella todos los resultados nuevos. preservation_final.json acredita las evidencias anteriores.

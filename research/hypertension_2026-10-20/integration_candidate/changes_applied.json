@@ -1,0 +1,551 @@
+{
+  "schema_version": "1.0",
+  "package_version": "1.0.0-research",
+  "kind": "derived_changes_only",
+  "status": "research_preparation_only",
+  "integrated": false,
+  "runtime_approved": false,
+  "automatic_substitution_approved": false,
+  "abbreviation_changes": [
+    {
+      "concept_id": "HTN_cca214c43d15",
+      "form": "MAP",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "mean arterial pressure",
+        "palabra inglesa map"
+      ],
+      "derived": [
+        "palabra inglesa map"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_e4fa389210bd",
+      "form": "AMPA",
+      "language": "es",
+      "field": "abbreviations.expansion",
+      "previous": "monitorización domiciliaria de la presión arterial",
+      "derived": "automedida de la presión arterial",
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_3feefe243332",
+      "form": "ECA",
+      "language": "es",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "enzima convertidora de angiotensina",
+        "ensayo controlado aleatorizado"
+      ],
+      "derived": [
+        "enzima convertidora de angiotensina"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_173615f28213",
+      "form": "RAR",
+      "language": "es",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "ratio aldosterona-renina",
+        "reducción absoluta del riesgo"
+      ],
+      "derived": [
+        "ratio aldosterona-renina"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_dcd292247cbd",
+      "form": "PA",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "primary aldosteronism (EN)",
+        "presión arterial (ES)",
+        "pulmonary artery (EN)"
+      ],
+      "derived": [
+        "presión arterial (ES)",
+        "pulmonary artery (EN)"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_e2601a1dc5c2",
+      "form": "PRA",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "plasma renin activity",
+        "panel-reactive antibody"
+      ],
+      "derived": [
+        "panel-reactive antibody"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_1d322d2c80e0",
+      "form": "PAC",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "plasma aldosterone concentration",
+        "premature atrial contraction"
+      ],
+      "derived": [
+        "premature atrial contraction"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_351e3115ce6d",
+      "form": "RAS",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "renin-angiotensin system",
+        "renal artery stenosis",
+        "RAS gene family"
+      ],
+      "derived": [
+        "renal artery stenosis",
+        "RAS gene family"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_95c847b235dd",
+      "form": "ACE",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "angiotensin-converting enzyme",
+        "adverse childhood experiences"
+      ],
+      "derived": [
+        "adverse childhood experiences"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_95c847b235dd",
+      "form": "ECA",
+      "language": "es",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "enzima convertidora de angiotensina",
+        "ensayo controlado aleatorizado"
+      ],
+      "derived": [
+        "ensayo controlado aleatorizado"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_a05dadb4b409",
+      "form": "MR",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "mineralocorticoid receptor",
+        "magnetic resonance",
+        "mitral regurgitation"
+      ],
+      "derived": [
+        "magnetic resonance",
+        "mitral regurgitation"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_0114ad465a4c",
+      "form": "MRAs",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "mineralocorticoid receptor antagonists",
+        "plural de angiografía por RM en algunos discursos"
+      ],
+      "derived": [],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_0114ad465a4c",
+      "form": "MRA",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "mineralocorticoid receptor antagonists",
+      "derived": "mineralocorticoid receptor antagonist",
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_0114ad465a4c",
+      "form": "MRA",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "mineralocorticoid receptor antagonist",
+        "magnetic resonance angiography"
+      ],
+      "derived": [
+        "magnetic resonance angiography"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_a4f97a1e45b5",
+      "form": "APA",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "aldosterone-producing adenoma",
+        "sigla de varias sociedades"
+      ],
+      "derived": [],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_d9b6ff80f476",
+      "form": "ARB",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "angiotensin II receptor blockers",
+      "derived": "angiotensin II receptor blocker",
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_130dff595337",
+      "form": "CCB",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "calcium channel blockers",
+      "derived": "calcium channel blocker",
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_74f76b30d806",
+      "form": "NSAID",
+      "language": "en",
+      "field": "abbreviations.expansion",
+      "previous": "nonsteroidal anti-inflammatory drugs",
+      "derived": "nonsteroidal anti-inflammatory drug",
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_4a97a2620aef",
+      "form": "MI",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "myocardial infarction",
+        "mitral insufficiency"
+      ],
+      "derived": [
+        "mitral insufficiency"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_09417dacb727",
+      "form": "AF",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "atrial fibrillation",
+        "otras abreviaturas según especialidad"
+      ],
+      "derived": [],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_67ae2e7ca5b5",
+      "form": "SAOS",
+      "language": "es",
+      "field": "abbreviations.expansion",
+      "previous": "apnea obstructiva del sueño",
+      "derived": "síndrome de apnea obstructiva del sueño",
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_037c29d33df0",
+      "form": "HRV",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "heart rate variability (EN)",
+        "hipertensión renovascular (ES en S29)"
+      ],
+      "derived": [
+        "hipertensión renovascular (ES en S29)"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_c6e2a2151a5c",
+      "form": "CO",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "cardiac output",
+        "carbon monoxide"
+      ],
+      "derived": [
+        "carbon monoxide"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_2e060091f636",
+      "form": "HR",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "heart rate",
+        "hazard ratio"
+      ],
+      "derived": [
+        "hazard ratio"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_c044a9939be3",
+      "form": "NO",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "nitric oxide",
+        "negación"
+      ],
+      "derived": [
+        "negación"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_2320a39a5ea0",
+      "form": "ACS",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "autonomous cortisol secretion",
+        "acute coronary syndrome"
+      ],
+      "derived": [
+        "acute coronary syndrome"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_889dab4e3c8c",
+      "form": "MRA",
+      "language": "en",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "mineralocorticoid receptor antagonist",
+        "magnetic resonance angiography"
+      ],
+      "derived": [],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    },
+    {
+      "concept_id": "HTN_f3279006c3e0",
+      "form": "IC",
+      "language": "es",
+      "field": "abbreviations.other_meanings",
+      "previous": [
+        "intervalo de confianza",
+        "insuficiencia cardíaca"
+      ],
+      "derived": [
+        "insuficiencia cardíaca"
+      ],
+      "status": "applied_to_derived_research_only_not_runtime_approved"
+    }
+  ],
+  "strict_exclusion_form_ids": [
+    "UF0008",
+    "UF0011",
+    "UF0015",
+    "UF0016",
+    "UF0017",
+    "UF0077",
+    "UF0117",
+    "UF0199",
+    "UF0292",
+    "UF0336",
+    "UF0342",
+    "UF0471"
+  ],
+  "evidence_hold_form_ids": [
+    "UF0048",
+    "UF0080",
+    "UF0277",
+    "UF0284",
+    "UF0286",
+    "UF0320",
+    "UF0375",
+    "UF0378",
+    "UF0385",
+    "UF0414",
+    "UF0465",
+    "UF0466"
+  ],
+  "latest_overlay_applied_to": [
+    "UF0015",
+    "UF0038",
+    "UF0042",
+    "UF0044",
+    "UF0048",
+    "UF0058",
+    "UF0075",
+    "UF0079",
+    "UF0080",
+    "UF0083",
+    "UF0117",
+    "UF0148",
+    "UF0157",
+    "UF0158",
+    "UF0159",
+    "UF0174",
+    "UF0175",
+    "UF0196",
+    "UF0205",
+    "UF0206",
+    "UF0207",
+    "UF0232",
+    "UF0247",
+    "UF0267",
+    "UF0274",
+    "UF0277",
+    "UF0280",
+    "UF0281",
+    "UF0282",
+    "UF0284",
+    "UF0286",
+    "UF0288",
+    "UF0289",
+    "UF0295",
+    "UF0304",
+    "UF0305",
+    "UF0306",
+    "UF0308",
+    "UF0309",
+    "UF0313",
+    "UF0315",
+    "UF0317",
+    "UF0320",
+    "UF0336",
+    "UF0337",
+    "UF0345",
+    "UF0349",
+    "UF0356",
+    "UF0369",
+    "UF0370",
+    "UF0372",
+    "UF0373",
+    "UF0375",
+    "UF0378",
+    "UF0381",
+    "UF0384",
+    "UF0385",
+    "UF0387",
+    "UF0388",
+    "UF0389",
+    "UF0390",
+    "UF0391",
+    "UF0396",
+    "UF0399",
+    "UF0406",
+    "UF0408",
+    "UF0410",
+    "UF0411",
+    "UF0412",
+    "UF0414",
+    "UF0417",
+    "UF0424",
+    "UF0426",
+    "UF0427",
+    "UF0434",
+    "UF0435",
+    "UF0437",
+    "UF0438",
+    "UF0440",
+    "UF0460",
+    "UF0461",
+    "UF0465",
+    "UF0466",
+    "UF0467",
+    "UF0471",
+    "UF0472",
+    "UF0478",
+    "UF0480",
+    "UF0481",
+    "UF0483",
+    "UF0486",
+    "UF0487",
+    "UF0490",
+    "UF0491",
+    "UF0492",
+    "UF0493",
+    "UF0497",
+    "UF0498",
+    "UF0501",
+    "UF0504",
+    "UF0505",
+    "UF0507",
+    "UF0515",
+    "UF0516",
+    "UF0518",
+    "UF0524",
+    "UF0527",
+    "UF0529",
+    "UF0530",
+    "UF0533",
+    "UF0539",
+    "UF0540",
+    "UF0541",
+    "UF0546",
+    "UF0547",
+    "UF0548",
+    "UF0550",
+    "UF0551",
+    "UF0556",
+    "UF0557",
+    "UF0558",
+    "UF0562",
+    "UF0564",
+    "UF0566"
+  ],
+  "canonical_pairs_renamed": 0,
+  "canonical_revision_history_preserved": [
+    {
+      "id": "HTN_ab697e405d94",
+      "canonical_en": "arterial compliance",
+      "field": "preferred_es",
+      "previous": "distensibilidad arterial",
+      "corrected": "compliancia arterial",
+      "reason": "Preferencia española más precisa, atestada; no se declara sinonimia universal con distensibilidad.",
+      "scope": "research_dataset_only",
+      "original_and_candidate_modified": false,
+      "reviewed_at_utc": "2026-10-21T04:08:23+00:00"
+    },
+    {
+      "id": "HTN_52a96921d6d9",
+      "canonical_en": "asymptomatic markedly elevated blood pressure",
+      "field": "preferred_es",
+      "previous": "presión arterial marcadamente elevada sin síntomas",
+      "corrected": "presión arterial marcadamente elevada asintomática",
+      "reason": "Denominación técnica atestada; se añade contexto de ausencia de daño orgánico agudo y se evita interpretar sin síntomas como exclusión de todo síntoma inespecífico.",
+      "scope": "research_dataset_only",
+      "original_and_candidate_modified": false,
+      "reviewed_at_utc": "2026-10-21T04:08:23+00:00"
+    }
+  ],
+  "original_policies_imported": false
+}

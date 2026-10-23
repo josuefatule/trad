@@ -1,0 +1,63 @@
+MISMO ENSAYO DE 10 TÉRMINOS — CONTEXTO Y LÍMITES DE PALABRA
+
+Resultado: se conserva by, se mantiene la recuperación previa y se reduce un error adicional en medium.
+Solo se crearon archivos en esta carpeta nueva de investigación. No se integró nada en TRAD.
+
+COMPARACIÓN CONTROLADA
+Se conservaron los mismos diez identificadores, el mismo sorteo, los mismos umbrales y las mismas nueve hipótesis ASR.
+No se añadió ningún alias ni se reajustaron umbrales para conseguir el resultado.
+Se comparó el perfil anterior con dos alternativas: vetar después de seleccionar, o filtrar antes de seleccionar.
+El perfil nuevo filtra antes: una propuesta demasiado larga no impide elegir la variante corta correcta.
+
+CASO REAL QUE MOTIVÓ EL CONTROL
+Entrada: primary allosteronism by this confirmatory testing that we did was 6 
+Antes: primary aldosteronism this confirmatory testing that we did was 6 
+Ahora: primary aldosteronism by this confirmatory testing that we did was 6 
+Umbral intacto: 0.94. Antes se elegía el tramo con by (score 0.962727); ahora se acepta solo el término (0.956071).
+Vetar únicamente al final evita eliminar by, pero deja también la errata. Filtrar antes corrige la errata y conserva la preposición.
+
+ERRORES DE PALABRAS SOBRE LAS REFERENCIAS PROVISIONALES
+Modelo | Sin corrección | Umbrales individuales anteriores | Veto al final | Controles antes de seleccionar
+small | 3.52% (148 errores) | 3.14% (132 errores) | 3.14% (132 errores) | 3.14% (132 errores)
+medium | 2.78% (117 errores) | 2.62% (110 errores) | 2.62% (110 errores) | 2.59% (109 errores)
+large-v3-turbo | 3.14% (132 errores) | 3.14% (132 errores) | 3.14% (132 errores) | 3.14% (132 errores)
+Cada columna usa las mismas 4.204 palabras por modelo. No se promedian muestras de tamaños distintos.
+Solo cambió una de las nueve hipótesis candidatas respecto al ensayo anterior: medium/cardio_03, al restaurar by.
+Las formas de referencia recuperadas permanecen en 97/102 -> 97/102; la mejora es conservar además la palabra vecina.
+Los 102 casos representan 34 apariciones de audio evaluadas con tres modelos, no 102 pronunciaciones independientes.
+
+CONTROLES ESTUDIADOS
+- Límites de palabras e identificadores: evitar correcciones dentro de tag_ u otra palabra mayor, tanto por vía exacta como aproximada.
+- Secuencia de conectores dentro del tramo: by, of, with, for y otros deben conservarse.
+- Negaciones, cifras y unidades literales: rechazar cambios en esas señales dentro de la propuesta.
+- Calificadores opuestos y singular/plural conocidos: no convertir diastolic en systolic ni receptor en receptors.
+- Alineación completa de los tokens: permitir fragmentos de una palabra mal reconocida, sin descartar palabras vecinas.
+- Mantener una palabra de apoyo sin cambios. Una negación externa no bloquea una corrección válida: debe permanecer en el resultado.
+Estos controles son una subclase del laboratorio, no una modificación del normalizador de producción.
+
+RESULTADOS DE CONTRASTE
+Casos nuevos construidos: 73 positivos y 50 negativos, con conectores, pacientes, cifras, negación e identificadores.
+- Antes: 71/73 positivos con la salida completa esperada; 29/50 negativos modificados indebidamente.
+- Ahora: 73/73 positivos correctos; 0/50 negativos modificados indebidamente.
+Los casos anteriores sin duplicados mantienen exactamente 38/50 erratas recuperadas y 0/139 negativos disparados.
+En las nueve hipótesis controladas no cambió la secuencia medida de palabras funcionales, negaciones o cifras.
+13 pruebas unitarias satisfactorias cubren el caso by, pacientes contiguos, palabras partidas, negaciones, cifras, límites exactos y términos congelados.
+Las cifras de contraste corresponden a texto diseñado. No se presentan como una tasa clínica poblacional de falsos positivos.
+
+LÍMITES Y PRESERVACIÓN
+El error by conocido motivó el diseño. Este corpus ya se había examinado y no es una prueba ciega independiente.
+Las referencias son provisionales; conservan posibles erratas como primary allosteronism en otro pasaje.
+El control de contexto no resuelve por sí solo esa adjudicación clínica ni la calidad de las referencias.
+No hubo nuevo reconocimiento, modificación de entonaciones, llamadas a proveedores, servicios o cambios de configuración.
+No se evaluaron audio español, nuevas voces, interacción con los otros 647 conceptos ni latencia LIVE.
+Se verificaron 1002 archivos previos; 791 fuentes estrictamente protegidas conservan sus huellas.
+El original, el paquete depurado, los experimentos anteriores, sus evidencias y los audios permanecen intactos.
+La primera pasada se conserva en attempts/fuzzy_only_controls/. La entrega añade el mismo control a los ajustes exactos de formato, con una prueba específica; los resultados principales no cambiaron.
+
+ARCHIVOS PRINCIPALES
+protocol.json: reglas y huellas congeladas de entrada.
+by_case_comparison.json: tramos exactos, scores y palabra preservada.
+speech_comparison.json: textos candidatos locales, correcciones, propuestas bloqueadas, métricas y apariciones.
+context_comparison.json y prior_constructed_comparison.json: todos los contrastes nuevos y previos.
+term_results.json: los diez términos con sus umbrales intactos y resultados por perfil.
+preservation_final.json y manifest.json: comprobaciones de preservación e integridad.

@@ -1,0 +1,4418 @@
+{
+  "checked_utc": "2026-10-22T05:36:56.681361+00:00",
+  "protected_count": 882,
+  "unchanged_count": 882,
+  "changed_files": [],
+  "files": [
+    {
+      "path": "app/captions/terminology_normalizer.py",
+      "sha256": "0b1ddfb6d760ca7ad891cb88c0ef1b17f625f5b46b5072a6b583eac4f8fcf0cf",
+      "unchanged": true
+    },
+    {
+      "path": "glossaries/conference.json",
+      "sha256": "a711330ff91dcb2ecefa9866684087345bb1d34a9ecb663935d6641791857004",
+      "unchanged": true
+    },
+    {
+      "path": "glossaries/medical_base.json",
+      "sha256": "d8c09dbb234eb8c2c256e1bdad68013cceea2db3d7ac557db799772e0af53b37",
+      "unchanged": true
+    },
+    {
+      "path": "glossaries/medical_base_en.json",
+      "sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+      "unchanged": true
+    },
+    {
+      "path": "glossaries/README.md",
+      "sha256": "8002e718bfd20ca7ce3b93543a934d2698b8e9646d37fbc59a93b9b0f2e83154",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/__pycache__/prepare_alias_audit.cpython-312.pyc",
+      "sha256": "df329387884406f1bf95e5e8a6441ddd070ca45d5ce8a21a24871416cd956eb5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/__pycache__/record_bilingual_review.cpython-312.pyc",
+      "sha256": "cd96c8cba934613feab913444f967579d4ac1fdd7893d17f5321a3a82e000f81",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/__pycache__/verify_bilingual.cpython-312.pyc",
+      "sha256": "e467563b10bbc6703f24e5283874a0cc5af0fad764535a7d1a49edfde8e579b8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/add_continuation_sources.py",
+      "sha256": "8a81e4a30b671d47889639ff4a2f5f94f3496bc6f2083bb88570e763c4ebe28b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_audit_report.md",
+      "sha256": "3c83584cb62beab2a6558e8844fb50d0084af2fb12fea55fc8d9cd6b36d5768f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_audit_validation.json",
+      "sha256": "93b03766b653d611e1049d37e505a0dc928624b16768a8c949ae1e2c9e22e0dd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_corrections_proposed.json",
+      "sha256": "9b88f7bc3934b829d5e4f4c325cb236f31dae5dc4a804df84b60128397478dde",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_definition_evidence.json",
+      "sha256": "870979086d991baffe75dfd597a6d1361947c8db5cac33f7d0c714d6ab0f6b4b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_evidence_discovery.json",
+      "sha256": "237f1d4ab94a10a47cb433fda8b597d07d12488d4a04e178a60fcbf155759b25",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_inventory.json",
+      "sha256": "103364a107cefcbed0018a616a0af1aedf3b718bb8871fa013f675b08f5f829d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_inventory_review.txt",
+      "sha256": "bd19bf78edc5c6b46b8f7c46b6fe46c3e4f2885887c5f4c13a42d81980227e41",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_review_decisions.json",
+      "sha256": "01756db6cd3f309156f7571f23852c1724922b958bbe119669c03afa34e9418b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/alias_source_catalog.json",
+      "sha256": "a315b7f23ab94debc279bc18f9e99fe093ac95bbd425cfe91bc02566af35e3e8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/bilingual_decisions.json",
+      "sha256": "affcca7f68212ee2084bedd187a38e3eb56bb20bdbb8f04233b513b79e6bd812",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/bilingual_discovery.json",
+      "sha256": "30466d380bd89f66876400c031e421ebce25ac1ba4a4b75f5875b5f1cf2681cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/bilingual_search_forms.txt",
+      "sha256": "ec8856788b91a30363be73a2abc82c3b616125a9b76d6f5ff30ea145c54c202c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/bilingual_verification.json",
+      "sha256": "823dda8200ea075d3b066fe46558022e915f4d34fe256b1dde2a8cc0c68156a1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/build_research.py",
+      "sha256": "4a81e0b4c0e2a803c90e2701ff45993217e2b9e18f69a21a6f51395fa3c8ae69",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/build_research.py",
+      "sha256": "e1aa337716c2be87ee40558bd3b650896e24df337300ea456197f2156ce6a8d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/DATASET_SCHEMA.md",
+      "sha256": "a85acc066c50b0c7a62425b3e7111fc2416b23ef19ce4eb99f3490c70d03d3b3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/finalize_research.py",
+      "sha256": "50a349c9742d1db85811a3028ad75fe94465c87665909ebb48f0b7bac862668c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/hypertension_research_deliverables.zip",
+      "sha256": "5807778aa8f6dd9f43478315a414176089360e4e123867992d550c8800808d0e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/hypertension_research_en_es.json",
+      "sha256": "10ced68849c5eb1c4ba2caa1ef204860bf7fb9d30e459b1a1c5eb7a449f81b5d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/hypertension_research_progress.json",
+      "sha256": "1d7d2ac641d94b064665b1cebb0ad0106c61817178a2adeed1aa9e40bdf0957a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/hypertension_research_report.md",
+      "sha256": "b567ecac8a7eb8a1043ee5622c2b5b570699bd2d7582c6f4c84c7c34fa9b4191",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/manifest.json",
+      "sha256": "ad8136443502c6bb043af148cb2c87d23db270cdcd3ca6b92f1d90c639832074",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/report_template.md",
+      "sha256": "1a1a68458cf75137baa1c638729e2c57734517eee3fee45b26eff2358840074e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session1_52_verified/validation_results.json",
+      "sha256": "54c07b678f2404eebef49705cba8de035d0d41ed58b47fbb2c358b531703cd4d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/bilingual_decisions.json",
+      "sha256": "ea56fc6cdabeabae5adc007905672c2acc4c8fcca475bbcd62ae47358e19c876",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/bilingual_discovery.json",
+      "sha256": "30466d380bd89f66876400c031e421ebce25ac1ba4a4b75f5875b5f1cf2681cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/bilingual_verification.json",
+      "sha256": "c3343f2864d391532940c74aede281cbbeb9fa60fbbe98c1c0f4f8a40d2b47ae",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/CONTINUATION_README.txt",
+      "sha256": "00fc4e296dc46fee5a690e0410027c06e0c4262c6e696882f59c3e9fd40c8332",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/continuation_report_template.md",
+      "sha256": "c6657db79e23bdd87275846855d62d23756f5ca0f6edc921ef0a283a8bf8f0b5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/DATASET_SCHEMA.md",
+      "sha256": "e8705e4c6f510decbe5a31c7ee9fa53e7716b94b9b367b11a94d307aac4e7219",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/finalize_continuation.py",
+      "sha256": "f84c272d9523ab66e4d856be221f3dba59923cf612924259a42e5e30e6a14d51",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/hypertension_research_deliverables.zip",
+      "sha256": "d7731964340b7878638b74cde16b987dc26710f00958f3a4c430db6de412b101",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/hypertension_research_en_es.json",
+      "sha256": "83e33aaaf730c4e0c6a8bc8dcc99fe144d1e01691c4e8e949dfe2b2001859fef",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/hypertension_research_progress.json",
+      "sha256": "7e2ce4c22d520b3525b82534d1ec7616654a54ee167a4036702910687e679139",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/hypertension_research_report.md",
+      "sha256": "9a110c7f9d5e14ec2cd0b3d0201e9b37392467e000e3dc948edc5fb1d8b5c55c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/manifest.json",
+      "sha256": "59531ade9a887e01378fa7295cef62c9e80d6511d775dfbf53d0d8dcd545a40e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/source_access_index.json",
+      "sha256": "a3cd3ffb66288c64cf6a0229859660c7496f1210c86fec7eb3cd7b6feafcf02d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/sources.json",
+      "sha256": "c798817476d2074f5f13c71b7772328fb345a5f15c98d06d2149369b0f19460d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session2_600_verified/validation_results.json",
+      "sha256": "e9305dd849b1299d75c72330671f758e116fe03c0db739608222747b99eafc4b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/bilingual_decisions.json",
+      "sha256": "affcca7f68212ee2084bedd187a38e3eb56bb20bdbb8f04233b513b79e6bd812",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/bilingual_discovery.json",
+      "sha256": "30466d380bd89f66876400c031e421ebce25ac1ba4a4b75f5875b5f1cf2681cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/bilingual_search_forms.txt",
+      "sha256": "ec8856788b91a30363be73a2abc82c3b616125a9b76d6f5ff30ea145c54c202c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/bilingual_verification.json",
+      "sha256": "823dda8200ea075d3b066fe46558022e915f4d34fe256b1dde2a8cc0c68156a1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/CONTINUATION_README.txt",
+      "sha256": "a04bbd2f1824645f15bc138668c63a60fbc58715dca74344671f9fca460418b8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/continuation_report_template.md",
+      "sha256": "c6657db79e23bdd87275846855d62d23756f5ca0f6edc921ef0a283a8bf8f0b5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/DATASET_SCHEMA.md",
+      "sha256": "0824b1c1a82d5cdbe1de1ccd13ad297ecac958ee6c01a7fc14fc0b37845e685f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/discovery_review.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/discovery_review_fast.txt",
+      "sha256": "fc977cd3f473c533cff955cddb0c3ed60051a97dc2e3f08005a90b09d88da07b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/evidence_updates.json",
+      "sha256": "1fb3d5c35355a6b77d6c8211ad76f296cceee18a86c14ac7d607fee773c36a13",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/final_readme_template.txt",
+      "sha256": "a5c4ac9cf268c0be72ed57c46e17f506f23264fe1bb83bbae331560c7464f400",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/final_report_template.md",
+      "sha256": "f921afde2f223ffc04100b311094f726306c2426b3f2a7c3a0165f5d2e1f2d67",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/hypertension_research_deliverables.zip",
+      "sha256": "226acaaf493b596351b74405de5b74c8e15e54ba616fa320305ee629c5ef9214",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/hypertension_research_en_es.json",
+      "sha256": "bdcb40eea6c84e20ff327859eeac23f3b3194b3de9cfdd5553d6444e99e588c2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/hypertension_research_progress.json",
+      "sha256": "0e184647b60a1ed25151ca644db947d4652716c0dbc13f0137444941ad5ca32d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/hypertension_research_report.md",
+      "sha256": "d5c9dea4161c92284b349a9df0aad0a591be0e419b287b76d8d9d6084a111ffd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/manifest.json",
+      "sha256": "d225e677fdfd8c4191cb517b50e9c4734387583f5037807f1e07f6f21d0000f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/medical_base_en_extended_candidate.json",
+      "sha256": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/new_terms_review.txt",
+      "sha256": "7ca5e94bf6a7a23bcdb210c9e5745fdfaa83ef771131759ba1a13658d27f3b8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/original_glossary_audit.json",
+      "sha256": "ef0370e1d6ab1dc0446bbcdd971ec1f332cd36dac14eb9a42f9a00fb9f9fb747",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/original_terms_review.txt",
+      "sha256": "04e0a9ac707ab4abb20fd4e4d2faec483abd9b62089b412cbac5324d3fdd8ab2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/report_template.md",
+      "sha256": "1a1a68458cf75137baa1c638729e2c57734517eee3fee45b26eff2358840074e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/session3_discovery.json",
+      "sha256": "43bb8773224773960c5f9e7a7d8235213fd5fdbec9a5cec59a0e0f074d9b070e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/session3_discovery_review.txt",
+      "sha256": "13a535ab4d9788651d929a68537fd18cf392269805bc1070722d1cdf8505215d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/session3_review_decisions.json",
+      "sha256": "0f99bd5d4f37c944c3906b14f97b8934fcbb850e56f8b4c9ab0ec723f15b4879",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/session3_search_forms.txt",
+      "sha256": "0fc8a95a6a2bc061ea714fc7d68ad66c86fa43863509cb508f0b330b4949d08a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/session3_terminology_corrections.json",
+      "sha256": "309f4b2799a6bcf143af1b1639dd206031593ca780e66b7f8ba131e3ee5796fd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/session3_verification.json",
+      "sha256": "cd7b754d659c3e8e3cf58863188e27ffdbbd455e3ae104e915f49128305e3339",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/source_access_index.json",
+      "sha256": "a8d815a93c30319f8002f2110b1bdab6b7d88fe921c77e737524828f67660b51",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/sources.json",
+      "sha256": "75acd78f9cdcaeb0d1d9af007a753099782171b39f7ce608e142dec7e2dcb157",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/validation_results.json",
+      "sha256": "af30803c4a52f1f5dd2efc2e965e70b5ef2226d0122a146ec00e9002509f9151",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session3_657_verified/web_consultation_index.json",
+      "sha256": "f1f60460f1131176935b37fec8f12ad14be80d9f75353a0abad6bab7a3dfe1e3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/add_continuation_sources.py",
+      "sha256": "8a81e4a30b671d47889639ff4a2f5f94f3496bc6f2083bb88570e763c4ebe28b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_audit_report.md",
+      "sha256": "1586d739ee4a263f24edaf81b1a9e781cfd6a843b023ada1c6bc695c3553566a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_audit_validation.json",
+      "sha256": "93b03766b653d611e1049d37e505a0dc928624b16768a8c949ae1e2c9e22e0dd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_corrections_proposed.json",
+      "sha256": "9b88f7bc3934b829d5e4f4c325cb236f31dae5dc4a804df84b60128397478dde",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_definition_evidence.json",
+      "sha256": "870979086d991baffe75dfd597a6d1361947c8db5cac33f7d0c714d6ab0f6b4b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_evidence_discovery.json",
+      "sha256": "237f1d4ab94a10a47cb433fda8b597d07d12488d4a04e178a60fcbf155759b25",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_inventory.json",
+      "sha256": "103364a107cefcbed0018a616a0af1aedf3b718bb8871fa013f675b08f5f829d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_inventory_review.txt",
+      "sha256": "bd19bf78edc5c6b46b8f7c46b6fe46c3e4f2885887c5f4c13a42d81980227e41",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_review_decisions.json",
+      "sha256": "01756db6cd3f309156f7571f23852c1724922b958bbe119669c03afa34e9418b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/alias_source_catalog.json",
+      "sha256": "a315b7f23ab94debc279bc18f9e99fe093ac95bbd425cfe91bc02566af35e3e8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/bilingual_decisions.json",
+      "sha256": "affcca7f68212ee2084bedd187a38e3eb56bb20bdbb8f04233b513b79e6bd812",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/bilingual_discovery.json",
+      "sha256": "30466d380bd89f66876400c031e421ebce25ac1ba4a4b75f5875b5f1cf2681cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/bilingual_search_forms.txt",
+      "sha256": "ec8856788b91a30363be73a2abc82c3b616125a9b76d6f5ff30ea145c54c202c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/bilingual_verification.json",
+      "sha256": "823dda8200ea075d3b066fe46558022e915f4d34fe256b1dde2a8cc0c68156a1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/build_research.py",
+      "sha256": "4a81e0b4c0e2a803c90e2701ff45993217e2b9e18f69a21a6f51395fa3c8ae69",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/CONTINUATION_README.txt",
+      "sha256": "881e592a438d9c3be3a43f378cd5013f4d7855e9d6085d1f0369b785896cc191",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/continuation_report_template.md",
+      "sha256": "c6657db79e23bdd87275846855d62d23756f5ca0f6edc921ef0a283a8bf8f0b5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/DATASET_SCHEMA.md",
+      "sha256": "189ffce875a9c72803157b1578c2853930eed250d6a0b551fff0c63caad9561c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/discover_session3.py",
+      "sha256": "3b893c0e5294c4f496d0e16a988fd51ca2eb738391d2e119ae39332a8b83343f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/discovery_review.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/discovery_review_fast.txt",
+      "sha256": "fc977cd3f473c533cff955cddb0c3ed60051a97dc2e3f08005a90b09d88da07b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/evidence_updates.json",
+      "sha256": "1fb3d5c35355a6b77d6c8211ad76f296cceee18a86c14ac7d607fee773c36a13",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/final_readme_template.txt",
+      "sha256": "a5c4ac9cf268c0be72ed57c46e17f506f23264fe1bb83bbae331560c7464f400",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/final_report_template.md",
+      "sha256": "f921afde2f223ffc04100b311094f726306c2426b3f2a7c3a0165f5d2e1f2d67",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/finalize_657.py",
+      "sha256": "4bc4dd620f35f8e97cfed46ee42e6c0d2b89ac6cb5d01e89f41fea6d637d6a46",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/finalize_alias_audit.py",
+      "sha256": "d0eb010494a86214f30db8a3fac73342e88991e63f141eff951a68b01a8b8456",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/finalize_continuation.py",
+      "sha256": "43f60209287394e91f01d6c783014a8f2368c016144d441ac585e89bdd2c600c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/finalize_research.py",
+      "sha256": "92d66d42ef8c46729830ed81f05a6e38ced313195de38458dfb8ac1a3b89a81b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/hypertension_research_deliverables.zip",
+      "sha256": "3856980be578bbf0b51b544bdc0f9b510aa5aca8344e005fc0c7edaa403c4de6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/hypertension_research_en_es.json",
+      "sha256": "bdcb40eea6c84e20ff327859eeac23f3b3194b3de9cfdd5553d6444e99e588c2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/hypertension_research_progress.json",
+      "sha256": "5efe734fd3291c98e2b1204e5d2b620ffba49cc22bc916a2c2366bc9ce4df60c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/hypertension_research_report.md",
+      "sha256": "d87bb118b9a38e10fd5c43f5281c2198ce1feed5120564062630b0c29d0a8188",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/manifest.json",
+      "sha256": "f41a6d378db8aff567b5678b3aaa3cd891c2255bb3c5b78c0ce95b6d7d0fca1a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/medical_base_en_extended_candidate.json",
+      "sha256": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/new_terms_review.txt",
+      "sha256": "7ca5e94bf6a7a23bcdb210c9e5745fdfaa83ef771131759ba1a13658d27f3b8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/original_glossary_audit.json",
+      "sha256": "ef0370e1d6ab1dc0446bbcdd971ec1f332cd36dac14eb9a42f9a00fb9f9fb747",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/original_terms_review.txt",
+      "sha256": "04e0a9ac707ab4abb20fd4e4d2faec483abd9b62089b412cbac5324d3fdd8ab2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/prepare_alias_audit.py",
+      "sha256": "734dc04926c187d4b206fe9873482c87f6c731622fc2bef4df00b5463c97f1ec",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/prepare_corpus.py",
+      "sha256": "45546a8f70ead0f69a89e519d05fbf82258e55689e4253b3a9780cc72b9bc6f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/record_bilingual_review.py",
+      "sha256": "8b93de5e59db5d69e4dcc97eb512f74e1e55ed3ca1fdb4306f15c654a4160b90",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/record_session3_review.py",
+      "sha256": "ea96f5a044e35a4a01cfadc2e5f1f23cc6a71233f54a538077539d1a3b41a758",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/register_alias_sources.py",
+      "sha256": "23a32ec3f84065d36b7058eec8c3f28a655eb3b2616ab059d7834c1cb5114038",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/register_last_sources.py",
+      "sha256": "1628f94d514be055a2044b66de645e523b1ddfe7ff47fbb84710fe81eec75906",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/register_session3_sources.py",
+      "sha256": "8eb21939c9bef708a883c16b058d21419a8a9999a2499f653b31e621656db879",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/report_template.md",
+      "sha256": "1a1a68458cf75137baa1c638729e2c57734517eee3fee45b26eff2358840074e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/review_aliases.py",
+      "sha256": "19055a7ef29f773ac8f05d8d89452af6856e17e53143f43a718512f3391d507d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/review_contexts.py",
+      "sha256": "7a3c837b799b77450308674795abf6c0fa202195b638f4d15de1944950566589",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/screen_alias_evidence.py",
+      "sha256": "a4498879df79228087ab313ee006e246137a4af61850488453b7c80579d74cde",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/session3_discovery.json",
+      "sha256": "43bb8773224773960c5f9e7a7d8235213fd5fdbec9a5cec59a0e0f074d9b070e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/session3_discovery_review.txt",
+      "sha256": "13a535ab4d9788651d929a68537fd18cf392269805bc1070722d1cdf8505215d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/session3_review_decisions.json",
+      "sha256": "0f99bd5d4f37c944c3906b14f97b8934fcbb850e56f8b4c9ab0ec723f15b4879",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/session3_search_forms.txt",
+      "sha256": "0fc8a95a6a2bc061ea714fc7d68ad66c86fa43863509cb508f0b330b4949d08a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/session3_terminology_corrections.json",
+      "sha256": "309f4b2799a6bcf143af1b1639dd206031593ca780e66b7f8ba131e3ee5796fd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/session3_verification.json",
+      "sha256": "cd7b754d659c3e8e3cf58863188e27ffdbbd455e3ae104e915f49128305e3339",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/source_access_index.json",
+      "sha256": "a8d815a93c30319f8002f2110b1bdab6b7d88fe921c77e737524828f67660b51",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/sources.json",
+      "sha256": "75acd78f9cdcaeb0d1d9af007a753099782171b39f7ce608e142dec7e2dcb157",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/validation_results.json",
+      "sha256": "68280fc099c82ff5a9ba03694883b8e236339cc11668ef39c104749b49f8d630",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/verify_bilingual.py",
+      "sha256": "2137e08a5db9f292aa0de99e081ef15327ea5075b44909c47ffc7b68102b361d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/checkpoints/session4_alias_audit/web_consultation_index.json",
+      "sha256": "f1f60460f1131176935b37fec8f12ad14be80d9f75353a0abad6bab7a3dfe1e3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/archive_manifest.json",
+      "sha256": "624db80a693049f9c95c96b591d4271b7aeb8d525eff48efb0a865ef59e75ed9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/context_cases.json",
+      "sha256": "38026101d3deeec0797bb7dfe7a70b93d420c400ccd0d5dedbde6afd3f03cf56",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/context_comparison.json",
+      "sha256": "74d4d3aff245b55a6591c89a577c767357b65ff6e63f71af4af47efe85dcd17d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/evaluate_context.py",
+      "sha256": "facaef94aa2007fe505febf6f8e9979e70171fb5ce55257e16797756af0a27c1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/preservation.json",
+      "sha256": "2ed185d65a58ca6a2d1259c3f8320900504a12b0b0cd0fe05300a78fdaf72bd3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/prior_constructed_comparison.json",
+      "sha256": "54d93916138fc25cc2f85e2735f52a3017d8eac5cbc0c9175c064203857fe174",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/protocol.json",
+      "sha256": "c9518bbdf1677d556230688616a49552a9507320254e7674474191bb9d119f74",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/speech_comparison.json",
+      "sha256": "406b2c28fe23fcae0806356864f72fc892c781c28856b5d1b0e6e8acb9991a1d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/summary.json",
+      "sha256": "6d16ad0d2a40cc84c60c0e440750b684abe8ab5e14a84dca8bc781de31bbf7f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/term_results.json",
+      "sha256": "3645b935e50cc5cb68a6699e062fc9a3345687715d1bf64e9d3881bbfc00bd72",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/test_context.py",
+      "sha256": "5c22a3a530fcd28b532cfe2b25909bae70c5402061d931eba4c60ee377f02a93",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/attempts/fuzzy_only_controls/test_results.json",
+      "sha256": "9ab50abee13aaebe7f269200ad61cec2ad922d702b2b977ba14db6493d70e263",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/baseline.json",
+      "sha256": "670fd4770d3fc96d3c8323034ef1545872db8eab6a7c32e429fc89031f1632f3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/by_case_comparison.json",
+      "sha256": "b997c65c59c3141c99b9ef28170381adc71f2fc5f003923952d094a1bb8d8846",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/context_cases.json",
+      "sha256": "38026101d3deeec0797bb7dfe7a70b93d420c400ccd0d5dedbde6afd3f03cf56",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/context_comparison.json",
+      "sha256": "c9dd779b44088df21b66feff33d46617f88762f4409fe46ecbec62ad6cf0f35c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/evaluate_context.py",
+      "sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/final_results.json",
+      "sha256": "50da0df9038fa20eab39f4530c1f3c318d6cf6450225c293b44f04201a799c8a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/finalize_report.py",
+      "sha256": "922e512c34f58a79a337f990501f0eb304f9b5a0299d535ac3533357563cb3f9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/manifest.json",
+      "sha256": "e605caf9d0c24a5041a16e9b53989981ae9caf0c57e8edefd1b6eac64162a619",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/preservation.json",
+      "sha256": "2ed185d65a58ca6a2d1259c3f8320900504a12b0b0cd0fe05300a78fdaf72bd3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/preservation_final.json",
+      "sha256": "2ed185d65a58ca6a2d1259c3f8320900504a12b0b0cd0fe05300a78fdaf72bd3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/prior_constructed_comparison.json",
+      "sha256": "c20524930f2fd9864ebfecc598352cbc466561ef34a69d7da174cdfda776eb76",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/protocol.json",
+      "sha256": "c9518bbdf1677d556230688616a49552a9507320254e7674474191bb9d119f74",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/REPORT.txt",
+      "sha256": "c1a2dac0610d1b7a4630a2428e33cc7ea0c92a29c26c7495fa0a6de4ff94eafd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/speech_comparison.json",
+      "sha256": "0fcce3639a7a948f62506584c07b9d754f8a86625874cb00479cd13c0fd76f03",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/summary.json",
+      "sha256": "6d16ad0d2a40cc84c60c0e440750b684abe8ab5e14a84dca8bc781de31bbf7f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/term_results.json",
+      "sha256": "3645b935e50cc5cb68a6699e062fc9a3345687715d1bf64e9d3881bbfc00bd72",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/test_context.py",
+      "sha256": "07d331e50c3c710ceab9d465c00fd31b510b7b9983841b68c2b1fb4918a10cbf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/test_results.json",
+      "sha256": "8a5c563faee64a8a7ebd518d92dc5daa5b2b119af6a82af9a633a80a37883c1c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/CONTINUATION_README.txt",
+      "sha256": "2cdc70e185d90c06fe0aa0c813b0d3eb94ea5b1cdbc0956254fa5e330e66211b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/continuation_report_template.md",
+      "sha256": "c6657db79e23bdd87275846855d62d23756f5ca0f6edc921ef0a283a8bf8f0b5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/DATASET_SCHEMA.md",
+      "sha256": "c7c2887b9d508d308885a744cc2f5d2b5f3f92a3aaadcc22e49d9a963c5773a9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/discover_session3.py",
+      "sha256": "3b893c0e5294c4f496d0e16a988fd51ca2eb738391d2e119ae39332a8b83343f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/discover_surface124.py",
+      "sha256": "a982080145336e67c6310c1d76565dc774aab6f8224d416b2b935c236b8bea18",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/discovery_review.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/discovery_review_fast.txt",
+      "sha256": "fc977cd3f473c533cff955cddb0c3ed60051a97dc2e3f08005a90b09d88da07b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/evidence_updates.json",
+      "sha256": "1fb3d5c35355a6b77d6c8211ad76f296cceee18a86c14ac7d607fee773c36a13",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/fetch_source_cache.ps1",
+      "sha256": "afe40a8d230d794d436adcf50f70af916e7ae54e0061ba1b381f1338c0bf0c9d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/final_readme_template.txt",
+      "sha256": "a5c4ac9cf268c0be72ed57c46e17f506f23264fe1bb83bbae331560c7464f400",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/final_report_template.md",
+      "sha256": "f921afde2f223ffc04100b311094f726306c2426b3f2a7c3a0165f5d2e1f2d67",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/finalize_657.py",
+      "sha256": "4bc4dd620f35f8e97cfed46ee42e6c0d2b89ac6cb5d01e89f41fea6d637d6a46",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/finalize_alias_audit.py",
+      "sha256": "93ceb0fb9b9a68e12e12b6f8a0620ce494df49eb5d1563f066359febfe676ef8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/finalize_continuation.py",
+      "sha256": "43f60209287394e91f01d6c783014a8f2368c016144d441ac585e89bdd2c600c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/finalize_research.py",
+      "sha256": "92d66d42ef8c46729830ed81f05a6e38ced313195de38458dfb8ac1a3b89a81b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/finalize_surface124.py",
+      "sha256": "242ac45206ea2a4c01ee4019774862092e0ab3027ce91d688694e89c45f996da",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/hypertension_research_deliverables.zip",
+      "sha256": "47cb314bb0a22f7fa6526982ded2fbc18afc25015120d43fdb23cfc07e3aa5dc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/hypertension_research_en_es.json",
+      "sha256": "bdcb40eea6c84e20ff327859eeac23f3b3194b3de9cfdd5553d6444e99e588c2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/hypertension_research_progress.json",
+      "sha256": "f55cc463649a805affdc013239fff8660ae1339796fde01f90e23ab538af0b79",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/hypertension_research_report.md",
+      "sha256": "7e625b7574f826f01e63ff1cfaafb7f9b69534a3a6c98589fa00eb8ecde8dfaf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/build_package.py",
+      "sha256": "b2221801d1a7b30634190a9f4e7a03ce3f3f8bafff8fe05fc90e080a54bb90ff",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/changes_applied.json",
+      "sha256": "0605275a80603a1ab0661d898b3d600a4374293cce8bfcd7e45e1a18e133376e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/collisions.json",
+      "sha256": "02803f6a98a0fce977904940554e3fb24bf576c15c9709958cb73e19e0ce84d1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/concepts.json",
+      "sha256": "edb18e7687a233ee36b66d6e2bc1685cd1ad2dcc1e5bd2c1de7bccb89b360337",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/form_decisions.json",
+      "sha256": "22576b41acac067f47729f0e8526a646ad9ebe92809f845c4397e0395b818f40",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/manifest.json",
+      "sha256": "a475080f469c8efbc18beaf0067b1d3694f888f6051fb482cbb5bacfc762703a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/normalization_en.json",
+      "sha256": "0ea1661d7b8db7881debd3ec3bf97852f75febef61d94e99c95c74a2a0cbe03f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/normalization_es.json",
+      "sha256": "ea9f91bf1a20797184b87eb34d1c6b97329f18a4bfcc2db28b19c2bf6a819b0f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/protected_files.json",
+      "sha256": "04cf2cbd768a833e8c1d2a7776d73abe4d229e9050b4bfef176e15379744c8f9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/provenance.json",
+      "sha256": "ecb4a19b8b9a8561588e5076640a20d88748d6ff85f332e856cfe278a8fe1bb6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/README.txt",
+      "sha256": "44993a94c9dafceb8d44abdc6ef5b7eff34080ccf83ae28ec5115ecb413222d3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/restrictions.json",
+      "sha256": "996780729f5e2f3db1d284ed7aabb71aeb11ddf3b459a6dde54fc033cce20e81",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/sources.json",
+      "sha256": "44b5ba9796a3a85fe9f3ddbeab8cbc1f6532b34e1acd1b678b50937448e00412",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/test_package.py",
+      "sha256": "9c664bd0175cae8d3d12b9c27a3fc265f4dd5e37283452358c9f7e12a9f015ac",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/translation_en_es.json",
+      "sha256": "77c3a06b659928a7476505c0ea3503673a93c754654abe88030239bee709f982",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/validation.json",
+      "sha256": "c3b2aa34270d04285ecbc007565a146bb7cefaf034a1ad83e70a5df88fe23986",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/adversarial_cases.json",
+      "sha256": "3f7ac2426e5c0ad7c9941fcc18be25d46d5979c062938d1d7c76d287e2d77066",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/adversarial_results.json",
+      "sha256": "f52dad373c1c393149dcc9f761101113831cec7359ac17eb1a278d281dbe1def",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/baseline.json",
+      "sha256": "095ce10de1f3eccc74c09736c8244d2321491b8d22143c1f08a35f36b232096a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_comparison.json",
+      "sha256": "245f9da6005992174888ff75e2e52d266c26ed9326f9dc639856d94978b42e75",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_large-v3-turbo_cardio_01.json",
+      "sha256": "200d1a4e4b3f46ca5e9ffc945506e3fc08aff48984b58ba1959ff74d8923b34f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_large-v3-turbo_cardio_02.json",
+      "sha256": "205342d588b8443154e6e99aa5391133d655aeb00bb19b658267b5dad8849596",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_large-v3-turbo_cardio_03.json",
+      "sha256": "46714102540572dedfa68f4f4daaff0c0642cd679f35c4313edadd13feccad42",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_medium_cardio_01.json",
+      "sha256": "5953bd83ceb04fca69fec8421cdb56e38da774cedbed0fc8e567c5772bcb3c8f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_medium_cardio_02.json",
+      "sha256": "f0da05a51cf2328874bfe6ccd632ab0f4681c9288fa2a93c6925aa0995741006",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_medium_cardio_03.json",
+      "sha256": "761318b65b75c7c5b8b006bf93522983aee359ec212d81a6935e86ddcfe73a29",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_small_cardio_01.json",
+      "sha256": "a620e6804d55129f4691e3a24ec1311ba5cc153a5268e1dc7afe9dfeb7a5fa99",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_small_cardio_02.json",
+      "sha256": "8f0e45ec7e4e028a28033f006a2569577e792e99c56f4bce122ccb24d642599d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/corpus_small_cardio_03.json",
+      "sha256": "631613ab3cd4cd84915a0061798c0f39a1ef7b2e46b61271002a0a7471bf7b9f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/evaluation_manifest.json",
+      "sha256": "04dcc73d21f17c862ad6b2c5c44349584108c2d60d78add05bbd75e429a59f6e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/final_status.json",
+      "sha256": "cb9072dd74a1dac71de5f2eaca86d4a63d580f55c595fc6a2deab7a209da86bf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/finalize_report.py",
+      "sha256": "76ce492ed993c4ec3df481a7d90c0c07c988b9885210fcb8aab193e331a8b28f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/findings.json",
+      "sha256": "ac348c10d23d349cd24d16f0ab27eb4b02dc6229744828db4af36ce66b92a46d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/focused_regression_tests.json",
+      "sha256": "5ceb58ece406977a192a91364087df8b4c9931255b78cb53d467663132286359",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/fuzzy_diagnostics.json",
+      "sha256": "04c5e0e050e39702cb850004bd43233df8c53556fd9c7dbd6df0ec1c71c49764",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/manifest.json",
+      "sha256": "d16f4f815fbee6e880b45a8115cbff50ead02e629350ac83193f2ab318c4622c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/preservation.json",
+      "sha256": "12250910c0654738479a3dd2f79e65128d2b975fb2c62c9b0520457909c4d775",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/preservation_final.json",
+      "sha256": "12250910c0654738479a3dd2f79e65128d2b975fb2c62c9b0520457909c4d775",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/REPORT.txt",
+      "sha256": "bd427ccfd5da45de3be96be4f441f91ca94364debac7c45acdcfbd4d3b8ae111",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/summary.json",
+      "sha256": "6229fa6c14a1503cda2300efa6063ca381dbec3e43a8d595f85cdf1d76aea06f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/surface_checks.json",
+      "sha256": "0e439531713164b845a3d3a48a3795562103caf7e1472992161256e99a1fd7f9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/laboratory_validation_v1/test_results.json",
+      "sha256": "74846ac2ac02a5de251187a2483bb172c27047e380f34f30cd5ac9d141d676ec",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/baseline.json",
+      "sha256": "f077e0162e7a7622556d459602c53ddff0bf0e82929ec25877fab9744ab45d1b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/baseline.json",
+      "sha256": "f077e0162e7a7622556d459602c53ddff0bf0e82929ec25877fab9744ab45d1b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/boundary_normalizer.py",
+      "sha256": "3250673007d91fa7423cf9a72ad3e32d287621a8ce6452c7618862f6f7478bdd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/constructed_checking_cases.json",
+      "sha256": "d65103efa633a6fd5c4501d4baebea6a4e5932d2fde134c744ad4fc6a4834d6b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/constructed_comparison.json",
+      "sha256": "12bdc64621d9029634f89462ea17a769c16585a7b9588f7d2726a29fcb38d904",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/context_cases.json",
+      "sha256": "686e2ed7a87a09f731a9e47904ca3be61448e6f6a92016a493cdc7a6a7d79115",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/context_comparison.json",
+      "sha256": "f33336fbf7f94a149df21533a9b6fdc3e64257504e55a265731c7d7ea42b4163",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/correction_review.json",
+      "sha256": "7f0edec1dd505738468bf84a86a679460e42e2c178d8b4aeb7b150f6804e4155",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/manifest.json",
+      "sha256": "68184e4159fcb3414aaabcb1f16d88786fe1c0efbc9fa05f9c727cdb268a5ab9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/preservation.json",
+      "sha256": "9b0e13852477562f202087eb21eaf59c804d54e01958b4d704a805812da6d426",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/protocol.json",
+      "sha256": "8d8f06a576064ac616c6e8d59b57fe63891c78031f75e2d5a75fd6725d6ba17b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/refinement_development_tests.json",
+      "sha256": "c7ccf09eb057856d19fa999eaf3e35341d9d79a0af9fe973d4884d6ac8153845",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/regression_cases.json",
+      "sha256": "e0b53ff56474684b8cdbf923dec0f0867267447ccb37f475e04470911b6b77eb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/regression_comparison.json",
+      "sha256": "a09fb2d10d6552175a434ced9e0b76ae39f54258debe5b65621a3ac75676b45c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/replay_refined.py",
+      "sha256": "0c0487f6c85229055f60618f3783779031e0929b189c337319caef9663af3aec",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/selection.json",
+      "sha256": "4f33c2d7eb7197711fbce4d76273a78c6e14f11ee92115248a71bb2b133eb242",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/speech_comparison.json",
+      "sha256": "29463971b117010e715421f557b4faae44af87cc89dd301d61890482915557f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/summary.json",
+      "sha256": "88a370995e94caeb54caeb4c1b8a94fb5a15f92a2983e86a51f1923a9f18ba82",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/term_results.json",
+      "sha256": "6efd8f65ae6198c65e0de6df9a9c59c2e8e9c0dfd22b4b3ac4366f4140e9c937",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/test_boundary.py",
+      "sha256": "7176d1cee82190b11add3dca028ae9247a5b30467410e5d7eeed41defa0506fb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/thresholds.json",
+      "sha256": "90e29659e515bc2131733eae4ee370c0319c5325971b2df59c88d45357934452",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/boundary_refinement_v2/variant_preservation.json",
+      "sha256": "6ceec2215f8159a5a38e97e97d8b4702cb1df675dd8395a4db180272fa98afb7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/change_comparison.json",
+      "sha256": "dfde81922a400e60040a58936e19e040b48511f1f3113e5dd51b6d809cb0865e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/constructed_checking_cases.json",
+      "sha256": "d65103efa633a6fd5c4501d4baebea6a4e5932d2fde134c744ad4fc6a4834d6b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/constructed_comparison.json",
+      "sha256": "12bdc64621d9029634f89462ea17a769c16585a7b9588f7d2726a29fcb38d904",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/context_cases.json",
+      "sha256": "686e2ed7a87a09f731a9e47904ca3be61448e6f6a92016a493cdc7a6a7d79115",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/context_comparison.json",
+      "sha256": "1ce581720bfc4dd69d8b66d8a60d42a3dcaddb0eb825b6317dc750afd823fbbc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/correction_review.json",
+      "sha256": "7f0edec1dd505738468bf84a86a679460e42e2c178d8b4aeb7b150f6804e4155",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/development_test_results.json",
+      "sha256": "648f516022f71caace21ca604576dd52115653755f5c9a81e573ed967188afea",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/evaluate_controls.py",
+      "sha256": "d7ada18fec053ac0a340ed98b45254dc2e67981206aef481f91740dccaf52076",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/final_results.json",
+      "sha256": "a6fe9179d0514a87ccc1c744f8e7fa68666f880fb8a310d5779da2ab83ddb676",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/finalize_report.py",
+      "sha256": "a45926d94896bbeed8d7cd78a9ab701ec04c0d3edd6d1fae96fa9e1b8fbd21c8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/first_replay_manifest.json",
+      "sha256": "6ffff9b29e34ce64acfda02dbac9967df371e33446e722f177690bdf9db0fd1c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/lab_normalizer.py",
+      "sha256": "364b8685aaa1d11e3764d8de704a4caa823b05d60d7e5d070022c33c378cac1c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/manifest.json",
+      "sha256": "9b001722325b6389d5dd51345b304bb6bbd550092fa4a64417147c564ff8865a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/preservation.json",
+      "sha256": "b9bae9a5980c0432693aaa1d520e107007f6aa37506aeda216483eab23fcc2e4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/preservation_final.json",
+      "sha256": "b9bae9a5980c0432693aaa1d520e107007f6aa37506aeda216483eab23fcc2e4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/protocol.json",
+      "sha256": "8be95880f0a6f87e88c73e157f7be8c168a72431a402e9daacb0d3eaea6fc403",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/README.txt",
+      "sha256": "abaaafab67dc3c4feba2a26d0b7ecc527dc629fa00b19027b74b7b2820ca65e8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/regression_cases.json",
+      "sha256": "e0b53ff56474684b8cdbf923dec0f0867267447ccb37f475e04470911b6b77eb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/regression_comparison.json",
+      "sha256": "a09fb2d10d6552175a434ced9e0b76ae39f54258debe5b65621a3ac75676b45c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/REPORT.txt",
+      "sha256": "49a26bd85416347edad719b62cbfb8ea4becee3a3644cd756415f187b964a25a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/selection.json",
+      "sha256": "4f33c2d7eb7197711fbce4d76273a78c6e14f11ee92115248a71bb2b133eb242",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/speech_comparison.json",
+      "sha256": "29463971b117010e715421f557b4faae44af87cc89dd301d61890482915557f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/summary.json",
+      "sha256": "27a7f8c62f4208573ff4583d7d101594012027ba532c305381d1407a7986e7d9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/term_results.json",
+      "sha256": "6efd8f65ae6198c65e0de6df9a9c59c2e8e9c0dfd22b4b3ac4366f4140e9c937",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/test_controls.py",
+      "sha256": "8279d413fd000fc534ed46748d089fe07aa42e4c7c530e055d454c9ccd3665cc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/test_replay_outputs.py",
+      "sha256": "1c1158f54f6cbefcb7a4825e05fa31fdc1022e608fa6dc233d5a4bfb8603602f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/thresholds.json",
+      "sha256": "90e29659e515bc2131733eae4ee370c0319c5325971b2df59c88d45357934452",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/variant_preservation.json",
+      "sha256": "6ceec2215f8159a5a38e97e97d8b4702cb1df675dd8395a4db180272fa98afb7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/lexical_controls_trial_60_v1/verification_tests.json",
+      "sha256": "4683826b2c66e23bdcb32ea6a47971e1bc3c08144ecad96fc3579e4a4669a694",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/manifest.json",
+      "sha256": "220f94bf096fccb6c57f34cfef06f065585786cba686fe22858d2d9ad7a9c717",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/medical_base_en_extended_candidate.json",
+      "sha256": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/new_terms_review.txt",
+      "sha256": "7ca5e94bf6a7a23bcdb210c9e5745fdfaa83ef771131759ba1a13658d27f3b8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/original_glossary_audit.json",
+      "sha256": "ef0370e1d6ab1dc0446bbcdd971ec1f332cd36dac14eb9a42f9a00fb9f9fb747",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/original_terms_review.txt",
+      "sha256": "04e0a9ac707ab4abb20fd4e4d2faec483abd9b62089b412cbac5324d3fdd8ab2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/baseline.json",
+      "sha256": "ec78d37f5953bdc24dd4d6b74491b48a3dae9794e0f2e9c1123872384c2f6d49",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/constructed_cases.json",
+      "sha256": "92225575be00fc9e3157132f13ab2bed4f4d43b715e0d053ab98ff9f50dcf010",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/constructed_comparison.json",
+      "sha256": "ca3f33de73f3379ca48e6172d6d660e99d1c43147ce05bdb11b062f155e00493",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/context_cases.json",
+      "sha256": "2ce9dfcf1c8ac7de3650a32e45e8adb7d2ebfc9ae8781c357be842ee6833c1d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/context_comparison.json",
+      "sha256": "3f09c80216efc08a1835b3adb15907769243993ac7650c7b765f843f4fc99ab2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/correction_review.json",
+      "sha256": "d57cb4b44dc96a33c7aa87b5d56a1c85243fbb35ec9138f231d7ed2ad0aba5eb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/development_tests.json",
+      "sha256": "62e05abd60e83328ef342ff85cf9b489cf1020c886927386e01728c871b58095",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/existing_regression_cases.json",
+      "sha256": "1d398b041a592810c04c24eb2609b88956a1332d48904dd1dac12f2f8aef7515",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/final_results.json",
+      "sha256": "11dbf38bc0061118eb163305b30beb1cddc5907d9830411fbfff67cbf4b75189",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/finalize_report.py",
+      "sha256": "baa1fe8c5cfaf0f38247f6de2c0e14343cb82ffb5c729f29c48228ac799ba697",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/first_replay_manifest.json",
+      "sha256": "b91cfa8df42a62a61084b3544ece63b83e1d2bd93b31fc5510b4c91d654bb0ba",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/inputs.json",
+      "sha256": "2a6adb47d90a781c72990c6d95b2241d806f09a262c8060978d0e05ae5058b7c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/manifest.json",
+      "sha256": "8f4634337e81c2323739e9c28986cfa92177c74413a386b90e8759cd40b883a3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/negative_change_review.json",
+      "sha256": "6628d7166ac202b17eec6a64478308daaee740e3c6a5cc2f2f23a188ac9d9418",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/preservation.json",
+      "sha256": "8af3d51a1bf61d2d6f9abd6472f80b9b829f4e30c23839626d925859e96ac6a1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/preservation_final.json",
+      "sha256": "8af3d51a1bf61d2d6f9abd6472f80b9b829f4e30c23839626d925859e96ac6a1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/pressure_cases.json",
+      "sha256": "14e19cf594ae8c3c10e13c5ec37d1c74cabfbee61db29e95aa3016270d07406a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/pressure_comparison.json",
+      "sha256": "b1ee4851388f01d065891ac9b9f3f0267504b69724e5be1ccbb9619a6d7f4777",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/pressure_guard.py",
+      "sha256": "1278fe5d599a660065e50f3781026f7267cfc1add8f0c224a895efe9cbd02c03",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/protocol.json",
+      "sha256": "1f71727cef45175c8303b4f8cc0654e33b711d3713c4204c225f49c9e9fec7df",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/README.txt",
+      "sha256": "6536f05f3772b74c29646c3bd5f42510e5157a4d9fb70bea041a252537b64d5b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/recovery_loss_review.json",
+      "sha256": "df7c966c07418e76c7ebcb44cc71513015d4362beaff1607577e05bc302ffc9b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/regression_comparison.json",
+      "sha256": "479e76fcbad981f3dd6c3da35e6e2c015a84dc2c74c7d568e9b5a549962b8391",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/REPORT.txt",
+      "sha256": "7795be496dc48fb2661a567bb554f62e15d1640ab447dc0ac2741a2673b62da2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/review_findings.json",
+      "sha256": "94ad7d4d786a1bb38e714163dba86836cdd978ff5e7f75ccd8e2138c7b99da37",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/review_trial.py",
+      "sha256": "82421a7b978c31fa75b6259547ebd6ad722b92d64b65f71a4b83adadf496bc80",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/run_flexible.py",
+      "sha256": "6701c6ac031644ac4547e0fa82b5445d708c57eadfe6f65e969558af8867dd3e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/speech_comparison.json",
+      "sha256": "447070979721e5663402235da211ab192c316c20d34d2972d7582fcd0a1b9744",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/summary.json",
+      "sha256": "a2f81b279bbd7c1c2d814a615988a8375b3fd8e37b2a6740eed0d5ff46548bdf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/term_results.json",
+      "sha256": "7063f776177cef2fe1f536badc797f8e866f1f3441d7dad909519241454da4a4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/test_outputs.py",
+      "sha256": "96c127abcab5bd546d2672195bc3f3d3ff35549825978eb531dd547856d6aad0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/test_pressure.py",
+      "sha256": "c8da7c009f73e2d3e5d43825c366bdee170865bdffd420eff47cef5ca72b6656",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/verification_tests.json",
+      "sha256": "0681310b60526623b66df135028d67de157d6550cb6c64fe86b6181036450a18",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/baseline.json",
+      "sha256": "ec78d37f5953bdc24dd4d6b74491b48a3dae9794e0f2e9c1123872384c2f6d49",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/constructed_cases.json",
+      "sha256": "92225575be00fc9e3157132f13ab2bed4f4d43b715e0d053ab98ff9f50dcf010",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/constructed_comparison.json",
+      "sha256": "6d1a1d29fff35e66535b46c1ab854ba1e1c1cbe7ff9f83da15e8db6237745670",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/context_cases.json",
+      "sha256": "2ce9dfcf1c8ac7de3650a32e45e8adb7d2ebfc9ae8781c357be842ee6833c1d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/context_comparison.json",
+      "sha256": "231c353766aae5046afeec239599acfdf367abc81b94b5bfa07ae9c4b3c91a58",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/development_tests.json",
+      "sha256": "1d9b534e149759163e39a8c8a2b2f5cbb6ed0ba5f00c02d84579db2d6a405cb2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/existing_regression_cases.json",
+      "sha256": "1d398b041a592810c04c24eb2609b88956a1332d48904dd1dac12f2f8aef7515",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/inputs.json",
+      "sha256": "2a6adb47d90a781c72990c6d95b2241d806f09a262c8060978d0e05ae5058b7c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/manifest.json",
+      "sha256": "12a199fcf0be754a9bd54129093558bc59af3dfba82c610c5cb69ea0dea8b7f1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/pressure_cases.json",
+      "sha256": "14e19cf594ae8c3c10e13c5ec37d1c74cabfbee61db29e95aa3016270d07406a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/pressure_comparison.json",
+      "sha256": "b0cad51fa82217555409e9db4fc65319b579b8fbdb30f752ae08a7e1ac668d2c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/pressure_refined.py",
+      "sha256": "05c2302133b756734b26b3bc4fb56e6e3a8b58f91f7d995853ee7cc245c797a6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/protocol.json",
+      "sha256": "f5b8e4638c2b5267f72867857dd8a2b5bce2b35e4f9c864db0f34bb805f0c598",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/regression_comparison.json",
+      "sha256": "801661315b6f2c8e401aa4396a91d20551ea70139bfda8c15e8af34eee891be5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/run_refined.py",
+      "sha256": "82f7f48791e585104fd8685a959a0e6e6fa22cb8f796089b33a1d77c87567397",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/speech_comparison.json",
+      "sha256": "13deaab1139cc417359ed994d5a7692dccdb1ec58c796386ad9120fd3a669498",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/summary.json",
+      "sha256": "1156b33b84d1e5d8f6d5a70ae7f385c8abadc52f487dec11d3c0240cd06c679d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/term_results.json",
+      "sha256": "7063f776177cef2fe1f536badc797f8e866f1f3441d7dad909519241454da4a4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/test_outputs_refined.py",
+      "sha256": "72366e75062e2e8ce04626c514d964d1462a313836d8fa036642fe9c2c5cc617",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/test_refined.py",
+      "sha256": "97a9a935391fa795ae689a72d5b6c5ee013ea974cccd20604e1efdd5cdb95bf5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/prepare_alias_audit.py",
+      "sha256": "734dc04926c187d4b206fe9873482c87f6c731622fc2bef4df00b5463c97f1ec",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/prepare_corpus.py",
+      "sha256": "45546a8f70ead0f69a89e519d05fbf82258e55689e4253b3a9780cc72b9bc6f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/prepare_surface124_review.py",
+      "sha256": "5cc7951c1b972fbb203c74be6ab02a49667febdd51f02e74cfe9f03c7d018157",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/record_bilingual_review.py",
+      "sha256": "8b93de5e59db5d69e4dcc97eb512f74e1e55ed3ca1fdb4306f15c654a4160b90",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/record_session3_review.py",
+      "sha256": "ea96f5a044e35a4a01cfadc2e5f1f23cc6a71233f54a538077539d1a3b41a758",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/record_surface124_review.py",
+      "sha256": "59e793a3cb9354e25773ca80f32f12b3e061333b6607b3ab4106302e59ed3416",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/register_alias_sources.py",
+      "sha256": "23a32ec3f84065d36b7058eec8c3f28a655eb3b2616ab059d7834c1cb5114038",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/register_last_sources.py",
+      "sha256": "1628f94d514be055a2044b66de645e523b1ddfe7ff47fbb84710fe81eec75906",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/register_session3_sources.py",
+      "sha256": "8eb21939c9bef708a883c16b058d21419a8a9999a2499f653b31e621656db879",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/all_context_cases.json",
+      "sha256": "5fab33da33e9923d5b8e81b64dcf41f7a0b90f30a08c8cd7b9e17a0abe42ed76",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/baseline.json",
+      "sha256": "1df06a2218b3e741bc74b690abe3ea6b524ef8c003663d3b5e766ecc89bee053",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/calibration_measurements.json",
+      "sha256": "77d3338e7d72c13b17da0d09b66afd304926d7e01124eff34ad049736fa32018",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/change_comparison.json",
+      "sha256": "fbcaccdd5aceecbb23e4cc33a8733e2dae02de82bcb6264cc6fa8870c1f2472b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/combined_checking.json",
+      "sha256": "4d42775a73055ea6e6161f24fa791c4c43fdf3c942876112a70830c22f570f0d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/combined_checking_cases.json",
+      "sha256": "f0bed2efd3c4d69cda1e027a9b7323bfb3d31378062a3016f36d7c51c356af85",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/combined_thresholds.json",
+      "sha256": "2b16bb7e07e353a1434326516fcf4adc4fa770e6b29745e1857735d43895ec1b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/constructed_cases.json",
+      "sha256": "e8f1a9faaf1ae619774051da352f116e36deb9200811aa1de6481b862e707b7e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/constructed_cases_raw.json",
+      "sha256": "19734fca35bc3734a2cb2e986146259e5116d29c5b40fa86b5465f38f01606fe",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/context_comparison.json",
+      "sha256": "5c65d491e405e5238d8fd3582dd06a34701b3f4f81affc6643005f2f2b782a15",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/correction_review.json",
+      "sha256": "f49dbd6235ca69546d80ec105717985d735ee57c6728a71bb15c299db83acc68",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/evaluate_remaining.py",
+      "sha256": "970944f87ac6ef01e34996fb83e88dcbc2f6ea83e6ac7e5b0e6c94b202dc620c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/excluded_duplicates.json",
+      "sha256": "cb4a1c1ea08a9927216616c435c88ed323898774008b2b0156c1db0a63ceca7a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/final_results.json",
+      "sha256": "bb20f00cbdf1d261f2e247fb943af500ab2dbedff6b88319f74968e8d7973689",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/finalize_remaining.py",
+      "sha256": "2ab4f5ac3125bb0e67872f5532cdac23ed7e3bf61b2c9b0e881ff286c288d8ff",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/isolated_checking.json",
+      "sha256": "dc3cb5382170e7b1b18a2e725ab8a136b444ec222b0263ec26d33153968a6237",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/manifest.json",
+      "sha256": "812f814e963044f75f539defeea398fd2a5720286ccbae0568c02038bc5f8cfa",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/new_context_cases.json",
+      "sha256": "41651d58189f2a787c80eb7de62018a9078990c1333c93f8578547aa3e3ce6c1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/preservation.json",
+      "sha256": "df1f038e00e97b965a715fa33a550685eebb1d4c34b4352ac666c109b1ba7aeb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/preservation_final.json",
+      "sha256": "df1f038e00e97b965a715fa33a550685eebb1d4c34b4352ac666c109b1ba7aeb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/previous_regressions_combined97.json",
+      "sha256": "76e2d762a46943e3fedd3a0e8ddefbae7b114cf8867973a62329e96e21655c88",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/protocol.json",
+      "sha256": "0dc83cf371f8fb7da97ba75b27cab37cd74e66aa07e98345b7f732b71042b71f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/README.txt",
+      "sha256": "ac6384b015d0e6f954d08693ba71d90a08a0ebdc63b71d662e532988c0fa23ca",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/reference_occurrences.json",
+      "sha256": "21e3faecba4c6c274d02e17453aee3bdec6fe5239bf9c42b9bc818dd701a6cc2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/REPORT.txt",
+      "sha256": "2dfdd8b6b1183f8c5d9cb71bfefb68bda647989dc79438691466b5ca4a427c1c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/review_findings.json",
+      "sha256": "bb0a0066e5eedd519fb938df537363242a9cf42523f69b313ad160b5e7f5139b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/review_remaining.py",
+      "sha256": "9c334b2d83d08316434805e3fd39a5332f15e80bab6bfe96efe2210dae32e043",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/selection.json",
+      "sha256": "efc524282f4ed633b72e836d6fae83398b2ff16b10cf16e539fdf18005cef76e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/speech_comparison.json",
+      "sha256": "a0b690149793f739e8490d2a5134ff844b924a1f39a8d2ab4ec67805a4c5af01",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/summary.json",
+      "sha256": "4ba78f4caeb64d18c1a2b3f12a6242313338ad5fdaade73ecaa71447b7a49f43",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/term_results.json",
+      "sha256": "d101ecbb7ac0874a7d507ab9549c4707f391c08495db4804e0a750f96fd824cf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/test_remaining.py",
+      "sha256": "ddc4c51894398c9930940394d102e9850d5bf0d4153403e2b596bf2aca5163f8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/test_results.json",
+      "sha256": "f2f165676f8dda0c2ce28983435d65711408cc5d7a780dfc5edda471086dee33",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/threshold_decisions.json",
+      "sha256": "770f69da87a708f44f6bee132db50463a5e952bbb073aeb6680f516a7c0f10d1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/threshold_freeze.json",
+      "sha256": "9b45c5207cfab3738f5b3879c03c1b2dec08b460b32bd12e7bea3e011a69fd37",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/variant_preservation.json",
+      "sha256": "7ddf1076f0c0f8d496df4d6b6e41a3989ebd2efb96f8050e85d4140d936383ad",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/report_template.md",
+      "sha256": "1a1a68458cf75137baa1c638729e2c57734517eee3fee45b26eff2358840074e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/review_aliases.py",
+      "sha256": "609b0db84561a533ceef8138ca8e9cef9a7ca0ff4fd5fdc54085b36b9bd29107",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/review_contexts.py",
+      "sha256": "7a3c837b799b77450308674795abf6c0fa202195b638f4d15de1944950566589",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/screen_alias_evidence.py",
+      "sha256": "a4498879df79228087ab313ee006e246137a4af61850488453b7c80579d74cde",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/session3_discovery.json",
+      "sha256": "43bb8773224773960c5f9e7a7d8235213fd5fdbec9a5cec59a0e0f074d9b070e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/session3_discovery_review.txt",
+      "sha256": "13a535ab4d9788651d929a68537fd18cf392269805bc1070722d1cdf8505215d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/session3_review_decisions.json",
+      "sha256": "0f99bd5d4f37c944c3906b14f97b8934fcbb850e56f8b4c9ab0ec723f15b4879",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/session3_search_forms.txt",
+      "sha256": "0fc8a95a6a2bc061ea714fc7d68ad66c86fa43863509cb508f0b330b4949d08a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/session3_terminology_corrections.json",
+      "sha256": "309f4b2799a6bcf143af1b1639dd206031593ca780e66b7f8ba131e3ee5796fd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/session3_verification.json",
+      "sha256": "cd7b754d659c3e8e3cf58863188e27ffdbbd455e3ae104e915f49128305e3339",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_access_index.json",
+      "sha256": "a8d815a93c30319f8002f2110b1bdab6b7d88fe921c77e737524828f67660b51",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_kdigo_location.web.txt",
+      "sha256": "5988af64757f8945250a6a6a434adb0b364c3f1d146bad49f3e246de9e0d2d54",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_open1.web.txt",
+      "sha256": "ff2f476e14e31d74ec736b1d147b84732fa9bb87255f68270fa14e705df1a5d4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_open2.web.txt",
+      "sha256": "d037eb1dae807fcff59918a01620a1a5d2ed76b48a4db7759fe953e7f714209d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search1.web.txt",
+      "sha256": "e570490c13792412433120f1eadd54c4945852ea5435cee200562053754b3d5c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search2.web.txt",
+      "sha256": "b19ab3eb2cf1d991a72f3a5ccc69831150c613fa2e6bb25360e1a6c10a3a5491",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search3.web.txt",
+      "sha256": "6f95d9fa67cc616e64b5e3e5471a619fd7d95b6f236bdb19b4cf06043753e473",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search4.web.txt",
+      "sha256": "52304ba445bdd5bb03b1e403af92594e5c01cc466e18899657de2e27e07beed7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search5.web.txt",
+      "sha256": "11f03c562ea824a295d8101d00d0641817aa9a6dc2276950893a77d0fc5db3c7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search6.web.txt",
+      "sha256": "e2475ede6dbc0056af1fafe0df28affab124b2c3531390bde8133c574fb52a07",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search7.web.txt",
+      "sha256": "f40c05364845ba446385bf3cc17b240d9ac52d1aaecf929f9b96792e6d771c5d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search8.web.txt",
+      "sha256": "eb9dbc324cccf7e7abf30a768cc92d788140f5925feb736ae41a215131410974",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/alias_search9.web.txt",
+      "sha256": "b6d5581041c5c1d62de615945e26e61770a71152f172358ed2aec182e415fc29",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/corpus.json",
+      "sha256": "d4cfa5100d80ed8aa187d75e966c1b7da5b129666c8505bbda8df45bd341baad",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/esc2024_en.pages.json",
+      "sha256": "7d2bf6ab1f02c1238763a6393f738ad678b821b252df092c777fa754c039ff4c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/esc2024_en.pdf",
+      "sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/esc2024_es.pages.json",
+      "sha256": "8375e2fd211aa857a8395002e383d38253dc74c4b707535b3cabe1f84f2083ca",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/esc2024_es.pdf",
+      "sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S01.source",
+      "sha256": "6be32179f547caa8a94e5406e4a53ef86751f5fc582d183e91fb6b646458d6bc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S03.source",
+      "sha256": "8a96669d5e98efd3693d88118e83358d3f02957eb5503be06ff1009343a86636",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S04.extracted.json",
+      "sha256": "2ecb36c56c85f761549bf6804d45261c3e353af919e7ea72890bcb196cabcf6e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S04.source",
+      "sha256": "0a81638ee657971e9216a271ccfc2b2453ee0e01b753f5b4bd00d28be5559ff1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S05.extracted.json",
+      "sha256": "549c18a801de8b9f4b1718c74822e43e065dc8cfea3e0bc12c75ddfe02c8667c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S05.source",
+      "sha256": "0b77a9e32ca6c7bbccbddf902be4427bf8bc0d2dd7e3ffbc18042f602f371b27",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S06.source",
+      "sha256": "9d4799c1a4efe05625052d1e14739cec945936d651423a7060c3567b5f781635",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S07.web.txt",
+      "sha256": "2f7d52107703e4ddcad01ed678fd19692bf8656a94c0645f4e552e0ed5e0bde6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S08.source",
+      "sha256": "dcef1a0f83fe5c20f29308c3aca6f1e2b963eac6a7d9d5b31e73d6c4fa6babb7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S08.web.txt",
+      "sha256": "4741546471dd2c6aa26e58f89cf9fa9735ff1b1f773de54594f111598e4bc044",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S09.source",
+      "sha256": "1ec8bd4249acbe2d74cc4b3cda9506399080e12253670c2b1d448221261b8223",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S09.web.txt",
+      "sha256": "6a8be6e987466ccdb32ed3d8f8e4b7a62367b85093181e3266904ecca72ce443",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S10.source",
+      "sha256": "245f4bf759e387ae281e1084b43ad35d59650e8226062b14caf814aab99c0385",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S100.extracted.json",
+      "sha256": "71ef83b248d85bbf1f307d25f21a065d4ef5bd650525284ad00ad44c64902c6f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S100.source",
+      "sha256": "59c89c77f99c34010097e7687fdf756295ea92bea82b178ae51fe0742d95a1b6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S101.source",
+      "sha256": "dfc1544d713e203fc59de4f45ccfd864d382067c3d2ebf1801e0cf9ca47fb387",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S102.web.txt",
+      "sha256": "06cba4e64d1ddb06b93f694c80bfd1c5f78eb9cea9c80ce0a48f411eb79102ea",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S103.source",
+      "sha256": "131eadac7773962f8816c7afc96be99b3f8ff9f11cac8412604d3b50961ac558",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S104.source",
+      "sha256": "00cf14e17097e9a45a6654bb53b24dc217838f0e1bb269264395aab63a3a2453",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S105.indexed.txt",
+      "sha256": "862d5d9dbf987dc20cccc713eccf7b8e2394f7670617a59caf8a16d6b242628f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S105.source",
+      "sha256": "01b78483a190feb1d1ee8ea719c55e193c8dcfdc4c5c5eb420f9a04ff728d183",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S106.source",
+      "sha256": "d90c9dc5fdc32581ec5c02535b3558932dc540090ca4995190802ce6056dddd2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S106.web.txt",
+      "sha256": "58af9dc57c2d77fca65f2ea7b58b2dbb1ccd4b5749735f169e437a731873473d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S107.source",
+      "sha256": "b63e63c7dcc4d1f5ba90e73e343b2892ec9bd950602d473c2aa10ff9b0c67f5a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S107.web.txt",
+      "sha256": "8de09f1e3ddf99e63d26c9af65ae47ec384fa09731c1a02c1e6ca084a3bbfd8e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S108.indexed.txt",
+      "sha256": "7b224faf852ba91d7c5e33fc43bb11dada4e87a2a7eaf0e945b716932b4f6611",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S108.source",
+      "sha256": "428c661251b51c89722c9ed133b4137888cfbab3458679fcfbeb3c870170eae1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S109.source",
+      "sha256": "346603a3acbf19f97a284d2faaf43a4418904765aa3df1b8e55aee8892f48c7d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S11.source",
+      "sha256": "2f593602c568b3d634864cf5706bbcca2145a4940bcac45370e07da34428236e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S11.web.txt",
+      "sha256": "57deaaf8bfd3a1ba2c54eb745d2a60f29bce6b411e5e2db80efa5286038e4e78",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S110.source",
+      "sha256": "00f1f7c13bd8c01ac935caaaf141b0fc56dab865c701b8903a2a37d70e141a81",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S111.source",
+      "sha256": "d75dabdbe4c857cde65f41f534d9fa12863347249a929b75e8739f2f7606143c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S112.extracted.json",
+      "sha256": "ff3d23b83dde66dbb89f9c567e3ac7bea0e662472f511bf5d79095c2b15fe7bd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S112.source",
+      "sha256": "1736bb8a253aed6111c9603b5bef2c16d71fa532a5e457dff2111915de882abb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S113.indexed.txt",
+      "sha256": "bbf89de9461292f3041e06cb0430427fce57d3e69ecf5620bea836f82dcd87d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S114.source",
+      "sha256": "e72e7e481ecbc677291aa603f7c13d90352991aa4515b8b2083ac292ef752288",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S114.web.txt",
+      "sha256": "5342f3dbabdb694596242cf6d6eddbf03831634a1be4184946c9bd0a205f8043",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S115.source",
+      "sha256": "aeaf70e067333d765674124cc1c94df5e48452fc77b46673bc11cd5b0e967f72",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S115.web.txt",
+      "sha256": "8fdb1678281c92a040b1581aae45cca9407450456ef7610128a2e7f1c8107648",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S116.source",
+      "sha256": "6756b3b7f23388192317b416936e89946ec41403cafacc6f7c0cbb3ed2e462f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S117.web.txt",
+      "sha256": "614046d1c9f44c0e5e50a57fcb430ca8ac2a2f2af399951dcde2ad6eb2df7981",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S118.source",
+      "sha256": "66a910e0ab8e9305f9243afab494e17989e1371818a318eb26aa5f43ebec301b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S119.indexed.txt",
+      "sha256": "4d3917573d3a4c4a912df7d5dd350f1fcee8728e9f3fe3bba458c98184ecaf79",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S12.source",
+      "sha256": "accae3d878081b323bc5f74e50ec19bccf2059c0c164170333a849e1f2fec23e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S12.web.txt",
+      "sha256": "676d1b31211c127fba35be1844ab3530158af94f585ebafab34bb71f5ee6acb3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S120.source",
+      "sha256": "4c1e4c4cf471f0bb1246e9129f0bc6a6414a3553bcd586a3dfa077ccaec916ae",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S121.source",
+      "sha256": "b8b1bf4fadfde588b52cab63baf0f8f9d205d5c86556ae17867172d2d3c3ebbf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S122.indexed.txt",
+      "sha256": "b20d666ad1e69c1c608f34bfb82e4775c28ec387e039d2ec3b5fd3dbd22d0718",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S122.web.blocked.txt",
+      "sha256": "4bedc0b2db8c91e50f2daa20c6664fdeaf59f5eb1b4d187bfab5b4c23dc248df",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S123.web.txt",
+      "sha256": "b761165710797aaa8946410a2f0d99d579316799baf779a566c4a5846ed248ec",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S124.indexed.txt",
+      "sha256": "adc1e66ca695c1dbf7f761ea73f151f520d96ed3e396318cce35d0c8761167b1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S124.web.blocked.txt",
+      "sha256": "b48785e2fb219eb1058a1d286dc7e7ddacedcfd0ca2da568ee11a7c68f30a509",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S125.indexed.txt",
+      "sha256": "f13f9fca2575b6debf2de83bc65b15c4d0238f9564c2b56990b3ed4d09531267",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S126.indexed.txt",
+      "sha256": "3ffcfe0390de22a4d86a7577fe782012bafb08c442f533bf19479ae3012b1e9b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S127.indexed.txt",
+      "sha256": "5a4ab90e32dfbf5b21c7e6b80a48c4852ec64a7b63105bf45096078ac2fbfde5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S128.indexed.txt",
+      "sha256": "842a7d1c0c0e073035729314fc143cb53bbd094f8c2e3698f873e86a72d58cab",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S129.indexed.txt",
+      "sha256": "c237a15ce224c9543257fd1a6bd943a1a64d7ca27d720cf1c164eda517d255af",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S13.source",
+      "sha256": "97579217ea1e7dbc5eadc69b531dce35104fcd3afaf04a53ab92d7dc81788218",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S130.indexed.txt",
+      "sha256": "65ae98b14580b1b5096618a0559d8f7cff647910614dc86b3e4ddaf1ed49f81d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S131.source",
+      "sha256": "aba5716d95933ea9ef7fc5e2e5f81b13ab577c3b472ed91c0bdc37bf5f20dff0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S132.source",
+      "sha256": "da2b1e02fb874289c4a558f6d0af4148e7ef354bdc5e690cbfbfa33a5a49d956",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S134.extracted.json",
+      "sha256": "7e568c039de373920fe6781f233ad3d9fc716dda7d23dfe36dcfc86fdc38eef0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S134.source",
+      "sha256": "aa994c877a40f2b8873d1cc01e787c7e0fad39cc31667bbcf1a37f0b3a2cdddd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S135.source",
+      "sha256": "8040d85a38b50e93fcc26735df4a707ccfcd9958e41527b3f61b3effc30983e2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S136.source",
+      "sha256": "3c80e377c868f8639c8d44dbb25f0c531cc391a18612a2c8963ff832533ccac0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S137.web.txt",
+      "sha256": "41c033bf7c8012293b3b7f8cd080ad8dbe349ed27130c3b6cc07a83dd33d7353",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S138.indexed.txt",
+      "sha256": "c1332ea604f391990d41404f7fad6293371d1618821c3d8b4efcaffa9d289a49",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S139.source",
+      "sha256": "89259f0cfc86c187ba14aacdfb62886b81a0b18ff539599683b5aab4a0291436",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S14.source",
+      "sha256": "fcf47fa387ddb3e5f6a4a2884c06c64cf4765986a0da5a73c3e486f1646e4b97",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S14.web.txt",
+      "sha256": "1f3a84d038847188491ddbbdcc105073b1383a27447d0fba9b74585b3dedca97",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S140.indexed.txt",
+      "sha256": "b0c38f6a68b1099478f2da7b0ec4dcd3ae7e1f473001b2bfe1a4f176deafa784",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S141.indexed.txt",
+      "sha256": "154b10e4fe269654d3a2c33f1cc2709e76e2ec85dd67a7b4b0d708289425e775",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S142.source",
+      "sha256": "270d91cf68ad9921cf7cdcae02f6f8c12c72030ab9a4a81e914f859a02e5e519",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S143.web.txt",
+      "sha256": "974d8bb5ec70a14604bd9f6ef9c81bd04fd5b9abf8825f5621c75ddb53b283b1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S144.source",
+      "sha256": "23961831af343741a74dd5f3e99e79939ce6387343fb7e13320b531041642ba2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S145.extracted.json",
+      "sha256": "2cb5919aed99de9f4822a544702deb682979407ceb965e25ead3b1b9456197b3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S145.source",
+      "sha256": "a8270a129e2a304c84c7ced81618c32fe39d92047e8a9706e119f3625f3d309f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S146.indexed.txt",
+      "sha256": "c84ec78ebcb655509c9903035acbcc8e16a857bed09eaa7440ef08b3b2102ea3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S146.web.blocked.txt",
+      "sha256": "47426d1e262f3bfe8965fc33b93467f86c9ce8e3253e72fe6d6bb798bc16ad95",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S147.indexed.txt",
+      "sha256": "8177c9c6ed971c76cd49a0e7e79d40fc3b504d4c6b13f7399d01647d46cc6a72",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S147.source",
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S148.indexed.txt",
+      "sha256": "3353ded67de6aecc0dff5478918220c524184f4cff36ebf6428c8bac2b22d5de",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S148.source",
+      "sha256": "dfc1544d713e203fc59de4f45ccfd864d382067c3d2ebf1801e0cf9ca47fb387",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S149.web.txt",
+      "sha256": "a1d48368f08153b09eb596dbdf11c59c5be90ce499a5c0ede8ff950c98f06a4c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S15.source",
+      "sha256": "527e89012c1bb4162904c99f70162b09ea296079ffc433016c40b231d16d3ffa",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S15.web.txt",
+      "sha256": "ca91a46ffe356e6840c9c809890ef44e34a54c31edb8fc3611ff77ce9bd4a27a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S150.source",
+      "sha256": "20660aec3bdcd0a8b62e18e21a4b4f8e63f36094f879b9c4b7538ad83cd397bd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S151.source",
+      "sha256": "be2646ee943eea5661f77bc579387c12fd44e609e0038e3d5b3a3c66814405c4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S152.indexed.txt",
+      "sha256": "c0ba61bc7d036f9518889a2400154da449604c15ebcdfa5dcc7e2ceabf771f44",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S152.source",
+      "sha256": "9b71b4ca399322bfca2f2a7781a97ea320087cf3cd5fd9907c719b5f6595cb37",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S153.source",
+      "sha256": "4e9e9febd359c0b2ae5e3484897a3ebf7026e1168d585f94041933edc3c89584",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S154.source",
+      "sha256": "6e224d7ac3482f18a3ce71dcbcafdcf1126598f419d9462b119814158e070c18",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S155.source",
+      "sha256": "b2df89e7cbb68f2cb20c382ae7c56e9f1d88990d133410aa823e6cf0e96b879d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S156.source",
+      "sha256": "f94bfe939a6be6e20bf6b718e29782eaf982ab812403f471c6f0d1704dbce980",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S157.web.txt",
+      "sha256": "1f367ac3edae58643991ca5e61f9ad6ff78a6321d330089d5dff335949f8d7c2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S158.extracted.json",
+      "sha256": "42755f05cef837aae3d054df668e9bd0a0b983ef6fa534c44ec821bdd41405aa",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S158.source",
+      "sha256": "60a9ce61296d96ebc3bfbea39bc9295357fe95c49dea69f91bca91c482751381",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S159.indexed.txt",
+      "sha256": "f02f054d1b9b70713c32ee32cbc9a75e924fe347c9125dd5431d911e15a4b7ce",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S159.source",
+      "sha256": "d24fa9305c26e352cd6eb2aca50404b2428008dcc87cec432cabd0bd5a9c3471",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S16.source",
+      "sha256": "5119a437c90c14e8aa846b600c9cfc0308e21110c3b8f88567d9e636bdae20ab",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S16.web.txt",
+      "sha256": "816bebc6ae10df755097c63a09532ec61064f3cdb52c5305bfd238db9994f3bf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S160.indexed.txt",
+      "sha256": "9f5108c5a0752ef2c7d212a77f59fd12eed15cb12a28665a62f85ac90dedfdac",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S160.source",
+      "sha256": "bc965cd3c0ab840efc155498b2d52a6269444474ad57c3a781fd658eed4f18c4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S161.indexed.txt",
+      "sha256": "febe2609f8fb5bec76f4582cc30e27a112d5aa496af4d8624c7c609104c99eef",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S161.source",
+      "sha256": "b78addc9a6e0622d6692964d39b65149e6dfe6cf4db3422d15910d70a97c2123",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S162.indexed.txt",
+      "sha256": "c0c13ed94bdc16f95ae636e7ff427acba7f2f2223da43ec8ba364f93b55225a1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S162.source",
+      "sha256": "bd4f2565a54c725dedfbd7c7f208b645a8681de64ebc6eccd22db75a6a167e83",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S163.indexed.txt",
+      "sha256": "98234aef05515496d907e78b28963142397d83567721eca03ff4aad7017c578e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S163.source",
+      "sha256": "64e664f461282a4dfc29c6f26ff3a88bd2b72b3f37a6ca07d30fa60309b6863a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S164.indexed.txt",
+      "sha256": "f96ead0edf5d0b9768f6fe17f7b59ef08d10a7b72cdb504b32ad2eb3fe9b50d9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S164.source",
+      "sha256": "6fc766574261a8ff312252970ec4f154df82e6b423f4d66956d42026515fda4e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S165.source",
+      "sha256": "e46fcb6748d01904d8bd34588f4dc4bdab8b119ff92074227daa811eafc0f193",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S166.source",
+      "sha256": "c0d45de8dc4ba8f00d3a5581de7dd273e6c31c2b323485847d18d67bc15e2c40",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S167.indexed.txt",
+      "sha256": "439ead7c672a6fcda5e8391e9a20f763248589a13a9c09dafb4b92649646f140",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S168.extracted.json",
+      "sha256": "693ecdf55e3f98840ad57a53902b1a1d60281bfe398483f32962056470042524",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S168.source",
+      "sha256": "3f1f636f2b953b4e753cfeabf3a1dbd66e953bee3d936c73db1add0c9e94e8dc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S169.indexed.txt",
+      "sha256": "1590628604f4e1fb6901c22418d3c75b7736e234d61c31a3db7701c6c6c7126e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S169.source",
+      "sha256": "fd2077aae345354b21641d1935ecc3f941afae5d5f0d8d855f07a75d0fc616f9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S17.source",
+      "sha256": "4b9112d2dbae855e2236bdf478df5c3f1bc06b7d2f4133e86da132ba106bdebc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S17.web.txt",
+      "sha256": "c71786ee35406ea26890bd0361e576135b6a7bf456d94494cefedbc1769111cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S170.indexed.txt",
+      "sha256": "3d2ea062962ed90873ae2a526905176cfec5797cc87a5066b172fca2a8b55df5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S170.source",
+      "sha256": "e81fb6c5ec28871a89684681c14d7bd0cd76394d33e2797c5adaa11975d15f33",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S171.source",
+      "sha256": "a2b1ff57ee3fde6b35e0424aa00445d7ae956bdf11f1dbcf67975358b9e8f88e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S172.extracted.json",
+      "sha256": "9c4b9a111a3386e0132e1547a75168e8afecb519b23a88a5bc098be7292b9143",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S172.source",
+      "sha256": "fa3044ba3a00faeff8401c73262fb25cdfd3d1c39a2259b5f4b00a01fb1bd6ad",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S173.indexed.txt",
+      "sha256": "9fcb18e0d8ca4c14a6ffc6fe83229f68fbc39245928fe49ee287d516870c42f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S173.source",
+      "sha256": "05263fc9f76b501688a5e13421ff75d50eec1247b80dea9491b48b250bbb88ea",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S174.source",
+      "sha256": "b7982afb50346231ecb739df4855f1e640d0936b17eee298f50ba8675ffcee05",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S175.extracted.json",
+      "sha256": "5776d1c2c54c04e7bbb5d025044b1fe3f4411e4b792fd100677d14438bd84580",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S175.source",
+      "sha256": "23be29a27b94ebafe15cf2af69dbb67d65e343f39d337cf03c86119467bca1d6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S176.extracted.json",
+      "sha256": "c32c4eeda71a221346a2009df16c17439df620760a6389b3f608e8553fc91d34",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S176.source",
+      "sha256": "394d1fdce320809685539922593e05f44e5dcf2bf505619cc7344afd58b5d6a8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S177.indexed.txt",
+      "sha256": "9c3271ee2c3081e9adc5cd375cdb94bac90c56902c97944fb4e06a6eaeb7835d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S177.source",
+      "sha256": "9f6ffaf073ed4c53c0f60adb09d6e329f165d65a054cbcf1848b0760797f9f8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S178.indexed.txt",
+      "sha256": "b0cf49a72d185c48d0a7e4fbe5a31a82c8b07a43dfda5f2f4dda976d3d2980e3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S178.source",
+      "sha256": "7d54fb17088e5969a401f7bf992f0648919345039310cb377c6400095d1bd66a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S179.indexed.txt",
+      "sha256": "6622322ce38b177dc50036a90c492364af313b2f79af2143b0ff0ff1d15bfba7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S179.source",
+      "sha256": "1f9b90cf93b0f08eac17d55c84072d413f1ce477e9552ed077b6bd174766887c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S18.source",
+      "sha256": "89bdd24b274fe75694e8e2f9c4aba6d8817ad9c6d0d1c2accb6e0915251d8d0c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S18.web.txt",
+      "sha256": "235fed730430ea58d697978858b5007d3687d05a938668f3b9dc648c68bb7e47",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S180.source",
+      "sha256": "c9c91fec3ab154325d33f5e7f4d951464d4fbcff7e56d5ab5659dc5b0a921df9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S181.extracted.json",
+      "sha256": "3d54bdf516fb173ba0c2a329bce6586925e032d4d937e9817c9ba817f3569f37",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S181.source",
+      "sha256": "c42dc9fd8d1c11f62603a7118517f17f09668d560992a4f4d98d251866fdc11f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S182.source",
+      "sha256": "9e2f3d94efaa1f59b115fee5cf25f73918e4dd3d40bd0f82eaab46632d9ddf2b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S183.extracted.json",
+      "sha256": "3ddf37da4a1a6f2b1dbc91de2264ad1f427d591949a6801b17c76d124fc4778a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S183.source",
+      "sha256": "373d0e75bc0f6b20aa24d6646c94269ffd72daca12703317028164562890c14d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S184.indexed.mismatched.txt",
+      "sha256": "9ffc1e9f713646e00062c8f953b3e812f5396a0589eea96b0349ff2a69ab800f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S184.source",
+      "sha256": "7d41b940d299fc4b0e24db715a2bb98a0442a78f87420034ab7ad757ec606983",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S185.source",
+      "sha256": "e9c7cbc0b76f2043d8d003fb9e7020f3670ac8180ce090aece89831ccd5c9543",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S186.indexed.txt",
+      "sha256": "a6e48600f7dcc2a84fdff70261a121d28842d16005ca404c99090481ce861b64",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S187.source",
+      "sha256": "31c1a2c2cd81875c8e2a73ac0ed0522a2b61fcc2659a25b8320378500ffadb70",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S188.source",
+      "sha256": "ddeae07465223061c7e279ea81756374e77698ee17dab39a621b16ded01f8707",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S189.web.txt",
+      "sha256": "c4951c30d8183080b84604773108aa3460e36b8d7d94dc2e7cc4f8a202be13ed",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S19.source",
+      "sha256": "4238eb3eeb33399c169adee2285218130060724922994f5e22fc7da361d36e90",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S19.web.txt",
+      "sha256": "a8ca7e0111fe824acb9a723e622e111ab07b3bbd4daea17b71495eca9428970f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S190.source",
+      "sha256": "a9f0e0382907f0bd3ce8fcc767e1d6119392ce70a14362205d811da62c7ffe89",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S191.source",
+      "sha256": "0b0ce40d1445e0356a4c85ba89307c1127c87859d7943ef5c0eb1ee1429afdea",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S20.source",
+      "sha256": "c5ad91d2efb97b9df20b4e6241358acbfbe752237ddddfa4ffec3e82abe3fc5f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S20.web.txt",
+      "sha256": "6545f5ae863030b69890e05eb44cbc3b864a55762895bb4a3df71032cd9b9f19",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S21.source",
+      "sha256": "4757f9ec65529cfae8b73f6b8115254838fd8da5f338869d8cbbf2fb7242176e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S21.web.txt",
+      "sha256": "7980eca61a927c4fc06ed7d01aeb377690989f5b1f4431fcaa8702a1bf4ad637",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S22.indexed.txt",
+      "sha256": "e16742e47ff9459dac19c72c2284048e7c8bb526cd65d52b951738d963070f54",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S22.source",
+      "sha256": "e23dfe954551121585bc52161969de9f25f026c31955c8b7efd8140f1bcd245e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S22.web.txt",
+      "sha256": "faf847e496f5fbc25856cc5efad2c7bd916aef8bdccb7f52cbf96cc6a4614246",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S23.source",
+      "sha256": "2d243b7b0094a52326f0f3c927b209455a26175509442656c1ccb59092509d91",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S23.web.txt",
+      "sha256": "5f8ae5a9d9cc518155b9f9df4f10f5758f3167e4a94522ebff8c92a709196f01",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S24.source",
+      "sha256": "e27b32687b44b497902babfc520859f2357c494d1343496a7d5c3696c8bb429e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S25.source",
+      "sha256": "19d9858269c236fc9bfd506de54e76f1272bdf9868e1f7c9fa112959d236605d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S25.web.txt",
+      "sha256": "12e2d5c02d361983f1293cfcdae3173703f411f6b0988ebf810cd04b5cd48253",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S26.source",
+      "sha256": "6627cad58131ef1f57eae7d872bdf826e1944521987796cf012bbd1d844ffc5c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S26.web.txt",
+      "sha256": "f6b28281b7ac11d084d878e63b3621335b32b57dfcf1473d80a10403bb8af4c3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S27.source",
+      "sha256": "d5e63ff23900a05cdea1ea265303e41792db7d7c0e988d03f0a6a936ec85d26a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S27.web.txt",
+      "sha256": "938a64ed3b5491000b3b806e575f09027d3f7f420b474bd010be2627305d8420",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S29.extracted.json",
+      "sha256": "8375e2fd211aa857a8395002e383d38253dc74c4b707535b3cabe1f84f2083ca",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S29.source",
+      "sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S30.source",
+      "sha256": "619571d68fef64f56d0776d774d587a7170f2b3f09406ce93712ebf27e76f4ff",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S31.source",
+      "sha256": "5072f77eae2127a31afa87f221d3dc4fee8fff8a567bd733fe19897ada4898fa",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S32.source",
+      "sha256": "520ed41640115aa815e8fef56a7382daa3dde0b19be7465dcf29ade86a258b8b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S33.source",
+      "sha256": "add308b0441235d993372bfbe7fc07a39b896e635543b7b94439d0a83f08008b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S34.source",
+      "sha256": "26a0477b6d46160d256b21b3131581fcc355521ee60a655f7bd1e1b4b5f08782",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S34.web.txt",
+      "sha256": "268bab0d875198f4ba12e0af3a10a6f534eb4581deee755239dd0c69a9818002",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S35.source",
+      "sha256": "67a4ff4fd8790edf4f531e9c54a6ba783677bec3f51c4a2761929ec43dedc10c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S36.source",
+      "sha256": "9e439bc9a5c0a1372b6fc35c52266a4a2916a97878aa90f31518a8914e3574f8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S36.web.txt",
+      "sha256": "eb9c40e0cdab2fbf69caef30a723d3cbbdb722e0681d981dba45bcb10da1ad63",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S38.source",
+      "sha256": "8ba4fa372576ec40473e308e44be6ee7d60f174ae76b7ec1b68b7b494d44cf23",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S38.web.txt",
+      "sha256": "7abcb8a16af2094f1396bba30a3495d51748a08d0bcb589e85251f5679b18325",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S39.source",
+      "sha256": "51246c03a874217a2089cb50197b68275990879f9f59137dee27f934145ac7ee",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S40.source",
+      "sha256": "abaff9713acfa5843efdf89d8ddc96b186dc28539fff2099c39c81a25ac6ffe3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S41.source",
+      "sha256": "5cca97f91d5f2b812a9010235f80a419545ed29cf55f878efb10982ce5cafae4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S41.web.txt",
+      "sha256": "896adf6a3efa5441a8293130ef38a011afa090f6680e4b75c842295533459a51",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S42.source",
+      "sha256": "3510c57c1c5c36018333a8d5e6e7c513a9e0d7a7dbeaf9a85119696252853458",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S44.source",
+      "sha256": "b5cd7d30c15669771e8e3eb281511f88378748b798689c00b86c6af672dbd2c0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S45.source",
+      "sha256": "03e4e09f447750db24364fdb055311334b2368ae6374467ca263b2f38d2b63ac",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S46.source",
+      "sha256": "3cb27d7b22345d4847f30cd712ab71b107c8490884fce917aeda61b4c5d30471",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S46.web.txt",
+      "sha256": "c4dc2fc4492abf13aeac4a4b7737a946919f5afb7509192a8e1c037c49c3c02b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S47.source",
+      "sha256": "2c97668ab2da62968cc85e2ea1c39ccd1c295dac0b9bf7ab33323c61cda5c98e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S47.web.txt",
+      "sha256": "3db2f6b0d8c6e1ab856ec76a4155e4a7b97d6e2fe04ab85e70976396aa751bf2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S48.source",
+      "sha256": "be15c689d8c468f8dfbbabb9460aaa8bb69fef60825dad81a203329df9fc5f3c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S48.web.txt",
+      "sha256": "7b2650c3c47ed2341ac8a47f08df3c87f3cf72cd49f8994af96ac15927cf9299",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S49.source",
+      "sha256": "f8ed5b6c86715c4ca1aa6c2fc2175b250c35e1164b476544f312be598cf7e8eb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S49.web.txt",
+      "sha256": "9c1b54aab83adcdef7751276e5b879882f5c32bab610b7e323afadb6c4b18d24",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S50.source",
+      "sha256": "8cc44436a15e4b2f9f4fd647a09a7be5a14135cc106aec3ca96ad4d255771ece",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S51.source",
+      "sha256": "2871bec5935f98167f646d964e43958dcc88e482d37952d5c98e744f1bbf84be",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S52.source",
+      "sha256": "0590909cda2d1b607199276fec4a066f9365d17486d9307c637425fb6743a627",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S52.web.txt",
+      "sha256": "e6012caef1db1c55347e8e428b9598c6a90da2011f716d65996ea6ac43e239b8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S53.source",
+      "sha256": "d713d8629899c7f808e04db7b2107bb1e386c63b87ed728be38dd5ea39294584",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S53.web.txt",
+      "sha256": "1e648087c67a093ef1b9919c7f94d94fe3a3a38acd05cf5093f142e357898cd9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S55.source",
+      "sha256": "94b7601963255db5920a551b6b6908108d3ab7299b8016e7bdee01859f7121f9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S55.web.txt",
+      "sha256": "7f4a3427b24021da05ada45f444deec495fde51e4ac0fe27bde79e236f2b8ffc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S56.source",
+      "sha256": "7904f3ad1f7a29f6d166a0d604940acda9134c7210cdc090bb3738c8dca12d77",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S56.web.txt",
+      "sha256": "23e1a6a0ccd836bcab02250fe3b7533c55c7180e3b332e99d96b7c5dc74b27db",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S57.source",
+      "sha256": "ca80af9ef3093ee792368ff2f380370f53d57206f1b01bd82f648ab208614b33",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S57.web.txt",
+      "sha256": "171f44c11cd5cfb4cf5df92111f7b3772342fc68f16d5e1cc48d491d6a789fe7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S58.source",
+      "sha256": "f2fbae92bc43423f8b70c768aee0875abc2abd69551067b8c4653d081b32f6ab",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S58.web.txt",
+      "sha256": "d48c2ed247a95663c7377be47f349fae5e568de7317bbb6878fd46b3de2a7999",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S59.source",
+      "sha256": "aacd27835990d8197696e7533e85346870375e9af572da01fef301196b6e1bc9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S59.web.txt",
+      "sha256": "4cd1f10c9e79c0c53076f2cb733a9c0a634e5edf2f74c6889949c58c9deba085",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S61.source",
+      "sha256": "0ccafacd6c3d54ba3c966fc67cd67bab44dcb10e6b532d1f303c586d511c4863",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S63.source",
+      "sha256": "0d56a5ba4abfdddfebddeae67689a84192b17a5c0e303ad9bf64cb58c03cd54b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S63.web.txt",
+      "sha256": "7b095fafe91cff5de1604a76b009c971fd0b7c085aad11dab0ef474c4791709d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S64.source",
+      "sha256": "ffb913def7da272ebd978836d6869c98b548e4498681b53b17b444e6ee34c77b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S65.source",
+      "sha256": "e10b7c22193a95117352f3d3a69072899ca8ad4bde23c6a45b035353b00b99ca",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S66.source",
+      "sha256": "9688f2b0626db601343303d5382ce2efc6888fd834d5e28fae3c33f00c33412f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S66.web.txt",
+      "sha256": "aaca4272a71b1a3f097891277b394748332aa2c17dd0641f984190569638de08",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S67.source",
+      "sha256": "4d013fe786697b0fe1d94c429b14ac04e2a35303ea10c8bf1be350bda69f991e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S67.web.txt",
+      "sha256": "2380c3c930fb1dedec50cf674c90328afb7766e2c2c53b49316eae49011fa6c7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S68.source",
+      "sha256": "3910aaac58e48e56f614a135f96f0d4de675604359ea843b938261b2ab640e08",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S68.web.txt",
+      "sha256": "300474c9fdf94473c8981adbacedd920f09b69b5bc73d9a230ed2b0e29b2b27f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S69.source",
+      "sha256": "333a861bf90455b2b6ec32eb3602ec8c79116a6271162ee677522df98d49db26",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S69.web.txt",
+      "sha256": "dbfbdc79df8bd5cf6ab7bcf131f708bc183178c962cbfe47808c3929fb75267c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S70.source",
+      "sha256": "e61eceb44fae04073e97c8fb5a00bf8b06c1089914beb3fbab8da896d99091cf",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S70.web.txt",
+      "sha256": "055d2f2932392fba9d23c7760f29e2db1e54ee2ab58d93a2edec732372974e45",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S71.extracted.json",
+      "sha256": "7d2bf6ab1f02c1238763a6393f738ad678b821b252df092c777fa754c039ff4c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S71.source",
+      "sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S72.extracted.json",
+      "sha256": "1ce0e0f825b1d2bdac9464f249312ad82488d210086d989ff8672d5c1bb722cc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S72.source",
+      "sha256": "6251cb241748f1e4e9663876941c6517b30f228046552ab770cb3a0d8008976b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S73.extracted.json",
+      "sha256": "c0634973c88149417ec4259b2ce479215162bbadd8a2590de5d4cae7a73d033e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S73.source",
+      "sha256": "02b43baa318d8f59421e359a56c2bdcf7387d14abf7ed8ae3b588ef41bd981d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S74.source",
+      "sha256": "63e32f2b36023d9980d6f3d89591e6f22c8e55f19ded3deaf2f1a043208fd8a0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S75.source",
+      "sha256": "0fe9c1302c4788f9bc0506bd1f7bcf8ea2f0f4e398aabd902b9c66f48d9a92eb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S76.source",
+      "sha256": "8855f9bad745c4895e79600fd1fbcfd2067bce4a9c4775cad367bf2e6ea5dbcb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S77.source",
+      "sha256": "da302b31c6547e27cbaa8dc86b451f5907b86191a3591ba0671b8fc6f3aada0c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S78.source",
+      "sha256": "33b3d5c0e89ceb94051f2d4f1e8a25fea962b0db35d99843db102e7db17eadeb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S79.source",
+      "sha256": "60495fa6641aec6aa41d423b047d94dc7e0c7ca4108d8ba6ee1c193a45fdba47",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S80.web.txt",
+      "sha256": "c1e67ae412f974579d68b392d431bd36563330b85ee6744c917e3a3502538284",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S82.source",
+      "sha256": "be2af53f3f603fe4b19f446a0a0cc068c0550be9da0b3a3da533bb58527b709b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S83.source",
+      "sha256": "c6939f38b228bd4d03203c4cf1a4de934db949681ba48647681bcd2514c9e30d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S84.web.txt",
+      "sha256": "6829fca4be220a8a0af15158b8fed6276c4d5e3a810086aab28005ba7123fd34",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S85.source",
+      "sha256": "8e880543891746d7d15928224e1efeb463bb2e94085ca99ff4b86e37503cbd91",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S86.source",
+      "sha256": "188cffa4e0f3bd5dc81254b8e8e9927b0a1b0075a94f301e144f352f5c14949d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S87.source",
+      "sha256": "504f27b63d06f59e1390ffd1172b8f2e71682bed5730027f5ef732652540aa3f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S88.extracted.json",
+      "sha256": "a19f029305bcb3409b9a1025a53c2e3e7621487a30e2cbfab07bb03249c03255",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S88.source",
+      "sha256": "07b26716cfcc9559dfd0e4c6c1cefbd821d02b3e395dc76c5388258cc7e98323",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part1300.web.txt",
+      "sha256": "d14cc616710a79849b7f6496563ecdd109529f4dd4ad5a05d2b53419772550ce",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part1700.web.txt",
+      "sha256": "4cbfdff00b29f7af5667fc3dc20cb1ab084fd290131fad30a32931ad8557b975",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part2600.web.txt",
+      "sha256": "fa24ce5f80843b9fe460d31e11791d922fd974e1f5916c54188e40d05304a490",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part3000.web.txt",
+      "sha256": "855b03b9bcb698eb088087aa0027c9ee67bc9cdb66a96f681f9e29ace1ec2b05",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part3700.web.txt",
+      "sha256": "8b37cbe38c6bf337932622f7a936ee5fb5da1863e2e90ea813be5a2ac83252be",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part4000.web.txt",
+      "sha256": "272064a3b27be7173095c2cac9a8c9fc9e7fd4163be5e3881aad9670cc9f9f71",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part4300.web.txt",
+      "sha256": "210a23b3b6ad44df4a73fbcbf64b11cceebcff5fdc138ef56c9b79ce44d17ef7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part4900.web.txt",
+      "sha256": "286cb4bbcbe9e6eaa73c45517a7adab1b73e8a47d142d82252a667270af94bba",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part5300.web.txt",
+      "sha256": "d2caff5f0776a27e59c170ea602af6a892ed7a0f9f38c01d116ed961de3c048a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part600.web.txt",
+      "sha256": "1ac2af7ee2273f440f2762d619c2a3bc7e31f98df3d07210a37d599e85ebc095",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.part850.web.txt",
+      "sha256": "d3233702ba355a34504c30b7c2bb43765d733fc0c895f848198cbda87a710d39",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S89.web.txt",
+      "sha256": "bf180acb092b59371170640b3e478d74cc961263161ff4f5acc27ff7835a994a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S90.source",
+      "sha256": "02ff8607c4038297ea81525ab6703c32da2c4a419d26cd76290114e76ef1a476",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S91.source",
+      "sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S92.source",
+      "sha256": "986fe7706cba7a78705a7788447a491f92889ac89e2f9ada13497ba3730a43df",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S93.extracted.json",
+      "sha256": "572b7cece82855e00b3474be0a54a7e033d083d602efea44be52596cfbc4e777",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S93.source",
+      "sha256": "f3269fbecc5f1ad3ed07d14696d8f1475b6239615cb400d87a2f6d84f3c04095",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S94.source",
+      "sha256": "d61206a0e924a356da5913fc0e2afa3fd36d0202f52798d2cf98f3f91fcb7f4a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S95.source",
+      "sha256": "2d0ca4c17fc56590c3bf0402bb7ba0f2c5abfec99bed70d4c22ad959d1a84a9c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S96.source",
+      "sha256": "0b4a1fa0630df1a2e10a18574c5a1afd51f1af390f7d1562ed0947ffbe9706d6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S97.source",
+      "sha256": "d94948f6911de14c9c46d7f912f86d3443c198f4519154993a2b4cf3f3b1a7f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S98.extracted.json",
+      "sha256": "c3a1b0bbc83993b311cf8efdd63690deae8c68a2d72ad47afcc0d12e3d3a96a9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S98.source",
+      "sha256": "f5ad38a23001d16107b602013f8ed9db9f0072b9d5784cda4d19107c5f7ece92",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/S99.source",
+      "sha256": "480d6c3c37e174fe5334ac9efdfaaa8034eb0eb255c803e77dfb4b86210f1d2b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_open01.web.txt",
+      "sha256": "e29f6ef9aa666211d1c5d88ab167e637c8ad06bb400e53263d196b5f6bdc27cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_open02.web.txt",
+      "sha256": "f945d2d7f3c45b18c9a1798dd4e156a45dee95670f811f433b12345149260b3a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_open03.web.txt",
+      "sha256": "b316fec903fa6dc6b6c1fe726f22b14290c68d6b1f14d3930e4e4db7ad2b22a6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_pry_cardiovascular2013.pdf",
+      "sha256": "6c53a31bcecace7a3e430772423159a7bf1c458b14ecd86b1701ae3f8bb091e1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_pry_cardiovascular2013.selected_pages.json",
+      "sha256": "82223b5b6be7cb69d1af1265bd6da5a173922903131fdc92891ede7acad0fa96",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search01.web.txt",
+      "sha256": "af3dc59c03f96c2b2a0bc46e1c9a97f3255c3f296b976504122dba4d170fe377",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search02.web.txt",
+      "sha256": "18dd5b9e47df4c7a89a669432ceed796ca7f763272fb74a9fbd0e12fd55f4759",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search03.web.txt",
+      "sha256": "66905dfe04c884994556ca54d4642a497f10d248dd8071f120ccfd9574a74c6d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search04.web.txt",
+      "sha256": "7c2c3d1f59d3f0d11da15af06e09dbbf8bce2ab5a2080ebbb4f3dd215940c8cc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search05.web.txt",
+      "sha256": "857a9651036a81f93c7174d62f5426c9be94432a4b9ee959152e4713570f4d12",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search06.web.txt",
+      "sha256": "dd9a7750ba7290737a53fa43f48dc89a88aaef186bea19e303c4724e0b84fc09",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search07.web.txt",
+      "sha256": "bb0447e61c3fa016d8e5e5595723110267b37841913e2a525e2f079de81014a2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search08.web.txt",
+      "sha256": "5689fb5ddbbe4c39b9eb245ffec35a7c299c82f509ed572d5cd8bc834f28325b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search09.web.txt",
+      "sha256": "5e179577494d0344fc525adc6df06c3f7aa760235db00b1b3b56bf81107db88d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search10.web.txt",
+      "sha256": "94d06c60c37fd3130349d9d0dee3168eec2bab09c5ec7887e35302ac555e0681",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search11.web.txt",
+      "sha256": "1f08c3d898b1727f9e02e8ab4281ff30e3f72bdf91f5e6e74bfeab77058bda83",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search12.queries.json",
+      "sha256": "8ba69df878cb894eeec5d670c8391c9c2964ec0058c9a0c33ece21f3773cb229",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search12.web.txt",
+      "sha256": "c31db916b8946d7cc5b459093e35dbc00eb1e19823dd360195ff27e6f7f8bad6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search13.queries.json",
+      "sha256": "63b607d31d96a5c06e90fafb1d212286fd17cf67de390c41f041019b86a8427f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search13.web.txt",
+      "sha256": "60c040096c18f6534ead26ddfc4ef5b2d27e2a129f18d200e99dab1d800811eb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search14.queries.json",
+      "sha256": "3a60bcaf9f836d0890040bd0a4092b0e462753223bef2b91ee2b1d13e047967e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search14.web.txt",
+      "sha256": "3013e82ae8d2b3cb46baf1d831ce3fdfae84e4aa7fd54bd2da4080f48d57ee19",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search15.queries.json",
+      "sha256": "24ab706cc8f7a32a1c6d375fd97422412ab3a84d5f87b2c1fb57e80d55181445",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search15.web.txt",
+      "sha256": "da04c74f28037065c68981a4f4f66cb1b82e98c3f3fa914ada284dcaef70ad75",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search16.queries.json",
+      "sha256": "b74c83c164ef13a36b94ae1182270d85e0ab0f46261a0cbc3af0af6595271870",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search16.web.txt",
+      "sha256": "8c0d9b9154491b949b4b8295410355b8b3a24c014d3802b0e20afbdd67298e5a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search17.queries.json",
+      "sha256": "62895074373e9ce3a3c41f3274ba86550b7b7ec1d8d5d0192064639faa1913cc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search17.web.txt",
+      "sha256": "67dda7ceb210c729b8736340bcd17377a34b49f701025702d2f6ba847e0fe4ed",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search18.queries.json",
+      "sha256": "e3dcd5df39c32dcd0cc7f779a7bd0697b16d3bc777f6d53d2079b62367c291b3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search18.web.txt",
+      "sha256": "2830f2f73b175c39caee3a7f876cfba32553c59650e256250e7d14a166892b2a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search19.queries.json",
+      "sha256": "4779de8b1328243d5415677f81472c931e42daf8643866b4dbed05724a106203",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search19.web.txt",
+      "sha256": "dc209cb408ff60c01f10a4c0718edd8b666cc4a1a742690bfcc3e4587ddcc5e3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search20.queries.json",
+      "sha256": "6967a7ded4b29f10ee040e87cfc21f2402868e650dde41115638367061a55c9c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search20.web.txt",
+      "sha256": "933b4a38c030c22327e53a36277be541eced5a047e0747d733fd8125a062763b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search21.queries.json",
+      "sha256": "59ac53ed64322c76d13375c27d01af87580b0acd2521b7ec6c01f4a1d0f004a9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search21.web.txt",
+      "sha256": "9dfa836be262778edad3092641db6ad3fa4a6220237daa62867ef93fb35c744b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search22.queries.json",
+      "sha256": "f3ccd7cb0c5702ecc21fa14607c08217c17638e3d8715c2710ec87ed423ea121",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search22.web.txt",
+      "sha256": "25b5891eebfa1c6c54ab447edf447313eeafc99f3dd215a81fa1802ffefda4a0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search23.queries.json",
+      "sha256": "672c509ed5d8f477871909e7a62921e035f5e5498b3918c3c279ce771987997a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search23.web.txt",
+      "sha256": "edb93b39433e78eed99a60df1f651e38a4b9f380030c94e8af65756a59177271",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search24.queries.json",
+      "sha256": "4af2e753c2b9a7ebf222ed3cac1f259aa17cbe9bb6b3fe7eaa6852f81bff6f2d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search24.web.txt",
+      "sha256": "416886fefccfec8ff539360043c8846db9a5f1f4dc226b7e6c7f632cecf71c56",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search25.queries.json",
+      "sha256": "8efe4a0609953a18981642bcc8108459aa280ae421a4072605b7d3e5a7b5f089",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search25.web.txt",
+      "sha256": "6f774a9b5c4892f6856f51fcccfc07738a3362497399fcaddda17e9fb68afb26",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search26.queries.json",
+      "sha256": "4e0ce52e68d4e8bb8906522c00ebc3fd24cf28804212db0487eff08c9c794e74",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search26.web.txt",
+      "sha256": "daaf2e5edd74f6089870a4805e5b927e438f569740966e5afac879a0db217af9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search27.queries.json",
+      "sha256": "c89e0b0046f40022fb7994bd5d35a065b26b9aaeba3dc05faa951dd2e27f2b75",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search27.web.txt",
+      "sha256": "3566ce5e054ef61c406f87a331b1e0969bed18bfb304a8cc39ebee4c2cb73e74",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search28.queries.json",
+      "sha256": "82b457544abd43be4b9e0e9690231f15d21c8734c8648e72d3477d952039bf10",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search28.web.txt",
+      "sha256": "791940165054f5aab36b76809d770c59e8c434a336bcb6b0480675ca8b83619a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search29.queries.json",
+      "sha256": "3767d29aff4510f167df975fe0d4d1335db5966ff4e4b2e8c50ebc80ec8e7740",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search29.web.txt",
+      "sha256": "2e413953786b0448df602a1b7e83befc4fd811037c7d063d08301cb7e52d6c58",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search30.queries.json",
+      "sha256": "5f14c1f3c5b4841776ad9afd0b101831ab36be2f6d4735b68d2207239471c82d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search30.web.txt",
+      "sha256": "ce99089c088c7a3cead6b226c1b2ff1871f1fb43629c3017d7a720744f0bdc2c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search31.queries.json",
+      "sha256": "da07fde408af93f8aff89090fef1468c3519cdb93f38191d0a7641abc076b522",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search31.web.txt",
+      "sha256": "c357cd96ec66afa7ecb8100d9581d6411b9d9229bc4038c98ed917bad48caf4f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search32.queries.json",
+      "sha256": "0e52c227d948d354d586a75db5ad9f6386ddcaefb6e69466de650c091c5f33fa",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search32.web.txt",
+      "sha256": "2e8a5e785928cb12b2c4e487f34b825352f15a9fbf02d5d9a264c0af61cdde8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search33.queries.json",
+      "sha256": "cefe94228eb23d5102349478b3f14a8348cdaa9ead55b16ba83e4f6e6ac7b3f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search33.web.txt",
+      "sha256": "07fa7477479e9c8e0654d290bd09ce31c6ea76ac598b22427bf4a9fa1fe5ca73",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search34.queries.json",
+      "sha256": "a0fc137cd51d78f9722e9c81762ae5ae9ea5b30504e3089728807b2dfe319099",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search34.web.txt",
+      "sha256": "61018aa4b5ff7c13fc63cedab0ad17f877b998581d6a1d1bdd6d7f995e4459a9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search35.queries.json",
+      "sha256": "5a6baa3362f167472f3b202049e8b76926cd8208a0a7cdcb0df60dcc70700083",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search35.web.txt",
+      "sha256": "c56c0b38344176c112c8a0b6544f6a6e6e3644142882f017eb95d1ee32c4716a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search36.queries.json",
+      "sha256": "a1fd1b464da735d9784b49f024034fe12f259399c6847fcc3e134cbd1030269e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search36.web.txt",
+      "sha256": "a896d99057ca32f00c8f25e444cdc12cc6898acedb54037d44a87271cfb7919e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search37.queries.json",
+      "sha256": "7f4d677f55ec58a3cc0a3d88c90db969c5e7dd483247f8df0e49bc0480776abd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search37.web.txt",
+      "sha256": "71e28bbbdbf6bac62a28be4a33a99963babd78cf39dced9dbded20bdcb5b202b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search38.queries.json",
+      "sha256": "2483cd59c2419dad090668542e6ca0c43eb5c0b8c94c92433765ad2ddfea1925",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search38.web.txt",
+      "sha256": "a7fa9c835cdbcd90dae46ea2db05be4287d0ea2d913961c176b6961661e27231",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search39.queries.json",
+      "sha256": "11b7aee48c3de5a793d5a0eb25ec790cc3a01afd0118abca4fa74142162282c1",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search39.web.txt",
+      "sha256": "95dfa28ad3ebf2268cbebe423dd31ed2cb8b32a9967cf8e83dc9eef3c4569f25",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search40.queries.json",
+      "sha256": "be2207be6377e413872ab5b43adb66f97be643552c6c635d5f6357e16305fa61",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search40.web.txt",
+      "sha256": "837ca20dc08a336b579a22612f8894e7507de06977e81004f0a4ea4ff5f88c24",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search41.queries.json",
+      "sha256": "a6d4cadb16b1b85778113ca3059046dd7aaa10dad104e4a2d73f095f57afd367",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search41.web.txt",
+      "sha256": "15a1e778ad9252aab0ed2f613104b2f4da4fef52be581319e43910490f65b06c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search42.queries.json",
+      "sha256": "ae43b708ff8a5fe7631959397b920114beb2f468560e0e357b178afc293fe9c7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search42.web.txt",
+      "sha256": "a07d974add84c11c50b1e65087031fae41978faddccdec87c58894563be699fd",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search43.queries.json",
+      "sha256": "2cf6425488c108e025cf4eaee0839ca06b7694d08669a8d2acfa783381eb9080",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search43.web.txt",
+      "sha256": "978e2116d78b712c7d628d83bf34107955a8eadf0c5f26173a3d75b385b2cb17",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search44.queries.json",
+      "sha256": "ed77dcaba9f1c9cc649102677927763fb36826fe3a6bb6fd7720c0d910974243",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search44.web.txt",
+      "sha256": "bd8e3cc6361ccabb24cd18f60148ed958116a36050e8f58198c554bf010210bc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search45.queries.json",
+      "sha256": "884686c9431a190af1eaf3224e53cab5967421de7f698f07f12c64947e65221b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search45.web.txt",
+      "sha256": "2820cfe392405124969d6aad7aa19675dd2d724ac4ede9dd47d07f57dda892be",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search46.queries.json",
+      "sha256": "63d48ca341a99cc61a3350f26905de50f7d17b5dea3210f94c931edc74ee14d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search46.web.txt",
+      "sha256": "83338c2835ec73098796b436cc445df5db7d6911ab6e641a40b4948da26f2b7b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search47.queries.json",
+      "sha256": "32a7adea7237fcea60b9094e6c8aed7d1d32ae3a56a8d5a043c560e5644635d3",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search47.web.txt",
+      "sha256": "30823acdb7d92a25ec6bc90ee824cf1881b834b091fb9c5f578bb79c442a1340",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search48.queries.json",
+      "sha256": "cfd81af46e21c0291bd2032c28e12e25564bac0db5354e7495bc2d1348f36866",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search48.web.txt",
+      "sha256": "71fcc1a263892e3a90a5d0d278c9d227700cebc21b0a4a807796f8a2d9c26a47",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search49.queries.json",
+      "sha256": "5380637cd32254a15429355da863590782ebda229baa28eb4dc05370bd49fe40",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search49.web.txt",
+      "sha256": "0f324c512516700082d24c3ab122ecdfa84f0ef5c6919e8b9949c0d75be2d291",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search50.queries.json",
+      "sha256": "c34b47d3fd67bd247c13b2e3b7a2617be6d53687e03974ea8b68c5946998e6f0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search50.web.txt",
+      "sha256": "b42d586486919fe51b2b4f54c59094098b9e165e6ed3eccdd5781b758ad2e55b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search51.queries.json",
+      "sha256": "d1cccc73d444df7a98d4019f88a3439f343f1b8697182d8f9e8c0193323f4605",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search51.web.txt",
+      "sha256": "77c633b428616fb73fd5aa7664a25330f5cf9d626c671d5cb387ddd2aadd2797",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search52.queries.json",
+      "sha256": "63072f097b2cff463d546abb69046d3011853ab0e2b65c919bc859358e768839",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search52.web.txt",
+      "sha256": "25a780c5b531f6d812a6a9d48a63e33e81fc81aae729cdde12334a0e043892d6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search53.queries.json",
+      "sha256": "7edde8360926ec097cd7c833764872780f304bb7702ce988be329212e6245534",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search53.web.txt",
+      "sha256": "dfeab563727840b2663646fdee9156a07f893717b8b8a358184f409039f02262",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search54.queries.json",
+      "sha256": "03bdc13536e9195ac2bfa29e767f90b0f3925814cf4d01e0be18d16b4d05c6f0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search54.web.txt",
+      "sha256": "c89ee12eae88eeb2160363610991f25cdd65d956e68ee7ca6bd8e15195689e2b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search55.queries.json",
+      "sha256": "d5a20df5f11dc365b9b40b11243935396ba200c5123c3a90adda5c8de3ee1d19",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search55.web.txt",
+      "sha256": "893d500c177e0f2835712eef430a47c313c03417cc08d995fcabd0020a290188",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search56.queries.json",
+      "sha256": "f61fb331170602536d012ba2f5b0998d86c31a694fb8cf20a2d805a49f87332d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search56.web.txt",
+      "sha256": "d824217d04d9155c62a07be53945ae55288a8b10d0a6a991b43072c5b69c26eb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search57.queries.json",
+      "sha256": "8a4b4c46c8fd0629e3e5937cd7bff051ee4fd6071fa258a04d002863f4ccf87c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/source_cache/surface124_search57.web.txt",
+      "sha256": "8d34a7fd8f3960124e1039ee42f47a5df81fb55b40b50ecbd13732374ef2563c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/sources.json",
+      "sha256": "75acd78f9cdcaeb0d1d9af007a753099782171b39f7ce608e142dec7e2dcb157",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124.json",
+      "sha256": "344e4766148b436dcea2777f23bafb6292989b36bd5eb549a858c5d0c1103892",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_corrections.json",
+      "sha256": "5427257074ac6b31875263c90551f04d173a23727183ee31f86f4659d0801a62",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_discovery.json",
+      "sha256": "70cd933b883212e104680e3017a184868479c69607079e4016d2207e52ec83d0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_discovery_review.txt",
+      "sha256": "bf43da7c60fb3bb775f941a5247ff03829b0fe44991a6d791ae4f66f612a4dbc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_ranked_review.txt",
+      "sha256": "730b5bf0e603a2e9f9a1dcf12e6835a3e9ca3f3cc4c193a00f9052e9b631087d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_report.md",
+      "sha256": "e748cdfeefe5fa9fd0a30c7b62edfeca724404f8b177a371b6cd28b300d98e9e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_search_index.json",
+      "sha256": "aabb648a55dab7f877719c9c510049d0805576dcbde159537a9528c0327c4e53",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_search_log.json",
+      "sha256": "49259ae625b805b75f41579aae1e59e33767db4442a8954bc933b47c1406a181",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_sources.json",
+      "sha256": "0e2e23c5f1cbdb4ceec8d0992b9988e982d21512359d3abe84cc2e387be691da",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_targets.json",
+      "sha256": "82e5e31c4f4e579e1ab5c2918dcd3dd82035acb6cad011fbc696dd6a3f1ae121",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/surface_verification_124_validation.json",
+      "sha256": "397ef530c35715d647dbc22ae77a7a4caccec3fc2469ed4001ce8c7fd388b4b8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/01_HTN_b77b3ada1555.wav",
+      "sha256": "498bc2b65da5683235290ea82e7ca17497805fcc3a33e4dd93c3e1798a4f1753",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/02_HTN_017909dfbe03_context.wav",
+      "sha256": "4f65c7c01c68c92f4567d9b2f7fc93d57cd515e60fcba796b61d5c60258e4491",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/03_HTN_33721e7d10bc_context.wav",
+      "sha256": "089a085e85a62ae183a764b8564e34da78c18942f375632e4b6faa27a49dc5b5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/04_HTN_f48198e7872f_context.wav",
+      "sha256": "ac2e44a5fda445c0b8a34e22f5598e6444d9419da41d0e55d6f4cd9da26e3438",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/05_HTN_a9290515a379_context.wav",
+      "sha256": "402021a64bcbc0629d807b50219296fce3a6864fbc901adba31732971c0dfe34",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/06_HTN_de7d5a3bf89e_context.wav",
+      "sha256": "e2ce22054cb5f12392849a9400be8f7a792771439fd0da6fe497468cccd44a36",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/07_HTN_a05dadb4b409_context.wav",
+      "sha256": "b0978d796e5f78bfb7a1ee1d9d255b5f6f55238cc1d2a2e1f36b91adac2fedd2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/08_HTN_dcd292247cbd_context.wav",
+      "sha256": "b7814033be02cd6831c847429184de4d5c6494642aabed6f9e2eb84eb4487367",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/09_HTN_ce88c1a364ff_context.wav",
+      "sha256": "e22649d10afa1fe8d664cb93c8d21717dee02dbc532c389fcb8ffab6f80ff87e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples/10_HTN_78bad0122173_context.wav",
+      "sha256": "8bcb890c2ac2e7b938e64e6422ae1db42d8b889b06b24c6d32931d9be25eed9d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_examples.json",
+      "sha256": "059fbd71f8c38f4b5aefca3cf4e846c2e26e52893a466dec61a2ee1fc473a258",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/audio_review_examples.json",
+      "sha256": "fe84097ad5001e280222eade6416a35211aa4296eb13fb497062d03bbd0adbe7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/baseline.json",
+      "sha256": "5cea299f613a62d6973e8cf5acf5a5561e3481e800486539d7890ae2d429a3c8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/calibration_results.json",
+      "sha256": "6695bae78d03540611c37dd49ad8c17925ddcdacceee7c53cd62fdfa6718d0ac",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/checking_overlap_audit.json",
+      "sha256": "4be955196360861622abb6e9451dafd5e6973f457114739d0a590df03ba2a4e5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/constructed_cases.json",
+      "sha256": "91ef44c23d9c15700337e9de5f708b22a555e64c7a75f8279c44a4b81414b311",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/correction_review.json",
+      "sha256": "4ead7cc90e1cd981f577f3eef90150c16193eb9a771330274ce6a148ae2ee01c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/evaluate_trial.py",
+      "sha256": "b07c63bd4bc58e38508c43df8903f9880f50599b2ed45a58a9ed0f5fff8f10ef",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/final_results.json",
+      "sha256": "904b9f44b3023a45a2c38a2b6a838a9fd057c23683cf1874475e3eb0f847c9b9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/manifest.json",
+      "sha256": "30f092e8feab173535edec42452609ffa3fd3772ec4ac6186d1fe6aed3391878",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/preservation.json",
+      "sha256": "fa0483cba4751630dd9733f8867607a376206a320fca2a131a8a0725881e1343",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/preservation_final.json",
+      "sha256": "fa0483cba4751630dd9733f8867607a376206a320fca2a131a8a0725881e1343",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/protocol.json",
+      "sha256": "2d28486be506c46f72764e8377fcd571f31e8cb9f6a9caf967588d8cc7a7aaa4",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/README.txt",
+      "sha256": "dca845ddf5ac8e6b0a0b448b30bbdaf8ec6f3297a39228e05fdf695a85d77880",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/real_speech_checking.json",
+      "sha256": "982eb08a6ded9ce4afbc2a4a099c011ecbe75e7e0f114035479c1b4a03575b2d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/reference_occurrences.json",
+      "sha256": "31205ae76acab075896b62a72fc7e4ef964581b2a3a900c3e734cc3348116981",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/REPORT.txt",
+      "sha256": "cbff803d245007994e8b2313c0815e7e3e3182a536ad7fa2a5b8ebd527d3568e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/review_trial.py",
+      "sha256": "e76307967e431925c013ed52be51d397dd88617a477ded09a814eafbce799e11",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/selection.json",
+      "sha256": "e1c00a05782878d60a171ace872aac50b18a9ee3b1fa4263bd949f52ef295cde",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/summary.json",
+      "sha256": "5d8fb73cc4306f34a606235c61f4c2a76b331662ab66a273cdc8e6d0e87bafde",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/synthetic_checking.json",
+      "sha256": "c8b9f7a978993d4a0f4dda00ee87794b0223954bf423860cd4b6bf638879d2c8",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/term_results.json",
+      "sha256": "e14c12f40a735267563d7e2fc728001744a866599ce54b0a8555d92897d8505f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/test_results.json",
+      "sha256": "d53c8fd92f6c53c02db097ccdeb4c5587484f1c8e557d36071a817e824c4ca13",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/test_trial.py",
+      "sha256": "14a479494c6f4dfe3afcead9cc144ad8bb01c626fd43988e51bde009edf6a113",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/threshold_decisions.json",
+      "sha256": "c08fb49d295399ab2e3c1827ac3606ea18ce71eed1be48636a42107861ad3928",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/baseline.json",
+      "sha256": "a00208e494221a648414376078edffc45ff670c1541b382484f22d6d9607a4b2",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/calibration_measurements.json",
+      "sha256": "a2cd9bce52758b2fef4a8ca0aceadac9ccc761259f735e43e86c4885134fac54",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/constructed_cases.json",
+      "sha256": "34f5a4fbd41d37b3a1d8eebfbf97e61b33ed62d7493686b3092a8747fc4da435",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/constructed_cases_raw.json",
+      "sha256": "c914163f1731ba90f2fd22558713f18b1f15332caaeea710434f848dcae33b8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/context_cases.json",
+      "sha256": "bc1672c6914a70492812bfb8c904be15c1ec934f6ff652b686612f162461f807",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/context_comparison.json",
+      "sha256": "7254cbf21a974103e323a756c705b56c8e1531257671f3ea9bc89ac5ac2e1011",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/correction_review.json",
+      "sha256": "014e3b67fc59481ac94ccb1c5692252a40dd134009bb7940003608a270329816",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/evaluate_50.py",
+      "sha256": "d88808312a9e4e2ce89192ab625a72d101e42e0252a50e64f5d1a75324e16ded",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/excluded_duplicates.json",
+      "sha256": "76feda5ee7e64f614994c9e56a013321b902b93a1b112d06a740480d0623e67f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/final_results.json",
+      "sha256": "93a4587be4a77601dd840dc1a3b3f2013d3f92b5bcf30c02133fddcbe6573034",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/finalize_50.py",
+      "sha256": "b87f55c3c21d51669bb5c37849f94658df97e234bf28992c9a1b3975094db53f",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/manifest.json",
+      "sha256": "7ab5117ae2c49a3cbe4a34e0a39440aabe3e562ca917933aa4a64194991e5cb9",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/overlap_diagnostics.json",
+      "sha256": "0e77649226d43a4916464cf0e837f4ed69a8a66b171fec20e45e544151b30ed0",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/postchecking_plural_probes.json",
+      "sha256": "017e1113035957a3d506084263a079b2a2e11483ae8701a5bdc7dd1d94e8d8bc",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/preservation.json",
+      "sha256": "c8d94b71f3eb31272d174554566fe2086f7be41382424ff40508912eba03390c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/preservation_final.json",
+      "sha256": "c8d94b71f3eb31272d174554566fe2086f7be41382424ff40508912eba03390c",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/previous_regressions_combined60.json",
+      "sha256": "e4239bc21f265671af3b0662d952ae739c0f7211e3a95e159588b3c7d0286806",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/protocol.json",
+      "sha256": "a0ab932963ea54fb9a787541844b632e593c0491ca8132a49745c285696bb3fb",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/README.txt",
+      "sha256": "6281d46070c4230db98e9cd396f63dba2865f6f1b3627f342db84c619777925a",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/reference_occurrences.json",
+      "sha256": "74cb325fb5db2aead12f4da282778caf525df14a1ba944bc7a67503a9db96ba6",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/REPORT.txt",
+      "sha256": "0948efb063d6a6d61cf889dbc959ce2ba86c30e4435f10a2b1dbc6efc7c0e53b",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/review_50.py",
+      "sha256": "b24761e8595836088b8c11a1a94d868d9f94f5aee05a43d0ad507bbbb8adc771",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/review_findings.json",
+      "sha256": "6dffa6a7d703aa82362b954cb73e6e46e622c7e6ac657a4d20cf883b5bad2b02",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/selection.json",
+      "sha256": "db7883e81199fa4c5c449c722c35c3014b74d1ea81afe285d77ca7e6399b0a37",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/speech_comparison.json",
+      "sha256": "212c772a2072edb5fa8d8223d8e20ee9d05362cde5ee2625a3c2da7d5d286f29",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/summary.json",
+      "sha256": "4759612a9f61d12df9b1930a3886e2242c0e359eac81fa7cf7f5f192592a2212",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/synthetic_checking.json",
+      "sha256": "7bd124fbb2b005de2823682cde9bd527142eb380ba0344ae92f9932bab640a91",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/term_results.json",
+      "sha256": "fb45484bd9a26efe71af871c079b48b830123abff17123985ef193914879b1df",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/test_50.py",
+      "sha256": "b4b541bd80cb62038ff36cbcf12d4c3c70574c70a52cebb21b6b2462a58e02a7",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/test_results.json",
+      "sha256": "6261390ca036dadffbaacfef4fb69c801dea164eda54c9969583654e96ecd5b5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/threshold_decisions.json",
+      "sha256": "ba1c6772d8b1f3258ea342fd5fe15e6b816c4b3b8ae9021205c541d92c166e26",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/threshold_freeze.json",
+      "sha256": "df18fc380cabb4df430d44fa119eba2b2aabe9a885abe8c5d0c39066d06a584e",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_50_v1/variant_provenance.json",
+      "sha256": "a17590a22cce66e862c4e2fe6491c631551c4850881acb153c196df6550f6b95",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/validation_results.json",
+      "sha256": "8f05e6ea431ec1875f1da694ce9af23fb1a7a6d9b87274ef859e2cd37e78a9f5",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/verify_bilingual.py",
+      "sha256": "2137e08a5db9f292aa0de99e081ef15327ea5075b44909c47ffc7b68102b361d",
+      "unchanged": true
+    },
+    {
+      "path": "research/hypertension_2026-10-20/web_consultation_index.json",
+      "sha256": "f1f60460f1131176935b37fec8f12ad14be80d9f75353a0abad6bab7a3dfe1e3",
+      "unchanged": true
+    },
+    {
+      "path": "trad_lab/metrics.py",
+      "sha256": "53154d9418bee8245f909d7b1163c328c5de883e8053eb9b6104b34c62c5a61d",
+      "unchanged": true
+    }
+  ]
+}

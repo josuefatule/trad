@@ -1,0 +1,162 @@
+{
+  "status": "remaining37_experiment_complete_research_only",
+  "conclusion_es": "La ampliación mejora 1 modelos y deja 2 sin cambio frente a los sesenta corregidos, sin empeorar el WER de ninguno.",
+  "scope_confirmed_by_user": "All 37 remaining reference-covered concepts; cumulative 97",
+  "model_comparison": [
+    {
+      "model": "small",
+      "previous60_word_errors": 131,
+      "combined97_word_errors": 131,
+      "error_delta": 0,
+      "previous60_wer": 0.03116079923882017,
+      "combined97_wer": 0.03116079923882017,
+      "new37_alone_word_errors": 148,
+      "new37_uniform_word_errors": 144,
+      "introduced_changes": 1,
+      "introduced_assessment_counts": {
+        "lexically_neutral": 1
+      }
+    },
+    {
+      "model": "medium",
+      "previous60_word_errors": 107,
+      "combined97_word_errors": 100,
+      "error_delta": -7,
+      "previous60_wer": 0.02545195052331113,
+      "combined97_wer": 0.023786869647954328,
+      "new37_alone_word_errors": 109,
+      "new37_uniform_word_errors": 109,
+      "introduced_changes": 4,
+      "introduced_assessment_counts": {
+        "lexical_agreement_improved": 4
+      }
+    },
+    {
+      "model": "large-v3-turbo",
+      "previous60_word_errors": 131,
+      "combined97_word_errors": 131,
+      "error_delta": 0,
+      "previous60_wer": 0.03116079923882017,
+      "combined97_wer": 0.03116079923882017,
+      "new37_alone_word_errors": 131,
+      "new37_uniform_word_errors": 130,
+      "introduced_changes": 1,
+      "introduced_assessment_counts": {
+        "lexically_neutral": 1
+      }
+    }
+  ],
+  "new_fuzzy_candidates": 33,
+  "new_exact_only": 4,
+  "isolated_checking": [
+    {
+      "profile": "uniform090",
+      "positive_cases": 184,
+      "recovered": 165,
+      "negative_cases": 517,
+      "negative_triggers": 3,
+      "negative_changed": 3
+    },
+    {
+      "profile": "individualized",
+      "positive_cases": 184,
+      "recovered": 163,
+      "negative_cases": 517,
+      "negative_triggers": 0,
+      "negative_changed": 0
+    }
+  ],
+  "context_checking": [
+    {
+      "profile": "new37_uniform090",
+      "group": "new37",
+      "positive_cases": 259,
+      "positive_correct": 231,
+      "negative_cases": 185,
+      "negative_changed": 0
+    },
+    {
+      "profile": "new37_individualized",
+      "group": "new37",
+      "positive_cases": 259,
+      "positive_correct": 231,
+      "negative_cases": 185,
+      "negative_changed": 0
+    },
+    {
+      "profile": "combined97_individualized",
+      "group": "new37",
+      "positive_cases": 259,
+      "positive_correct": 231,
+      "negative_cases": 185,
+      "negative_changed": 0
+    },
+    {
+      "profile": "combined97_individualized",
+      "group": "previous60",
+      "positive_cases": 423,
+      "positive_correct": 332,
+      "negative_cases": 300,
+      "negative_changed": 0
+    }
+  ],
+  "combined_constructed_checking": [
+    {
+      "group": "previous60",
+      "positive_cases": 300,
+      "positive_correct": 206,
+      "negative_cases": 806,
+      "negative_changed": 0
+    },
+    {
+      "group": "new37",
+      "positive_cases": 184,
+      "positive_correct": 163,
+      "negative_cases": 517,
+      "negative_changed": 0
+    }
+  ],
+  "previous60_context_regressions": 0,
+  "previous60_constructed_regressions": 0,
+  "previous_regressions_passed": 153,
+  "previous_regression_cases": 153,
+  "unique_reference_occurrences_new37": 59,
+  "correlated_model_observations_new37": 177,
+  "unique_reference_occurrences_all97": 310,
+  "introduced_corrections": 6,
+  "removed_previous_corrections": 0,
+  "introduced_assessments": {
+    "lexically_neutral": 2,
+    "lexical_agreement_improved": 4
+  },
+  "term_literal_agreement_summary": {
+    "new37": {
+      "improved": 5,
+      "unchanged": 32,
+      "worsened": 0
+    },
+    "previous60": {
+      "improved": 0,
+      "unchanged": 60,
+      "worsened": 0
+    }
+  },
+  "original_and_prior_evidence_unchanged": true,
+  "preservation": {
+    "files_checked": 1119,
+    "strictly_protected_files_checked": 908,
+    "original_and_prior_evidence_unchanged": true,
+    "other_workspace_observations": [],
+    "new_directory": "C:\\live-captions\\research\\hypertension_2026-10-20\\remaining_terms_trial_37_v1",
+    "integration_performed": false
+  },
+  "verification_tests_passed": 12,
+  "new_thresholds_frozen_before_checking": true,
+  "previous60_thresholds_unchanged": true,
+  "corrected_rules_unchanged": true,
+  "independent_holdout": false,
+  "new_asr_inference": false,
+  "controlled_intonation_variants_tested": 0,
+  "independent_clinical_adjudication": false,
+  "integration_performed": false
+}

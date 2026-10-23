@@ -68,6 +68,8 @@ class DeepLTranslatorProvider(TranslatorProvider):
             "target_lang": request.target_language.upper(),
         }
         context = " ".join(item.normalized_text for item in request.context_segments).strip()
+        if request.terminology_context:
+            context = "\n\n".join(part for part in (context,request.terminology_context) if part)
         if context:
             body["context"] = context
         encoded = json.dumps(body, ensure_ascii=False).encode("utf-8")

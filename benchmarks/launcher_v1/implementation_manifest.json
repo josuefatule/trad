@@ -1,0 +1,31 @@
+{
+  "version": "mvp-launcher-v1",
+  "files": {
+    "Start-TRAD.ps1": "c3e2870be5a2794cbe567e28cbd27bf2e2223dd49bb192cd9000a6e5a55b9f4a",
+    "LAUNCHER_MVP.txt": "50b30a485d5c1a9c06013ae9a838cd4462f11d39fe5ce918c1a8ca3334954548",
+    "app/main.py": "10de17e869910321d4c9b39af44b9bd6de1b767f86a267a99e84fd8fae607867",
+    "app/launcher_network.py": "c527a2cfefe02f9375fb19ab24d061afb86d6407e86f944835d515e4b160640f",
+    "app/service_host.py": "991cbc2bb1dcde666c7b74da58b7a49001bb9bac71f3d7a5b7a3b069fe936dea",
+    "app/lan_gateway.py": "a3134bab1b4492f548d25891bfda95cde8f05b8a1d394031801a93813b49c42e",
+    "app/static/launcher_network.js": "cde067904e723b3de80ed520b10b88fda4fdb76ae9183e3baf90bb491cb6721a",
+    "app/templates/operator.html": "7a532e98af1ff3231cd915231fd45ba3f859f692dd0ee097d50c5ff5197f5cd9",
+    "app/static/operator.css": "5d9f83658d6d51e347da471c3efab94676c3aa1a38b2ceef1f16457b50897e56",
+    "tools/smoke_trad.py": "3536199d4a260aef2f525b4c9701d66d83f8c74f330fd8388dd37867d7c75788",
+    "tools/start_trad_service.py": "f8657e2855d8b60d79152f58e71164799372dca4298925202003fb6eaf28b7b4",
+    "tests/test_launcher.py": "458c6a7f8350ee047cdf6bf1cd5b428f0e4ee21af25656af0bcf0502329f7014",
+    "tests/test_launcher_network.cjs": "34439ac7ac1a8f2064222681be2d807cde157ab330bf3b283a8f6058a0da1479",
+    "tests/check_launcher.ps1": "b48e634d6da4d10386e8b5c3a68aacf36101f55d0df8705f5fbb852fcd844d40",
+    "README.md": "008ca806559428b1dcab07863cd22086a0cef77bb9d920ebde98d577f1257368",
+    "INSTALL_WINDOWS.md": "717564f802a2aeba12c32ac61f8f5f925e88f2a8f97fe69903d0d45c245faccc"
+  },
+  "preservation": {
+    "protected_files": 929,
+    "changed": [],
+    "result": "PASS",
+    "checked_utc": "2026-10-22T10:50:14.734485+00:00"
+  },
+  "python_tests": 47,
+  "powershell_controls_per_version": 25,
+  "javascript_suites": 4,
+  "original_glossary_sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896"
+}

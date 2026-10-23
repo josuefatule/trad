@@ -90,7 +90,8 @@ class OverlayBrowserTests(unittest.TestCase):
           try {
             check(window.testSocket?.onmessage,'production overlay initialized: '+JSON.stringify(window.layoutErrors));
             const send=data=>testSocket.onmessage({data:JSON.stringify({protocol_version:3,...data})});
-            send({type:'snapshot',event_id:0,session_id:'layout',state:'live',captions:[]});
+            send({type:'snapshot',event_id:0,session_id:'layout',state:'live',captions:[],overlay_style:{text_color:'#ffcc00'}});
+            check(getComputedStyle(caption).color==='rgb(255, 204, 0)','snapshot restores saved text color');
             const text='Systolic and diastolic pressure, cardiovascular function and vascular resistance. Café, naïve — whole words stay together. '.repeat(6);
             send({type:'caption',event_id:1,session_id:'layout',caption:{session_id:'layout',sequence:1,provider:'deepl',text}});
             // Use the complete logical canvas at 1:1 for precise geometry assertions.
@@ -99,10 +100,17 @@ class OverlayBrowserTests(unittest.TestCase):
             check(caption.textContent.split('\\n').length===2,'default uses both available lines');
             check(stage.getBoundingClientRect().top===930,'slide exclusion boundary');
             check(getComputedStyle(caption).backgroundColor==='rgba(0, 0, 0, 0)','transparent caption');
-            check(getComputedStyle(document.body).backgroundColor==='rgba(0, 0, 0, 0)','transparent outside region');
+            check(getComputedStyle(document.body).backgroundColor==='rgb(0, 18, 100)','blue overlay background');
             const before=caption.textContent;
             send({type:'caption',event_id:2,session_id:'layout',caption:{session_id:'layout',sequence:1,provider:'deepl',text:'DUPLICATE'}});
             check(caption.textContent===before,'production sequence deduplication');
+            send({type:'overlay_style',event_id:3,session_id:'layout',overlay_style:{text_color:'#00ff88'}});
+            check(getComputedStyle(caption).color==='rgb(0, 255, 136)','live text color update');
+            check(caption.textContent===before && !caption.hidden,'color change preserves visible caption');
+            send({type:'overlay_style',event_id:4,session_id:'layout',overlay_style:{text_color:'#00ff88',background_color:'#123abc'}});
+            check(getComputedStyle(document.body).backgroundColor==='rgb(18, 58, 188)','live background color update');
+            check(getComputedStyle(document.documentElement).backgroundColor==='rgb(18, 58, 188)','background covers entire page');
+            check(caption.textContent===before && !caption.hidden,'background change preserves visible caption');
             for (const overrides of [{font_size:36},{max_lines:2,region_width:700,region_x:600},
               {font_size:64,region_height:150},{font_size:48,region_y:900,region_height:180}]) {
               const c={...config,...overrides};

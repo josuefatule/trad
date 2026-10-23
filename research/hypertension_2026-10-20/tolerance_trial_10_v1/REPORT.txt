@@ -1,0 +1,66 @@
+ENSAYO INICIAL DE TOLERANCIA POR TÉRMINO — 10 CONCEPTOS ALEATORIOS
+
+Resultado: se obtuvo mejora léxica en small y medium sobre las transcripciones guardadas; turbo quedó igual.
+Los cambios son simulaciones locales posteriores al ASR. No se modificó ningún resultado anterior ni se integró nada en TRAD.
+
+SELECCIÓN Y MÉTODO
+Se eligieron 10 conceptos sin reemplazo entre 97 presentes en las referencias inglesas, antes de revisar sus errores ASR.
+Semilla registrada: 12339650134334788941. La selección incluye dos nombres de organizaciones; no se repitió el sorteo.
+Se compararon puntos del score heurístico entre 0.86 y 1.00. El valor no representa probabilidad ni porcentaje de confianza.
+Se eligió cada umbral con ejemplos construidos de erratas y negativos cercanos: máxima recuperación con cero disparos negativos, desempate hacia mayor umbral.
+La selección se congeló antes del checking de voz. No se ajustó después de ver las transcripciones reales.
+Los casos construidos no son pronunciaciones. Se conservan los datos originales y sus particiones.
+
+RESULTADOS SOBRE AUDIO NATURAL YA RECONOCIDO
+Tres archivos de audio, nueve hipótesis de tres modelos y referencias provisionales. Los archivos 02/03 podrían ser partes de una misma charla.
+34 apariciones únicas de los términos, observadas por tres modelos: 102 observaciones correlacionadas.
+WER = proporción de errores de palabras frente a las referencias provisionales, calculada sobre las 4.204 palabras completas por modelo.
+Modelo | Sin corrección | Umbral uniforme 0.90 | Umbrales por término
+small | 3.52% (148 errores) | 3.21% (135) | 3.14% (132)
+medium | 2.78% (117 errores) | 2.81% (118) | 2.62% (110)
+large-v3-turbo | 3.14% (132 errores) | 3.40% (143) | 3.14% (132)
+
+TÉRMINOS Y PUNTOS SELECCIONADOS
+Apariciones: coincidencia literal con la forma de referencia, antes -> después, sobre los tres modelos; no es exactitud clínica.
+- sodium-containing salts / sales que contienen sodio: 0.94; 3 -> 3 de 3.
+- sodium reabsorption / reabsorción de sodio: 0.94; 3 -> 3 de 3.
+- cardiovascular events / eventos cardiovasculares: 1.0; 21 -> 21 de 21.
+- tyrosine kinase inhibitors / inhibidores de tirosina cinasa: 1.0; 3 -> 3 de 3.
+- ten-year ASCVD risk / riesgo de enfermedad cardiovascular aterosclerótica a 10 años: 0.94; 2 -> 2 de 6.
+- National Institutes of Health / Institutos Nacionales de Salud de Estados Unidos: 0.96; 3 -> 3 de 3.
+- mineralocorticoid receptor / receptor de mineralocorticoides: 1.0; 6 -> 6 de 6.
+- primary aldosteronism / aldosteronismo primario: 0.94; 12 -> 29 de 30.
+- systolic blood pressure / presión arterial sistólica: 0.94; 15 -> 15 de 15.
+- American Heart Association / Asociación Americana del Corazón: 0.96; 12 -> 12 de 12.
+El punto 1.00 se seleccionó para tres términos como la opción más restrictiva empatada en recuperación; no certifica seguridad.
+La mayor ganancia procede de primary aldosteronism: 12 -> 29 coincidencias de 30.
+Ejemplos observados: primary aldous gerinism -> primary aldosteronism (score 0.940317); primary allosteronism -> primary aldosteronism (0.956071).
+Los otros nueve términos no mejoraron su conteo literal; casi todos ya estaban bien reconocidos.
+Para ten-year ASCVD risk, el uniforme 0.90 absorbía el artículo de the 10-year ASCVD risk. El umbral 0.94 evitó esa modificación.
+No se presenta ten/10 como diferencia clínica: el problema observado incluye la pérdida de palabras y el cambio de grafía.
+
+REVISIÓN DE LOS CAMBIOS Y COSTES
+Se simularon 22 cambios con umbrales individuales: 17 mejoran la concordancia con la referencia al evaluarlos por separado, 1 la empeoran y 4 son neutros.
+La mejora neta no vuelve aceptables todos los cambios. Ejemplo: primary allosteronism by -> primary aldosteronism elimina by.
+Ese caso tiene delta WER cero: corregir el término compensa perder by. Por eso una métrica global puede ocultar una pérdida local.
+El cambio clasificado como peor concordancia literal coincide con una referencia que también escribe primary allosteronism; podría ser una errata de la referencia y exige escucha, no una conclusión clínica automática.
+La revisión frente a la referencia provisional está en correction_review.json; no hubo adjudicación clínica independiente.
+Con umbrales individuales no cambió el canal medido de negaciones/cifras, pero este canal no detecta todos los cambios de significado.
+En los casos sintéticos de checking sin duplicados exactos:
+- Uniforme 0.90: 50/50 erratas recuperadas y 5/139 negativos disparados.
+- Individualizados: 38/50 erratas recuperadas y 0/139 negativos disparados.
+Se detectaron 10 inputs de checking idénticos a calibración, producidos por la receta de palabras unidas. Se excluyen de ese resumen, sin cambiar umbrales ni ocultar resultados originales.
+La configuración más restrictiva evita confusiones, a costa de recuperar menos erratas construidas. No hay mejora universal de todas las métricas.
+
+ENTONACIÓN Y ESCUCHA
+Se prepararon 10 ejemplos WAV del audio natural para escuchar los términos; varios contienen el segmento completo para no inventar límites de palabra.
+Sus muestras PCM coinciden exactamente con los intervalos originales. La localización usa timestamps ASR aproximados, no revisión auditiva independiente.
+No se variaron tono, acento ni velocidad; no se ensayaron entonaciones controladas ni nuevos hablantes.
+Comparar tres modelos sobre una misma grabación no equivale a tres entonaciones. Los errores de texto no constituyen variantes fonéticas verificadas.
+audio_review_examples.json identifica cada clip, su origen, huella e intervalo. Harían falta grabaciones nuevas de pronunciaciones distintas para validar esa generalización.
+
+DECISIÓN
+Sí conviene continuar con tolerancias por término: hay ganancia observada y menos modificaciones que con el umbral uniforme.
+Los puntos elegidos son candidatos de investigación. El score, el tamaño de ventana y el contexto deben estudiarse juntos: un umbral por sí solo todavía puede absorber palabras vecinas.
+Esta muestra es pequeña y previamente explorada; no se extrapola a los 657 conceptos, a español, a otros hablantes o a TRAD en vivo.
+Los originales, el paquete depurado, las evidencias, los audios y las inferencias previas conservan sus huellas. Solo se escribieron archivos en esta carpeta nueva.

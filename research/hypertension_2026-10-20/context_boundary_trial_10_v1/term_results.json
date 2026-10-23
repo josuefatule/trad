@@ -1,0 +1,317 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "canonical_en": "sodium-containing salts",
+    "preferred_es": "sales que contienen sodio",
+    "reference_occurrences_by_file": {
+      "cardio_01": 1
+    },
+    "reference_forms": [
+      "sodium-containing salts"
+    ],
+    "unchanged_auto_threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "postselection_veto": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "preselection_guards": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "canonical_en": "sodium reabsorption",
+    "preferred_es": "reabsorción de sodio",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "sodium reabsorption"
+    ],
+    "unchanged_auto_threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "postselection_veto": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "preselection_guards": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "preferred_es": "eventos cardiovasculares",
+    "reference_occurrences_by_file": {
+      "cardio_02": 4,
+      "cardio_03": 3
+    },
+    "reference_forms": [
+      "cardiovascular events",
+      "CVD events"
+    ],
+    "unchanged_auto_threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "individualized": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "postselection_veto": {
+        "observations": 21,
+        "exact_reference_form": 21
+      },
+      "preselection_guards": {
+        "observations": 21,
+        "exact_reference_form": 21
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "canonical_en": "tyrosine kinase inhibitors",
+    "preferred_es": "inhibidores de tirosina cinasa",
+    "reference_occurrences_by_file": {
+      "cardio_03": 1
+    },
+    "reference_forms": [
+      "tyrosine kinase inhibitors"
+    ],
+    "unchanged_auto_threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "postselection_veto": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "preselection_guards": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "canonical_en": "ten-year ASCVD risk",
+    "preferred_es": "riesgo de enfermedad cardiovascular aterosclerótica a 10 años",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "ten-year ASCVD risk",
+      "10-year ASCVD risk"
+    ],
+    "unchanged_auto_threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "individualized": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "postselection_veto": {
+        "observations": 6,
+        "exact_reference_form": 2
+      },
+      "preselection_guards": {
+        "observations": 6,
+        "exact_reference_form": 2
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "canonical_en": "National Institutes of Health",
+    "preferred_es": "Institutos Nacionales de Salud de Estados Unidos",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1
+    },
+    "reference_forms": [
+      "National Institutes of Health"
+    ],
+    "unchanged_auto_threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "individualized": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "postselection_veto": {
+        "observations": 3,
+        "exact_reference_form": 3
+      },
+      "preselection_guards": {
+        "observations": 3,
+        "exact_reference_form": 3
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "canonical_en": "mineralocorticoid receptor",
+    "preferred_es": "receptor de mineralocorticoides",
+    "reference_occurrences_by_file": {
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "mineralocorticoid receptor"
+    ],
+    "unchanged_auto_threshold": 1.0,
+    "results": {
+      "raw": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "individualized": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "postselection_veto": {
+        "observations": 6,
+        "exact_reference_form": 6
+      },
+      "preselection_guards": {
+        "observations": 6,
+        "exact_reference_form": 6
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "preferred_es": "aldosteronismo primario",
+    "reference_occurrences_by_file": {
+      "cardio_02": 1,
+      "cardio_03": 9
+    },
+    "reference_forms": [
+      "primary aldosteronism"
+    ],
+    "unchanged_auto_threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 30,
+        "exact_reference_form": 12
+      },
+      "individualized": {
+        "observations": 30,
+        "exact_reference_form": 29
+      },
+      "postselection_veto": {
+        "observations": 30,
+        "exact_reference_form": 28
+      },
+      "preselection_guards": {
+        "observations": 30,
+        "exact_reference_form": 29
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "preferred_es": "presión arterial sistólica",
+    "reference_occurrences_by_file": {
+      "cardio_02": 3,
+      "cardio_03": 2
+    },
+    "reference_forms": [
+      "systolic blood pressure"
+    ],
+    "unchanged_auto_threshold": 0.94,
+    "results": {
+      "raw": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "individualized": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "postselection_veto": {
+        "observations": 15,
+        "exact_reference_form": 15
+      },
+      "preselection_guards": {
+        "observations": 15,
+        "exact_reference_form": 15
+      }
+    },
+    "operational_approval": false
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "preferred_es": "Asociación Americana del Corazón",
+    "reference_occurrences_by_file": {
+      "cardio_02": 4
+    },
+    "reference_forms": [
+      "American Heart Association"
+    ],
+    "unchanged_auto_threshold": 0.96,
+    "results": {
+      "raw": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "individualized": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "postselection_veto": {
+        "observations": 12,
+        "exact_reference_form": 12
+      },
+      "preselection_guards": {
+        "observations": 12,
+        "exact_reference_form": 12
+      }
+    },
+    "operational_approval": false
+  }
+]

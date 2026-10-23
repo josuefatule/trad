@@ -1,4 +1,111 @@
-# Live Captions local — candidato v0.1.0-rc1
+# TRAD — subtítulos y traducción en vivo para congresos
+
+**Versión operativa estable en el congreso, confirmada por el usuario el
+23 de octubre de 2026 (America/La_Paz).** Este checkpoint conserva el código
+actual y documenta las mejoras acumuladas desde `v0.1.0-rc1` (`64f8221`).
+La confirmación corresponde al uso actual; los informes previos conservan sus
+resultados y pendientes históricos. No implica certificar todas las variantes
+de hardware, audio, idiomas o instalación desde cero.
+
+## Resumen de esta versión
+
+- **Operación en RTX 4070 Laptop:** aplicación y reconocedor en entornos
+  separados, arranque con las DLL CUDA del entorno y procedimiento Windows.
+- **Traducción bidireccional:** English → Español y Español → English,
+  dirección fija por sesión, aislamiento del idioma en WhisperLiveKit y
+  selección explícita de los idiomas de origen/destino en DeepL.
+- **Terminología médica:** paquete versionado `medical-657-v1` con 657
+  conceptos bilingües, controles Activo para pruebas / Observación /
+  Desactivado, auditoría de correcciones y reversión desde Operator.
+- **Continuidad del texto:** protección acotada de expresiones médicas al
+  segmentar, tratamiento de formas separadas como `hyper tension` y
+  `hypo tension`, y preservación de cifras, unidades y negaciones.
+- **Arranque cotidiano:** `Start-TRAD.ps1` coordina ASR, API y publicación del
+  overlay, muestra las direcciones de red y ofrece Test, Status y Stop.
+- **Audio de la consola:** selección persistente de la interfaz USB y envío
+  del dispositivo exacto a CAPTURE, con aviso si deja de estar disponible.
+- **Overlay remoto:** puerta HTTP/WebSocket en el puerto 3000 para visores
+  de la red; Operator y CAPTURE permanecen locales. Publicación para cualquier
+  visor que alcance esa IP/puerto, con selección de interfaz y regla propia
+  de firewall. La IP del receptor es opcional.
+- **Apariencia durante la sesión:** colores de texto y fondo configurables
+  desde Operator, persistidos y propagados a los overlays sin borrar captions.
+- **Recuperación del reconocedor:** contexto acústico/decodificador acotado
+  para mitigar el fallo de memoria observado y `RestartASR` para recuperar
+  únicamente el ASR propio cuando la captura está cerrada.
+- **Trazabilidad:** pruebas de regresión, benchmarks, investigación del
+  glosario, laboratorio ASR y copias previas del código para revisión.
+
+El flujo operativo es CAPTURE → WhisperLiveKit → segmentación/terminología →
+DeepL → Operator y overlay. Cada visor comparte los mismos captions; no abre
+otra captura ni solicita una traducción adicional.
+
+## Documentación de los cambios
+
+| Tema | Referencia |
+| --- | --- |
+| Arranque, red e interfaz USB | [Guía del lanzador](LAUNCHER_MVP.txt) |
+| Idiomas y aislamiento por sesión | [MVP bidireccional](BIDIRECTIONAL_MVP_REPORT.md) |
+| Glosario de 657 conceptos y reversión | [Implementación](GLOSSARY_SOFT_IMPLEMENTATION.txt) |
+| Cortes y continuidad de términos médicos | [Corrección de streaming](GLOSSARY_STREAMING_FIX.txt) |
+| Correcciones médicas y evaluación | [Revisión](GLOSSARY_CORRECTIONS_REVIEW.txt) |
+| Memoria y recuperación ASR | [Diagnóstico y recuperación](ASR_MEMORY_RECOVERY.txt) |
+| Instalación y entornos | [Windows](INSTALL_WINDOWS.md) |
+| Laboratorio y comparación ASR | [Informe](TRAD_LAB_REPORT.md), [laboratorio](trad_lab/README.md) |
+| Primer ensayo de overlay entre equipos | [Informe LAN histórico](S2-M5D-LAN-OVERLAY-REPORT.md) |
+
+Los dictámenes anteriores a esta confirmación describen el estado de cada
+ensayo en su fecha. Para el uso diario prevalecen el arranque de abajo y la
+guía del lanzador. La publicación actual del overlay amplía el acceso respecto
+del ensayo LAN inicial limitado a una IP receptora.
+
+El repositorio conserva fuentes, pruebas, datos del glosario e informes.
+Credenciales `.env`, entornos virtuales, estado `.runtime`, registros locales,
+cachés de fuentes descargadas y ZIP de entregables quedan fuera de Git y se
+conservan localmente. Una clonación requiere preparar sus propios entornos y
+credenciales; no ejecutar instalaciones sobre el equipo que está en servicio.
+
+## Verificación del checkpoint — 23 de octubre de 2026
+
+- Nueve suites JavaScript de captura, audio, consola, red, glosario y overlay:
+  PASS. Treinta controles PowerShell del lanzador con procesos/firewall
+  simulados: PASS.
+- Selección de 186 pruebas Python de ASR, dirección, terminología, traducción,
+  controles, transporte y overlay: **184 PASS y dos fallos de integridad
+  histórica**. Ambos se detienen ante cambios en `glossaries/medical_base.json`,
+  que ya contiene nuevas entradas para SIAC, angiotomografía y aterosclerosis.
+  La revisión completa también detecta cambios en `medical_base_en.json` frente a los
+  hashes guardados en `benchmarks/glossary_soft_v1/baseline.json` y
+  `benchmarks/glossary_patch_v1/baseline.json`. Se conserva el glosario actual
+  y no se reescriben esas evidencias para ocultar la diferencia.
+- Revisión de archivos preparados para Git sin credenciales detectadas.
+  Estas pruebas usan audio/proveedores simulados y no sustituyen la
+  confirmación de funcionamiento en el congreso aportada por el usuario.
+
+## Arranque diario
+
+En PowerShell, desde `C:\live-captions`, ejecuta `.\Start-TRAD.ps1`.
+Inicia ASR y TRAD, pide la IP de la PC overlay y abre Operator con ambas IP visibles.
+La IP receptora es opcional: Enter publica el overlay para cualquier visor en la red.
+Funciona con perfiles Public y Private. Para uso exclusivamente local: `.\Start-TRAD.ps1 -LocalOnly`.
+Selecciona `Microphone (USB AUDIO DEVICE)` para utilizar la interfaz de audio;
+Operator recuerda tu selección en ese navegador.
+El micrófono permanece inactivo hasta iniciar una sesión en Operator.
+
+Prueba sin captura ni traducción: `.\Start-TRAD.ps1 -Action Test`.
+Estado: `.\Start-TRAD.ps1 -Action Status`. Cierre: `.\Start-TRAD.ps1 -Action Stop`,
+después de detener la sesión en Operator. [Instrucciones y alcance](LAUNCHER_MVP.txt).
+
+**Sprint 2 / MVP bidireccional:** EN → ES prioritario y ES → EN conservado.
+Ver [implementación, pruebas y ensayo físico pendiente](BIDIRECTIONAL_MVP_REPORT.md)
+y el [arranque WLK requerido](INSTALL_WINDOWS.md#mvp-bidireccional--arranque-posterior-a-s2-m1).
+Las secciones siguientes conservan el contexto histórico de Sprint 1.
+
+## Referencia histórica — Sprint 1 / v0.1.0-rc1
+
+Los comandos, hardware y pendientes que siguen corresponden al candidato
+original. Para operar la versión actual, usar `Start-TRAD.ps1` y las guías
+anteriores. Las instrucciones históricas de no iniciar Sprint 2 ya no aplican.
 
 M8 prepara validación/release sin cambiar el pipeline M7 ni la configuración A.
 **Candidato técnico; M8 y release definitivo pendientes de aceptación física.**

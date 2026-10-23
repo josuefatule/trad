@@ -1,0 +1,154 @@
+{
+  "status": "completed_with_context_boundary_improvement_not_integrated",
+  "ten_terms_and_thresholds_identical": true,
+  "word_error_comparison": [
+    {
+      "model": "small",
+      "profile": "raw",
+      "word_errors": 148,
+      "reference_words": 4204,
+      "wer": 0.035204567078972404,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "individualized",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "postselection_veto",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "preselection_guards",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "raw",
+      "word_errors": 117,
+      "reference_words": 4204,
+      "wer": 0.027830637488106564,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "individualized",
+      "word_errors": 110,
+      "reference_words": 4204,
+      "wer": 0.026165556612749764,
+      "simulated_corrections": 11,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 1
+    },
+    {
+      "model": "medium",
+      "profile": "postselection_veto",
+      "word_errors": 110,
+      "reference_words": 4204,
+      "wer": 0.026165556612749764,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "preselection_guards",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_corrections": 11,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "raw",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "individualized",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 1,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "postselection_veto",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 1,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "preselection_guards",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 1,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    }
+  ],
+  "reference_form_observations": {
+    "raw": 80,
+    "individualized": 97,
+    "postselection_veto": 96,
+    "preselection_guards": 97
+  },
+  "changed_candidate_hypotheses": [
+    {
+      "model": "medium",
+      "sample_id": "cardio_03"
+    }
+  ],
+  "neighboring_by_preserved": true,
+  "constructed_contexts": {
+    "positive_cases": 73,
+    "correct_positive_outputs_before": 71,
+    "correct_positive_outputs_after": 73,
+    "negative_cases": 50,
+    "undesired_negative_changes_before": 29,
+    "undesired_negative_changes_after": 0
+  },
+  "prior_constructed_recovery_preserved": true,
+  "unit_tests_passed": 13,
+  "original_and_previous_evidence_preserved": true,
+  "thresholds_retuned": false,
+  "integration_performed": false,
+  "no_new_asr_audio_provider_or_live_session": true,
+  "limitation": "Known-error development/regression on a previously explored English corpus and designed text cases; not independent clinical, prosody or LIVE validation."
+}

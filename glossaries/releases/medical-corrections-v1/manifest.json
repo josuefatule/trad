@@ -1,0 +1,23 @@
+{
+  "version": "medical-corrections-v1",
+  "base_version": "medical-657-v1",
+  "policy": "bounded_mvp",
+  "generated_utc": "2026-10-22T06:35:49.875366+00:00",
+  "sources": [
+    {
+      "path": "glossaries/releases/medical-657-v1/bundle.json",
+      "sha256": "6957e4b9cf9c5c51a747e7e302c296bcc320d49538982c7eec79a49509ed0548"
+    },
+    {
+      "path": "benchmarks/glossary_patch_v1/second_reading.json",
+      "sha256": "fcb22c87c8beb131123f4b35b5a2dadcdd94df6ef1a75715baed3cb278a4f3cf"
+    }
+  ],
+  "files": [
+    {
+      "name": "rules.json",
+      "bytes": 5743,
+      "sha256": "0abb9a214a21bbddb31a10d6c63e10ce77607417c5d84ed5fee35ccbcc064b97"
+    }
+  ]
+}

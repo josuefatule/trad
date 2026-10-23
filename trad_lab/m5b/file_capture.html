@@ -1,0 +1,7 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>M5-B CAPTURE de archivo</title></head>
+<body><main><h1>M5-B CAPTURE — archivo PCM, sin micrófono</h1>
+<p>Conserva esta ventana abierta. El archivo debe coincidir con el manifiesto M5-A. No reproduce audio por altavoces.</p>
+<input id="pcm" type="file" accept=".wav,.s16le"><button id="replay" disabled>REPLAY PCM</button><button id="stop">STOP / EOF</button>
+<label>Disponibilidad del PCM: <select id="pacing"><option value="realtime">Tiempo real</option><option value="accelerated">Acelerada (ensayo comparativo)</option></select></label>
+<pre id="status" role="status">Esperando al Operator propietario.</pre></main>
+<script src="/static/m5b_diagnostics.js"></script><script src="/static/m5b_file_capture.js"></script></body></html>

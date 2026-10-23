@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-10-22T14:49:13.072878+00:00",
+  "network": {
+    "local_ip": "10.10.4.214",
+    "local_ips": [
+      "10.10.4.215",
+      "10.10.4.214"
+    ],
+    "overlay_pc_ip": "",
+    "network_profile": "Public",
+    "lan_enabled": true,
+    "overlay_access": "any"
+  },
+  "services": [
+    {
+      "role": "gateway",
+      "pid": 6696,
+      "created_ticks": "639282766577681210",
+      "run_id": "2a44765c76d64a01977f3ce9ec02382d",
+      "stop_file": "C:\\live-captions\\.runtime\\launcher\\gateway-2a44765c76d64a01977f3ce9ec02382d.stop",
+      "owned": true
+    },
+    {
+      "role": "asr",
+      "pid": 39156,
+      "created_ticks": "639282771549545900",
+      "run_id": "fc93dbb2bf8847c1beb5487974c0624a",
+      "stop_file": "C:\\live-captions\\.runtime\\launcher\\asr-fc93dbb2bf8847c1beb5487974c0624a.stop",
+      "owned": true
+    },
+    {
+      "role": "api",
+      "pid": 21888,
+      "created_ticks": "639282771688304630",
+      "run_id": "848f0bbbc8f24b50baa01e8c6db121fa",
+      "stop_file": "C:\\live-captions\\.runtime\\launcher\\api-848f0bbbc8f24b50baa01e8c6db121fa.stop",
+      "owned": true
+    },
+    {
+      "role": "gateway",
+      "pid": 32396,
+      "created_ticks": "639282771784842000",
+      "run_id": "844fb367b21f4558bdaad46e600892b3",
+      "stop_file": "C:\\live-captions\\.runtime\\launcher\\gateway-844fb367b21f4558bdaad46e600892b3.stop",
+      "owned": true
+    }
+  ],
+  "restart_completed": true,
+  "close_removed_rule_and_all_listeners": true,
+  "browser_gateway_and_subscriber_confirmed_after_restart": true,
+  "usb_selected_and_reload_verified": true,
+  "live_microphone_session_started": false,
+  "real_translation_requested": false,
+  "remote_laptop_test_pending": true
+}

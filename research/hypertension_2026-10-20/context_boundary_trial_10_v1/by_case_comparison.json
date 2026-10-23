@@ -1,0 +1,34 @@
+{
+  "model": "medium",
+  "sample_id": "cardio_03",
+  "original_excerpt": "primary allosteronism by this confirmatory testing that we did was 6 ",
+  "previous_candidate_excerpt": "primary aldosteronism this confirmatory testing that we did was 6 ",
+  "guarded_candidate_excerpt": "primary aldosteronism by this confirmatory testing that we did was 6 ",
+  "previous_selected_span": {
+    "model": "medium",
+    "sample_id": "cardio_03",
+    "profile": "individualized",
+    "source": "primary allosteronism by",
+    "replacement": "primary aldosteronism",
+    "start": 3917,
+    "end": 3941,
+    "rule": "glossary_fuzzy",
+    "confidence": 0.962727,
+    "canonical": "primary aldosteronism"
+  },
+  "guarded_selected_span": {
+    "model": "medium",
+    "sample_id": "cardio_03",
+    "profile": "preselection_guards",
+    "source": "primary allosteronism",
+    "replacement": "primary aldosteronism",
+    "start": 3917,
+    "end": 3938,
+    "rule": "glossary_fuzzy",
+    "confidence": 0.956071,
+    "canonical": "primary aldosteronism"
+  },
+  "neighboring_text_preserved": " by",
+  "threshold_unchanged": 0.94,
+  "explanation": "The longer higher-score span is rejected before selection; the shorter eligible span still corrects the term."
+}

@@ -1,0 +1,70 @@
+{
+  "frozen_at_utc": "2026-10-22T03:43:33.494293+00:00",
+  "language": "en",
+  "random_terms": 50,
+  "guard_policy": "Unchanged ContextNormalizer from context_boundary_trial_10_v1, including exact and fuzzy boundary controls. No guard retuning after checking.",
+  "grid": [
+    0.86,
+    0.88,
+    0.9,
+    0.92,
+    0.94,
+    0.96,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "calibration": "Per-term constructed spelling/split examples and distinct-concept/context negatives; evaluated WITH the frozen guard. Zero negative triggers required, maximize recoveries, tie-break to higher threshold. If best recovery is zero, disable fuzzy for that term rather than assert a useful tolerance.",
+  "checking": "Remove any checking input duplicated in calibration before the threshold search; preserve raw and effective cases. Freeze thresholds before cached ASR checking. No threshold retuning on checking.",
+  "profiles": [
+    "raw",
+    "previous_10_guarded",
+    "new50_uniform090_guarded",
+    "new50_individualized_unguarded",
+    "new50_individualized_guarded",
+    "combined60_individualized_guarded"
+  ],
+  "context_probes": "For every new term, append the same six neighbor contexts, one outer negation and five protected negative contexts. Positive seed comes from calibration, not speech checking. If no repair is possible, still report the missed positives. Retest prior by example on the combined sixty.",
+  "interpretation": "Previously explored English corpus, provisional references, three files possibly two source groups; synthetic variants are not pronunciations or independent clinical validation. Model outputs on the same recording are correlated.",
+  "inputs": [
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/selection.json",
+      "sha256": "e1c00a05782878d60a171ace872aac50b18a9ee3b1fa4263bd949f52ef295cde"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/threshold_decisions.json",
+      "sha256": "c08fb49d295399ab2e3c1827ac3606ea18ce71eed1be48636a42107861ad3928"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/tolerance_trial_10_v1/evaluate_trial.py",
+      "sha256": "b07c63bd4bc58e38508c43df8903f9880f50599b2ed45a58a9ed0f5fff8f10ef"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/evaluate_context.py",
+      "sha256": "81f4ed9f0d2004176baeaa5263ae9a9dca02a46282802835e04b5724e1e7aae3"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/speech_comparison.json",
+      "sha256": "0fcce3639a7a948f62506584c07b9d754f8a86625874cb00479cd13c0fd76f03"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/context_boundary_trial_10_v1/manifest.json",
+      "sha256": "e605caf9d0c24a5041a16e9b53989981ae9caf0c57e8edefd1b6eac64162a619"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/manifest.json",
+      "sha256": "a475080f469c8efbc18beaf0067b1d3694f888f6051fb482cbb5bacfc762703a"
+    },
+    {
+      "path": "app/captions/terminology_normalizer.py",
+      "sha256": "0b1ddfb6d760ca7ad891cb88c0ef1b17f625f5b46b5072a6b583eac4f8fcf0cf"
+    },
+    {
+      "path": "trad_lab/metrics.py",
+      "sha256": "53154d9418bee8245f909d7b1163c328c5de883e8053eb9b6104b34c62c5a61d"
+    }
+  ],
+  "integration_performed": false,
+  "write_boundary": "Only tolerance_trial_50_v1; no ASR inference, live service, provider calls or changes to prior evidence.",
+  "extra_negative_recipe": "Before calibration, add existing clinical_distinction_guards for matching canonicals, literal micro/milli unit-name contrasts, and preservation of explicit singular/plural endings. These are no-rewrite contrasts, not synonym claims. Plain form in calibration, wrapped form in checking; remove exact duplicates before testing."
+}

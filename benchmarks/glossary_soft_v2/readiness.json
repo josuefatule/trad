@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-10-22T06:08:36.410288+00:00",
+  "operator_url": "http://localhost:8010/operator",
+  "api_status": "ok",
+  "glossary": {
+    "mode": "soft",
+    "effective_mode": "soft",
+    "generation": 0,
+    "policy_version": "medical-streaming-v2",
+    "version": "medical-657-v1",
+    "concepts": 657,
+    "evaluated_english": 97,
+    "fuzzy_english": 80,
+    "exact_only_english": 577,
+    "error": null,
+    "forced_by_environment": false
+  },
+  "asr_health": {
+    "status": "ok",
+    "backend": "faster-whisper",
+    "ready": true
+  },
+  "operator_state": "waiting",
+  "can_start": true,
+  "live_microphone_test": false,
+  "live_provider_test": false,
+  "obs_test": false,
+  "translator_verified": false
+}

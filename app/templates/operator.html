@@ -12,7 +12,28 @@
 <div><span>OVERLAY</span><strong id="overlay-clients">Overlay clients: —</strong></div>
 <div><span>MICROPHONE</span><strong id="selected-microphone">Predeterminado</strong></div>
 </div>
+<section class="network-bar" aria-label="Red y PC de overlay">
+<div><span>IP DE ESTA PC</span><strong id="this-pc-ip">Comprobando</strong></div>
+<div><span>IP DE LA PC OVERLAY</span><strong id="overlay-pc-ip">Sin configurar</strong></div>
+<div class="network-address"><span>URL PARA EL OVERLAY REMOTO</span><a id="lan-overlay-url" hidden target="_blank" rel="noopener"></a><small id="network-info">Comprobando red</small></div>
+</section>
 <section class="session-controls" aria-label="Session controls">
+<div class="device-controls direction-controls"><label for="direction">Dirección</label>
+<select id="direction" disabled><option value="en-es">English → Español</option><option value="es-en">Español → English</option></select>
+<span id="direction-info" role="status">Comprobando idiomas de sesión</span>
+<button id="acknowledge-stop" disabled>Reconocer cierre incompleto</button></div>
+<div class="device-controls"><label for="glossary-mode">Glosario médico</label>
+<select id="glossary-mode" disabled><option value="soft">Activo para pruebas</option>
+<option value="shadow">Observación</option><option value="off">Desactivado / volver al anterior</option></select>
+<span id="glossary-info" role="status">Comprobando glosario</span></div>
+<div class="device-controls"><label for="caption-color">Color del texto del overlay</label>
+<input id="caption-color" type="color" value="#ffffff" disabled>
+<button id="apply-caption-color" disabled>Aplicar color</button>
+<span id="caption-color-info" role="status">Comprobando color</span></div>
+<div class="device-controls"><label for="overlay-background-color">Color del fondo del overlay</label>
+<input id="overlay-background-color" type="color" value="#001264" disabled>
+<button id="apply-overlay-background-color" disabled>Aplicar fondo</button>
+<span id="overlay-background-color-info" role="status">Comprobando fondo</span></div>
 <div class="device-controls"><label for="microphone">Micrófono</label>
 <select id="microphone"><option value="">Predeterminado</option></select>
 <button id="refresh">Permitir / actualizar</button></div>
@@ -24,11 +45,11 @@
 <p id="operational-alert" role="alert"></p>
 </header>
 <section class="live-monitoring" aria-label="Live monitoring">
-<article class="english-panel panel"><div class="panel-heading"><h1>ENGLISH</h1><span>Translation output</span></div>
+<article class="english-panel panel"><div class="panel-heading"><h1 id="translation-label">ESPAÑOL</h1><span>Translation output</span></div>
 <div id="english" class="text-flow" aria-live="polite" tabindex="0"></div></article>
-<article class="normalized-panel panel"><div class="panel-heading"><h2>NORMALIZED ES</h2><span>Terminology applied</span></div>
+<article class="normalized-panel panel"><div class="panel-heading"><h2 id="normalized-label">NORMALIZED EN</h2><span id="normalization-info">English: identity (no glossary)</span></div>
 <div id="normalized" class="text-flow" tabindex="0"></div></article>
-<article class="raw-panel panel"><div class="panel-heading"><h2>RAW ES / ASR CONFIRMED</h2><span>ASR may revise its last line</span></div>
+<article class="raw-panel panel"><div class="panel-heading"><h2 id="raw-label">RAW EN / ASR CONFIRMED</h2><span>ASR may revise its last line</span></div>
 <div id="confirmed" class="text-flow" tabindex="0"></div></article>
 </section>
 <details class="diagnostics"><summary>Diagnostics &amp; segment audit</summary>
@@ -47,10 +68,10 @@
 <details><summary>CORRECTIONS / SUGGESTIONS</summary><pre id="corrections"></pre></details>
 <details><summary>READY RAW · segment IDs / timestamps</summary><pre id="ready"></pre></details>
 <details><summary>NORMALIZED SEGMENTS</summary><pre id="normalized-segments"></pre></details>
-<details><summary>ENGLISH SEGMENTS · sequence / segment ID</summary><pre id="english-segments"></pre><pre id="translation-status">Not measured</pre></details>
+<details><summary id="translation-segments-label">ESPAÑOL SEGMENTS · sequence / segment ID</summary><pre id="english-segments"></pre><pre id="translation-status">Not measured</pre></details>
 <details><summary>PARTIAL / PENDING / ASR snapshots</summary>
 <h2>PARTIAL</h2><pre id="partial"></pre><h2>SEGMENT PENDING</h2><pre id="pending"></pre><pre id="segments"></pre></details>
 <details><summary>DEBUG (latest 100 events)</summary><pre id="debug"></pre></details>
 <p>Stage timings start at ASR first appearance. Browser paint estimates do not measure physical speech → OBS output.</p>
 </details>
-</main><script src="/static/operator_console.js"></script><script src="/static/operator.js"></script><script src="/static/overlay_diagnostics.js"></script></body></html>
+</main><script src="/static/operator_console.js?v=20261022-recovery-1"></script><script src="/static/operator.js?v=20261022-usb-1"></script><script src="/static/glossary_control.js"></script><script src="/static/overlay_style_control.js"></script><script src="/static/launcher_network.js"></script><script src="/static/overlay_diagnostics.js"></script></body></html>

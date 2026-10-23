@@ -120,7 +120,7 @@ class OverlayRoutesTests(unittest.TestCase):
     def setUp(self):
         self.app = create_app(Settings(log_dir="logs/tests", translation=TranslationConfig()))
 
-    def test_overlay_preview_transparency_and_safe_config(self):
+    def test_overlay_preview_background_and_safe_config(self):
         with TestClient(self.app) as client:
             page = client.get("/overlay")
             self.assertEqual(page.status_code, 200)
@@ -130,7 +130,7 @@ class OverlayRoutesTests(unittest.TestCase):
             self.assertNotIn("operator.js", page.text)
             css = client.get("/static/overlay.css").text
             self.assertIn("html, body", css)
-            self.assertIn("background: transparent !important", css)
+            self.assertIn("background: #001264 !important", css)
             self.assertNotIn("line-clamp", css)
             self.assertIn("DEMO", client.get("/overlay/preview").text)
             self.assertIn('id="preview-viewport"', client.get("/overlay/preview").text)

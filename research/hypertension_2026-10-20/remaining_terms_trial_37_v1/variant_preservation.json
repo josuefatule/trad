@@ -1,0 +1,1925 @@
+{
+  "forms": [
+    {
+      "form_id": "UF0003",
+      "concept_id": "HTN_97cf39b495a5",
+      "language": "en",
+      "form": "systemic hypertension",
+      "occurrence_ids": [
+        "AF0005"
+      ],
+      "roles": [
+        "aliases_en"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 100,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "82cdbd0d1fac049f72e516932ec18b136598614fea73e3dcfd35569b58c8be6a",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_97cf39b495a5",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 100,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "82cdbd0d1fac049f72e516932ec18b136598614fea73e3dcfd35569b58c8be6a",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_97cf39b495a5",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0003",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0009",
+      "concept_id": "HTN_97cf39b495a5",
+      "language": "en",
+      "form": "high blood pressure",
+      "occurrence_ids": [
+        "AF0014"
+      ],
+      "roles": [
+        "grouped_lexical_form"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 86,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "c89b75655d20130577093b80b69fda0ac0f74b467f7902576aaca27cd6657f2c",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_97cf39b495a5",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 86,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "c89b75655d20130577093b80b69fda0ac0f74b467f7902576aaca27cd6657f2c",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_97cf39b495a5",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0009",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0010",
+      "concept_id": "HTN_97cf39b495a5",
+      "language": "en",
+      "form": "arterial hypertension",
+      "occurrence_ids": [
+        "AF0015"
+      ],
+      "roles": [
+        "grouped_lexical_form"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 8,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "30b66402e8fc6afb2e31bc04194e90a76570ea0e6633c22d3e4ec2777a7a3285",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_97cf39b495a5",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 8,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "30b66402e8fc6afb2e31bc04194e90a76570ea0e6633c22d3e4ec2777a7a3285",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_97cf39b495a5",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0010",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0012",
+      "concept_id": "HTN_8c53930b9fb6",
+      "language": "en",
+      "form": "essential hypertension",
+      "occurrence_ids": [
+        "AF0017",
+        "AF0019"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 40,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_8c53930b9fb6",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 40,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_8c53930b9fb6",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0012",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0035",
+      "concept_id": "HTN_21aa1e2a0a86",
+      "language": "en",
+      "form": "target blood pressure",
+      "occurrence_ids": [
+        "AF0057",
+        "AF0059"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 95,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "9564098d8b9b47361ec18f16b483ce367a682b66fce3dd77e12c9c852e3461c3",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_21aa1e2a0a86",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 95,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "9564098d8b9b47361ec18f16b483ce367a682b66fce3dd77e12c9c852e3461c3",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_21aa1e2a0a86",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0035",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0060",
+      "concept_id": "HTN_43b62124c3b4",
+      "language": "en",
+      "form": "pre-hypertension",
+      "occurrence_ids": [
+        "AF0100",
+        "AF0101"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S91",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+        "locator_kind": "text_block_35_lines",
+        "locator_index": 14,
+        "source_copy_sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c",
+        "extracted_locator_sha256": "0d68df7fcad2d5eda70bc09b11e4e31c823c54723cc68853c13c14670f7dee74",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_43b62124c3b4",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S91",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+          "locator_kind": "text_block_35_lines",
+          "locator_index": 14,
+          "source_copy_sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c",
+          "extracted_locator_sha256": "0d68df7fcad2d5eda70bc09b11e4e31c823c54723cc68853c13c14670f7dee74",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_43b62124c3b4",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0060",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0062",
+      "concept_id": "HTN_883353142120",
+      "language": "en",
+      "form": "postural hypotension",
+      "occurrence_ids": [
+        "AF0103",
+        "AF0105"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 85,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "92b910bf91bb0444fb701838b63ac5120c0c0fe1237fc117c8c113660c3bc753",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_883353142120",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 85,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "92b910bf91bb0444fb701838b63ac5120c0c0fe1237fc117c8c113660c3bc753",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_883353142120",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0062",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0064",
+      "concept_id": "HTN_ee6fe3240e4f",
+      "language": "en",
+      "form": "low blood pressure",
+      "occurrence_ids": [
+        "AF0106",
+        "AF0108"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S07",
+        "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications",
+        "locator_kind": "web_text_block_35_lines",
+        "locator_index": 3,
+        "source_copy_sha256": "2f7d52107703e4ddcad01ed678fd19692bf8656a94c0645f4e552e0ed5e0bde6",
+        "extracted_locator_sha256": "03e5630a5fbfd1e417c39a045c1d6a42a6b2ad89c262a53d14a2a9bc39985cbe",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_ee6fe3240e4f",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S07",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications",
+          "locator_kind": "web_text_block_35_lines",
+          "locator_index": 3,
+          "source_copy_sha256": "2f7d52107703e4ddcad01ed678fd19692bf8656a94c0645f4e552e0ed5e0bde6",
+          "extracted_locator_sha256": "03e5630a5fbfd1e417c39a045c1d6a42a6b2ad89c262a53d14a2a9bc39985cbe",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_ee6fe3240e4f",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0064",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0088",
+      "concept_id": "HTN_a9290515a379",
+      "language": "en",
+      "form": "10-year ASCVD risk",
+      "occurrence_ids": [
+        "AF0151",
+        "AF0152"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S91",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+        "locator_kind": "text_block_35_lines",
+        "locator_index": 14,
+        "source_copy_sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c",
+        "extracted_locator_sha256": "0d68df7fcad2d5eda70bc09b11e4e31c823c54723cc68853c13c14670f7dee74",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_a9290515a379",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S91",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+          "locator_kind": "text_block_35_lines",
+          "locator_index": 14,
+          "source_copy_sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c",
+          "extracted_locator_sha256": "0d68df7fcad2d5eda70bc09b11e4e31c823c54723cc68853c13c14670f7dee74",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_a9290515a379",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0088",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0091",
+      "concept_id": "HTN_33721e7d10bc",
+      "language": "en",
+      "form": "CVD events",
+      "occurrence_ids": [
+        "AF0158",
+        "AF0159"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 9,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "49678d4f7cb9e47962cbe291d642b360298c81cb8088261837dd098ed139fe8f",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_33721e7d10bc",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 9,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "49678d4f7cb9e47962cbe291d642b360298c81cb8088261837dd098ed139fe8f",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_33721e7d10bc",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0091",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0116",
+      "concept_id": "HTN_c55b21ee723a",
+      "language": "en",
+      "form": "co-chairperson",
+      "occurrence_ids": [
+        "AF0201",
+        "AF0203"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 83,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "497a8924c038c0191d7d820dbac1dcbd56f583e386a49c5df45fad72e8ef9a1b",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_c55b21ee723a",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 83,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "497a8924c038c0191d7d820dbac1dcbd56f583e386a49c5df45fad72e8ef9a1b",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_c55b21ee723a",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0116",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0147",
+      "concept_id": "HTN_5995e0e6626c",
+      "language": "en",
+      "form": "sodium loading",
+      "occurrence_ids": [
+        "AF0267",
+        "AF0269"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S91",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+        "locator_kind": "text_block_35_lines",
+        "locator_index": 9,
+        "source_copy_sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c",
+        "extracted_locator_sha256": "ea598af9b4bbb6bf83076e88eb71aa574df1cd51325c956f33fba1719976d07f",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_5995e0e6626c",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S91",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+          "locator_kind": "text_block_35_lines",
+          "locator_index": 9,
+          "source_copy_sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c",
+          "extracted_locator_sha256": "ea598af9b4bbb6bf83076e88eb71aa574df1cd51325c956f33fba1719976d07f",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_5995e0e6626c",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0147",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0159",
+      "concept_id": "HTN_fe15c79eba36",
+      "language": "en",
+      "form": "hypokalaemic metabolic alkalosis",
+      "occurrence_ids": [
+        "AF0287",
+        "AF0288"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF012",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8544895/",
+        "form": "hypokalaemic metabolic alkalosis",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 2,
+        "local_cache_file": "source_cache/surface124_search17.web.txt",
+        "cache_sha256": "67dda7ceb210c729b8736340bcd17377a34b49f701025702d2f6ba847e0fe4ed",
+        "result_block_sha256": "705323b27e6dd6541eaffd1df69b9b438bf9d2eaa7f23b12419d529569952dd7",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_fe15c79eba36",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_fe15c79eba36",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0159",
+        "latest": "surface_verification_124.json#UF0159"
+      }
+    },
+    {
+      "form_id": "UF0166",
+      "concept_id": "HTN_813c32e37386",
+      "language": "en",
+      "form": "renal function",
+      "occurrence_ids": [
+        "AF0300",
+        "AF0301"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 14,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "9b2d37f87bb68dd0fb3d44aabd1c7b479582380da1c9087c82da30ca0c4066f4",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_813c32e37386",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 14,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "9b2d37f87bb68dd0fb3d44aabd1c7b479582380da1c9087c82da30ca0c4066f4",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_813c32e37386",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0166",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0173",
+      "concept_id": "HTN_1e5b2c8f44aa",
+      "language": "en",
+      "form": "pharmacologic therapy",
+      "occurrence_ids": [
+        "AF0312",
+        "AF0313"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S188",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/8034801/",
+        "locator_kind": "text_block_35_lines",
+        "locator_index": 11,
+        "source_copy_sha256": "ddeae07465223061c7e279ea81756374e77698ee17dab39a621b16ded01f8707",
+        "extracted_locator_sha256": "de54d29e36ae01f9cebbcf6d2dad37d025f52f4a5e959a7e00f7abdf18d17f77",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_1e5b2c8f44aa",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S188",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/8034801/",
+          "locator_kind": "text_block_35_lines",
+          "locator_index": 11,
+          "source_copy_sha256": "ddeae07465223061c7e279ea81756374e77698ee17dab39a621b16ded01f8707",
+          "extracted_locator_sha256": "de54d29e36ae01f9cebbcf6d2dad37d025f52f4a5e959a7e00f7abdf18d17f77",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_1e5b2c8f44aa",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0173",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0174",
+      "concept_id": "HTN_62d56e18d9ed",
+      "language": "en",
+      "form": "nonpharmacologic therapy",
+      "occurrence_ids": [
+        "AF0314",
+        "AF0316"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF013",
+        "url": "https://professional.heart.org/en/-/media/PHD-Files-2/Science-News/h/Hypertension_Highlights_Detailed_Summary_ucm_497446.pdf?sc_lang=en",
+        "form": "nonpharmacologic therapy",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 16,
+        "local_cache_file": "source_cache/surface124_search04.web.txt",
+        "cache_sha256": "7c2c3d1f59d3f0d11da15af06e09dbbf8bce2ab5a2080ebbb4f3dd215940c8cc",
+        "result_block_sha256": "67992d6a7065769ef9093ae25f7ad4054b0ae2dfee23bf9386756b29efe53a5e",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_62d56e18d9ed",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_62d56e18d9ed",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0174",
+        "latest": "surface_verification_124.json#UF0174"
+      }
+    },
+    {
+      "form_id": "UF0175",
+      "concept_id": "HTN_62d56e18d9ed",
+      "language": "en",
+      "form": "non-pharmacologic therapy",
+      "occurrence_ids": [
+        "AF0315",
+        "AF0317"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF014",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/7804949/",
+        "form": "non-pharmacologic therapy",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 1,
+        "local_cache_file": "source_cache/surface124_search05.web.txt",
+        "cache_sha256": "857a9651036a81f93c7174d62f5426c9be94432a4b9ee959152e4713570f4d12",
+        "result_block_sha256": "7f0069fcdff7bdd4cc406180448765e7ffccb7b77469060ff25ccb45e4f4fc15",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_62d56e18d9ed",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_62d56e18d9ed",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0175",
+        "latest": "surface_verification_124.json#UF0175"
+      }
+    },
+    {
+      "form_id": "UF0193",
+      "concept_id": "HTN_4c28630c39b7",
+      "language": "en",
+      "form": "beta-adrenergic blockers",
+      "occurrence_ids": [
+        "AF0352",
+        "AF0355"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 40,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_4c28630c39b7",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 40,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_4c28630c39b7",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0193",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0194",
+      "concept_id": "HTN_4c28630c39b7",
+      "language": "en",
+      "form": "beta-blockers",
+      "occurrence_ids": [
+        "AF0353",
+        "AF0356"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "orthographic_variant",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Difiere en grafía, puntuación o tildes bajo la normalización de comparación; conservar la forma original en la oración. La coincidencia no autoriza alterar símbolos o valores.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 13,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "1c5cd16bd35a042223dd9cf73e6edaa07ac8918757258629b9c78d736a9514e8",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_4c28630c39b7",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 13,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "1c5cd16bd35a042223dd9cf73e6edaa07ac8918757258629b9c78d736a9514e8",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_4c28630c39b7",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0194",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0205",
+      "concept_id": "HTN_5083c8261cb4",
+      "language": "en",
+      "form": "hormonal replacement therapy",
+      "occurrence_ids": [
+        "AF0376",
+        "AF0378"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF016",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17651686/",
+        "form": "hormonal replacement therapy",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 6,
+        "local_cache_file": "source_cache/surface124_search05.web.txt",
+        "cache_sha256": "857a9651036a81f93c7174d62f5426c9be94432a4b9ee959152e4713570f4d12",
+        "result_block_sha256": "ebf11465847efa8dcd15512ab68eb32377b325f85984e9faa7d072b5501404a9",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_5083c8261cb4",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_5083c8261cb4",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0205",
+        "latest": "surface_verification_124.json#UF0205"
+      }
+    },
+    {
+      "form_id": "UF0207",
+      "concept_id": "HTN_d8a636f1c1c1",
+      "language": "en",
+      "form": "immunosuppressants",
+      "occurrence_ids": [
+        "AF0379",
+        "AF0381"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF018",
+        "url": "https://www.acc.org/~/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/Guidelines/2017/Guidelines_Made_Simple_2017_HBP.pdf?utm_version=158324753",
+        "form": "immunosuppressants",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 18,
+        "local_cache_file": "source_cache/surface124_search06.web.txt",
+        "cache_sha256": "dd9a7750ba7290737a53fa43f48dc89a88aaef186bea19e303c4724e0b84fc09",
+        "result_block_sha256": "09f1f5cac7635a5977c31cd77f177ffdc3a24fddf023ce3dce0706d9bcf2282b",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_d8a636f1c1c1",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_d8a636f1c1c1",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0207",
+        "latest": "surface_verification_124.json#UF0207"
+      }
+    },
+    {
+      "form_id": "UF0227",
+      "concept_id": "HTN_1ba7573640bb",
+      "language": "en",
+      "form": "cerebrovascular accident",
+      "occurrence_ids": [
+        "AF0412",
+        "AF0416"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S74",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8882059/",
+        "locator_kind": "text_block_35_lines",
+        "locator_index": 6,
+        "source_copy_sha256": "63e32f2b36023d9980d6f3d89591e6f22c8e55f19ded3deaf2f1a043208fd8a0",
+        "extracted_locator_sha256": "ac7324d9c01f87d639080d5077464784f38bf3b90b99fd7a650c10adec203bf1",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_1ba7573640bb",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S74",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8882059/",
+          "locator_kind": "text_block_35_lines",
+          "locator_index": 6,
+          "source_copy_sha256": "63e32f2b36023d9980d6f3d89591e6f22c8e55f19ded3deaf2f1a043208fd8a0",
+          "extracted_locator_sha256": "ac7324d9c01f87d639080d5077464784f38bf3b90b99fd7a650c10adec203bf1",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_1ba7573640bb",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0227",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0288",
+      "concept_id": "HTN_360421e6c958",
+      "language": "en",
+      "form": "moderation of alcohol consumption",
+      "occurrence_ids": [
+        "AF0526",
+        "AF0527"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF028",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16434724/",
+        "form": "moderation of alcohol consumption",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 4,
+        "local_cache_file": "source_cache/surface124_search08.web.txt",
+        "cache_sha256": "5689fb5ddbbe4c39b9eb245ffec35a7c299c82f509ed572d5cd8bc834f28325b",
+        "result_block_sha256": "e497bc15980b46801feb90897de8274d71c60dc423c351a69af06f9a8772a4bd",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_360421e6c958",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_360421e6c958",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0288",
+        "latest": "surface_verification_124.json#UF0288"
+      }
+    },
+    {
+      "form_id": "UF0323",
+      "concept_id": "HTN_b82e725f2d5b",
+      "language": "en",
+      "form": "pharmacological management",
+      "occurrence_ids": [
+        "AF0579",
+        "AF0580"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S05",
+        "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+        "locator_kind": "pdf_page",
+        "locator_index": 145,
+        "source_copy_sha256": "0b77a9e32ca6c7bbccbddf902be4427bf8bc0d2dd7e3ffbc18042f602f371b27",
+        "extracted_locator_sha256": "f4de00e70207b56208b3ff324ab268079153c8a97f37eea425b850597278c04d",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_b82e725f2d5b",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S05",
+          "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+          "locator_kind": "pdf_page",
+          "locator_index": 145,
+          "source_copy_sha256": "0b77a9e32ca6c7bbccbddf902be4427bf8bc0d2dd7e3ffbc18042f602f371b27",
+          "extracted_locator_sha256": "f4de00e70207b56208b3ff324ab268079153c8a97f37eea425b850597278c04d",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_b82e725f2d5b",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0323",
+        "latest": null
+      }
+    }
+  ],
+  "new37_forms": [
+    {
+      "form_id": "UF0012",
+      "concept_id": "HTN_8c53930b9fb6",
+      "language": "en",
+      "form": "essential hypertension",
+      "occurrence_ids": [
+        "AF0017",
+        "AF0019"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 40,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_8c53930b9fb6",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 40,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_8c53930b9fb6",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0012",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0062",
+      "concept_id": "HTN_883353142120",
+      "language": "en",
+      "form": "postural hypotension",
+      "occurrence_ids": [
+        "AF0103",
+        "AF0105"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 85,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "92b910bf91bb0444fb701838b63ac5120c0c0fe1237fc117c8c113660c3bc753",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_883353142120",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 85,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "92b910bf91bb0444fb701838b63ac5120c0c0fe1237fc117c8c113660c3bc753",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_883353142120",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0062",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0166",
+      "concept_id": "HTN_813c32e37386",
+      "language": "en",
+      "form": "renal function",
+      "occurrence_ids": [
+        "AF0300",
+        "AF0301"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 14,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "9b2d37f87bb68dd0fb3d44aabd1c7b479582380da1c9087c82da30ca0c4066f4",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_813c32e37386",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 14,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "9b2d37f87bb68dd0fb3d44aabd1c7b479582380da1c9087c82da30ca0c4066f4",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_813c32e37386",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0166",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0174",
+      "concept_id": "HTN_62d56e18d9ed",
+      "language": "en",
+      "form": "nonpharmacologic therapy",
+      "occurrence_ids": [
+        "AF0314",
+        "AF0316"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF013",
+        "url": "https://professional.heart.org/en/-/media/PHD-Files-2/Science-News/h/Hypertension_Highlights_Detailed_Summary_ucm_497446.pdf?sc_lang=en",
+        "form": "nonpharmacologic therapy",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 16,
+        "local_cache_file": "source_cache/surface124_search04.web.txt",
+        "cache_sha256": "7c2c3d1f59d3f0d11da15af06e09dbbf8bce2ab5a2080ebbb4f3dd215940c8cc",
+        "result_block_sha256": "67992d6a7065769ef9093ae25f7ad4054b0ae2dfee23bf9386756b29efe53a5e",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_62d56e18d9ed",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_62d56e18d9ed",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0174",
+        "latest": "surface_verification_124.json#UF0174"
+      }
+    },
+    {
+      "form_id": "UF0175",
+      "concept_id": "HTN_62d56e18d9ed",
+      "language": "en",
+      "form": "non-pharmacologic therapy",
+      "occurrence_ids": [
+        "AF0315",
+        "AF0317"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": "literal_verified_in_concept_context",
+      "latest_editorial_note": "Forma literal revisada en el contexto del concepto. Conservar calificadores, idioma, categoría gramatical y restricciones de la auditoría previa; esta atestación no autoriza sustitución automática.",
+      "latest_research_action": "retain_for_research_with_prior_context_restrictions",
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "literal_verified_in_concept_context",
+      "attestation": {
+        "source_id": "SF014",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/7804949/",
+        "form": "non-pharmacologic therapy",
+        "language_basis": "reviewed_english_passage",
+        "locator_kind": "tool_result_block_one_based",
+        "result_block_index": 1,
+        "local_cache_file": "source_cache/surface124_search05.web.txt",
+        "cache_sha256": "857a9651036a81f93c7174d62f5426c9be94432a4b9ee959152e4713570f4d12",
+        "result_block_sha256": "7f0069fcdff7bdd4cc406180448765e7ffccb7b77469060ff25ccb45e4f4fc15",
+        "assessment": "normalized_literal_in_reviewed_context",
+        "literal_location_found": true,
+        "standalone_synonym_approval": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_62d56e18d9ed",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_62d56e18d9ed",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0175",
+        "latest": "surface_verification_124.json#UF0175"
+      }
+    },
+    {
+      "form_id": "UF0193",
+      "concept_id": "HTN_4c28630c39b7",
+      "language": "en",
+      "form": "beta-adrenergic blockers",
+      "occurrence_ids": [
+        "AF0352",
+        "AF0355"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 40,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_4c28630c39b7",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 40,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "927f01a6830929005fc8cdb886901e8f591dcbbcbe619d5a60bfa7bad8c0e850",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_4c28630c39b7",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0193",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0194",
+      "concept_id": "HTN_4c28630c39b7",
+      "language": "en",
+      "form": "beta-blockers",
+      "occurrence_ids": [
+        "AF0353",
+        "AF0356"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "orthographic_variant",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Difiere en grafía, puntuación o tildes bajo la normalización de comparación; conservar la forma original en la oración. La coincidencia no autoriza alterar símbolos o valores.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S71",
+        "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+        "locator_kind": "pdf_page",
+        "locator_index": 13,
+        "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+        "extracted_locator_sha256": "1c5cd16bd35a042223dd9cf73e6edaa07ac8918757258629b9c78d736a9514e8",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_4c28630c39b7",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S71",
+          "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+          "locator_kind": "pdf_page",
+          "locator_index": 13,
+          "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+          "extracted_locator_sha256": "1c5cd16bd35a042223dd9cf73e6edaa07ac8918757258629b9c78d736a9514e8",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_4c28630c39b7",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0194",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0227",
+      "concept_id": "HTN_1ba7573640bb",
+      "language": "en",
+      "form": "cerebrovascular accident",
+      "occurrence_ids": [
+        "AF0412",
+        "AF0416"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_aliases"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S74",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8882059/",
+        "locator_kind": "text_block_35_lines",
+        "locator_index": 6,
+        "source_copy_sha256": "63e32f2b36023d9980d6f3d89591e6f22c8e55f19ded3deaf2f1a043208fd8a0",
+        "extracted_locator_sha256": "ac7324d9c01f87d639080d5077464784f38bf3b90b99fd7a650c10adec203bf1",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_1ba7573640bb",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S74",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8882059/",
+          "locator_kind": "text_block_35_lines",
+          "locator_index": 6,
+          "source_copy_sha256": "63e32f2b36023d9980d6f3d89591e6f22c8e55f19ded3deaf2f1a043208fd8a0",
+          "extracted_locator_sha256": "ac7324d9c01f87d639080d5077464784f38bf3b90b99fd7a650c10adec203bf1",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_1ba7573640bb",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0227",
+        "latest": null
+      }
+    },
+    {
+      "form_id": "UF0323",
+      "concept_id": "HTN_b82e725f2d5b",
+      "language": "en",
+      "form": "pharmacological management",
+      "occurrence_ids": [
+        "AF0579",
+        "AF0580"
+      ],
+      "roles": [
+        "aliases_en",
+        "inherited_variants"
+      ],
+      "baseline_safety_status": "lexical_variant_for_research",
+      "bucket": "reviewable_variant",
+      "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "latest_decision": null,
+      "latest_editorial_note": null,
+      "latest_research_action": null,
+      "specific_restriction": null,
+      "unsupported_variant_restriction": null,
+      "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+      "attestation": {
+        "source_id": "S05",
+        "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+        "locator_kind": "pdf_page",
+        "locator_index": 145,
+        "source_copy_sha256": "0b77a9e32ca6c7bbccbddf902be4427bf8bc0d2dd7e3ffbc18042f602f371b27",
+        "extracted_locator_sha256": "f4de00e70207b56208b3ff324ab268079153c8a97f37eea425b850597278c04d",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      },
+      "evidence_history": [
+        {
+          "kind": "canonical_pair_context_only",
+          "verification_record_id": "HTN_b82e725f2d5b",
+          "file": "bilingual_verification.json",
+          "supports_alias_surface": false
+        },
+        {
+          "kind": "literal_surface_location_only",
+          "source_id": "S05",
+          "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+          "locator_kind": "pdf_page",
+          "locator_index": 145,
+          "source_copy_sha256": "0b77a9e32ca6c7bbccbddf902be4427bf8bc0d2dd7e3ffbc18042f602f371b27",
+          "extracted_locator_sha256": "f4de00e70207b56208b3ff324ab268079153c8a97f37eea425b850597278c04d",
+          "lexical_location_only": true,
+          "semantic_equivalence_verified_by_match": false
+        }
+      ],
+      "canonical_verification_record_id": "HTN_b82e725f2d5b",
+      "query_review_eligible": true,
+      "strict_equivalence_approved": false,
+      "automatic_substitution_approved": false,
+      "provenance": {
+        "baseline": "alias_review_decisions.json#UF0323",
+        "latest": null
+      }
+    }
+  ],
+  "policy": "Preserve registered research variants verbatim; never substitute or approve semantic equivalence"
+}

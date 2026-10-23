@@ -1,0 +1,206 @@
+{
+  "policy": "Research-only continuation overlay; no lists are written back into the original glossary, candidate, canonical dataset or previous alias audit.",
+  "input_alias_audit_sha256": "01756db6cd3f309156f7571f23852c1724922b958bbe119669c03afa34e9418b",
+  "semantic_restrictions": [
+    {
+      "form_id": "UF0015",
+      "concept_id": "HTN_2767d28f15ca",
+      "form": "hipertensión farmacológica",
+      "language": "es",
+      "previous_safety_status": "lexical_variant_for_research",
+      "decision": "no_acceptable_literal_attestation",
+      "research_action": "retire_unattested_ambiguous_alias",
+      "reason": "No se localizó una atestación literal aceptable. Farmacológica no expresa de manera inequívoca inducida por fármacos y puede confundirse con tratamiento farmacológico. Proponer retirada del alias estricto; conservar hipertensión inducida por fármacos.",
+      "attestation_source_id": null
+    },
+    {
+      "form_id": "UF0117",
+      "concept_id": "HTN_c55b21ee723a",
+      "form": "coordinador conjunto",
+      "language": "es",
+      "previous_safety_status": "exclude_strict_equivalence",
+      "decision": "unsafe_equivalence_reconfirmed",
+      "research_action": "exclude_from_strict_alias_set_keep_related_expression_or_other_sense",
+      "reason": "Atestada en OMS para un cargo de coordinación FAO/OMS. No demuestra copresidencia. Se reconfirma la exclusión como alias estricto de co-chair.",
+      "attestation_source_id": "SF008"
+    },
+    {
+      "form_id": "UF0336",
+      "concept_id": "HTN_a440318f5b79",
+      "form": "relación presión-natriuresis",
+      "language": "es",
+      "previous_safety_status": "exclude_strict_equivalence",
+      "decision": "unsafe_equivalence_reconfirmed",
+      "research_action": "exclude_from_strict_alias_set_keep_related_expression_or_other_sense",
+      "reason": "Atestación de la relación fisiológica presión-natriuresis. El proceso y la relación/curva no se sustituyen literalmente; se mantiene la exclusión estricta previa.",
+      "attestation_source_id": "SF039"
+    },
+    {
+      "form_id": "UF0424",
+      "concept_id": "HTN_bd112ce0a2d7",
+      "form": "prueba de captopril",
+      "language": "es",
+      "previous_safety_status": "lexical_variant_for_research",
+      "decision": "ambiguous_reference_restricted",
+      "research_action": "require_diagnostic_purpose_and_protocol_do_not_assume_aldosteronism_test",
+      "reason": "El manual sitúa la frase en la fila de causas secundarias renovasculares (tabla 13). Es una coincidencia literal con otra finalidad diagnóstica; no verifica la prueba de desafío/supresión para aldosteronismo. Exigir propósito y protocolo antes de usar la variante.",
+      "attestation_source_id": "SF063"
+    },
+    {
+      "form_id": "UF0471",
+      "concept_id": "HTN_7865f1343d17",
+      "form": "carga de medicación",
+      "language": "es",
+      "previous_safety_status": "exclude_strict_equivalence",
+      "decision": "unsafe_equivalence_reconfirmed",
+      "research_action": "exclude_from_strict_alias_set_keep_related_expression_or_other_sense",
+      "reason": "El artículo de farmacéuticos usa carga para la preparación/llenado de sistemas de dosificación. No atesta carga de comprimidos como carga de medicación. Se reconfirma la retirada del alias estricto de pill burden.",
+      "attestation_source_id": "SF074"
+    },
+    {
+      "form_id": "UF0557",
+      "concept_id": "HTN_fc1d22db340b",
+      "form": "2025 ACC/AHA guideline",
+      "language": "en",
+      "previous_safety_status": "contextual_equivalence",
+      "decision": "ambiguous_reference_restricted",
+      "research_action": "require_hypertension_topic_in_reference_do_not_expand_bare_alias",
+      "reason": "Atestación literal en un artículo sobre la guía de síndromes coronarios de 2025. La frase sola no identifica la guía de hipertensión. Proponer añadir explícitamente hypertension a cualquier referencia de investigación; la forma sin tema queda bloqueada como alias inequívoco.",
+      "attestation_source_id": "SF109"
+    }
+  ],
+  "forms_without_accepted_literal_attestation": [
+    {
+      "form_id": "UF0015",
+      "concept_id": "HTN_2767d28f15ca",
+      "canonical_en": "drug-induced hypertension",
+      "preferred_es": "hipertensión inducida por fármacos",
+      "form": "hipertensión farmacológica",
+      "language": "es",
+      "reason": "No se localizó una atestación literal aceptable. Farmacológica no expresa de manera inequívoca inducida por fármacos y puede confundirse con tratamiento farmacológico. Proponer retirada del alias estricto; conservar hipertensión inducida por fármacos.",
+      "action": "retire_unattested_ambiguous_alias"
+    },
+    {
+      "form_id": "UF0048",
+      "concept_id": "HTN_cee544e9fe5c",
+      "canonical_en": "out-of-office blood pressure",
+      "preferred_es": "presión arterial fuera del consultorio",
+      "form": "presión arterial fuera de consulta",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0080",
+      "concept_id": "HTN_b0de6f8f7d51",
+      "canonical_en": "guideline-driven management",
+      "preferred_es": "manejo basado en guías",
+      "form": "manejo orientado por guías",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0277",
+      "concept_id": "HTN_8ded5b0bc81d",
+      "canonical_en": "potassium-enriched salt substitute",
+      "preferred_es": "sustituto de sal enriquecido con potasio",
+      "form": "potassium-supplemented salt",
+      "language": "en",
+      "reason": "Frase localizada en una publicación de comentario clínico alojada en PMC, que resume un metaanálisis. Apoyo limitado; no se promueve a atestación primaria ni a sustitución estricta del producto sin conocer su composición.",
+      "action": "hold_primary_literal_verification_do_not_promote"
+    },
+    {
+      "form_id": "UF0284",
+      "concept_id": "HTN_9f7e988429eb",
+      "canonical_en": "dynamic resistance exercise",
+      "preferred_es": "ejercicio de fuerza dinámico",
+      "form": "ejercicio dinámico de resistencia",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0286",
+      "concept_id": "HTN_be068174bf76",
+      "canonical_en": "isometric resistance exercise",
+      "preferred_es": "ejercicio isométrico de fuerza",
+      "form": "ejercicio de resistencia isométrica",
+      "language": "es",
+      "reason": "La frase exacta aparece en una tabla de una tesis institucional, no se confirmó en una publicación clínica primaria seleccionada. Se conserva como evidencia limitada de uso; no se declara verificación externa suficiente.",
+      "action": "hold_primary_literal_verification_do_not_promote"
+    },
+    {
+      "form_id": "UF0320",
+      "concept_id": "HTN_9814c63d18cd",
+      "canonical_en": "inter-arm blood pressure difference",
+      "preferred_es": "diferencia de presión arterial entre brazos",
+      "form": "diferencia interbraquial de presión arterial",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0375",
+      "concept_id": "HTN_22dfa9af1631",
+      "canonical_en": "blood pressure telemonitoring",
+      "preferred_es": "telemonitorización de la presión arterial",
+      "form": "telemonitoreo de la presión arterial",
+      "language": "es",
+      "reason": "Solo se seleccionó una traducción/resumen profesional secundario para la frase completa; su uso se registra como hallazgo limitado, sin promoverlo a fuente primaria ni a sinonimia estricta.",
+      "action": "hold_primary_literal_verification_do_not_promote"
+    },
+    {
+      "form_id": "UF0378",
+      "concept_id": "HTN_92d75169c430",
+      "canonical_en": "seated blood pressure",
+      "preferred_es": "presión arterial sentado",
+      "form": "presión arterial en sedestación",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0385",
+      "concept_id": "HTN_1cf4ceb2ef7b",
+      "canonical_en": "reverse-dipping pattern",
+      "preferred_es": "patrón de ascenso nocturno",
+      "form": "patrón de descenso nocturno inverso",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0414",
+      "concept_id": "HTN_d775cb991490",
+      "canonical_en": "renal Doppler ultrasonography",
+      "preferred_es": "ecografía Doppler renal",
+      "form": "ultrasonografía Doppler renal",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0465",
+      "concept_id": "HTN_b11a365c1e0e",
+      "canonical_en": "dual combination therapy",
+      "preferred_es": "tratamiento combinado doble",
+      "form": "biterapia antihipertensiva",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0466",
+      "concept_id": "HTN_84e2adba4b70",
+      "canonical_en": "triple combination therapy",
+      "preferred_es": "tratamiento combinado triple",
+      "form": "triterapia antihipertensiva",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    }
+  ],
+  "all_previous_context_restrictions_preserved": true,
+  "automatic_substitution_approved": false
+}

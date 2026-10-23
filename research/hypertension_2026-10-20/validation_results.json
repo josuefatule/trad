@@ -1,0 +1,547 @@
+{
+  "counts": {
+    "original_operational_entries": 294,
+    "curated_lexical_rows": 667,
+    "research_concept_records": 657,
+    "explicitly_grouped_extra_lexical_rows": 10,
+    "literature_supported_research_candidates": 657,
+    "pending_targeted_source_verification": 0,
+    "translations_crosschecked_in_external_en_es_sources": 657,
+    "translations_pending_individual_source_check": 0,
+    "independently_clinician_validated_concepts": 0,
+    "new_operational_suggest_only_entries": 346,
+    "held_new_lexical_rows": 26,
+    "candidate_operational_entries": 640,
+    "removed_unsafe_aliases": 12,
+    "research_alias_collisions": 1,
+    "original_exact_form_collisions": 0,
+    "original_fuzzy_canonical_screening_pairs": 32,
+    "consulted_sources": 191,
+    "sources_cited_by_individual_bilingual_crosschecks": 132,
+    "newly_verified_translations_this_session": 57,
+    "previous_verified_translations_retained": 600,
+    "preferred_es_corrections_this_session": 2
+  },
+  "json_syntax": "pass",
+  "schema_runtime_loader": "pass",
+  "original_sha256_before": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "original_sha256_after": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "original_unchanged": true,
+  "original_thresholds_and_policies_unchanged_in_candidate": true,
+  "original_294_canonicals_retained_in_candidate": true,
+  "new_entries_automatic_replacement": "disabled_suggest_only",
+  "new_entries_operational_aliases_or_variants_added": false,
+  "schema_extra_operational_fields": [],
+  "research_alias_collisions": [
+    {
+      "normalized_form": "mra",
+      "concepts": [
+        "magnetic resonance angiography",
+        "mineralocorticoid receptor antagonists"
+      ]
+    }
+  ],
+  "candidate_changes_to_original_entries": [
+    {
+      "canonical": "mean arterial pressure",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "MAP"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "JNC 8 report",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "Eighth Joint National Committee"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "primary aldosteronism",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "PA"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "plasma renin activity",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "PRA"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "plasma aldosterone concentration",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "PAC"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "renin-angiotensin system",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "RAS"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "mineralocorticoid receptor",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "MR"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "mineralocorticoid receptor antagonists",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "MRAs",
+        "MRA"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "aldosterone-producing adenoma",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "APA"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "diuretics",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "diuretic therapy"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    },
+    {
+      "canonical": "frailty",
+      "change": "remove_unsafe_aliases_in_candidate_only",
+      "removed_aliases": [
+        "frail patients"
+      ],
+      "thresholds_unchanged": true,
+      "reason": "Context-blind expansion, incorrect title, or demonstrated grammatical corruption."
+    }
+  ],
+  "held_new_terms": [
+    "arterial compliance",
+    "baroreflex sensitivity",
+    "nitric oxide",
+    "endothelin-1",
+    "norepinephrine",
+    "epinephrine",
+    "vasopressin",
+    "sustained hypertension",
+    "labile hypertension",
+    "sodium nitroprusside",
+    "nitroglycerin",
+    "fenoldopam",
+    "urapidil",
+    "thrombotic microangiopathy",
+    "flash pulmonary edema",
+    "soluble fms-like tyrosine kinase-1",
+    "placental growth factor",
+    "HYVET trial",
+    "ACCOMPLISH trial",
+    "ASCOT-BPLA trial",
+    "RADIANCE-HTN TRIO trial",
+    "SPYRAL HTN-OFF MED trial",
+    "SPYRAL HTN-ON MED trial",
+    "odds ratio",
+    "number needed to harm",
+    "relative risk reduction"
+  ],
+  "adversarial_cases": [
+    {
+      "input": "The PA pressure was measured.",
+      "original_output": "The PRIMARY ALDOSTERONISM pressure was measured.",
+      "candidate_output": "The PA pressure was measured.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "Review the MRA of the renal arteries.",
+      "original_output": "Review the MINERALOCORTICOID RECEPTOR ANTAGONISTS of the renal arteries.",
+      "candidate_output": "Review the MRA of the renal arteries.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "A RAS mutation was detected.",
+      "original_output": "A RENIN-ANGIOTENSIN SYSTEM mutation was detected.",
+      "candidate_output": "A RAS mutation was detected.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "Follow the MAP on the screen.",
+      "original_output": "Follow the MEAN ARTERIAL PRESSURE on the screen.",
+      "candidate_output": "Follow the MAP on the screen.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "The PAC burden increased.",
+      "original_output": "The PLASMA ALDOSTERONE CONCENTRATION burden increased.",
+      "candidate_output": "The PAC burden increased.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "These frail patients need follow-up.",
+      "original_output": "These frailty need follow-up.",
+      "candidate_output": "These frail patients need follow-up.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 1,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "Serum potassium was 4.2 mg/dL.",
+      "original_output": "Serum potassium was 4.2 mg/dL.",
+      "candidate_output": "Serum potassium was 4.2 mg/dL.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "The dose was 5 mg/day.",
+      "original_output": "The dose was 5 mg/day.",
+      "candidate_output": "The dose was 5 mg/day.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "Both hypokalemia and hyperkalemia were assessed.",
+      "original_output": "Both hypokalemia and hyperkalemia were assessed.",
+      "candidate_output": "Both hypokalemia and hyperkalemia were assessed.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "No pulmonary hypertension was diagnosed.",
+      "original_output": "No pulmonary hypertension was diagnosed.",
+      "candidate_output": "No pulmonary hypertension was diagnosed.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "No preeclampsia or eclampsia was detected.",
+      "original_output": "No preeclampsia or eclampsia was detected.",
+      "candidate_output": "No preeclampsia or eclampsia was detected.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 2,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "Renal denervation is different from renal revascularization.",
+      "original_output": "Renal denervation is different from renal revascularization.",
+      "candidate_output": "Renal denervation is different from renal revascularization.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 2,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "The fetal growth restriction and small for gestational age groups differed.",
+      "original_output": "The fetal growth restriction and small for gestational age groups differed.",
+      "candidate_output": "The fetal growth restriction and small for gestational age groups differed.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 2,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "The hazard ratio was 0.79 with a 95% confidence interval.",
+      "original_output": "The hazard ratio was 0.79 with a 95% confidence interval.",
+      "candidate_output": "The hazard ratio was 0.79 with a 95% confidence interval.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 1,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "The adrenal venous sampling was deferred.",
+      "original_output": "The adrenal venous sampling was deferred.",
+      "candidate_output": "The adrenal venous sampling was deferred.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 1,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "The dose was 5 micrograms per day and not 5 milligrams per day.",
+      "original_output": "The dose was 5 micrograms per day and not 5 milligrams per day.",
+      "candidate_output": "The dose was 5 micrograms per day and not 5 milligrams per day.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "We compared angiotensin I and angiotensin II.",
+      "original_output": "We compared angiotensin I and angiotensin II.",
+      "candidate_output": "We compared angiotensin I and angiotensin II.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 1,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "This patient does not have resistant hypertension.",
+      "original_output": "This patient does not have resistant hypertension.",
+      "candidate_output": "This patient does not have resistant hypertension.",
+      "candidate_lexical_changes": [],
+      "candidate_suggestion_count": 0,
+      "assessment": "unchanged"
+    },
+    {
+      "input": "The BP was recorded after 5 minutes.",
+      "original_output": "The BLOOD PRESSURE was recorded after 5 minutes.",
+      "candidate_output": "The BLOOD PRESSURE was recorded after 5 minutes.",
+      "candidate_lexical_changes": [
+        {
+          "source": "BP",
+          "replacement": "BLOOD PRESSURE",
+          "rule": "exact_alias"
+        }
+      ],
+      "candidate_suggestion_count": 0,
+      "assessment": "inherited_rule_or_unresolved_review_required"
+    }
+  ],
+  "new_only_cases": [
+    {
+      "input": "The PA pressure was measured.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "Review the MRA of the renal arteries.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "A RAS mutation was detected.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "Follow the MAP on the screen.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "The PAC burden increased.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "These frail patients need follow-up.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "Serum potassium was 4.2 mg/dL.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "The dose was 5 mg/day.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "Both hypokalemia and hyperkalemia were assessed.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "No pulmonary hypertension was diagnosed.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "No preeclampsia or eclampsia was detected.",
+      "unchanged": true,
+      "suggestion_count": 2
+    },
+    {
+      "input": "Renal denervation is different from renal revascularization.",
+      "unchanged": true,
+      "suggestion_count": 2
+    },
+    {
+      "input": "The fetal growth restriction and small for gestational age groups differed.",
+      "unchanged": true,
+      "suggestion_count": 2
+    },
+    {
+      "input": "The hazard ratio was 0.79 with a 95% confidence interval.",
+      "unchanged": true,
+      "suggestion_count": 1
+    },
+    {
+      "input": "The adrenal venous sampling was deferred.",
+      "unchanged": true,
+      "suggestion_count": 1
+    },
+    {
+      "input": "The dose was 5 micrograms per day and not 5 milligrams per day.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "We compared angiotensin I and angiotensin II.",
+      "unchanged": true,
+      "suggestion_count": 2
+    },
+    {
+      "input": "This patient does not have resistant hypertension.",
+      "unchanged": true,
+      "suggestion_count": 1
+    },
+    {
+      "input": "The BP was recorded after 5 minutes.",
+      "unchanged": true,
+      "suggestion_count": 0
+    },
+    {
+      "input": "adrenal venous sampleing",
+      "unchanged": true,
+      "suggestion_count": 1
+    },
+    {
+      "input": "micro vascular remodeling",
+      "unchanged": true,
+      "suggestion_count": 2
+    },
+    {
+      "input": "aldosteron synthase inhibitor",
+      "unchanged": true,
+      "suggestion_count": 2
+    }
+  ],
+  "limitations": [
+    "All 657 canonical EN/preferred ES pairs were individually crosschecked; not every alias, abbreviation, inflection or possible clinical use was individually approved. Contextual renderings are explicitly distinguished from literal forms.",
+    "No independent clinician or terminologist certified the dataset.",
+    "No conference-audio benchmark, ASR benefit, latency or live translation-quality evaluation was performed.",
+    "Operational runtime checks are dated historical checks; the original glossary and candidate retain their bytes and baseline policies. These checks do not certify remaining baseline fuzzy substitutions.",
+    "Attestation of a medicine, procedure or historical guideline name does not verify current approval, indications, doses, formulations or exhaustive recommendation/corrigendum currency. Some term evidence is from explicitly labeled indexed extracts, original titles, abstracts or bilingual author keywords."
+  ],
+  "final_artifact_integrity_checks": {
+    "all_json_files_parse": true,
+    "cross_file_counts_match": true,
+    "source_reference_ids_exist": true,
+    "stable_concept_ids_unique": true,
+    "translations_count_consistent": true,
+    "no_new_automatic_corrections_enabled": true,
+    "original_hash_final": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+    "candidate_hash_final": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45",
+    "candidate_unchanged_in_continuation": true,
+    "finalized_at": "2026-10-21T00:18:01-04:00"
+  },
+  "baseline_runtime_checks_performed_at": "2026-10-20T16:36:06-04:00",
+  "baseline_runtime_checks_repeated_in_continuation": false,
+  "baseline_runtime_checks_repeat_reason": "Only research evidence and documentation changed; original glossary and operational candidate remain byte-identical.",
+  "bilingual_verification_checks": {
+    "checked_at_utc": "2026-10-21T04:18:01+00:00",
+    "pass_": true,
+    "unique_canonical_records": 657,
+    "approved_pairs": 657,
+    "pending_pairs": 0,
+    "individual_attestations_checked": 1314,
+    "prior_verified_retained": 600,
+    "newly_verified": 57,
+    "preferred_es_corrections": 2,
+    "baseline_600_concept_and_verification_records_unchanged": true,
+    "method_counts": {
+      "reviewed_terminological_variant_or_contextual_rendering": 252,
+      "literal_pair": 405
+    },
+    "source_ids_urls_languages_and_locator_hashes_match": true,
+    "source_copy_hashes_match_local_files": true,
+    "no_challenge_pages_accepted": true,
+    "no_spanish_english_only_bibliography_hits_accepted": true,
+    "independent_clinician_review": "not_performed"
+  },
+  "baseline_runtime_checks_repeated_in_session3": false,
+  "latest_alias_audit": {
+    "file": "alias_audit_validation.json",
+    "counts": {
+      "concepts_reviewed": 657,
+      "concepts_with_alternatives": 356,
+      "concepts_without_alternatives": 301,
+      "alternative_occurrences": 900,
+      "unique_concept_language_forms": 567,
+      "by_status": {
+        "abbreviation_context_only": 205,
+        "lexical_variant_for_research": 260,
+        "exclude_strict_equivalence": 11,
+        "contextual_equivalence": 47,
+        "collision_requires_explicit_definition": 6,
+        "orthographic_variant": 14,
+        "inflection_preserve_number": 5,
+        "unit_symbol_preserve": 19
+      },
+      "literal_surface_locations": 443,
+      "forms_without_literal_surface_location": 124,
+      "internal_collision_groups": 3,
+      "external_homograph_warnings_checked": 16,
+      "near_form_pairs_reviewed": 60,
+      "expansion_correction_proposals": 6,
+      "other_meanings_metadata_correction_proposals": 22,
+      "reference_labels_protected": 47,
+      "automatic_substitutions_approved": 0,
+      "editorial_audit_pending_concepts": 0,
+      "editorial_audit_pending_occurrences": 0,
+      "reference_identity_collision_cases": 2,
+      "clinical_distinction_pairs": 51
+    },
+    "pass_": true,
+    "original_and_candidate_unchanged": true,
+    "canonical_ledger_unchanged": true
+  },
+  "latest_surface_form_verification": {
+    "file": "surface_verification_124_validation.json",
+    "counts": {
+      "targets_reviewed": 124,
+      "by_decision": {
+        "no_acceptable_literal_attestation": 10,
+        "literal_verified_in_concept_context": 106,
+        "unsafe_equivalence_reconfirmed": 3,
+        "limited_evidence_not_accepted": 3,
+        "ambiguous_reference_restricted": 2
+      },
+      "sources_selected": 113,
+      "priority_domain_sources": 84,
+      "literal_locations_recorded": 114,
+      "accepted_literal_in_concept_context": 106,
+      "literal_verification_still_not_accepted": 13,
+      "automatic_substitution_approvals": 0,
+      "pending_editorial_decisions": 0
+    },
+    "pass_": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "random_terms": 10,
+  "random_pool": 97,
+  "unique_recorded_occurrences": 34,
+  "model_observations": 102,
+  "exact_form_occurrences": {
+    "raw": 80,
+    "uniform_090": 95,
+    "individualized": 97
+  },
+  "synthetic_nonoverlap_checking": {
+    "uniform_090": {
+      "positive_cases": 50,
+      "recovered": 50,
+      "negative_cases": 139,
+      "negative_triggers": 5
+    },
+    "individualized": {
+      "positive_cases": 50,
+      "recovered": 38,
+      "negative_cases": 139,
+      "negative_triggers": 0
+    }
+  },
+  "exact_duplicate_checking_cases": 10,
+  "simulated_individualized_corrections": 22,
+  "correction_review": {
+    "lexical_agreement_improved": 17,
+    "lexical_agreement_worsened": 1,
+    "lexically_neutral": 4
+  },
+  "naturally_recorded_audio_examples": 10,
+  "controlled_intonation_variations_tested": 0,
+  "unchanged_original_and_evidence_hashes": true,
+  "thresholds_retuned_after_speech_checking": false,
+  "live_application_performed": false,
+  "clinical_certification": false,
+  "conclusion": "Exploratory improvement in small and medium, no WER change in turbo; individual context-boundary mistakes remain."
+}

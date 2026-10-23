@@ -1,0 +1,80 @@
+{
+  "previous60_changes": 29,
+  "combined97_changes": 35,
+  "retained_changes": 29,
+  "introduced": [
+    {
+      "model": "small",
+      "sample_id": "cardio_01",
+      "profile": "combined97_individualized",
+      "source": "potassium rich diet",
+      "replacement": "potassium-rich diet",
+      "start": 2591,
+      "end": 2610,
+      "rule": "canonical_form",
+      "confidence": 1.0,
+      "canonical": "potassium-rich diet"
+    },
+    {
+      "model": "medium",
+      "sample_id": "cardio_02",
+      "profile": "combined97_individualized",
+      "source": "anti-hypertensive drug therapy",
+      "replacement": "antihypertensive drug therapy",
+      "start": 10356,
+      "end": 10386,
+      "rule": "glossary_fuzzy",
+      "confidence": 1.0,
+      "canonical": "antihypertensive drug therapy"
+    },
+    {
+      "model": "medium",
+      "sample_id": "cardio_03",
+      "profile": "combined97_individualized",
+      "source": "anti-hypertensive medication",
+      "replacement": "antihypertensive medication",
+      "start": 1635,
+      "end": 1663,
+      "rule": "glossary_fuzzy",
+      "confidence": 1.0,
+      "canonical": "antihypertensive medication"
+    },
+    {
+      "model": "medium",
+      "sample_id": "cardio_03",
+      "profile": "combined97_individualized",
+      "source": "extra cellular volume expansion",
+      "replacement": "extracellular volume expansion",
+      "start": 5423,
+      "end": 5454,
+      "rule": "glossary_fuzzy",
+      "confidence": 1.0,
+      "canonical": "extracellular volume expansion"
+    },
+    {
+      "model": "medium",
+      "sample_id": "cardio_03",
+      "profile": "combined97_individualized",
+      "source": "renin-antiotensin system",
+      "replacement": "renin-angiotensin system",
+      "start": 5503,
+      "end": 5527,
+      "rule": "glossary_fuzzy",
+      "confidence": 0.960795,
+      "canonical": "renin-angiotensin system"
+    },
+    {
+      "model": "large-v3-turbo",
+      "sample_id": "cardio_03",
+      "profile": "combined97_individualized",
+      "source": "renin angiotensin system",
+      "replacement": "renin-angiotensin system",
+      "start": 5494,
+      "end": 5518,
+      "rule": "canonical_form",
+      "confidence": 1.0,
+      "canonical": "renin-angiotensin system"
+    }
+  ],
+  "removed": []
+}

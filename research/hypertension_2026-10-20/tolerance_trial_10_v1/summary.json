@@ -1,0 +1,98 @@
+{
+  "status": "ten_term_exploratory_trial_complete_not_integrated",
+  "seed": 12339650134334788941,
+  "pool_size": 97,
+  "selected_terms": 10,
+  "unique_reference_occurrences": 34,
+  "model_observations": 102,
+  "recorded_audio_examples": 1,
+  "independent_prosody_variations_tested": 0,
+  "new_asr_inference": false,
+  "synthetic_cases_are_not_pronunciations": true,
+  "corpus_aggregate": [
+    {
+      "model": "small",
+      "profile": "raw",
+      "word_errors": 148,
+      "reference_words": 4204,
+      "wer": 0.035204567078972404,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0
+    },
+    {
+      "model": "small",
+      "profile": "uniform_090",
+      "word_errors": 135,
+      "reference_words": 4204,
+      "wer": 0.032112274024738346,
+      "simulated_corrections": 14,
+      "samples_with_changed_cues": 0
+    },
+    {
+      "model": "small",
+      "profile": "individualized",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 10,
+      "samples_with_changed_cues": 0
+    },
+    {
+      "model": "medium",
+      "profile": "raw",
+      "word_errors": 117,
+      "reference_words": 4204,
+      "wer": 0.027830637488106564,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0
+    },
+    {
+      "model": "medium",
+      "profile": "uniform_090",
+      "word_errors": 118,
+      "reference_words": 4204,
+      "wer": 0.028068506184586107,
+      "simulated_corrections": 16,
+      "samples_with_changed_cues": 1
+    },
+    {
+      "model": "medium",
+      "profile": "individualized",
+      "word_errors": 110,
+      "reference_words": 4204,
+      "wer": 0.026165556612749764,
+      "simulated_corrections": 11,
+      "samples_with_changed_cues": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "raw",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 0,
+      "samples_with_changed_cues": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "uniform_090",
+      "word_errors": 143,
+      "reference_words": 4204,
+      "wer": 0.03401522359657469,
+      "simulated_corrections": 7,
+      "samples_with_changed_cues": 1
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "individualized",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_corrections": 1,
+      "samples_with_changed_cues": 0
+    }
+  ],
+  "integration_performed": false,
+  "thresholds_are_not_calibrated_probabilities": true,
+  "limits": "Calibration and checking constructed cases share a generator. Cached English corpus was explored previously; source files 02/03 may be adjacent portions of one lecture. No independent speakers, prosody manipulation, Spanish speech or clinical certification claimed."
+}

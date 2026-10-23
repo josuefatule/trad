@@ -1,0 +1,65 @@
+{
+  "existing_research_record": {
+    "form_id": "UF0173",
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "language": "en",
+    "form": "pharmacologic therapy",
+    "occurrence_ids": [
+      "AF0312",
+      "AF0313"
+    ],
+    "roles": [
+      "aliases_en",
+      "inherited_variants"
+    ],
+    "baseline_safety_status": "lexical_variant_for_research",
+    "bucket": "reviewable_variant",
+    "baseline_editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+    "latest_decision": null,
+    "latest_editorial_note": null,
+    "latest_research_action": null,
+    "specific_restriction": null,
+    "unsupported_variant_restriction": null,
+    "surface_evidence_status": "prior_literal_location_only_not_semantic_approval",
+    "attestation": {
+      "source_id": "S188",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/8034801/",
+      "locator_kind": "text_block_35_lines",
+      "locator_index": 11,
+      "source_copy_sha256": "ddeae07465223061c7e279ea81756374e77698ee17dab39a621b16ded01f8707",
+      "extracted_locator_sha256": "de54d29e36ae01f9cebbcf6d2dad37d025f52f4a5e959a7e00f7abdf18d17f77",
+      "lexical_location_only": true,
+      "semantic_equivalence_verified_by_match": false
+    },
+    "evidence_history": [
+      {
+        "kind": "canonical_pair_context_only",
+        "verification_record_id": "HTN_1e5b2c8f44aa",
+        "file": "bilingual_verification.json",
+        "supports_alias_surface": false
+      },
+      {
+        "kind": "literal_surface_location_only",
+        "source_id": "S188",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/8034801/",
+        "locator_kind": "text_block_35_lines",
+        "locator_index": 11,
+        "source_copy_sha256": "ddeae07465223061c7e279ea81756374e77698ee17dab39a621b16ded01f8707",
+        "extracted_locator_sha256": "de54d29e36ae01f9cebbcf6d2dad37d025f52f4a5e959a7e00f7abdf18d17f77",
+        "lexical_location_only": true,
+        "semantic_equivalence_verified_by_match": false
+      }
+    ],
+    "canonical_verification_record_id": "HTN_1e5b2c8f44aa",
+    "query_review_eligible": true,
+    "strict_equivalence_approved": false,
+    "automatic_substitution_approved": false,
+    "provenance": {
+      "baseline": "alias_review_decisions.json#UF0173",
+      "latest": null
+    }
+  },
+  "interpretation": "Existing research lexical variant; literal attestation is not semantic approval and automatic substitution is explicitly not approved. The corpus already uses this spelling: canonicalization adds lexical errors without demonstrated ASR repair.",
+  "new_web_verification": false,
+  "original_record_changed": false
+}

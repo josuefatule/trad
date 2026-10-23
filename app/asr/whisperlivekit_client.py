@@ -11,8 +11,10 @@ from websockets.asyncio.client import connect
 from websockets.exceptions import ConnectionClosed
 
 from app.captions.transcript_state import TranscriptState
-from app.captions.segment_manager import SegmentManager
 from app.captions.terminology_normalizer import TerminologyNormalizer
+from app.captions.identity_normalizer import IdentityNormalizer
+from app.terminology.rollout import GlossaryConfig, session_normalizer
+from app.terminology.streaming_policy import POLICY_VERSION, session_segment_manager
 from app.translation import TranslationConfig, build_translation_engine
 from app.translation.timing import TranslationTiming
 from app.reliability import ReliabilityConfig, backoff, incident
@@ -43,6 +45,10 @@ async def starting_connection(url, settings, send, decode, run=None, sleep=async
             if config.get("type")!="config" or config.get("useAudioWorklet") is not True:
                 raise ValueError(config.get("error") or "WLK must run with --pcm-input")
             if config.get("mode")!="full":raise ValueError("WLK must use full mode")
+            if getattr(settings, "require_language_ack", False) and (
+                    config.get("session_language_isolation") != 1 or
+                    config.get("session_language") != settings.language):
+                raise ValueError("WLK language isolation not verified; use the TRAD WLK entry point")
             break
         except (OSError,TimeoutError,ConnectionError,ConnectionClosed) as exc:
             if upstream:await upstream.close();upstream=None
@@ -65,8 +71,10 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
     reliability=getattr(settings,"reliability",None) or ReliabilityConfig()
     run=getattr(browser,"run",None)
     state = TranscriptState()
-    manager = SegmentManager(getattr(settings, "segments", None), session_id)
-    normalizer = TerminologyNormalizer.from_config(getattr(settings, "normalizer", None))
+    normalizer = (IdentityNormalizer() if settings.language == "en" else
+                  TerminologyNormalizer.from_config(getattr(settings, "normalizer", None)))
+    normalizer = session_normalizer(getattr(settings,'glossary',None) or GlossaryConfig(mode='off'),settings.language,normalizer)
+    manager = session_segment_manager(normalizer,getattr(settings,'segments',None),session_id)
     send_lock = asyncio.Lock()
 
     async def send_json(message):
@@ -86,6 +94,7 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
     translator = build_translation_engine(
         getattr(settings, "translation", None) or TranslationConfig(),
         session_id, translation_ready)
+    translator.terminology_context=getattr(normalizer,'translation_context',None)
     await translator.start()
     if run:run.translator=translator
     if caption_hub is not None:
@@ -145,6 +154,12 @@ async def relay(browser: WebSocket, settings, session_id: str, caption_hub=None)
             incident("wlk","connected",session_id,attempts=run.counters["wlk_reconnect_attempts"]+1,
                      startup_duration_seconds=round(run.clock()-run.started,3))
         await send_json({"type": "config", "state": "connected", "session_id": session_id,
+                         "direction": getattr(settings, "direction", None),
+                         "normalization_mode": "identity" if settings.language == "en" else "spanish_glossary",
+                         "glossary": {"mode": getattr(normalizer,'mode','off'),
+                                      "correction_patch": getattr(getattr(normalizer,'patch',None),'version',None),
+                                      "policy_version": POLICY_VERSION if getattr(normalizer,'mode','off')!='off' else None,
+                                      "version": getattr(getattr(normalizer,'release',None),'version',None)},
                          "sample_rate": 16000,
                          "capabilities": {
                              "terminology_normalizer": 1,

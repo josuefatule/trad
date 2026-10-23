@@ -15,7 +15,7 @@ assert.match(userError({name:'NotAllowedError'}),/denegado/);
 assert.match(userError('HTTP Error 403: PRIVATE'),/autenticación/);
 assert.doesNotMatch(userError('HTTP Error 403: PRIVATE'),/PRIVATE/);
 
-async function rig({old=false,microphoneError=null}={}) {
+async function rig({old=false,microphoneError=null,bidirectional=false}={}) {
   let now=0;
   const nodes=new Map(),sockets=[],sent=[],requests=[];
   const get=id=>{
@@ -24,12 +24,13 @@ async function rig({old=false,microphoneError=null}={}) {
     return nodes.get(id);
   };
   const status={protocol_version:1,session_id:null,state:'waiting',can_start:true,owns_session:false,
+    can_change_direction:true,session_open:false,
     overlay_connections:0,sequence:0,visual_generation:0,caption_config:{mode:'persistent_rolling',max_lines:3},
     translator:{provider:'deepl',state:'ready'},latency_diagnostics:{backend_samples:[],observers:[],translation_queue_depth:0}};
   const diagnostic={minimum_samples:5,poll_seconds:2,sustained_seconds:6,queue_depth_warning:3,queue_delay_warning_ms:1000,render_warning_ms:500};
   class Socket {
     static OPEN=1;
-    constructor(url,protocols){this.readyState=1;this.bufferedAmount=0;this.protocols=protocols;sockets.push(this);}
+    constructor(url,protocols){this.url=url;this.readyState=1;this.bufferedAmount=0;this.protocols=protocols;sockets.push(this);}
     send(data){sent.push(data);}
     close(){this.readyState=3;this.onclose?.();}
   }
@@ -54,7 +55,7 @@ async function rig({old=false,microphoneError=null}={}) {
     AudioWorkletNode:Worklet,Worker,WebSocket:Socket,
     fetch:async(url,options={})=>{
       requests.push({url,options});
-      if(url.includes('bootstrap'))return {ok:!old,json:async()=>({protocol_version:1,capabilities:{operator_console:1,captions_clear:1},control_token:'private-control',diagnostics_config:diagnostic})};
+      if(url.includes('bootstrap'))return {ok:!old,json:async()=>({protocol_version:1,capabilities:{operator_console:1,captions_clear:1,...(bidirectional?{session_direction:1}:{})},default_direction:'en-es',control_token:'private-control',diagnostics_config:diagnostic})};
       if(url.includes('/clear')){status.visual_generation++;return {ok:true,json:async()=>({protocol_version:1,applied:true})};}
       return {ok:true,json:async()=>structuredClone(status)};
     },
@@ -110,5 +111,39 @@ module.exports=(async()=>{
   assert.match(denied.get('error').textContent,/denegado/);assert.equal(denied.get('start').disabled,false);
   const incompatible=await rig();await incompatible.get('start').onclick();
   await incompatible.send({protocol_version:0,type:'config'});assert.match(incompatible.get('error').textContent,/incompatibles/);
-  console.log('PASS: operator state machine, auth, CLEAR/history, EOF, metrics, sustained alerts, old backend and microphone errors');
+  const b=await rig({bidirectional:true});
+  assert.equal(b.get('direction').value,'en-es');assert.equal(b.get('direction').disabled,false);
+  assert.equal(b.get('translation-label').textContent,'ESPAÑOL');
+  await b.get('start').onclick();assert.match(b.sockets[0].url,/direction=en-es$/);
+  assert.equal(b.get('direction').disabled,true);
+  b.get('direction').value='es-en';b.get('direction').onchange();assert.equal(b.get('direction').value,'en-es');
+  await b.send({type:'config',capabilities:{...capabilities,session_direction:1},direction:{id:'en-es'},translation_status:{state:'ready',provider:'test'}});
+  Object.assign(b.status,{state:'live',can_start:false,can_change_direction:false,session_open:true,direction:{id:'en-es'},session_id:'session'});
+  await b.context.OperatorUI.refresh();assert.equal(b.get('direction').disabled,true);
+  await b.get('stop').onclick();assert.equal(b.get('direction').disabled,true);
+  await b.send({type:'status',state:'stopped'});await b.sockets[0].onclose();
+  Object.assign(b.status,{state:'stopped',session_open:false,can_start:false,can_change_direction:false,requires_stop_acknowledgement:true});
+  await b.context.OperatorUI.refresh();assert.equal(b.get('direction').disabled,true);
+  Object.assign(b.status,{can_start:true,can_change_direction:true,requires_stop_acknowledgement:false});
+  await b.context.OperatorUI.refresh();
+  b.get('direction').value='es-en';b.get('direction').onchange();
+  assert.equal(b.get('translation-label').textContent,'ENGLISH');assert.equal(b.get('normalized-label').textContent,'NORMALIZED ES');
+  await b.get('start').onclick();assert.match(b.sockets[1].url,/direction=es-en$/);
+  assert.equal(b.get('english').textContent,'');
+  const mismatch=await rig({bidirectional:true});await mismatch.get('start').onclick();
+  await mismatch.send({type:'config',capabilities:{...capabilities,session_direction:1},direction:{id:'es-en'}});
+  assert.match(mismatch.get('error').textContent,/incompatibles/);
+  const recovered=await rig({bidirectional:true});
+  Object.assign(recovered.status,{state:'error',can_start:true,session_open:false,session_id:'failed',
+    direction:{id:'es-en'},requires_stop_acknowledgement:false,reliability:{outcome:'incomplete',reason:'stop_timeout'}});
+  recovered.context.OperatorUI.directionInitialized=false;
+  await recovered.context.OperatorUI.refresh();
+  assert.equal(recovered.get('session-state').textContent,'STOPPED');
+  assert.equal(recovered.get('start').disabled,false);
+  assert.equal(recovered.get('direction').value,'es-en');
+  assert.match(recovered.get('operational-alert').textContent,/cierre reconocido/);
+  recovered.get('direction').value='en-es';recovered.get('direction').onchange();
+  await recovered.context.OperatorUI.refresh();assert.equal(recovered.get('direction').value,'en-es');
+  assert.equal(recovered.status.reliability.outcome,'incomplete');
+  console.log('PASS: operator state machine, auth, CLEAR/history, EOF, metrics, sustained alerts, old backend, microphone errors and closed-session recovery');
 })();

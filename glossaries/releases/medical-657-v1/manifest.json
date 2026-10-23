@@ -1,0 +1,28 @@
+{
+  "version": "medical-657-v1",
+  "policy": "soft_testing",
+  "concept_count": 657,
+  "evaluated_english_concepts": 97,
+  "active_english_fuzzy_terms": 80,
+  "sources": [
+    {
+      "path": "research/hypertension_2026-10-20/integration_candidate/manifest.json",
+      "sha256": "a475080f469c8efbc18beaf0067b1d3694f888f6051fb482cbb5bacfc762703a"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/remaining_terms_trial_37_v1/combined_thresholds.json",
+      "sha256": "2b16bb7e07e353a1434326516fcf4adc4fa770e6b29745e1857735d43895ec1b"
+    },
+    {
+      "path": "research/hypertension_2026-10-20/polarity_flexible_trial_97_v1/visible_root_refinement_v2/pressure_refined.py",
+      "sha256": "05c2302133b756734b26b3bc4fb56e6e3a8b58f91f7d995853ee7cc245c797a6"
+    }
+  ],
+  "files": [
+    {
+      "name": "bundle.json",
+      "sha256": "6957e4b9cf9c5c51a747e7e302c296bcc320d49538982c7eec79a49509ed0548",
+      "bytes": 340300
+    }
+  ]
+}

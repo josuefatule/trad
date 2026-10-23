@@ -1,0 +1,149 @@
+{
+  "status": "review_complete_research_only",
+  "model_comparison": [
+    {
+      "model": "small",
+      "profiles": {
+        "previous97": {
+          "word_errors": 131,
+          "wer": 0.03116079923882017,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_same": {
+          "word_errors": 131,
+          "wer": 0.03116079923882017,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_cap092": {
+          "word_errors": 124,
+          "wer": 0.029495718363463368,
+          "delta_vs_previous97": -7
+        },
+        "direction_guard_cap090": {
+          "word_errors": 124,
+          "wer": 0.029495718363463368,
+          "delta_vs_previous97": -7
+        },
+        "direction_guard_cap088": {
+          "word_errors": 125,
+          "wer": 0.02973358705994291,
+          "delta_vs_previous97": -6
+        }
+      }
+    },
+    {
+      "model": "medium",
+      "profiles": {
+        "previous97": {
+          "word_errors": 100,
+          "wer": 0.023786869647954328,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_same": {
+          "word_errors": 100,
+          "wer": 0.023786869647954328,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_cap092": {
+          "word_errors": 100,
+          "wer": 0.023786869647954328,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_cap090": {
+          "word_errors": 100,
+          "wer": 0.023786869647954328,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_cap088": {
+          "word_errors": 101,
+          "wer": 0.024024738344433874,
+          "delta_vs_previous97": 1
+        }
+      }
+    },
+    {
+      "model": "large-v3-turbo",
+      "profiles": {
+        "previous97": {
+          "word_errors": 131,
+          "wer": 0.03116079923882017,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_same": {
+          "word_errors": 131,
+          "wer": 0.03116079923882017,
+          "delta_vs_previous97": 0
+        },
+        "direction_guard_cap092": {
+          "word_errors": 130,
+          "wer": 0.03092293054234063,
+          "delta_vs_previous97": -1
+        },
+        "direction_guard_cap090": {
+          "word_errors": 130,
+          "wer": 0.03092293054234063,
+          "delta_vs_previous97": -1
+        },
+        "direction_guard_cap088": {
+          "word_errors": 131,
+          "wer": 0.03116079923882017,
+          "delta_vs_previous97": 0
+        }
+      }
+    }
+  ],
+  "negative_rewrite_eligibility": [
+    {
+      "profile": "direction_guard_same",
+      "negative_changes": {
+        "pressure": 0,
+        "constructed": 0,
+        "context": 0,
+        "regression": 0
+      },
+      "no_negative_rewrites_in_tested_cases": true
+    },
+    {
+      "profile": "direction_guard_cap092",
+      "negative_changes": {
+        "pressure": 0,
+        "constructed": 3,
+        "context": 0,
+        "regression": 0
+      },
+      "no_negative_rewrites_in_tested_cases": false
+    },
+    {
+      "profile": "direction_guard_cap090",
+      "negative_changes": {
+        "pressure": 0,
+        "constructed": 9,
+        "context": 0,
+        "regression": 0
+      },
+      "no_negative_rewrites_in_tested_cases": false
+    },
+    {
+      "profile": "direction_guard_cap088",
+      "negative_changes": {
+        "pressure": 0,
+        "constructed": 13,
+        "context": 0,
+        "regression": 0
+      },
+      "no_negative_rewrites_in_tested_cases": false
+    }
+  ],
+  "pressure_specific_control_fixed": true,
+  "flexible_caps": [
+    0.92,
+    0.9,
+    0.88
+  ],
+  "all_flexible_caps_have_other_negative_changes": true,
+  "recommendation": "Retain the directional guard as laboratory work. Do not approve a global tolerance reduction: every flexible cap has non-pressure negative rewrites. Per-term limits and additional protections need a separate experiment.",
+  "refinement_and_first_attempt_preserved": true,
+  "independent_holdout": false,
+  "clinical_adjudication": false,
+  "integration_performed": false
+}

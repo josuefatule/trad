@@ -8,6 +8,7 @@ import tempfile
 import threading
 import time
 import unittest
+from urllib.parse import parse_qs, urlsplit
 from urllib.request import urlopen
 
 import uvicorn
@@ -24,13 +25,14 @@ class RecoveryBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_chrome_popup_audio_survives_console_reload_then_owner_stop(self):
         connections=[];audio_frames=[];eof=[]
         async def wlk(ws):
-            connections.append(1)
-            await ws.send('{"type":"config","useAudioWorklet":true,"mode":"full"}')
+            lang = parse_qs(urlsplit(ws.request.path).query)["language"][0]
+            connections.append(lang)
+            await ws.send(json.dumps({"type":"config","useAudioWorklet":True,"mode":"full", "session_language":lang,"session_language_isolation":1}))
             async for data in ws:
                 if not data:
                     eof.append(1);await ws.send('{"type":"ready_to_stop"}');return
                 audio_frames.append(len(data))
-                await ws.send('{"lines":[{"speaker":1,"text":"Texto de prueba."}],"buffer_transcription":""}')
+                await ws.send(json.dumps({"lines":[{"speaker":1,"text":"No pulmonary edema." if lang=="en" else "Sin edema pulmonar."}],"buffer_transcription":""}))
         async with serve(wlk,"127.0.0.1",0) as upstream:
             settings=Settings(log_dir="logs/tests",translation=TranslationConfig(),wlk_url=f"ws://127.0.0.1:{upstream.sockets[0].getsockname()[1]}/asr")
             app=create_app(settings)
@@ -71,9 +73,12 @@ class RecoveryBrowserTests(unittest.IsolatedAsyncioTestCase):
                                     if evaluate(expression):return
                                     time.sleep(.1)
                                 self.fail("Browser condition timed out: "+expression+"; UI: "+str(evaluate("document.getElementById('error').textContent")))
-                            until("globalThis.OperatorUI?.authorized===true")
+                            until("globalThis.OperatorUI?.authorized===true && !document.getElementById('start').disabled && !document.getElementById('direction').disabled")
+                            self.assertEqual(evaluate("document.getElementById('direction').value"), "en-es")
                             evaluate("document.getElementById('start').click()",True)
                             until("globalThis.OperatorUI?.snapshot?.state==='live'")
+                            self.assertTrue(evaluate("document.getElementById('direction').disabled"))
+                            self.assertEqual(evaluate("document.getElementById('translation-label').textContent"), "ESPAÑOL")
                             end=time.monotonic()+10
                             while len(audio_frames)<3 and time.monotonic()<end:time.sleep(.1)
                             self.assertGreaterEqual(len(audio_frames),3,"Popup must really produce fake-media PCM, no autoplay bypass")
@@ -86,6 +91,7 @@ class RecoveryBrowserTests(unittest.IsolatedAsyncioTestCase):
                             until("document.getElementById('stop').disabled===false")
                             self.assertEqual(app.state.operator_authority.recoveries,1)
                             self.assertEqual(app.state.caption_hub.session_id,sid)
+                            self.assertEqual(evaluate("document.getElementById('direction').value"), "en-es")
                             end=time.monotonic()+5
                             while len(audio_frames)<=before and time.monotonic()<end:time.sleep(.1)
                             self.assertGreater(len(audio_frames),before);self.assertEqual(len(connections),1)
@@ -93,6 +99,18 @@ class RecoveryBrowserTests(unittest.IsolatedAsyncioTestCase):
                             until("globalThis.OperatorUI?.snapshot?.state==='stopped'")
                             self.assertEqual(eof,[1]);self.assertEqual(app.state.operational_run.outcome,"complete")
                             self.assertEqual(app.state.operational_run.translator.queue_depth,0)
+                            until("OperatorUI.snapshot?.can_change_direction===true")
+                            evaluate("document.getElementById('direction').value='es-en'; document.getElementById('direction').onchange()")
+                            self.assertEqual(evaluate("document.getElementById('translation-label').textContent"), "ENGLISH")
+                            evaluate("document.getElementById('start').click()",True)
+                            until("OperatorUI.snapshot?.state==='live' && OperatorUI.snapshot?.session_id!=="+json.dumps(sid))
+                            self.assertEqual(connections,["en","es"])
+                            self.assertTrue(evaluate("document.getElementById('direction').disabled"))
+                            self.assertEqual(evaluate("document.getElementById('direction').value"), "es-en")
+                            evaluate("document.getElementById('stop').click()",True)
+                            until("OperatorUI.snapshot?.state==='stopped'")
+                            self.assertEqual(len(eof),2)
+                            self.assertEqual(app.state.operational_run.outcome,"complete")
                     finally:
                         process.terminate()
                         try:process.wait(timeout=5)

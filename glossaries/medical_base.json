@@ -101,6 +101,14 @@
     {
       "canonical": "microalbuminuria",
       "auto_apply": "fuzzy"
-    }
+    },
+    {
+      "canonical": "SIAC",
+      "variants": ["S I A C", "si ac", "CIA"],
+      "aliases": ["Sociedad Interamericana de Cardiología"],
+      "auto_apply": "exact"
+    },
+    {"canonical": "angiotomografía", "variants": ["angio tomografía", "angiotomografia", "angio tomography"], "auto_apply": "fuzzy"},
+    {"canonical": "aterosclerosis", "variants": ["atero sclerosis", "atero esclerosis"], "auto_apply": "fuzzy"}
   ]
 }

@@ -1,0 +1,147 @@
+TOLERANCIA DE LOS 37 TÉRMINOS RESTANTES CON LAS REGLAS CORREGIDAS
+Investigación local. Conjunto acumulado de 97 conceptos con audio. Sin integración en TRAD.
+
+RESULTADO PRINCIPAL
+La ampliación mejora 1 modelos y deja 2 sin cambio frente a los sesenta corregidos, sin empeorar el WER de ninguno.
+Los 37 términos nuevos se compararon por separado y junto con los 60 anteriores; no se modificaron las reglas corregidas ni los umbrales de los 60.
+Se eligieron 33 tolerancias candidatas; 4 términos quedaron con reconocimiento exacto únicamente.
+
+ALCANCE CONFIRMADO Y SELECCIÓN
+El usuario confirmó los 37 restantes del conjunto con audio, no los 597 restantes del glosario completo.
+Se tomó el complemento íntegro del conjunto original de 97, excluyendo los 60 ya ensayados. No hubo un nuevo submuestreo ni selección por errores ASR.
+Solo se aleatorizó el orden, con semilla reproducible 10672737108816479846; no se repitió el orden por los resultados.
+Esto completa el conjunto original con audio. No cubre los 657 conceptos ni constituye una muestra uniforme de todo el glosario.
+
+REGLAS Y AJUSTE DE TOLERANCIAS
+Se reutilizó sin cambios BoundaryNormalizer de boundary_refinement_v2 y su cadena de reglas de laboratorio. Sus huellas y las del código de aplicación usado para lectura están congeladas en protocol.json.
+Se conserva literalmente el tramo de variantes registradas para investigación; se bloquean cambios entre singular y plural, pérdida de conectores/negación/cifras/unidades y límites de identificadores.
+La frase larga solo desplaza coincidencias exactas que son subexpresiones propias y completamente contenidas; se mantiene la protección extendida del identificador.
+El conjunto completo conserva 24 registros de variantes, 9 correspondientes a los 37 nuevos. Se aplica la misma política de preservación; no se aprueban equivalencias ni sustituciones.
+Para cada término nuevo se probaron 0.86, 0.88, 0.90, 0.92, 0.94, 0.96, 0.98, 0.99 y 1.00 con erratas construidas y negativos de conceptos cercanos, unidades, variantes y número gramatical.
+Criterio congelado: máxima recuperación con cero correcciones fuzzy en negativos de calibración; desempate al umbral mayor. Si no hay recuperación útil, fuzzy queda deshabilitado.
+Los umbrales son scores heurísticos, no probabilidades ni una aprobación de seguridad. Se congelaron antes de ver los resultados de checking y voz; no se retocaron después.
+Se eliminaron duplicados exactos entre calibración y checking antes de calibrar; se conservan tanto los casos originales como el listado excluido.
+Las particiones siguen compartiendo recetas de generación. No se presentan como ejemplos independientes de habla o pronunciación.
+
+COMPARACIÓN PRINCIPAL EN LAS TRANSCRIPCIONES COMPLETAS
+WER = errores de palabras / 4.204 palabras de referencia por modelo; menor es mejor. Referencias provisionales, sin adjudicación clínica.
+Modelo | Sesenta con reglas corregidas | Noventa y siete con tolerancias individuales | Diferencia de errores
+small | 3.12% (131) | 3.12% (131) | +0
+medium | 2.55% (107) | 2.38% (100) | -7
+large-v3-turbo | 3.12% (131) | 3.12% (131) | +0
+
+COMPARACIÓN COMPLETA: TÉRMINOS NUEVOS POR SEPARADO Y ACUMULADOS
+Las cifras son errores de palabras en el mismo corpus completo; no son errores exclusivos dentro de los conceptos.
+Modelo | Crudo | 60 corregidos | 37 uniforme 0.90 | 37 individuales | 97 con nuevos a 0.90 | 97 individuales
+small | 148 | 131 | 144 | 148 | 128 | 131
+medium | 117 | 107 | 109 | 109 | 100 | 100
+large-v3-turbo | 132 | 131 | 130 | 131 | 130 | 131
+El uniforme obtiene un WER menor en small y turbo que los umbrales individuales, pero no satisface los controles negativos predefinidos: no se escoge solo por la métrica global.
+En small, el acumulado uniforme llega a 128 errores frente a 131 individuales; en turbo, a 130 frente a 131. Medium queda en 100 con ambos.
+Los umbrales individuales no recuperan antihypertension medication (score 0.932051) ni aldous drone production (0.935589) en los casos que requieren superar sus puntos congelados. Se conserva esa pérdida de recuperación.
+El perfil de 60 se reprodujo desde las mismas hipótesis crudas y coincide con sus salidas anteriores byte por byte en texto. Los nuevos perfiles no encadenan correcciones sobre una salida ya corregida.
+
+CHECKING CONSTRUIDO DE CADA TÉRMINO NUEVO
+Perfil | Positivos recuperados | Negativos que activan fuzzy | Negativos modificados
+uniform090 | 165/184 | 3/517 | 3/517
+individualized | 163/184 | 0/517 | 0/517
+El ajuste individual sacrifica dos recuperaciones frente al uniforme, evitando sus tres modificaciones negativas. No es una estimación de tasa de error clínica.
+
+Los tres negativos alterados por el uniforme fueron: primary hypotension -> primary hypertension; orthostatic hypertension -> orthostatic hypotension; secondary hypotension -> secondary hypertension.
+El control estructural heredado no bloquea esos contrastes por sí mismo; la tolerancia individual elegida los rechaza en estos ejemplos. La política permanece congelada y el hueco se documenta, sin modificarla después del checking.
+Por ello los umbrales candidatos no equivalen a una protección semántica general: hacen falta más contextos independientes antes de proponer uso fuera del laboratorio.
+
+CHECKING CONSTRUIDO CON LOS 97 ACTIVOS JUNTOS
+Grupo | Positivos recuperados | Negativos modificados
+previous60 | 206/300 | 0/806
+new37 | 163/184 | 0/517
+Casos construidos previamente correctos de los 60 que se pierden al añadir los 37: 0.
+
+CONTEXTO, PALABRAS VECINAS Y LÍMITES
+Perfil / Grupo | Positivos correctos | Negativos modificados
+new37_uniform090 / new37 | 231/259 | 0/185
+new37_individualized / new37 | 231/259 | 0/185
+combined97_individualized / new37 | 231/259 | 0/185
+combined97_individualized / previous60 | 332/423 | 0/300
+Regresiones de contexto en los 60 anteriores: 0.
+Controles de variantes, plurales, solapamientos, by y límites ya existentes: 153/153 pasan.
+Los 28 positivos de contexto nuevos sin recuperación corresponden a los cuatro términos mantenidos en exacto; no se relajaron sus restricciones para aumentar el resultado.
+La comparación conserva los controles de negación/cifras/conectores y los negativos que no deben reescribirse; se registran por caso y sin ocultar fallos.
+
+AUDITORÍA DEL EFECTO INCREMENTAL
+Cambios con 60 términos: 29; con 97: 35. Nuevos cambios: 6; cambios anteriores retirados: 0.
+Cada cambio se revisó frente a la referencia provisional: efecto aislado, efecto al retirarlo de su perfil, contexto de referencia y posición en la hipótesis original. Ver correction_review.json y change_comparison.json.
+Valoraciones de los cambios introducidos por la ampliación: {'lexically_neutral': 2, 'lexical_agreement_improved': 4}.
+Los deltas léxicos no demuestran beneficio o daño clínico. Tampoco certifican que una referencia provisional no contenga una errata.
+- small/cardio_01: potassium rich diet -> potassium-rich diet; score 1.0; delta léxico marginal +0.
+- medium/cardio_02: anti-hypertensive drug therapy -> antihypertensive drug therapy; score 1.0; delta léxico marginal -2.
+- medium/cardio_03: anti-hypertensive medication -> antihypertensive medication; score 1.0; delta léxico marginal -2.
+- medium/cardio_03: extra cellular volume expansion -> extracellular volume expansion; score 1.0; delta léxico marginal -2.
+- medium/cardio_03: renin-antiotensin system -> renin-angiotensin system; score 0.960795; delta léxico marginal -1.
+- large-v3-turbo/cardio_03: renin angiotensin system -> renin-angiotensin system; score 1.0; delta léxico marginal +0.
+Desacuerdos con la referencia que permanecen en el perfil acumulado: 1.
+- medium/cardio_03: primary allosteronism -> primary aldosteronism; contexto de referencia: loaded individual above which is primary allosteronism is 12 micrograms per deciliter. Pendiente de escucha/adjudicación independiente.
+
+LOS 37 TÉRMINOS Y LAS TOLERANCIAS CONGELADAS
+Exacto significa que no se encontró recuperación fuzzy útil compatible con los controles; no equivale a validación de uso en producción.
+Coincidencias: forma literal de referencia inglesa, antes (crudo) -> después (97), sobre tres modelos correlacionados. Los términos pueden solaparse y compartir palabras.
+N.º | Inglés / Español | Umbral | Coincidencias antes -> después / observaciones
+01 | network meta-analysis / metaanálisis en red | 0.94 | 3 -> 3 / 3
+02 | metabolic alkalosis / alcalosis metabólica | 0.94 | 3 -> 3 / 3
+03 | extracellular volume expansion / expansión del volumen extracelular | 0.96 | 2 -> 3 / 3
+04 | atherosclerotic cardiovascular disease / enfermedad cardiovascular aterosclerótica | 0.96 | 6 -> 6 / 6
+05 | primordial prevention / prevención primordial | 0.94 | 9 -> 9 / 9
+06 | primary hypertension / hipertensión primaria | 0.94 | 12 -> 12 / 12
+07 | kidney function / función renal | 0.92 | 3 -> 3 / 3
+08 | young adults / adultos jóvenes | 0.92 | 12 -> 12 / 12
+09 | millimeters of mercury / milímetros de mercurio | Exacto | 5 -> 5 / 6
+10 | orthostatic hypotension / hipotensión ortostática | 0.96 | 2 -> 2 / 3
+11 | recombinant human erythropoietin / eritropoyetina humana recombinante | 0.96 | 3 -> 3 / 3
+12 | antihypertensive therapy / tratamiento antihipertensivo | 0.96 | 3 -> 3 / 3
+13 | stroke / accidente cerebrovascular | Exacto | 3 -> 3 / 3
+14 | urinary sodium excretion / excreción urinaria de sodio | 0.96 | 2 -> 2 / 3
+15 | secondary hypertension / hipertensión secundaria | 0.94 | 9 -> 9 / 9
+16 | vascular dementia / demencia vascular | 0.94 | 3 -> 3 / 3
+17 | beta blockers / betabloqueadores | 0.92 | 3 -> 3 / 3
+18 | antihypertensive medication / medicamento antihipertensivo | 0.96 | 0 -> 1 / 3
+19 | normal blood pressure / presión arterial normal | 0.94 | 6 -> 6 / 6
+20 | pharmacologic management / manejo farmacológico | 0.96 | 3 -> 3 / 3
+21 | renin-angiotensin system / sistema renina-angiotensina | 0.96 | 1 -> 2 / 3
+22 | American College of Cardiology / Colegio Americano de Cardiología | 0.96 | 3 -> 3 / 3
+23 | coronary artery calcium / calcio coronario | 0.94 | 3 -> 3 / 3
+24 | antihypertensive drug therapy / tratamiento farmacológico antihipertensivo | 0.96 | 17 -> 18 / 18
+25 | clinical implications / implicaciones clínicas | 0.94 | 3 -> 3 / 3
+26 | urinary potassium excretion / excreción urinaria de potasio | 0.96 | 3 -> 3 / 3
+27 | dietary sodium restriction / restricción de sodio en la alimentación | 0.96 | 3 -> 3 / 3
+28 | potassium-rich diet / dieta rica en potasio | 0.94 | 3 -> 3 / 3
+29 | non-pharmacological therapy / tratamiento no farmacológico | 0.96 | 9 -> 9 / 9
+30 | dietary potassium / potasio de la dieta | 0.94 | 3 -> 3 / 3
+31 | lifestyle modification / modificación del estilo de vida | 0.94 | 3 -> 3 / 3
+32 | plasma renin activity / actividad de renina plasmática | 0.94 | 3 -> 3 / 3
+33 | milligrams per day / miligramos por día | Exacto | 3 -> 3 / 3
+34 | antidepressants / antidepresivos | Exacto | 3 -> 3 / 3
+35 | potassium intake / ingesta de potasio | 0.94 | 6 -> 6 / 6
+36 | aldosterone production / producción de aldosterona | 0.94 | 0 -> 2 / 3
+37 | all-cause mortality / mortalidad por todas las causas | 0.94 | 6 -> 6 / 6
+Resumen de coincidencias por concepto nuevo: {'improved': 5, 'unchanged': 32, 'worsened': 0}.
+Resumen de cambios en coincidencias de los 60 anteriores al activar los 97: {'improved': 0, 'unchanged': 60, 'worsened': 0}.
+term_results.json conserva los 97 conceptos y los seis perfiles completos, con los umbrales originales de los 60.
+
+LÍMITES Y CONSERVACIÓN
+Se reutilizaron tres archivos de audio natural y nueve salidas ASR ya calculadas: 59 apariciones únicas de los nuevos conceptos y 177 observaciones correlacionadas; acumulado de 97: 310 apariciones.
+Los archivos 02/03 podrían ser partes de una misma charla. La selección dependió de su presencia en las referencias inglesas, no de diversidad de hablantes.
+No se grabaron nuevas voces, no se ejecutó ASR nuevo y no se variaron entonación, acento o velocidad. Las erratas construidas son texto, no pronunciaciones verificadas.
+El corpus y las recetas ya habían sido explorados. Estos resultados son de laboratorio, no validación independiente o clínica, y no se extrapolan a los 657 conceptos ni al español o a TRAD en directo.
+Pasaron 12 verificaciones de reproducción, criterios de tolerancia, conservación, trazabilidad, cobertura y propiedades de las salidas. Las pruebas verifican la integridad del experimento; no fuerzan un resultado favorable.
+Se comprobaron 1119 archivos de la instantánea, 908 protegidos estrictamente. Observaciones ajenas a esta tarea: 0.
+El glosario original, las evidencias, los ensayos anteriores, el paquete depurado, los audios y referencias, las transcripciones guardadas y las bibliotecas utilizadas mantienen sus huellas.
+Solo se escribieron archivos nuevos en remaining_terms_trial_37_v1. No se modificó ningún ensayo anterior ni el estado de aprobación del paquete.
+No se conectó ni integró nada en TRAD.
+
+ARCHIVOS PARA REVISAR
+selection.json, protocol.json y threshold_freeze.json: alcance, código y decisiones congeladas.
+threshold_decisions.json: justificación de cada tolerancia; combined_thresholds.json conserva las 60 decisiones previas intactas.
+speech_comparison.json: seis perfiles, transcripciones simuladas, métricas y auditorías; term_results.json: los 97 conceptos.
+correction_review.json y change_comparison.json: cambios nuevos, retirados, efectos y contexto provisional.
+context_comparison.json y combined_checking.json: resultados por caso e interferencias sobre los 60 previos.
+final_results.json: resumen; preservation_final.json y manifest.json: conservación y huellas.

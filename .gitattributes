@@ -2,3 +2,8 @@
 glossaries/*.json text eol=lf
 benchmarks/m8_*.json text eol=lf
 requirements-release.lock text eol=lf
+
+# Keep frozen research/releases and backups byte-identical to their manifests.
+research/** -text
+glossaries/releases/** -text
+backups/** -text

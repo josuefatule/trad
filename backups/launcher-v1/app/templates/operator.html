@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Captions — Operator Console</title><link rel="stylesheet" href="/static/operator.css"></head>
+<body><main>
+<header class="console-header">
+<div class="brand"><span class="eyebrow">LIVE CAPTIONS / OPERATOR CONSOLE v1</span>
+<strong id="session-state" data-state="IDLE" role="status">IDLE</strong><span id="elapsed">00:00</span></div>
+<div class="status-bar" aria-label="System status">
+<div><span>WHISPERLIVEKIT</span><strong id="connection">Not checked</strong></div>
+<div><span>TRANSLATOR</span><strong id="translator">Not checked</strong></div>
+<div><span>OVERLAY</span><strong id="overlay-clients">Overlay clients: —</strong></div>
+<div><span>MICROPHONE</span><strong id="selected-microphone">Predeterminado</strong></div>
+</div>
+<section class="session-controls" aria-label="Session controls">
+<div class="device-controls direction-controls"><label for="direction">Dirección</label>
+<select id="direction" disabled><option value="en-es">English → Español</option><option value="es-en">Español → English</option></select>
+<span id="direction-info" role="status">Comprobando idiomas de sesión</span>
+<button id="acknowledge-stop" disabled>Reconocer cierre incompleto</button></div>
+<div class="device-controls"><label for="glossary-mode">Glosario médico</label>
+<select id="glossary-mode" disabled><option value="soft">Activo para pruebas</option>
+<option value="shadow">Observación</option><option value="off">Desactivado / volver al anterior</option></select>
+<span id="glossary-info" role="status">Comprobando glosario</span></div>
+<div class="device-controls"><label for="microphone">Micrófono</label>
+<select id="microphone"><option value="">Predeterminado</option></select>
+<button id="refresh">Permitir / actualizar</button></div>
+<div class="action-controls"><button id="start" class="primary" disabled>START SESSION</button>
+<button id="stop" disabled>STOP SESSION</button><button id="clear" disabled>CLEAR CAPTIONS</button></div>
+</section>
+<p id="capture">Micrófono inactivo</p><p id="error" role="alert"></p>
+<p id="latency-alert" role="status"></p><p id="control-notice" role="status"></p>
+<p id="operational-alert" role="alert"></p>
+</header>
+<section class="live-monitoring" aria-label="Live monitoring">
+<article class="english-panel panel"><div class="panel-heading"><h1 id="translation-label">ESPAÑOL</h1><span>Translation output</span></div>
+<div id="english" class="text-flow" aria-live="polite" tabindex="0"></div></article>
+<article class="normalized-panel panel"><div class="panel-heading"><h2 id="normalized-label">NORMALIZED EN</h2><span id="normalization-info">English: identity (no glossary)</span></div>
+<div id="normalized" class="text-flow" tabindex="0"></div></article>
+<article class="raw-panel panel"><div class="panel-heading"><h2 id="raw-label">RAW EN / ASR CONFIRMED</h2><span>ASR may revise its last line</span></div>
+<div id="confirmed" class="text-flow" tabindex="0"></div></article>
+</section>
+<details class="diagnostics"><summary>Diagnostics &amp; segment audit</summary>
+<details><summary>Reliability / recovery</summary><pre id="reliability-diagnostics">Not measured</pre>
+<p id="recovery-path"></p><label for="recovery-code">Código administrativo local</label>
+<input id="recovery-code" type="password" autocomplete="off">
+<button id="recover-owner" disabled>RECOVER OWNER</button><button id="rearm-translator" disabled>REARM TRANSLATOR</button>
+<p>Rearmar no recupera segmentos fallidos ni reenvía solicitudes anteriores. Mantén abierta la ventana CAPTURE.</p></details>
+<section class="diagnostic-grid">
+<article><h2>OVERLAY / PUBLICATION</h2><p id="overlay-info">Not measured</p><p id="last-caption">Not measured</p>
+<p id="overlay-availability">Overlay page: not checked</p>
+<p><a href="/overlay" target="_blank" rel="noopener">Open overlay</a> · <a href="/overlay/preview" target="_blank" rel="noopener">Open preview</a></p>
+<p>Overlay clients pueden ser pestañas de navegador. Verifica la fuente real en OBS.</p></article>
+<article><h2>LATENCY / QUEUES</h2><pre id="overlay-diagnostics">Not measured</pre></article>
+</section>
+<details><summary>CORRECTIONS / SUGGESTIONS</summary><pre id="corrections"></pre></details>
+<details><summary>READY RAW · segment IDs / timestamps</summary><pre id="ready"></pre></details>
+<details><summary>NORMALIZED SEGMENTS</summary><pre id="normalized-segments"></pre></details>
+<details><summary id="translation-segments-label">ESPAÑOL SEGMENTS · sequence / segment ID</summary><pre id="english-segments"></pre><pre id="translation-status">Not measured</pre></details>
+<details><summary>PARTIAL / PENDING / ASR snapshots</summary>
+<h2>PARTIAL</h2><pre id="partial"></pre><h2>SEGMENT PENDING</h2><pre id="pending"></pre><pre id="segments"></pre></details>
+<details><summary>DEBUG (latest 100 events)</summary><pre id="debug"></pre></details>
+<p>Stage timings start at ASR first appearance. Browser paint estimates do not measure physical speech → OBS output.</p>
+</details>
+</main><script src="/static/operator_console.js"></script><script src="/static/operator.js"></script><script src="/static/glossary_control.js"></script><script src="/static/overlay_diagnostics.js"></script></body></html>

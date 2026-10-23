@@ -1,0 +1,277 @@
+# English canonical | attested English alternatives | attested Spanish alternatives
+pulse pressure||presión del pulso
+office blood pressure||PA en la consulta
+home blood pressure monitoring||Automedida de la presión arterial por parte del paciente
+automated office blood pressure||medición automática de la PA en la consulta
+2024 ESC guidelines||Guía ESC 2024
+2018 ESC/ESH guidelines||Guía ESC/ESH 2018
+treatment goal|treatment target|objetivo de tratamiento
+cardiovascular risk factors||factores de riesgo de ECV
+primary prevention||prevención primaria
+network meta-analysis||metanálisis en red
+plasma renin activity||actividad de renina plasmática;actividad renina plasmática
+plasma aldosterone concentration||aldosterona plasmática
+aldosterone production||producción de aldosterona
+salt loading|salt load|sobrecarga salina
+estimated glomerular filtration rate||tasa de filtrado glomerular estimada
+glomerular filtration rate||tasa de filtrado glomerular
+single-pill combination||combinación en un único comprimido;combinación en una sola píldora;combinación en un comprimido
+loop diuretics||diuréticos del asa
+tyrosine kinase inhibitors||inhibidores de la tirosina cinasa
+calcium channel blockers||bloqueadores de los canales del calcio
+coronary calcium score|coronary artery calcium score|
+left ventricular hypertrophy||hipertrofia del ventrículo izquierdo
+left ventricular ejection fraction|left ventricular EF|fracción de eyección del ventrículo izquierdo
+patient-centered care|patient-centred care|
+non-pharmacological therapy|non-pharmacological treatment|
+millimeters of mercury|mmHg|
+milligrams per day|mg/day|mg/día
+milligrams per deciliter|mg/dL|mg/dl
+millimoles per day|mmol/day|mmol/día
+micrograms per day|µg/day;μg/day|µg/día;μg/día
+micrograms per deciliter|µg/dL;μg/dL|µg/dl;μg/dl
+nanograms per deciliter|ng/dL|ng/dl
+24-hour urine collection|24-h urine collection|recogida de orina de 24 horas;recogida de orina de 24 h
+oscillometric blood pressure monitor||dispositivo oscilométrico
+Korotkoff sounds||ruidos de Korotkof f
+angiotensin II type 1 receptor|angiotensin type 1 receptor;angiotensin II type 1|
+angiotensin II type 2 receptor||receptor tipo 2 de la angiotensina II
+prorenin||prorrenina
+pressure natriuresis||presión-natriuresis
+microvascular remodeling|microvascular remodelling|
+vascular remodeling|vascular remodelling|
+inflammation||inﬂamación
+cardiac output||gasto cardiaco
+auscultatory blood pressure measurement|auscultatory BP measurement|medición auscultatoria
+oscillometric blood pressure measurement||técnicas auscultatorias u oscilométricas
+cuff size||tamaño de manguito
+cuff bladder|bladder|cámara de aire
+cuff inflation|inflation of the cuff|inflado
+cuff deflation||desinflado
+measurement error||errores de medición
+validated blood pressure monitor|validated BP device|dispositivo para la PA validado
+unattended automated office blood pressure|unattended AOBP;unattended automated office BP|sin médicos o personal presente
+attended automated office blood pressure|attended AOBP;attended automated office BP|con o sin médicos o personal presente
+24-hour average blood pressure|24 h average BP;24-h average BP;24 h BP|medias de PA para el día y la noche y a las 24 h
+blood pressure telemonitoring|BP telemonitoring|telemonitorización
+standardized office blood pressure||método estandarizado para la medición de la PA en la consulta
+supine blood pressure||PA supina
+seated blood pressure|seated BP|PA sentado
+cuffless blood pressure device|cuffless BP devices|dispositivos sin manguito
+nocturnal blood pressure dipping|nocturnal dipping;night-time dipping|
+renal Doppler ultrasonography|renal Doppler|
+thyroid-stimulating hormone||hormona estimulante tiroidea
+coarctation of the aorta||coartación de aorta
+urine albumin-to-creatinine ratio|urinary albumin-to-creatinine ratio|cociente albúmina-creatinina;ratio albúmina-creatinina
+urine protein-to-creatinine ratio|urinary protein-to-creatinine ratio|cociente proteína-creatinina;ratio proteína-creatinina
+albumin excretion rate||tasa de excreción de albúmina
+sodium-glucose cotransporter 2 inhibitors||inhibidores de SGLT2
+moderately increased albuminuria||albuminuria moderadamente elevada
+kidney disease progression||progresión de la ERC
+kidney transplant recipient||receptores de trasplante renal
+aldosterone suppression test||test de supresión de la aldosterona
+endocrine hypertension||hipertensión endocrina
+magnetic resonance angiography||RM con angiografía
+hospitalization for heart failure||hospitalizaciones por insuficiencia cardiaca
+heart rate variability||variabilidad de la frecuencia cardiaca
+clinical guidelines implementation|implementation of clinical practice guidelines|implementación de las guías de práctica clínica
+hemorrhagic stroke||ictus hemorrágico
+silent cerebral infarcts||infartos silentes
+licorice-induced hypertension||hipertensión por ingesta de regaliz
+retinal hemorrhages|retinal exudates, haemorrhages|
+vascular fibrosis||fibrosis miocárdica, renal y vascular
+aldosterone suppression test||test de supresión de la aldosterona
+endocrine hypertension||hipertensión endocrina
+magnetic resonance angiography||RM con angiografía
+hospitalization for heart failure||hospitalizaciones por insuficiencia cardiaca
+heart rate variability||variabilidad de la frecuencia cardiaca
+clinical guidelines implementation|implementation of clinical practice guidelines|implementación de las guías de práctica clínica
+first morning urine sample||primera orina de la mañana
+spot urine sample||muestra puntual de orina
+myocardial ischemia||isquemia miocárdica
+glomerular hypertension|glomerular arteriolar hypertension|
+cerebral microbleeds|microbleeds|microhemorragias
+continuous positive airway pressure||presión positiva continua de vías aéreas
+apnea-hypopnea index|apnoea–hypopnoea index|
+mandibular advancement device||dispositivos de avance mandibular
+primary outcome||resultado principal;variable principal
+secondary outcome||resultados secundarios;variables secundarias
+composite outcome||resultado compuesto;variable compuesta
+nonfatal stroke|non-fatal stroke|ictus no mortal
+relative risk reduction||reducción del riesgo relativo
+10-year cardiovascular disease risk||riesgo de ECV a 10 años
+single-pill combination||combinación en una única pastilla;combinación en un solo comprimido
+secondary aldosteronism|secondary hyperaldosteronism|
+urinary aldosterone|urine aldosterone|
+renin suppression||supresión de la renina
+urinary potassium excretion||excreción renal de potasio;excreción de potasio en orina
+extracellular volume expansion|expansion of extracellular volume|
+hypokalemic metabolic alkalosis|hypokalaemic metabolic alkalosis|alcalosis metabólica hipocalémica
+mineralocorticoid receptor antagonist therapy|MRA therapy|tratamiento con ARM
+hormone replacement therapy||terapia hormonal sustitutiva
+immunosuppressive agents||medicación inmunosupresora
+recombinant human erythropoietin||eritropoyetina recombinante humana
+coronary heart disease||cardiopatía isquémica coronaria
+hemorrhagic stroke|haemorrhagic stroke|ictus hemorrágico;accidente vascular cerebral hemorrágico
+left ventricular function|LV function|
+left ventricular ejection fraction|LVEF|fracción de eyección del VI
+dietary sodium restriction||restricción de sodio en la dieta
+potassium-rich diet|diet rich in potassium|
+potassium-enriched salt substitute||sustitutos de la sal enriquecidos con potasio;sal rica en potasio
+smoking cessation||dejar de fumar;abandono del hábito de fumar
+alcohol moderation|moderation of alcohol|moderación en el consumo de alcohol
+dietary counseling||asesoramiento dietético;consejo dietético
+micrograms per day|µg/24 h;µg/24 hours;μg/24 h;mcg/day|mcg/24h;mcg/día;µg/24h
+micrograms per deciliter||mcg/dl
+24-hour urine collection||recogida de orina 24 h;recolección de orina de 24 h;recogida de orina durante 24 h
+24-hour blood pressure monitoring|24-h BP monitoring;24-hour BP monitoring;24 h BP monitoring|monitorización ambulatoria de 24 h
+blood pressure-lowering treatment||tratamiento de reducción de la PA
+patient follow-up|follow-up of patients|
+as low as reasonably achievable||tan bajo como sea razonablemente posible
+angiotensin-converting enzyme 2||enzima conversiva de la angiotensina 2
+renal perfusion pressure||presión de perfusión
+vascular injury||daño vascular
+cortical collecting duct|cortical collecting tubule|túbulo colector cortical
+vascular smooth muscle cells||células musculares lisas vasculares;células de músculo liso vascular
+vascular fibrosis||fibrosis de los vasos;fibrosis vascular
+baroreceptor reflex|baroreflex|re lejo barorreceptor
+heart rate variability||variabilidad de la frecuencia cardiaca
+hybrid sphygmomanometer||esfigmomanómetros híbridos
+cuff inflation|inflating the cuff|inflado del brazalete
+seated blood pressure||PA sentado;PA sentada
+cuffless blood pressure device|cuffless devices|
+non-dipping pattern|non-dipping|sin descenso nocturno
+reverse-dipping pattern||descenso inverso
+extreme-dipping pattern|extreme dipping;extreme-dipper|descenso extremo
+night-to-day blood pressure ratio|night-to-day BP ratio;night–day BP ratio|ratio noche-día
+hypertensive urgency|hypertension urgency;hypertensive urgencies|
+low-renin hypertension||HTA con renina baja
+adrenal computed tomography|adrenal CT|TC suprarrenal;TAC suprarrenal
+adrenal lateralization||lateralización de la aldosterona
+lateralizing primary aldosteronism|lateralizing PA|aldosteronismo primario lateralizante
+autonomous cortisol secretion||secreción de cortisol autónoma
+overnight dexamethasone suppression test||prueba de supresión nocturna de dexametasona
+plasma free metanephrines||metanefrinas libres en plasma
+urinary fractionated metanephrines||fracciones de metanefrinas en orina de 24 h
+glucocorticoid-remediable aldosteronism||hiperaldosteronismo remediable con glucocorticoides;aldosteronismo primario con respuesta a los glucocorticoides
+24-hour urinary free cortisol|24-hour urinary cortisol;24-h urinary free cortisol|cortisol libre en orina 24 h
+magnetic resonance angiography||angiorresonancia magnética
+saline infusion test||sobrecarga salina intravenosa
+oral sodium loading test|oral salt loading|sobrecarga salina oral
+captopril challenge test||test de supresión con captopril
+fludrocortisone suppression test||test de supresión con fludrocortisona
+apparent mineralocorticoid excess||exceso aparente de mineralocorticoides;exceso aparente de mineralcorticoides
+Gordon syndrome|Gordon's syndrome|
+creatinine-based estimated glomerular filtration rate||tasa de filtración glomerular estimada (TFGe) basada en la creatinina
+creatinine-cystatin C estimated glomerular filtration rate|eGFRcr-cys|tasa de filtración glomerular estimada basada en creatinina y cistatina C
+urine protein-to-creatinine ratio||cociente proteínas/creatinina en orina
+albumin excretion rate||excreción de albúmina
+spot urine sample||muestra de orina puntual
+bradycardia|bradycardic|
+dry cough|dry, hacking cough|
+aliskiren||aliskiren
+urapidil||urapidil
+dual combination therapy||tratamiento combinado doble
+fixed-dose combination||combinaciones en dosis fijas;combinación a dosis fija
+dose escalation||aumento de la dosis
+medication nonadherence||falta de adherencia al tratamiento farmacológico
+treatment persistence|persistence with therapy|persistencia al tratamiento
+pill burden||número de pastillas;número de comprimidos
+directly observed therapy||tratamiento observado directamente
+ultrasound renal denervation||denervación renal por ultrasonidos
+renal revascularization|renal artery revascularization|revascularización de la arteria renal
+renal artery stenting||stent de la arteria renal
+acute target-organ damage||daño orgánico agudo
+acute aortic dissection|acute dissection of the aorta|
+retinal hemorrhages|retinal haemorrhages|hemorragias retinianas
+focal neurological deficit||lesiones neurológicas focales
+posterior reversible encephalopathy syndrome||síndrome de encefalopatía reversible posterior
+flash pulmonary edema||edema agudo de pulmón súbito;edema pulmonar súbito
+chronic hypertension in pregnancy||hipertensión crónica durante el embarazo
+fetal growth restriction|foetal growth restriction|
+placental insufficiency|placental dysfunction|
+placental abruption||desprendimiento de placenta
+perinatal death||mortalidad perinatal
+maternal organ dysfunction||disfunción de órganos maternos
+thrombocytopenia|thrombocytopaenia|
+superimposed preeclampsia|superimposed pre-eclampsia|
+low-dose aspirin||aspirina oral a dosis bajas
+left ventricular dilatation|LV dilatation|
+left ventricular mass index||índice de masa del ventrículo izquierdo
+nonmodifiable risk factors|non-modifiable risk factors|
+sedentary behavior|sedentary behaviour|sedentarismo
+healthcare access||acceso a la asistencia
+blood pressure percentile|BP percentile|percentiles de PA
+cerebral hypoperfusion||hipoperfusión cerebral
+secondary outcome||variables secundarias
+hospitalization for heart failure|hospitalisation for heart failure|hospitalización por IC
+crossover trial||ensayo cruzado
+double-blind trial||ensayo a doble ciego
+placebo-controlled trial||ensayo controlado por placebo
+cluster-randomized trial||ensayo aleatorizado en grupos
+open-label trial|open label trial|
+sham-controlled trial||ensayo controlado con simulación;ensayo con control simulado
+odds ratio||odds ratio
+dihydropyridine calcium channel blockers|dihydropyridine CCBs|bloqueadores de los canales del calcio dihidropiridínicos
+non-dihydropyridine calcium channel blockers|non-dihydropyridine CCBs|bloqueadores de los canales del calcio no dihidropiridínicos
+cohort study||estudios de cohortes;estudios prospectivos de cohortes
+renal medullary blood flow||flujo sanguíneo de la médula renal
+cortical collecting duct|cortical collecting ducts;cortical collecting tubules|
+renal parenchymal hypertension|renal parenchymal disease|hipertensión parenquimatosa renal
+magnetic resonance angiography||angiografía con resonancia magnética;angiografía por RM
+spot urine sample||muestra de orina de la mañana
+dual combination therapy||combinación doble
+directly observed therapy||observación directa del tratamiento
+ultrasound renal denervation||denervación renal por radiofrecuencia y ultrasonido
+sham procedure|sham procedures|intervenciones quirúrgicas simuladas
+sham-controlled trial||ensayos con intervenciones quirúrgicas simuladas de control
+non-dihydropyridine calcium channel blockers||antagonistas del calcio no dihidropiridínicos;BCC no dihidropiridínicos
+hospitalization for heart failure|hospitalization due to heart failure|hospitalización por insuficiencia cardiaca
+perinatal death||muerte perinatal
+maternal organ dysfunction||disfunción de órganos de la madre
+potassium-rich diet|potassium-rich DASH diet|
+alcohol moderation|moderate alcohol consumption|
+cuff inflation|inflation|inflado del brazalete
+night-to-day blood pressure ratio|night-to-day ratio|
+hybrid sphygmomanometer||esfigmomanómetro híbrido
+seated blood pressure||PA en posición sentada
+renal parenchymal hypertension||HTA de origen parenquimatoso renal
+magnetic resonance angiography||angiografía mediante resonancia magnética;angio-RM
+Gordon syndrome|Gordon syndrome;Gordon's syndrome;Gordon’s syndrome|
+mineralocorticoid receptor antagonist therapy|therapy with an MRA;MRA treatment|tratamiento con antagonistas de los receptores de mineralocorticoides
+sham procedure|sham|procedimiento simulado
+acute aortic dissection|acute aortic dissection;acute dissection|
+posterior reversible encephalopathy syndrome||encefalopatía posterior reversible
+chronic hypertension in pregnancy||hipertensión preexistente
+placental abruption||abrupción placentaria
+superimposed preeclampsia|superimposed pre-eclampsia;superimposed preeclampsia|
+soluble fms-like tyrosine kinase-1|soluble fms-like tyrosine kinase 1;soluble fms-like tyrosine kinase-1|tirosina cinasa 1 soluble similar a fms
+left ventricular mass index||índice de masa del VI
+intention-to-treat analysis|intention-to-treat|
+per-protocol analysis|per-protocol|
+double-blind trial||ensayo clínico doble ciego;ensayo doble ciego
+placebo-controlled trial||ensayo clínico controlado con placebo
+open-label trial|open-label|ensayo clínico abierto
+2024 KDIGO CKD guideline|KDIGO 2024 Clinical Practice Guideline|GUÍAS KDIGO 2024 PARA LA EVALUACIÓN
+2025 ESC pregnancy guidelines|2025 ESC Guidelines for the management of cardiovascular disease and pregnancy|Guía ESC 2025 sobre el manejo de la enfermedad
+ALLHAT trial|Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial|ensayo Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack
+ACCORD trial|Action to Control Cardiovascular Risk in Diabetes|ensayo Action to Control Cardiovascular Risk in Diabetes
+STEP trial|Strategy of Blood Pressure Intervention in Elderly Hypertensive Patients|ensayos SPRINT y Strategy of Blood Pressure Intervention in Elderly Hypertensive Patients
+SSaSS trial|Salt Substitute and Stroke Study|ensayos Salt Substitute and Stroke Study
+PATHWAY-2 trial|PATHWAY-2|estudio PATHWAY-2
+ACCOMPLISH trial|ACCOMPLISH|estudio ACCOMPLISH
+SPYRAL HTN-ON MED trial|SPYRAL HTN-ON MED|ensayo piloto SPYRAL HTN-ON MED
+ESPRIT trial|Effects of intensive Systolic blood Pressure lowering treatment in reducing RIsk of vascular evenTs|Effects of intensive Systolic blood Pressure lowering treatment in reducing RIsk of vascular evenTs
+American Heart Association||Asociación Americana del Corazón;Asociación Estadounidense del Corazón
+American College of Cardiology||Colegio Estadounidense de Cardiología
+National Institutes of Health||Institutos Nacionales de la Salud
+2025 AHA/ACC guideline|2025 high blood pressure guideline|Guía 2025 de AHA/ACC
+2017 ACC/AHA guideline||guía de 2017
+superimposed preeclampsia||preeclampsia superpuesta
+cluster-randomized trial||ensayos aleatorizados por conglomerados
+double-blind trial||ensayos con diseño doble ciego
+placebo-controlled trial||ensayo aleatorizado con un ocultamiento y enmascaramiento adecuados y controlado con placebo
+intention-to-treat analysis||análisis por intención de tratar
+per-protocol analysis||análisis como se trató o por protocolo
+24-hour blood pressure monitoring||monitoreo ambulatorio de la presión arterial de 24 horas
+kidney transplant recipient||receptores de trasplante renal

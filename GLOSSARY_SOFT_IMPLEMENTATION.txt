@@ -1,0 +1,157 @@
+GLOSARIO MÉDICO — IMPLEMENTACIÓN REVERSIBLE PARA PRUEBAS DEL MVP
+Fecha: 22 de octubre de 2026
+Versión: medical-657-v1
+
+RESULTADO
+
+Se incorporó un paquete independiente con los 657 conceptos bilingües a la
+aplicación de esta carpeta. El modo predeterminado es «Activo para pruebas».
+El glosario original, las evidencias y los programas de investigación se
+conservan sin cambios. Esta incorporación responde a la nueva autorización
+del usuario; las antiguas marcas «solo investigación» siguen en sus archivos
+históricos y no fueron alteradas para simular una aprobación anterior.
+
+ALCANCE REAL
+
+Los 657 pares inglés/español están disponibles para reconocimiento exacto y
+referencia contextual de traducción en ambas direcciones. La referencia se
+envía a DeepL en su campo de contexto, fuera del texto que debe traducirse.
+Guía al proveedor; no fuerza ni garantiza una traducción determinada.
+Solo se incluyen pares pertinentes al pasaje, hasta 12, con límite de 1800
+caracteres. Se excluyen formas ambiguas y entradas que requieren revisión
+contextual. Las siglas inseguras no se expanden automáticamente.
+
+De los 97 conceptos evaluados con audio, 80 conservan su tolerancia individual
+para corrección inglesa y 17 permanecen en coincidencia exacta. Los otros
+560 conceptos también entran por coincidencia exacta: no se les atribuyen
+tolerancias de audio que todavía no se han evaluado. Total: 577 conceptos
+sin corrección inglesa aproximada. La normalización española anterior se
+mantiene, acompañada del catálogo ampliado y la referencia bilingüe.
+
+Se conservan los controles de contexto, límites de palabra, números, unidades,
+negaciones, plurales, variantes y solapamientos. La protección de dirección
+distingue hypertension/hypotension y se abstiene ante grafías ambiguas.
+No se aplica la relajación global que produjo sustituciones inseguras en el
+laboratorio. El texto ASR original se conserva junto al texto corregido.
+
+ACTIVAR, OBSERVAR Y RETROCEDER
+
+Abrir http://localhost:8010/operator en Chrome o Edge.
+En «Glosario médico» están disponibles:
+
+  Activo para pruebas: correcciones conservadoras y referencia bilingüe.
+  Observación: devuelve el texto anterior y registra propuestas inglesas;
+               no añade referencia terminológica al traductor.
+  Desactivado / volver al anterior: usa la normalización y traducción previas.
+
+Para retroceder:
+1. Pulsar STOP SESSION y esperar al cierre completo.
+2. Elegir «Desactivado / volver al anterior».
+3. Iniciar una sesión nueva.
+
+El cambio se guarda en .runtime/glossary-rollout.json y sobrevive a reinicios.
+La consola bloquea cambios durante una sesión y exige autorización local del
+operador propietario. Cada sesión conserva su propia configuración: cambiar
+el modo no altera solicitudes anteriores ni retransmite texto ya procesado.
+
+Salida de emergencia: definir TRAD_GLOSSARY_MODE=off para el proceso y reiniciar
+FastAPI. Ese ajuste tiene prioridad y bloquea el selector. Para devolver el
+control a la consola hay que retirar la variable y reiniciar; no dejarla en
+«soft» permanentemente si se desea permitir la reversión desde la interfaz.
+
+Si el paquete falta o no supera su comprobación de integridad, la aplicación
+usa el comportamiento anterior y muestra el problema. Una falla al preparar
+el contexto terminológico deja continuar la traducción ordinaria.
+
+ARCHIVOS Y ACTUALIZACIONES
+
+Paquete activo:
+  glossaries/releases/medical-657-v1/bundle.json
+  glossaries/releases/medical-657-v1/manifest.json
+
+Reglas independientes: app/terminology/
+Conexión: sesión ASR, motor/adaptador de traducción y control del operador.
+Las reglas de producción no importan investigación ni trad_lab al ejecutarse.
+La versión, el modo, los conceptos reconocidos y los bloqueos acompañan la
+auditoría de normalización. No se modificaron credenciales ni .env.
+
+Copias de los archivos existentes, hechas antes de esta incorporación:
+  backups/glossary-soft-v1/
+Conservan también los cambios locales previos del usuario. No se hizo commit,
+reset ni sustitución de trabajo ajeno. La reversión habitual es el selector;
+esas copias permiten revisar una retirada de código más adelante sin usar
+un restablecimiento global del repositorio.
+
+Para actualizar, conservar v1 y preparar una revisión nueva de los datos,
+sin sobrescribir las evidencias históricas. El constructor admite --version,
+--candidate y --thresholds, rechaza sobrescribir una versión y verifica el
+manifiesto de entrada. Esta primera política exige 657 conceptos, 97 evaluados
+y 80 con tolerancia activa; ampliar esos números requiere revisión y pruebas
+de la política, además de modificar los datos.
+
+Ejemplo para datos revisados compatibles con esta política:
+  .venv\Scripts\python.exe -B -m tools.build_soft_glossary --version medical-657-v2 --candidate <carpeta-revisada> --thresholds <umbrales-revisados.json>
+
+Validar la versión nueva primero, detener sesiones y seleccionar su carpeta
+con TRAD_GLOSSARY_RELEASE antes de reiniciar. Se puede volver a v1 con la
+misma variable o desactivar todo el paquete con el selector. El constructor
+de datos no vuelve a generar ni reemplaza reglas de producción ya existentes.
+
+VALIDACIÓN REALIZADA
+
+124 pruebas Python aprobadas: 93 de glosario, transporte, traducción, control
+y compatibilidad; 30 de fiabilidad; 1 recorrido en Chrome real aislado.
+Además pasaron los tres programas de comprobación de interfaz: selector del
+glosario, consola y recuperación. El recorrido específico inglés confirma
+corrección, contexto enviado al adaptador DeepL, salida al overlay, STOP y una
+nueva sesión desactivada que restaura el texto anterior sin ese contexto.
+
+Repetición de nueve transcripciones ASR ya guardadas, con 4204 palabras de
+referencia por modelo:
+
+  Modelo            Errores ASR    Laboratorio previo    Integración soft
+  small                  148               131                   131
+  medium                 117               100                   100
+  large-v3-turbo          132               131                   131
+
+No hubo regresión frente a las reglas estrictas del laboratorio. La referencia
+es provisional y no constituye una transcripción clínica certificada. No se
+repitió la inferencia de audio para obtener esas cifras.
+
+Los 153 controles previos dieron el resultado esperado. En los 97 controles
+de presión, 96 coincidieron exactamente con lo esperado. El caso positivo
+«antihypertension medication» se conserva sin reparar: la política estricta
+prefiere abstenerse. Entre ambos conjuntos, ninguno de los 233 controles
+negativos fue reescrito.
+
+En 30 segmentos cortos de texto, la normalización tuvo mediana de 49,5 ms
+y percentil 95 de 58,0 ms en esta ejecución. Es una medida local, no una
+medición de voz física hasta pantalla ni una garantía de latencia del MVP.
+
+Resultados y trazabilidad:
+  benchmarks/glossary_soft_v1/tests.log
+  benchmarks/glossary_soft_v1/reliability_tests.log
+  benchmarks/glossary_soft_v1/browser_tests.log
+  benchmarks/glossary_soft_v1/browser_results.json
+  benchmarks/glossary_soft_v1/replay_results.json
+  benchmarks/glossary_soft_v1/preservation_final.json
+  benchmarks/glossary_soft_v1/implementation_manifest.json
+
+Los dobles de prueba sustituyeron al proveedor externo: estas comprobaciones
+no hicieron llamadas reales a DeepL ni consumieron cuota de traducción.
+
+PRUEBA FINAL PENDIENTE CON EL USUARIO
+
+La implementación permite iniciar las pruebas finales; no equivale a dar
+por aprobado el MVP. Con voz real y OBS, comprobar ambas direcciones, las
+grafías/entonaciones habituales, hypertension frente a hypotension, frases
+con «by», negaciones, cifras y unidades. Comparar una sesión activa con otra
+desactivada y confirmar salida, latencia y cierre en OBS. La traducción real
+depende del proveedor configurado y requiere la validación correspondiente.
+
+El arranque local de esta entrega conserva el modelo small y el punto de
+entrada bidireccional existente. Los procesos se limitan a loopback; no se
+modifican firewall, publicación LAN ni copias congeladas de despliegues previos.
+No se inicia el micrófono automáticamente. Los identificadores de los procesos
+arrancados y sus registros quedan en .runtime/glossary-services.json y
+.runtime/glossary-*.log. Su estado comprobado figura en readiness.json.

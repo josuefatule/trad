@@ -1,0 +1,1824 @@
+{
+  "research_date": "2026-10-20",
+  "note": "Índice histórico de consultas del primer lote, conservado para continuidad; no es un registro completo de las sesiones posteriores. La consulta inicial precede a esta captura. Las fuentes y copias consultadas en las continuaciones constan en sources.json y source_access_index.json, y las atestaciones individuales en bilingual_verification.json y session3_verification.json. Ni los resultados de búsqueda ni la disponibilidad de un documento prueban lectura exhaustiva.",
+  "consultations": [
+    {
+      "sequence": 2,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Guideline Essentials: American Heart Association Clinical Slide Series - Professional Heart Daily | American Heart Association",
+          "url": "https://professional.heart.org/en/guidelines-and-statements/guideline-essentials-aha-clinical-slide-series"
+        },
+        {
+          "title": "Hub - 2025 High Blood Pressure Guideline published in Circulation - Professional Heart Daily | American Heart Association",
+          "url": "https://professional.heart.org/en/guidelines-statements/2025-ahaaccaanpaapaabcaccpacpmagsamaaspcnmapcnasgim-guideline-for-thecir0000000000001356"
+        },
+        {
+          "title": "Guías de práctica clínica ESC sobre",
+          "url": "https://www.escardio.org/static-file/Escardio/Guidelines/Documents/ESC-hypertension-patient-guidelines-spanish.pdf"
+        },
+        {
+          "title": "CKD Evaluation and Management – KDIGO",
+          "url": "https://kdigo.org/guidelines/ckd--evaluation-and-management/"
+        },
+        {
+          "title": "Directriz para el tratamiento farmacológico de la hipertensión en adultos",
+          "url": "https://www.who.int/es/publications/b/59565"
+        },
+        {
+          "title": "Directriz para el tratamiento farmacológico de la hipertensión en adultos",
+          "url": "https://www.who.int/es/publications/i/item/9789240033986"
+        },
+        {
+          "title": "2025 High Blood Pressure (BP) Guideline - Professional Heart Daily | American Heart Association",
+          "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+        },
+        {
+          "title": "Cl",
+          "url": "https://www.escardio.org/static-file/Escardio/Guidelines/Products/Essential%20Messages/2024%20EM/Essential%20Messages_2024%20HTN.pdf"
+        },
+        {
+          "title": "www.secardiologia.es",
+          "url": "https://www.escardio.org/static-file/Escardio/Guidelines/Documents/ESC_CVD_prevention_patient_guidelines_Spanish.pdf"
+        },
+        {
+          "title": "citeturn1search14 [wordlim: 200] Published: 10 months ago; Madrid, 4th March 2024 ... ESC Clinical Practice Guidelines on Cardiovascular Disease Prevention in Clinical Practice: ... Spanish Society of Cardiology Website",
+          "url": "https://secardiologia.es/"
+        },
+        {
+          "title": "Spanish Society of Cardiology Website",
+          "url": "https://secardiologia.es/"
+        },
+        {
+          "title": "2025 High Blood Pressure Guideline: Updated Recommendations for Hypertension Management | American Heart Association | American Heart Association International",
+          "url": "https://international.heart.org/en/news-and-events/2025/august-high-blood-pressure"
+        },
+        {
+          "title": "New 2025 BP guideline introduces major updates | Scientific Sessions",
+          "url": "https://sessions.hub.heart.org/home/article/22954453/new-2025-bp-guideline-introduces-major-updates"
+        },
+        {
+          "title": "hyp",
+          "url": "https://iris.who.int/bitstream/handle/10665/344424/9789240033986-eng.pdf?sequence=1"
+        },
+        {
+          "title": "2025 High Blood Pressure Guideline Plain Language Summary",
+          "url": "https://www.heart.org/-/media/PHD-Files-2/Science-News/2/2025/2025-High-Blood-Pressure-GL/English-2025-High-Blood-Pressure-Guideline-Plain-Language-Summary.pdf"
+        },
+        {
+          "title": "Hub – Single-Pill Combination Therapy for the Management of Hypertension - Professional Heart Daily | American Heart Association",
+          "url": "https://professional.heart.org/en/guidelines-statements/singlepill-combination-therapy-for-the-management-of-hypertension-a-scientifichyp0000000000000258"
+        },
+        {
+          "title": "The PREVENTTM equations can improve, personalize care for adults with high BP | American Heart Association",
+          "url": "https://newsroom.heart.org/news/the-prevent-equations-can-improve-personalize-care-for-adults-with-high-bp?s_src=website&s_subsrc=Meet+our+Corporate+Members&transaction.othamt1=Meet+our+Corporate+Members&transaction.othamt2=Our+blog"
+        },
+        {
+          "title": "Hypertension - Premium Courses",
+          "url": "https://store.education.heart.org/premium-courses/hypertension?insights_portfolio=210"
+        },
+        {
+          "title": "Understanding Blood Pressure Readings | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"
+        },
+        {
+          "title": "introduction, qualifying statements, and key concepts",
+          "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf"
+        },
+        {
+          "title": "(Subtítulos en Español) KDIGO 2024 CKD Guideline Top 10 Takeaways for Nephrologists: Evaluación - YouTube",
+          "url": "https://www.youtube.com/watch?v=OYUgoS538HY"
+        },
+        {
+          "title": "Chronic kidney disease",
+          "url": "https://en.wikipedia.org/wiki/Chronic_kidney_disease"
+        },
+        {
+          "title": "Comparison of international blood pressure guidelines",
+          "url": "https://en.wikipedia.org/wiki/Comparison_of_international_blood_pressure_guidelines"
+        },
+        {
+          "title": "ADPKD KDIGO Guideline",
+          "url": "https://www.reddit.com/r/nephrology/comments/1gdd7dl"
+        },
+        {
+          "title": "8 Recommendations in WHO New Guideline for Hypertension Treatment",
+          "url": "https://www.reddit.com/r/u_YHEtech/comments/v872av"
+        },
+        {
+          "title": "Tratamiento de la hipertensión arterial",
+          "url": "https://es.wikipedia.org/wiki/Tratamiento_de_la_hipertensi%C3%B3n_arterial"
+        },
+        {
+          "title": "Arterielle Hypertonie",
+          "url": "https://de.wikipedia.org/wiki/Arterielle_Hypertonie"
+        },
+        {
+          "title": "Kidney failure",
+          "url": "https://en.wikipedia.org/wiki/Kidney_failure"
+        },
+        {
+          "title": "Free High Blood Pressure Medical Grade App - Diet, Exercise, Sleep + AI Assistant",
+          "url": "https://www.reddit.com/r/bloodpressure/comments/1jtivdz/free_high_blood_pressure_medical_grade_app_diet/"
+        },
+        {
+          "title": "New Blood Pressure guideline: gotta keep it <120/<80",
+          "url": "https://www.reddit.com/r/PeterAttia/comments/1nn33gi/new_blood_pressure_guideline_gotta_keep_it_12080/"
+        },
+        {
+          "title": "2023 European Society of Hypertension Guideline Update",
+          "url": "https://www.reddit.com/r/hypertension/comments/1dp2fu6"
+        }
+      ]
+    },
+    {
+      "sequence": 3,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "2024 Elevated Blood Pressure and Hypertension",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/"
+        },
+        {
+          "title": "2025 High Blood Pressure (BP) Guideline - Professional Heart Daily | American Heart Association",
+          "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know"
+        },
+        {
+          "title": "Blood Pressure in CKD – KDIGO",
+          "url": "https://kdigo.org/guidelines/blood-pressure-in-ckd/"
+        },
+        {
+          "title": "Hipertensión",
+          "url": "https://www.who.int/es/news-room/fact-sheets/detail/hypertension"
+        }
+      ]
+    },
+    {
+      "sequence": 4,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Top 10 Takeaways Clinicians - BP GL",
+          "url": "https://kdigo.org/wp-content/uploads/2021/03/Top-10-Takeaways-Clinicians-KDIGO-BP-Guideline.pdf"
+        },
+        {
+          "title": "2024 Elevated Blood Pressure and Hypertension",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/"
+        },
+        {
+          "title": "2024 Elevated Blood Pressure and Hypertension",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/"
+        }
+      ]
+    },
+    {
+      "sequence": 5,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "2024 ESC Guidelines for Management of Elevated BP and Hypertension: Key Points - American College of Cardiology",
+          "url": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2024/09/05/14/11/2024-esc-guidelines-for-bp-esc-2024"
+        },
+        {
+          "title": "Measurement of Blood Pressure in Humans: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30827125/"
+        },
+        {
+          "title": "Resistant Hypertension: Detection, Evaluation, and Management: A Scientific Statement From the American Heart Association.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30354828/"
+        },
+        {
+          "title": "Blood Pressure Assessment in Adults in Clinical Practice and Clinic-Based Research: JACC Scientific Expert Panel - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30678763/"
+        },
+        {
+          "title": "2024 Elevated Blood Pressure and Hypertension",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/"
+        },
+        {
+          "title": "Primary Aldosteronism: An Endocrine Society Clinical Practice Guideline.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40658480/"
+        },
+        {
+          "title": "Recognition and Management of Resistant Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27895136/"
+        },
+        {
+          "title": "Harmonization of ACC/AHA and ESC/ESH BP/Hypertension Guidelines - American College of Cardiology",
+          "url": "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/08/22/16/48/Harmonization-of-the-ACC-AHA"
+        },
+        {
+          "title": "The Management of Primary Aldosteronism: Case Detection, Diagnosis, and Treatment: An Endocrine Society Clinical Practice Guideline - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26934393/"
+        },
+        {
+          "title": "Key messages",
+          "url": "https://www.escardio.org/static-file/Escardio/Guidelines/Products/Essential%20Messages/2024%20EM/Essential%20Messages_2024%20HTN.pdf"
+        },
+        {
+          "title": "Diagnosis and management of resistant hypertension: state of the art.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29700488/"
+        },
+        {
+          "title": "Special Article - The management of resistant hypertension: A 2020 update - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32795462/"
+        },
+        {
+          "title": "2024 ESC Guidelines for the management of elevated blood pressure and hypertension | European Heart Journal | Oxford Academic",
+          "url": "https://academic.oup.com/eurheartj/article/45/38/3912/7741010?login=false"
+        },
+        {
+          "title": "Measurement of Blood Pressure in Humans: A Scientific Statement From the American Heart Association",
+          "url": "https://www.ahajournals.org/doi/pdf/10.1161/HYP.0000000000000087"
+        },
+        {
+          "title": "Muntner P, Shimbo D, Carey RM. Measurement of blood pressure in humans: a scientific statement from the American Heart Association. Hypertension 2019;73:e35–66.",
+          "url": "https://cdn.clinicaltrials.gov/large-docs/65/NCT04171765/Prot_SAP_000.pdf"
+        },
+        {
+          "title": "2024 ESC Guidelines for the management of elevated blood pressure and hypertension",
+          "url": "https://dailycardiology.com/wp-content/uploads/2025/05/2024-ESC-HTN.pdf"
+        },
+        {
+          "title": "17. Muntner, P. et al. Measurement of blood pressure in humans: A scientific statement from the American heart association. *Hypertension* 73 (5), e35–e66 (2019).",
+          "url": "https://www.nature.com/articles/s41598-025-93527-y.pdf"
+        },
+        {
+          "title": "2025 High Blood Pressure Guideline-at-a-Glance",
+          "url": "https://api.iscpcardio.org/storage/guidelines/___25_Hypertension_HT_AHA_ACC_guideline_glance.pdf"
+        },
+        {
+          "title": "Blood pressure",
+          "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+        },
+        {
+          "title": "Hypertension",
+          "url": "https://en.wikipedia.org/wiki/Hypertension"
+        },
+        {
+          "title": "2023 European Society of Hypertension Guideline Update",
+          "url": "https://www.reddit.com/r/hypertension/comments/1dp2fu6"
+        },
+        {
+          "title": "Comparison of international blood pressure guidelines",
+          "url": "https://en.wikipedia.org/wiki/Comparison_of_international_blood_pressure_guidelines"
+        },
+        {
+          "title": "Blutdruck",
+          "url": "https://de.wikipedia.org/wiki/Blutdruck"
+        },
+        {
+          "title": "How do you/should we assess/manage possible hypertension beyond the established practise?",
+          "url": "https://www.reddit.com/r/Cardiology/comments/1kequ4s"
+        },
+        {
+          "title": "Prehypertension",
+          "url": "https://en.wikipedia.org/wiki/Prehypertension"
+        },
+        {
+          "title": "Management of hypertension",
+          "url": "https://en.wikipedia.org/wiki/Management_of_hypertension"
+        }
+      ]
+    },
+    {
+      "sequence": 6,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Checking your browser - reCAPTCHA",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530990/"
+        },
+        {
+          "title": "Checking your browser - reCAPTCHA",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/"
+        },
+        {
+          "title": "pubmed.ncbi.nlm.nih.gov",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40658480/"
+        }
+      ]
+    },
+    {
+      "sequence": 7,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Refractory Hypertension: Evidence of Heightened Sympathetic Activity as a Cause of Antihypertensive Treatment Failure - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25987662/"
+        },
+        {
+          "title": "Types of Blood Pressure Medications | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications"
+        },
+        {
+          "title": "Spironolactone prevents chlorthalidone-induced sympathetic activation and insulin resistance in hypertensive patients - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22733474/"
+        },
+        {
+          "title": "Chronic Hypertension and Pregnancy - American College of Cardiology",
+          "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2022/04/01/03/19/CHAP"
+        },
+        {
+          "title": "White-Coat Effect Is Uncommon in Patients With Refractory Hypertension.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28696223/"
+        },
+        {
+          "title": "Angiotensin-II-derived reactive oxygen species on baroreflex sensitivity during hypertension: new perspectives - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23717285/"
+        },
+        {
+          "title": "An Update on Refractory Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35384577/"
+        },
+        {
+          "title": "Types of Heart Medications | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/cardiac-medications"
+        },
+        {
+          "title": "Hypertension Highlights 2017",
+          "url": "https://www.heart.org/-/media/PHD-Files-2/Science-News/h/Hypertension_Highlights_Detailed_Summary_ucm_497446.pdf"
+        },
+        {
+          "title": "Recent advances in understanding and managing resistant/refractory hypertension.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32201574/"
+        },
+        {
+          "title": "Managing High Blood Pressure Medications | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/managing-high-blood-pressure-medications"
+        },
+        {
+          "title": "Blood Pressure - Life's Essential 8 Health Factor | American Heart Association",
+          "url": "https://newsroom.heart.org/facts/blood-pressure-life-s-essential-8-health-factor"
+        },
+        {
+          "title": "Mechanisms and Clinical Implications of Endothelial Dysfunction in Arterial Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35621847/"
+        },
+        {
+          "title": "Refractory hypertension",
+          "url": "https://en.wikipedia.org/wiki/Refractory_hypertension"
+        },
+        {
+          "title": "Treatment of Resistant and Refractory Hypertension",
+          "url": "https://www.ahajournals.org/doi/pdf/10.1161/CIRCRESAHA.118.312156"
+        },
+        {
+          "title": "Diagnosis and management of resistant hypertension",
+          "url": "https://www.bmj.com/content/bmj/385/bmj-2023-079108.full.pdf"
+        },
+        {
+          "title": "Hypertension in Pregnancy",
+          "url": "https://www.preeclampsia.org/frontend/assets/img/advocacy_resource/HypertensioninPregnancy_1583246906.pdf"
+        },
+        {
+          "title": "Treatment for Mild Chronic Hypertension during Pregnancy",
+          "url": "https://cci-cic.org/wp-content/uploads/2023/02/CHAP-Trial.pdf"
+        },
+        {
+          "title": "J Hypertens Res (2020) 6(4):111–116",
+          "url": "https://hypertens.org/images/202012/jhr-202012-060402.pdf"
+        },
+        {
+          "title": "Pathophysiology of hypertension",
+          "url": "https://en.wikipedia.org/wiki/Pathophysiology_of_hypertension"
+        },
+        {
+          "title": "Hypertension",
+          "url": "https://en.wikipedia.org/wiki/Hypertension"
+        },
+        {
+          "title": "Arterial stiffening provides sufficient explanation for primary hypertension",
+          "url": "https://arxiv.org/abs/1305.0727"
+        },
+        {
+          "title": "Sodium Allostasis: A New Paradigm for Understanding Cardiovascular Volume Accommodation",
+          "url": "https://arxiv.org/abs/2607.04114"
+        },
+        {
+          "title": "Antihypertensive",
+          "url": "https://en.wikipedia.org/wiki/Antihypertensive"
+        },
+        {
+          "title": "Hypertension and the brain",
+          "url": "https://en.wikipedia.org/wiki/Hypertension_and_the_brain"
+        },
+        {
+          "title": "Understanding the Different Anti-Hypertensive Medications and Their Side Effects.",
+          "url": "https://www.reddit.com/r/HeartDisease/comments/d6o8td"
+        },
+        {
+          "title": "Baroreflex",
+          "url": "https://en.wikipedia.org/wiki/Baroreflex"
+        }
+      ]
+    },
+    {
+      "sequence": 8,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Primary Aldosteronism | Endocrine Society",
+          "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+        },
+        {
+          "title": "Hypertension in Pregnancy: Diagnosis, Blood Pressure Goals, and Pharmacotherapy: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34905954/"
+        },
+        {
+          "title": "Primary Aldosteronism: An Endocrine Society Clinical Practice Guideline.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40658480/"
+        },
+        {
+          "title": "Adrenal Vein Sampling in Primary Aldosteronism-Is The Gold Standard Losing Its Luster? - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40171612/"
+        },
+        {
+          "title": "Impact of autonomous cortisol secretion on adrenal venous sampling with and without ACTH stimulation in patients with primary aldosteronism - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41638657/"
+        },
+        {
+          "title": "Guideline No. 426: Hypertensive Disorders of Pregnancy: Diagnosis, Prediction, Prevention, and Management - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35577426/"
+        },
+        {
+          "title": "Influence of cortisol cosecretion on non-ACTH-stimulated adrenal venous sampling in primary aldosteronism: a retrospective cohort study - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36070424/"
+        },
+        {
+          "title": "Impact of Cortisol-Cosecretion on Adrenal Venous Sampling Results in Primary Aldosteronism: Study of 225 Cases.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39594996/"
+        },
+        {
+          "title": "Society for Maternal-Fetal Medicine Special Statement: A quality metric for evaluating timely treatment of severe hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34648743/"
+        },
+        {
+          "title": "Subtyping of Primary Aldosteronism by Adrenal Venous Sampling - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39965116/"
+        },
+        {
+          "title": "Elevated blood pressures during epidural placement are associated with increased risk of hypertensive disorders of pregnancy - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35078390/"
+        },
+        {
+          "title": "Adrenal Venous Sampling: Practical Insights and Case Studies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40250892/"
+        },
+        {
+          "title": "(≥277 pmol/L) on an immunoassay and a suppressed plasma renin activity, or by an aldosterone concentration ≥7.5 ng/dL (≥208 pmol/L) on liquid chromatography–tandem mass spectrometry (LC-MS/MS) and a suppressed plasma renin activity. In this case, the patient’s laboratory used LC-MS/MS rather than an immunoassay. The patient has a positive screen for primary hyperaldosteronism, and the likelihood of lateralization is low, given her aldosterone concentration of 8.5 ng/dL (235.8 pmol/L) on LC-MS/MS and normokalemia. The best next step is to discuss treatment options for hyperaldosteronism (Answer A) with a mineralocorticoid receptor antagonist. Adrenal venous sampling can be discussed, but given that she is unlikely to have lateralization, it was not provided as an answer option.",
+          "url": "https://www.endocrine.org/-/media/endocrine/files/ebr-ceu/ebr-2026/ebr-2026-preview.pdf"
+        },
+        {
+          "title": "Slide 1",
+          "url": "https://professional.heart.org/en/science-news/-/media/e9863cccf5544bf3b793489290dfb0a7.ashx"
+        },
+        {
+          "title": "Hypertension of Pregnancy",
+          "url": "https://www.heart.org/en/-/media/Files/Professional/Quality-Improvement/Outpatient/Conditions-of-Pregnancy-Quick-Guide.pdf?sc_lang=en"
+        },
+        {
+          "title": "PRACTICE RESOURCES",
+          "url": "https://endocrinenews.endocrine.org/wp-content/uploads/Endo_News0413F.pdf"
+        },
+        {
+          "title": "Martin et al  2024 Heart Disease and Stroke Statistics: Chapter 11",
+          "url": "https://www.heart.org/en/-/media/Files/Professional/Quality-Improvement/Get-With-the-Guidelines/Get-With-The-Guidelines-AFIB/AFib-Month/2024-AHA-Statistical-Update.pdf"
+        },
+        {
+          "title": "Figure 2. Algorithm for the Management of Hypertensive Adults with Aldosterone, Renin, and ARR Suggestive of PA.",
+          "url": "https://www.endocrine.org/-/media/endocrine/files/cpg/primary-aldosteronism-guideline-documents/cpg_primary_aldosteronism_algorithms_figures-2.pdf"
+        },
+        {
+          "title": "Types of Blood Pressure Medications | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications"
+        },
+        {
+          "title": "Resistant Hypertension: Detection, Evaluation, and Management: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30354828/"
+        },
+        {
+          "title": "pubmed.ncbi.nlm.nih.gov",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30827125/"
+        },
+        {
+          "title": "Chronic Hypertension and Pregnancy - American College of Cardiology",
+          "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2022/04/01/03/19/CHAP"
+        }
+      ]
+    },
+    {
+      "sequence": 9,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Pheochromocytoma and paraganglioma: an endocrine society clinical practice guideline - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24893135/"
+        },
+        {
+          "title": "The Management of Elevated Blood Pressure in the Acute Care Setting: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=38804130"
+        },
+        {
+          "title": "Revascularization for Renovascular Disease: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35708012/"
+        },
+        {
+          "title": "Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29565029/"
+        },
+        {
+          "title": "Experts Recommend Blood, Urine Testing to Diagnose Rare Adrenal Tumors | Endocrine Society",
+          "url": "https://support.endocrine.org/news-and-advocacy/news-room/2014/experts-recommend-blood-urine-testing-to-diagnose-rare-adrenal-tumors"
+        },
+        {
+          "title": "Plasma free metanephrine, normetanephrine, and 3-methoxytyramine for the diagnosis of pheochromocytoma/paraganglioma - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26425473/"
+        },
+        {
+          "title": "Clinical management of paragangliomas - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25063320/"
+        },
+        {
+          "title": "Update on Modern Management of Pheochromocytoma and Paraganglioma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28685506/"
+        },
+        {
+          "title": "Hypertension.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29565028/"
+        },
+        {
+          "title": "Laboratory evaluation of pheochromocytoma and paraganglioma - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25332315/"
+        },
+        {
+          "title": "Multidisciplinary practice guidelines for the diagnosis, genetic counseling and treatment of pheochromocytomas and paragangliomas - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33959901/"
+        },
+        {
+          "title": "Plasma free metanephrines in the diagnosis of pheochromocytoma: diagnostic accuracy and strategies for Japanese patients.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24871964/"
+        },
+        {
+          "title": "Endocrine News",
+          "url": "https://endocrinenews.endocrine.org/wp-content/uploads/Endo_News0115F.pdf"
+        },
+        {
+          "title": "AHA/ASA Scientific Statement",
+          "url": "https://professional.heart.org/en/science-news/cervical-arterial-dissections-and-association-with-cervical-manipulative-therapy/-/media/8a5dc25bc19646e2bb7a11732f35c340.ashx"
+        },
+        {
+          "title": "2017 Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "url": "https://professional.heart.org/en/science-news/-/media/PHD-Files-2/Science-News/h/Hypertension_Highlights_Detailed_Summary_ucm_497446.pdf"
+        },
+        {
+          "title": "KCVD Thrives and Evolves",
+          "url": "https://professional.heart.org/-/media/Project/PHD/Connections-Newsletters/Connections_KCVD_2022_Fall.pdf"
+        },
+        {
+          "title": "Endocrine News",
+          "url": "https://endocrinenews.endocrine.org/wp-content/uploads/Endocrine-News-July-2014.pdf"
+        },
+        {
+          "title": "Hypertension 2025 Poster Sessions",
+          "url": "https://professional.heart.org/en/-/media/PHD-Files/Meetings/Hypertension/2025/2025-Hypertension-Poster-Sessions.pdf"
+        }
+      ]
+    },
+    {
+      "sequence": 10,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Spironolactone versus placebo, bisoprolol, and doxazosin to determine the optimal treatment for drug-resistant hypertension (PATHWAY-2): a randomised, double-blind, crossover trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26414968/"
+        },
+        {
+          "title": "Major outcomes in high-risk hypertensive patients randomized to angiotensin-converting enzyme inhibitor or calcium channel blocker vs diuretic: The Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial (ALLHAT) - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12479763/"
+        },
+        {
+          "title": "[PATHWAY-2 Study: spironolactone vs placebo, bisoprolol and doxazosin to determine optimal treatment of resistant hypertension. Spironolactone high effective in lowering blood pressure in drug resistant hypertension].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26806502/"
+        },
+        {
+          "title": "A Randomized Trial of Intensive versus Standard Blood-Pressure Control.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26551272/"
+        },
+        {
+          "title": "Intensive blood pressure control, falls, and fractures in patients with type 2 diabetes: the ACCORD trial.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25127725/"
+        },
+        {
+          "title": "Major outcomes in moderately hypercholesterolemic, hypertensive patients randomized to pravastatin vs usual care: The Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial (ALLHAT-LLT) - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12479764/"
+        },
+        {
+          "title": "A Randomized Trial of Intensive versus Standard Blood-Pressure Control - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=26551272"
+        },
+        {
+          "title": "Intensive vs Standard Blood Pressure Control and Cardiovascular Disease Outcomes in Adults Aged ≥75 Years: A Randomized Clinical Trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27195814/"
+        },
+        {
+          "title": "Endocrine and haemodynamic changes in resistant hypertension, and blood pressure responses to spironolactone or amiloride: the PATHWAY-2 mechanisms substudies - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29655877/"
+        },
+        {
+          "title": "Outcomes of combined cardiovascular risk factor management strategies in type 2 diabetes: the ACCORD randomized trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24595629/"
+        },
+        {
+          "title": "Effects of intensive glucose lowering in the management of patients with type 2 diabetes mellitus in the Action to Control Cardiovascular Risk in Diabetes (ACCORD) trial.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20733112/"
+        },
+        {
+          "title": "Clinical events in high-risk hypertensive patients randomly assigned to calcium channel blocker versus angiotensin-converting enzyme inhibitor in the antihypertensive and lipid-lowering treatment to prevent heart attack trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16864749/"
+        },
+        {
+          "title": "Primary Aldosteronism | Endocrine Society",
+          "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+        }
+      ]
+    },
+    {
+      "sequence": 11,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Chlorthalidone for Hypertension in Advanced Chronic Kidney Disease - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34739197/"
+        },
+        {
+          "title": "Intensive Blood-Pressure Control in Patients with Type 2 Diabetes - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39555827/"
+        },
+        {
+          "title": "Trial of Intensive Blood-Pressure Control in Older Patients with Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34491661/?dopt=Abstract"
+        },
+        {
+          "title": "Trial of Intensive Blood-Pressure Control in Older Patients with Hypertension.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34491661/"
+        },
+        {
+          "title": "Design and Baseline Characteristics of the Chlorthalidone in Chronic Kidney Disease (CLICK) Trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32663820/"
+        },
+        {
+          "title": "Achieved systolic blood pressure and cardiovascular outcomes in 60-80-year-old patients: the Strategy of Blood Pressure Intervention in the Elderly Hypertensive Patients (STEP) trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37172116/"
+        },
+        {
+          "title": "Intensive Blood Pressure Lowering Improves Left Ventricular Hypertrophy in Older Patients with Hypertension: The STEP Trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37259845/"
+        },
+        {
+          "title": "Intensive Versus Standard Blood Pressure Control in Type 2 Diabetes: Cardiovascular and Microvascular Outcomes.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41266861/"
+        },
+        {
+          "title": "Thiazide diuretics are back in CKD: the case of chlorthalidone - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36726437/"
+        },
+        {
+          "title": "Intensive blood pressure control in older patients with hypertension-a STEP in the right direction?",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36856663/"
+        },
+        {
+          "title": "Intensive Blood Pressure Control in Older Patients With Hypertension: 6-Year Results of the STEP Trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=41105077"
+        },
+        {
+          "title": "Intensive blood pressure control in type 2 diabetes: a meta-analysis of randomized controlled trials - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42375334/"
+        }
+      ]
+    },
+    {
+      "sequence": 12,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Catheter-Based Renal Denervation in HTN: Key Points - American College of Cardiology",
+          "url": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2024/10/14/19/44/effects-of-catheter-based"
+        },
+        {
+          "title": "Intensive Blood-Pressure Control in Patients with Type 2 Diabetes - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39555827/"
+        },
+        {
+          "title": "Consensus Statement on Renal Denervation for Hypertension: Key Points - American College of Cardiology",
+          "url": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/02/20/23/55/renal-denervation-consensus"
+        },
+        {
+          "title": "A clinical trial of the effects of dietary patterns on blood pressure. DASH Collaborative Research Group.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9099655/"
+        },
+        {
+          "title": "Intensive Blood-Pressure Control in Patients with Type 2 Diabetes - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39555827/?fc=20250221043610&ff=20250513072752&v=2.18.0.post9+e462414"
+        },
+        {
+          "title": "Intensive blood pressure control in type 2 diabetes: a meta-analysis of randomized controlled trials - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42375334/"
+        },
+        {
+          "title": "Cover Story | Renal Denervation: Expanding Care For Treatment-Resistant Hypertension - American College of Cardiology",
+          "url": "https://www.acc.org/latest-in-cardiology/articles/2024/09/01/01/42/cover-story-renal-denervation-expanding-care-for-treatment-resistant-hypertension"
+        },
+        {
+          "title": "Renal Denervation by Iberis Multi-Electrode Renal Denervation System in Patients With Primary Hypertension - American College of Cardiology",
+          "url": "https://www.acc.org/latest-in-cardiology/clinical-trials/2024/09/19/15/50/iberis-htn"
+        },
+        {
+          "title": "Intensive Blood-Pressure Control in Patients with Type 2 Diabetes. Reply - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40601950/"
+        },
+        {
+          "title": "Effect of Alcohol-Mediated Renal Denervation on Blood Pressure in the Presence of Antihypertensive Drugs - American College of Cardiology",
+          "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2024/04/05/14/03/target-bp-i"
+        },
+        {
+          "title": "Rationale and design for the Blood Pressure Control Target in Diabetes (BPROAD) study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37345251/"
+        },
+        {
+          "title": "New Blood Pressure Target For Individuals at High Risk - American College of Cardiology",
+          "url": "https://www.acc.org/latest-in-cardiology/articles/2024/11/05/11/55/new-blood-pressure-target-for-individuals-at-high-risk"
+        },
+        {
+          "title": "B24127 Hypertension Roundtable Key Takeaways V5",
+          "url": "https://www.acc.org/-/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/Tools-and-Practice-Support/Quality-Programs/Roundtables-Key-Takeaways/B24127-Hypertension-Roundtable-Key-Takeaways.pdf"
+        },
+        {
+          "title": "Microsoft Word - Federal Section Renal Denervation Final Agenda_Online",
+          "url": "https://www.acc.org/-/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/Meetings/2024/Agendas/Renal-Denervation-Agenda.pdf"
+        },
+        {
+          "title": "ACC.24 EXPO GUIDE — SATURDAY, APRIL 6",
+          "url": "https://www.acc.org/-/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/ACC24/2024/04/02/A24040-ACC24-Expo-Guide-WEB-UPLOADED-April-2-2024.pdf"
+        },
+        {
+          "title": "COVER STORY",
+          "url": "https://www.acc.org/-/media/Non-Clinical/Images/2026/04/CARDIOLOGY/2026-April-Cardiology-Magazine.pdf"
+        },
+        {
+          "title": "New in Clinical Guidance",
+          "url": "https://www.acc.org/~/media/B46626A360F34ECC8378BCB4EC8A1CD4.pdf"
+        }
+      ]
+    },
+    {
+      "sequence": 13,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Obstructive Sleep Apnea and Cardiovascular Disease: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34148375/"
+        },
+        {
+          "title": "Orthostatic Hypotension in Adults With Hypertension: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38205630/"
+        },
+        {
+          "title": "Orthostatic Hypotension in Adults With Hypertension - Professional Heart Daily | American Heart Association",
+          "url": "https://professional.heart.org/en/science-news/orthostatic-hypotension-in-adults-with-hypertension"
+        },
+        {
+          "title": "Clinical Practice Guideline for Screening and Management of High Blood Pressure in Children and Adolescents | Pediatrics | American Academy of Pediatrics",
+          "url": "https://publications.aap.org/pediatrics/article/140/3/e20171904/38358/Clinical-Practice-Guideline-for-Screening-and"
+        },
+        {
+          "title": "National Heart, Lung, and Blood Institute Working Group Report on Salt in Human Health and Sickness: Building on the Current Scientific Evidence - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27324228/"
+        },
+        {
+          "title": "Sleep apnea worsens heart disease, yet often untreated | American Heart Association",
+          "url": "https://newsroom.heart.org/news/sleep-apnea-worsens-heart-disease-yet-often-untreated?trk=article-ssr-frontend-pulse_little-text-block"
+        },
+        {
+          "title": "Clinical Practice Guideline for Screening and Management of High Blood Pressure in Children and Adolescents",
+          "url": "https://publications.aap.org/pediatrics/article-pdf/140/3/e20171904/1104403/peds_20171904.pdf"
+        },
+        {
+          "title": "Experts urge treatment for sleep apnea, as it can worsen heart problems | American Heart Association",
+          "url": "https://www.heart.org/en/news/2021/06/21/experts-urge-treatment-for-sleep-apnea-as-it-can-worsen-heart-problems"
+        },
+        {
+          "title": "The blood pressure-salt sensitivity paradigm: pathophysiologically sound yet of no practical value - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27521374/"
+        },
+        {
+          "title": "Sleep-Disordered Breathing and Cardiac Arrhythmias in Adults: Mechanistic Insights and Clinical Implications: A Scientific Statement From the American Heart Association - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35912643/"
+        },
+        {
+          "title": "Joint statement for assessing and managing high blood pressure in children and adolescents: Chapter 2. How to manage high blood pressure in children and adolescents - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37124176/"
+        },
+        {
+          "title": "Salt Sensitivity Determined From Capillary Blood.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27327163/"
+        },
+        {
+          "title": "Salt-sensitive hypertension: mechanisms and effects of dietary and other lifestyle factors.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27566757/"
+        }
+      ]
+    },
+    {
+      "sequence": 14,
+      "individual_timestamp_recorded": false,
+      "source_sightings": []
+    },
+    {
+      "sequence": 15,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Prueba de renina: Prueba de laboratorio de MedlinePlus",
+          "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-de-renina/"
+        },
+        {
+          "title": "Prueba de aldosterona: Prueba de laboratorio de MedlinePlus",
+          "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-de-aldosterona/"
+        },
+        {
+          "title": "Aldosterone Test: MedlinePlus Medical Test",
+          "url": "https://www.medlineplus.gov/lab-tests/aldosterone-test/"
+        },
+        {
+          "title": "Clortalidona: MedlinePlus medicinas",
+          "url": "https://www.medlineplus.gov/spanish/druginfo/meds/a682342-es.html"
+        },
+        {
+          "title": "Captopril: MedlinePlus Drug Information",
+          "url": "https://www.medlineplus.gov/druginfo/meds/a682823.html"
+        },
+        {
+          "title": "Respuestas del corazón: Presión arterial alta",
+          "url": "https://international.heart.org/-/media/Files/Health-Topics/Answers-by-Heart/Answers-by-Heart-SPANISH/What-Is-HighBloodPressure_Span.pdf"
+        },
+        {
+          "title": "Enfermedades de las glándulas suprarrenales: MedlinePlus en español",
+          "url": "https://medlineplus.awsqa.nlm.nih.gov/spanish/adrenalglanddisorders.html"
+        },
+        {
+          "title": "Medicinas para la presión arterial: MedlinePlus en español",
+          "url": "https://medlineplus.gov/spanish/bloodpressuremedicines.html"
+        },
+        {
+          "title": "Medicamentos antihipertensivos: MedlinePlus enciclopedia médica",
+          "url": "https://www.medlineplus.gov/spanish/ency/article/007484.htm"
+        },
+        {
+          "title": "Preeclampsia, High Blood Pressure and Maternal Health | American Heart Association",
+          "url": "https://newsroom.heart.org/facts/preeclampsia-high-blood-pressure-and-maternal-health"
+        },
+        {
+          "title": "Todo lo que hay que saber sobre la presión arterial alta: lo que la comunidad hispana debe saber | American Heart Association",
+          "url": "https://newsroom.heart.org/news/todo-lo-que-hay-que-saber-sobre-la-presion-arterial-alta-lo-que-la-comunidad-hispana-debe-saber"
+        },
+        {
+          "title": "La dieta puede desempeñar un papel en el desarrollo de complicaciones en el embarazo entre las mujeres hispanas o latinas Conferencia sobre Epidemiología, Prevención, Estilo de Vida y Salud Cardiometabólica de la American Heart Association: Presentación 21 | American Heart Association",
+          "url": "https://newsroom.heart.org/news/la-dieta-puede-desempenar-un-papel-en-el-desarrollo-de-complicaciones-en-el-embarazo-entre-las-mujeres-hispanas-o-latinas"
+        },
+        {
+          "title": "La nueva guía sobre la presión arterial alta enfatiza la prevención y el tratamiento temprano para reducir el riesgo de ECV | American Heart Association",
+          "url": "https://newsroom.heart.org/news/la-nueva-guia-sobre-la-presion-arterial-alta-enfatiza-la-prevencion-y-el-tratamiento-temprano-para-reducir-el-riesgo-de-ecv"
+        },
+        {
+          "title": "HIPERTENSIÓN ARTERIAL SECUNDARIA EN EL EMBARAZO: DESAFÍO DIAGNÓSTICO A PROPÓSITO DE UN CASO.",
+          "url": "https://sochog.cl/wp-content/uploads/2023/11/LIBRO-CONTRIBUCIONES-2023.pdf"
+        },
+        {
+          "title": "Vol. 12 N°1",
+          "url": "https://www.clinicalascondes.cl/clcprod/media/contenidos/pdf/med_12_4/hipertensionembarazo.pdf"
+        },
+        {
+          "title": "HEARTS Via Clinica de Hipertension editable_ESP",
+          "url": "https://www.paho.org/sites/default/files/2024-07/clinica-hipertension-chile.pdf"
+        },
+        {
+          "title": "Guía ESC 2024 sobre el manejo de la presión arterial elevada y la hipertensión",
+          "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf"
+        },
+        {
+          "title": "HIPERTENSIÓN",
+          "url": "https://www.savalnet.cl/revistas/boletin_hta_19_2014/files/assets/common/downloads/BOLETN%20HTA.pdf"
+        },
+        {
+          "title": "Aldosterona",
+          "url": "https://es.wikipedia.org/wiki/Aldosterona"
+        },
+        {
+          "title": "Sistema renina-angiotensina-aldosterona",
+          "url": "https://es.wikipedia.org/wiki/Sistema_renina-angiotensina-aldosterona"
+        },
+        {
+          "title": "Síndrome de Conn",
+          "url": "https://es.wikipedia.org/wiki/S%C3%ADndrome_de_Conn"
+        },
+        {
+          "title": "Hiperaldosteronismo",
+          "url": "https://es.wikipedia.org/wiki/Hiperaldosteronismo"
+        },
+        {
+          "title": "Osmorregulación",
+          "url": "https://es.wikipedia.org/wiki/Osmorregulaci%C3%B3n"
+        },
+        {
+          "title": "Mineralocorticoide",
+          "url": "https://es.wikipedia.org/wiki/Mineralocorticoide"
+        }
+      ]
+    },
+    {
+      "sequence": 16,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Medicamentos antihipertensivos: MedlinePlus enciclopedia médica",
+          "url": "https://medlineplus.gov/spanish/ency/article/007484.htm"
+        },
+        {
+          "title": "Prueba de renina: Prueba de laboratorio de MedlinePlus",
+          "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-de-renina/"
+        }
+      ]
+    },
+    {
+      "sequence": 17,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Primary Aldosteronism | Endocrine Society",
+          "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+        }
+      ]
+    },
+    {
+      "sequence": 18,
+      "individual_timestamp_recorded": false,
+      "source_sightings": []
+    },
+    {
+      "sequence": 19,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Measurement of Blood Pressure in Humans: A Scientific Statement From the American Heart Association - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/"
+        },
+        {
+          "title": "Blood Pressure Measurement: 2025 AHA Guidelines",
+          "url": "https://urinenephrology.org/medical_associates/hypertension_management/office_blood_pressure_measurement"
+        },
+        {
+          "title": "Hypertension - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/6477925/"
+        },
+        {
+          "title": "Blood Pressure Measurement Standards - Nephrology Lectures 2025",
+          "url": "https://urinenephrology.org/2025_udpa_lectures_live/hypertension/bp-measurement-standards"
+        },
+        {
+          "title": "Isometric Exercise for Blood Pressure and Endothelial Function in Metabolic Syndrome: A Review",
+          "url": "https://brieflands.com/journals/asjsm/articles/153619"
+        },
+        {
+          "title": "Adult Hypertension | The Rational Clinical Examination: Evidence-Based Clinical Diagnosis | JAMAevidence | McGraw Hill Medical",
+          "url": "https://jamaevidence.mhmedical.com/content.aspx?bookid=845&sectionid=263985104"
+        },
+        {
+          "title": "Blood Pressure: What Holds Up and What Doesn't",
+          "url": "https://knowyourprime.com/research-desk-blood-pressure"
+        },
+        {
+          "title": "Home blood pressure monitoring: a position statement from the Korean Society of Hypertension Home Blood Pressure Forum",
+          "url": "https://www.clinicalhypertension.org/search.php?code=0273CH&id=10.1186%2Fs40885-022-00218-1&vmode=FULL&where=aview"
+        },
+        {
+          "title": "📌 Preventing 'Missed' Hypertension: From Blood Pressure Measurement to Treatment Strategy｜Dr. MK",
+          "url": "https://note.com/kioskkioskkiosk/n/n8e61f5e31ab0?hl=en"
+        }
+      ]
+    },
+    {
+      "sequence": 20,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Blood Pressure in CKD – KDIGO",
+          "url": "https://kdigo.org/guidelines/blood-pressure-in-ckd/"
+        },
+        {
+          "title": "2024 Elevated Blood Pressure and Hypertension",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/"
+        },
+        {
+          "title": "2020 International Society of Hypertension Global Hypertension Practice Guidelines.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32370572/"
+        },
+        {
+          "title": "KDIGO Announces Publication of the 2021 Blood Pressure in Chronic Kidney Disease Guideline – KDIGO",
+          "url": "https://kdigo.org/kdigo-announces-publication-of-the-2021-blood-pressure-in-chronic-kidney-disease-guideline/"
+        },
+        {
+          "title": "Guidelines Publication Schedule",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/guidelines-development/guidelines-publication-schedule/"
+        },
+        {
+          "title": "KINT_v99_i3_sS_COVER.indd",
+          "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2021-Blood-Pressure-in-CKD-Guideline.pdf"
+        },
+        {
+          "title": "Volume VIII | March 18, 2021",
+          "url": "https://kdigo.org/wp-content/uploads/2021/03/KDIGO-Direct-3-2021.pdf"
+        },
+        {
+          "title": "The 2020 International Society of Hypertension global hypertension practice guidelines - key messages and clinical considerations - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32972800/"
+        },
+        {
+          "title": "KDIGO 2021 BP Guideline – KDIGO",
+          "url": "https://kdigo.org/kdigo-2021-bp-guideline/"
+        },
+        {
+          "title": "Hypertension",
+          "url": "https://www.escardio.org/guidelines/scientific-documents/recommended-reading/hypertension/"
+        },
+        {
+          "title": "KINT_v99_i3_sS_COVER.indd",
+          "url": "https://kdigo.org/wp-content/uploads/2023/12/KDIGO-2021-BP-Guideline.pdf"
+        },
+        {
+          "title": "Commentaries – KDIGO",
+          "url": "https://kdigo.org/commentaries/"
+        },
+        {
+          "title": "KDIGO 2021 GD Guideline Executive Summary – KDIGO",
+          "url": "https://kdigo.org/guidelines/gd/kdigo-2021-gd-guideline-executive-summary/"
+        },
+        {
+          "title": "KDIGO-2021-Blood-Pressure-in-CKD-Guideline – KDIGO",
+          "url": "https://kdigo.org/guidelines/blood-pressure-in-ckd/kdigo-2021-blood-pressure-in-ckd-guideline/?swpmtx=782e2df739db8e79485f42fa15d72cb8&swpmtxnonce=4cdb198964"
+        },
+        {
+          "title": "ESC 365 - Targets for treatment and optimal strategies for managing hypertension in 2025: indications for clinical practice from recent hypertension guidelines",
+          "url": "https://esc365.escardio.org/journal/92045"
+        },
+        {
+          "title": "Checking your browser - reCAPTCHA",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/6477925/"
+        },
+        {
+          "title": "Checking your browser - reCAPTCHA",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/"
+        }
+      ]
+    },
+    {
+      "sequence": 21,
+      "individual_timestamp_recorded": false,
+      "source_sightings": []
+    },
+    {
+      "sequence": 22,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Pulmonary Hypertension – High Blood Pressure in the Heart-to-Lung System | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/pulmonary-hypertension-high-blood-pressure-in-the-heart-to-lung-system"
+        },
+        {
+          "title": "Effect of Salt Substitution on Cardiovascular Events and Death - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34459569/"
+        },
+        {
+          "title": "Intensive blood pressure control in type 2 diabetes: a meta-analysis of randomized controlled trials - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42375334/"
+        },
+        {
+          "title": "Effects of salt substitutes on clinical outcomes: a systematic review and meta-analysis - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35945000/"
+        },
+        {
+          "title": "Intensive Blood-Pressure Control in Patients with Type 2 Diabetes - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39555827/"
+        },
+        {
+          "title": "Lorundrostat Efficacy and Safety in Patients with Uncontrolled Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40267417/"
+        },
+        {
+          "title": "Efficacy and Safety of Lorundrostat in Uncontrolled Hypertension: A Systematic Review and Meta-Analysis - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40991241/"
+        },
+        {
+          "title": "Lorundrostat in Participants With Uncontrolled Hypertension and Treatment-Resistant Hypertension: The Launch-HTN Randomized Clinical Trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40587141/"
+        },
+        {
+          "title": "Intensive vs standard blood pressure control in adults with type 2 diabetes: a systematic review and GRADE-based meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42254206/"
+        },
+        {
+          "title": "Long-Term Effect of Salt Substitute on All-Cause and Cardiovascular Disease Mortality: An Exploratory Follow-Up of a Randomized Controlled Trial.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34079827/"
+        },
+        {
+          "title": "Interim effects of salt substitution on urinary electrolytes and blood pressure in the China Salt Substitute and Stroke Study (SSaSS).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31986290/"
+        },
+        {
+          "title": "Replacing salt with low-sodium salt substitutes (LSSS) for cardiovascular health in adults, children and pregnant women - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35944931/"
+        },
+        {
+          "title": "Heart Care for Life",
+          "url": "https://www.heart.org/en/-/media/Files/Affiliates/MWA/Minnesota/Minnesota-CV-Conference-2021/7MN-AHA-CV-Summit-Pulm-Htn-May-21-2021-Fenstad.pdf?sc_lang=en"
+        },
+        {
+          "title": "Disclosure System",
+          "url": "https://disclosures.acc.org/Public/Index/7cf20176-5002-4f22-8c13-1803ea985e36"
+        },
+        {
+          "title": "Presentation Number: 51-104",
+          "url": "https://www.acc.org/-/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/Meetings/2025/Misc/ACC-Middle-East-2025-Abstracts-and-Cases-Full.pdf"
+        },
+        {
+          "title": "[ Insert Title Here ]",
+          "url": "https://www.acc.org/-/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/Meetings/2026/Webinars/Webinar-Slides-Safe-Cardiac-Medication-Use.pdf"
+        },
+        {
+          "title": "2017 Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "url": "https://professional.heart.org/en/science-news/-/media/PHD-Files-2/Science-News/h/Hypertension_Highlights_Detailed_Summary_ucm_497446.pdf"
+        },
+        {
+          "title": "Publications",
+          "url": "https://professional.heart.org/-/media/feature/phd/archive/ucm_496293.pdf"
+        }
+      ]
+    },
+    {
+      "sequence": 23,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "pubmed.ncbi.nlm.nih.gov",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20228401/"
+        },
+        {
+          "title": "Directriz para el tratamiento farmacológico de la hipertensión en adultos",
+          "url": "https://www.who.int/es/publications/i/item/9789240033986"
+        },
+        {
+          "title": "Top 10 Takeaways Clinicians - BP GL",
+          "url": "https://kdigo.org/wp-content/uploads/2021/03/Top-10-Takeaways-Clinicians-KDIGO-BP-Guideline.pdf"
+        }
+      ]
+    },
+    {
+      "sequence": 24,
+      "individual_timestamp_recorded": false,
+      "source_sightings": []
+    },
+    {
+      "sequence": 25,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Baroreflex sensitivity and neurohormonal activation in patients with acute myocardial infarction.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7662448/"
+        },
+        {
+          "title": "Atrial natriuretic factor attenuates carotid baroreflex-mediated cardioacceleration in humans - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2965521/"
+        },
+        {
+          "title": "Diastolic ventricular interaction in chronic heart failure: relation to heart rate variability and neurohumoral status.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10651169/"
+        },
+        {
+          "title": "Sympathetic and baroreflex alterations in... : Journal of Hypertension",
+          "url": "https://doi.org/10.1097/hjh.0000000000001856"
+        },
+        {
+          "title": "Nitric oxide and myocardial function in heart failure: friend or foe? - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1767463/"
+        },
+        {
+          "title": "Impairment of cardiopulmonary receptor sensitivity in the early phase of heart failure - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1767996/"
+        },
+        {
+          "title": "Endothelium-derived nitric oxide regulates systemic and pulmonary vascular resistance during acute hypoxia in humans | JACC",
+          "url": "https://www.jacc.org/doi/10.1016/0735-1097%2896%2900218-5"
+        },
+        {
+          "title": "Atrial Natriuretic Peptide Attenuates the Reflex Sympathetic Responses to Lower Body Negative Pressure - ScienceDirect",
+          "url": "https://www.sciencedirect.com/science/article/pii/S000296291536273X"
+        },
+        {
+          "title": "Increased production of nitric oxide in coronary arteries during congestive heart failure.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8282783/"
+        },
+        {
+          "title": "Regulation of nitric oxide production in human coronary microvessels and the contribution of local kinin formation - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8964116/"
+        },
+        {
+          "title": "Sympathetic Activity in Patients With Secondary Symptomatic Mitral Regurgitation or End-Stage Systolic Heart Failure | JACC: Cardiovascular Interventions",
+          "url": "https://www.jacc.org/doi/10.1016/j.jcin.2016.06.032"
+        },
+        {
+          "title": "Role of c-Src in regulation of endothelial nitric oxide synthase expression during exercise training | American Journal of Physiology-Heart and Circulatory Physiology | American Physiological Society",
+          "url": "https://doi.org/10.1152/ajpheart.00918.2002"
+        },
+        {
+          "title": "07- BMS-CCR-2022-24",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10201898/pdf/CCR-19-E170622206132.pdf"
+        },
+        {
+          "title": "Baroreflex",
+          "url": "https://en.wikipedia.org/wiki/Baroreflex"
+        },
+        {
+          "title": "UNIVERSITY OF MOLISE",
+          "url": "https://iris.unimol.it/bitstream/11695/86520/1/Tesi_V_D_Angelosante.pdf"
+        },
+        {
+          "title": "Endothelium-Derived Nitric Oxide Contributes to the Regulation of Venous Tone in Humans",
+          "url": "https://www.ahajournals.org/doi/pdf/10.1161/01.CIR.101.2.165"
+        },
+        {
+          "title": "Vascular effects of nitric oxide",
+          "url": "https://citeseerx.ist.psu.edu/document?doi=d9bc97295df4f40f09375fb44c0fb10181426c89&repid=rep1&type=pdf"
+        },
+        {
+          "title": "BradyAJB_1994",
+          "url": "https://era.ed.ac.uk/server/api/core/bitstreams/518ed398-c74e-41d7-bb06-b7c7b8137eae/content"
+        },
+        {
+          "title": "UNIVERSITY OF CALIFORNIA",
+          "url": "https://escholarship.org/content/qt1nb1k3fg/qt1nb1k3fg_noSplash_71343ce138ef4ed448df8af6d5cce5cb.pdf"
+        },
+        {
+          "title": "Types of Blood Pressure Medications | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications"
+        }
+      ]
+    },
+    {
+      "sequence": 26,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Effects of intensive blood-pressure control in type 2 diabetes mellitus - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20228401/"
+        },
+        {
+          "title": "Treatment for Mild Chronic Hypertension during Pregnancy - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35363951/"
+        },
+        {
+          "title": "Efficacy and Safety of Baxdrostat in Uncontrolled and Resistant Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40888730/?dopt=Abstract"
+        },
+        {
+          "title": "Zilebesiran and Hypertension: A Systematic Review and Meta-analysis - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39781230/"
+        },
+        {
+          "title": "Treatment for Mild Chronic Hypertension during Pregnancy - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35363951/?fc=None&ff=20250302194835&v=2.18.0.post9+e462414"
+        },
+        {
+          "title": "Add-On Treatment With Zilebesiran for Inadequately Controlled Hypertension: The KARDIA-2 Randomized Clinical Trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40434761/"
+        },
+        {
+          "title": "Zilebesiran, a ribonucleic acid interference agent targeting angiotensinogen, proves a promising approach in hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39222421/"
+        },
+        {
+          "title": "Zilebesiran as an Innovative siRNA-Based Therapeutic Approach for Hypertension: Emerging Perspectives in Cardiovascular Medicine - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41226756/"
+        },
+        {
+          "title": "Zilebesiran: A Novel RNA Interference Therapeutic for Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40454845/"
+        },
+        {
+          "title": "Zilebesiran, an RNA Interference Therapeutic Agent for Hypertension.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37467498/"
+        },
+        {
+          "title": "Efficacy and Safety of Baxdrostat in Uncontrolled and Resistant Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41534051/"
+        },
+        {
+          "title": "Zilebesiran: A Promising Antihypertensive Therapy Inhibiting Angiotensinogen Synthesis - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38385680/"
+        }
+      ]
+    },
+    {
+      "sequence": 27,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Recommendations for hypertensive disorders and pregnancy (1)",
+          "url": "https://www.escardio.org/static-file/Escardio/Guidelines/Products/Slide%20sets/2025/2025%20official%20slides_Pregnancy.pdf"
+        },
+        {
+          "title": "Pequeño para la edad gestacional: MedlinePlus enciclopedia médica",
+          "url": "https://medlineplus.gov/spanish/ency/article/002302.htm"
+        },
+        {
+          "title": "2025-GL-pregnancy",
+          "url": "https://www.escardio.org/news/news-room/congress-news/2025-guidelines-cvd-pregnancy/"
+        },
+        {
+          "title": "Systolic blood pressure goals to reduce cardiovascular disease among older adults - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24978394/"
+        },
+        {
+          "title": "Scientific Documents and Publications",
+          "url": "https://www.escardio.org/communities/associations/eapc/scientific-documents-and-publications/"
+        },
+        {
+          "title": "All ESC Clinical Practice Guidelines",
+          "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines"
+        },
+        {
+          "title": "Commentary on the 2014 BP guidelines from the panel appointed to the Eighth Joint National Committee (JNC 8) - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25114277/"
+        },
+        {
+          "title": "Is 60 the New 80 in Hypertension?",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27021293/"
+        },
+        {
+          "title": "Updated ESC Guidelines put focus on women’s autonomy to make their own reproductive choices about high-risk pregnancies",
+          "url": "https://www.escardio.org/news/press/press-releases/Updated-ESC-Guidelines-put-focus-on-women-s-autonomy-to-make-their-own-reproductive-choices-about-high-risk-pregnancies/"
+        },
+        {
+          "title": "The Self-Fulfilling Process of Clinical Race Correction: The Case of Eighth Joint National Committee Recommendations.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38076215/"
+        },
+        {
+          "title": "ESC 365 - Management of pregnant women with hypertension, coronary heart disease, and with adverse pregnancy outcome",
+          "url": "https://esc365.escardio.org/presentation/302675"
+        },
+        {
+          "title": "Renin-Angiotensin System Blocker Fetopathy - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26254838/"
+        },
+        {
+          "title": "Clinical Pharmacology of Antihypertensive Therapy for the Treatment of Hypertension in CKD.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30425103/"
+        }
+      ]
+    },
+    {
+      "sequence": 28,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Antihypertensive withdrawal for the prevention of cognitive decline - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6465000/"
+        },
+        {
+          "title": "Novel Medical Treatments for Hypertension and Related Comorbidities - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7101636/"
+        },
+        {
+          "title": "[Management of autonomic dysfunction in Parkinson's disease].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25857860/"
+        },
+        {
+          "title": "The Pharmacological Treatment of Arterial Hypertension in Frail, Older Patients: A Systematic Review - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6401515/"
+        },
+        {
+          "title": "Primary Aldosteronism | Endocrine Society",
+          "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+        },
+        {
+          "title": "Primary Aldosteronism | Endocrine Society",
+          "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2"
+        },
+        {
+          "title": "Types of Blood Pressure Medications | American Heart Association",
+          "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications"
+        }
+      ]
+    },
+    {
+      "sequence": 29,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Magnesium sulfate in preeclampsia: Broad indications, not only in neurological symptoms - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38669914/"
+        },
+        {
+          "title": "[Magnesium sulphate and severe preeclampsia: its use in current practice] - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15767913/"
+        },
+        {
+          "title": "11Beta-hydroxylase deficiency and other syndromes of mineralocorticoid excess as a rare cause of endocrine hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22932914/"
+        },
+        {
+          "title": "Overview of Monogenic or Mendelian Forms of Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31312622/"
+        },
+        {
+          "title": "Monogenic Etiology of Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37951648/"
+        },
+        {
+          "title": "Low-Renin Hypertension - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31655771/"
+        },
+        {
+          "title": "Integrating Guidelines into Clinical Workflows",
+          "url": "https://www.heart.org/en/-/media/files%20/Professional/Quality%20Improvement/Maternal%20Health/Advancing%20Maternal%20Health%20November%20Webinar%20FINAL"
+        },
+        {
+          "title": "Decoding Monogenic Hypertension: A Review of Rare Hypertension Disorders - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39803890/"
+        },
+        {
+          "title": "Management of Primary Aldosteronism: Case Detection, Diagnosis, and Treatment: An Endocrine Society Clinical Practice Guideline | The Journal of Clinical Endocrinology & Metabolism | Oxford Academic",
+          "url": "https://academic.oup.com/jcem/article/101/5/1889/2804729"
+        },
+        {
+          "title": "Diagnosis of primary aldosteronism: Confirmatory test - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41638798/"
+        },
+        {
+          "title": "Is magnesium sulfate therapy warranted in all cases of late postpartum severe hypertension? A suggested approach to a clinical conundrum - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37467840/"
+        },
+        {
+          "title": "Clinical practice guideline for the prevention and management of hypertensive disorders of pregnancy",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35503297/"
+        },
+        {
+          "title": "[Monogenic hypertension].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15058025/"
+        },
+        {
+          "title": "Oral Sodium Loading Test Is More Sensitive Than Seated Saline Infusion Test to Confirm Overt Primary Aldosteronism",
+          "url": "https://academic.oup.com/jes/advance-article-pdf/doi/10.1210/jendso/bvae209/60812095/bvae209.pdf"
+        }
+      ]
+    },
+    {
+      "sequence": 30,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "National Health and Nutrition Examination Survey (NHANES) - Health, United States",
+          "url": "https://www.cdc.gov/nchs/hus/sources-definitions/nhanes.htm"
+        },
+        {
+          "title": "About NHANES | National Health and Nutrition Examination Survey | CDC",
+          "url": "https://www.cdc.gov/nchs/nhanes/about/"
+        },
+        {
+          "title": "Racial and geographic differences in prevalence, awareness, treatment and control of dyslipidemia: the reasons for geographic and racial differences in stroke (REGARDS) study - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21822024/"
+        },
+        {
+          "title": "The reasons for geographic and racial differences in stroke study: objectives and design - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15990444/"
+        },
+        {
+          "title": "Investigation of selection bias in the association of race with prevalent atrial fibrillation in a national cohort study: REasons for Geographic And Racial Differences in Stroke (REGARDS).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27480477/"
+        },
+        {
+          "title": "Disparities in Evaluation at Certified Primary Stroke Centers: REasons for Geographic And Racial Differences in Stroke - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747032/"
+        },
+        {
+          "title": "Black-white racial disparities in sepsis: a prospective analysis of the REasons for Geographic And Racial Differences in Stroke (REGARDS) cohort - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4498511/"
+        },
+        {
+          "title": "Neighborhood Factors, Individual Stressors, and Cardiovascular Health Among Black and White Adults in the US: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37773494/"
+        },
+        {
+          "title": "Surveys and Data Collection Systems | National Center for Health Statistics | CDC",
+          "url": "https://www.cdc.gov/nchs/surveys/index.html"
+        },
+        {
+          "title": "Cardiovascular Health and Healthcare Utilization and Expenditures Among Medicare Beneficiaries: The REasons for Geographic And Racial Differences in Stroke (REGARDS) Study - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28151403/"
+        },
+        {
+          "title": "Coronary Heart Disease Risk Factors and Outcomes in the Twenty-First Century: Findings from the REasons for Geographic and Racial Differences in Stroke (REGARDS) Study - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4443695/"
+        },
+        {
+          "title": "Self-Reported Stroke Risk Stratification: the REasons for Geographic And Racial Differences in Stroke (REGARDS) Study - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5493147/"
+        },
+        {
+          "title": "Dietary Inflammatory Score and Incident Heart Failure in the Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12256639/pdf/nihms-2063073.pdf"
+        },
+        {
+          "title": "National Health",
+          "url": "https://wwwn.cdc.gov/nchs/data/nhanes/2001-2002/manuals/dietary_year_3.pdf"
+        },
+        {
+          "title": "National Health and Nutrition",
+          "url": "https://www.cdc.gov/nchs/data/nhanes/survey_content_99_16.pdf"
+        },
+        {
+          "title": "Neighborhood Disadvantage and Risk of Heart Failure: The Reasons for Geographic and Racial Differences in Stroke (REGARDS) Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10950536/pdf/nihms-1951553.pdf"
+        },
+        {
+          "title": "Nutrition, food, and health surveys",
+          "url": "https://stacks.cdc.gov/view/cdc/66158/cdc_66158_DS1.pdf"
+        }
+      ]
+    },
+    {
+      "sequence": 31,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Physiology, Mean Arterial Pressure - StatPearls - NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK538226/"
+        },
+        {
+          "title": "Physiology, Mean Arterial Pressure - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30855814/"
+        },
+        {
+          "title": "Physiology, Mean Arterial Pressure - StatPearls - NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK538226/?report=reader"
+        },
+        {
+          "title": "Posterior reversible encephalopathy syndrome due to nonadherence to antihypertensive treatment: A case report from Nepal.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38173888/"
+        },
+        {
+          "title": "Posterior Reversible Encephalopathy Syndrome Associated With a Pontine Lacunar Infarct in a Severely Hypertensive Patient: A Case Report.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39712751/"
+        },
+        {
+          "title": "[Posterior reversible encephalopathy syndrome in autoimmune disorders] - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39175240/"
+        },
+        {
+          "title": "Posterior Reversible Encephalopathy Syndrome: A Clinico-Radiological Approach - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39588420/"
+        },
+        {
+          "title": "Posterior Reversible Encephalopathy Syndrome Due to Vitamin D Toxicity.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39267608/"
+        },
+        {
+          "title": "Posterior reversible encephalopathy syndrome: A case report.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38706814/"
+        },
+        {
+          "title": "Complex Presentation of Pheochromocytoma: Hypertensive Encephalopathy and Takotsubo-Like Cardiomyopathy in a Young Female.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39244658/"
+        },
+        {
+          "title": "[Posterior reversible encephalopathy syndrome (PRES) and hemolytic anemia: two severe and unusual complications of acute post-streptococcal glomerulonephritis] - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39760630/"
+        },
+        {
+          "title": "Eclampsia, HELLP and PRES in a 16-week partial molar pregnancy - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38890113/"
+        },
+        {
+          "title": "<table id=\"e1\">",
+          "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/guideline/NIC-CH-20-01-GUIDELINE-2018-esp-AIEPI-Hospitalario-Tercera-Edici%C3%B3n-2018.pdf"
+        },
+        {
+          "title": "blood pressure in",
+          "url": "https://ish-world.com/documents/3_HTN%20March%202025%20Article%20B.pdf"
+        },
+        {
+          "title": "ISH AFFILIATED",
+          "url": "https://ish-world.com/document/1753279731.pdf"
+        },
+        {
+          "title": "Este manual proporciona directrice",
+          "url": "https://iris.who.int/bitstream/handle/10665/42249/a67033-spa.pdf?sequence=1"
+        },
+        {
+          "title": "2025 position statement by the British",
+          "url": "https://ish-world.com/document/1764854170.pdf"
+        }
+      ]
+    },
+    {
+      "sequence": 32,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "International Society of Hypertension - ISH Global Hypertension Practice Guidelines",
+          "url": "https://ish-world.com/global-hypertension-practice-guidelines"
+        },
+        {
+          "title": "2020 ISH GLOBAL HYPERTENSION GUIDELINES",
+          "url": "https://ish-world.com/documents/Archives/June2020.pdf"
+        },
+        {
+          "title": "2020 ISH Global",
+          "url": "https://ish-world.com/wp-content/uploads/2021/02/ISH_Guideline_Presentation_Slide_Deck_06.05.2020.pdf"
+        },
+        {
+          "title": "HYPERTENSION",
+          "url": "https://ish-world.com/documents/Archives/2003-1.pdf"
+        },
+        {
+          "title": "International Society of Hypertension - portfolio-women-in-hypertension",
+          "url": "https://ish-world.com/portfolio-women/professor-alta-schutte"
+        },
+        {
+          "title": "HYPERTENSION",
+          "url": "https://ish-world.com/wp-content/uploads/2021/03/June2020.pdf"
+        },
+        {
+          "title": "Diagnosis of hypertensive disorders in pregnancy - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40348190/"
+        },
+        {
+          "title": "Hypertensive Disorders in Pregnancy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40769662/"
+        },
+        {
+          "title": "Routine mid-gestational prediction of later preeclampsia - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40554862/"
+        },
+        {
+          "title": "Management of hypertension in the early postpartum: A randomized controlled trial - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39884047/"
+        },
+        {
+          "title": "Aggregated postpartum cerebral autoregulatory curves in normotensive individuals, preeclampsia with severe features, and superimposed preeclampsia with severe features - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40845907/"
+        },
+        {
+          "title": "Testing the use of a biomarker (PlGF) to evaluate superimposed preeclampsia in pregnant women with chronic hypertension (B.I.P.E.S.): a randomized clinical trial study protocol - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41454303/"
+        },
+        {
+          "title": "Validation of a new impedance cardiography device for noninvasive hemodynamic measurement in outpatient hypertensive patients - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057702/"
+        },
+        {
+          "title": "[Absolute biventricular volumes and cardiac output by isotopic ventriculography].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3266350/"
+        },
+        {
+          "title": "Evaluation of concordance among three cardiac output measurement techniques in adult patients during cardiovascular surgery postoperative care.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28969922/"
+        },
+        {
+          "title": "Pregnancy-Dependent Cardioprotection via GPER Activation in Dahl Salt-Sensitive Rats - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40236244/"
+        }
+      ]
+    },
+    {
+      "sequence": 33,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Effect of panel-reactive antibody positivity on graft rejection before or after kidney transplantation - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15518726/"
+        },
+        {
+          "title": "Donor Specificity but Not Broadness of Sensitization Is Associated With Antibody-Mediated Rejection and Graft Loss in Renal Allograft Recipients - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28245084/"
+        },
+        {
+          "title": "Effect of panel reactive antibody on live related donor kidney transplantation: Indian experience.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8000853/"
+        },
+        {
+          "title": "Evaluation of flow cytometric panel reactive antibody in renal transplant recipients - examination of 238 cases of renal transplantation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15691268/"
+        },
+        {
+          "title": "Comparison of duplex ultrasonography and magnetic resonance imaging in the detection of significant renal artery stenosis - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21542417/"
+        },
+        {
+          "title": "Significance of panel reactive antibodies in patients requiring kidney transplantation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23640620/"
+        },
+        {
+          "title": "Early but not late allograft nephrectomy reduces allosensitization after transplant failure - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21388588/"
+        },
+        {
+          "title": "Panel-reactive Antibody and the Association of Early Steroid Withdrawal With Kidney Transplant Outcomes - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33826598/"
+        },
+        {
+          "title": "[Diagnosis of renal artery stenosis with magnetic resonance angiography and stenosis quantification].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11148391/"
+        },
+        {
+          "title": "[Diagnosis of renal artery stenosis in 1.0 T using 3D phase contrast magnetic resonance angiography and dynamic contrast medium perfusion].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10101356/"
+        },
+        {
+          "title": "Pretransplant rejection risk assessment through enzyme-linked immunosorbent assay analysis of anti-HLA class I antibodies - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8712228/"
+        },
+        {
+          "title": "The mode of sensitization and its influence on allograft outcomes in highly sensitized kidney transplant recipients.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27387475/"
+        }
+      ]
+    },
+    {
+      "sequence": 34,
+      "individual_timestamp_recorded": false,
+      "source_sightings": [
+        {
+          "title": "Revisit to the Prognostic Value of Premature Atrial Contraction Burden in 24-h Holter Electrocardiography for Predicting Undiagnosed Atrial Fibrillation - A Propensity Score-Matched Study - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33790146/"
+        },
+        {
+          "title": "Burden of Premature Atrial Complexes and Risk of Recurrent Stroke and Death in Patients with Mild to Moderate Ischemic Stroke - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31839547/"
+        },
+        {
+          "title": "Premature atrial contraction immediately after catheter ablation was associated with late recurrence of atrial fibrillation - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36524673/"
+        },
+        {
+          "title": "Atrial ectopy as a mediator of the association between race and atrial fibrillation - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29110996/"
+        },
+        {
+          "title": "Prognostic Significance of Premature Atrial Complexes Burden in Prediction of Long-Term Outcome - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26316525/"
+        },
+        {
+          "title": "Implication of ventricular pacing burden and atrial pacing therapies on the progression of atrial fibrillation: A systematic review and meta-analysis of randomized controlled trials - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30772532/"
+        },
+        {
+          "title": "Transcatheter Atrial Septal Defect Closure Before Versus After Adulthood - PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36196374/"
+        },
+        {
+          "title": "Device-based longitudinal monitoring of premature atrial contractions before atrial fibrillation onset.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41242585/"
+        },
+        {
+          "title": "High-Burden Premature Atrial Contractions Predict New-Onset Atrial Fibrillation After Surgical Septal Myectomy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37150025/"
+        },
+        {
+          "title": "Impacts of Premature Atrial Contractions and Biochemical Markers Early After Cryoballoon Versus Radiofrequency Ablation on the Late Recurrence of Atrial Fibrillation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40248389/"
+        },
+        {
+          "title": "Mapping and Ablation of Isolated Frequent Symptomatic Premature Atrial Contractions in Patients With Structurally Normal Heart.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35497996/"
+        },
+        {
+          "title": "Higher premature atrial contraction burden after radiofrequency ablation vs. pulsed field or cryoballoon ablation in paroxysmal atrial fibrillation: a 3-year follow-up retrospective study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41019430/"
+        },
+        {
+          "title": "International Society of Hypertension - ISH Global Hypertension Practice Guidelines",
+          "url": "https://ish-world.com/global-hypertension-practice-guidelines"
+        },
+        {
+          "title": "Checking your browser - reCAPTCHA",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK538226/?report=reader"
+        },
+        {
+          "title": "Validation of a new impedance cardiography device for noninvasive hemodynamic measurement in outpatient hypertensive patients - PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057702/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3285 @@
+{
+  "name": "medical_base_en_extended_candidate",
+  "version": 2,
+  "terms": [
+    {
+      "canonical": "blood pressure",
+      "aliases": [
+        "BP"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "high blood pressure",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hypertension",
+      "aliases": [
+        "HTN"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "arterial hypertension",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "primary hypertension",
+      "aliases": [
+        "essential hypertension"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "secondary hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "drug-induced hypertension",
+      "aliases": [
+        "medication-induced hypertension"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "hypertension in pregnancy",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "normotension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "normotensive",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hypertensive",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "elevated blood pressure",
+      "aliases": [
+        "elevated BP"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "non-elevated blood pressure",
+      "aliases": [
+        "non-elevated BP"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "normal blood pressure",
+      "aliases": [
+        "normal BP"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "systolic blood pressure",
+      "aliases": [
+        "SBP",
+        "systolic BP"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "diastolic blood pressure",
+      "aliases": [
+        "DBP",
+        "diastolic BP"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "mean arterial pressure",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "pulse pressure",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "systolic pressure",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "diastolic pressure",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "blood pressure reading",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "blood pressure measurement",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "blood pressure classification",
+      "aliases": [
+        "blood pressure categories"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "blood pressure threshold",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "blood pressure target",
+      "aliases": [
+        "target blood pressure"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "target systolic blood pressure",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "blood pressure control",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "blood pressure variability",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "office blood pressure",
+      "aliases": [
+        "office BP",
+        "clinic blood pressure",
+        "clinic BP"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "home blood pressure monitoring",
+      "aliases": [
+        "HBPM"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "ambulatory blood pressure monitoring",
+      "aliases": [
+        "ABPM"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "out-of-office blood pressure",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "automated office blood pressure",
+      "aliases": [
+        "AOBP"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "white-coat hypertension",
+      "aliases": [
+        "white coat hypertension"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "white-coat effect",
+      "aliases": [
+        "white coat effect"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "masked hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "nocturnal hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "resistant hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "apparent treatment-resistant hypertension",
+      "aliases": [
+        "aTRH"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "pseudo-resistant hypertension",
+      "aliases": [
+        "pseudoresistant hypertension"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "uncontrolled hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "controlled hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "stage 1 hypertension",
+      "aliases": [
+        "stage one hypertension"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "stage 2 hypertension",
+      "aliases": [
+        "stage two hypertension"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "prehypertension",
+      "aliases": [
+        "pre-hypertension"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "isolated systolic hypertension",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "severe hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hypertensive emergency",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "orthostatic hypotension",
+      "aliases": [
+        "postural hypotension"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hypotension",
+      "aliases": [
+        "low blood pressure"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "European Society of Cardiology",
+      "aliases": [
+        "ESC"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "American Heart Association",
+      "aliases": [
+        "AHA"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "American College of Cardiology",
+      "aliases": [
+        "ACC"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "2024 ESC guidelines",
+      "aliases": [
+        "2024 ESC Guidelines for the Management of Elevated Blood Pressure and Hypertension"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "2018 ESC/ESH guidelines",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "2017 ACC/AHA guideline",
+      "aliases": [
+        "2017 ACC/AHA hypertension guideline"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "JNC 7 guideline",
+      "aliases": [
+        "Seventh Report of the Joint National Committee"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "JNC 8 report",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "guideline recommendations",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "clinical practice guidelines",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "guideline-driven management",
+      "aliases": [
+        "guideline-directed management"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "evidence-based medicine",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "evidence-based review",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "clinical implications",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "treatment algorithm",
+      "aliases": [
+        "treatment algorithms"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "treatment threshold",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "treatment goal",
+      "aliases": [
+        "treatment goals"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "clinical decision-making",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "shared decision-making",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "risk assessment",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "risk stratification",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "cardiovascular risk",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "cardiovascular risk factors",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "atherosclerotic cardiovascular disease",
+      "aliases": [
+        "ASCVD"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "ten-year ASCVD risk",
+      "aliases": [
+        "10-year ASCVD risk"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "cardiovascular disease",
+      "aliases": [
+        "CVD"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "cardiovascular events",
+      "aliases": [
+        "CVD events"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "cardiovascular mortality",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "all-cause mortality",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "cardiovascular prevention",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "primordial prevention",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "primary prevention",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "secondary prevention",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "prevalence",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "incidence",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "cohort study",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "randomized controlled trial",
+      "variants": [
+        "randomised controlled trial"
+      ],
+      "aliases": [
+        "RCT"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "meta-analysis",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "network meta-analysis",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "hazard ratio",
+      "aliases": [
+        "hazard ratios"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "absolute risk reduction",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "number needed to treat",
+      "aliases": [
+        "NNT"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "serious adverse events",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "clinical trial",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "SPRINT trial",
+      "aliases": [
+        "Systolic Blood Pressure Intervention Trial"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "ACCORD trial",
+      "aliases": [
+        "Action to Control Cardiovascular Risk in Diabetes"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "CARDIA study",
+      "aliases": [
+        "Coronary Artery Risk Development in Young Adults"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "REGARDS study",
+      "aliases": [
+        "Reasons for Geographic and Racial Differences in Stroke"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "NHANES",
+      "aliases": [
+        "National Health and Nutrition Examination Survey"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "National Institutes of Health",
+      "aliases": [
+        "NIH"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "Task Force",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "co-chair",
+      "aliases": [
+        "co-chairperson"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "primary aldosteronism",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hyperaldosteronism",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "secondary aldosteronism",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "renin",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "plasma renin activity",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "direct renin concentration",
+      "aliases": [
+        "DRC"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "renin suppression",
+      "aliases": [
+        "suppressed renin"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "aldosterone",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "plasma aldosterone concentration",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "urinary aldosterone",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "aldosterone-to-renin ratio",
+      "aliases": [
+        "ARR",
+        "aldosterone renin ratio"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "aldosterone production",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "autonomous aldosterone secretion",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "renin-independent aldosterone production",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "renin-angiotensin system",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "renin-angiotensin-aldosterone system",
+      "variants": [
+        "renin–angiotensin–aldosterone system"
+      ],
+      "aliases": [
+        "RAAS"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "angiotensin II",
+      "aliases": [
+        "angiotensin 2"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "angiotensin-converting enzyme",
+      "aliases": [
+        "ACE"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "mineralocorticoid receptor",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "mineralocorticoid receptor antagonists",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "aldosterone suppression test",
+      "aliases": [
+        "aldosterone suppression testing"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "salt loading",
+      "aliases": [
+        "sodium loading"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "renal sodium retention",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "sodium reabsorption",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "urinary sodium excretion",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "urinary potassium excretion",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "extracellular fluid volume",
+      "aliases": [
+        "extracellular volume"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "extracellular volume expansion",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "serum potassium",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "plasma potassium",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hypokalemia",
+      "variants": [
+        "hypokalaemia"
+      ],
+      "aliases": [
+        "low blood potassium"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hyperkalemia",
+      "variants": [
+        "hyperkalaemia"
+      ],
+      "aliases": [
+        "high blood potassium"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hyponatremia",
+      "variants": [
+        "hyponatraemia"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hypernatremia",
+      "variants": [
+        "hypernatraemia"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "metabolic alkalosis",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hypokalemic metabolic alkalosis",
+      "variants": [
+        "hypokalaemic metabolic alkalosis"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "adrenal gland",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "aldosterone-producing adenoma",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "adrenal hyperplasia",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "bilateral adrenal hyperplasia",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "adrenalectomy",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "chronic kidney disease",
+      "aliases": [
+        "CKD"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "kidney function",
+      "aliases": [
+        "renal function"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "estimated glomerular filtration rate",
+      "aliases": [
+        "eGFR"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "renal artery stenosis",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "renal insufficiency",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "renal ischemia",
+      "variants": [
+        "renal ischaemia"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "albuminuria",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "proteinuria",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "microalbuminuria",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "secondary causes of hypertension",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "endocrine hypertension",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "antihypertensive therapy",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "antihypertensive drug therapy",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "antihypertensive medication",
+      "aliases": [
+        "blood pressure medication"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "pharmacological therapy",
+      "variants": [
+        "pharmacologic therapy"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "non-pharmacological therapy",
+      "variants": [
+        "non-pharmacologic therapy"
+      ],
+      "aliases": [
+        "nonpharmacologic therapy"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "first-line therapy",
+      "aliases": [
+        "first-line treatment"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "combination therapy",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "single-pill combination",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "medication adherence",
+      "aliases": [
+        "treatment adherence"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "medication titration",
+      "aliases": [
+        "dose titration"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "angiotensin-converting enzyme inhibitors",
+      "aliases": [
+        "ACE inhibitors",
+        "ACEIs"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "angiotensin II receptor blockers",
+      "aliases": [
+        "ARBs",
+        "ARB"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "calcium channel blockers",
+      "aliases": [
+        "CCBs",
+        "CCB"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "beta blockers",
+      "variants": [
+        "beta-blockers"
+      ],
+      "aliases": [
+        "beta-adrenergic blockers"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "alpha blockers",
+      "variants": [
+        "alpha-blockers"
+      ],
+      "aliases": [
+        "alpha-adrenergic blockers"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "alpha-2 receptor agonists",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "diuretics",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "thiazide diuretics",
+      "aliases": [
+        "thiazide-type diuretics"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "thiazide-like diuretics",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "loop diuretics",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "potassium-sparing diuretics",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "mineralocorticoid receptor antagonist therapy",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "nonsteroidal anti-inflammatory drugs",
+      "variants": [
+        "non-steroidal anti-inflammatory drugs"
+      ],
+      "aliases": [
+        "NSAIDs",
+        "NSAID"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "oral contraceptives",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hormone replacement therapy",
+      "aliases": [
+        "hormonal replacement therapy"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "immunosuppressive agents",
+      "aliases": [
+        "immunosuppressants"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "recombinant human erythropoietin",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "tyrosine kinase inhibitors",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "antidepressants",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "spironolactone",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "eplerenone",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hydrochlorothiazide",
+      "aliases": [
+        "HCTZ"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "chlorthalidone",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "indapamide",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "furosemide",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "amiloride",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "triamterene",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "lisinopril",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "enalapril",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "ramipril",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "losartan",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "valsartan",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "candesartan",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "olmesartan",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "telmisartan",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "metoprolol",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "carvedilol",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "atenolol",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "bisoprolol",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "nebivolol",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "labetalol",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "amlodipine",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "nifedipine",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "diltiazem",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "verapamil",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hydralazine",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "clonidine",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "coronary artery disease",
+      "aliases": [
+        "CAD"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "coronary heart disease",
+      "aliases": [
+        "CHD"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "atherosclerosis",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "subclinical atherosclerosis",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "coronary artery calcium",
+      "aliases": [
+        "CAC"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "coronary calcium score",
+      "aliases": [
+        "coronary artery calcium score"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "myocardial infarction",
+      "aliases": [
+        "MI",
+        "heart attack"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "stroke",
+      "aliases": [
+        "cerebrovascular accident"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "ischemic stroke",
+      "variants": [
+        "ischaemic stroke"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "hemorrhagic stroke",
+      "variants": [
+        "haemorrhagic stroke"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "heart failure",
+      "aliases": [
+        "HF"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "heart failure with reduced ejection fraction",
+      "aliases": [
+        "HFrEF"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "heart failure with preserved ejection fraction",
+      "aliases": [
+        "HFpEF"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "left ventricular function",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "left ventricular hypertrophy",
+      "aliases": [
+        "LVH"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "left ventricular ejection fraction",
+      "aliases": [
+        "LVEF"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "ejection fraction",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "pulmonary edema",
+      "variants": [
+        "pulmonary oedema"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "pulmonary congestion",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "atrial fibrillation",
+      "aliases": [
+        "AF",
+        "AFib"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "cardiac arrhythmia",
+      "aliases": [
+        "arrhythmia"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "vascular dementia",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "peripheral artery disease",
+      "aliases": [
+        "PAD"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "cardiometabolic risk",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "hypertension-mediated organ damage",
+      "aliases": [
+        "HMOD"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "target-organ damage",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "diabetes mellitus",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "type 2 diabetes mellitus",
+      "aliases": [
+        "type 2 diabetes",
+        "T2DM"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "obesity",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "obstructive sleep apnea",
+      "variants": [
+        "obstructive sleep apnoea"
+      ],
+      "aliases": [
+        "OSA"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "heart disease",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "cardiovascular disease risk",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "chest pain",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "lifestyle modification",
+      "aliases": [
+        "lifestyle modifications"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "lifestyle management",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "healthy diet",
+      "aliases": [
+        "healthy dietary pattern"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "DASH diet",
+      "aliases": [
+        "Dietary Approaches to Stop Hypertension"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "Mediterranean diet",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "weight loss",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "body mass index",
+      "aliases": [
+        "BMI"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "dietary sodium restriction",
+      "aliases": [
+        "sodium restriction"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "sodium reduction",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "low-sodium diet",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "dietary potassium",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "potassium-rich diet",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "potassium-enriched salt substitute",
+      "aliases": [
+        "potassium-supplemented salt",
+        "potassium-enriched salt substitutes"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "sodium-containing salts",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "salt intake",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "potassium intake",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "sugar-sweetened beverages",
+      "aliases": [
+        "sugary drinks"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "physical activity",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "exercise",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "aerobic exercise",
+      "aliases": [
+        "aerobic training"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "dynamic resistance exercise",
+      "aliases": [
+        "dynamic resistance training"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "isometric resistance exercise",
+      "aliases": [
+        "isometric resistance training"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "smoking cessation",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "alcohol moderation",
+      "aliases": [
+        "moderation of alcohol consumption"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "alcohol intake",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "dietary counseling",
+      "variants": [
+        "dietary counselling"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "patient-centered care",
+      "aliases": [
+        "patient-centred care"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "frailty",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "millimeters of mercury",
+      "variants": [
+        "millimetres of mercury"
+      ],
+      "aliases": [
+        "mmHg",
+        "mm Hg"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "milligrams per day",
+      "aliases": [
+        "mg/day"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "milligrams per deciliter",
+      "aliases": [
+        "mg/dL"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "millimoles per day",
+      "aliases": [
+        "mmol/day"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "micrograms per day",
+      "aliases": [
+        "µg/day",
+        "mcg/day"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "micrograms per deciliter",
+      "aliases": [
+        "µg/dL",
+        "mcg/dL"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "nanograms per deciliter",
+      "aliases": [
+        "ng/dL"
+      ],
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "plasma concentration",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "plasma levels",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "24-hour urine collection",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "24-hour blood pressure monitoring",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "blood pressure cuff",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "oscillometric blood pressure monitor",
+      "aliases": [
+        "oscillometric device"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "Korotkoff sounds",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "arterial stiffness",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "inter-arm blood pressure difference",
+      "aliases": [
+        "inter-arm difference"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "blood pressure-lowering treatment",
+      "aliases": [
+        "BP-lowering treatment"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "clinical outcomes",
+      "auto_apply": "exact"
+    },
+    {
+      "canonical": "pharmacologic management",
+      "variants": [
+        "pharmacological management"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "patient follow-up",
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.995,
+      "suggest_threshold": 0.92
+    },
+    {
+      "canonical": "clinical guidelines implementation",
+      "aliases": [
+        "guideline implementation"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.99,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "as low as reasonably achievable",
+      "aliases": [
+        "ALARA"
+      ],
+      "auto_apply": "fuzzy",
+      "auto_threshold": 0.985,
+      "suggest_threshold": 0.88
+    },
+    {
+      "canonical": "angiotensinogen",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "angiotensin I",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "angiotensin-converting enzyme 2",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "angiotensin-(1–7)",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "angiotensin II type 1 receptor",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "angiotensin II type 2 receptor",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "Mas receptor",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "prorenin",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "juxtaglomerular cells",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "macula densa",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal perfusion pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "pressure natriuresis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "salt sensitivity",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vasoconstriction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vasodilation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "endothelial dysfunction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vascular injury",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal medullary blood flow",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "natriuresis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "diuresis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "epithelial sodium channel",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cortical collecting duct",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vascular smooth muscle cells",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vascular remodeling",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vascular fibrosis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "oxidative stress",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sympathetic activation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "autonomic nervous system",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sympathetic nervous system",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "baroreceptor reflex",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "systemic vascular resistance",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "heart rate variability",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vascular calcification",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "microvascular remodeling",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "inflammation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cardiac output",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "stroke volume",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "heart rate",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "auscultatory blood pressure measurement",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "oscillometric blood pressure measurement",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sphygmomanometer",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "mercury sphygmomanometer",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "aneroid sphygmomanometer",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hybrid sphygmomanometer",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cuff size",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "arm circumference",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cuff bladder",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cuff inflation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cuff deflation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "brachial artery",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "radial pulse",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "stethoscope",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "observer bias",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "measurement error",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "device calibration",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "validated blood pressure monitor",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "unattended automated office blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "daytime blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "nighttime blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "24-hour average blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "masked uncontrolled hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "blood pressure telemonitoring",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "standardized office blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "attended automated office blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "standing blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "supine blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "seated blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cuffless blood pressure device",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "nocturnal blood pressure dipping",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "non-dipping pattern",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "reverse-dipping pattern",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "extreme-dipping pattern",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "night-to-day blood pressure ratio",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "refractory hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "isolated diastolic hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "systolic-diastolic hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renovascular hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal parenchymal hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "secondary hypertension screening",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "controlled resistant hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "true resistant hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hypertensive urgency",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "malignant hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "low-renin hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "supine hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "adrenal venous sampling",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "adrenal computed tomography",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "adrenal lateralization",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "lateralizing primary aldosteronism",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "bilateral primary aldosteronism",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "autonomous cortisol secretion",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "overnight dexamethasone suppression test",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "Cushing syndrome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "adrenal adenoma",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "normokalemia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "pheochromocytoma",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "paraganglioma",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "plasma free metanephrines",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "urinary fractionated metanephrines",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "metanephrine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "normetanephrine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "catecholamines",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "preoperative alpha blockade",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hypovolemia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hyperthyroidism",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hypothyroidism",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "thyroid-stimulating hormone",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hyperparathyroidism",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "parathyroid hormone",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "acromegaly",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "Liddle syndrome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "glucocorticoid-remediable aldosteronism",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "licorice-induced hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "coarctation of the aorta",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "24-hour urinary free cortisol",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal Doppler ultrasonography",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal ultrasound",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "computed tomography angiography",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "magnetic resonance angiography",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fibromuscular dysplasia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "saline infusion test",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "oral sodium loading test",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "captopril challenge test",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fludrocortisone suppression test",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "apparent mineralocorticoid excess",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "Gordon syndrome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "congenital adrenal hyperplasia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "glomerular filtration rate",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "measured glomerular filtration rate",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "serum creatinine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cystatin C",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "creatinine-based estimated glomerular filtration rate",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "creatinine-cystatin C estimated glomerular filtration rate",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "urine albumin-to-creatinine ratio",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "urine protein-to-creatinine ratio",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "albumin excretion rate",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "moderately increased albuminuria",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "severely increased albuminuria",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "kidney failure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "acute kidney injury",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "kidney disease progression",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "kidney replacement therapy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hemodialysis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "kidney transplant recipient",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hematuria",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "urinalysis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "first morning urine sample",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "spot urine sample",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sodium-glucose cotransporter 2 inhibitors",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "nonsteroidal mineralocorticoid receptor antagonist",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "finerenone",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hyperuricemia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hyperglycemia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "captopril",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "benazepril",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fosinopril",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "perindopril",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "quinapril",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "trandolapril",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "moexipril",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "irbesartan",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "azilsartan",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "felodipine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "nicardipine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "bumetanide",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "torsemide",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "doxazosin",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "prazosin",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "terazosin",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "methyldopa",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "guanfacine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "minoxidil",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "vasodilators",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "angioedema",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "reflex tachycardia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "bradycardia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "dry cough",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fluid retention",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "lorundrostat",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "aldosterone synthase inhibitor",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "midodrine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "droxidopa",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "aliskiren",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "clevidipine",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "esmolol",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "baxdrostat",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "zilebesiran",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "monotherapy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "dual combination therapy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "triple combination therapy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fixed-dose combination",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "polypill",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "maximum tolerated dose",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "dose escalation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "treatment intensification",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "medication nonadherence",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "treatment persistence",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "therapeutic inertia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "pill burden",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "directly observed therapy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "biochemical adherence testing",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "medication reconciliation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "multidisciplinary team-based care",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal denervation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "catheter-based renal denervation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "radiofrequency renal denervation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "ultrasound renal denervation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "alcohol-mediated renal denervation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal revascularization",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "percutaneous transluminal renal angioplasty",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "renal artery stenting",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sham procedure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "acute target-organ damage",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "asymptomatic markedly elevated blood pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hypertensive encephalopathy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "acute aortic dissection",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "acute heart failure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "myocardial ischemia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fibrinoid necrosis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "microangiopathy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "retinal hemorrhages",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cotton-wool spots",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "papilledema",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "disseminated intravascular coagulation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "focal neurological deficit",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cortical blindness",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "tonic-clonic seizures",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "intravenous antihypertensive therapy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "posterior reversible encephalopathy syndrome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hypertensive disorders of pregnancy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "chronic hypertension in pregnancy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "gestational hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "preeclampsia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "eclampsia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "postpartum hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "postpartum preeclampsia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fetal growth restriction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "small for gestational age",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "placental insufficiency",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "placental abruption",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "preterm birth",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "perinatal death",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "maternal organ dysfunction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "thrombocytopenia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hemolysis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "liver dysfunction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "gestational age",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "superimposed preeclampsia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "preeclampsia with severe features",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "HELLP syndrome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "magnesium sulfate",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "low-dose aspirin",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hypertensive retinopathy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "glomerular hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "glomerulosclerosis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "white matter lesions",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "silent cerebral infarcts",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cerebral microbleeds",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "brain atrophy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cognitive impairment",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "left atrial enlargement",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "left ventricular dilatation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "left ventricular mass index",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "diastolic dysfunction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "systolic dysfunction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "pulse wave velocity",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "ankle-brachial index",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "echocardiography",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "electrocardiogram",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "fundoscopy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "aortic dilatation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "aortic aneurysm",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "bicuspid aortic valve",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "transient ischemic attack",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "mild cognitive impairment",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "modifiable risk factors",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "nonmodifiable risk factors",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "family history of hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "physical inactivity",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sedentary behavior",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "air pollution",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "noise pollution",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "psychosocial stress",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "social deprivation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "healthcare access",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sodium chloride",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "potassium chloride",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sleep quality",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "pediatric hypertension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "blood pressure percentile",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "older adults",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "young adults",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "limited life expectancy",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "autonomic dysfunction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cerebral hypoperfusion",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "continuous positive airway pressure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "intermittent hypoxemia",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sleep fragmentation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "polysomnography",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "apnea-hypopnea index",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "mandibular advancement device",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "ALLHAT trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "PATHWAY-2 trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "CLICK trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "BPROAD trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "STEP trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "SSaSS trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "ESPRIT trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "Advance-HTN trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "CHAP trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "intensive blood pressure control",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "standard blood pressure control",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "primary outcome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "secondary outcome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "composite outcome",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cardiovascular death",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "nonfatal myocardial infarction",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "nonfatal stroke",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "hospitalization for heart failure",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "relative risk",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "confidence interval",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "intention-to-treat analysis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "per-protocol analysis",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "crossover trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "double-blind trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "placebo-controlled trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "cluster-randomized trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "open-label trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "sham-controlled trial",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "symptomatic hypotension",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "class of recommendation",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "level of evidence",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "certainty of evidence",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "practice point",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "2025 AHA/ACC guideline",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "2021 KDIGO blood pressure guideline",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "2024 KDIGO CKD guideline",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "2025 ESC pregnancy guidelines",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "PREVENT equations",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "SCORE2",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "SCORE2-OP",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "SCORE2-Diabetes",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "10-year cardiovascular disease risk",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "dihydropyridine calcium channel blockers",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "non-dihydropyridine calcium channel blockers",
+      "auto_apply": "suggest"
+    },
+    {
+      "canonical": "direct renin inhibitors",
+      "auto_apply": "suggest"
+    }
+  ]
+}

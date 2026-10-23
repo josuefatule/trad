@@ -1,0 +1,1179 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium-contaiing salts by this confirmatory test.",
+    "expected": "They discussed sodium-containing salts by this confirmatory test.",
+    "original_variant_case_id": "T0007",
+    "case_id": "C001",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium-contaiing salts with the control group.",
+    "expected": "They discussed sodium-containing salts with the control group.",
+    "original_variant_case_id": "T0007",
+    "case_id": "C002",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium-contaiing salts for patients.",
+    "expected": "They discussed sodium-containing salts for patients.",
+    "original_variant_case_id": "T0007",
+    "case_id": "C003",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium-contaiing salts patients arrived.",
+    "expected": "They discussed sodium-containing salts patients arrived.",
+    "original_variant_case_id": "T0007",
+    "case_id": "C004",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium-contaiing salts children were assessed.",
+    "expected": "They discussed sodium-containing salts children were assessed.",
+    "original_variant_case_id": "T0007",
+    "case_id": "C005",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium-contaiing salts yesterday.",
+    "expected": "They discussed sodium-containing salts yesterday.",
+    "original_variant_case_id": "T0007",
+    "case_id": "C006",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of sodium-contaiing salts by this test.",
+    "expected": "No evidence of sodium-containing salts by this test.",
+    "original_variant_case_id": "T0007",
+    "case_id": "C007",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "sodium-containing by salts",
+    "expected": "sodium-containing by salts",
+    "case_id": "C008",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "sodium-containing not salts",
+    "expected": "sodium-containing not salts",
+    "case_id": "C009",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "sodium-containing 5 salts",
+    "expected": "sodium-containing 5 salts",
+    "case_id": "C010",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_sodium-contaiing salts",
+    "expected": "tag_sodium-contaiing salts",
+    "case_id": "C011",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonsodium-containing salts",
+    "expected": "nonsodium-containing salts",
+    "case_id": "C012",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium reabsortion by this confirmatory test.",
+    "expected": "They discussed sodium reabsorption by this confirmatory test.",
+    "original_variant_case_id": "T0047",
+    "case_id": "C013",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium reabsortion with the control group.",
+    "expected": "They discussed sodium reabsorption with the control group.",
+    "original_variant_case_id": "T0047",
+    "case_id": "C014",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium reabsortion for patients.",
+    "expected": "They discussed sodium reabsorption for patients.",
+    "original_variant_case_id": "T0047",
+    "case_id": "C015",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium reabsortion patients arrived.",
+    "expected": "They discussed sodium reabsorption patients arrived.",
+    "original_variant_case_id": "T0047",
+    "case_id": "C016",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium reabsortion children were assessed.",
+    "expected": "They discussed sodium reabsorption children were assessed.",
+    "original_variant_case_id": "T0047",
+    "case_id": "C017",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed sodium reabsortion yesterday.",
+    "expected": "They discussed sodium reabsorption yesterday.",
+    "original_variant_case_id": "T0047",
+    "case_id": "C018",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of sodium reabsortion by this test.",
+    "expected": "No evidence of sodium reabsorption by this test.",
+    "original_variant_case_id": "T0047",
+    "case_id": "C019",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "sodium by reabsorption",
+    "expected": "sodium by reabsorption",
+    "case_id": "C020",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "sodium not reabsorption",
+    "expected": "sodium not reabsorption",
+    "case_id": "C021",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "sodium 5 reabsorption",
+    "expected": "sodium 5 reabsorption",
+    "case_id": "C022",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_sodium reabsortion",
+    "expected": "tag_sodium reabsortion",
+    "case_id": "C023",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonsodium reabsorption",
+    "expected": "nonsodium reabsorption",
+    "case_id": "C024",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed cardiovas cular events by this confirmatory test.",
+    "expected": "They discussed cardiovascular events by this confirmatory test.",
+    "original_variant_case_id": "T0091",
+    "case_id": "C025",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed cardiovas cular events with the control group.",
+    "expected": "They discussed cardiovascular events with the control group.",
+    "original_variant_case_id": "T0091",
+    "case_id": "C026",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed cardiovas cular events for patients.",
+    "expected": "They discussed cardiovascular events for patients.",
+    "original_variant_case_id": "T0091",
+    "case_id": "C027",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed cardiovas cular events patients arrived.",
+    "expected": "They discussed cardiovascular events patients arrived.",
+    "original_variant_case_id": "T0091",
+    "case_id": "C028",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed cardiovas cular events children were assessed.",
+    "expected": "They discussed cardiovascular events children were assessed.",
+    "original_variant_case_id": "T0091",
+    "case_id": "C029",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed cardiovas cular events yesterday.",
+    "expected": "They discussed cardiovascular events yesterday.",
+    "original_variant_case_id": "T0091",
+    "case_id": "C030",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of cardiovas cular events by this test.",
+    "expected": "No evidence of cardiovascular events by this test.",
+    "original_variant_case_id": "T0091",
+    "case_id": "C031",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "cardiovascular by events",
+    "expected": "cardiovascular by events",
+    "case_id": "C032",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "cardiovascular not events",
+    "expected": "cardiovascular not events",
+    "case_id": "C033",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "cardiovascular 5 events",
+    "expected": "cardiovascular 5 events",
+    "case_id": "C034",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_cardiovas cular events",
+    "expected": "tag_cardiovas cular events",
+    "case_id": "C035",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "noncardiovascular events",
+    "expected": "noncardiovascular events",
+    "case_id": "C036",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed tyrosine kinase inhibi tors by this confirmatory test.",
+    "expected": "They discussed tyrosine kinase inhibitors by this confirmatory test.",
+    "original_variant_case_id": "T0131",
+    "case_id": "C037",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed tyrosine kinase inhibi tors with the control group.",
+    "expected": "They discussed tyrosine kinase inhibitors with the control group.",
+    "original_variant_case_id": "T0131",
+    "case_id": "C038",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed tyrosine kinase inhibi tors for patients.",
+    "expected": "They discussed tyrosine kinase inhibitors for patients.",
+    "original_variant_case_id": "T0131",
+    "case_id": "C039",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed tyrosine kinase inhibi tors patients arrived.",
+    "expected": "They discussed tyrosine kinase inhibitors patients arrived.",
+    "original_variant_case_id": "T0131",
+    "case_id": "C040",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed tyrosine kinase inhibi tors children were assessed.",
+    "expected": "They discussed tyrosine kinase inhibitors children were assessed.",
+    "original_variant_case_id": "T0131",
+    "case_id": "C041",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed tyrosine kinase inhibi tors yesterday.",
+    "expected": "They discussed tyrosine kinase inhibitors yesterday.",
+    "original_variant_case_id": "T0131",
+    "case_id": "C042",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of tyrosine kinase inhibi tors by this test.",
+    "expected": "No evidence of tyrosine kinase inhibitors by this test.",
+    "original_variant_case_id": "T0131",
+    "case_id": "C043",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "tyrosine by kinase inhibitors",
+    "expected": "tyrosine by kinase inhibitors",
+    "case_id": "C044",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "tyrosine not kinase inhibitors",
+    "expected": "tyrosine not kinase inhibitors",
+    "case_id": "C045",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "tyrosine 5 kinase inhibitors",
+    "expected": "tyrosine 5 kinase inhibitors",
+    "case_id": "C046",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_tyrosine kinase inhibi tors",
+    "expected": "tag_tyrosine kinase inhibi tors",
+    "case_id": "C047",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nontyrosine kinase inhibitors",
+    "expected": "nontyrosine kinase inhibitors",
+    "case_id": "C048",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed ten-year ASCD risk by this confirmatory test.",
+    "expected": "They discussed ten-year ASCVD risk by this confirmatory test.",
+    "original_variant_case_id": "T0167",
+    "case_id": "C049",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed ten-year ASCD risk with the control group.",
+    "expected": "They discussed ten-year ASCVD risk with the control group.",
+    "original_variant_case_id": "T0167",
+    "case_id": "C050",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed ten-year ASCD risk for patients.",
+    "expected": "They discussed ten-year ASCVD risk for patients.",
+    "original_variant_case_id": "T0167",
+    "case_id": "C051",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed ten-year ASCD risk patients arrived.",
+    "expected": "They discussed ten-year ASCVD risk patients arrived.",
+    "original_variant_case_id": "T0167",
+    "case_id": "C052",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed ten-year ASCD risk children were assessed.",
+    "expected": "They discussed ten-year ASCVD risk children were assessed.",
+    "original_variant_case_id": "T0167",
+    "case_id": "C053",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed ten-year ASCD risk yesterday.",
+    "expected": "They discussed ten-year ASCVD risk yesterday.",
+    "original_variant_case_id": "T0167",
+    "case_id": "C054",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of ten-year ASCD risk by this test.",
+    "expected": "No evidence of ten-year ASCVD risk by this test.",
+    "original_variant_case_id": "T0167",
+    "case_id": "C055",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "ten-year by ASCVD risk",
+    "expected": "ten-year by ASCVD risk",
+    "case_id": "C056",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "ten-year not ASCVD risk",
+    "expected": "ten-year not ASCVD risk",
+    "case_id": "C057",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "ten-year 5 ASCVD risk",
+    "expected": "ten-year 5 ASCVD risk",
+    "case_id": "C058",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_ten-year ASCD risk",
+    "expected": "tag_ten-year ASCD risk",
+    "case_id": "C059",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonten-year ASCVD risk",
+    "expected": "nonten-year ASCVD risk",
+    "case_id": "C060",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed National Instittes of Health by this confirmatory test.",
+    "expected": "They discussed National Institutes of Health by this confirmatory test.",
+    "original_variant_case_id": "T0207",
+    "case_id": "C061",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed National Instittes of Health with the control group.",
+    "expected": "They discussed National Institutes of Health with the control group.",
+    "original_variant_case_id": "T0207",
+    "case_id": "C062",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed National Instittes of Health for patients.",
+    "expected": "They discussed National Institutes of Health for patients.",
+    "original_variant_case_id": "T0207",
+    "case_id": "C063",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed National Instittes of Health patients arrived.",
+    "expected": "They discussed National Institutes of Health patients arrived.",
+    "original_variant_case_id": "T0207",
+    "case_id": "C064",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed National Instittes of Health children were assessed.",
+    "expected": "They discussed National Institutes of Health children were assessed.",
+    "original_variant_case_id": "T0207",
+    "case_id": "C065",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed National Instittes of Health yesterday.",
+    "expected": "They discussed National Institutes of Health yesterday.",
+    "original_variant_case_id": "T0207",
+    "case_id": "C066",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of National Instittes of Health by this test.",
+    "expected": "No evidence of National Institutes of Health by this test.",
+    "original_variant_case_id": "T0207",
+    "case_id": "C067",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "National by Institutes of Health",
+    "expected": "National by Institutes of Health",
+    "case_id": "C068",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "National not Institutes of Health",
+    "expected": "National not Institutes of Health",
+    "case_id": "C069",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "National 5 Institutes of Health",
+    "expected": "National 5 Institutes of Health",
+    "case_id": "C070",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_National Instittes of Health",
+    "expected": "tag_National Instittes of Health",
+    "case_id": "C071",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonNational Institutes of Health",
+    "expected": "nonNational Institutes of Health",
+    "case_id": "C072",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed mineralocor ticoid receptor by this confirmatory test.",
+    "expected": "They discussed mineralocorticoid receptor by this confirmatory test.",
+    "original_variant_case_id": "T0249",
+    "case_id": "C073",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed mineralocor ticoid receptor with the control group.",
+    "expected": "They discussed mineralocorticoid receptor with the control group.",
+    "original_variant_case_id": "T0249",
+    "case_id": "C074",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed mineralocor ticoid receptor for patients.",
+    "expected": "They discussed mineralocorticoid receptor for patients.",
+    "original_variant_case_id": "T0249",
+    "case_id": "C075",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed mineralocor ticoid receptor patients arrived.",
+    "expected": "They discussed mineralocorticoid receptor patients arrived.",
+    "original_variant_case_id": "T0249",
+    "case_id": "C076",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed mineralocor ticoid receptor children were assessed.",
+    "expected": "They discussed mineralocorticoid receptor children were assessed.",
+    "original_variant_case_id": "T0249",
+    "case_id": "C077",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed mineralocor ticoid receptor yesterday.",
+    "expected": "They discussed mineralocorticoid receptor yesterday.",
+    "original_variant_case_id": "T0249",
+    "case_id": "C078",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of mineralocor ticoid receptor by this test.",
+    "expected": "No evidence of mineralocorticoid receptor by this test.",
+    "original_variant_case_id": "T0249",
+    "case_id": "C079",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "mineralocorticoid by receptor",
+    "expected": "mineralocorticoid by receptor",
+    "case_id": "C080",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "mineralocorticoid not receptor",
+    "expected": "mineralocorticoid not receptor",
+    "case_id": "C081",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "mineralocorticoid 5 receptor",
+    "expected": "mineralocorticoid 5 receptor",
+    "case_id": "C082",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_mineralocor ticoid receptor",
+    "expected": "tag_mineralocor ticoid receptor",
+    "case_id": "C083",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonmineralocorticoid receptor",
+    "expected": "nonmineralocorticoid receptor",
+    "case_id": "C084",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed primary aldosternism by this confirmatory test.",
+    "expected": "They discussed primary aldosteronism by this confirmatory test.",
+    "original_variant_case_id": "T0285",
+    "case_id": "C085",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed primary aldosternism with the control group.",
+    "expected": "They discussed primary aldosteronism with the control group.",
+    "original_variant_case_id": "T0285",
+    "case_id": "C086",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed primary aldosternism for patients.",
+    "expected": "They discussed primary aldosteronism for patients.",
+    "original_variant_case_id": "T0285",
+    "case_id": "C087",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed primary aldosternism patients arrived.",
+    "expected": "They discussed primary aldosteronism patients arrived.",
+    "original_variant_case_id": "T0285",
+    "case_id": "C088",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed primary aldosternism children were assessed.",
+    "expected": "They discussed primary aldosteronism children were assessed.",
+    "original_variant_case_id": "T0285",
+    "case_id": "C089",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed primary aldosternism yesterday.",
+    "expected": "They discussed primary aldosteronism yesterday.",
+    "original_variant_case_id": "T0285",
+    "case_id": "C090",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of primary aldosternism by this test.",
+    "expected": "No evidence of primary aldosteronism by this test.",
+    "original_variant_case_id": "T0285",
+    "case_id": "C091",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "primary by aldosteronism",
+    "expected": "primary by aldosteronism",
+    "case_id": "C092",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "primary not aldosteronism",
+    "expected": "primary not aldosteronism",
+    "case_id": "C093",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "primary 5 aldosteronism",
+    "expected": "primary 5 aldosteronism",
+    "case_id": "C094",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_primary aldosternism",
+    "expected": "tag_primary aldosternism",
+    "case_id": "C095",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonprimary aldosteronism",
+    "expected": "nonprimary aldosteronism",
+    "case_id": "C096",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed systoic blood pressure by this confirmatory test.",
+    "expected": "They discussed systolic blood pressure by this confirmatory test.",
+    "original_variant_case_id": "T0325",
+    "case_id": "C097",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed systoic blood pressure with the control group.",
+    "expected": "They discussed systolic blood pressure with the control group.",
+    "original_variant_case_id": "T0325",
+    "case_id": "C098",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed systoic blood pressure for patients.",
+    "expected": "They discussed systolic blood pressure for patients.",
+    "original_variant_case_id": "T0325",
+    "case_id": "C099",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed systoic blood pressure patients arrived.",
+    "expected": "They discussed systolic blood pressure patients arrived.",
+    "original_variant_case_id": "T0325",
+    "case_id": "C100",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed systoic blood pressure children were assessed.",
+    "expected": "They discussed systolic blood pressure children were assessed.",
+    "original_variant_case_id": "T0325",
+    "case_id": "C101",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed systoic blood pressure yesterday.",
+    "expected": "They discussed systolic blood pressure yesterday.",
+    "original_variant_case_id": "T0325",
+    "case_id": "C102",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of systoic blood pressure by this test.",
+    "expected": "No evidence of systolic blood pressure by this test.",
+    "original_variant_case_id": "T0325",
+    "case_id": "C103",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "systolic by blood pressure",
+    "expected": "systolic by blood pressure",
+    "case_id": "C104",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "systolic not blood pressure",
+    "expected": "systolic not blood pressure",
+    "case_id": "C105",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "systolic 5 blood pressure",
+    "expected": "systolic 5 blood pressure",
+    "case_id": "C106",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_systoic blood pressure",
+    "expected": "tag_systoic blood pressure",
+    "case_id": "C107",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonsystolic blood pressure",
+    "expected": "nonsystolic blood pressure",
+    "case_id": "C108",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed American Heart Associaion by this confirmatory test.",
+    "expected": "They discussed American Heart Association by this confirmatory test.",
+    "original_variant_case_id": "T0365",
+    "case_id": "C109",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed American Heart Associaion with the control group.",
+    "expected": "They discussed American Heart Association with the control group.",
+    "original_variant_case_id": "T0365",
+    "case_id": "C110",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed American Heart Associaion for patients.",
+    "expected": "They discussed American Heart Association for patients.",
+    "original_variant_case_id": "T0365",
+    "case_id": "C111",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed American Heart Associaion patients arrived.",
+    "expected": "They discussed American Heart Association patients arrived.",
+    "original_variant_case_id": "T0365",
+    "case_id": "C112",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed American Heart Associaion children were assessed.",
+    "expected": "They discussed American Heart Association children were assessed.",
+    "original_variant_case_id": "T0365",
+    "case_id": "C113",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "neighbor_context",
+    "positive": true,
+    "text": "They discussed American Heart Associaion yesterday.",
+    "expected": "They discussed American Heart Association yesterday.",
+    "original_variant_case_id": "T0365",
+    "case_id": "C114",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "outer_negation",
+    "positive": true,
+    "text": "No evidence of American Heart Associaion by this test.",
+    "expected": "No evidence of American Heart Association by this test.",
+    "original_variant_case_id": "T0365",
+    "case_id": "C115",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "inner_function_word",
+    "positive": false,
+    "text": "American by Heart Association",
+    "expected": "American by Heart Association",
+    "case_id": "C116",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "inner_negation",
+    "positive": false,
+    "text": "American not Heart Association",
+    "expected": "American not Heart Association",
+    "case_id": "C117",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "inner_quantity",
+    "positive": false,
+    "text": "American 5 Heart Association",
+    "expected": "American 5 Heart Association",
+    "case_id": "C118",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "identifier_boundary",
+    "positive": false,
+    "text": "tag_American Heart Associaion",
+    "expected": "tag_American Heart Associaion",
+    "case_id": "C119",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "kind": "morphological_negation",
+    "positive": false,
+    "text": "nonAmerican Heart Association",
+    "expected": "nonAmerican Heart Association",
+    "case_id": "C120",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "known_boundary_regression",
+    "positive": true,
+    "text": "primary allosteronism by this confirmatory testing",
+    "expected": "primary aldosteronism by this confirmatory testing",
+    "case_id": "C121",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "known_boundary_regression",
+    "positive": true,
+    "text": "No primary allosteronism by this test",
+    "expected": "No primary aldosteronism by this test",
+    "case_id": "C122",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "kind": "known_boundary_regression",
+    "positive": true,
+    "text": "primary allosteronism patients arrived",
+    "expected": "primary aldosteronism patients arrived",
+    "case_id": "C123",
+    "origin": "Constructed context regression, not new audio or independent clinical validation"
+  }
+]

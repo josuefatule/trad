@@ -1,0 +1,215 @@
+CONTROLES HYPERTENSION / HYPOTENSION Y TOLERANCIAS MÁS FLEXIBLES
+97 conceptos. Laboratorio e investigación, sin integración en TRAD.
+
+RESULTADO PRINCIPAL
+El control específico impide los intercambios previstos entre hypertension e hypotension. Ninguna relajación global ensayada cumple todos los controles negativos: aparecen otras reescrituras no deseadas.
+Las métricas de palabras y los controles negativos se presentan juntos: un WER menor por sí solo no vuelve aceptable una reescritura.
+
+QUÉ SE CAMBIÓ
+Se añadió una comprobación previa a la selección de candidatos exactos y aproximados: la secuencia de direcciones HYPER/HYPO debe conservarse; no se puede cambiar, crear, borrar o invertir su orden.
+El alcance es la familia textual de hypertension/hypotension y sus formas hypertensive/hypotensive, con prefijos declarados y fragmentos separados que recomponen una grafía reconocida.
+Se aceptan reparaciones ortográficas cuando la raíz direccional permanece explícita; por ejemplo, hypertenson o hypertesion conservan hyper. No se decide una dirección por parecido general si falta esa raíz.
+Una forma como hypetension se conserva sin adivinar entre hypertension e hypotension. La abstención puede perder recuperaciones que el generador de erratas sí etiquetó con un destino conocido.
+La nueva firma es una regla de conservación de texto, no un clasificador clínico ni una validación de diagnósticos.
+Se mantienen los controles previos de variantes, número gramatical, conectores, negación, cifras/unidades, límites de palabra/identificador y selección entre frases largas y subexpresiones.
+El cambio no añade un control general para otras familias como hyperkalemic/hypokalemic; ese límite aparece en las pruebas y se documenta.
+
+TOLERANCIAS Y PERFILES CONGELADOS
+Se conservaron los mismos 97 términos y los 24 registros de variantes de investigación; no se habilitaron nuevas equivalencias ni expansiones.
+Para los 80 términos con fuzzy activo se calculó min(umbral previo, límite). Se fijaron límites 0.92, 0.90 y 0.88 antes de repetir los casos y las transcripciones.
+Los 17 términos en coincidencia exacta permanecieron en exacto. Reducir el umbral de score significa permitir más coincidencias; no expresa probabilidad o certeza.
+0.92 reduce 70 umbrales, 0.90 reduce 79 y 0.88 reduce los 80. No se eligió un límite ganador a partir de las grabaciones ni se retocaron los límites después.
+Perfiles: previous97 (reglas/umbrales anteriores); direction_guard_same (nuevo control, mismos umbrales); old_guard_cap090 (control sin nuevo bloqueo, límite 0.90); direction_guard_cap092/090/088 (nuevo control y sus límites).
+
+DOS EJECUCIONES CONSERVADAS
+La primera ejecución trató como ambiguas algunas grafías que aún conservaban hyper/hypo, porque exigía un comienzo de sufijo demasiado estrecho.
+Se conservaron todos sus resultados y su código en esta carpeta principal. first_replay_manifest.json registra sus huellas.
+La segunda ejecución, en visible_root_refinement_v2, solo convierte esas marcas ambiguas en una dirección explícita cuando la raíz está intacta y hay como máximo dos errores de sufijo.
+Se congeló la revisión antes de repetir la comparación, manteniendo los mismos términos, datos y límites. Las formas sin dirección clara siguen sin corregirse.
+Los casos construidos que tuvieron algún veto direccional se recalcularon; los demás se reutilizaron porque el único cambio no puede alterar su filtrado.
+Para voz se revisó la auditoría completa de vetos y se repitió la selección cuando un candidato antes vetado pasó a admisible. Con filtrado idéntico se reutilizó la salida; las métricas solo se reutilizaron cuando el texto coincidía byte por byte.
+Estas pruebas verifican explícitamente la reutilización. No se presentan como datos nuevos o independientes.
+
+CONTROLES ESPECÍFICOS DE PRESIÓN
+Son 97 casos construidos distintos de los 97 conceptos: 7 positivos y 90 negativos previstos. Incluyen ambas direcciones, mayúsculas, prefijos, fragmentos separados, negación, cifras, identificadores y formas ambiguas.
+Perfil | Positivos recuperados | Negativos modificados | Total correcto
+previous97 | 6/7 | 12/90 | 84/97
+direction_guard_same | 6/7 | 0/90 | 96/97
+old_guard_cap090 | 7/7 | 24/90 | 73/97
+direction_guard_cap092 | 7/7 | 0/90 | 97/97
+direction_guard_cap090 | 7/7 | 0/90 | 97/97
+direction_guard_cap088 | 7/7 | 0/90 | 97/97
+Los tres fallos conocidos primary hypotension -> primary hypertension, orthostatic hypertension -> orthostatic hypotension y secondary hypotension -> secondary hypertension quedan bloqueados antes de la selección.
+Los perfiles flexibles recuperan antihypertension medication -> antihypertensive medication sin cambiar la dirección HYPER y sin perder los controles anteriores.
+
+ERROR LÉXICO EN LAS MISMAS TRANSCRIPCIONES COMPLETAS
+WER = errores de palabras / 4.204 palabras de referencia por modelo; menor es mejor. Referencias provisionales.
+Modelo | 97 anteriores | Nuevo control, mismos umbrales | Nuevo control 0.92 | Nuevo control 0.90 | Nuevo control 0.88
+small | 3.12% (131) | 3.12% (131) | 2.95% (124) | 2.95% (124) | 2.97% (125)
+medium | 2.38% (100) | 2.38% (100) | 2.38% (100) | 2.38% (100) | 2.40% (101)
+large-v3-turbo | 3.12% (131) | 3.12% (131) | 3.09% (130) | 3.09% (130) | 3.12% (131)
+
+CONTROL DE ABLACIÓN: MISMO LÍMITE 0.90 CON Y SIN EL NUEVO BLOQUEO
+Modelo | Bloqueo anterior a 0.90 | Bloqueo reforzado a 0.90
+small | 124 | 124
+medium | 100 | 100
+large-v3-turbo | 130 | 130
+Son errores del corpus completo, no una tasa limitada a los términos. El perfil anterior se reprodujo frente a sus salidas guardadas; no se normalizaron las referencias.
+
+ERRATAS Y NEGATIVOS GENERALES
+Se repitieron los 1.807 casos anteriores: 484 positivos y 1.323 negativos. Son casos etiquetados por concepto y algunos textos se repiten entre conceptos; no son 1.807 observaciones independientes.
+Perfil | Positivos recuperados | Negativos modificados
+previous97 | 369/484 | 0/1323
+direction_guard_same | 369/484 | 0/1323
+old_guard_cap090 | 400/484 | 9/1323
+direction_guard_cap092 | 400/484 | 3/1323
+direction_guard_cap090 | 400/484 | 9/1323
+direction_guard_cap088 | 400/484 | 13/1323
+Cada límite flexible introduce cambios no deseados fuera de hypertension/hypotension. negative_change_review.json agrupa también los pares entrada/salida únicos para no confundir repeticiones con diversidad de fallos.
+Ejemplos que permanecen visibles: physical inactivity -> physical activity; aldosterone-producing adenoma -> aldosterone production adenoma; hyperkalemic metabolic alkalosis -> hypokalemic metabolic alkalosis.
+A límites menores se añade seated blood pressure -> elevated blood pressure. No se corrigieron estos controles después de ver el resultado ni se omitieron del resumen.
+
+NÚMERO DE PARES NEGATIVOS DISTINTOS, AGRUPADOS POR ENTRADA Y SALIDA
+direction_guard_same | 0 casos | 0 pares distintos
+direction_guard_cap092 | 3 casos | 3 pares distintos
+direction_guard_cap090 | 9 casos | 4 pares distintos
+direction_guard_cap088 | 13 casos | 5 pares distintos
+
+CONTEXTO, LÍMITES Y COSTE DE ABSTENERSE
+Se repitieron 682 positivos de contexto y 485 negativos. La nueva protección conserva una grafía ambigua aunque el caso sintético la etiquetara como errata de hypertension.
+Perfil | Positivos correctos | Negativos modificados
+previous97 | 563/682 | 0/485
+direction_guard_same | 521/682 | 0/485
+old_guard_cap090 | 563/682 | 0/485
+direction_guard_cap092 | 521/682 | 0/485
+direction_guard_cap090 | 521/682 | 0/485
+direction_guard_cap088 | 521/682 | 0/485
+Coste del nuevo control con umbrales intactos en constructed: 0 casos antes recuperados dejan de recuperarse.
+Coste del nuevo control con umbrales intactos en context: 42 casos antes recuperados dejan de recuperarse.
+recovery_loss_review.json conserva todas esas pérdidas con entrada, salida y cambios. No se equipara una abstención deliberada con una corrección demostrada; se registra como pérdida de recuperación.
+Los 153 controles previos de variantes/plurales, by, contexto y solapamientos se mantienen en regression_comparison.json.
+
+AUDITORÍA Y DECISIÓN
+correction_review.json registra cada cambio de los perfiles reforzados, si es nuevo respecto al perfil de 97 anterior y su efecto léxico al retirarlo del perfil.
+Un cambio puede acercarse a una referencia provisional y seguir siendo una reescritura que requiera revisión. No hubo adjudicación clínica ni escucha independiente nueva.
+El nuevo bloqueo específico funciona en los controles ensayados. Los límites globales 0.92/0.90/0.88 no se consideran aprobados, aunque alguna métrica de palabras mejore.
+La evidencia aconseja estudiar flexibilidad por término manteniendo controles de conceptos próximos; cualquier corrección adicional de otros contrastes pertenece a otro ensayo, no a una modificación retrospectiva de este.
+
+LOS 97 CONCEPTOS Y SUS UMBRALES
+Exacto = fuzzy deshabilitado. Los valores siguientes son los mismos para todos los casos de cada perfil.
+N.º | Inglés / Español | Anterior | Límite 0.92 | Límite 0.90 | Límite 0.88
+01 | sodium-containing salts / sales que contienen sodio | 0.94 | 0.92 | 0.90 | 0.88
+02 | sodium reabsorption / reabsorción de sodio | 0.94 | 0.92 | 0.90 | 0.88
+03 | cardiovascular events / eventos cardiovasculares | 1.00 | 0.92 | 0.90 | 0.88
+04 | tyrosine kinase inhibitors / inhibidores de tirosina cinasa | 1.00 | 0.92 | 0.90 | 0.88
+05 | ten-year ASCVD risk / riesgo de enfermedad cardiovascular aterosclerótica a 10 años | 0.94 | 0.92 | 0.90 | 0.88
+06 | National Institutes of Health / Institutos Nacionales de Salud de Estados Unidos | 0.96 | 0.92 | 0.90 | 0.88
+07 | mineralocorticoid receptor / receptor de mineralocorticoides | 1.00 | 0.92 | 0.90 | 0.88
+08 | primary aldosteronism / aldosteronismo primario | 0.94 | 0.92 | 0.90 | 0.88
+09 | systolic blood pressure / presión arterial sistólica | 0.94 | 0.92 | 0.90 | 0.88
+10 | American Heart Association / Asociación Americana del Corazón | 0.96 | 0.92 | 0.90 | 0.88
+11 | resistant hypertension / hipertensión resistente | 0.94 | 0.92 | 0.90 | 0.88
+12 | spironolactone / espironolactona | Exacto | Exacto | Exacto | Exacto
+13 | cardiometabolic risk / riesgo cardiometabólico | 0.94 | 0.92 | 0.90 | 0.88
+14 | heart disease / cardiopatía | 0.92 | 0.92 | 0.90 | 0.88
+15 | elevated blood pressure / presión arterial elevada | 0.94 | 0.92 | 0.90 | 0.88
+16 | blood pressure / presión arterial | 0.92 | 0.92 | 0.90 | 0.88
+17 | cardiovascular risk / riesgo cardiovascular | 0.94 | 0.92 | 0.90 | 0.88
+18 | target systolic blood pressure / objetivo de presión arterial sistólica | 0.96 | 0.92 | 0.90 | 0.88
+19 | hormone replacement therapy / terapia hormonal de reemplazo | 0.96 | 0.92 | 0.90 | 0.88
+20 | immunosuppressive agents / inmunosupresores | 1.00 | 0.92 | 0.90 | 0.88
+21 | diuretics / diuréticos | Exacto | Exacto | Exacto | Exacto
+22 | atherosclerosis / aterosclerosis | Exacto | Exacto | Exacto | Exacto
+23 | hypertension / hipertensión arterial | Exacto | Exacto | Exacto | Exacto
+24 | micrograms per deciliter / microgramos por decilitro | Exacto | Exacto | Exacto | Exacto
+25 | incidence / incidencia | Exacto | Exacto | Exacto | Exacto
+26 | isometric resistance exercise / ejercicio isométrico de fuerza | 0.96 | 0.92 | 0.90 | 0.88
+27 | pharmacological therapy / tratamiento farmacológico | 0.94 | 0.92 | 0.90 | 0.88
+28 | as low as reasonably achievable / tan baja como sea razonablemente alcanzable | 0.96 | 0.92 | 0.90 | 0.88
+29 | weight loss / pérdida de peso | 0.90 | 0.90 | 0.90 | 0.88
+30 | renin suppression / supresión de renina | 0.94 | 0.92 | 0.90 | 0.88
+31 | hypotension / hipotensión | Exacto | Exacto | Exacto | Exacto
+32 | chronic kidney disease / enfermedad renal crónica | 0.94 | 0.92 | 0.90 | 0.88
+33 | blood pressure target / objetivo de presión arterial | 0.94 | 0.92 | 0.90 | 0.88
+34 | exercise / ejercicio | Exacto | Exacto | Exacto | Exacto
+35 | prehypertension / prehipertensión | Exacto | Exacto | Exacto | Exacto
+36 | millimoles per day / milimoles por día | 0.94 | 0.92 | 0.90 | 0.88
+37 | micrograms per day / microgramos por día | Exacto | Exacto | Exacto | Exacto
+38 | non-elevated blood pressure / presión arterial no elevada | 0.96 | 0.92 | 0.90 | 0.88
+39 | alcohol intake / consumo de alcohol | 0.92 | 0.92 | 0.90 | 0.88
+40 | serious adverse events / eventos adversos graves | 0.94 | 0.92 | 0.90 | 0.88
+41 | salt loading / sobrecarga de sodio | 0.92 | 0.92 | 0.90 | 0.88
+42 | renin-independent aldosterone production / producción de aldosterona independiente de renina | 0.96 | 0.92 | 0.90 | 0.88
+43 | mineralocorticoid receptor antagonists / antagonistas del receptor de mineralocorticoides | 1.00 | 0.92 | 0.90 | 0.88
+44 | urinary aldosterone / aldosterona urinaria | 0.94 | 0.92 | 0.90 | 0.88
+45 | oral contraceptives / anticonceptivos orales | 1.00 | 0.92 | 0.90 | 0.88
+46 | hypokalemic metabolic alkalosis / alcalosis metabólica hipopotasémica | 0.96 | 0.92 | 0.90 | 0.88
+47 | aldosterone / aldosterona | Exacto | Exacto | Exacto | Exacto
+48 | physical activity / actividad física | 0.96 | 0.92 | 0.90 | 0.88
+49 | meta-analysis / metaanálisis | 0.92 | 0.92 | 0.90 | 0.88
+50 | cardiovascular disease / enfermedad cardiovascular | 0.94 | 0.92 | 0.90 | 0.88
+51 | evidence-based review / revisión basada en la evidencia | 0.94 | 0.92 | 0.90 | 0.88
+52 | direct renin concentration / concentración directa de renina | 0.96 | 0.92 | 0.90 | 0.88
+53 | alcohol moderation / moderación del consumo de alcohol | 0.94 | 0.92 | 0.90 | 0.88
+54 | subclinical atherosclerosis / aterosclerosis subclínica | 0.96 | 0.92 | 0.90 | 0.88
+55 | older adults / adultos mayores | 0.96 | 0.92 | 0.90 | 0.88
+56 | healthy diet / alimentación saludable | 0.92 | 0.92 | 0.90 | 0.88
+57 | co-chair / copresidente | Exacto | Exacto | Exacto | Exacto
+58 | blood pressure control / control de la presión arterial | 0.94 | 0.92 | 0.90 | 0.88
+59 | prevalence / prevalencia | Exacto | Exacto | Exacto | Exacto
+60 | diastolic blood pressure / presión arterial diastólica | 0.96 | 0.92 | 0.90 | 0.88
+61 | network meta-analysis / metaanálisis en red | 0.94 | 0.92 | 0.90 | 0.88
+62 | metabolic alkalosis / alcalosis metabólica | 0.94 | 0.92 | 0.90 | 0.88
+63 | extracellular volume expansion / expansión del volumen extracelular | 0.96 | 0.92 | 0.90 | 0.88
+64 | atherosclerotic cardiovascular disease / enfermedad cardiovascular aterosclerótica | 0.96 | 0.92 | 0.90 | 0.88
+65 | primordial prevention / prevención primordial | 0.94 | 0.92 | 0.90 | 0.88
+66 | primary hypertension / hipertensión primaria | 0.94 | 0.92 | 0.90 | 0.88
+67 | kidney function / función renal | 0.92 | 0.92 | 0.90 | 0.88
+68 | young adults / adultos jóvenes | 0.92 | 0.92 | 0.90 | 0.88
+69 | millimeters of mercury / milímetros de mercurio | Exacto | Exacto | Exacto | Exacto
+70 | orthostatic hypotension / hipotensión ortostática | 0.96 | 0.92 | 0.90 | 0.88
+71 | recombinant human erythropoietin / eritropoyetina humana recombinante | 0.96 | 0.92 | 0.90 | 0.88
+72 | antihypertensive therapy / tratamiento antihipertensivo | 0.96 | 0.92 | 0.90 | 0.88
+73 | stroke / accidente cerebrovascular | Exacto | Exacto | Exacto | Exacto
+74 | urinary sodium excretion / excreción urinaria de sodio | 0.96 | 0.92 | 0.90 | 0.88
+75 | secondary hypertension / hipertensión secundaria | 0.94 | 0.92 | 0.90 | 0.88
+76 | vascular dementia / demencia vascular | 0.94 | 0.92 | 0.90 | 0.88
+77 | beta blockers / betabloqueadores | 0.92 | 0.92 | 0.90 | 0.88
+78 | antihypertensive medication / medicamento antihipertensivo | 0.96 | 0.92 | 0.90 | 0.88
+79 | normal blood pressure / presión arterial normal | 0.94 | 0.92 | 0.90 | 0.88
+80 | pharmacologic management / manejo farmacológico | 0.96 | 0.92 | 0.90 | 0.88
+81 | renin-angiotensin system / sistema renina-angiotensina | 0.96 | 0.92 | 0.90 | 0.88
+82 | American College of Cardiology / Colegio Americano de Cardiología | 0.96 | 0.92 | 0.90 | 0.88
+83 | coronary artery calcium / calcio coronario | 0.94 | 0.92 | 0.90 | 0.88
+84 | antihypertensive drug therapy / tratamiento farmacológico antihipertensivo | 0.96 | 0.92 | 0.90 | 0.88
+85 | clinical implications / implicaciones clínicas | 0.94 | 0.92 | 0.90 | 0.88
+86 | urinary potassium excretion / excreción urinaria de potasio | 0.96 | 0.92 | 0.90 | 0.88
+87 | dietary sodium restriction / restricción de sodio en la alimentación | 0.96 | 0.92 | 0.90 | 0.88
+88 | potassium-rich diet / dieta rica en potasio | 0.94 | 0.92 | 0.90 | 0.88
+89 | non-pharmacological therapy / tratamiento no farmacológico | 0.96 | 0.92 | 0.90 | 0.88
+90 | dietary potassium / potasio de la dieta | 0.94 | 0.92 | 0.90 | 0.88
+91 | lifestyle modification / modificación del estilo de vida | 0.94 | 0.92 | 0.90 | 0.88
+92 | plasma renin activity / actividad de renina plasmática | 0.94 | 0.92 | 0.90 | 0.88
+93 | milligrams per day / miligramos por día | Exacto | Exacto | Exacto | Exacto
+94 | antidepressants / antidepresivos | Exacto | Exacto | Exacto | Exacto
+95 | potassium intake / ingesta de potasio | 0.94 | 0.92 | 0.90 | 0.88
+96 | aldosterone production / producción de aldosterona | 0.94 | 0.92 | 0.90 | 0.88
+97 | all-cause mortality / mortalidad por todas las causas | 0.94 | 0.92 | 0.90 | 0.88
+
+ALCANCE Y CONSERVACIÓN
+Tres archivos de voz natural y nueve hipótesis guardadas: 310 apariciones de los términos y 930 observaciones de modelos correlacionadas. Los archivos 02/03 podrían pertenecer a una misma charla.
+No hubo nuevas inferencias ASR, voces o variaciones de tono/acento/velocidad. Los casos construidos son texto, no pronunciaciones verificadas.
+El corpus y las recetas de errores ya se habían explorado; la revisión usó defectos observados durante el desarrollo. No es un conjunto independiente ni una validación clínica.
+No se extrapola el resultado a los 657 conceptos, español u otros hablantes. Todos los valores son candidatos o controles de laboratorio.
+Pasaron 14 pruebas de las reglas refinadas y 13 verificaciones de salidas, conservación, perfiles, reconstrucción y reutilización demostrada.
+Se comprobaron 1155 archivos previos, 944 protegidos estrictamente; observaciones ajenas a esta tarea: 0.
+El glosario original, las evidencias, todos los ensayos anteriores, el paquete depurado, los audios/referencias, ASR guardados y el código de aplicación usado mantienen sus huellas.
+Solo se escribieron archivos nuevos en polarity_flexible_trial_97_v1. La primera ejecución y visible_root_refinement_v2 permanecen conservadas por separado.
+No se conectó, modificó ni integró nada en TRAD. No se cambió el estado de aprobación del glosario.
+
+ARCHIVOS DE REVISIÓN
+final_results.json y review_findings.json: resumen, comparación y decisión.
+visible_root_refinement_v2/speech_comparison.json y term_results.json: siete perfiles, texto simulado, cambios, evidencias de reutilización y los 97 conceptos.
+visible_root_refinement_v2/pressure_comparison.json, constructed_comparison.json, context_comparison.json y regression_comparison.json: resultados por caso.
+negative_change_review.json, recovery_loss_review.json y correction_review.json: errores nuevos, pérdidas y efectos de los cambios.
+Los dos protocol.json fijan reglas, límites y entradas; first_replay_manifest.json conserva la primera ejecución; manifest.json sella todo el trabajo nuevo.

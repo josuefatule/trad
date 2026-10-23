@@ -1,0 +1,18 @@
+{
+  "profile": "bounded",
+  "source": "logs\\trad_lab\\20261020T074247Z\\streaming_plan\\cardio_01.first60s.16k.wav",
+  "source_sha256": "982995311f213fd2e483d227e92e272e028793cfbc89f199df130a94dc269416",
+  "source_language": "en",
+  "recognizer_language": "en",
+  "audio_seconds": 180,
+  "microphone_used": false,
+  "translation_requested": false,
+  "frames_sent": 720,
+  "messages_received": 2040,
+  "max_transcript_characters": 2162,
+  "final_received": true,
+  "error": null,
+  "eof_sent": true,
+  "wall_seconds": 180.0,
+  "result": "PASS"
+}

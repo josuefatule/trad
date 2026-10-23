@@ -2,6 +2,13 @@
 (async () => {
   const element = document.getElementById("caption"), stage = document.getElementById("caption-stage");
   const surface = document.getElementById("overlay-canvas");
+  const applyStyle = style => {
+    if (/^#[0-9a-f]{6}$/i.test(style?.text_color)) element.style.color = style.text_color;
+    if (/^#[0-9a-f]{6}$/i.test(style?.background_color)) {
+      for (const node of [document.documentElement, document.body])
+        node.style.setProperty("background", style.background_color, "important");
+    }
+  };
   let socket = null, stopped = false, retry = 0, renderer;
   let retryTimer=null;
   let disconnectedSince=null;
@@ -91,12 +98,15 @@
       let data;
       try { data = JSON.parse(event.data); } catch { socket.close(); return; }
       if (data.protocol_version !== 3) { stopped = true; renderer.clear(); socket.close(); return; }
+      if(data.direction?.target_language && (data.type==="snapshot" || (data.type==="session" && data.state==="connecting")))
+        document.documentElement.lang=data.direction.target_language;
       if (data.type === "clock_sync") { clock.synchronize(data, receivedAt); return; }
       if (data.type === "snapshot") {
         if(data.session_id===renderer.sessionId && ((data.visual_generation ?? 0)<visualGeneration || data.event_id<lastEventId))return;
         socket.send(JSON.stringify({type:"connection_health",session_id:data.session_id,attempts:retry,
           downtime_ms:disconnectedSince===null?0:Math.max(0,performance.now()-disconnectedSince)}));
         retry = 0;disconnectedSince=null; lastEventId = data.event_id;
+        applyStyle(data.overlay_style);
         if (renderer.sessionId !== data.session_id) renderer.reset(data.session_id);
         visualGeneration = data.visual_generation ?? 0;
         clearedThrough = data.cleared_through_sequence ?? 0;
@@ -113,6 +123,10 @@
       }
       if (data.event_id <= lastEventId) return;
       lastEventId = data.event_id;
+      if (data.type === "overlay_style") {
+        applyStyle(data.overlay_style);
+        return;
+      }
       if (data.type === "session" && data.state === "connecting") {
         renderer.reset(data.session_id); coalesced = 0; pendingPaint = false; renderSerial++;
         visualGeneration = data.visual_generation ?? 0; clearedThrough = 0;

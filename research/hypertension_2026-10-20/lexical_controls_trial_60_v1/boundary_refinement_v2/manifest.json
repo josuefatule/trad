@@ -1,0 +1,107 @@
+{
+  "sealed_at_utc": "2026-10-22T04:16:41.859853+00:00",
+  "files": [
+    {
+      "name": "baseline.json",
+      "bytes": 217371,
+      "sha256": "f077e0162e7a7622556d459602c53ddff0bf0e82929ec25877fab9744ab45d1b"
+    },
+    {
+      "name": "boundary_normalizer.py",
+      "bytes": 3820,
+      "sha256": "3250673007d91fa7423cf9a72ad3e32d287621a8ce6452c7618862f6f7478bdd"
+    },
+    {
+      "name": "constructed_checking_cases.json",
+      "bytes": 430957,
+      "sha256": "d65103efa633a6fd5c4501d4baebea6a4e5932d2fde134c744ad4fc6a4834d6b"
+    },
+    {
+      "name": "constructed_comparison.json",
+      "bytes": 920594,
+      "sha256": "12bdc64621d9029634f89462ea17a769c16585a7b9588f7d2726a29fcb38d904"
+    },
+    {
+      "name": "context_cases.json",
+      "bytes": 267871,
+      "sha256": "686e2ed7a87a09f731a9e47904ca3be61448e6f6a92016a493cdc7a6a7d79115"
+    },
+    {
+      "name": "context_comparison.json",
+      "bytes": 835415,
+      "sha256": "f33336fbf7f94a149df21533a9b6fdc3e64257504e55a265731c7d7ea42b4163"
+    },
+    {
+      "name": "correction_review.json",
+      "bytes": 13085,
+      "sha256": "7f0edec1dd505738468bf84a86a679460e42e2c178d8b4aeb7b150f6804e4155"
+    },
+    {
+      "name": "preservation.json",
+      "bytes": 329,
+      "sha256": "9b0e13852477562f202087eb21eaf59c804d54e01958b4d704a805812da6d426"
+    },
+    {
+      "name": "protocol.json",
+      "bytes": 1936,
+      "sha256": "8d8f06a576064ac616c6e8d59b57fe63891c78031f75e2d5a75fd6725d6ba17b"
+    },
+    {
+      "name": "refinement_development_tests.json",
+      "bytes": 2260,
+      "sha256": "c7ccf09eb057856d19fa999eaf3e35341d9d79a0af9fe973d4884d6ac8153845"
+    },
+    {
+      "name": "regression_cases.json",
+      "bytes": 39800,
+      "sha256": "e0b53ff56474684b8cdbf923dec0f0867267447ccb37f475e04470911b6b77eb"
+    },
+    {
+      "name": "regression_comparison.json",
+      "bytes": 372876,
+      "sha256": "a09fb2d10d6552175a434ced9e0b76ae39f54258debe5b65621a3ac75676b45c"
+    },
+    {
+      "name": "replay_refined.py",
+      "bytes": 3962,
+      "sha256": "0c0487f6c85229055f60618f3783779031e0929b189c337319caef9663af3aec"
+    },
+    {
+      "name": "selection.json",
+      "bytes": 18990,
+      "sha256": "4f33c2d7eb7197711fbce4d76273a78c6e14f11ee92115248a71bb2b133eb242"
+    },
+    {
+      "name": "speech_comparison.json",
+      "bytes": 5608065,
+      "sha256": "29463971b117010e715421f557b4faae44af87cc89dd301d61890482915557f7"
+    },
+    {
+      "name": "summary.json",
+      "bytes": 6840,
+      "sha256": "88a370995e94caeb54caeb4c1b8a94fb5a15f92a2983e86a51f1923a9f18ba82"
+    },
+    {
+      "name": "term_results.json",
+      "bytes": 57683,
+      "sha256": "6efd8f65ae6198c65e0de6df9a9c59c2e8e9c0dfd22b4b3ac4366f4140e9c937"
+    },
+    {
+      "name": "test_boundary.py",
+      "bytes": 1305,
+      "sha256": "7176d1cee82190b11add3dca028ae9247a5b30467410e5d7eeed41defa0506fb"
+    },
+    {
+      "name": "thresholds.json",
+      "bytes": 234461,
+      "sha256": "90e29659e515bc2131733eae4ee370c0319c5325971b2df59c88d45357934452"
+    },
+    {
+      "name": "variant_preservation.json",
+      "bytes": 38952,
+      "sha256": "6ceec2215f8159a5a38e97e97d8b4702cb1df675dd8395a4db180272fa98afb7"
+    }
+  ],
+  "original_and_prior_evidence_unchanged": true,
+  "integration_performed": false
+}

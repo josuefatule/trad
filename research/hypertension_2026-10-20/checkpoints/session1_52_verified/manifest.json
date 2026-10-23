@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-10-20T16:36:06-04:00",
+  "original_unchanged": true,
+  "files": [
+    {
+      "name": "hypertension_research_en_es.json",
+      "bytes": 1902736,
+      "sha256": "10ced68849c5eb1c4ba2caa1ef204860bf7fb9d30e459b1a1c5eb7a449f81b5d"
+    },
+    {
+      "name": "medical_base_en_extended_candidate.json",
+      "bytes": 75422,
+      "sha256": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45"
+    },
+    {
+      "name": "hypertension_research_report.md",
+      "bytes": 36567,
+      "sha256": "b567ecac8a7eb8a1043ee5622c2b5b570699bd2d7582c6f4c84c7c34fa9b4191"
+    },
+    {
+      "name": "hypertension_research_progress.json",
+      "bytes": 33636,
+      "sha256": "1d7d2ac641d94b064665b1cebb0ad0106c61817178a2adeed1aa9e40bdf0957a"
+    },
+    {
+      "name": "DATASET_SCHEMA.md",
+      "bytes": 6175,
+      "sha256": "a85acc066c50b0c7a62425b3e7111fc2416b23ef19ce4eb99f3490c70d03d3b3"
+    },
+    {
+      "name": "sources.json",
+      "bytes": 32757,
+      "sha256": "1d9ed83b714d6d6f081ba33de307052da18430f697bdfb814069cc49a991e140"
+    },
+    {
+      "name": "validation_results.json",
+      "bytes": 16525,
+      "sha256": "54c07b678f2404eebef49705cba8de035d0d41ed58b47fbb2c358b531703cd4d"
+    },
+    {
+      "name": "original_glossary_audit.json",
+      "bytes": 30664,
+      "sha256": "ef0370e1d6ab1dc0446bbcdd971ec1f332cd36dac14eb9a42f9a00fb9f9fb747"
+    },
+    {
+      "name": "web_consultation_index.json",
+      "bytes": 90757,
+      "sha256": "cc873810cbb940b8bd73d8b788d72d8d001ee9af8d8843cc1df72328372890e9"
+    },
+    {
+      "name": "original_terms_review.txt",
+      "bytes": 24385,
+      "sha256": "04e0a9ac707ab4abb20fd4e4d2faec483abd9b62089b412cbac5324d3fdd8ab2"
+    },
+    {
+      "name": "new_terms_review.txt",
+      "bytes": 32333,
+      "sha256": "7ca5e94bf6a7a23bcdb210c9e5745fdfaa83ef771131759ba1a13658d27f3b8d"
+    },
+    {
+      "name": "evidence_updates.json",
+      "bytes": 7918,
+      "sha256": "1fb3d5c35355a6b77d6c8211ad76f296cceee18a86c14ac7d607fee773c36a13"
+    },
+    {
+      "name": "build_research.py",
+      "bytes": 31457,
+      "sha256": "e1aa337716c2be87ee40558bd3b650896e24df337300ea456197f2156ce6a8d7"
+    },
+    {
+      "name": "finalize_research.py",
+      "bytes": 10384,
+      "sha256": "50a349c9742d1db85811a3028ad75fe94465c87665909ebb48f0b7bac862668c"
+    },
+    {
+      "name": "report_template.md",
+      "bytes": 18604,
+      "sha256": "1a1a68458cf75137baa1c638729e2c57734517eee3fee45b26eff2358840074e"
+    }
+  ]
+}

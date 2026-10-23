@@ -1,0 +1,3256 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "canonical_en": "sodium-containing salts",
+    "sample_id": "cardio_01",
+    "ref_left": 443,
+    "ref_right": 446,
+    "reference_form": "sodium-containing salts",
+    "reference_tokens": [
+      "sodium",
+      "containing",
+      "salts"
+    ],
+    "reference_context": "rich diet or potassium supplemented salts rather than sodium containing salts but this needs to be in patients who've"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "canonical_en": "sodium reabsorption",
+    "sample_id": "cardio_03",
+    "ref_left": 841,
+    "ref_right": 843,
+    "reference_form": "sodium reabsorption",
+    "reference_tokens": [
+      "sodium",
+      "reabsorption"
+    ],
+    "reference_context": "with hypokalemic metabolic alkalosis in some and increased sodium reabsorption with extracellular volume expansion causing hypertension and suppressing"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 635,
+    "ref_right": 637,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "hypertension because there was an increasing risk of cardiovascular events occurring as one stepped up from normal to"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 1112,
+    "ref_right": 1114,
+    "reference_form": "CVD events",
+    "reference_tokens": [
+      "cvd",
+      "events"
+    ],
+    "reference_context": "reports the first one is a comparison of cvd events and death prevented with adherence to two guideline"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 1229,
+    "ref_right": 1231,
+    "reference_form": "CVD events",
+    "reference_tokens": [
+      "cvd",
+      "events"
+    ],
+    "reference_context": "the 2014 report now if you compare the cvd events that were prevented by adherence to these two"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 1567,
+    "ref_right": 1569,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "pressure levels within the normal intensive range with cardiovascular events or disease and what do the data say"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_03",
+    "ref_left": 1183,
+    "ref_right": 1185,
+    "reference_form": "CVD events",
+    "reference_tokens": [
+      "cvd",
+      "events"
+    ],
+    "reference_context": "population blood pressure level has gone down more cvd events are occurring at lower blood pressure levels this"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_03",
+    "ref_left": 1248,
+    "ref_right": 1250,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "it's very interesting that the hazard ratios for cardiovascular events were high there was a 67 increase for"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_03",
+    "ref_left": 1297,
+    "ref_right": 1299,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "on this slide where the cumulative incidence of cardiovascular events was very high and those with stage two"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "canonical_en": "tyrosine kinase inhibitors",
+    "sample_id": "cardio_03",
+    "ref_left": 387,
+    "ref_right": 390,
+    "reference_form": "tyrosine kinase inhibitors",
+    "reference_tokens": [
+      "tyrosine",
+      "kinase",
+      "inhibitors"
+    ],
+    "reference_context": "hormonal replacement therapy immunosuppressive agents recombinant human erythropoietin tyrosine kinase inhibitors cocaine and amphetamines and antidepressants all of these"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "canonical_en": "ten-year ASCVD risk",
+    "sample_id": "cardio_03",
+    "ref_left": 1165,
+    "ref_right": 1169,
+    "reference_form": "10-year ASCVD risk",
+    "reference_tokens": [
+      "10",
+      "year",
+      "ascvd",
+      "risk"
+    ],
+    "reference_context": "lifetime risk of ascvd is high but the 10 year ascvd risk may be low as the overall population blood"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "canonical_en": "ten-year ASCVD risk",
+    "sample_id": "cardio_03",
+    "ref_left": 1371,
+    "ref_right": 1375,
+    "reference_form": "10-year ASCVD risk",
+    "reference_tokens": [
+      "10",
+      "year",
+      "ascvd",
+      "risk"
+    ],
+    "reference_context": "last year that for young adults with low 10 year ascvd risk the recommendation was to start with six months"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "canonical_en": "National Institutes of Health",
+    "sample_id": "cardio_02",
+    "ref_left": 264,
+    "ref_right": 268,
+    "reference_form": "National Institutes of Health",
+    "reference_tokens": [
+      "national",
+      "institutes",
+      "of",
+      "health"
+    ],
+    "reference_context": "publications and has been funded continuously by the national institutes of health since 1973 dr carey co chaired the 2017"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "canonical_en": "mineralocorticoid receptor",
+    "sample_id": "cardio_03",
+    "ref_left": 685,
+    "ref_right": 687,
+    "reference_form": "mineralocorticoid receptor",
+    "reference_tokens": [
+      "mineralocorticoid",
+      "receptor"
+    ],
+    "reference_context": "urinary potassium excretion consistent with activation of the mineralocorticoid receptor and so unrecognized or subclinical primary aldosteronism very"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "canonical_en": "mineralocorticoid receptor",
+    "sample_id": "cardio_03",
+    "ref_left": 761,
+    "ref_right": 763,
+    "reference_form": "mineralocorticoid receptor",
+    "reference_tokens": [
+      "mineralocorticoid",
+      "receptor"
+    ],
+    "reference_context": "patients with primary aldosteronism without specific targeted therapy mineralocorticoid receptor antagonists is at least threefold higher than for"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_02",
+    "ref_left": 452,
+    "ref_right": 454,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "by drugs that people take and the other primary aldosteronism in which there's recent updated literature we will"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 555,
+    "ref_right": 557,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "11 of the untreated normotensive population had overt primary aldosteronism in stage 1 hypertension it rose to almost"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 586,
+    "ref_right": 588,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "so these patients above the line all had primary aldosteronism unequivocally confirmed so a continuum of autonomous and"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 616,
+    "ref_right": 618,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "attention to resistant hypertension and the frequency of primary aldosteronism by this confirmatory testing that we did was"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 692,
+    "ref_right": 694,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "the mineralocorticoid receptor and so unrecognized or subclinical primary aldosteronism very likely explains the pathogenesis of a substantial"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 722,
+    "ref_right": 724,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "patients with primary hypertension are ever screened for primary aldosteronism well it's very low in europe 1 in"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 755,
+    "ref_right": 757,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "that the cardiometabolic risk profile for patients with primary aldosteronism without specific targeted therapy mineralocorticoid receptor antagonists is"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 868,
+    "ref_right": 870,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "with primary or essential hypertension be screened for primary aldosteronism and if so how well this is my"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 918,
+    "ref_right": 920,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "suppressed then this is a negative screen for primary aldosteronism if renin is suppressed that is plasma renin"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 1093,
+    "ref_right": 1095,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "10 millimeters of mercury i would strongly suspect primary aldosteronism and either continuum them on the mineralocorticoid antagonist"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 414,
+    "ref_right": 417,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "major guideline recommendations and then talk about optimal systolic blood pressure and primordial disease prevention followed by some information"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1021,
+    "ref_right": 1024,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "or ckd you should aim for a target systolic blood pressure of less than 130 diastolic blood pressure of"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1638,
+    "ref_right": 1641,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "blood pressure so the 2017 guideline lowered the systolic blood pressure spp goal of therapy from less than 140"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 86,
+    "ref_right": 89,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "ascvd and for every 10 millimeter increase in systolic blood pressure there's a 53 higher risk for ascvd so"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 119,
+    "ref_right": 122,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "of risk factors like hypertension to maintain optimal systolic blood pressure levels so the next question is since the"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 4,
+    "ref_right": 7,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "on behalf of the american heart association i would like to welcome you to today's"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 38,
+    "ref_right": 41,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "and i'm a quality programs manager for the american heart association before we begin i'd like to quickly review"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 280,
+    "ref_right": 283,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "co chaired the 2017 american college of cardiology american heart association high blood pressure guideline writing committee and chaired"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 560,
+    "ref_right": 563,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "and the 2017 american college of physicians and american heart association guideline published in 2017 and for these guidelines"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "canonical_en": "resistant hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 297,
+    "ref_right": 299,
+    "reference_form": "resistant hypertension",
+    "reference_tokens": [
+      "resistant",
+      "hypertension"
+    ],
+    "reference_context": "and chaired the aha scientific writing committee on resistant hypertension he has received numerous awards including the distinguished"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "canonical_en": "resistant hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 574,
+    "ref_right": 576,
+    "reference_form": "resistant hypertension",
+    "reference_tokens": [
+      "resistant",
+      "hypertension"
+    ],
+    "reference_context": "and untreated stage 2 hypertension 21.6 and then resistant hypertension 22 and so these patients above the line"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "canonical_en": "resistant hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 610,
+    "ref_right": 612,
+    "reference_form": "resistant hypertension",
+    "reference_tokens": [
+      "resistant",
+      "hypertension"
+    ],
+    "reference_context": "found across the spectrum from normal attention to resistant hypertension and the frequency of primary aldosteronism by this"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "canonical_en": "resistant hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 648,
+    "ref_right": 650,
+    "reference_form": "resistant hypertension",
+    "reference_tokens": [
+      "resistant",
+      "hypertension"
+    ],
+    "reference_context": "in stage 2 and 18 to 52 in resistant hypertension depending on the pa definition employed so in"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "canonical_en": "resistant hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 742,
+    "ref_right": 744,
+    "reference_form": "resistant hypertension",
+    "reference_tokens": [
+      "resistant",
+      "hypertension"
+    ],
+    "reference_context": "this country it's not much better 2 of resistant hypertension in spite of that the cardiometabolic risk profile"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "canonical_en": "spironolactone",
+    "sample_id": "cardio_03",
+    "ref_left": 1065,
+    "ref_right": 1066,
+    "reference_form": "spironolactone",
+    "reference_tokens": [
+      "spironolactone"
+    ],
+    "reference_context": "which point i would treat the patient with spironolactone 25 milligrams a day low dose for a"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "canonical_en": "cardiometabolic risk",
+    "sample_id": "cardio_03",
+    "ref_left": 749,
+    "ref_right": 751,
+    "reference_form": "cardiometabolic risk",
+    "reference_tokens": [
+      "cardiometabolic",
+      "risk"
+    ],
+    "reference_context": "of resistant hypertension in spite of that the cardiometabolic risk profile for patients with primary aldosteronism without specific"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "canonical_en": "heart disease",
+    "sample_id": "cardio_01",
+    "ref_left": 334,
+    "ref_right": 336,
+    "reference_form": "heart disease",
+    "reference_tokens": [
+      "heart",
+      "disease"
+    ],
+    "reference_context": "one can prevent the cardiovascular risks such as heart disease stroke vascular dementia and chronic kidney disease and"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 201,
+    "ref_right": 204,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "now have three the first one is non elevated blood pressure and that is a blood pressure of 120"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 224,
+    "ref_right": 227,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "mercury the second category is what we call elevated blood pressure and that would be a blood pressure of"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 308,
+    "ref_right": 311,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "hypertension and the focus really is on the elevated blood pressure category we feel that by preventing an increase"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 361,
+    "ref_right": 364,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "blood pressure in patients who are in the elevated blood pressure category need to be treated firstly with lifestyle"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 409,
+    "ref_right": 412,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "130 to 139 in this group of non elevated blood pressure i also want to highlight that we have"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 621,
+    "ref_right": 624,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "89 and we broke that into two categories elevated blood pressure and stage one hypertension because there was an"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 645,
+    "ref_right": 648,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "occurring as one stepped up from normal to elevated blood pressure to stage one hypertension so stage one hypertension"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 776,
+    "ref_right": 779,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "any drug treatment for those with normal or elevated blood pressure just healthy lifestyle non pharmacologic therapy for stage"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "canonical_en": "elevated blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1319,
+    "ref_right": 1322,
+    "reference_form": "elevated blood pressure",
+    "reference_tokens": [
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "controls in stage one hypertension and even with elevated blood pressure compared to normal blood pressure these were significantly"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 81,
+    "ref_right": 83,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "enough job in actually managing hypertension and high blood pressure so i think that is one of the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 161,
+    "ref_right": 163,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "is that we have made the classification of blood pressure categories more practical and these categories really have"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 202,
+    "ref_right": 204,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "have three the first one is non elevated blood pressure and that is a blood pressure of 120"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 208,
+    "ref_right": 210,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "non elevated blood pressure and that is a blood pressure of 120 over 70 millimetres of mercury the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 225,
+    "ref_right": 227,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "the second category is what we call elevated blood pressure and that would be a blood pressure of"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 232,
+    "ref_right": 234,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "elevated blood pressure and that would be a blood pressure of 120 to 139 or 70 to 89"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 309,
+    "ref_right": 311,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "and the focus really is on the elevated blood pressure category we feel that by preventing an increase"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 320,
+    "ref_right": 322,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "we feel that by preventing an increase in blood pressure there's tremendous evidence that one can prevent the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 353,
+    "ref_right": 355,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "we recommend in these new guidelines is that blood pressure in patients who are in the elevated blood"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 362,
+    "ref_right": 364,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "pressure in patients who are in the elevated blood pressure category need to be treated firstly with lifestyle"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 375,
+    "ref_right": 377,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "be treated firstly with lifestyle modifications and if blood pressure is still not at target which we consider"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 398,
+    "ref_right": 400,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "to 79 pharmacological therapy should be started if blood pressure is 130 to 139 in this group of"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 410,
+    "ref_right": 412,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "to 139 in this group of non elevated blood pressure i also want to highlight that we have"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 543,
+    "ref_right": 545,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "or other symptoms associated with too low a blood pressure then the recommendations are to treat as low"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 619,
+    "ref_right": 621,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "i've said the fact that we have categorised blood pressure into three very practical classifications based on evidence"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 247,
+    "ref_right": 249,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "of medicine his research on hormonal control of blood pressure and hypertension has resulted in over 450 publications"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 284,
+    "ref_right": 286,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "american college of cardiology american heart association high blood pressure guideline writing committee and chaired the aha scientific"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 415,
+    "ref_right": 417,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "guideline recommendations and then talk about optimal systolic blood pressure and primordial disease prevention followed by some information"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 430,
+    "ref_right": 432,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "by some information on the current state of blood pressure control we will talk about two kinds of"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 494,
+    "ref_right": 496,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "management of hypertension and then particularly focus on blood pressure management of older adults and then we'll conclude"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 541,
+    "ref_right": 543,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "shows systolic and diastolic blood pressures in the blood pressure classifications of the jnc 7 guideline published in"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 572,
+    "ref_right": 574,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "published in 2017 and for these guidelines normal blood pressure was unchanged from the 2003 jnc 7 to"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 622,
+    "ref_right": 624,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "and we broke that into two categories elevated blood pressure and stage one hypertension because there was an"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 646,
+    "ref_right": 648,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "as one stepped up from normal to elevated blood pressure to stage one hypertension so stage one hypertension"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 696,
+    "ref_right": 698,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "additional stages in the 2017 guideline of importance blood pressure to be classified into one of these categories"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 730,
+    "ref_right": 732,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "two occasions and if the systolic or diastolic blood pressure is different in the two categories the individual"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 746,
+    "ref_right": 748,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "the individual should be designated as the higher blood pressure category and this slide shows the thresholds in"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 777,
+    "ref_right": 779,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "drug treatment for those with normal or elevated blood pressure just healthy lifestyle non pharmacologic therapy for stage"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 906,
+    "ref_right": 908,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "for those age greater than 65 years the blood pressure category of 130 to 139 antihypertensive drug therapy"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1022,
+    "ref_right": 1024,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "ckd you should aim for a target systolic blood pressure of less than 130 diastolic blood pressure of"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1029,
+    "ref_right": 1031,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "systolic blood pressure of less than 130 diastolic blood pressure of less than 80 if you are in"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1051,
+    "ref_right": 1053,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "greater than or equal to 65 and your blood pressure is greater than or equal to 130 the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1073,
+    "ref_right": 1075,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "130 systolic now having reviewed the classification of blood pressure in terms of thresholds and goals there was"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1161,
+    "ref_right": 1163,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "of antihypertensive therapy in the 2017 guideline was blood pressure greater than 140 over 90 for the general"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1294,
+    "ref_right": 1296,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "population impact of achieving and maintaining the 2017 blood pressure goals in adults greater than or equal to"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1314,
+    "ref_right": 1316,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "of age with hypertension compared to maintaining current blood pressure treatment and control goals or achieving blood pressure"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1322,
+    "ref_right": 1324,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "blood pressure treatment and control goals or achieving blood pressure goals recommended in the jnc report of 2003"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1343,
+    "ref_right": 1345,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "the 2017 8 th jnc panel report on blood pressure goals and the estimates were made by using"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1398,
+    "ref_right": 1400,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "meta analysis on the cvd risk reduction with blood pressure lowering they also estimated the serious adverse events"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1409,
+    "ref_right": 1411,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "they also estimated the serious adverse events with blood pressure lowering based on pool data from the sprint"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1474,
+    "ref_right": 1476,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "impact following the 2017 guideline recommendations for lowering blood pressure in hypertensive persons compared to other guidelines the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1495,
+    "ref_right": 1497,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "adverse events which are largely reversible with lower blood pressure targets should not be equated to the risk"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1536,
+    "ref_right": 1538,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "reductions or these results strongly support a lower blood pressure target less than 130 over 80 in the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1558,
+    "ref_right": 1560,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "given those reports is there any association of blood pressure levels within the normal intensive range with cardiovascular"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1630,
+    "ref_right": 1632,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "of the emergence of risk factors like high blood pressure so the 2017 guideline lowered the systolic blood"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1639,
+    "ref_right": 1641,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "pressure so the 2017 guideline lowered the systolic blood pressure spp goal of therapy from less than 140"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1751,
+    "ref_right": 1753,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "see the results here that these deciles of blood pressure going from left to right 90 99 100"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 20,
+    "ref_right": 22,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "corner the incident ascvd clinical events by baseline blood pressure shows that for a 10 millimeter higher svp"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 54,
+    "ref_right": 56,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "participants without atherosclerotic cardiovascular disease beginning with a blood pressure of 90 there was a stepwise increase in"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 87,
+    "ref_right": 89,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "and for every 10 millimeter increase in systolic blood pressure there's a 53 higher risk for ascvd so"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 120,
+    "ref_right": 122,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "risk factors like hypertension to maintain optimal systolic blood pressure levels so the next question is since the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 134,
+    "ref_right": 136,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "question is since the introduction of the current blood pressure guidelines are there any is there any evidence"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 147,
+    "ref_right": 149,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "any is there any evidence for improvement in blood pressure control and certainly there is because if we"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 172,
+    "ref_right": 174,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "1999 you see this linear stepwise increase in blood pressure control among all adults with hypertension but something"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 229,
+    "ref_right": 231,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "based panel report which did recommend a higher blood pressure thresholds and targets as we reviewed before and"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 305,
+    "ref_right": 307,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "worry about that might induce hypertension or aggravate blood pressure levels or interfere with drugs in patients with"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 340,
+    "ref_right": 342,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "category at any dose level that controls pain blood pressure is elevated and nsaids do interfere with many"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 675,
+    "ref_right": 677,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "aldosterone in the study was also associated with blood pressure urinary potassium excretion consistent with activation of the"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 780,
+    "ref_right": 782,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "with primary hypertension matched for age sex and blood pressure so we need a new simplified diagnostic approach"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1079,
+    "ref_right": 1081,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "dose for a month and then if the blood pressure falls by greater than 10 millimeters of mercury"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1176,
+    "ref_right": 1178,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "risk may be low as the overall population blood pressure level has gone down more cvd events are"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1189,
+    "ref_right": 1191,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "down more cvd events are occurring at lower blood pressure levels this was demonstrated for young adults with"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1320,
+    "ref_right": 1322,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "in stage one hypertension and even with elevated blood pressure compared to normal blood pressure these were significantly"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1325,
+    "ref_right": 1327,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "even with elevated blood pressure compared to normal blood pressure these were significantly different from each other and"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1505,
+    "ref_right": 1507,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "therapy for six months and then if the blood pressure does not achieve target add on therapy would"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1580,
+    "ref_right": 1582,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "increased intake of dietary potassium all lower the blood pressure by at least four to five millimeters of"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1660,
+    "ref_right": 1662,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "a kilogram of weight loss can lower the blood pressure by one millimeter of mercury we're going to"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "canonical_en": "blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 1703,
+    "ref_right": 1705,
+    "reference_form": "blood pressure",
+    "reference_tokens": [
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "most adults will achieve a substantial reduction in blood pressure daily potassium intake is"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "canonical_en": "cardiovascular risk",
+    "sample_id": "cardio_02",
+    "ref_left": 930,
+    "ref_right": 932,
+    "reference_form": "cardiovascular risk",
+    "reference_tokens": [
+      "cardiovascular",
+      "risk"
+    ],
+    "reference_context": "like diabetics and patients with ckd have high cardiovascular risk and of course for stage two hypertension which"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "canonical_en": "cardiovascular risk",
+    "sample_id": "cardio_02",
+    "ref_left": 949,
+    "ref_right": 951,
+    "reference_form": "cardiovascular risk",
+    "reference_tokens": [
+      "cardiovascular",
+      "risk"
+    ],
+    "reference_context": "greater than 140 over 90 irrespective of the cardiovascular risk these patients should be treated with antihypertensive drug"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "canonical_en": "target systolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1020,
+    "ref_right": 1024,
+    "reference_form": "target systolic blood pressure",
+    "reference_tokens": [
+      "target",
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "diabetes or ckd you should aim for a target systolic blood pressure of less than 130 diastolic blood pressure of"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "canonical_en": "hormone replacement therapy",
+    "sample_id": "cardio_03",
+    "ref_left": 379,
+    "ref_right": 382,
+    "reference_form": "hormonal replacement therapy",
+    "reference_tokens": [
+      "hormonal",
+      "replacement",
+      "therapy"
+    ],
+    "reference_context": "on the lookout for are oral contraceptives and hormonal replacement therapy immunosuppressive agents recombinant human erythropoietin tyrosine kinase inhibitors"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "canonical_en": "immunosuppressive agents",
+    "sample_id": "cardio_03",
+    "ref_left": 382,
+    "ref_right": 384,
+    "reference_form": "immunosuppressive agents",
+    "reference_tokens": [
+      "immunosuppressive",
+      "agents"
+    ],
+    "reference_context": "for are oral contraceptives and hormonal replacement therapy immunosuppressive agents recombinant human erythropoietin tyrosine kinase inhibitors cocaine and"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "canonical_en": "diuretics",
+    "sample_id": "cardio_03",
+    "ref_left": 363,
+    "ref_right": 364,
+    "reference_form": "diuretics",
+    "reference_tokens": [
+      "diuretics"
+    ],
+    "reference_context": "agents such as ace inhibitors angiotensin receptor blockers diuretics and beta blockers other agents to be on"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "canonical_en": "atherosclerosis",
+    "sample_id": "cardio_02",
+    "ref_left": 1689,
+    "ref_right": 1690,
+    "reference_form": "atherosclerosis",
+    "reference_tokens": [
+      "atherosclerosis"
+    ],
+    "reference_context": "on their ascvd risk score still have subclinical atherosclerosis based on their coronary calcium scores and may"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 27,
+    "ref_right": 28,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "university in montreal canada interestingly the prevalence of hypertension continues to grow even though we've known for"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 78,
+    "ref_right": 79,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "doing a good enough job in actually managing hypertension and high blood pressure so i think that"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 80,
+    "ref_right": 83,
+    "reference_form": "high blood pressure",
+    "reference_tokens": [
+      "high",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "good enough job in actually managing hypertension and high blood pressure so i think that is one of the"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 102,
+    "ref_right": 103,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "in terms of better treating managing patients with hypertension so on behalf of the taskforce of the"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 191,
+    "ref_right": 192,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "guidelines of 2018 we had seven categories defining hypertension we now have three the first one is"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 250,
+    "ref_right": 251,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "diastolic and then we have the definition of hypertension as being the classical definition of 140 over"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 273,
+    "ref_right": 274,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "categories are very important for the management of hypertension just building a little bit on those new"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_01",
+    "ref_left": 300,
+    "ref_right": 301,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "treatment plans or algorithms for the management of hypertension and the focus really is on the elevated"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 20,
+    "ref_right": 21,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "you to today's webinar guideline driven management of hypertension an evidence based update my name is kristen"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 250,
+    "ref_right": 251,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "research on hormonal control of blood pressure and hypertension has resulted in over 450 publications and has"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 283,
+    "ref_right": 286,
+    "reference_form": "high blood pressure",
+    "reference_tokens": [
+      "high",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "2017 american college of cardiology american heart association high blood pressure guideline writing committee and chaired the aha scientific"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 298,
+    "ref_right": 299,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "chaired the aha scientific writing committee on resistant hypertension he has received numerous awards including the distinguished"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 322,
+    "ref_right": 323,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "the endocrine society the aha excellence award for hypertension research the aha distinguished scientist award and election"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 373,
+    "ref_right": 374,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "give this webinar on guideline driven management of hypertension this will be an evidence based review my"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 441,
+    "ref_right": 442,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "we will talk about two kinds of secondary hypertension that induced by drugs that people take and"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 468,
+    "ref_right": 469,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "we will then focus on the treatment of hypertension in young adults at low short term cardiovascular"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 488,
+    "ref_right": 489,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "then cover lifestyle management and pharmacologic management of hypertension and then particularly focus on blood pressure management"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 598,
+    "ref_right": 599,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "a large change in this broad area pre hypertension which in the jnc 7 report went from"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 627,
+    "ref_right": 628,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "two categories elevated blood pressure and stage one hypertension because there was an increasing risk of cardiovascular"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 651,
+    "ref_right": 652,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "normal to elevated blood pressure to stage one hypertension so stage one hypertension currently is 130 139"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 655,
+    "ref_right": 656,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "pressure to stage one hypertension so stage one hypertension currently is 130 139 over 80 to 89"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 669,
+    "ref_right": 670,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "80 to 89 we then made stage two hypertension the previous stage one hypertension and that's anything"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 674,
+    "ref_right": 675,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "made stage two hypertension the previous stage one hypertension and that's anything over 140 over 90 and"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 788,
+    "ref_right": 789,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "healthy lifestyle non pharmacologic therapy for stage one hypertension which is 130 to 139 over 80 to"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 938,
+    "ref_right": 939,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "cardiovascular risk and of course for stage two hypertension which is greater than 140 over 90 irrespective"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 1309,
+    "ref_right": 1310,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "or equal to 45 years of age with hypertension compared to maintaining current blood pressure treatment and"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 1548,
+    "ref_right": 1549,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "than 130 over 80 in the management of hypertension so given those reports is there any association"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 1629,
+    "ref_right": 1632,
+    "reference_form": "high blood pressure",
+    "reference_tokens": [
+      "high",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "prevention of the emergence of risk factors like high blood pressure so the 2017 guideline lowered the systolic blood"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 115,
+    "ref_right": 116,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "is preventing the emergence of risk factors like hypertension to maintain optimal systolic blood pressure levels so"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 179,
+    "ref_right": 180,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "in blood pressure control among all adults with hypertension but something strange happened in 2014 and since"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 285,
+    "ref_right": 286,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "decreased we're going to talk now about secondary hypertension and two items the first one is what"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 302,
+    "ref_right": 303,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "drugs should i worry about that might induce hypertension or aggravate blood pressure levels or interfere with"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 315,
+    "ref_right": 316,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "levels or interfere with drugs in patients with hypertension the biggest category is non steroidal anti inflammatory"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 421,
+    "ref_right": 422,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "there anything new in the screening for secondary hypertension due to primary allosterism and yes there is"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 560,
+    "ref_right": 561,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "population had overt primary aldosteronism in stage 1 hypertension it rose to almost 16 and untreated stage"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 570,
+    "ref_right": 571,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "rose to almost 16 and untreated stage 2 hypertension 21.6 and then resistant hypertension 22 and so"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 575,
+    "ref_right": 576,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "untreated stage 2 hypertension 21.6 and then resistant hypertension 22 and so these patients above the line"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 611,
+    "ref_right": 612,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "across the spectrum from normal attention to resistant hypertension and the frequency of primary aldosteronism by this"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 649,
+    "ref_right": 650,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "stage 2 and 18 to 52 in resistant hypertension depending on the pa definition employed so in"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 707,
+    "ref_right": 708,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "of a substantial proportion of people with primary hypertension that being the case how many patients with"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 717,
+    "ref_right": 718,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "being the case how many patients with primary hypertension are ever screened for primary aldosteronism well it's"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 743,
+    "ref_right": 744,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "country it's not much better 2 of resistant hypertension in spite of that the cardiometabolic risk profile"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 774,
+    "ref_right": 775,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "least threefold higher than for patients with primary hypertension matched for age sex and blood pressure so"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 848,
+    "ref_right": 849,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "increased sodium reabsorption with extracellular volume expansion causing hypertension and suppressing the entire renin angiotensin system so"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 864,
+    "ref_right": 865,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "so should all patients with primary or essential hypertension be screened for primary aldosteronism and if so"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1114,
+    "ref_right": 1115,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "to an expert center so the treatment of hypertension in young and low risk groups was not"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1155,
+    "ref_right": 1156,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "randomized trials but for young adults with isolated hypertension the lifetime risk of ascvd is high but"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1199,
+    "ref_right": 1200,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "levels this was demonstrated for young adults with hypertension who have earlier onset of a variety of"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1260,
+    "ref_right": 1261,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "there was a 67 increase for stage one hypertension 75 for stage two and a very large"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1307,
+    "ref_right": 1308,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "was very high and those with stage two hypertension was higher than controls in stage one hypertension"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1315,
+    "ref_right": 1316,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "hypertension was higher than controls in stage one hypertension and even with elevated blood pressure compared to"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1445,
+    "ref_right": 1446,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "history of premature cardiovascular disease a history of hypertension during pregnancy or a personal history of premature"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1486,
+    "ref_right": 1487,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "diagram a follow up where in stage one hypertension even if they're at low cardiovascular disease risk"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1530,
+    "ref_right": 1531,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "important is lifestyle modification in the treatment of hypertension and is there any new evidence supporting the"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "canonical_en": "hypertension",
+    "sample_id": "cardio_03",
+    "ref_left": 1552,
+    "ref_right": 1553,
+    "reference_form": "hypertension",
+    "reference_tokens": [
+      "hypertension"
+    ],
+    "reference_context": "so the cornerstone for prevention and treatment of hypertension is lifestyle therapy and you can see that"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "canonical_en": "micrograms per deciliter",
+    "sample_id": "cardio_03",
+    "ref_left": 504,
+    "ref_right": 507,
+    "reference_form": "micrograms per deciliter",
+    "reference_tokens": [
+      "micrograms",
+      "per",
+      "deciliter"
+    ],
+    "reference_context": "individual above which is primary allosteronism is 12 micrograms per deciliter and that's represented by the dashed line so"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "canonical_en": "incidence",
+    "sample_id": "cardio_03",
+    "ref_left": 1295,
+    "ref_right": 1296,
+    "reference_form": "incidence",
+    "reference_tokens": [
+      "incidence"
+    ],
+    "reference_context": "is shown on this slide where the cumulative incidence of cardiovascular events was very high and those"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "canonical_en": "isometric resistance exercise",
+    "sample_id": "cardio_03",
+    "ref_left": 1619,
+    "ref_right": 1622,
+    "reference_form": "isometric resistance exercise",
+    "reference_tokens": [
+      "isometric",
+      "resistance",
+      "exercise"
+    ],
+    "reference_context": "to physical activity either aerobic or dynamic or isometric resistance exercise and moderation of alcohol consumption all give you"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "canonical_en": "pharmacological therapy",
+    "sample_id": "cardio_01",
+    "ref_left": 392,
+    "ref_right": 394,
+    "reference_form": "pharmacological therapy",
+    "reference_tokens": [
+      "pharmacological",
+      "therapy"
+    ],
+    "reference_context": "consider 120 to 129 or 70 to 79 pharmacological therapy should be started if blood pressure is 130"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "canonical_en": "pharmacological therapy",
+    "sample_id": "cardio_02",
+    "ref_left": 783,
+    "ref_right": 785,
+    "reference_form": "pharmacologic therapy",
+    "reference_tokens": [
+      "pharmacologic",
+      "therapy"
+    ],
+    "reference_context": "or elevated blood pressure just healthy lifestyle non pharmacologic therapy for stage one hypertension which is 130 to"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "canonical_en": "pharmacological therapy",
+    "sample_id": "cardio_02",
+    "ref_left": 838,
+    "ref_right": 840,
+    "reference_form": "pharmacologic therapy",
+    "reference_tokens": [
+      "pharmacologic",
+      "therapy"
+    ],
+    "reference_context": "ascvd risk of less than 10 then non pharmacologic therapy was recommended but if there was cvd or"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "canonical_en": "pharmacological therapy",
+    "sample_id": "cardio_02",
+    "ref_left": 863,
+    "ref_right": 865,
+    "reference_form": "pharmacologic therapy",
+    "reference_tokens": [
+      "pharmacologic",
+      "therapy"
+    ],
+    "reference_context": "therapy was recommended to be added to non pharmacologic therapy and the patients with diabetes or chronic kidney"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "canonical_en": "pharmacological therapy",
+    "sample_id": "cardio_03",
+    "ref_left": 1606,
+    "ref_right": 1608,
+    "reference_form": "pharmacologic therapy",
+    "reference_tokens": [
+      "pharmacologic",
+      "therapy"
+    ],
+    "reference_context": "and also are additive to the effects of pharmacologic therapy this also applies to physical activity either aerobic"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "canonical_en": "as low as reasonably achievable",
+    "sample_id": "cardio_01",
+    "ref_left": 551,
+    "ref_right": 556,
+    "reference_form": "as low as reasonably achievable",
+    "reference_tokens": [
+      "as",
+      "low",
+      "as",
+      "reasonably",
+      "achievable"
+    ],
+    "reference_context": "blood pressure then the recommendations are to treat as low as reasonably achievable the alara principle so we recognise that while"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "canonical_en": "weight loss",
+    "sample_id": "cardio_03",
+    "ref_left": 1561,
+    "ref_right": 1563,
+    "reference_form": "weight loss",
+    "reference_tokens": [
+      "weight",
+      "loss"
+    ],
+    "reference_context": "is lifestyle therapy and you can see that weight loss a healthy dietary pattern reduced intake of dietary"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "canonical_en": "weight loss",
+    "sample_id": "cardio_03",
+    "ref_left": 1655,
+    "ref_right": 1657,
+    "reference_form": "weight loss",
+    "reference_tokens": [
+      "weight",
+      "loss"
+    ],
+    "reference_context": "that even as little as a kilogram of weight loss can lower the blood pressure by one millimeter"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "canonical_en": "renin suppression",
+    "sample_id": "cardio_03",
+    "ref_left": 661,
+    "ref_right": 663,
+    "reference_form": "renin suppression",
+    "reference_tokens": [
+      "renin",
+      "suppression"
+    ],
+    "reference_context": "pa definition employed so in the context of renin suppression the autonomous 24 hour aldosterone in the study"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "canonical_en": "hypotension",
+    "sample_id": "cardio_01",
+    "ref_left": 534,
+    "ref_right": 535,
+    "reference_form": "hypotension",
+    "reference_tokens": [
+      "hypotension"
+    ],
+    "reference_context": "an older person does exhibit symptoms of orthostatic hypotension or other symptoms associated with too low a"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "canonical_en": "chronic kidney disease",
+    "sample_id": "cardio_01",
+    "ref_left": 340,
+    "ref_right": 343,
+    "reference_form": "chronic kidney disease",
+    "reference_tokens": [
+      "chronic",
+      "kidney",
+      "disease"
+    ],
+    "reference_context": "such as heart disease stroke vascular dementia and chronic kidney disease and what we recommend in these new guidelines"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "canonical_en": "chronic kidney disease",
+    "sample_id": "cardio_02",
+    "ref_left": 871,
+    "ref_right": 874,
+    "reference_form": "chronic kidney disease",
+    "reference_tokens": [
+      "chronic",
+      "kidney",
+      "disease"
+    ],
+    "reference_context": "pharmacologic therapy and the patients with diabetes or chronic kidney disease since they are at much higher risk than"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "canonical_en": "blood pressure target",
+    "sample_id": "cardio_02",
+    "ref_left": 1536,
+    "ref_right": 1539,
+    "reference_form": "blood pressure target",
+    "reference_tokens": [
+      "blood",
+      "pressure",
+      "target"
+    ],
+    "reference_context": "reductions or these results strongly support a lower blood pressure target less than 130 over 80 in the management"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "canonical_en": "exercise",
+    "sample_id": "cardio_01",
+    "ref_left": 473,
+    "ref_right": 474,
+    "reference_form": "exercise",
+    "reference_tokens": [
+      "exercise"
+    ],
+    "reference_context": "sugar containing foods and also of course emphasising exercise a healthy diet reduced alcohol intake etc and"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "canonical_en": "exercise",
+    "sample_id": "cardio_03",
+    "ref_left": 1621,
+    "ref_right": 1622,
+    "reference_form": "exercise",
+    "reference_tokens": [
+      "exercise"
+    ],
+    "reference_context": "activity either aerobic or dynamic or isometric resistance exercise and moderation of alcohol consumption all give you"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "canonical_en": "prehypertension",
+    "sample_id": "cardio_02",
+    "ref_left": 597,
+    "ref_right": 599,
+    "reference_form": "pre-hypertension",
+    "reference_tokens": [
+      "pre",
+      "hypertension"
+    ],
+    "reference_context": "was a large change in this broad area pre hypertension which in the jnc 7 report went from"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "canonical_en": "millimoles per day",
+    "sample_id": "cardio_03",
+    "ref_left": 474,
+    "ref_right": 477,
+    "reference_form": "millimoles per day",
+    "reference_tokens": [
+      "millimoles",
+      "per",
+      "day"
+    ],
+    "reference_context": "sodium up to urinary sodium excretion of 190 millimoles per day at which point their aldosterone levels were measured"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "canonical_en": "millimoles per day",
+    "sample_id": "cardio_03",
+    "ref_left": 959,
+    "ref_right": 962,
+    "reference_form": "millimoles per day",
+    "reference_tokens": [
+      "millimoles",
+      "per",
+      "day"
+    ],
+    "reference_context": "and check to make sure it's over 200 millimoles per day and then measure the aldosterone if the aldosterone"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "canonical_en": "micrograms per day",
+    "sample_id": "cardio_03",
+    "ref_left": 544,
+    "ref_right": 547,
+    "reference_form": "micrograms per day",
+    "reference_tokens": [
+      "micrograms",
+      "per",
+      "day"
+    ],
+    "reference_context": "remarkable was that above the line of 12 micrograms per day 11 of the untreated normotensive population had overt"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "canonical_en": "micrograms per day",
+    "sample_id": "cardio_03",
+    "ref_left": 974,
+    "ref_right": 977,
+    "reference_form": "micrograms per day",
+    "reference_tokens": [
+      "micrograms",
+      "per",
+      "day"
+    ],
+    "reference_context": "aldosterone if the aldosterone is less than six micrograms per day it's a negative screen and just continue present"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "canonical_en": "non-elevated blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 200,
+    "ref_right": 204,
+    "reference_form": "non-elevated blood pressure",
+    "reference_tokens": [
+      "non",
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "we now have three the first one is non elevated blood pressure and that is a blood pressure of 120"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "canonical_en": "non-elevated blood pressure",
+    "sample_id": "cardio_01",
+    "ref_left": 408,
+    "ref_right": 412,
+    "reference_form": "non-elevated blood pressure",
+    "reference_tokens": [
+      "non",
+      "elevated",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "is 130 to 139 in this group of non elevated blood pressure i also want to highlight that we have"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "canonical_en": "alcohol intake",
+    "sample_id": "cardio_01",
+    "ref_left": 478,
+    "ref_right": 480,
+    "reference_form": "alcohol intake",
+    "reference_tokens": [
+      "alcohol",
+      "intake"
+    ],
+    "reference_context": "of course emphasising exercise a healthy diet reduced alcohol intake etc and finally i want to say that"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "canonical_en": "serious adverse events",
+    "sample_id": "cardio_02",
+    "ref_left": 1405,
+    "ref_right": 1408,
+    "reference_form": "serious adverse events",
+    "reference_tokens": [
+      "serious",
+      "adverse",
+      "events"
+    ],
+    "reference_context": "with blood pressure lowering they also estimated the serious adverse events with blood pressure lowering based on pool data"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "canonical_en": "salt loading",
+    "sample_id": "cardio_03",
+    "ref_left": 811,
+    "ref_right": 813,
+    "reference_form": "salt loading",
+    "reference_tokens": [
+      "salt",
+      "loading"
+    ],
+    "reference_context": "showing adrenal production of aldosterone autonomously non suppressible salt loading which i just showed you this causes an"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "canonical_en": "renin-independent aldosterone production",
+    "sample_id": "cardio_03",
+    "ref_left": 596,
+    "ref_right": 600,
+    "reference_form": "renin-independent aldosterone production",
+    "reference_tokens": [
+      "renin",
+      "independent",
+      "aldosterone",
+      "production"
+    ],
+    "reference_context": "unequivocally confirmed so a continuum of autonomous and renin independent aldosterone production can be found across the spectrum from normal"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "canonical_en": "mineralocorticoid receptor antagonists",
+    "sample_id": "cardio_03",
+    "ref_left": 761,
+    "ref_right": 764,
+    "reference_form": "mineralocorticoid receptor antagonists",
+    "reference_tokens": [
+      "mineralocorticoid",
+      "receptor",
+      "antagonists"
+    ],
+    "reference_context": "patients with primary aldosteronism without specific targeted therapy mineralocorticoid receptor antagonists is at least threefold higher than for patients"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "canonical_en": "urinary aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 1027,
+    "ref_right": 1029,
+    "reference_form": "urinary aldosterone",
+    "reference_tokens": [
+      "urinary",
+      "aldosterone"
+    ],
+    "reference_context": "my idea only at this point if the urinary aldosterone is between these two extremes i think this"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "canonical_en": "oral contraceptives",
+    "sample_id": "cardio_03",
+    "ref_left": 376,
+    "ref_right": 378,
+    "reference_form": "oral contraceptives",
+    "reference_tokens": [
+      "oral",
+      "contraceptives"
+    ],
+    "reference_context": "agents to be on the lookout for are oral contraceptives and hormonal replacement therapy immunosuppressive agents recombinant human"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "canonical_en": "hypokalemic metabolic alkalosis",
+    "sample_id": "cardio_03",
+    "ref_left": 834,
+    "ref_right": 837,
+    "reference_form": "hypokalemic metabolic alkalosis",
+    "reference_tokens": [
+      "hypokalemic",
+      "metabolic",
+      "alkalosis"
+    ],
+    "reference_context": "potassium secretion and loss of these ions with hypokalemic metabolic alkalosis in some and increased sodium reabsorption with extracellular"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 481,
+    "ref_right": 482,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "190 millimoles per day at which point their aldosterone levels were measured in the urine and the"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 598,
+    "ref_right": 599,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "so a continuum of autonomous and renin independent aldosterone production can be found across the spectrum from"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 667,
+    "ref_right": 668,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "context of renin suppression the autonomous 24 hour aldosterone in the study was also associated with blood"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 807,
+    "ref_right": 808,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "this is a diagram showing adrenal production of aldosterone autonomously non suppressible salt loading which i just"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 966,
+    "ref_right": 967,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "200 millimoles per day and then measure the aldosterone if the aldosterone is less than six micrograms"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 969,
+    "ref_right": 970,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "day and then measure the aldosterone if the aldosterone is less than six micrograms per day it's"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 988,
+    "ref_right": 989,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "screen and just continue present plans if the aldosterone is greater than 12 as we saw in"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 1028,
+    "ref_right": 1029,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "idea only at this point if the urinary aldosterone is between these two extremes i think this"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "canonical_en": "aldosterone",
+    "sample_id": "cardio_03",
+    "ref_left": 1045,
+    "ref_right": 1046,
+    "reference_form": "aldosterone",
+    "reference_tokens": [
+      "aldosterone"
+    ],
+    "reference_context": "is a positive screen because it's inappropriate for aldosterone to be that high in the face of"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "canonical_en": "physical activity",
+    "sample_id": "cardio_03",
+    "ref_left": 1612,
+    "ref_right": 1614,
+    "reference_form": "physical activity",
+    "reference_tokens": [
+      "physical",
+      "activity"
+    ],
+    "reference_context": "effects of pharmacologic therapy this also applies to physical activity either aerobic or dynamic or isometric resistance exercise"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "canonical_en": "meta-analysis",
+    "sample_id": "cardio_02",
+    "ref_left": 1380,
+    "ref_right": 1382,
+    "reference_form": "meta-analysis",
+    "reference_tokens": [
+      "meta",
+      "analysis"
+    ],
+    "reference_context": "estimating the u s population and used a meta analysis published by josh bundy it's a beautiful network"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "canonical_en": "meta-analysis",
+    "sample_id": "cardio_02",
+    "ref_left": 1390,
+    "ref_right": 1392,
+    "reference_form": "meta-analysis",
+    "reference_tokens": [
+      "meta",
+      "analysis"
+    ],
+    "reference_context": "published by josh bundy it's a beautiful network meta analysis on the cvd risk reduction with blood pressure"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_02",
+    "ref_left": 476,
+    "ref_right": 478,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "hypertension in young adults at low short term cardiovascular disease risk and then cover lifestyle management and pharmacologic"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_02",
+    "ref_left": 803,
+    "ref_right": 805,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "80 to 89 the threshold was based on cardiovascular disease risk and the presence or absence of cardiovascular"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_02",
+    "ref_left": 812,
+    "ref_right": 814,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "disease risk and the presence or absence of cardiovascular disease if there was no cardiovascular disease or a"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_02",
+    "ref_left": 818,
+    "ref_right": 820,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "absence of cardiovascular disease if there was no cardiovascular disease or a very low 10 year atherosclerotic cardiovascular"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_02",
+    "ref_left": 827,
+    "ref_right": 829,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "disease or a very low 10 year atherosclerotic cardiovascular disease risk ascvd risk of less than 10 then"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_02",
+    "ref_left": 1435,
+    "ref_right": 1437,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "showed that the 2017 guideline prevented 3 million cardiovascular disease events the jnc 7 2.6 million and the"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_03",
+    "ref_left": 49,
+    "ref_right": 51,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "cohort study then of 1400 participants without atherosclerotic cardiovascular disease beginning with a blood pressure of 90 there"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_03",
+    "ref_left": 1208,
+    "ref_right": 1210,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "who have earlier onset of a variety of cardiovascular disease processes requiring intervention the cardia study was a"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_03",
+    "ref_left": 1440,
+    "ref_right": 1442,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "the individual has a family history of premature cardiovascular disease a history of hypertension during pregnancy or a"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "canonical_en": "cardiovascular disease",
+    "sample_id": "cardio_03",
+    "ref_left": 1492,
+    "ref_right": 1494,
+    "reference_form": "cardiovascular disease",
+    "reference_tokens": [
+      "cardiovascular",
+      "disease"
+    ],
+    "reference_context": "stage one hypertension even if they're at low cardiovascular disease risk non pharm therapy for six months and"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "canonical_en": "evidence-based review",
+    "sample_id": "cardio_02",
+    "ref_left": 378,
+    "ref_right": 381,
+    "reference_form": "evidence-based review",
+    "reference_tokens": [
+      "evidence",
+      "based",
+      "review"
+    ],
+    "reference_context": "driven management of hypertension this will be an evidence based review my disclosures are here of mainly membership on"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "canonical_en": "direct renin concentration",
+    "sample_id": "cardio_03",
+    "ref_left": 932,
+    "ref_right": 935,
+    "reference_form": "direct renin concentration",
+    "reference_tokens": [
+      "direct",
+      "renin",
+      "concentration"
+    ],
+    "reference_context": "that is plasma renin activity less than one direct renin concentration less than eight then load the patient with"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "canonical_en": "alcohol moderation",
+    "sample_id": "cardio_03",
+    "ref_left": 1623,
+    "ref_right": 1627,
+    "reference_form": "moderation of alcohol consumption",
+    "reference_tokens": [
+      "moderation",
+      "of",
+      "alcohol",
+      "consumption"
+    ],
+    "reference_context": "aerobic or dynamic or isometric resistance exercise and moderation of alcohol consumption all give you about the same reduction individually"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "canonical_en": "subclinical atherosclerosis",
+    "sample_id": "cardio_02",
+    "ref_left": 1688,
+    "ref_right": 1690,
+    "reference_form": "subclinical atherosclerosis",
+    "reference_tokens": [
+      "subclinical",
+      "atherosclerosis"
+    ],
+    "reference_context": "based on their ascvd risk score still have subclinical atherosclerosis based on their coronary calcium scores and may"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "canonical_en": "older adults",
+    "sample_id": "cardio_02",
+    "ref_left": 498,
+    "ref_right": 500,
+    "reference_form": "older adults",
+    "reference_tokens": [
+      "older",
+      "adults"
+    ],
+    "reference_context": "then particularly focus on blood pressure management of older adults and then we'll conclude with some summary comments"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "canonical_en": "healthy diet",
+    "sample_id": "cardio_01",
+    "ref_left": 475,
+    "ref_right": 477,
+    "reference_form": "healthy diet",
+    "reference_tokens": [
+      "healthy",
+      "diet"
+    ],
+    "reference_context": "foods and also of course emphasising exercise a healthy diet reduced alcohol intake etc and finally i want"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "canonical_en": "co-chair",
+    "sample_id": "cardio_01",
+    "ref_left": 116,
+    "ref_right": 118,
+    "reference_form": "co-chair",
+    "reference_tokens": [
+      "co",
+      "chair"
+    ],
+    "reference_context": "taskforce of the esc 2024 guidelines and my co chair we came up with 57 new recommendations in"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "canonical_en": "blood pressure control",
+    "sample_id": "cardio_02",
+    "ref_left": 430,
+    "ref_right": 433,
+    "reference_form": "blood pressure control",
+    "reference_tokens": [
+      "blood",
+      "pressure",
+      "control"
+    ],
+    "reference_context": "by some information on the current state of blood pressure control we will talk about two kinds of secondary"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "canonical_en": "blood pressure control",
+    "sample_id": "cardio_03",
+    "ref_left": 147,
+    "ref_right": 150,
+    "reference_form": "blood pressure control",
+    "reference_tokens": [
+      "blood",
+      "pressure",
+      "control"
+    ],
+    "reference_context": "any is there any evidence for improvement in blood pressure control and certainly there is because if we follow"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "canonical_en": "blood pressure control",
+    "sample_id": "cardio_03",
+    "ref_left": 172,
+    "ref_right": 175,
+    "reference_form": "blood pressure control",
+    "reference_tokens": [
+      "blood",
+      "pressure",
+      "control"
+    ],
+    "reference_context": "1999 you see this linear stepwise increase in blood pressure control among all adults with hypertension but something strange"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "canonical_en": "prevalence",
+    "sample_id": "cardio_01",
+    "ref_left": 25,
+    "ref_right": 26,
+    "reference_form": "prevalence",
+    "reference_tokens": [
+      "prevalence"
+    ],
+    "reference_context": "the mcgill university in montreal canada interestingly the prevalence of hypertension continues to grow even though we've"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "canonical_en": "prevalence",
+    "sample_id": "cardio_01",
+    "ref_left": 50,
+    "ref_right": 51,
+    "reference_form": "prevalence",
+    "reference_tokens": [
+      "prevalence"
+    ],
+    "reference_context": "the number one killer in the world the prevalence continues to grow and unfortunately one of the"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "canonical_en": "prevalence",
+    "sample_id": "cardio_03",
+    "ref_left": 65,
+    "ref_right": 66,
+    "reference_form": "prevalence",
+    "reference_tokens": [
+      "prevalence"
+    ],
+    "reference_context": "90 there was a stepwise increase in the prevalence of traditional ascvd risk factors coronary calcium scores"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "canonical_en": "diastolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 729,
+    "ref_right": 732,
+    "reference_form": "diastolic blood pressure",
+    "reference_tokens": [
+      "diastolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "least two occasions and if the systolic or diastolic blood pressure is different in the two categories the individual"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "canonical_en": "diastolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1028,
+    "ref_right": 1031,
+    "reference_form": "diastolic blood pressure",
+    "reference_tokens": [
+      "diastolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "target systolic blood pressure of less than 130 diastolic blood pressure of less than 80 if you are in"
+  }
+]

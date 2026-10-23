@@ -1,0 +1,249 @@
+{
+  "status": "laboratory_replay_complete_not_integrated",
+  "same_sixty": true,
+  "thresholds_unchanged": true,
+  "variant_preservation_records": 15,
+  "corpus_aggregate": [
+    {
+      "model": "small",
+      "profile": "raw",
+      "word_errors": 148,
+      "reference_words": 4204,
+      "wer": 0.035204567078972404,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "previous10",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "old60",
+      "word_errors": 136,
+      "reference_words": 4204,
+      "wer": 0.03235014272121789,
+      "simulated_changes": 18,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "variants_only",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 13,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "variants_and_number",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 12,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "all_fixes",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 12,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "raw",
+      "word_errors": 117,
+      "reference_words": 4204,
+      "wer": 0.027830637488106564,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "previous10",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "old60",
+      "word_errors": 113,
+      "reference_words": 4204,
+      "wer": 0.026879162702188392,
+      "simulated_changes": 21,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "variants_only",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_changes": 16,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "variants_and_number",
+      "word_errors": 107,
+      "reference_words": 4204,
+      "wer": 0.02545195052331113,
+      "simulated_changes": 14,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "all_fixes",
+      "word_errors": 107,
+      "reference_words": 4204,
+      "wer": 0.02545195052331113,
+      "simulated_changes": 14,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "raw",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "previous10",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "old60",
+      "word_errors": 137,
+      "reference_words": 4204,
+      "wer": 0.03258801141769743,
+      "simulated_changes": 10,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "variants_only",
+      "word_errors": 133,
+      "reference_words": 4204,
+      "wer": 0.03163653663177926,
+      "simulated_changes": 5,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "variants_and_number",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 3,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "all_fixes",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 3,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    }
+  ],
+  "constructed": [
+    {
+      "profile": "old60",
+      "positive_cases": 300,
+      "positive_correct": 171,
+      "negative_cases": 806,
+      "negative_changed": 0
+    },
+    {
+      "profile": "all_fixes",
+      "positive_cases": 300,
+      "positive_correct": 206,
+      "negative_cases": 806,
+      "negative_changed": 0
+    }
+  ],
+  "contexts": [
+    {
+      "profile": "old60",
+      "positive_cases": 423,
+      "positive_correct": 283,
+      "negative_cases": 300,
+      "negative_changed": 0
+    },
+    {
+      "profile": "all_fixes",
+      "positive_cases": 423,
+      "positive_correct": 332,
+      "negative_cases": 300,
+      "negative_changed": 2
+    }
+  ],
+  "context_improvements": 49,
+  "context_regressions": 2,
+  "regression_summary": [
+    {
+      "profile": "old60",
+      "cases": 153,
+      "passed": 95
+    },
+    {
+      "profile": "variants_only",
+      "cases": 153,
+      "passed": 101
+    },
+    {
+      "profile": "variants_and_number",
+      "cases": 153,
+      "passed": 147
+    },
+    {
+      "profile": "all_fixes",
+      "cases": 153,
+      "passed": 153
+    }
+  ],
+  "development_tests_passed": true,
+  "policies_retuned_after_replay": false,
+  "new_asr_inference": false,
+  "independent_clinical_validation": false,
+  "integration_performed": false
+}

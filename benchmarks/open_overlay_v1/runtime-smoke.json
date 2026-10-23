@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "checked_utc": "2026-10-22T14:43:49.390065+00:00",
+  "api_pid": 30000,
+  "asr_ready": true,
+  "concepts": 657,
+  "glossary_patch": "medical-corrections-v1",
+  "operator_network": {
+    "local_ip": "10.10.4.214",
+    "local_ips": [
+      "10.10.4.214",
+      "10.10.4.215"
+    ],
+    "overlay_pc_ip": null,
+    "overlay_url": "http://10.10.4.214:3000/overlay",
+    "lan_enabled": true,
+    "network_profile": "Public",
+    "overlay_access": "any",
+    "operator_url": "http://localhost:8010/operator"
+  },
+  "overlay_http_ws": true,
+  "published_gateway_http_ws": false,
+  "published_gateway_check_requested": false,
+  "offline_normalization": true,
+  "session_started": false,
+  "microphone_used": false,
+  "translation_requested": false,
+  "physical_remote_overlay_tested": false
+}

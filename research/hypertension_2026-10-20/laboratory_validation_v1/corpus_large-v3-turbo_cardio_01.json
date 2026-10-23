@@ -1,0 +1,3252 @@
+{
+  "summary": {
+    "model": "large-v3-turbo",
+    "sample_id": "cardio_01",
+    "audio_duration_s": 344.7234375,
+    "reference_status": "provisional TurboScribe reference, reviewed by user; not certified ground truth",
+    "baseline": {
+      "reference_normalized": "so i'm rianne towers i am from the research institute of the mcgill university health centre and the mcgill university in montreal canada interestingly the prevalence of hypertension continues to grow even though we've known for many many years that it is the number one killer in the world the prevalence continues to grow and unfortunately one of the unmet needs is that as a healthcare system we are not doing a good enough job in actually managing hypertension and high blood pressure so i think that is one of the major needs today in terms of better treating managing patients with hypertension so on behalf of the taskforce of the esc 2024 guidelines and my co chair we came up with 57 new recommendations in the 2024 guidelines this was in addition to over 100 revisions of the previous guidelines published in 2018 i think one of the paradigm shifting new recommendations is that we have made the classification of blood pressure categories more practical and these categories really have important clinical implications so what are these categories well in the past guidelines of 2018 we had seven categories defining hypertension we now have three the first one is non elevated blood pressure and that is a blood pressure of 120 over 70 millimetres of mercury the second category is what we call elevated blood pressure and that would be a blood pressure of 120 to 139 or 70 to 89 diastolic and then we have the definition of hypertension as being the classical definition of 140 over 90 and the implications of these categories are very important for the management of hypertension just building a little bit on those new classifications as i've said we have come up with new treatment plans or algorithms for the management of hypertension and the focus really is on the elevated blood pressure category we feel that by preventing an increase in blood pressure there's tremendous evidence that one can prevent the cardiovascular risks such as heart disease stroke vascular dementia and chronic kidney disease and what we recommend in these new guidelines is that blood pressure in patients who are in the elevated blood pressure category need to be treated firstly with lifestyle modifications and if blood pressure is still not at target which we consider 120 to 129 or 70 to 79 pharmacological therapy should be started if blood pressure is 130 to 139 in this group of non elevated blood pressure i also want to highlight that we have included some new recommendations on lifestyle for example increasing potassium intake either through a potassium rich diet or potassium supplemented salts rather than sodium containing salts but this needs to be in patients who've got normal kidney function also we recommend avoidance of sugary drinks sugar containing foods and also of course emphasising exercise a healthy diet reduced alcohol intake etc and finally i want to say that in our guidelines we have emphasised that even older patients up to 85 years who are functional who are not frail should be treated the same way as one would treat a younger person that being said if an older person does exhibit symptoms of orthostatic hypotension or other symptoms associated with too low a blood pressure then the recommendations are to treat as low as reasonably achievable the alara principle so we recognise that while there are many guidelines available unfortunately these guidelines are not always implemented and this is probably one of the barriers one of the challenges we have we hope that these guidelines will be used more frequently because we have made them to be more user friendly as i've said the fact that we have categorised blood pressure into three very practical classifications based on evidence such that these classifications are associated with different degrees of risk should make it more easy and user friendly for the healthcare providers to actually be using these guidelines i should also say something else that we have introduced in these guidelines for the first time is we have highlighted the challenges of implementation highlighting that the healthcare providers really need to rise to the cause and to the challenge of using guidelines so that they can be effective in ensuring optimal care for patients",
+      "hypothesis_normalized": "so i'm rianne towers i am from the research institute of the mcgill university health center and the mcgill university in montreal canada interestingly the prevalence of hypertension continues to grow even though we've known for many many years that it is the number one killer in the world the prevalence continues to grow and unfortunately one of the unmet needs is that as a health care system we are not doing a good enough job in actually managing hypertension and high blood pressure so i think that is one of the major needs today in terms of better treating managing patients with hypertension so on behalf of the task force of the esc 2024 guidelines and my co chair we came up with 57 new recommendations in the 2024 guidelines this was in addition to over 100 revisions of the previous guidelines published in 2018 i think one of the paradigm shifting new recommendations is that we have made the classification of blood pressure categories more practical and these categories really have important clinical implications so what are these categories well in the past guidelines of 2018 we had seven categories defining hypertension we now have three the first one is non elevated blood pressure and that is a blood pressure of 120 over 70 millimeters of mercury the second category is what we call elevated blood pressure and that would be a blood pressure of 120 to 139 or 70 to 89 diastolic and then we have the definition of hypertension as being the classical definition of 140 over 19 and the implications of these categories are very important for the management of hypertension just building a little bit on those new classifications as i've said we have come up with new treatment plans or algorithms for the management of hypertension and the focus really is on the elevated blood pressure category we feel that by preventing an increase in blood pressure there's tremendous evidence that one can prevent the cardiovascular risks such as heart disease stroke vascular dementia and chronic kidney disease and what we recommend in these new guidelines is that blood pressure in patients who are in the elevated blood pressure category need to be treated firstly with lifestyle modifications and if blood pressure is still not at target which we consider 120 to 129 or 70 to 79 pharmacological therapy should be started if blood pressure is 130 to 139 in this group of non elevated blood pressure i also want to highlight that we have included some new recommendations on lifestyle for example increasing potassium intake either through a potassium rich diet or potassium supplemented salts rather than sodium containing salts but this needs to be in patients who've got normal kidney function also we recommend avoidance of sugary drinks sugar containing foods and also of course emphasising exercise a healthy diet reduced alcohol intake etc and finally i want to say that in our guidelines we have emphasised that even older patients up to 85 years who are functional who are not frail should be treated the same way as one would treat a younger person that being said if an older person does exhibit symptoms of orthostatic hypotension or other symptoms associated with too lower blood pressure then the recommendations are to treat as low as reasonably achievable the alara principle so we recognise that while there are many guidelines available unfortunately these guidelines are not always implemented and this is probably one of the barriers one of the challenges we have we hope that these guidelines will be used more frequently because we have made them to be more user friendly as i've said the fact that we have categorised blood pressure into three very practical classifications based on evidence such that these classifications are associated with different degrees of risk should make it more easy and user friendly for the healthcare providers to actually be using these guidelines i should also say something else that we have introduced in these guidelines for the first time is we have highlighted the challenges of implementation highlighting that the healthcare providers really need to rise to the cause and to the challenge of using guidelines so that they can be effective in ensuring optimal care for patients thank you so much for joining us today thank you so much for joining us today thank you so much for joining us today thank you",
+      "reference_words": 714,
+      "hypothesis_words": 741,
+      "substitutions": 6,
+      "deletions": 1,
+      "insertions": 28,
+      "word_errors": 35,
+      "wer": 0.049019607843137254,
+      "reference_characters": 4252,
+      "character_errors": 137,
+      "cer": 0.032220131702728125,
+      "word_edits": [
+        {
+          "op": "S",
+          "ref_index": 15,
+          "hyp_index": 15,
+          "reference": "centre",
+          "hypothesis": "center"
+        },
+        {
+          "op": "I",
+          "ref_index": 65,
+          "hyp_index": 65,
+          "reference": "",
+          "hypothesis": "health"
+        },
+        {
+          "op": "S",
+          "ref_index": 65,
+          "hyp_index": 66,
+          "reference": "healthcare",
+          "hypothesis": "care"
+        },
+        {
+          "op": "I",
+          "ref_index": 108,
+          "hyp_index": 109,
+          "reference": "",
+          "hypothesis": "task"
+        },
+        {
+          "op": "S",
+          "ref_index": 108,
+          "hyp_index": 110,
+          "reference": "taskforce",
+          "hypothesis": "force"
+        },
+        {
+          "op": "S",
+          "ref_index": 214,
+          "hyp_index": 216,
+          "reference": "millimetres",
+          "hypothesis": "millimeters"
+        },
+        {
+          "op": "S",
+          "ref_index": 259,
+          "hyp_index": 261,
+          "reference": "90",
+          "hypothesis": "19"
+        },
+        {
+          "op": "D",
+          "ref_index": 541,
+          "hyp_index": 543,
+          "reference": "low",
+          "hypothesis": ""
+        },
+        {
+          "op": "S",
+          "ref_index": 542,
+          "hyp_index": 543,
+          "reference": "a",
+          "hypothesis": "lower"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 715,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 716,
+          "reference": "",
+          "hypothesis": "you"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 717,
+          "reference": "",
+          "hypothesis": "so"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 718,
+          "reference": "",
+          "hypothesis": "much"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 719,
+          "reference": "",
+          "hypothesis": "for"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 720,
+          "reference": "",
+          "hypothesis": "joining"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 721,
+          "reference": "",
+          "hypothesis": "us"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 722,
+          "reference": "",
+          "hypothesis": "today"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 723,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 724,
+          "reference": "",
+          "hypothesis": "you"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 725,
+          "reference": "",
+          "hypothesis": "so"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 726,
+          "reference": "",
+          "hypothesis": "much"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 727,
+          "reference": "",
+          "hypothesis": "for"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 728,
+          "reference": "",
+          "hypothesis": "joining"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 729,
+          "reference": "",
+          "hypothesis": "us"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 730,
+          "reference": "",
+          "hypothesis": "today"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 731,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 732,
+          "reference": "",
+          "hypothesis": "you"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 733,
+          "reference": "",
+          "hypothesis": "so"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 734,
+          "reference": "",
+          "hypothesis": "much"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 735,
+          "reference": "",
+          "hypothesis": "for"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 736,
+          "reference": "",
+          "hypothesis": "joining"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 737,
+          "reference": "",
+          "hypothesis": "us"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 738,
+          "reference": "",
+          "hypothesis": "today"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 739,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 740,
+          "reference": "",
+          "hypothesis": "you"
+        }
+      ],
+      "risk_policy_version": 2,
+      "risk_flags": [
+        {
+          "op": "S",
+          "ref_index": 214,
+          "hyp_index": 216,
+          "reference": "millimetres",
+          "hypothesis": "millimeters",
+          "categories": [
+            "unit",
+            "dose_or_measurement_context"
+          ],
+          "reference_context": "of 120 over 70 millimetres of mercury the second",
+          "hypothesis_context": "of 120 over 70 millimeters of mercury the second"
+        },
+        {
+          "op": "S",
+          "ref_index": 259,
+          "hyp_index": 261,
+          "reference": "90",
+          "hypothesis": "19",
+          "categories": [
+            "number_or_numeric_word"
+          ],
+          "reference_context": "definition of 140 over 90 and the implications of",
+          "hypothesis_context": "definition of 140 over 19 and the implications of"
+        },
+        {
+          "op": "D",
+          "ref_index": 541,
+          "hyp_index": 543,
+          "reference": "low",
+          "hypothesis": "",
+          "categories": [
+            "clinical_polarity_or_laterality_cue"
+          ],
+          "reference_context": "symptoms associated with too low a blood pressure then",
+          "hypothesis_context": "symptoms associated with too lower blood pressure then the"
+        }
+      ],
+      "measurement_signature_review": {
+        "reference": [
+          {
+            "value": "2024",
+            "start": 656,
+            "end": 661
+          },
+          {
+            "value": "57",
+            "start": 705,
+            "end": 708
+          },
+          {
+            "value": "2024",
+            "start": 735,
+            "end": 740
+          },
+          {
+            "value": "100",
+            "start": 783,
+            "end": 787
+          },
+          {
+            "value": "2018",
+            "start": 837,
+            "end": 842
+          },
+          {
+            "value": "2018",
+            "start": 1114,
+            "end": 1119
+          },
+          {
+            "value": "120",
+            "start": 1264,
+            "end": 1268
+          },
+          {
+            "value": "70",
+            "start": 1273,
+            "end": 1276
+          },
+          {
+            "value": "120",
+            "start": 1401,
+            "end": 1405
+          },
+          {
+            "value": "139",
+            "start": 1408,
+            "end": 1412
+          },
+          {
+            "value": "70",
+            "start": 1415,
+            "end": 1418
+          },
+          {
+            "value": "89",
+            "start": 1421,
+            "end": 1424
+          },
+          {
+            "value": "140",
+            "start": 1520,
+            "end": 1524
+          },
+          {
+            "value": "90",
+            "start": 1529,
+            "end": 1532
+          },
+          {
+            "value": "120",
+            "start": 2318,
+            "end": 2322
+          },
+          {
+            "value": "129",
+            "start": 2325,
+            "end": 2329
+          },
+          {
+            "value": "70",
+            "start": 2332,
+            "end": 2335
+          },
+          {
+            "value": "79",
+            "start": 2338,
+            "end": 2341
+          },
+          {
+            "value": "130",
+            "start": 2405,
+            "end": 2409
+          },
+          {
+            "value": "139",
+            "start": 2412,
+            "end": 2416
+          },
+          {
+            "value": "85",
+            "start": 3025,
+            "end": 3028
+          }
+        ],
+        "hypothesis": [
+          {
+            "value": "2024",
+            "start": 657,
+            "end": 662
+          },
+          {
+            "value": "57",
+            "start": 706,
+            "end": 709
+          },
+          {
+            "value": "2024",
+            "start": 736,
+            "end": 741
+          },
+          {
+            "value": "100",
+            "start": 782,
+            "end": 786
+          },
+          {
+            "value": "2018",
+            "start": 836,
+            "end": 841
+          },
+          {
+            "value": "2018",
+            "start": 1111,
+            "end": 1116
+          },
+          {
+            "value": "120",
+            "start": 1260,
+            "end": 1264
+          },
+          {
+            "value": "70",
+            "start": 1269,
+            "end": 1272
+          },
+          {
+            "value": "120",
+            "start": 1394,
+            "end": 1398
+          },
+          {
+            "value": "139",
+            "start": 1401,
+            "end": 1405
+          },
+          {
+            "value": "70",
+            "start": 1408,
+            "end": 1411
+          },
+          {
+            "value": "89",
+            "start": 1414,
+            "end": 1417
+          },
+          {
+            "value": "140",
+            "start": 1513,
+            "end": 1517
+          },
+          {
+            "value": "19",
+            "start": 1522,
+            "end": 1525
+          },
+          {
+            "value": "120",
+            "start": 2307,
+            "end": 2311
+          },
+          {
+            "value": "129",
+            "start": 2314,
+            "end": 2318
+          },
+          {
+            "value": "70",
+            "start": 2321,
+            "end": 2324
+          },
+          {
+            "value": "79",
+            "start": 2327,
+            "end": 2330
+          },
+          {
+            "value": "130",
+            "start": 2394,
+            "end": 2398
+          },
+          {
+            "value": "139",
+            "start": 2401,
+            "end": 2405
+          },
+          {
+            "value": "85",
+            "start": 3011,
+            "end": 3014
+          }
+        ],
+        "changed": true,
+        "policy": "literal raw signature mismatch needs human review; may be formatting, not clinical error"
+      },
+      "risk_flag_counts": {
+        "unit": 1,
+        "dose_or_measurement_context": 1,
+        "number_or_numeric_word": 1,
+        "clinical_polarity_or_laterality_cue": 1
+      }
+    },
+    "with_package_controlled": {
+      "reference_normalized": "so i'm rianne towers i am from the research institute of the mcgill university health centre and the mcgill university in montreal canada interestingly the prevalence of hypertension continues to grow even though we've known for many many years that it is the number one killer in the world the prevalence continues to grow and unfortunately one of the unmet needs is that as a healthcare system we are not doing a good enough job in actually managing hypertension and high blood pressure so i think that is one of the major needs today in terms of better treating managing patients with hypertension so on behalf of the taskforce of the esc 2024 guidelines and my co chair we came up with 57 new recommendations in the 2024 guidelines this was in addition to over 100 revisions of the previous guidelines published in 2018 i think one of the paradigm shifting new recommendations is that we have made the classification of blood pressure categories more practical and these categories really have important clinical implications so what are these categories well in the past guidelines of 2018 we had seven categories defining hypertension we now have three the first one is non elevated blood pressure and that is a blood pressure of 120 over 70 millimetres of mercury the second category is what we call elevated blood pressure and that would be a blood pressure of 120 to 139 or 70 to 89 diastolic and then we have the definition of hypertension as being the classical definition of 140 over 90 and the implications of these categories are very important for the management of hypertension just building a little bit on those new classifications as i've said we have come up with new treatment plans or algorithms for the management of hypertension and the focus really is on the elevated blood pressure category we feel that by preventing an increase in blood pressure there's tremendous evidence that one can prevent the cardiovascular risks such as heart disease stroke vascular dementia and chronic kidney disease and what we recommend in these new guidelines is that blood pressure in patients who are in the elevated blood pressure category need to be treated firstly with lifestyle modifications and if blood pressure is still not at target which we consider 120 to 129 or 70 to 79 pharmacological therapy should be started if blood pressure is 130 to 139 in this group of non elevated blood pressure i also want to highlight that we have included some new recommendations on lifestyle for example increasing potassium intake either through a potassium rich diet or potassium supplemented salts rather than sodium containing salts but this needs to be in patients who've got normal kidney function also we recommend avoidance of sugary drinks sugar containing foods and also of course emphasising exercise a healthy diet reduced alcohol intake etc and finally i want to say that in our guidelines we have emphasised that even older patients up to 85 years who are functional who are not frail should be treated the same way as one would treat a younger person that being said if an older person does exhibit symptoms of orthostatic hypotension or other symptoms associated with too low a blood pressure then the recommendations are to treat as low as reasonably achievable the alara principle so we recognise that while there are many guidelines available unfortunately these guidelines are not always implemented and this is probably one of the barriers one of the challenges we have we hope that these guidelines will be used more frequently because we have made them to be more user friendly as i've said the fact that we have categorised blood pressure into three very practical classifications based on evidence such that these classifications are associated with different degrees of risk should make it more easy and user friendly for the healthcare providers to actually be using these guidelines i should also say something else that we have introduced in these guidelines for the first time is we have highlighted the challenges of implementation highlighting that the healthcare providers really need to rise to the cause and to the challenge of using guidelines so that they can be effective in ensuring optimal care for patients",
+      "hypothesis_normalized": "so i'm rianne towers i am from the research institute of the mcgill university health center and the mcgill university in montreal canada interestingly the prevalence of hypertension continues to grow even though we've known for many many years that it is the number one killer in the world the prevalence continues to grow and unfortunately one of the unmet needs is that as a health care system we are not doing a good enough job in actually managing hypertension and high blood pressure so i think that is one of the major needs today in terms of better treating managing patients with hypertension so on behalf of the task force of the esc 2024 guidelines and my co chair we came up with 57 new recommendations in the 2024 guidelines this was in addition to over 100 revisions of the previous guidelines published in 2018 i think one of the paradigm shifting new recommendations is that we have made the classification of blood pressure categories more practical and these categories really have important clinical implications so what are these categories well in the past guidelines of 2018 we had seven categories defining hypertension we now have three the first one is non elevated blood pressure and that is a blood pressure of 120 over 70 millimeters of mercury the second category is what we call elevated blood pressure and that would be a blood pressure of 120 to 139 or 70 to 89 diastolic and then we have the definition of hypertension as being the classical definition of 140 over 19 and the implications of these categories are very important for the management of hypertension just building a little bit on those new classifications as i've said we have come up with new treatment plans or algorithms for the management of hypertension and the focus really is on the elevated blood pressure category we feel that by preventing an increase in blood pressure there's tremendous evidence that one can prevent the cardiovascular risks such as heart disease stroke vascular dementia and chronic kidney disease and what we recommend in these new guidelines is that blood pressure in patients who are in the elevated blood pressure category need to be treated firstly with lifestyle modifications and if blood pressure is still not at target which we consider 120 to 129 or 70 to 79 pharmacological therapy should be started if blood pressure is 130 to 139 in this group of non elevated blood pressure i also want to highlight that we have included some new recommendations on lifestyle for example increasing potassium intake either through a potassium rich diet or potassium supplemented salts rather than sodium containing salts but this needs to be in patients who've got normal kidney function also we recommend avoidance of sugary drinks sugar containing foods and also of course emphasising exercise a healthy diet reduced alcohol intake etc and finally i want to say that in our guidelines we have emphasised that even older patients up to 85 years who are functional who are not frail should be treated the same way as one would treat a younger person that being said if an older person does exhibit symptoms of orthostatic hypotension or other symptoms associated with too lower blood pressure then the recommendations are to treat as low as reasonably achievable the alara principle so we recognise that while there are many guidelines available unfortunately these guidelines are not always implemented and this is probably one of the barriers one of the challenges we have we hope that these guidelines will be used more frequently because we have made them to be more user friendly as i've said the fact that we have categorised blood pressure into three very practical classifications based on evidence such that these classifications are associated with different degrees of risk should make it more easy and user friendly for the healthcare providers to actually be using these guidelines i should also say something else that we have introduced in these guidelines for the first time is we have highlighted the challenges of implementation highlighting that the healthcare providers really need to rise to the cause and to the challenge of using guidelines so that they can be effective in ensuring optimal care for patients thank you so much for joining us today thank you so much for joining us today thank you so much for joining us today thank you",
+      "reference_words": 714,
+      "hypothesis_words": 741,
+      "substitutions": 6,
+      "deletions": 1,
+      "insertions": 28,
+      "word_errors": 35,
+      "wer": 0.049019607843137254,
+      "reference_characters": 4252,
+      "character_errors": 137,
+      "cer": 0.032220131702728125,
+      "word_edits": [
+        {
+          "op": "S",
+          "ref_index": 15,
+          "hyp_index": 15,
+          "reference": "centre",
+          "hypothesis": "center"
+        },
+        {
+          "op": "I",
+          "ref_index": 65,
+          "hyp_index": 65,
+          "reference": "",
+          "hypothesis": "health"
+        },
+        {
+          "op": "S",
+          "ref_index": 65,
+          "hyp_index": 66,
+          "reference": "healthcare",
+          "hypothesis": "care"
+        },
+        {
+          "op": "I",
+          "ref_index": 108,
+          "hyp_index": 109,
+          "reference": "",
+          "hypothesis": "task"
+        },
+        {
+          "op": "S",
+          "ref_index": 108,
+          "hyp_index": 110,
+          "reference": "taskforce",
+          "hypothesis": "force"
+        },
+        {
+          "op": "S",
+          "ref_index": 214,
+          "hyp_index": 216,
+          "reference": "millimetres",
+          "hypothesis": "millimeters"
+        },
+        {
+          "op": "S",
+          "ref_index": 259,
+          "hyp_index": 261,
+          "reference": "90",
+          "hypothesis": "19"
+        },
+        {
+          "op": "D",
+          "ref_index": 541,
+          "hyp_index": 543,
+          "reference": "low",
+          "hypothesis": ""
+        },
+        {
+          "op": "S",
+          "ref_index": 542,
+          "hyp_index": 543,
+          "reference": "a",
+          "hypothesis": "lower"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 715,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 716,
+          "reference": "",
+          "hypothesis": "you"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 717,
+          "reference": "",
+          "hypothesis": "so"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 718,
+          "reference": "",
+          "hypothesis": "much"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 719,
+          "reference": "",
+          "hypothesis": "for"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 720,
+          "reference": "",
+          "hypothesis": "joining"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 721,
+          "reference": "",
+          "hypothesis": "us"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 722,
+          "reference": "",
+          "hypothesis": "today"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 723,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 724,
+          "reference": "",
+          "hypothesis": "you"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 725,
+          "reference": "",
+          "hypothesis": "so"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 726,
+          "reference": "",
+          "hypothesis": "much"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 727,
+          "reference": "",
+          "hypothesis": "for"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 728,
+          "reference": "",
+          "hypothesis": "joining"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 729,
+          "reference": "",
+          "hypothesis": "us"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 730,
+          "reference": "",
+          "hypothesis": "today"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 731,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 732,
+          "reference": "",
+          "hypothesis": "you"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 733,
+          "reference": "",
+          "hypothesis": "so"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 734,
+          "reference": "",
+          "hypothesis": "much"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 735,
+          "reference": "",
+          "hypothesis": "for"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 736,
+          "reference": "",
+          "hypothesis": "joining"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 737,
+          "reference": "",
+          "hypothesis": "us"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 738,
+          "reference": "",
+          "hypothesis": "today"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 739,
+          "reference": "",
+          "hypothesis": "thank"
+        },
+        {
+          "op": "I",
+          "ref_index": 714,
+          "hyp_index": 740,
+          "reference": "",
+          "hypothesis": "you"
+        }
+      ],
+      "risk_policy_version": 2,
+      "risk_flags": [
+        {
+          "op": "S",
+          "ref_index": 214,
+          "hyp_index": 216,
+          "reference": "millimetres",
+          "hypothesis": "millimeters",
+          "categories": [
+            "unit",
+            "dose_or_measurement_context"
+          ],
+          "reference_context": "of 120 over 70 millimetres of mercury the second",
+          "hypothesis_context": "of 120 over 70 millimeters of mercury the second"
+        },
+        {
+          "op": "S",
+          "ref_index": 259,
+          "hyp_index": 261,
+          "reference": "90",
+          "hypothesis": "19",
+          "categories": [
+            "number_or_numeric_word"
+          ],
+          "reference_context": "definition of 140 over 90 and the implications of",
+          "hypothesis_context": "definition of 140 over 19 and the implications of"
+        },
+        {
+          "op": "D",
+          "ref_index": 541,
+          "hyp_index": 543,
+          "reference": "low",
+          "hypothesis": "",
+          "categories": [
+            "clinical_polarity_or_laterality_cue"
+          ],
+          "reference_context": "symptoms associated with too low a blood pressure then",
+          "hypothesis_context": "symptoms associated with too lower blood pressure then the"
+        }
+      ],
+      "measurement_signature_review": {
+        "reference": [
+          {
+            "value": "2024",
+            "start": 656,
+            "end": 661
+          },
+          {
+            "value": "57",
+            "start": 705,
+            "end": 708
+          },
+          {
+            "value": "2024",
+            "start": 735,
+            "end": 740
+          },
+          {
+            "value": "100",
+            "start": 783,
+            "end": 787
+          },
+          {
+            "value": "2018",
+            "start": 837,
+            "end": 842
+          },
+          {
+            "value": "2018",
+            "start": 1114,
+            "end": 1119
+          },
+          {
+            "value": "120",
+            "start": 1264,
+            "end": 1268
+          },
+          {
+            "value": "70",
+            "start": 1273,
+            "end": 1276
+          },
+          {
+            "value": "120",
+            "start": 1401,
+            "end": 1405
+          },
+          {
+            "value": "139",
+            "start": 1408,
+            "end": 1412
+          },
+          {
+            "value": "70",
+            "start": 1415,
+            "end": 1418
+          },
+          {
+            "value": "89",
+            "start": 1421,
+            "end": 1424
+          },
+          {
+            "value": "140",
+            "start": 1520,
+            "end": 1524
+          },
+          {
+            "value": "90",
+            "start": 1529,
+            "end": 1532
+          },
+          {
+            "value": "120",
+            "start": 2318,
+            "end": 2322
+          },
+          {
+            "value": "129",
+            "start": 2325,
+            "end": 2329
+          },
+          {
+            "value": "70",
+            "start": 2332,
+            "end": 2335
+          },
+          {
+            "value": "79",
+            "start": 2338,
+            "end": 2341
+          },
+          {
+            "value": "130",
+            "start": 2405,
+            "end": 2409
+          },
+          {
+            "value": "139",
+            "start": 2412,
+            "end": 2416
+          },
+          {
+            "value": "85",
+            "start": 3025,
+            "end": 3028
+          }
+        ],
+        "hypothesis": [
+          {
+            "value": "2024",
+            "start": 657,
+            "end": 662
+          },
+          {
+            "value": "57",
+            "start": 706,
+            "end": 709
+          },
+          {
+            "value": "2024",
+            "start": 736,
+            "end": 741
+          },
+          {
+            "value": "100",
+            "start": 782,
+            "end": 786
+          },
+          {
+            "value": "2018",
+            "start": 836,
+            "end": 841
+          },
+          {
+            "value": "2018",
+            "start": 1111,
+            "end": 1116
+          },
+          {
+            "value": "120",
+            "start": 1260,
+            "end": 1264
+          },
+          {
+            "value": "70",
+            "start": 1269,
+            "end": 1272
+          },
+          {
+            "value": "120",
+            "start": 1394,
+            "end": 1398
+          },
+          {
+            "value": "139",
+            "start": 1401,
+            "end": 1405
+          },
+          {
+            "value": "70",
+            "start": 1408,
+            "end": 1411
+          },
+          {
+            "value": "89",
+            "start": 1414,
+            "end": 1417
+          },
+          {
+            "value": "140",
+            "start": 1513,
+            "end": 1517
+          },
+          {
+            "value": "19",
+            "start": 1522,
+            "end": 1525
+          },
+          {
+            "value": "120",
+            "start": 2307,
+            "end": 2311
+          },
+          {
+            "value": "129",
+            "start": 2314,
+            "end": 2318
+          },
+          {
+            "value": "70",
+            "start": 2321,
+            "end": 2324
+          },
+          {
+            "value": "79",
+            "start": 2327,
+            "end": 2330
+          },
+          {
+            "value": "130",
+            "start": 2394,
+            "end": 2398
+          },
+          {
+            "value": "139",
+            "start": 2401,
+            "end": 2405
+          },
+          {
+            "value": "85",
+            "start": 3011,
+            "end": 3014
+          }
+        ],
+        "changed": true,
+        "policy": "literal raw signature mismatch needs human review; may be formatting, not clinical error"
+      },
+      "risk_flag_counts": {
+        "unit": 1,
+        "dose_or_measurement_context": 1,
+        "number_or_numeric_word": 1,
+        "clinical_polarity_or_laterality_cue": 1
+      }
+    },
+    "text_identical": true,
+    "lexical_occurrence_deficit": 0,
+    "lexical_occurrence_excess": 2,
+    "matched_concepts_in_hypothesis": 24,
+    "suggestions": 42,
+    "nonidentity_suggestions": 2,
+    "native_spacing_corrections": 67,
+    "timing": {
+      "n": 67,
+      "median_ms": 8.1663,
+      "p95_ms": 13.8092,
+      "max_ms": 15.2239
+    },
+    "identity_timing": {
+      "n": 67,
+      "median_ms": 0.0022,
+      "p95_ms": 0.0051,
+      "max_ms": 0.007
+    },
+    "segmentation": "Saved offline ASR segments, not real READY or live latency",
+    "clinical_false_positive_rate": null,
+    "clinical_false_negative_rate": null,
+    "reason_unmeasured": "No independent clinical labels of suggestions; lexical deficits/excesses are not certified clinical errors."
+  },
+  "segments": [
+    {
+      "id": "large-v3-turbo:cardio_01:1",
+      "raw_text": " So I'm Rianne Towers. I am from the Research Institute of the McGill University Health Center",
+      "controlled_text": " So I'm Rianne Towers. I am from the Research Institute of the McGill University Health Center",
+      "start": 0.0,
+      "end": 6.5,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 4.0063
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:2",
+      "raw_text": " and the McGill University in Montreal, Canada.",
+      "controlled_text": " and the McGill University in Montreal, Canada.",
+      "start": 6.5,
+      "end": 9.28,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.3558
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:3",
+      "raw_text": " Interestingly, the prevalence of hypertension continues to grow.",
+      "controlled_text": " Interestingly, the prevalence of hypertension continues to grow.",
+      "start": 13.319999999999997,
+      "end": 17.58,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "prevalence",
+          "candidate": "prevalence",
+          "start": 20,
+          "end": 30,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_c2451614a1c8",
+          "reference_context_required": false,
+          "clinical_context": "Conservar diseño, estimando, denominador, horizonte temporal y calificadores de desenlace.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "hypertension",
+          "candidate": "hypertension",
+          "start": 34,
+          "end": 46,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 5.9245
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:4",
+      "raw_text": " Even though we've known for many, many years that it is the number one killer in the world,",
+      "controlled_text": " Even though we've known for many, many years that it is the number one killer in the world,",
+      "start": 17.96,
+      "end": 22.7,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 12.3162
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:5",
+      "raw_text": " the prevalence continues to grow.",
+      "controlled_text": " the prevalence continues to grow.",
+      "start": 22.98,
+      "end": 25.16,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "prevalence",
+          "candidate": "prevalence",
+          "start": 5,
+          "end": 15,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_c2451614a1c8",
+          "reference_context_required": false,
+          "clinical_context": "Conservar diseño, estimando, denominador, horizonte temporal y calificadores de desenlace.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 5.2617
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:6",
+      "raw_text": " And unfortunately, one of the unmet needs is that as a health care system,",
+      "controlled_text": " And unfortunately, one of the unmet needs is that as a health care system,",
+      "start": 25.16,
+      "end": 31.1,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 9.7831
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:7",
+      "raw_text": " we are not doing a good enough job in actually managing hypertension and high blood pressure.",
+      "controlled_text": " we are not doing a good enough job in actually managing hypertension and high blood pressure.",
+      "start": 31.1,
+      "end": 37.0,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "hypertension",
+          "candidate": "hypertension",
+          "start": 57,
+          "end": 69,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "high blood pressure",
+          "candidate": "hypertension",
+          "start": 74,
+          "end": 93,
+          "rule": "exact_alias",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 11.4759
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:8",
+      "raw_text": " So I think that is one of the major needs today in terms of better treating, managing patients with hypertension.",
+      "controlled_text": " So I think that is one of the major needs today in terms of better treating, managing patients with hypertension.",
+      "start": 37.3,
+      "end": 45.56,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "hypertension",
+          "candidate": "hypertension",
+          "start": 101,
+          "end": 113,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 12.6211
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:9",
+      "raw_text": " So on behalf of the task force of the ESC 2024 guidelines and my co-chair,",
+      "controlled_text": " So on behalf of the task force of the ESC 2024 guidelines and my co-chair,",
+      "start": 46.02,
+      "end": 54.74,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "task force",
+          "candidate": "Task Force",
+          "start": 21,
+          "end": 31,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_37fd92fc0bd4",
+          "reference_context_required": false,
+          "clinical_context": "Nombre propio del estudio; conservar acrónimo, sufijo, población y componente investigado.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "co-chair",
+          "candidate": "co-chair",
+          "start": 66,
+          "end": 74,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_c55b21ee723a",
+          "reference_context_required": false,
+          "clinical_context": "Nombre propio del estudio; conservar acrónimo, sufijo, población y componente investigado.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 10.965
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:10",
+      "raw_text": " we came up with 57 new recommendations in the 2024 guidelines.",
+      "controlled_text": " we came up with 57 new recommendations in the 2024 guidelines.",
+      "start": 55.16,
+      "end": 63.14,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 7.4085
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:11",
+      "raw_text": " This was in addition to over 100 revisions of the previous guidelines published in 2018.",
+      "controlled_text": " This was in addition to over 100 revisions of the previous guidelines published in 2018.",
+      "start": 63.14,
+      "end": 70.34,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 9.7042
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:12",
+      "raw_text": " I think one of the paradigm shifting new recommendations",
+      "controlled_text": " I think one of the paradigm shifting new recommendations",
+      "start": 70.9,
+      "end": 74.72,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 6.8959
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:13",
+      "raw_text": " is that we have made the classification of blood pressure categories more practical",
+      "controlled_text": " is that we have made the classification of blood pressure categories more practical",
+      "start": 74.72,
+      "end": 80.98,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 44,
+          "end": 58,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 10.5731
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:14",
+      "raw_text": " and these categories really have important clinical implications.",
+      "controlled_text": " and these categories really have important clinical implications.",
+      "start": 80.98,
+      "end": 85.18,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "clinical implications",
+          "candidate": "clinical implications",
+          "start": 44,
+          "end": 65,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_5418fb6ca9f7",
+          "reference_context_required": false,
+          "clinical_context": "Lenguaje de conferencia; muchas unidades son expresiones léxicas, no enfermedades independientes.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 6.493
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:15",
+      "raw_text": " So what are these categories?",
+      "controlled_text": " So what are these categories?",
+      "start": 86.06,
+      "end": 87.64,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 4.9487
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:16",
+      "raw_text": " Well, in the past guidelines of 2018, we had seven categories defining hypertension.",
+      "controlled_text": " Well, in the past guidelines of 2018, we had seven categories defining hypertension.",
+      "start": 88.26,
+      "end": 95.58,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "hypertension",
+          "candidate": "hypertension",
+          "start": 72,
+          "end": 84,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 12.5081
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:17",
+      "raw_text": " We now have three.",
+      "controlled_text": " We now have three.",
+      "start": 95.58,
+      "end": 97.24,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.0561
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:18",
+      "raw_text": " The first one is non-elevated blood pressure and that is a blood pressure of 120 over 70 millimeters of mercury.",
+      "controlled_text": " The first one is non-elevated blood pressure and that is a blood pressure of 120 over 70 millimeters of mercury.",
+      "start": 97.84,
+      "end": 105.44,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "non-elevated blood pressure",
+          "candidate": "non-elevated blood pressure",
+          "start": 18,
+          "end": 45,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_f48ce01048ba",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 60,
+          "end": 74,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "millimeters of mercury",
+          "candidate": "millimeters of mercury",
+          "start": 90,
+          "end": 112,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_367a095cd401",
+          "reference_context_required": false,
+          "clinical_context": "No realizar conversiones numéricas, corregir dosis ni expandir unidades ambiguas automáticamente.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 15.1348
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:19",
+      "raw_text": " The second category is what we call elevated blood pressure",
+      "controlled_text": " The second category is what we call elevated blood pressure",
+      "start": 105.82,
+      "end": 109.98,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "elevated blood pressure",
+          "candidate": "elevated blood pressure",
+          "start": 37,
+          "end": 60,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_1f6c35b66555",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 7.6171
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:20",
+      "raw_text": " and that would be a blood pressure of 120 to 139 or 70 to 89 diastolic.",
+      "controlled_text": " and that would be a blood pressure of 120 to 139 or 70 to 89 diastolic.",
+      "start": 109.98,
+      "end": 117.54,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 21,
+          "end": 35,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 12.325
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:21",
+      "raw_text": " And then we have the definition of hypertension as being the classical definition of 140 over 19.",
+      "controlled_text": " And then we have the definition of hypertension as being the classical definition of 140 over 19.",
+      "start": 117.54,
+      "end": 124.54,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "hypertension",
+          "candidate": "hypertension",
+          "start": 36,
+          "end": 48,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 12.8588
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:22",
+      "raw_text": " And the implications of these categories are very important for the management of hypertension.",
+      "controlled_text": " And the implications of these categories are very important for the management of hypertension.",
+      "start": 124.88,
+      "end": 130.78,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "hypertension",
+          "candidate": "hypertension",
+          "start": 83,
+          "end": 95,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 10.3375
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:23",
+      "raw_text": " Just building a little bit on those new classifications, as I've said,",
+      "controlled_text": " Just building a little bit on those new classifications, as I've said,",
+      "start": 131.54,
+      "end": 135.8,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 9.1537
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:24",
+      "raw_text": " we have come up with new treatment plans or algorithms for the management of hypertension",
+      "controlled_text": " we have come up with new treatment plans or algorithms for the management of hypertension",
+      "start": 136.16,
+      "end": 141.58,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "hypertension",
+          "candidate": "hypertension",
+          "start": 78,
+          "end": 90,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 13.8802
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:25",
+      "raw_text": " and the focus really is on the elevated blood pressure category.",
+      "controlled_text": " and the focus really is on the elevated blood pressure category.",
+      "start": 141.58,
+      "end": 147.62,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "elevated blood pressure",
+          "candidate": "elevated blood pressure",
+          "start": 32,
+          "end": 55,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_1f6c35b66555",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 10.4092
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:26",
+      "raw_text": " We feel that by preventing an increase in blood pressure,",
+      "controlled_text": " We feel that by preventing an increase in blood pressure,",
+      "start": 148.54000000000002,
+      "end": 152.5,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 43,
+          "end": 57,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 7.6159
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:27",
+      "raw_text": " there's tremendous evidence that one can prevent the cardiovascular risks",
+      "controlled_text": " there's tremendous evidence that one can prevent the cardiovascular risks",
+      "start": 152.72,
+      "end": 157.58,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 8.3638
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:28",
+      "raw_text": " such as heart disease, stroke, vascular dementia and chronic kidney disease.",
+      "controlled_text": " such as heart disease, stroke, vascular dementia and chronic kidney disease.",
+      "start": 158.14,
+      "end": 164.02,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "heart disease",
+          "candidate": "heart disease",
+          "start": 9,
+          "end": 22,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_1678109dd1e1",
+          "reference_context_required": false,
+          "clinical_context": "Conservar órgano, lateralidad, fase aguda/crónica y diferencia entre estructura, función y síndrome.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "stroke",
+          "candidate": "stroke",
+          "start": 24,
+          "end": 30,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_1ba7573640bb",
+          "reference_context_required": false,
+          "clinical_context": "Conservar órgano, lateralidad, fase aguda/crónica y diferencia entre estructura, función y síndrome.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "vascular dementia",
+          "candidate": "vascular dementia",
+          "start": 32,
+          "end": 49,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_fc25c9ee65b4",
+          "reference_context_required": false,
+          "clinical_context": "Conservar órgano, lateralidad, fase aguda/crónica y diferencia entre estructura, función y síndrome.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "chronic kidney disease",
+          "candidate": "chronic kidney disease",
+          "start": 54,
+          "end": 76,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_5d6308ddf615",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir agudo/crónico, estimado/medido, albúmina/proteína y la unidad de laboratorio.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 8.9506
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:29",
+      "raw_text": " And what we recommend in these new guidelines",
+      "controlled_text": " And what we recommend in these new guidelines",
+      "start": 164.16,
+      "end": 167.42,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 6.0787
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:30",
+      "raw_text": " is that blood pressure in patients who are in the elevated blood pressure category",
+      "controlled_text": " is that blood pressure in patients who are in the elevated blood pressure category",
+      "start": 167.42,
+      "end": 172.92,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 9,
+          "end": 23,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "elevated blood pressure",
+          "candidate": "elevated blood pressure",
+          "start": 51,
+          "end": 74,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_1f6c35b66555",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": true,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 12.4286
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:31",
+      "raw_text": " need to be treated firstly with lifestyle modifications.",
+      "controlled_text": " need to be treated firstly with lifestyle modifications.",
+      "start": 172.92,
+      "end": 176.74,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 9.7351
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:32",
+      "raw_text": " And if blood pressure is still not at target,",
+      "controlled_text": " And if blood pressure is still not at target,",
+      "start": 177.2,
+      "end": 179.9,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 8,
+          "end": 22,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 10.2166
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:33",
+      "raw_text": " which we consider 120 to 129 or 70 to 79,",
+      "controlled_text": " which we consider 120 to 129 or 70 to 79,",
+      "start": 180.22,
+      "end": 185.36,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 11.5488
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:34",
+      "raw_text": " pharmacological therapy should be started",
+      "controlled_text": " pharmacological therapy should be started",
+      "start": 185.62,
+      "end": 188.12,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "pharmacological therapy",
+          "candidate": "pharmacological therapy",
+          "start": 1,
+          "end": 24,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_1e5b2c8f44aa",
+          "reference_context_required": false,
+          "clinical_context": "Terminología de estrategia terapéutica; no constituye pauta ni aprobación para integración.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 6.7026
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:35",
+      "raw_text": " if blood pressure is 130 to 139 in this group of non-elevated blood pressure.",
+      "controlled_text": " if blood pressure is 130 to 139 in this group of non-elevated blood pressure.",
+      "start": 188.12,
+      "end": 194.1,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 4,
+          "end": 18,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "non-elevated blood pressure",
+          "candidate": "non-elevated blood pressure",
+          "start": 50,
+          "end": 77,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_f48ce01048ba",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 15.2239
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:36",
+      "raw_text": " I also want to highlight that we have included some new recommendations on lifestyle.",
+      "controlled_text": " I also want to highlight that we have included some new recommendations on lifestyle.",
+      "start": 194.1,
+      "end": 200.18,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 13.8092
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:37",
+      "raw_text": " For example, increasing potassium intake either through a potassium-rich diet",
+      "controlled_text": " For example, increasing potassium intake either through a potassium-rich diet",
+      "start": 200.79999999999998,
+      "end": 206.4,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "potassium intake",
+          "candidate": "potassium intake",
+          "start": 25,
+          "end": 41,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_8a14bff08d83",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir conducta, intervención y nutrientes; sal, sodio y potasio no son intercambiables.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "potassium-rich diet",
+          "candidate": "potassium-rich diet",
+          "start": 59,
+          "end": 78,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_46c99f93e124",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir conducta, intervención y nutrientes; sal, sodio y potasio no son intercambiables.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 12.4247
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:38",
+      "raw_text": " or potassium-supplemented salts rather than sodium-containing salts.",
+      "controlled_text": " or potassium-supplemented salts rather than sodium-containing salts.",
+      "start": 206.4,
+      "end": 212.68,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "sodium-containing salts",
+          "candidate": "sodium-containing salts",
+          "start": 45,
+          "end": 68,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_b77b3ada1555",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir conducta, intervención y nutrientes; sal, sodio y potasio no son intercambiables.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 8.0319
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:39",
+      "raw_text": " But this needs to be in patients who've got normal kidney function.",
+      "controlled_text": " But this needs to be in patients who've got normal kidney function.",
+      "start": 212.86,
+      "end": 216.58,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "kidney function",
+          "candidate": "kidney function",
+          "start": 52,
+          "end": 67,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_813c32e37386",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir agudo/crónico, estimado/medido, albúmina/proteína y la unidad de laboratorio.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 8.7425
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:40",
+      "raw_text": " Also, we recommend avoidance of sugary drinks, sugar-containing foods",
+      "controlled_text": " Also, we recommend avoidance of sugary drinks, sugar-containing foods",
+      "start": 216.58,
+      "end": 224.04,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 7.7718
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:41",
+      "raw_text": " and also, of course, emphasising exercise, a healthy diet, reduced alcohol intake, etc.",
+      "controlled_text": " and also, of course, emphasising exercise, a healthy diet, reduced alcohol intake, etc.",
+      "start": 224.04,
+      "end": 231.56,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "exercise",
+          "candidate": "exercise",
+          "start": 34,
+          "end": 42,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_f55101cb5e74",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir conducta, intervención y nutrientes; sal, sodio y potasio no son intercambiables.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "healthy diet",
+          "candidate": "healthy diet",
+          "start": 46,
+          "end": 58,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_23003a7c53dc",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir conducta, intervención y nutrientes; sal, sodio y potasio no son intercambiables.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        },
+        {
+          "source": "alcohol intake",
+          "candidate": "alcohol intake",
+          "start": 68,
+          "end": 82,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_5d3f8bcf9aa3",
+          "reference_context_required": false,
+          "clinical_context": "Distinguir conducta, intervención y nutrientes; sal, sodio y potasio no son intercambiables.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 10.6087
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:42",
+      "raw_text": " And finally, I want to say that in our guidelines,",
+      "controlled_text": " And finally, I want to say that in our guidelines,",
+      "start": 232.18,
+      "end": 234.84,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 6.8523
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:43",
+      "raw_text": " we have emphasised that even older patients up to 85 years who are functional,",
+      "controlled_text": " we have emphasised that even older patients up to 85 years who are functional,",
+      "start": 235.48000000000002,
+      "end": 241.3,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 8.9789
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:44",
+      "raw_text": " who are not frail, should be treated the same way as one would treat a younger person.",
+      "controlled_text": " who are not frail, should be treated the same way as one would treat a younger person.",
+      "start": 241.3,
+      "end": 247.92,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 10.8919
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:45",
+      "raw_text": " That being said, if an older person does exhibit symptoms of orthostatic hypotension",
+      "controlled_text": " That being said, if an older person does exhibit symptoms of orthostatic hypotension",
+      "start": 248.86,
+      "end": 255.18,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "orthostatic hypotension",
+          "candidate": "orthostatic hypotension",
+          "start": 62,
+          "end": 85,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_883353142120",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 9.6127
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:46",
+      "raw_text": " or other symptoms associated with too lower blood pressure,",
+      "controlled_text": " or other symptoms associated with too lower blood pressure,",
+      "start": 255.18,
+      "end": 259.3,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 45,
+          "end": 59,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 7.8366
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:47",
+      "raw_text": " then the recommendations are to treat as low as reasonably achievable,",
+      "controlled_text": " then the recommendations are to treat as low as reasonably achievable,",
+      "start": 259.52,
+      "end": 264.94,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "as low as reasonably achievable",
+          "candidate": "as low as reasonably achievable",
+          "start": 39,
+          "end": 70,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_73996112033d",
+          "reference_context_required": false,
+          "clinical_context": "Lenguaje de conferencia; muchas unidades son expresiones léxicas, no enfermedades independientes.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 7.8717
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:48",
+      "raw_text": " the ALARA principle.",
+      "controlled_text": " the ALARA principle.",
+      "start": 265.2,
+      "end": 266.76,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 3.3736
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:49",
+      "raw_text": " So we recognise that while there are many guidelines available,",
+      "controlled_text": " So we recognise that while there are many guidelines available,",
+      "start": 266.76,
+      "end": 271.92,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 6.2611
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:50",
+      "raw_text": " unfortunately, these guidelines are not always implemented.",
+      "controlled_text": " unfortunately, these guidelines are not always implemented.",
+      "start": 272.56,
+      "end": 276.06,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.9499
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:51",
+      "raw_text": " And this is probably one of the barriers, one of the challenges we have.",
+      "controlled_text": " And this is probably one of the barriers, one of the challenges we have.",
+      "start": 276.76,
+      "end": 281.06,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 8.9418
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:52",
+      "raw_text": " We hope that these guidelines will be used more frequently",
+      "controlled_text": " We hope that these guidelines will be used more frequently",
+      "start": 281.3,
+      "end": 285.72,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 7.7757
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:53",
+      "raw_text": " because we have made them to be more user-friendly.",
+      "controlled_text": " because we have made them to be more user-friendly.",
+      "start": 285.72,
+      "end": 288.86,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 7.0388
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:54",
+      "raw_text": " As I've said, the fact that we have categorised blood pressure",
+      "controlled_text": " As I've said, the fact that we have categorised blood pressure",
+      "start": 288.86,
+      "end": 292.62,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [
+        {
+          "source": "blood pressure",
+          "candidate": "blood pressure",
+          "start": 49,
+          "end": 63,
+          "rule": "canonical_form",
+          "confidence": 1.0,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_bd01a89edc9a",
+          "reference_context_required": false,
+          "clinical_context": "Nombrar sociedad, año, estado de tratamiento y método de medición cuando definan el fenotipo.",
+          "requires_clinical_distinction_review": false,
+          "approval": "not_approved_do_not_rewrite"
+        }
+      ],
+      "normalization_ms": 8.9156
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:55",
+      "raw_text": " into three very practical classifications based on evidence",
+      "controlled_text": " into three very practical classifications based on evidence",
+      "start": 292.62,
+      "end": 298.58,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.8817
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:56",
+      "raw_text": " such that these classifications are associated with different degrees of risk",
+      "controlled_text": " such that these classifications are associated with different degrees of risk",
+      "start": 298.58,
+      "end": 304.34,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 7.33
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:57",
+      "raw_text": " should make it more easy and user-friendly for the healthcare providers",
+      "controlled_text": " should make it more easy and user-friendly for the healthcare providers",
+      "start": 304.34,
+      "end": 311.24,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 8.1663
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:58",
+      "raw_text": " to actually be using these guidelines.",
+      "controlled_text": " to actually be using these guidelines.",
+      "start": 311.24,
+      "end": 313.7,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 4.8569
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:59",
+      "raw_text": " I should also say something else that we have introduced in these guidelines for the first time",
+      "controlled_text": " I should also say something else that we have introduced in these guidelines for the first time",
+      "start": 313.7,
+      "end": 319.06,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 12.9006
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:60",
+      "raw_text": " is we have highlighted the challenges of implementation,",
+      "controlled_text": " is we have highlighted the challenges of implementation,",
+      "start": 319.06,
+      "end": 323.24,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.928
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:61",
+      "raw_text": " highlighting that the healthcare providers really need to rise to the cause",
+      "controlled_text": " highlighting that the healthcare providers really need to rise to the cause",
+      "start": 323.86,
+      "end": 329.3,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 9.7893
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:62",
+      "raw_text": " and to the challenge of using guidelines",
+      "controlled_text": " and to the challenge of using guidelines",
+      "start": 329.3,
+      "end": 332.06,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.491
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:63",
+      "raw_text": " so that they can be effective in ensuring optimal care for patients.",
+      "controlled_text": " so that they can be effective in ensuring optimal care for patients.",
+      "start": 332.06,
+      "end": 337.6,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 7.8711
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:64",
+      "raw_text": " Thank you so much for joining us today.",
+      "controlled_text": " Thank you so much for joining us today.",
+      "start": 337.6,
+      "end": 340.28,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 6.4098
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:65",
+      "raw_text": " Thank you so much for joining us today.",
+      "controlled_text": " Thank you so much for joining us today.",
+      "start": 340.28,
+      "end": 344.12,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.4941
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:66",
+      "raw_text": " Thank you so much for joining us today.",
+      "controlled_text": " Thank you so much for joining us today.",
+      "start": 344.12,
+      "end": 344.28,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 5.5058
+    },
+    {
+      "id": "large-v3-turbo:cardio_01:67",
+      "raw_text": " Thank you.",
+      "controlled_text": " Thank you.",
+      "start": 344.28,
+      "end": 344.7,
+      "native_corrections": [
+        {
+          "source": " ",
+          "replacement": "",
+          "start": 0,
+          "end": 1,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null
+        }
+      ],
+      "suggestions": [],
+      "normalization_ms": 2.6371
+    }
+  ],
+  "term_inventory": [
+    {
+      "canonical": "blood pressure",
+      "reference_occurrences": 15,
+      "hypothesis_occurrences": 15,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "hypertension",
+      "reference_occurrences": 8,
+      "hypothesis_occurrences": 8,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "elevated blood pressure",
+      "reference_occurrences": 5,
+      "hypothesis_occurrences": 5,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "non-elevated blood pressure",
+      "reference_occurrences": 2,
+      "hypothesis_occurrences": 2,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "orthostatic hypotension",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "hypotension",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "clinical implications",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "prevalence",
+      "reference_occurrences": 2,
+      "hypothesis_occurrences": 2,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "Task Force",
+      "reference_occurrences": 0,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 1
+    },
+    {
+      "canonical": "co-chair",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "chronic kidney disease",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "kidney function",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "pharmacological therapy",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "stroke",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "vascular dementia",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "heart disease",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "healthy diet",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "potassium-rich diet",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "sodium-containing salts",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "potassium intake",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "exercise",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "alcohol intake",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    },
+    {
+      "canonical": "millimeters of mercury",
+      "reference_occurrences": 0,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 1
+    },
+    {
+      "canonical": "as low as reasonably achievable",
+      "reference_occurrences": 1,
+      "hypothesis_occurrences": 1,
+      "occurrence_deficit": 0,
+      "occurrence_excess": 0
+    }
+  ]
+}

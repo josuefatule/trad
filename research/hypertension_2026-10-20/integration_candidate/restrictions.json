@@ -1,0 +1,3176 @@
+{
+  "schema_version": "1.0",
+  "package_version": "1.0.0-research",
+  "kind": "inherited_and_latest_guards",
+  "status": "research_preparation_only",
+  "integrated": false,
+  "runtime_approved": false,
+  "automatic_substitution_approved": false,
+  "do_not_merge": {
+    "hypertension": [
+      "pulmonary hypertension",
+      "elevated blood pressure",
+      "hypotension"
+    ],
+    "primary aldosteronism": [
+      "hyperaldosteronism",
+      "secondary aldosteronism"
+    ],
+    "resistant hypertension": [
+      "refractory hypertension",
+      "uncontrolled hypertension",
+      "apparent treatment-resistant hypertension"
+    ],
+    "nocturnal hypertension": [
+      "non-dipping pattern"
+    ],
+    "white-coat hypertension": [
+      "white-coat effect"
+    ],
+    "masked hypertension": [
+      "masked uncontrolled hypertension"
+    ],
+    "hypertensive emergency": [
+      "hypertensive urgency",
+      "severe hypertension"
+    ],
+    "hypokalemia": [
+      "hyperkalemia",
+      "hypocalcemia"
+    ],
+    "albuminuria": [
+      "proteinuria"
+    ],
+    "renal insufficiency": [
+      "chronic kidney disease",
+      "kidney failure"
+    ],
+    "hazard ratio": [
+      "relative risk",
+      "odds ratio"
+    ],
+    "preeclampsia": [
+      "eclampsia",
+      "gestational hypertension"
+    ],
+    "fetal growth restriction": [
+      "small for gestational age"
+    ],
+    "renal denervation": [
+      "renal revascularization"
+    ],
+    "mineralocorticoid receptor antagonists": [
+      "magnetic resonance angiography",
+      "aldosterone synthase inhibitor"
+    ],
+    "angiotensin II": [
+      "angiotensin I",
+      "angiotensin-(1–7)"
+    ],
+    "left ventricular ejection fraction": [
+      "ejection fraction"
+    ],
+    "salt intake": [
+      "dietary sodium restriction"
+    ],
+    "serious adverse events": [
+      "severe adverse events"
+    ],
+    "medication adherence": [
+      "treatment persistence"
+    ],
+    "natriuresis": [
+      "diuresis"
+    ],
+    "thiazide diuretics": [
+      "thiazide-like diuretics"
+    ],
+    "single-pill combination": [
+      "polypill",
+      "fixed-dose combination"
+    ]
+  },
+  "rejected_equivalences": [
+    {
+      "a": "systemic arterial hypertension",
+      "b": "pulmonary hypertension",
+      "reason": "Different circulations and diseases.",
+      "sources": [
+        "S37"
+      ]
+    },
+    {
+      "a": "primary aldosteronism",
+      "b": "all hyperaldosteronism",
+      "reason": "Primary subtype is not the entire category.",
+      "sources": [
+        "S10",
+        "S30",
+        "S31"
+      ]
+    },
+    {
+      "a": "hypertensive emergency",
+      "b": "severe hypertension without acute organ damage",
+      "reason": "Acute organ damage changes the clinical entity.",
+      "sources": [
+        "S15",
+        "S29"
+      ]
+    },
+    {
+      "a": "hazard ratio",
+      "b": "risk ratio or odds ratio",
+      "reason": "Different effect measures; translation cannot collapse them.",
+      "sources": [
+        "S18",
+        "S20"
+      ]
+    },
+    {
+      "a": "fetal growth restriction",
+      "b": "small for gestational age",
+      "reason": "Clinical growth disorder and size classification are not identical.",
+      "sources": [
+        "S13",
+        "S29"
+      ]
+    }
+  ],
+  "clinical_distinction_guards": [
+    {
+      "a": "hypertension",
+      "b": "pulmonary hypertension",
+      "a_concept_id": "HTN_97cf39b495a5",
+      "b_concept_id": null,
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hypertension",
+      "b": "elevated blood pressure",
+      "a_concept_id": "HTN_97cf39b495a5",
+      "b_concept_id": "HTN_1f6c35b66555",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hypertension",
+      "b": "hypotension",
+      "a_concept_id": "HTN_97cf39b495a5",
+      "b_concept_id": "HTN_ee6fe3240e4f",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "primary aldosteronism",
+      "b": "hyperaldosteronism",
+      "a_concept_id": "HTN_dcd292247cbd",
+      "b_concept_id": "HTN_b81b3fe7b90d",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "primary aldosteronism",
+      "b": "secondary aldosteronism",
+      "a_concept_id": "HTN_dcd292247cbd",
+      "b_concept_id": "HTN_be626c71a642",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "resistant hypertension",
+      "b": "refractory hypertension",
+      "a_concept_id": "HTN_e59fa7b029fa",
+      "b_concept_id": "HTN_8faae1055d75",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "resistant hypertension",
+      "b": "uncontrolled hypertension",
+      "a_concept_id": "HTN_e59fa7b029fa",
+      "b_concept_id": "HTN_8608a7c05ed4",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "resistant hypertension",
+      "b": "apparent treatment-resistant hypertension",
+      "a_concept_id": "HTN_e59fa7b029fa",
+      "b_concept_id": "HTN_4a2b4d9ba4ff",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "nocturnal hypertension",
+      "b": "non-dipping pattern",
+      "a_concept_id": "HTN_e008632c263e",
+      "b_concept_id": "HTN_e570e6cac3f0",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "white-coat hypertension",
+      "b": "white-coat effect",
+      "a_concept_id": "HTN_184d3d9675f4",
+      "b_concept_id": "HTN_f8945e33857b",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "masked hypertension",
+      "b": "masked uncontrolled hypertension",
+      "a_concept_id": "HTN_19ab4ed70466",
+      "b_concept_id": "HTN_5e0463a1b3bc",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hypertensive emergency",
+      "b": "hypertensive urgency",
+      "a_concept_id": "HTN_e07ec2ba2d1e",
+      "b_concept_id": "HTN_3c45527d0208",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hypertensive emergency",
+      "b": "severe hypertension",
+      "a_concept_id": "HTN_e07ec2ba2d1e",
+      "b_concept_id": "HTN_4144dc9b2f73",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hypokalemia",
+      "b": "hyperkalemia",
+      "a_concept_id": "HTN_ff49663a970f",
+      "b_concept_id": "HTN_99fe2571cf5a",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hypokalemia",
+      "b": "hypocalcemia",
+      "a_concept_id": "HTN_ff49663a970f",
+      "b_concept_id": null,
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "albuminuria",
+      "b": "proteinuria",
+      "a_concept_id": "HTN_62765b55a7ee",
+      "b_concept_id": "HTN_fa049896c98c",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "renal insufficiency",
+      "b": "chronic kidney disease",
+      "a_concept_id": "HTN_8d5b6a56bbd4",
+      "b_concept_id": "HTN_5d6308ddf615",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "renal insufficiency",
+      "b": "kidney failure",
+      "a_concept_id": "HTN_8d5b6a56bbd4",
+      "b_concept_id": "HTN_f30fa4c44b54",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hazard ratio",
+      "b": "relative risk",
+      "a_concept_id": "HTN_957ec5c3f960",
+      "b_concept_id": "HTN_f12c8377cd3e",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "hazard ratio",
+      "b": "odds ratio",
+      "a_concept_id": "HTN_957ec5c3f960",
+      "b_concept_id": "HTN_9a5b7b5c9e81",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "preeclampsia",
+      "b": "eclampsia",
+      "a_concept_id": "HTN_e037c596f227",
+      "b_concept_id": "HTN_478578b76f46",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "preeclampsia",
+      "b": "gestational hypertension",
+      "a_concept_id": "HTN_e037c596f227",
+      "b_concept_id": "HTN_489493354112",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "fetal growth restriction",
+      "b": "small for gestational age",
+      "a_concept_id": "HTN_24745863022e",
+      "b_concept_id": "HTN_2d23cc0667bf",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "renal denervation",
+      "b": "renal revascularization",
+      "a_concept_id": "HTN_36a475af27fa",
+      "b_concept_id": "HTN_b41623d5c69c",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "mineralocorticoid receptor antagonists",
+      "b": "magnetic resonance angiography",
+      "a_concept_id": "HTN_0114ad465a4c",
+      "b_concept_id": "HTN_889dab4e3c8c",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "mineralocorticoid receptor antagonists",
+      "b": "aldosterone synthase inhibitor",
+      "a_concept_id": "HTN_0114ad465a4c",
+      "b_concept_id": "HTN_a42da268a4f0",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "angiotensin II",
+      "b": "angiotensin I",
+      "a_concept_id": "HTN_9da3b56d1bcd",
+      "b_concept_id": "HTN_5375a218e008",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "angiotensin II",
+      "b": "angiotensin-(1–7)",
+      "a_concept_id": "HTN_9da3b56d1bcd",
+      "b_concept_id": "HTN_e39302d764b9",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "left ventricular ejection fraction",
+      "b": "ejection fraction",
+      "a_concept_id": "HTN_b2e7fde0ae4f",
+      "b_concept_id": "HTN_bf2455f255aa",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "salt intake",
+      "b": "dietary sodium restriction",
+      "a_concept_id": "HTN_b4cbab23fff7",
+      "b_concept_id": "HTN_d5f7ec4c74ec",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "serious adverse events",
+      "b": "severe adverse events",
+      "a_concept_id": "HTN_28505bfb6f7c",
+      "b_concept_id": null,
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "medication adherence",
+      "b": "treatment persistence",
+      "a_concept_id": "HTN_293eb322616c",
+      "b_concept_id": "HTN_d363a0c2af33",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "natriuresis",
+      "b": "diuresis",
+      "a_concept_id": "HTN_07e67365ebb3",
+      "b_concept_id": "HTN_8f14a0ce0842",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "thiazide diuretics",
+      "b": "thiazide-like diuretics",
+      "a_concept_id": "HTN_2315cb859e3f",
+      "b_concept_id": "HTN_3e6099c74202",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "single-pill combination",
+      "b": "fixed-dose combination",
+      "a_concept_id": "HTN_c53b022cc089",
+      "b_concept_id": "HTN_a72efe860fab",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "single-pill combination",
+      "b": "polypill",
+      "a_concept_id": "HTN_c53b022cc089",
+      "b_concept_id": "HTN_7166f35fccd8",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "first morning urine sample",
+      "b": "spot urine sample",
+      "a_concept_id": "HTN_a41fb60cf93f",
+      "b_concept_id": "HTN_48687c33055c",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "intermittent hypoxemia",
+      "b": "intermittent hypoxia",
+      "a_concept_id": "HTN_10b0fd07b0f1",
+      "b_concept_id": null,
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "plasma renin activity",
+      "b": "direct renin concentration",
+      "a_concept_id": "HTN_e2601a1dc5c2",
+      "b_concept_id": "HTN_046b2614a497",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "serum potassium",
+      "b": "plasma potassium",
+      "a_concept_id": "HTN_03ed18cce83e",
+      "b_concept_id": "HTN_585dfb94602b",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "angiotensin-converting enzyme",
+      "b": "angiotensin-converting enzyme 2",
+      "a_concept_id": "HTN_95c847b235dd",
+      "b_concept_id": "HTN_dac662f6ef1f",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "sodium chloride",
+      "b": "potassium chloride",
+      "a_concept_id": "HTN_0d6f8afa3940",
+      "b_concept_id": "HTN_a9b889561f21",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "lateralizing primary aldosteronism",
+      "b": "aldosterone-producing adenoma",
+      "a_concept_id": "HTN_001a4396cf85",
+      "b_concept_id": "HTN_a4f97a1e45b5",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "lateralizing primary aldosteronism",
+      "b": "adrenal lateralization",
+      "a_concept_id": "HTN_001a4396cf85",
+      "b_concept_id": "HTN_e0ffd99ff3e1",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "lateralizing primary aldosteronism",
+      "b": "adrenal computed tomography",
+      "a_concept_id": "HTN_001a4396cf85",
+      "b_concept_id": "HTN_cb71010bd956",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "adrenal venous sampling",
+      "b": "adrenal computed tomography",
+      "a_concept_id": "HTN_80e560c436f7",
+      "b_concept_id": "HTN_cb71010bd956",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "ten-year ASCVD risk",
+      "b": "10-year cardiovascular disease risk",
+      "a_concept_id": "HTN_a9290515a379",
+      "b_concept_id": "HTN_e568e3ec1749",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "arterial compliance",
+      "b": "arterial distensibility",
+      "a_concept_id": "HTN_ab697e405d94",
+      "b_concept_id": null,
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "sham procedure",
+      "b": "sham-controlled trial",
+      "a_concept_id": "HTN_47f9931d92ca",
+      "b_concept_id": "HTN_c06a72824b93",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "kidney failure",
+      "b": "renal insufficiency",
+      "a_concept_id": "HTN_f30fa4c44b54",
+      "b_concept_id": "HTN_8d5b6a56bbd4",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    },
+    {
+      "a": "kidney failure",
+      "b": "chronic kidney disease",
+      "a_concept_id": "HTN_f30fa4c44b54",
+      "b_concept_id": "HTN_5d6308ddf615",
+      "decision": "related_or_distinct_not_unconditional_alias",
+      "reason": "Conservar alcance, magnitud, método, muestra, subtipo y calificadores. Algunas relaciones son de inclusión o solapamiento, no de entidades disjuntas. No colapsar por semejanza o pertenencia.",
+      "source_basis": "canonical_verification_and_inherited_do_not_merge_context",
+      "automatic_substitution_approved": false
+    }
+  ],
+  "near_form_decisions": [
+    {
+      "language": "es",
+      "concept_a": "HTN_97cf39b495a5",
+      "form_a": "presión arterial alta",
+      "concept_b": "HTN_ee6fe3240e4f",
+      "form_b": "presión arterial baja",
+      "character_ratio": 0.904762,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP001",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_97cf39b495a5",
+        "HTN_ee6fe3240e4f"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_ce88c1a364ff",
+      "form_a": "presión sistólica",
+      "concept_b": "HTN_69524c07e2bc",
+      "form_b": "presión diastólica",
+      "character_ratio": 0.914286,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP002",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_ce88c1a364ff",
+        "HTN_69524c07e2bc"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_21aa1e2a0a86",
+      "form_a": "meta de presión arterial",
+      "concept_b": "HTN_ab0938bb8a9b",
+      "form_b": "lectura de presión arterial",
+      "character_ratio": 0.901961,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP003",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_21aa1e2a0a86",
+        "HTN_ab0938bb8a9b"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_8db016d88b4d",
+      "form_a": "hipertensión en etapa 1",
+      "concept_b": "HTN_05927d0a6a03",
+      "form_b": "hipertensión en etapa 2",
+      "character_ratio": 0.956522,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP004",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8db016d88b4d",
+        "HTN_05927d0a6a03"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_b8d2cf20edaf",
+      "form_a": "receptor AT1",
+      "concept_b": "HTN_9adaf9f0c4c9",
+      "form_b": "receptor AT2",
+      "character_ratio": 0.916667,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP005",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_b8d2cf20edaf",
+        "HTN_9adaf9f0c4c9"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_56f284469e19",
+      "form_a": "presión arterial en bipedestación",
+      "concept_b": "HTN_92d75169c430",
+      "form_b": "presión arterial en sedestación",
+      "character_ratio": 0.9375,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP006",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_56f284469e19",
+        "HTN_92d75169c430"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_b11a365c1e0e",
+      "form_a": "biterapia antihipertensiva",
+      "concept_b": "HTN_84e2adba4b70",
+      "form_b": "triterapia antihipertensiva",
+      "character_ratio": 0.943396,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP007",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_b11a365c1e0e",
+        "HTN_84e2adba4b70"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_49866f6cfaa1",
+      "form_a": "calcioantagonistas dihidropiridínicos",
+      "concept_b": "HTN_d4477e83d156",
+      "form_b": "calcioantagonistas no dihidropiridínicos",
+      "character_ratio": 0.961039,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP008",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_49866f6cfaa1",
+        "HTN_d4477e83d156"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_1f6c35b66555",
+      "form_a": "presión arterial elevada",
+      "concept_b": "HTN_f48ce01048ba",
+      "form_b": "presión arterial no elevada",
+      "character_ratio": 0.941176,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP009",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_1f6c35b66555",
+        "HTN_f48ce01048ba"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_ce88c1a364ff",
+      "form_a": "presión arterial sistólica",
+      "concept_b": "HTN_69524c07e2bc",
+      "form_b": "presión arterial diastólica",
+      "character_ratio": 0.943396,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP010",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_ce88c1a364ff",
+        "HTN_69524c07e2bc"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_8608a7c05ed4",
+      "form_a": "hipertensión no controlada",
+      "concept_b": "HTN_0dbfbbb61094",
+      "form_b": "hipertensión controlada",
+      "character_ratio": 0.938776,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP011",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8608a7c05ed4",
+        "HTN_0dbfbbb61094"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_8db016d88b4d",
+      "form_a": "hipertensión en estadio 1",
+      "concept_b": "HTN_05927d0a6a03",
+      "form_b": "hipertensión en estadio 2",
+      "character_ratio": 0.96,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP012",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8db016d88b4d",
+        "HTN_05927d0a6a03"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_be66e539fd81",
+      "form_a": "hipertensión sistólica aislada",
+      "concept_b": "HTN_65a364b6a896",
+      "form_b": "hipertensión diastólica aislada",
+      "character_ratio": 0.95082,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP013",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_be66e539fd81",
+        "HTN_65a364b6a896"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_e07ec2ba2d1e",
+      "form_a": "emergencia hipertensiva",
+      "concept_b": "HTN_3c45527d0208",
+      "form_b": "urgencia hipertensiva",
+      "character_ratio": 0.909091,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP014",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e07ec2ba2d1e",
+        "HTN_3c45527d0208"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_9c147fb0dd01",
+      "form_a": "prevención primordial",
+      "concept_b": "HTN_788e89243e34",
+      "form_b": "prevención primaria",
+      "character_ratio": 0.9,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP015",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_9c147fb0dd01",
+        "HTN_788e89243e34"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_22fd06c13194",
+      "form_a": "ensayo SPRINT",
+      "concept_b": "HTN_418a9b8ed5a9",
+      "form_b": "ensayo ESPRIT",
+      "character_ratio": 0.923077,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP016",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_22fd06c13194",
+        "HTN_418a9b8ed5a9"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_9da3b56d1bcd",
+      "form_a": "angiotensina II",
+      "concept_b": "HTN_5375a218e008",
+      "form_b": "angiotensina I",
+      "character_ratio": 0.965517,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP017",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_9da3b56d1bcd",
+        "HTN_5375a218e008"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_95c847b235dd",
+      "form_a": "enzima convertidora de angiotensina",
+      "concept_b": "HTN_dac662f6ef1f",
+      "form_b": "enzima convertidora de angiotensina 2",
+      "character_ratio": 0.972222,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP018",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_95c847b235dd",
+        "HTN_dac662f6ef1f"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_6f615a3d25c5",
+      "form_a": "tasa de filtración glomerular estimada",
+      "concept_b": "HTN_8fb4ea01465f",
+      "form_b": "tasa de filtración glomerular medida",
+      "character_ratio": 0.918919,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP019",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_6f615a3d25c5",
+        "HTN_8fb4ea01465f"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_1e5b2c8f44aa",
+      "form_a": "tratamiento farmacológico",
+      "concept_b": "HTN_62d56e18d9ed",
+      "form_b": "tratamiento no farmacológico",
+      "character_ratio": 0.943396,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP020",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_1e5b2c8f44aa",
+        "HTN_62d56e18d9ed"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_e4cdd5e1f9b8",
+      "form_a": "insuficiencia cardíaca con fracción de eyección reducida",
+      "concept_b": "HTN_fa313c8be930",
+      "form_b": "insuficiencia cardíaca con fracción de eyección preservada",
+      "character_ratio": 0.912281,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP021",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e4cdd5e1f9b8",
+        "HTN_fa313c8be930"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_50b4fc97bb14",
+      "form_a": "actividad física",
+      "concept_b": "HTN_effbb277226f",
+      "form_b": "inactividad física",
+      "character_ratio": 0.941176,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP022",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_50b4fc97bb14",
+        "HTN_effbb277226f"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_b8d2cf20edaf",
+      "form_a": "receptor de angiotensina II tipo 1",
+      "concept_b": "HTN_9adaf9f0c4c9",
+      "form_b": "receptor de angiotensina II tipo 2",
+      "character_ratio": 0.970588,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP023",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_b8d2cf20edaf",
+        "HTN_9adaf9f0c4c9"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_81eab97180b4",
+      "form_a": "inflado del manguito",
+      "concept_b": "HTN_3f080bd74d22",
+      "form_b": "desinflado del manguito",
+      "character_ratio": 0.930233,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP024",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_81eab97180b4",
+        "HTN_3f080bd74d22"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_e7edf1c35258",
+      "form_a": "presión arterial automatizada en consultorio sin observador",
+      "concept_b": "HTN_7a7149e08b17",
+      "form_b": "presión arterial automatizada en consultorio con observador",
+      "character_ratio": 0.966102,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP025",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e7edf1c35258",
+        "HTN_7a7149e08b17"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_a0b18808071a",
+      "form_a": "disfunción diastólica",
+      "concept_b": "HTN_83a6865ff877",
+      "form_b": "disfunción sistólica",
+      "character_ratio": 0.926829,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP026",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_a0b18808071a",
+        "HTN_83a6865ff877"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_3061ea0c569a",
+      "form_a": "factores de riesgo modificables",
+      "concept_b": "HTN_28bddd9d03fe",
+      "form_b": "factores de riesgo no modificables",
+      "character_ratio": 0.953846,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP027",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_3061ea0c569a",
+        "HTN_28bddd9d03fe"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_8b09e2cea13f",
+      "form_a": "ensayo SPYRAL HTN-OFF MED",
+      "concept_b": "HTN_2bf1d385e126",
+      "form_b": "ensayo SPYRAL HTN-ON MED",
+      "character_ratio": 0.938776,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP028",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8b09e2cea13f",
+        "HTN_2bf1d385e126"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "es",
+      "concept_a": "HTN_49866f6cfaa1",
+      "form_a": "bloqueadores de los canales de calcio dihidropiridínicos",
+      "concept_b": "HTN_d4477e83d156",
+      "form_b": "bloqueadores de los canales de calcio no dihidropiridínicos",
+      "character_ratio": 0.973913,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP029",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_49866f6cfaa1",
+        "HTN_d4477e83d156"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_8db016d88b4d",
+      "form_a": "stage one hypertension",
+      "concept_b": "HTN_05927d0a6a03",
+      "form_b": "stage two hypertension",
+      "character_ratio": 0.909091,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP030",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8db016d88b4d",
+        "HTN_05927d0a6a03"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_8db016d88b4d",
+      "form_a": "stage one hypertension",
+      "concept_b": "HTN_05927d0a6a03",
+      "form_b": "stage 2 hypertension",
+      "character_ratio": 0.904762,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP031",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8db016d88b4d",
+        "HTN_05927d0a6a03"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_05927d0a6a03",
+      "form_a": "stage two hypertension",
+      "concept_b": "HTN_8db016d88b4d",
+      "form_b": "stage 1 hypertension",
+      "character_ratio": 0.904762,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP032",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_05927d0a6a03",
+        "HTN_8db016d88b4d"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_9da3b56d1bcd",
+      "form_a": "angiotensin 2",
+      "concept_b": "HTN_5375a218e008",
+      "form_b": "angiotensin I",
+      "character_ratio": 0.923077,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP033",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_9da3b56d1bcd",
+        "HTN_5375a218e008"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_1e5b2c8f44aa",
+      "form_a": "pharmacologic therapy",
+      "concept_b": "HTN_62d56e18d9ed",
+      "form_b": "nonpharmacologic therapy",
+      "character_ratio": 0.933333,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP034",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_1e5b2c8f44aa",
+        "HTN_62d56e18d9ed"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_1e5b2c8f44aa",
+      "form_a": "pharmacologic therapy",
+      "concept_b": "HTN_62d56e18d9ed",
+      "form_b": "non-pharmacologic therapy",
+      "character_ratio": 0.913043,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP035",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_1e5b2c8f44aa",
+        "HTN_62d56e18d9ed"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_b8d2cf20edaf",
+      "form_a": "AT1 receptor",
+      "concept_b": "HTN_9adaf9f0c4c9",
+      "form_b": "AT2 receptor",
+      "character_ratio": 0.916667,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP036",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_b8d2cf20edaf",
+        "HTN_9adaf9f0c4c9"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_e7edf1c35258",
+      "form_a": "unattended AOBP",
+      "concept_b": "HTN_7a7149e08b17",
+      "form_b": "attended AOBP",
+      "character_ratio": 0.928571,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP037",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e7edf1c35258",
+        "HTN_7a7149e08b17"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_e9e9c8fca346",
+      "form_a": "medication non-adherence",
+      "concept_b": "HTN_293eb322616c",
+      "form_b": "medication adherence",
+      "character_ratio": 0.909091,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP038",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e9e9c8fca346",
+        "HTN_293eb322616c"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_28bddd9d03fe",
+      "form_a": "non-modifiable risk factors",
+      "concept_b": "HTN_3061ea0c569a",
+      "form_b": "modifiable risk factors",
+      "character_ratio": 0.92,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP039",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_28bddd9d03fe",
+        "HTN_3061ea0c569a"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_fc1d22db340b",
+      "form_a": "2025 ACC/AHA guideline",
+      "concept_b": "HTN_b2e17b4f8177",
+      "form_b": "2017 ACC/AHA guideline",
+      "character_ratio": 0.909091,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP040",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_fc1d22db340b",
+        "HTN_b2e17b4f8177"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_49866f6cfaa1",
+      "form_a": "dihydropyridine CCBs",
+      "concept_b": "HTN_d4477e83d156",
+      "form_b": "non-dihydropyridine CCBs",
+      "character_ratio": 0.909091,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP041",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_49866f6cfaa1",
+        "HTN_d4477e83d156"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_1f6c35b66555",
+      "form_a": "elevated blood pressure",
+      "concept_b": "HTN_f48ce01048ba",
+      "form_b": "non-elevated blood pressure",
+      "character_ratio": 0.92,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP042",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_1f6c35b66555",
+        "HTN_f48ce01048ba"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_1f6c35b66555",
+      "form_a": "elevated blood pressure",
+      "concept_b": "HTN_92d75169c430",
+      "form_b": "seated blood pressure",
+      "character_ratio": 0.909091,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP043",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_1f6c35b66555",
+        "HTN_92d75169c430"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_8608a7c05ed4",
+      "form_a": "uncontrolled hypertension",
+      "concept_b": "HTN_0dbfbbb61094",
+      "form_b": "controlled hypertension",
+      "character_ratio": 0.958333,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP044",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8608a7c05ed4",
+        "HTN_0dbfbbb61094"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_8db016d88b4d",
+      "form_a": "stage 1 hypertension",
+      "concept_b": "HTN_05927d0a6a03",
+      "form_b": "stage 2 hypertension",
+      "character_ratio": 0.95,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP045",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8db016d88b4d",
+        "HTN_05927d0a6a03"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_be66e539fd81",
+      "form_a": "isolated systolic hypertension",
+      "concept_b": "HTN_65a364b6a896",
+      "form_b": "isolated diastolic hypertension",
+      "character_ratio": 0.918033,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP046",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_be66e539fd81",
+        "HTN_65a364b6a896"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_e07ec2ba2d1e",
+      "form_a": "hypertensive emergency",
+      "concept_b": "HTN_3c45527d0208",
+      "form_b": "hypertensive urgency",
+      "character_ratio": 0.904762,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP047",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e07ec2ba2d1e",
+        "HTN_3c45527d0208"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_22fd06c13194",
+      "form_a": "SPRINT trial",
+      "concept_b": "HTN_418a9b8ed5a9",
+      "form_b": "ESPRIT trial",
+      "character_ratio": 0.916667,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP048",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_22fd06c13194",
+        "HTN_418a9b8ed5a9"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_9da3b56d1bcd",
+      "form_a": "angiotensin II",
+      "concept_b": "HTN_5375a218e008",
+      "form_b": "angiotensin I",
+      "character_ratio": 0.962963,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP049",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_9da3b56d1bcd",
+        "HTN_5375a218e008"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_95c847b235dd",
+      "form_a": "angiotensin-converting enzyme",
+      "concept_b": "HTN_dac662f6ef1f",
+      "form_b": "angiotensin-converting enzyme 2",
+      "character_ratio": 0.966667,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP050",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_95c847b235dd",
+        "HTN_dac662f6ef1f"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_9a1d14495070",
+      "form_a": "antihypertensive therapy",
+      "concept_b": "HTN_3265c21da577",
+      "form_b": "antihypertensive drug therapy",
+      "character_ratio": 0.90566,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP051",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_9a1d14495070",
+        "HTN_3265c21da577"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_1e5b2c8f44aa",
+      "form_a": "pharmacological therapy",
+      "concept_b": "HTN_62d56e18d9ed",
+      "form_b": "non-pharmacological therapy",
+      "character_ratio": 0.92,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP052",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_1e5b2c8f44aa",
+        "HTN_62d56e18d9ed"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_293eb322616c",
+      "form_a": "medication adherence",
+      "concept_b": "HTN_e9e9c8fca346",
+      "form_b": "medication nonadherence",
+      "character_ratio": 0.930233,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP053",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_293eb322616c",
+        "HTN_e9e9c8fca346"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_e4cdd5e1f9b8",
+      "form_a": "heart failure with reduced ejection fraction",
+      "concept_b": "HTN_fa313c8be930",
+      "form_b": "heart failure with preserved ejection fraction",
+      "character_ratio": 0.911111,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP054",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e4cdd5e1f9b8",
+        "HTN_fa313c8be930"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_50b4fc97bb14",
+      "form_a": "physical activity",
+      "concept_b": "HTN_effbb277226f",
+      "form_b": "physical inactivity",
+      "character_ratio": 0.944444,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP055",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_50b4fc97bb14",
+        "HTN_effbb277226f"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_b8d2cf20edaf",
+      "form_a": "angiotensin II type 1 receptor",
+      "concept_b": "HTN_9adaf9f0c4c9",
+      "form_b": "angiotensin II type 2 receptor",
+      "character_ratio": 0.966667,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP056",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_b8d2cf20edaf",
+        "HTN_9adaf9f0c4c9"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_e7edf1c35258",
+      "form_a": "unattended automated office blood pressure",
+      "concept_b": "HTN_7a7149e08b17",
+      "form_b": "attended automated office blood pressure",
+      "character_ratio": 0.97561,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP057",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_e7edf1c35258",
+        "HTN_7a7149e08b17"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_3061ea0c569a",
+      "form_a": "modifiable risk factors",
+      "concept_b": "HTN_28bddd9d03fe",
+      "form_b": "nonmodifiable risk factors",
+      "character_ratio": 0.938776,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP058",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_3061ea0c569a",
+        "HTN_28bddd9d03fe"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_8b09e2cea13f",
+      "form_a": "SPYRAL HTN-OFF MED trial",
+      "concept_b": "HTN_2bf1d385e126",
+      "form_b": "SPYRAL HTN-ON MED trial",
+      "character_ratio": 0.93617,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP059",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_8b09e2cea13f",
+        "HTN_2bf1d385e126"
+      ],
+      "automatic_substitution_approved": false
+    },
+    {
+      "language": "en",
+      "concept_a": "HTN_49866f6cfaa1",
+      "form_a": "dihydropyridine calcium channel blockers",
+      "concept_b": "HTN_d4477e83d156",
+      "form_b": "non-dihydropyridine calcium channel blockers",
+      "character_ratio": 0.952381,
+      "interpretation": "screen_only_not_equivalence_or_observed_runtime_replacement",
+      "review_id": "NP060",
+      "decision": "keep_distinct_do_not_fuzzy_merge",
+      "reason": "Los conceptos conservan calificadores o magnitudes diferentes: polaridad, cifra, localización, modalidad, clase, fecha, objetivo frente a lectura o identidad de estudio. La similitud de caracteres no establece equivalencia; las relaciones de inclusión tampoco autorizan sustitución.",
+      "evidence_record_ids": [
+        "HTN_49866f6cfaa1",
+        "HTN_d4477e83d156"
+      ],
+      "automatic_substitution_approved": false
+    }
+  ],
+  "reference_identity_guards": [
+    {
+      "concept_id": "HTN_0ef69798d539",
+      "label": "2024 ESC guidelines",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_e1b4e5196458",
+      "label": "2018 ESC/ESH guidelines",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_b2e17b4f8177",
+      "label": "2017 ACC/AHA guideline",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_8d17bae1bc5a",
+      "label": "JNC 7 guideline",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_4ab0f32c0a4c",
+      "label": "JNC 8 report",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_f285e85c972e",
+      "label": "guideline recommendations",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_af25535e880c",
+      "label": "clinical practice guidelines",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_b0de6f8f7d51",
+      "label": "guideline-driven management",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_63593965f55a",
+      "label": "cohort study",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_3feefe243332",
+      "label": "randomized controlled trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_3e841612c64f",
+      "label": "clinical trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_22fd06c13194",
+      "label": "SPRINT trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_941398bcc043",
+      "label": "ACCORD trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_2674e0e256e0",
+      "label": "CARDIA study",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_9efacc096375",
+      "label": "REGARDS study",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_de8a43278de5",
+      "label": "NHANES",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_b453defbcb8a",
+      "label": "DASH diet",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_1461e740924a",
+      "label": "clinical guidelines implementation",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_42569a345e77",
+      "label": "ALLHAT trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_b6725a31947c",
+      "label": "PATHWAY-2 trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_16fdb8ef2c0b",
+      "label": "CLICK trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_11211b77eb7e",
+      "label": "BPROAD trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_acb707d54e56",
+      "label": "STEP trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_4bd9560761df",
+      "label": "SSaSS trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_418a9b8ed5a9",
+      "label": "ESPRIT trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_8e92ddf03bf5",
+      "label": "Advance-HTN trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_b198fec8f45e",
+      "label": "CHAP trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_3062e896a014",
+      "label": "HYVET trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_6eb1860586f5",
+      "label": "ACCOMPLISH trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_7083e8c3981d",
+      "label": "ASCOT-BPLA trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_65b7bf5b1b54",
+      "label": "RADIANCE-HTN TRIO trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_8b09e2cea13f",
+      "label": "SPYRAL HTN-OFF MED trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_2bf1d385e126",
+      "label": "SPYRAL HTN-ON MED trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_aba8d7c8cf55",
+      "label": "crossover trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_b35b3e988fc5",
+      "label": "double-blind trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_b06979bdd821",
+      "label": "placebo-controlled trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_94388b2667ce",
+      "label": "cluster-randomized trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_6a5012fa8093",
+      "label": "open-label trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_c06a72824b93",
+      "label": "sham-controlled trial",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_fc1d22db340b",
+      "label": "2025 AHA/ACC guideline",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_8f0c47679c6d",
+      "label": "2021 KDIGO blood pressure guideline",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_f8015196a74c",
+      "label": "2024 KDIGO CKD guideline",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_94b7e4540804",
+      "label": "2025 ESC pregnancy guidelines",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_661d20dc6719",
+      "label": "PREVENT equations",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_10fe11840a4c",
+      "label": "SCORE2",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_5b84b05c7eb1",
+      "label": "SCORE2-OP",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    },
+    {
+      "concept_id": "HTN_aad03611b9ca",
+      "label": "SCORE2-Diabetes",
+      "decision": "retain_complete_reference_identity",
+      "reason": "Conservar año, rama, protocolo y nombre; no reducir a una sigla genérica compartida.",
+      "automatic_substitution_approved": false
+    }
+  ],
+  "reference_identity_collision_cases": [
+    {
+      "label": "CARDIA / CARDia",
+      "inventory_reference": "CARDIA study",
+      "competing_reference": "Coronary Artery Revascularisation in Diabetes trial",
+      "source_ids": [
+        "S156",
+        "AS03"
+      ],
+      "decision": "keep_different_studies",
+      "correction": "No resolver por mayúsculas ni convertir la cohorte en el ensayo; exigir nombre desarrollado, diseño o registro."
+    },
+    {
+      "label": "STEP / STEP-1",
+      "inventory_reference": "STEP trial",
+      "competing_reference": "Semaglutide Treatment Effect in People with Obesity STEP-1",
+      "source_ids": [
+        "S71"
+      ],
+      "decision": "retain_trial_suffix_and_protocol",
+      "correction": "S71, glosario PDF 6, enumera ambos. Conservar población e intervención; no eliminar -1."
+    }
+  ],
+  "external_homographs": [
+    {
+      "form": "PA",
+      "inventory_meaning": "primary aldosteronism (en)",
+      "competing_meaning": "presión arterial (es)",
+      "source_ids": [
+        "S10",
+        "S29"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Mantener idioma y definición local; el idioma solo no basta para toda acepción.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD003",
+        "AD010"
+      ]
+    },
+    {
+      "form": "HRV",
+      "inventory_meaning": "heart rate variability (en)",
+      "competing_meaning": "hipertensión renovascular (es)",
+      "source_ids": [
+        "AS18",
+        "S29"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Exigir expansión local y especialidad; no transportar la sigla entre idiomas.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD004",
+        "AD042"
+      ]
+    },
+    {
+      "form": "RAR",
+      "inventory_meaning": "reducción absoluta del riesgo (es)",
+      "competing_meaning": "ratio aldosterona-renina (es)",
+      "source_ids": [
+        "AS16",
+        "S29"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Exigir medida y unidades; no decidir solo por idioma. S93 usa RRA, que no justifica atestar RAR.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD005",
+        "AD040"
+      ]
+    },
+    {
+      "form": "ARR",
+      "inventory_meaning": "aldosterone-to-renin ratio (en)",
+      "competing_meaning": "absolute risk reduction (en)",
+      "source_ids": [
+        "S71",
+        "AS11"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir endocrinología y medida de efecto; conservar sigla si no se define.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD015",
+        "AD035"
+      ]
+    },
+    {
+      "form": "PRA",
+      "inventory_meaning": "plasma renin activity",
+      "competing_meaning": "panel reactive antibody",
+      "source_ids": [
+        "S10",
+        "AS06"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir endocrinología y evaluación inmunológica del trasplante.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD011",
+        "AD030"
+      ]
+    },
+    {
+      "form": "PAC",
+      "inventory_meaning": "plasma aldosterone concentration",
+      "competing_meaning": "premature atrial contraction",
+      "source_ids": [
+        "AS17",
+        "AS05"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir analito y evento electrocardiográfico.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD029",
+        "AD041"
+      ]
+    },
+    {
+      "form": "ACS",
+      "inventory_meaning": "autonomous cortisol secretion",
+      "competing_meaning": "acute coronary syndrome",
+      "source_ids": [
+        "S10",
+        "AS07"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir endocrinología y síndrome coronario; no resolver mediante frecuencia de uso.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD012",
+        "AD031"
+      ]
+    },
+    {
+      "form": "FMD",
+      "inventory_meaning": "fibromuscular dysplasia",
+      "competing_meaning": "flow-mediated dilation",
+      "source_ids": [
+        "AS19",
+        "AS08"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir enfermedad vascular y medición funcional endotelial.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD032",
+        "AD043"
+      ]
+    },
+    {
+      "form": "IAH",
+      "inventory_meaning": "índice de apnea-hipopnea (es)",
+      "competing_meaning": "intra-abdominal hypertension (en)",
+      "source_ids": [
+        "S29",
+        "AS09"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Exigir idioma, expansión y magnitud; no colapsar índice y enfermedad.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD008",
+        "AD033"
+      ]
+    },
+    {
+      "form": "PEG",
+      "inventory_meaning": "pequeño para la edad gestacional (es)",
+      "competing_meaning": "percutaneous endoscopic gastrostomy (en)",
+      "source_ids": [
+        "S98",
+        "AS10"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir clasificación de tamaño y procedimiento digestivo.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD023",
+        "AD034"
+      ]
+    },
+    {
+      "form": "CI",
+      "inventory_meaning": "confidence interval",
+      "competing_meaning": "cardiac index",
+      "source_ids": [
+        "S71",
+        "AS12"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir intervalo estadístico y medida hemodinámica; conservar unidades.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD014",
+        "AD036"
+      ]
+    },
+    {
+      "form": "RR",
+      "inventory_meaning": "relative risk",
+      "competing_meaning": "respiratory rate",
+      "source_ids": [
+        "AS20",
+        "AS13"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir medida de efecto y signo vital; no expandir por proximidad de números.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD037",
+        "AD044"
+      ]
+    },
+    {
+      "form": "IC",
+      "inventory_meaning": "intervalo de confianza",
+      "competing_meaning": "insuficiencia cardíaca",
+      "source_ids": [
+        "S64",
+        "S98"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "La misma lengua y especialidad pueden contener ambas acepciones; exigir definición local.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD022",
+        "AD024"
+      ]
+    },
+    {
+      "form": "HR",
+      "inventory_meaning": "heart rate",
+      "competing_meaning": "hazard ratio",
+      "source_ids": [
+        "S41",
+        "S05"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir frecuencia cardíaca de razón de riesgos instantáneos; no decidir por números aislados.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD018",
+        "AD019"
+      ]
+    },
+    {
+      "form": "MR",
+      "inventory_meaning": "mineralocorticoid receptor",
+      "competing_meaning": "magnetic resonance",
+      "source_ids": [
+        "S17",
+        "S188"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir receptor y técnica de imagen; no completar MR angiography como receptor.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD020",
+        "AD021"
+      ]
+    },
+    {
+      "form": "RAS",
+      "inventory_meaning": "renin-angiotensin system",
+      "competing_meaning": "renal artery stenosis",
+      "source_ids": [
+        "S71",
+        "AS15"
+      ],
+      "decision": "definition_required_keep_unexpanded_if_unclear",
+      "correction": "Distinguir sistema hormonal y lesión de arteria renal; ambas acepciones existen en hipertensión.",
+      "internal_collision": false,
+      "definition_evidence_ids": [
+        "AD039"
+      ]
+    }
+  ],
+  "historical_warnings_not_reverified": [
+    {
+      "form": "MRAs",
+      "historical_meanings": [
+        "mineralocorticoid receptor antagonists",
+        "plural de angiografía por RM en algunos discursos"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "MAP",
+      "historical_meanings": [
+        "mean arterial pressure",
+        "palabra inglesa map"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "APA",
+      "historical_meanings": [
+        "aldosterone-producing adenoma",
+        "sigla de varias sociedades"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "CO",
+      "historical_meanings": [
+        "cardiac output",
+        "carbon monoxide"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "NO",
+      "historical_meanings": [
+        "nitric oxide",
+        "negación"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "PCR",
+      "historical_meanings": [
+        "protein-to-creatinine ratio",
+        "polymerase chain reaction",
+        "proteína C reactiva"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "AF",
+      "historical_meanings": [
+        "atrial fibrillation",
+        "otras abreviaturas según especialidad"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "MI",
+      "historical_meanings": [
+        "myocardial infarction",
+        "mitral insufficiency"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    },
+    {
+      "form": "ACE",
+      "historical_meanings": [
+        "angiotensin-converting enzyme",
+        "adverse childhood experiences"
+      ],
+      "status": "retained_historical_warning_not_all_secondary_meanings_reverified",
+      "instruction": "No expandir sin definición; no presentar cada significado heredado como verificado en esta sesión."
+    }
+  ],
+  "historical_cross_language_abbreviation_ambiguities_unverified": {
+    "PA": [
+      "primary aldosteronism (EN)",
+      "presión arterial (ES)",
+      "pulmonary artery (EN)"
+    ],
+    "MRA": [
+      "mineralocorticoid receptor antagonist",
+      "magnetic resonance angiography"
+    ],
+    "MRAs": [
+      "mineralocorticoid receptor antagonists",
+      "plural de angiografía por RM en algunos discursos"
+    ],
+    "MR": [
+      "mineralocorticoid receptor",
+      "magnetic resonance",
+      "mitral regurgitation"
+    ],
+    "RAS": [
+      "renin-angiotensin system",
+      "renal artery stenosis",
+      "RAS gene family"
+    ],
+    "MAP": [
+      "mean arterial pressure",
+      "palabra inglesa map"
+    ],
+    "PAC": [
+      "plasma aldosterone concentration",
+      "premature atrial contraction"
+    ],
+    "PRA": [
+      "plasma renin activity",
+      "panel-reactive antibody"
+    ],
+    "APA": [
+      "aldosterone-producing adenoma",
+      "sigla de varias sociedades"
+    ],
+    "HR": [
+      "heart rate",
+      "hazard ratio"
+    ],
+    "HRV": [
+      "heart rate variability (EN)",
+      "hipertensión renovascular (ES en S29)"
+    ],
+    "ECA": [
+      "enzima convertidora de angiotensina",
+      "ensayo controlado aleatorizado"
+    ],
+    "RAR": [
+      "ratio aldosterona-renina",
+      "reducción absoluta del riesgo"
+    ],
+    "IC": [
+      "intervalo de confianza",
+      "insuficiencia cardíaca"
+    ],
+    "CO": [
+      "cardiac output",
+      "carbon monoxide"
+    ],
+    "NO": [
+      "nitric oxide",
+      "negación"
+    ],
+    "PCR": [
+      "protein-to-creatinine ratio",
+      "polymerase chain reaction",
+      "proteína C reactiva"
+    ],
+    "ACS": [
+      "autonomous cortisol secretion",
+      "acute coronary syndrome"
+    ],
+    "AF": [
+      "atrial fibrillation",
+      "otras abreviaturas según especialidad"
+    ],
+    "MI": [
+      "myocardial infarction",
+      "mitral insufficiency"
+    ],
+    "ACE": [
+      "angiotensin-converting enzyme",
+      "adverse childhood experiences"
+    ]
+  },
+  "abbreviation_ambiguities_policy": "Use corrected per-concept abbreviation metadata; unverified warnings remain labeled.",
+  "semantic_restrictions": [
+    {
+      "form_id": "UF0015",
+      "concept_id": "HTN_2767d28f15ca",
+      "form": "hipertensión farmacológica",
+      "language": "es",
+      "previous_safety_status": "lexical_variant_for_research",
+      "decision": "no_acceptable_literal_attestation",
+      "research_action": "retire_unattested_ambiguous_alias",
+      "reason": "No se localizó una atestación literal aceptable. Farmacológica no expresa de manera inequívoca inducida por fármacos y puede confundirse con tratamiento farmacológico. Proponer retirada del alias estricto; conservar hipertensión inducida por fármacos.",
+      "attestation_source_id": null
+    },
+    {
+      "form_id": "UF0117",
+      "concept_id": "HTN_c55b21ee723a",
+      "form": "coordinador conjunto",
+      "language": "es",
+      "previous_safety_status": "exclude_strict_equivalence",
+      "decision": "unsafe_equivalence_reconfirmed",
+      "research_action": "exclude_from_strict_alias_set_keep_related_expression_or_other_sense",
+      "reason": "Atestada en OMS para un cargo de coordinación FAO/OMS. No demuestra copresidencia. Se reconfirma la exclusión como alias estricto de co-chair.",
+      "attestation_source_id": "SF008"
+    },
+    {
+      "form_id": "UF0336",
+      "concept_id": "HTN_a440318f5b79",
+      "form": "relación presión-natriuresis",
+      "language": "es",
+      "previous_safety_status": "exclude_strict_equivalence",
+      "decision": "unsafe_equivalence_reconfirmed",
+      "research_action": "exclude_from_strict_alias_set_keep_related_expression_or_other_sense",
+      "reason": "Atestación de la relación fisiológica presión-natriuresis. El proceso y la relación/curva no se sustituyen literalmente; se mantiene la exclusión estricta previa.",
+      "attestation_source_id": "SF039"
+    },
+    {
+      "form_id": "UF0424",
+      "concept_id": "HTN_bd112ce0a2d7",
+      "form": "prueba de captopril",
+      "language": "es",
+      "previous_safety_status": "lexical_variant_for_research",
+      "decision": "ambiguous_reference_restricted",
+      "research_action": "require_diagnostic_purpose_and_protocol_do_not_assume_aldosteronism_test",
+      "reason": "El manual sitúa la frase en la fila de causas secundarias renovasculares (tabla 13). Es una coincidencia literal con otra finalidad diagnóstica; no verifica la prueba de desafío/supresión para aldosteronismo. Exigir propósito y protocolo antes de usar la variante.",
+      "attestation_source_id": "SF063"
+    },
+    {
+      "form_id": "UF0471",
+      "concept_id": "HTN_7865f1343d17",
+      "form": "carga de medicación",
+      "language": "es",
+      "previous_safety_status": "exclude_strict_equivalence",
+      "decision": "unsafe_equivalence_reconfirmed",
+      "research_action": "exclude_from_strict_alias_set_keep_related_expression_or_other_sense",
+      "reason": "El artículo de farmacéuticos usa carga para la preparación/llenado de sistemas de dosificación. No atesta carga de comprimidos como carga de medicación. Se reconfirma la retirada del alias estricto de pill burden.",
+      "attestation_source_id": "SF074"
+    },
+    {
+      "form_id": "UF0557",
+      "concept_id": "HTN_fc1d22db340b",
+      "form": "2025 ACC/AHA guideline",
+      "language": "en",
+      "previous_safety_status": "contextual_equivalence",
+      "decision": "ambiguous_reference_restricted",
+      "research_action": "require_hypertension_topic_in_reference_do_not_expand_bare_alias",
+      "reason": "Atestación literal en un artículo sobre la guía de síndromes coronarios de 2025. La frase sola no identifica la guía de hipertensión. Proponer añadir explícitamente hypertension a cualquier referencia de investigación; la forma sin tema queda bloqueada como alias inequívoco.",
+      "attestation_source_id": "SF109"
+    }
+  ],
+  "forms_without_accepted_literal_attestation": [
+    {
+      "form_id": "UF0015",
+      "concept_id": "HTN_2767d28f15ca",
+      "canonical_en": "drug-induced hypertension",
+      "preferred_es": "hipertensión inducida por fármacos",
+      "form": "hipertensión farmacológica",
+      "language": "es",
+      "reason": "No se localizó una atestación literal aceptable. Farmacológica no expresa de manera inequívoca inducida por fármacos y puede confundirse con tratamiento farmacológico. Proponer retirada del alias estricto; conservar hipertensión inducida por fármacos.",
+      "action": "retire_unattested_ambiguous_alias"
+    },
+    {
+      "form_id": "UF0048",
+      "concept_id": "HTN_cee544e9fe5c",
+      "canonical_en": "out-of-office blood pressure",
+      "preferred_es": "presión arterial fuera del consultorio",
+      "form": "presión arterial fuera de consulta",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0080",
+      "concept_id": "HTN_b0de6f8f7d51",
+      "canonical_en": "guideline-driven management",
+      "preferred_es": "manejo basado en guías",
+      "form": "manejo orientado por guías",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0277",
+      "concept_id": "HTN_8ded5b0bc81d",
+      "canonical_en": "potassium-enriched salt substitute",
+      "preferred_es": "sustituto de sal enriquecido con potasio",
+      "form": "potassium-supplemented salt",
+      "language": "en",
+      "reason": "Frase localizada en una publicación de comentario clínico alojada en PMC, que resume un metaanálisis. Apoyo limitado; no se promueve a atestación primaria ni a sustitución estricta del producto sin conocer su composición.",
+      "action": "hold_primary_literal_verification_do_not_promote"
+    },
+    {
+      "form_id": "UF0284",
+      "concept_id": "HTN_9f7e988429eb",
+      "canonical_en": "dynamic resistance exercise",
+      "preferred_es": "ejercicio de fuerza dinámico",
+      "form": "ejercicio dinámico de resistencia",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0286",
+      "concept_id": "HTN_be068174bf76",
+      "canonical_en": "isometric resistance exercise",
+      "preferred_es": "ejercicio isométrico de fuerza",
+      "form": "ejercicio de resistencia isométrica",
+      "language": "es",
+      "reason": "La frase exacta aparece en una tabla de una tesis institucional, no se confirmó en una publicación clínica primaria seleccionada. Se conserva como evidencia limitada de uso; no se declara verificación externa suficiente.",
+      "action": "hold_primary_literal_verification_do_not_promote"
+    },
+    {
+      "form_id": "UF0320",
+      "concept_id": "HTN_9814c63d18cd",
+      "canonical_en": "inter-arm blood pressure difference",
+      "preferred_es": "diferencia de presión arterial entre brazos",
+      "form": "diferencia interbraquial de presión arterial",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0375",
+      "concept_id": "HTN_22dfa9af1631",
+      "canonical_en": "blood pressure telemonitoring",
+      "preferred_es": "telemonitorización de la presión arterial",
+      "form": "telemonitoreo de la presión arterial",
+      "language": "es",
+      "reason": "Solo se seleccionó una traducción/resumen profesional secundario para la frase completa; su uso se registra como hallazgo limitado, sin promoverlo a fuente primaria ni a sinonimia estricta.",
+      "action": "hold_primary_literal_verification_do_not_promote"
+    },
+    {
+      "form_id": "UF0378",
+      "concept_id": "HTN_92d75169c430",
+      "canonical_en": "seated blood pressure",
+      "preferred_es": "presión arterial sentado",
+      "form": "presión arterial en sedestación",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0385",
+      "concept_id": "HTN_1cf4ceb2ef7b",
+      "canonical_en": "reverse-dipping pattern",
+      "preferred_es": "patrón de ascenso nocturno",
+      "form": "patrón de descenso nocturno inverso",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0414",
+      "concept_id": "HTN_d775cb991490",
+      "canonical_en": "renal Doppler ultrasonography",
+      "preferred_es": "ecografía Doppler renal",
+      "form": "ultrasonografía Doppler renal",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_canonical_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0465",
+      "concept_id": "HTN_b11a365c1e0e",
+      "canonical_en": "dual combination therapy",
+      "preferred_es": "tratamiento combinado doble",
+      "form": "biterapia antihipertensiva",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    },
+    {
+      "form_id": "UF0466",
+      "concept_id": "HTN_84e2adba4b70",
+      "canonical_en": "triple combination therapy",
+      "preferred_es": "tratamiento combinado triple",
+      "form": "triterapia antihipertensiva",
+      "language": "es",
+      "reason": "La búsqueda prioritaria y complementaria no aportó una atestación literal aceptable para esta grafía exacta. Mantener la preferencia española/canónica ya cotejada y la restricción de contexto; no presentar la variante como literalmente verificada.",
+      "action": "retain_context_only_pending_literal_variant"
+    }
+  ],
+  "definition_evidence": [
+    {
+      "evidence_id": "AD001",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "PAD",
+      "expansion": "presión arterial diastólica",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD002",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "ECA",
+      "expansion": "enzima convertidora de angiotensina",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD003",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "PA",
+      "expansion": "presión arterial",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD004",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "HRV",
+      "expansion": "hipertensión renovascular",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD005",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "RAR",
+      "expansion": "ratio aldosterona-renina",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD006",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "AMPA",
+      "expansion": "automedida de la presión arterial",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD007",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "SAOS",
+      "expansion": "síndrome de apnea obstructiva del sueño",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD008",
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "IAH",
+      "expansion": "índice de apnea-hipopnea",
+      "source_copy_sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c",
+      "extracted_locator_sha256": "46a0a7d514a2aefa4e5bfc6ede770a3262e6b3cf199fc17089318c51e49b9815",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD009",
+      "source_id": "S89",
+      "url": "https://semap.org/wp-content/uploads/simple-file-list/Guia_2018_ESC_ESH_HTA.pdf",
+      "locator_kind": "web_text_block_35_lines",
+      "locator_index": 8,
+      "form": "ECA",
+      "expansion": "ensayo controlado aleatorizado",
+      "source_copy_sha256": "bf180acb092b59371170640b3e478d74cc961263161ff4f5acc27ff7835a994a",
+      "extracted_locator_sha256": "9eda749c5e0b07769e7d2cca246a3dfe02ec0e47dfe018b6fabb95bd05bae299",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD010",
+      "source_id": "S10",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_kind": "text_block_35_lines",
+      "locator_index": 6,
+      "form": "PA",
+      "expansion": "primary aldosteronism",
+      "source_copy_sha256": "245f4bf759e387ae281e1084b43ad35d59650e8226062b14caf814aab99c0385",
+      "extracted_locator_sha256": "4e5074528b04d4e8b927bdb963d091cb71272eccc95705d8831e420cea8ee16d",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD011",
+      "source_id": "S10",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_kind": "text_block_35_lines",
+      "locator_index": 7,
+      "form": "PRA",
+      "expansion": "plasma renin activity",
+      "source_copy_sha256": "245f4bf759e387ae281e1084b43ad35d59650e8226062b14caf814aab99c0385",
+      "extracted_locator_sha256": "dab6ef6f7c68bdd5ab0d82a9efeaf97b9b621defab867c87d938838fc65f49d5",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD012",
+      "source_id": "S10",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_kind": "text_block_35_lines",
+      "locator_index": 8,
+      "form": "ACS",
+      "expansion": "autonomous cortisol secretion",
+      "source_copy_sha256": "245f4bf759e387ae281e1084b43ad35d59650e8226062b14caf814aab99c0385",
+      "extracted_locator_sha256": "63e97618e0c0795c7d830ef28018f4ebaf5f2dcc60f021184e5bf81b47f008f9",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD013",
+      "source_id": "S71",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_kind": "pdf_page",
+      "locator_index": 6,
+      "form": "MRA",
+      "expansion": "mineralocorticoid receptor antagonist",
+      "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+      "extracted_locator_sha256": "a7ec38c31e4176eff3408923f4ba4a37d66a629407418fd6bc6cb9969db3144b",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD014",
+      "source_id": "S71",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_kind": "pdf_page",
+      "locator_index": 6,
+      "form": "CI",
+      "expansion": "confidence interval",
+      "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+      "extracted_locator_sha256": "a7ec38c31e4176eff3408923f4ba4a37d66a629407418fd6bc6cb9969db3144b",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD015",
+      "source_id": "S71",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_kind": "pdf_page",
+      "locator_index": 6,
+      "form": "ARR",
+      "expansion": "aldosterone-to-renin ratio",
+      "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+      "extracted_locator_sha256": "a7ec38c31e4176eff3408923f4ba4a37d66a629407418fd6bc6cb9969db3144b",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD016",
+      "source_id": "S71",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_kind": "pdf_page",
+      "locator_index": 6,
+      "form": "ARB",
+      "expansion": "angiotensin receptor blocker",
+      "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+      "extracted_locator_sha256": "a7ec38c31e4176eff3408923f4ba4a37d66a629407418fd6bc6cb9969db3144b",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD017",
+      "source_id": "S71",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_kind": "pdf_page",
+      "locator_index": 6,
+      "form": "CCB",
+      "expansion": "calcium channel blocker",
+      "source_copy_sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a",
+      "extracted_locator_sha256": "a7ec38c31e4176eff3408923f4ba4a37d66a629407418fd6bc6cb9969db3144b",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD018",
+      "source_id": "S41",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25987662/",
+      "locator_kind": "web_text_block_35_lines",
+      "locator_index": 7,
+      "form": "HR",
+      "expansion": "heart rate",
+      "source_copy_sha256": "896adf6a3efa5441a8293130ef38a011afa090f6680e4b75c842295533459a51",
+      "extracted_locator_sha256": "a4488914aae549da8652c3aa48d1fe2d8b9b4951a83091ff79e363dc08c5ba26",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD019",
+      "source_id": "S05",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 6,
+      "form": "HR",
+      "expansion": "hazard ratio",
+      "source_copy_sha256": "0b77a9e32ca6c7bbccbddf902be4427bf8bc0d2dd7e3ffbc18042f602f371b27",
+      "extracted_locator_sha256": "0fbd81efca98f665408bef1b652c4f47210f8b9076976856e4082c4abd13d717",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD020",
+      "source_id": "S17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29565029/",
+      "locator_kind": "web_text_block_35_lines",
+      "locator_index": 9,
+      "form": "MR",
+      "expansion": "mineralocorticoid receptor",
+      "source_copy_sha256": "c71786ee35406ea26890bd0361e576135b6a7bf456d94494cefedbc1769111cd",
+      "extracted_locator_sha256": "aa530de0eb143aae399ede1535fe4be393cc9c005e7437fce1f305dd69df4d37",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD021",
+      "source_id": "S188",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/8034801/",
+      "locator_kind": "text_block_35_lines",
+      "locator_index": 6,
+      "form": "MR",
+      "expansion": "magnetic resonance",
+      "source_copy_sha256": "ddeae07465223061c7e279ea81756374e77698ee17dab39a621b16ded01f8707",
+      "extracted_locator_sha256": "6bc11434f98404fe90c4f90bf4ce8bd9d5a4a0c8cff56696d37eecb2e2f262e3",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD022",
+      "source_id": "S98",
+      "url": "https://secardiologia.es/images/2024/Gu%C3%ADas/Gui%CC%81a-ESC-2025-manejo-ECV-y-embarazo.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "IC",
+      "expansion": "insuficiencia cardiaca",
+      "source_copy_sha256": "f5ad38a23001d16107b602013f8ed9db9f0072b9d5784cda4d19107c5f7ece92",
+      "extracted_locator_sha256": "45f7fb682a07e6d149980fe791fc5b05b4a72555516cb743d2b402e4f84c4111",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD023",
+      "source_id": "S98",
+      "url": "https://secardiologia.es/images/2024/Gu%C3%ADas/Gui%CC%81a-ESC-2025-manejo-ECV-y-embarazo.pdf",
+      "locator_kind": "pdf_page",
+      "locator_index": 8,
+      "form": "PEG",
+      "expansion": "pequeño para la edad gestacional",
+      "source_copy_sha256": "f5ad38a23001d16107b602013f8ed9db9f0072b9d5784cda4d19107c5f7ece92",
+      "extracted_locator_sha256": "45f7fb682a07e6d149980fe791fc5b05b4a72555516cb743d2b402e4f84c4111",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD024",
+      "source_id": "S64",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057702/",
+      "locator_kind": "text_block_35_lines",
+      "locator_index": 6,
+      "form": "IC",
+      "expansion": "intervalo de confianza",
+      "source_copy_sha256": "ffb913def7da272ebd978836d6869c98b548e4498681b53b17b444e6ee34c77b",
+      "extracted_locator_sha256": "b472f9fc4a13e5a0b3faca83364f388b9623f8fb9392bf1840791d20eeb67fb2",
+      "assessment": "Explicit glossary/definition passage reviewed; expansion remains context dependent."
+    },
+    {
+      "evidence_id": "AD025",
+      "source_id": "AS01",
+      "url": "https://www.heart.org/en/health-topics/peripheral-artery-disease/diagnosing-pad",
+      "access_level": "official_page_selected_passage",
+      "locator": "Lista de pruebas diagnósticas, línea web 30; revisión visible 2026-04-24.",
+      "form_or_subject": "Magnetic resonance angiography (MRA)",
+      "snapshot_sha256": "ff2f476e14e31d74ec736b1d147b84732fa9bb87255f68270fa14e705df1a5d4",
+      "result_block_sha256": "03a58b52146ab1ec15fc9bab3574a7763a98ac06a2a69dbf9495183eb6f99e63",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD026",
+      "source_id": "AS02",
+      "url": "https://www.acc.org/about-acc/press-releases/2024/05/21/16/00/early-diagnosis-treatment-of-peripheral-artery-disease-essential-to-improve-outcomes-reduce-amputation-risk",
+      "access_level": "official_page_selected_passage",
+      "locator": "Primer párrafo de la comunicación; líneas web 156–158.",
+      "form_or_subject": "peripheral artery disease (PAD)",
+      "snapshot_sha256": "ff2f476e14e31d74ec736b1d147b84732fa9bb87255f68270fa14e705df1a5d4",
+      "result_block_sha256": "ed5b706d6e1a367356a556ba0a0a666971c5235bc08d233ea2aca3347ed0605f",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD027",
+      "source_id": "AS03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15660030/",
+      "access_level": "pubmed_indexed_title_and_abstract",
+      "locator": "Título y objetivo del resumen indexado; no corresponde a la cohorte CARDIA.",
+      "form_or_subject": "Coronary Artery Revascularisation in Diabetes (CARDia)",
+      "snapshot_sha256": "e570490c13792412433120f1eadd54c4945852ea5435cee200562053754b3d5c",
+      "result_block_sha256": "ce03b9aad590720f93a0cb296b4f5fa12e8713b156521aaf2c634c46b9bb4648",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD028",
+      "source_id": "AS04",
+      "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-Blood-Pressure-Guideline-English.pdf",
+      "access_level": "official_pdf_selected_passage",
+      "locator": "Página PDF 25 (índice web P24), capítulo 2; líneas 1668–1673. Uso histórico para terminología, no para recomendaciones actuales.",
+      "form_or_subject": "thiazide-type diuretics",
+      "snapshot_sha256": "5988af64757f8945250a6a6a434adb0b364c3f1d146bad49f3e246de9e0d2d54",
+      "result_block_sha256": "5988af64757f8945250a6a6a434adb0b364c3f1d146bad49f3e246de9e0d2d54",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD029",
+      "source_id": "AS05",
+      "url": "https://newsroom.heart.org/news/air-pollution-may-spur-irregular-heart-rhythms-in-healthy-teens",
+      "access_level": "indexed_official_passage",
+      "locator": "Extracto indexado del comunicado AHA; no lectura completa de un artículo primario.",
+      "form_or_subject": "premature atrial contractions (PAC)",
+      "snapshot_sha256": "b19ab3eb2cf1d991a72f3a5ccc69831150c613fa2e6bb25360e1a6c10a3a5491",
+      "result_block_sha256": "11f975252ce89d11cbe5fdd8360a762ddcd895d843458d7189f5d40fc3b493c3",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD030",
+      "source_id": "AS06",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8000853/",
+      "access_level": "pubmed_indexed_title_and_abstract",
+      "locator": "Resumen PubMed indexado; no texto completo.",
+      "form_or_subject": "panel reactive antibodies (PRA)",
+      "snapshot_sha256": "b19ab3eb2cf1d991a72f3a5ccc69831150c613fa2e6bb25360e1a6c10a3a5491",
+      "result_block_sha256": "b91bad3b593aef24bb97cac8ad11f472640184e69761ad1ff36431c53ffcf30c",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD031",
+      "source_id": "AS07",
+      "url": "https://www.heart.org/en/health-topics/heart-attack/about-heart-attacks/acute-coronary-syndrome",
+      "access_level": "indexed_official_passage",
+      "locator": "Quick Facts y cuerpo de página indexado; definición competidora de la endocrina.",
+      "form_or_subject": "acute coronary syndrome (ACS)",
+      "snapshot_sha256": "6f95d9fa67cc616e64b5e3e5471a619fd7d95b6f236bdb19b4cf06043753e473",
+      "result_block_sha256": "59231e06f95ee01acbffb82ddadab7687209e8b32f8fe8f6379b069e7d02f021",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD032",
+      "source_id": "AS08",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20952670/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado; no texto completo.",
+      "form_or_subject": "flow-mediated dilation (FMD)",
+      "snapshot_sha256": "52304ba445bdd5bb03b1e403af92594e5c01cc466e18899657de2e27e07beed7",
+      "result_block_sha256": "e18bab9543888891ddf09645886174241c3c7a085066f931f142504876e9ee25",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD033",
+      "source_id": "AS09",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18446319/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Objetivo del resumen indexado; no texto completo.",
+      "form_or_subject": "intra-abdominal hypertension (IAH)",
+      "snapshot_sha256": "52304ba445bdd5bb03b1e403af92594e5c01cc466e18899657de2e27e07beed7",
+      "result_block_sha256": "1af67616da522e9a3e7157d417c296a4429e6544341581cfc184a978d7193da7",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD034",
+      "source_id": "AS10",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8977937/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado; no texto completo.",
+      "form_or_subject": "Percutaneous endoscopic gastrostomy (PEG)",
+      "snapshot_sha256": "52304ba445bdd5bb03b1e403af92594e5c01cc466e18899657de2e27e07beed7",
+      "result_block_sha256": "4fe2d25e2bb60db15fe3129688c9746a90161c74ab4bc3b0183805c151742421",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD035",
+      "source_id": "AS11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24686884/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Objetivo del resumen indexado; no texto completo.",
+      "form_or_subject": "Absolute Risk Reduction (ARR)",
+      "snapshot_sha256": "11f03c562ea824a295d8101d00d0641817aa9a6dc2276950893a77d0fc5db3c7",
+      "result_block_sha256": "0a94534f818784a28b572f157c752ef4a8ded0a18c365bec974859d05df7360f",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD036",
+      "source_id": "AS12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30540751/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado del estudio CITE; no texto completo.",
+      "form_or_subject": "Cardiac index (CI)",
+      "snapshot_sha256": "11f03c562ea824a295d8101d00d0641817aa9a6dc2276950893a77d0fc5db3c7",
+      "result_block_sha256": "809b7eb31e55da404f835c0b59646fa6953ea7a1e120ef1464fb986cdd3e75cc",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD037",
+      "source_id": "AS13",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31251168/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado; no texto completo.",
+      "form_or_subject": "Respiratory rate (RR)",
+      "snapshot_sha256": "11f03c562ea824a295d8101d00d0641817aa9a6dc2276950893a77d0fc5db3c7",
+      "result_block_sha256": "9407beac6d39708ef2ff9c910e7b96e384d1c3ab3b2635dd70da8323180644fb",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD038",
+      "source_id": "AS14",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21301689/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Discusión del resumen: uso intercambiable en este contexto; no prueba de identidad en toda taxonomía.",
+      "form_or_subject": "Clinical inertia",
+      "snapshot_sha256": "6f95d9fa67cc616e64b5e3e5471a619fd7d95b6f236bdb19b4cf06043753e473",
+      "result_block_sha256": "4b93027c66201054bcd0c9a53cd0d0ecd4a46ccc4decad60acf822dcd335b028",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD039",
+      "source_id": "AS15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21722784/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado; no texto completo.",
+      "form_or_subject": "Renal artery stenosis (RAS)",
+      "snapshot_sha256": "e2475ede6dbc0056af1fafe0df28affab124b2c3531390bde8133c574fb52a07",
+      "result_block_sha256": "f965ca9056de6e97223b44e78e3caeb4913ea39220898ec76a9d17306f8ef4d1",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD040",
+      "source_id": "AS16",
+      "url": "https://www.cochrane.org/es/evidence/CD003610_benefits-and-harms-antibiotics-secondary-prevention-coronary-heart-disease",
+      "access_level": "indexed_primary_systematic_review_spanish_summary",
+      "locator": "Obtención y análisis de datos del resumen de revisión. Fuente complementaria fuera de los dominios prioritarios para expansión española explícita.",
+      "form_or_subject": "reducción absoluta del riesgo (RAR)",
+      "snapshot_sha256": "f40c05364845ba446385bf3cc17b240d9ac52d1aaecf929f9b96792e6d771c5d",
+      "result_block_sha256": "21171aee53a7d908508b95f4d73ebb535c1fdad1493227c4044bc9223e5b56bb",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD041",
+      "source_id": "AS17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42162197/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado; no texto completo. Fuente explícita de expansión, distinta de una coincidencia de PAC en nombres o bibliografía.",
+      "form_or_subject": "plasma aldosterone concentration (PAC)",
+      "snapshot_sha256": "eb9dbc324cccf7e7abf30a768cc92d788140f5925feb736ae41a215131410974",
+      "result_block_sha256": "ebc0819b2df1511bac14a6d12cf5e175667cbda656853c9d64520500dbe3781a",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD042",
+      "source_id": "AS18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29034226/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado; no texto completo.",
+      "form_or_subject": "Heart rate variability (HRV)",
+      "snapshot_sha256": "eb9dbc324cccf7e7abf30a768cc92d788140f5925feb736ae41a215131410974",
+      "result_block_sha256": "438eb55cac1b78796e1bfe01775f42eedc638f47c297ccc1c785deb5244cbe14",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD043",
+      "source_id": "AS19",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30648921/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado del consenso internacional; no texto completo.",
+      "form_or_subject": "fibromuscular dysplasia (FMD)",
+      "snapshot_sha256": "b6d5581041c5c1d62de615945e26e61770a71152f172358ed2aec182e415fc29",
+      "result_block_sha256": "ac3223ee276eb80af938d13725b750ff31a1ca2851d9650438983aaf969ea2dc",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    },
+    {
+      "evidence_id": "AD044",
+      "source_id": "AS20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38620441/",
+      "access_level": "pubmed_indexed_abstract",
+      "locator": "Resumen indexado; solo se usa para la expansión terminológica, sin adoptar otros detalles.",
+      "form_or_subject": "relative risk (RR)",
+      "snapshot_sha256": "11f03c562ea824a295d8101d00d0641817aa9a6dc2276950893a77d0fc5db3c7",
+      "result_block_sha256": "2caa2b0e7256845ad3ceb5b38837a6e16441e6262958cfbb508ba8a54f608e3e",
+      "assessment": "Specifically checked selected passage; stated access level applies, not full-paper review."
+    }
+  ],
+  "global_rules": [
+    "No automatic abbreviation expansion, fuzzy merging, number/unit/dose conversion or negation changes.",
+    "Preserve grammatical number, clinical qualifiers, trial arms, reference topic, year and protocol.",
+    "A literal location is not unconditional synonym approval; absence of evidence is not proof of non-use.",
+    "Canonical crosschecks do not certify every alias; independent clinical review and audio validation were not performed."
+  ]
+}

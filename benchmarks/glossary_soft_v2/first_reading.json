@@ -1,0 +1,4770 @@
+{
+  "protocol_version": 1,
+  "session_id": "cea17b1975ec",
+  "state": "stopped",
+  "direction": {
+    "id": "en-es",
+    "source_language": "en",
+    "target_language": "es",
+    "normalization_mode": "identity"
+  },
+  "visual_generation": 0,
+  "cleared_through_sequence": 0,
+  "sequence": 33,
+  "overlay_connections": 0,
+  "last_caption": {
+    "session_id": "cea17b1975ec",
+    "sequence": 33,
+    "segment_id": "cea17b1975ec:33",
+    "text": "traducción",
+    "provider": "deepl",
+    "published_at": 1792647945.3350484,
+    "source_language": "en",
+    "target_language": "es",
+    "expires_at": 1792647951.8350484,
+    "published_mono_ms": 192492468.0,
+    "timing": {
+      "asr_first_seen_mono": 192486.171,
+      "ready_mono": 192491.703,
+      "normalized_completed_mono": 192491.703,
+      "queued_mono": 192491.703,
+      "translation_started_mono": 192491.703,
+      "translation_completed_mono": 192492.468,
+      "provider_attempts_ms": [
+        765.0
+      ]
+    },
+    "latency": {
+      "asr_to_ready_ms": 5532.0,
+      "ready_to_normalized_ms": 0.0,
+      "ready_to_translation_started_ms": 0.0,
+      "translation_queue_delay_ms": 0.0,
+      "provider_total_ms": 765.0,
+      "provider_last_attempt_ms": 765.0,
+      "translation_to_hub_ms": 0.0,
+      "ready_to_hub_ms": 765.0,
+      "asr_to_hub_ms": 6297.0
+    },
+    "translation_queue_depth": 0
+  },
+  "broadcast_errors": 0,
+  "stale_events": 0,
+  "filtered_mock": 0,
+  "display_drops": 0,
+  "translator_state": "ready",
+  "display_drop_reasons": {},
+  "affected_sequences": [],
+  "latency_diagnostics": {
+    "translation_queue_depth": 0,
+    "backend_clock_resolution_ms": 15.625,
+    "translation_queue_max": 1,
+    "backend_samples": [
+      {
+        "sequence": 1,
+        "asr_to_ready_ms": 3313.0,
+        "ready_to_normalized_ms": 93.0,
+        "ready_to_translation_started_ms": 93.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 657.0,
+        "provider_last_attempt_ms": 657.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 750.0,
+        "asr_to_hub_ms": 4063.0
+      },
+      {
+        "sequence": 2,
+        "asr_to_ready_ms": 1813.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 625.0,
+        "provider_last_attempt_ms": 610.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 625.0,
+        "asr_to_hub_ms": 2438.0
+      },
+      {
+        "sequence": 3,
+        "asr_to_ready_ms": 3890.0,
+        "ready_to_normalized_ms": 79.0,
+        "ready_to_translation_started_ms": 79.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 687.0,
+        "provider_last_attempt_ms": 687.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 766.0,
+        "asr_to_hub_ms": 4656.0
+      },
+      {
+        "sequence": 4,
+        "asr_to_ready_ms": 4266.0,
+        "ready_to_normalized_ms": 31.0,
+        "ready_to_translation_started_ms": 47.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 625.0,
+        "provider_last_attempt_ms": 625.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 672.0,
+        "asr_to_hub_ms": 4938.0
+      },
+      {
+        "sequence": 5,
+        "asr_to_ready_ms": 3422.0,
+        "ready_to_normalized_ms": 94.0,
+        "ready_to_translation_started_ms": 109.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 688.0,
+        "provider_last_attempt_ms": 688.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 797.0,
+        "asr_to_hub_ms": 4219.0
+      },
+      {
+        "sequence": 6,
+        "asr_to_ready_ms": 2656.0,
+        "ready_to_normalized_ms": 16.0,
+        "ready_to_translation_started_ms": 16.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 593.0,
+        "provider_last_attempt_ms": 593.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 609.0,
+        "asr_to_hub_ms": 3265.0
+      },
+      {
+        "sequence": 7,
+        "asr_to_ready_ms": 3547.0,
+        "ready_to_normalized_ms": 46.0,
+        "ready_to_translation_started_ms": 46.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 688.0,
+        "provider_last_attempt_ms": 672.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 734.0,
+        "asr_to_hub_ms": 4281.0
+      },
+      {
+        "sequence": 8,
+        "asr_to_ready_ms": 3844.0,
+        "ready_to_normalized_ms": 63.0,
+        "ready_to_translation_started_ms": 63.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 609.0,
+        "provider_last_attempt_ms": 609.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 672.0,
+        "asr_to_hub_ms": 4516.0
+      },
+      {
+        "sequence": 9,
+        "asr_to_ready_ms": 5531.0,
+        "ready_to_normalized_ms": 16.0,
+        "ready_to_translation_started_ms": 31.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 735.0,
+        "provider_last_attempt_ms": 735.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 766.0,
+        "asr_to_hub_ms": 6297.0
+      },
+      {
+        "sequence": 10,
+        "asr_to_ready_ms": 4406.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 641.0,
+        "provider_last_attempt_ms": 641.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 641.0,
+        "asr_to_hub_ms": 5047.0
+      },
+      {
+        "sequence": 11,
+        "asr_to_ready_ms": 4219.0,
+        "ready_to_normalized_ms": 31.0,
+        "ready_to_translation_started_ms": 31.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 735.0,
+        "provider_last_attempt_ms": 735.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 766.0,
+        "asr_to_hub_ms": 4985.0
+      },
+      {
+        "sequence": 12,
+        "asr_to_ready_ms": 3891.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 672.0,
+        "provider_last_attempt_ms": 672.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 672.0,
+        "asr_to_hub_ms": 4563.0
+      },
+      {
+        "sequence": 13,
+        "asr_to_ready_ms": 4219.0,
+        "ready_to_normalized_ms": 46.0,
+        "ready_to_translation_started_ms": 46.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 735.0,
+        "provider_last_attempt_ms": 735.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 781.0,
+        "asr_to_hub_ms": 5000.0
+      },
+      {
+        "sequence": 14,
+        "asr_to_ready_ms": 3344.0,
+        "ready_to_normalized_ms": 15.0,
+        "ready_to_translation_started_ms": 15.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 610.0,
+        "provider_last_attempt_ms": 610.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 625.0,
+        "asr_to_hub_ms": 3969.0
+      },
+      {
+        "sequence": 15,
+        "asr_to_ready_ms": 3328.0,
+        "ready_to_normalized_ms": 16.0,
+        "ready_to_translation_started_ms": 16.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 625.0,
+        "provider_last_attempt_ms": 625.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 641.0,
+        "asr_to_hub_ms": 3969.0
+      },
+      {
+        "sequence": 16,
+        "asr_to_ready_ms": 3328.0,
+        "ready_to_normalized_ms": 31.0,
+        "ready_to_translation_started_ms": 31.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 735.0,
+        "provider_last_attempt_ms": 735.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 766.0,
+        "asr_to_hub_ms": 4094.0
+      },
+      {
+        "sequence": 17,
+        "asr_to_ready_ms": 1828.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 687.0,
+        "provider_last_attempt_ms": 687.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 687.0,
+        "asr_to_hub_ms": 2515.0
+      },
+      {
+        "sequence": 18,
+        "asr_to_ready_ms": 4453.0,
+        "ready_to_normalized_ms": 31.0,
+        "ready_to_translation_started_ms": 31.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 609.0,
+        "provider_last_attempt_ms": 609.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 640.0,
+        "asr_to_hub_ms": 5093.0
+      },
+      {
+        "sequence": 19,
+        "asr_to_ready_ms": 3390.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 641.0,
+        "provider_last_attempt_ms": 641.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 641.0,
+        "asr_to_hub_ms": 4031.0
+      },
+      {
+        "sequence": 20,
+        "asr_to_ready_ms": 3984.0,
+        "ready_to_normalized_ms": 47.0,
+        "ready_to_translation_started_ms": 47.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 641.0,
+        "provider_last_attempt_ms": 641.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 688.0,
+        "asr_to_hub_ms": 4672.0
+      },
+      {
+        "sequence": 21,
+        "asr_to_ready_ms": 1313.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 593.0,
+        "provider_last_attempt_ms": 593.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 593.0,
+        "asr_to_hub_ms": 1906.0
+      },
+      {
+        "sequence": 22,
+        "asr_to_ready_ms": 5203.0,
+        "ready_to_normalized_ms": 32.0,
+        "ready_to_translation_started_ms": 32.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 703.0,
+        "provider_last_attempt_ms": 703.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 735.0,
+        "asr_to_hub_ms": 5938.0
+      },
+      {
+        "sequence": 23,
+        "asr_to_ready_ms": 5156.0,
+        "ready_to_normalized_ms": 32.0,
+        "ready_to_translation_started_ms": 32.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 640.0,
+        "provider_last_attempt_ms": 640.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 672.0,
+        "asr_to_hub_ms": 5828.0
+      },
+      {
+        "sequence": 24,
+        "asr_to_ready_ms": 4688.0,
+        "ready_to_normalized_ms": 46.0,
+        "ready_to_translation_started_ms": 46.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 672.0,
+        "provider_last_attempt_ms": 672.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 718.0,
+        "asr_to_hub_ms": 5406.0
+      },
+      {
+        "sequence": 25,
+        "asr_to_ready_ms": 2156.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 641.0,
+        "provider_last_attempt_ms": 641.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 641.0,
+        "asr_to_hub_ms": 2797.0
+      },
+      {
+        "sequence": 26,
+        "asr_to_ready_ms": 3375.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 610.0,
+        "provider_last_attempt_ms": 610.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 610.0,
+        "asr_to_hub_ms": 3985.0
+      },
+      {
+        "sequence": 27,
+        "asr_to_ready_ms": 3328.0,
+        "ready_to_normalized_ms": 31.0,
+        "ready_to_translation_started_ms": 31.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 672.0,
+        "provider_last_attempt_ms": 672.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 703.0,
+        "asr_to_hub_ms": 4031.0
+      },
+      {
+        "sequence": 28,
+        "asr_to_ready_ms": 3437.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 625.0,
+        "provider_last_attempt_ms": 625.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 625.0,
+        "asr_to_hub_ms": 4062.0
+      },
+      {
+        "sequence": 29,
+        "asr_to_ready_ms": 3656.0,
+        "ready_to_normalized_ms": 32.0,
+        "ready_to_translation_started_ms": 32.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 1281.0,
+        "provider_last_attempt_ms": 1281.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 1313.0,
+        "asr_to_hub_ms": 4969.0
+      },
+      {
+        "sequence": 30,
+        "asr_to_ready_ms": 906.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 1016.0,
+        "translation_queue_delay_ms": 1016.0,
+        "provider_total_ms": 640.0,
+        "provider_last_attempt_ms": 640.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 1656.0,
+        "asr_to_hub_ms": 2562.0
+      },
+      {
+        "sequence": 31,
+        "asr_to_ready_ms": 4360.0,
+        "ready_to_normalized_ms": 15.0,
+        "ready_to_translation_started_ms": 15.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 719.0,
+        "provider_last_attempt_ms": 719.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 734.0,
+        "asr_to_hub_ms": 5094.0
+      },
+      {
+        "sequence": 32,
+        "asr_to_ready_ms": 5531.0,
+        "ready_to_normalized_ms": 16.0,
+        "ready_to_translation_started_ms": 16.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 703.0,
+        "provider_last_attempt_ms": 703.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 719.0,
+        "asr_to_hub_ms": 6250.0
+      },
+      {
+        "sequence": 33,
+        "asr_to_ready_ms": 5532.0,
+        "ready_to_normalized_ms": 0.0,
+        "ready_to_translation_started_ms": 0.0,
+        "translation_queue_delay_ms": 0.0,
+        "provider_total_ms": 765.0,
+        "provider_last_attempt_ms": 765.0,
+        "translation_to_hub_ms": 0.0,
+        "ready_to_hub_ms": 765.0,
+        "asr_to_hub_ms": 6297.0
+      }
+    ],
+    "observer_samples": [],
+    "observers": []
+  },
+  "caption_config": {
+    "mode": "persistent_rolling",
+    "max_lines": 3,
+    "stop_clear_ms": 8000,
+    "font_size": 48,
+    "max_width": 1500,
+    "canvas_width": 1920,
+    "canvas_height": 1080,
+    "region_x": 0,
+    "region_y": 930,
+    "region_width": 1920,
+    "region_height": 150,
+    "padding_x": 32,
+    "padding_y": 8,
+    "line_height": 1.2,
+    "position": "center",
+    "bottom_offset": 70,
+    "background_opacity": 0.0,
+    "min_display_ms": 1800,
+    "max_display_ms": 6500,
+    "reading_wps": 3.0,
+    "visual_queue_max": 64,
+    "max_backlog_ms": 20000,
+    "reconnect_attempts": 8,
+    "reconnect_base_ms": 500,
+    "reconnect_max_ms": 10000
+  },
+  "reliability": {
+    "state": "READY",
+    "reason": "stop_complete",
+    "state_since_mono": 192496.75,
+    "state_duration_seconds": 360.156,
+    "components": {
+      "fastapi": {
+        "state": "READY",
+        "last_seen_mono": 192856.906
+      },
+      "wlk": {
+        "state": "DISCONNECTED",
+        "last_seen_mono": 192496.75,
+        "connected_at_mono": 192391.984,
+        "disconnected_at_mono": null,
+        "disconnected_duration_seconds": null
+      },
+      "audio": {
+        "state": "DISCONNECTED",
+        "last_seen_mono": 192496.625
+      },
+      "asr": {
+        "state": "READY",
+        "last_seen_mono": 192496.75,
+        "silence_or_unverified": true
+      },
+      "translator": {
+        "status": {
+          "state": "ready",
+          "provider": "deepl",
+          "message": "DeepL provider ready"
+        },
+        "queue_depth": 0,
+        "health": "READY",
+        "last_seen_mono": 192492.468,
+        "reason": null,
+        "pending_count": 0,
+        "cooldown_remaining_seconds": 0,
+        "metrics": {
+          "queued": 33,
+          "successes": 33,
+          "failures": 0,
+          "retries": 0,
+          "timeouts": 0,
+          "stale_discarded": 0,
+          "max_queue_depth": 1,
+          "permanent_errors": 0,
+          "cancelled": 0,
+          "expired": 0,
+          "possible_duplicate_requests": 0,
+          "delivery_failures": 0
+        }
+      },
+      "caption_hub": {
+        "state": "READY",
+        "sequence": 33,
+        "subscribers": 0
+      },
+      "operator": {
+        "state": "READY",
+        "age_seconds": 0.7809999999881256
+      }
+    },
+    "duration_seconds": 104.782,
+    "audio_last_seen_mono": 192496.625,
+    "audio_age_seconds": 360.281,
+    "audio_frames": 39236,
+    "audio_bytes": 3374296,
+    "asr_last_seen_mono": 192496.75,
+    "asr_age_seconds": 360.156,
+    "asr_messages": 1623,
+    "audio_rms": 0.00012,
+    "signal_last_seen_mono": 192486.156,
+    "outcome": "complete",
+    "pending_characters": 0,
+    "asr_final": true,
+    "stop_reason": null,
+    "asr_retained_characters": 973,
+    "asr_source_count": 1,
+    "ready_characters": 941,
+    "journal_retained_bytes": 80073,
+    "failure_details": null,
+    "owner_age_seconds": 0.7809999999881256,
+    "counters": {},
+    "translator": {
+      "status": {
+        "state": "ready",
+        "provider": "deepl",
+        "message": "DeepL provider ready"
+      },
+      "queue_depth": 0,
+      "health": "READY",
+      "last_seen_mono": 192492.468,
+      "reason": null,
+      "pending_count": 0,
+      "cooldown_remaining_seconds": 0,
+      "metrics": {
+        "queued": 33,
+        "successes": 33,
+        "failures": 0,
+        "retries": 0,
+        "timeouts": 0,
+        "stale_discarded": 0,
+        "max_queue_depth": 1,
+        "permanent_errors": 0,
+        "cancelled": 0,
+        "expired": 0,
+        "possible_duplicate_requests": 0,
+        "delivery_failures": 0
+      }
+    },
+    "journal_retained": 66,
+    "journal_truncated": 0
+  },
+  "operator_history": {
+    "cursor": 66,
+    "history_gap": false,
+    "truncated_events": 0,
+    "first_translation_sequence": 1,
+    "events": [
+      {
+        "journal_id": 1,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "hyp",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:1",
+                "text": "Today we are discussing hyper tension and",
+                "start_time": 2.68,
+                "end_time": 6.04,
+                "emitted_at": 6.860000000015134,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 3.547000000020489,
+                "latency_ms": 3313.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:1",
+                "raw_text": "Today we are discussing hyper tension and",
+                "normalized_text": "Today we are discussing hyper tension and",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 95.166,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 957
+      },
+      {
+        "journal_id": 2,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:1",
+            "sequence": 1,
+            "raw_text": "Today we are discussing hyper tension and",
+            "normalized_text": "Today we are discussing hyper tension and",
+            "translated_text": "Hoy vamos a hablar de la hipertensión y",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647851.7879705,
+            "started_at": 1792647851.7888384,
+            "completed_at": 1792647852.4454446,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 657.0,
+            "asr_first_seen_at": 3.547000000020489,
+            "ready_at": 6.860000000015134,
+            "normalization_latency_ms": 95.166,
+            "timing": {
+              "asr_first_seen_mono": 192395.515,
+              "ready_mono": 192398.828,
+              "normalized_completed_mono": 192398.921,
+              "queued_mono": 192398.921,
+              "translation_started_mono": 192398.921,
+              "translation_completed_mono": 192399.578,
+              "provider_attempts_ms": [
+                657.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1482
+      },
+      {
+        "journal_id": 3,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "Hyper",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:2",
+                "text": "hypotension.",
+                "start_time": 2.68,
+                "end_time": 7.44,
+                "emitted_at": 8.485000000015134,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 6.672000000020489,
+                "latency_ms": 1813.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:2",
+                "raw_text": "hypotension.",
+                "normalized_text": "hypotension.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "hypotension"
+                ],
+                "processing_ms": 4.0609,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_ee6fe3240e4f"
+                  ],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 910
+      },
+      {
+        "journal_id": 4,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:2",
+            "sequence": 2,
+            "raw_text": "hypotension.",
+            "normalized_text": "hypotension.",
+            "translated_text": "hipotensión.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647853.326015,
+            "started_at": 1792647853.327019,
+            "completed_at": 1792647853.9377973,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 625.0,
+            "asr_first_seen_at": 6.672000000020489,
+            "ready_at": 8.485000000015134,
+            "normalization_latency_ms": 4.0609,
+            "timing": {
+              "asr_first_seen_mono": 192398.64,
+              "ready_mono": 192400.453,
+              "normalized_completed_mono": 192400.453,
+              "queued_mono": 192400.453,
+              "translation_started_mono": 192400.453,
+              "translation_completed_mono": 192401.078,
+              "provider_attempts_ms": [
+                610.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 2,
+            "successes": 2,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1394
+      },
+      {
+        "journal_id": 5,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "hypotension",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:3",
+                "text": "Hyper tension means high blood pressure and",
+                "start_time": 2.68,
+                "end_time": 11.3,
+                "emitted_at": 11.953000000008615,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 8.062999999994645,
+                "latency_ms": 3890.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:3",
+                "raw_text": "Hyper tension means high blood pressure and",
+                "normalized_text": "Hyper tension means high blood pressure and",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "blood pressure"
+                ],
+                "processing_ms": 72.4655,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_bd01a89edc9a"
+                  ],
+                  "blocked_counts": {
+                    "preserve_registered_variant_no_rewrite": 4,
+                    "no_lossless_token_alignment": 2,
+                    "opposed_qualifier_or_grammatical_number_changed": 1,
+                    "function_word_sequence_changed": 1
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1175
+      },
+      {
+        "journal_id": 6,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:3",
+            "sequence": 3,
+            "raw_text": "Hyper tension means high blood pressure and",
+            "normalized_text": "Hyper tension means high blood pressure and",
+            "translated_text": "La hipertensión significa presión arterial alta y",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647856.8649673,
+            "started_at": 1792647856.8661482,
+            "completed_at": 1792647857.550982,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 687.0,
+            "asr_first_seen_at": 8.062999999994645,
+            "ready_at": 11.953000000008615,
+            "normalization_latency_ms": 72.4655,
+            "timing": {
+              "asr_first_seen_mono": 192400.031,
+              "ready_mono": 192403.921,
+              "normalized_completed_mono": 192404.0,
+              "queued_mono": 192404.0,
+              "translation_started_mono": 192404.0,
+              "translation_completed_mono": 192404.687,
+              "provider_attempts_ms": [
+                687.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 3,
+            "successes": 3,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1492
+      },
+      {
+        "journal_id": 7,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "These terms describe",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:4",
+                "text": "hypotension means low blood pressure.",
+                "start_time": 2.68,
+                "end_time": 14.72,
+                "emitted_at": 15.51600000000326,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 11.25,
+                "latency_ms": 4266.0,
+                "word_count": 5,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:4",
+                "raw_text": "hypotension means low blood pressure.",
+                "normalized_text": "hypotension means low blood pressure.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "blood pressure",
+                  "hypotension"
+                ],
+                "processing_ms": 37.1005,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_bd01a89edc9a",
+                    "HTN_ee6fe3240e4f"
+                  ],
+                  "blocked_counts": {
+                    "preserve_registered_variant_no_rewrite": 4,
+                    "no_lossless_token_alignment": 2,
+                    "opposed_qualifier_or_grammatical_number_changed": 2
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1159
+      },
+      {
+        "journal_id": 8,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:4",
+            "sequence": 4,
+            "raw_text": "hypotension means low blood pressure.",
+            "normalized_text": "hypotension means low blood pressure.",
+            "translated_text": "La hipotensión significa presión arterial baja.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647860.390764,
+            "started_at": 1792647860.3922915,
+            "completed_at": 1792647861.0212946,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 625.0,
+            "asr_first_seen_at": 11.25,
+            "ready_at": 15.51600000000326,
+            "normalization_latency_ms": 37.1005,
+            "timing": {
+              "asr_first_seen_mono": 192403.218,
+              "ready_mono": 192407.484,
+              "normalized_completed_mono": 192407.515,
+              "queued_mono": 192407.531,
+              "translation_started_mono": 192407.531,
+              "translation_completed_mono": 192408.156,
+              "provider_attempts_ms": [
+                625.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 4,
+            "successes": 4,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1471
+      },
+      {
+        "journal_id": 9,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "remain",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:5",
+                "text": "These terms describe different conditions and should",
+                "start_time": 2.68,
+                "end_time": 17.02,
+                "emitted_at": 18.094000000011874,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 14.672000000020489,
+                "latency_ms": 3422.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:5",
+                "raw_text": "These terms describe different conditions and should",
+                "normalized_text": "These terms describe different conditions and should",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 96.3916,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 997
+      },
+      {
+        "journal_id": 10,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:5",
+            "sequence": 5,
+            "raw_text": "These terms describe different conditions and should",
+            "normalized_text": "These terms describe different conditions and should",
+            "translated_text": "Estos términos describen afecciones diferentes y deben",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647863.037489,
+            "started_at": 1792647863.0393612,
+            "completed_at": 1792647863.719993,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 688.0,
+            "asr_first_seen_at": 14.672000000020489,
+            "ready_at": 18.094000000011874,
+            "normalization_latency_ms": 96.3916,
+            "timing": {
+              "asr_first_seen_mono": 192406.64,
+              "ready_mono": 192410.062,
+              "normalized_completed_mono": 192410.156,
+              "queued_mono": 192410.171,
+              "translation_started_mono": 192410.171,
+              "translation_completed_mono": 192410.859,
+              "provider_attempts_ms": [
+                688.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 5,
+            "successes": 5,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1519
+      },
+      {
+        "journal_id": 11,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:6",
+                "text": "remain clearly distinct.",
+                "start_time": 2.68,
+                "end_time": 18.7,
+                "emitted_at": 20.26600000000326,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 17.610000000015134,
+                "latency_ms": 2656.0,
+                "word_count": 3,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:6",
+                "raw_text": "remain clearly distinct.",
+                "normalized_text": "remain clearly distinct.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 17.5393,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 912
+      },
+      {
+        "journal_id": 12,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:6",
+            "sequence": 6,
+            "raw_text": "remain clearly distinct.",
+            "normalized_text": "remain clearly distinct.",
+            "translated_text": "distinguirse claramente.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647865.1179163,
+            "started_at": 1792647865.1199117,
+            "completed_at": 1792647865.7129545,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 593.0,
+            "asr_first_seen_at": 17.610000000015134,
+            "ready_at": 20.26600000000326,
+            "normalization_latency_ms": 17.5393,
+            "timing": {
+              "asr_first_seen_mono": 192409.578,
+              "ready_mono": 192412.234,
+              "normalized_completed_mono": 192412.25,
+              "queued_mono": 192412.25,
+              "translation_started_mono": 192412.25,
+              "translation_completed_mono": 192412.843,
+              "provider_attempts_ms": [
+                593.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 6,
+            "successes": 6,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1431
+      },
+      {
+        "journal_id": 13,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "hyper tension",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:7",
+                "text": "The first patient has resistance,",
+                "start_time": 2.68,
+                "end_time": 23.48,
+                "emitted_at": 24.53200000000652,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 20.985000000015134,
+                "latency_ms": 3547.0,
+                "word_count": 5,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:7",
+                "raw_text": "The first patient has resistance,",
+                "normalized_text": "The first patient has resistance,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 49.2236,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 941
+      },
+      {
+        "journal_id": 14,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:7",
+            "sequence": 7,
+            "raw_text": "The first patient has resistance,",
+            "normalized_text": "The first patient has resistance,",
+            "translated_text": "El primer paciente presenta resistencia,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647869.4191983,
+            "started_at": 1792647869.420199,
+            "completed_at": 1792647870.0950987,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 688.0,
+            "asr_first_seen_at": 20.985000000015134,
+            "ready_at": 24.53200000000652,
+            "normalization_latency_ms": 49.2236,
+            "timing": {
+              "asr_first_seen_mono": 192412.953,
+              "ready_mono": 192416.5,
+              "normalized_completed_mono": 192416.546,
+              "queued_mono": 192416.546,
+              "translation_started_mono": 192416.546,
+              "translation_completed_mono": 192417.234,
+              "provider_attempts_ms": [
+                672.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 7,
+            "successes": 7,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1465
+      },
+      {
+        "journal_id": 15,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "The second patient",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:8",
+                "text": "hyper tension and chronic kidney disease.",
+                "start_time": 2.68,
+                "end_time": 27.06,
+                "emitted_at": 27.67200000002049,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 23.828000000008615,
+                "latency_ms": 3844.0,
+                "word_count": 6,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:8",
+                "raw_text": "hyper tension and chronic kidney disease.",
+                "normalized_text": "hyper tension and chronic kidney disease.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "chronic kidney disease"
+                ],
+                "processing_ms": 57.0881,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_5d6308ddf615"
+                  ],
+                  "blocked_counts": {
+                    "function_word_sequence_changed": 1,
+                    "no_lossless_token_alignment": 1
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1093
+      },
+      {
+        "journal_id": 16,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:8",
+            "sequence": 8,
+            "raw_text": "hyper tension and chronic kidney disease.",
+            "normalized_text": "hyper tension and chronic kidney disease.",
+            "translated_text": "hipertensión y enfermedad renal crónica.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647872.5684488,
+            "started_at": 1792647872.569449,
+            "completed_at": 1792647873.1719203,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 609.0,
+            "asr_first_seen_at": 23.828000000008615,
+            "ready_at": 27.67200000002049,
+            "normalization_latency_ms": 57.0881,
+            "timing": {
+              "asr_first_seen_mono": 192415.796,
+              "ready_mono": 192419.64,
+              "normalized_completed_mono": 192419.703,
+              "queued_mono": 192419.703,
+              "translation_started_mono": 192419.703,
+              "translation_completed_mono": 192420.312,
+              "provider_attempts_ms": [
+                609.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 8,
+            "successes": 8,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1484
+      },
+      {
+        "journal_id": 17,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "hypotension, there is",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:9",
+                "text": "The second patient has orthostatic",
+                "start_time": 2.68,
+                "end_time": 32.24,
+                "emitted_at": 32.594000000011874,
+                "reason": "hard_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 27.062999999994645,
+                "latency_ms": 5531.0,
+                "word_count": 5,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:9",
+                "raw_text": "The second patient has orthostatic",
+                "normalized_text": "The second patient has orthostatic",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 25.2973,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 958
+      },
+      {
+        "journal_id": 18,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:9",
+            "sequence": 9,
+            "raw_text": "The second patient has orthostatic",
+            "normalized_text": "The second patient has orthostatic",
+            "translated_text": "El segundo paciente presenta hipotensión ortostática",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647877.4530146,
+            "started_at": 1792647877.4540086,
+            "completed_at": 1792647878.1936698,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 735.0,
+            "asr_first_seen_at": 27.062999999994645,
+            "ready_at": 32.594000000011874,
+            "normalization_latency_ms": 25.2973,
+            "timing": {
+              "asr_first_seen_mono": 192419.031,
+              "ready_mono": 192424.562,
+              "normalized_completed_mono": 192424.578,
+              "queued_mono": 192424.593,
+              "translation_started_mono": 192424.593,
+              "translation_completed_mono": 192425.328,
+              "provider_attempts_ms": [
+                735.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 9,
+            "successes": 9,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1485
+      },
+      {
+        "journal_id": 19,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "there is no evidence of primary",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:10",
+                "text": "hypotension,",
+                "start_time": 2.68,
+                "end_time": 33.98,
+                "emitted_at": 34.469000000011874,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 30.062999999994645,
+                "latency_ms": 4406.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:10",
+                "raw_text": "hypotension,",
+                "normalized_text": "hypotension,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "hypotension"
+                ],
+                "processing_ms": 1.7303,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_ee6fe3240e4f"
+                  ],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 929
+      },
+      {
+        "journal_id": 20,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:10",
+            "sequence": 10,
+            "raw_text": "hypotension,",
+            "normalized_text": "hypotension,",
+            "translated_text": "hipotensión,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647879.3019671,
+            "started_at": 1792647879.3029702,
+            "completed_at": 1792647879.9376225,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 641.0,
+            "asr_first_seen_at": 30.062999999994645,
+            "ready_at": 34.469000000011874,
+            "normalization_latency_ms": 1.7303,
+            "timing": {
+              "asr_first_seen_mono": 192422.031,
+              "ready_mono": 192426.437,
+              "normalized_completed_mono": 192426.437,
+              "queued_mono": 192426.437,
+              "translation_started_mono": 192426.437,
+              "translation_completed_mono": 192427.078,
+              "provider_attempts_ms": [
+                641.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 10,
+            "successes": 10,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1403
+      },
+      {
+        "journal_id": 21,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "in",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:11",
+                "text": "there is no evidence of primary outlawed",
+                "start_time": 2.68,
+                "end_time": 36.23,
+                "emitted_at": 36.719000000011874,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 32.5,
+                "latency_ms": 4219.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:11",
+                "raw_text": "there is no evidence of primary outlawed",
+                "normalized_text": "there is no evidence of primary outlawed",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 38.5975,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 945
+      },
+      {
+        "journal_id": 22,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:11",
+            "sequence": 11,
+            "raw_text": "there is no evidence of primary outlawed",
+            "normalized_text": "there is no evidence of primary outlawed",
+            "translated_text": "no hay indicios de que se trate de un caso de «outlawed» primario.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647881.5890505,
+            "started_at": 1792647881.5900505,
+            "completed_at": 1792647882.3160505,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 735.0,
+            "asr_first_seen_at": 32.5,
+            "ready_at": 36.719000000011874,
+            "normalization_latency_ms": 38.5975,
+            "timing": {
+              "asr_first_seen_mono": 192424.468,
+              "ready_mono": 192428.687,
+              "normalized_completed_mono": 192428.718,
+              "queued_mono": 192428.718,
+              "translation_started_mono": 192428.718,
+              "translation_completed_mono": 192429.453,
+              "provider_attempts_ms": [
+                735.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 11,
+            "successes": 11,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1501
+      },
+      {
+        "journal_id": 23,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "The report",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:12",
+                "text": "in either patient.",
+                "start_time": 2.68,
+                "end_time": 39.88,
+                "emitted_at": 40.469000000011874,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 36.578000000008615,
+                "latency_ms": 3891.0,
+                "word_count": 3,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:12",
+                "raw_text": "in either patient.",
+                "normalized_text": "in either patient.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 7.6593,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 907
+      },
+      {
+        "journal_id": 24,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:12",
+            "sequence": 12,
+            "raw_text": "in either patient.",
+            "normalized_text": "in either patient.",
+            "translated_text": "en ninguno de los dos pacientes.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647885.3070195,
+            "started_at": 1792647885.3070195,
+            "completed_at": 1792647885.9751887,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 672.0,
+            "asr_first_seen_at": 36.578000000008615,
+            "ready_at": 40.469000000011874,
+            "normalization_latency_ms": 7.6593,
+            "timing": {
+              "asr_first_seen_mono": 192428.546,
+              "ready_mono": 192432.437,
+              "normalized_completed_mono": 192432.437,
+              "queued_mono": 192432.437,
+              "translation_started_mono": 192432.437,
+              "translation_completed_mono": 192433.109,
+              "provider_attempts_ms": [
+                672.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 12,
+            "successes": 12,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1434
+      },
+      {
+        "journal_id": 25,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "the astolic",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:13",
+                "text": "The report includes systolic blood pressure,",
+                "start_time": 2.68,
+                "end_time": 43.75,
+                "emitted_at": 44.40700000000652,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 40.187999999994645,
+                "latency_ms": 4219.0,
+                "word_count": 6,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:13",
+                "raw_text": "The report includes systolic blood pressure,",
+                "normalized_text": "The report includes systolic blood pressure,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "blood pressure",
+                  "systolic blood pressure"
+                ],
+                "processing_ms": 51.8634,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_bd01a89edc9a",
+                    "HTN_ce88c1a364ff"
+                  ],
+                  "blocked_counts": {
+                    "opposed_qualifier_or_grammatical_number_changed": 1
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1107
+      },
+      {
+        "journal_id": 26,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:13",
+            "sequence": 13,
+            "raw_text": "The report includes systolic blood pressure,",
+            "normalized_text": "The report includes systolic blood pressure,",
+            "translated_text": "El informe incluye la presión arterial sistólica,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647889.2922516,
+            "started_at": 1792647889.2922516,
+            "completed_at": 1792647890.015177,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 735.0,
+            "asr_first_seen_at": 40.187999999994645,
+            "ready_at": 44.40700000000652,
+            "normalization_latency_ms": 51.8634,
+            "timing": {
+              "asr_first_seen_mono": 192432.156,
+              "ready_mono": 192436.375,
+              "normalized_completed_mono": 192436.421,
+              "queued_mono": 192436.421,
+              "translation_started_mono": 192436.421,
+              "translation_completed_mono": 192437.156,
+              "provider_attempts_ms": [
+                735.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 13,
+            "successes": 13,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1504
+      },
+      {
+        "journal_id": 27,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "high rate and kidney",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:14",
+                "text": "the astolic blood pressure,",
+                "start_time": 2.68,
+                "end_time": 46.37,
+                "emitted_at": 46.90700000000652,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 43.562999999994645,
+                "latency_ms": 3344.0,
+                "word_count": 4,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:14",
+                "raw_text": "the astolic blood pressure,",
+                "normalized_text": "the astolic blood pressure,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "blood pressure"
+                ],
+                "processing_ms": 18.0014,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_bd01a89edc9a"
+                  ],
+                  "blocked_counts": {
+                    "function_word_sequence_changed": 3,
+                    "no_lossless_token_alignment": 2
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1035
+      },
+      {
+        "journal_id": 28,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:14",
+            "sequence": 14,
+            "raw_text": "the astolic blood pressure,",
+            "normalized_text": "the astolic blood pressure,",
+            "translated_text": "la presión arterial sistólica,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647891.7593641,
+            "started_at": 1792647891.7593641,
+            "completed_at": 1792647892.36617,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 610.0,
+            "asr_first_seen_at": 43.562999999994645,
+            "ready_at": 46.90700000000652,
+            "normalization_latency_ms": 18.0014,
+            "timing": {
+              "asr_first_seen_mono": 192435.531,
+              "ready_mono": 192438.875,
+              "normalized_completed_mono": 192438.89,
+              "queued_mono": 192438.89,
+              "translation_started_mono": 192438.89,
+              "translation_completed_mono": 192439.5,
+              "provider_attempts_ms": [
+                610.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 14,
+            "successes": 14,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1445
+      },
+      {
+        "journal_id": 29,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "Blood pressure",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:15",
+                "text": "high rate and kidney function.",
+                "start_time": 2.68,
+                "end_time": 48.53,
+                "emitted_at": 48.969000000011874,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 45.64100000000326,
+                "latency_ms": 3328.0,
+                "word_count": 5,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:15",
+                "raw_text": "high rate and kidney function.",
+                "normalized_text": "high rate and kidney function.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "kidney function"
+                ],
+                "processing_ms": 25.0715,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_813c32e37386"
+                  ],
+                  "blocked_counts": {
+                    "function_word_sequence_changed": 1,
+                    "no_lossless_token_alignment": 1
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1051
+      },
+      {
+        "journal_id": 30,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:15",
+            "sequence": 15,
+            "raw_text": "high rate and kidney function.",
+            "normalized_text": "high rate and kidney function.",
+            "translated_text": "frecuencia elevada y función renal.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647893.82497,
+            "started_at": 1792647893.8269808,
+            "completed_at": 1792647894.4419222,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 625.0,
+            "asr_first_seen_at": 45.64100000000326,
+            "ready_at": 48.969000000011874,
+            "normalization_latency_ms": 25.0715,
+            "timing": {
+              "asr_first_seen_mono": 192437.609,
+              "ready_mono": 192440.937,
+              "normalized_completed_mono": 192440.953,
+              "queued_mono": 192440.953,
+              "translation_started_mono": 192440.953,
+              "translation_completed_mono": 192441.578,
+              "provider_attempts_ms": [
+                625.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 15,
+            "successes": 15,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1460
+      },
+      {
+        "journal_id": 31,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "mercury",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:16",
+                "text": "Blood pressure increase by 10 mm of",
+                "start_time": 2.68,
+                "end_time": 51.07,
+                "emitted_at": 51.969000000011874,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 48.64100000000326,
+                "latency_ms": 3328.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:16",
+                "raw_text": "Blood pressure increase by 10 mm of",
+                "normalized_text": "Blood pressure increase by 10 mm of",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "blood pressure"
+                ],
+                "processing_ms": 35.3605,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_bd01a89edc9a"
+                  ],
+                  "blocked_counts": {
+                    "no_lossless_token_alignment": 3,
+                    "function_word_sequence_changed": 2
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1051
+      },
+      {
+        "journal_id": 32,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:16",
+            "sequence": 16,
+            "raw_text": "Blood pressure increase by 10 mm of",
+            "normalized_text": "Blood pressure increase by 10 mm of",
+            "translated_text": "La presión arterial aumenta en 10 mm de",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647896.8360362,
+            "started_at": 1792647896.8370447,
+            "completed_at": 1792647897.5738578,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 735.0,
+            "asr_first_seen_at": 48.64100000000326,
+            "ready_at": 51.969000000011874,
+            "normalization_latency_ms": 35.3605,
+            "timing": {
+              "asr_first_seen_mono": 192440.609,
+              "ready_mono": 192443.937,
+              "normalized_completed_mono": 192443.968,
+              "queued_mono": 192443.968,
+              "translation_started_mono": 192443.968,
+              "translation_completed_mono": 192444.703,
+              "provider_attempts_ms": [
+                735.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 16,
+            "successes": 16,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1476
+      },
+      {
+        "journal_id": 33,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "The recorded dose",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:17",
+                "text": "mercury.",
+                "start_time": 2.68,
+                "end_time": 52.84,
+                "emitted_at": 53.14100000000326,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 51.312999999994645,
+                "latency_ms": 1828.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:17",
+                "raw_text": "mercury.",
+                "normalized_text": "mercury.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 1.5744,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 883
+      },
+      {
+        "journal_id": 34,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:17",
+            "sequence": 17,
+            "raw_text": "mercury.",
+            "normalized_text": "mercury.",
+            "translated_text": "mercurio.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647897.9771543,
+            "started_at": 1792647897.9771543,
+            "completed_at": 1792647898.6667173,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 687.0,
+            "asr_first_seen_at": 51.312999999994645,
+            "ready_at": 53.14100000000326,
+            "normalization_latency_ms": 1.5744,
+            "timing": {
+              "asr_first_seen_mono": 192443.281,
+              "ready_mono": 192445.109,
+              "normalized_completed_mono": 192445.109,
+              "queued_mono": 192445.109,
+              "translation_started_mono": 192445.109,
+              "translation_completed_mono": 192445.796,
+              "provider_attempts_ms": [
+                687.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 17,
+            "successes": 17,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1390
+      },
+      {
+        "journal_id": 35,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "not 15",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:18",
+                "text": "The recorded dose was 5 mg,",
+                "start_time": 2.68,
+                "end_time": 56.27,
+                "emitted_at": 56.985000000015134,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 52.53200000000652,
+                "latency_ms": 4453.0,
+                "word_count": 6,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:18",
+                "raw_text": "The recorded dose was 5 mg,",
+                "normalized_text": "The recorded dose was 5 mg,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 28.8207,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 918
+      },
+      {
+        "journal_id": 36,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:18",
+            "sequence": 18,
+            "raw_text": "The recorded dose was 5 mg,",
+            "normalized_text": "The recorded dose was 5 mg,",
+            "translated_text": "La dosis registrada fue de 5 mg,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647901.848476,
+            "started_at": 1792647901.8494766,
+            "completed_at": 1792647902.458483,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 609.0,
+            "asr_first_seen_at": 52.53200000000652,
+            "ready_at": 56.985000000015134,
+            "normalization_latency_ms": 28.8207,
+            "timing": {
+              "asr_first_seen_mono": 192444.5,
+              "ready_mono": 192448.953,
+              "normalized_completed_mono": 192448.984,
+              "queued_mono": 192448.984,
+              "translation_started_mono": 192448.984,
+              "translation_completed_mono": 192449.593,
+              "provider_attempts_ms": [
+                609.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 18,
+            "successes": 18,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1448
+      },
+      {
+        "journal_id": 37,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "We",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:19",
+                "text": "not 15 mg.",
+                "start_time": 2.68,
+                "end_time": 59.19,
+                "emitted_at": 59.625,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 56.235000000015134,
+                "latency_ms": 3390.0,
+                "word_count": 3,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:19",
+                "raw_text": "not 15 mg.",
+                "normalized_text": "not 15 mg.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 5.1235,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 863
+      },
+      {
+        "journal_id": 38,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:19",
+            "sequence": 19,
+            "raw_text": "not 15 mg.",
+            "normalized_text": "not 15 mg.",
+            "translated_text": "no 15 mg.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647904.465407,
+            "started_at": 1792647904.4659107,
+            "completed_at": 1792647905.1001112,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 641.0,
+            "asr_first_seen_at": 56.235000000015134,
+            "ready_at": 59.625,
+            "normalization_latency_ms": 5.1235,
+            "timing": {
+              "asr_first_seen_mono": 192448.203,
+              "ready_mono": 192451.593,
+              "normalized_completed_mono": 192451.593,
+              "queued_mono": 192451.593,
+              "translation_started_mono": 192451.593,
+              "translation_completed_mono": 192452.234,
+              "provider_attempts_ms": [
+                641.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 19,
+            "successes": 19,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1382
+      },
+      {
+        "journal_id": 39,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "inact",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:20",
+                "text": "We also reviewed physical activity and physical",
+                "start_time": 2.68,
+                "end_time": 63.1,
+                "emitted_at": 63.375,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 59.39100000000326,
+                "latency_ms": 3984.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:20",
+                "raw_text": "We also reviewed physical activity and physical",
+                "normalized_text": "We also reviewed physical activity and physical",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "physical activity"
+                ],
+                "processing_ms": 47.5591,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_50b4fc97bb14"
+                  ],
+                  "blocked_counts": {
+                    "function_word_sequence_changed": 1,
+                    "no_lossless_token_alignment": 1
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1075
+      },
+      {
+        "journal_id": 40,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:20",
+            "sequence": 20,
+            "raw_text": "We also reviewed physical activity and physical",
+            "normalized_text": "We also reviewed physical activity and physical",
+            "translated_text": "También hemos revisado «actividad física» y «físico»",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647908.2582507,
+            "started_at": 1792647908.2592638,
+            "completed_at": 1792647908.903983,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 641.0,
+            "asr_first_seen_at": 59.39100000000326,
+            "ready_at": 63.375,
+            "normalization_latency_ms": 47.5591,
+            "timing": {
+              "asr_first_seen_mono": 192451.359,
+              "ready_mono": 192455.343,
+              "normalized_completed_mono": 192455.39,
+              "queued_mono": 192455.39,
+              "translation_started_mono": 192455.39,
+              "translation_completed_mono": 192456.031,
+              "provider_attempts_ms": [
+                641.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 20,
+            "successes": 20,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1503
+      },
+      {
+        "journal_id": 41,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:21",
+                "text": "inactivity.",
+                "start_time": 2.68,
+                "end_time": 63.68,
+                "emitted_at": 64.40700000000652,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 63.094000000011874,
+                "latency_ms": 1313.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:21",
+                "raw_text": "inactivity.",
+                "normalized_text": "inactivity.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 1.7897,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 875
+      },
+      {
+        "journal_id": 42,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:21",
+            "sequence": 21,
+            "raw_text": "inactivity.",
+            "normalized_text": "inactivity.",
+            "translated_text": "inactividad física.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647909.242914,
+            "started_at": 1792647909.242914,
+            "completed_at": 1792647909.8375633,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 593.0,
+            "asr_first_seen_at": 63.094000000011874,
+            "ready_at": 64.40700000000652,
+            "normalization_latency_ms": 1.7897,
+            "timing": {
+              "asr_first_seen_mono": 192455.062,
+              "ready_mono": 192456.375,
+              "normalized_completed_mono": 192456.375,
+              "queued_mono": 192456.375,
+              "translation_started_mono": 192456.375,
+              "translation_completed_mono": 192456.968,
+              "provider_attempts_ms": [
+                593.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 21,
+            "successes": 21,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1405
+      },
+      {
+        "journal_id": 43,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "lifestyle modifications",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:22",
+                "text": "The patient discussed cardiovascular risks,",
+                "start_time": 2.68,
+                "end_time": 69.51,
+                "emitted_at": 69.70300000000861,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 64.5,
+                "latency_ms": 5203.0,
+                "word_count": 5,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:22",
+                "raw_text": "The patient discussed cardiovascular risks,",
+                "normalized_text": "The patient discussed cardiovascular risks,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 29.7426,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {
+                    "preserve_singular_plural_both_directions": 1,
+                    "no_lossless_token_alignment": 1
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1048
+      },
+      {
+        "journal_id": 44,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:22",
+            "sequence": 22,
+            "raw_text": "The patient discussed cardiovascular risks,",
+            "normalized_text": "The patient discussed cardiovascular risks,",
+            "translated_text": "El paciente habló sobre los riesgos cardiovasculares,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647914.5709763,
+            "started_at": 1792647914.57198,
+            "completed_at": 1792647915.2762165,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 703.0,
+            "asr_first_seen_at": 64.5,
+            "ready_at": 69.70300000000861,
+            "normalization_latency_ms": 29.7426,
+            "timing": {
+              "asr_first_seen_mono": 192456.468,
+              "ready_mono": 192461.671,
+              "normalized_completed_mono": 192461.703,
+              "queued_mono": 192461.703,
+              "translation_started_mono": 192461.703,
+              "translation_completed_mono": 192462.406,
+              "provider_attempts_ms": [
+                703.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 22,
+            "successes": 22,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1490
+      },
+      {
+        "journal_id": 45,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "Several",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:23",
+                "text": "lifestyle modifications and pharmacological therapy.",
+                "start_time": 2.68,
+                "end_time": 73.53999999999999,
+                "emitted_at": 73.875,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 68.71900000001187,
+                "latency_ms": 5156.0,
+                "word_count": 5,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:23",
+                "raw_text": "lifestyle modifications and pharmacological therapy.",
+                "normalized_text": "lifestyle modifications and pharmacological therapy.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "pharmacological therapy"
+                ],
+                "processing_ms": 35.5094,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_1e5b2c8f44aa"
+                  ],
+                  "blocked_counts": {
+                    "function_word_sequence_changed": 3,
+                    "no_lossless_token_alignment": 3,
+                    "preserve_singular_plural_both_directions": 2
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1165
+      },
+      {
+        "journal_id": 46,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:23",
+            "sequence": 23,
+            "raw_text": "lifestyle modifications and pharmacological therapy.",
+            "normalized_text": "lifestyle modifications and pharmacological therapy.",
+            "translated_text": "modificaciones del estilo de vida y tratamiento farmacológico.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647918.7436705,
+            "started_at": 1792647918.7451596,
+            "completed_at": 1792647919.3832343,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 640.0,
+            "asr_first_seen_at": 68.71900000001187,
+            "ready_at": 73.875,
+            "normalization_latency_ms": 35.5094,
+            "timing": {
+              "asr_first_seen_mono": 192460.687,
+              "ready_mono": 192465.843,
+              "normalized_completed_mono": 192465.875,
+              "queued_mono": 192465.875,
+              "translation_started_mono": 192465.875,
+              "translation_completed_mono": 192466.515,
+              "provider_attempts_ms": [
+                640.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 23,
+            "successes": 23,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1521
+      },
+      {
+        "journal_id": 47,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "the clinical",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:24",
+                "text": "Several blood pressure measurements were recorded by",
+                "start_time": 2.68,
+                "end_time": 77.75,
+                "emitted_at": 78.28200000000652,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 73.59400000001187,
+                "latency_ms": 4688.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:24",
+                "raw_text": "Several blood pressure measurements were recorded by",
+                "normalized_text": "Several blood pressure measurements were recorded by",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "blood pressure"
+                ],
+                "processing_ms": 47.0337,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_bd01a89edc9a"
+                  ],
+                  "blocked_counts": {
+                    "no_lossless_token_alignment": 2,
+                    "function_word_sequence_changed": 1
+                  },
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 1106
+      },
+      {
+        "journal_id": 48,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:24",
+            "sequence": 24,
+            "raw_text": "Several blood pressure measurements were recorded by",
+            "normalized_text": "Several blood pressure measurements were recorded by",
+            "translated_text": "Se registraron varias mediciones de la presión arterial realizadas por",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647923.1675265,
+            "started_at": 1792647923.1685336,
+            "completed_at": 1792647923.8376658,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 672.0,
+            "asr_first_seen_at": 73.59400000001187,
+            "ready_at": 78.28200000000652,
+            "normalization_latency_ms": 47.0337,
+            "timing": {
+              "asr_first_seen_mono": 192465.562,
+              "ready_mono": 192470.25,
+              "normalized_completed_mono": 192470.296,
+              "queued_mono": 192470.296,
+              "translation_started_mono": 192470.296,
+              "translation_completed_mono": 192470.968,
+              "provider_attempts_ms": [
+                672.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 24,
+            "successes": 24,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1539
+      },
+      {
+        "journal_id": 49,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "Finally",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:25",
+                "text": "the clinical team.",
+                "start_time": 2.68,
+                "end_time": 79.51,
+                "emitted_at": 79.82800000000861,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 77.67200000002049,
+                "latency_ms": 2156.0,
+                "word_count": 3,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:25",
+                "raw_text": "the clinical team.",
+                "normalized_text": "the clinical team.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 7.4466,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 902
+      },
+      {
+        "journal_id": 50,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:25",
+            "sequence": 25,
+            "raw_text": "the clinical team.",
+            "normalized_text": "the clinical team.",
+            "translated_text": "el equipo clínico.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647924.6676292,
+            "started_at": 1792647924.668629,
+            "completed_at": 1792647925.3075514,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 641.0,
+            "asr_first_seen_at": 77.67200000002049,
+            "ready_at": 79.82800000000861,
+            "normalization_latency_ms": 7.4466,
+            "timing": {
+              "asr_first_seen_mono": 192469.64,
+              "ready_mono": 192471.796,
+              "normalized_completed_mono": 192471.796,
+              "queued_mono": 192471.796,
+              "translation_started_mono": 192471.796,
+              "translation_completed_mono": 192472.437,
+              "provider_attempts_ms": [
+                641.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 25,
+            "successes": 25,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1417
+      },
+      {
+        "journal_id": 51,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "the report states that there is no",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:26",
+                "text": "Finally,",
+                "start_time": 2.68,
+                "end_time": 82.75,
+                "emitted_at": 82.875,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 79.5,
+                "latency_ms": 3375.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:26",
+                "raw_text": "Finally,",
+                "normalized_text": "Finally,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 1.6441,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 863
+      },
+      {
+        "journal_id": 52,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:26",
+            "sequence": 26,
+            "raw_text": "Finally,",
+            "normalized_text": "Finally,",
+            "translated_text": "Por último,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647927.7079635,
+            "started_at": 1792647927.7089703,
+            "completed_at": 1792647928.322899,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 610.0,
+            "asr_first_seen_at": 79.5,
+            "ready_at": 82.875,
+            "normalization_latency_ms": 1.6441,
+            "timing": {
+              "asr_first_seen_mono": 192471.468,
+              "ready_mono": 192474.843,
+              "normalized_completed_mono": 192474.843,
+              "queued_mono": 192474.843,
+              "translation_started_mono": 192474.843,
+              "translation_completed_mono": 192475.453,
+              "provider_attempts_ms": [
+                610.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 26,
+            "successes": 26,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1367
+      },
+      {
+        "journal_id": 53,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "edema",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:27",
+                "text": "the report states that there is no",
+                "start_time": 2.68,
+                "end_time": 83.56,
+                "emitted_at": 83.76600000000326,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 80.43799999999464,
+                "latency_ms": 3328.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:27",
+                "raw_text": "the report states that there is no",
+                "normalized_text": "the report states that there is no",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 35.9229,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 942
+      },
+      {
+        "journal_id": 54,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:27",
+            "sequence": 27,
+            "raw_text": "the report states that there is no",
+            "normalized_text": "the report states that there is no",
+            "translated_text": "el informe afirma que no hay",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647928.6365366,
+            "started_at": 1792647928.6375456,
+            "completed_at": 1792647929.3095841,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 672.0,
+            "asr_first_seen_at": 80.43799999999464,
+            "ready_at": 83.76600000000326,
+            "normalization_latency_ms": 35.9229,
+            "timing": {
+              "asr_first_seen_mono": 192472.406,
+              "ready_mono": 192475.734,
+              "normalized_completed_mono": 192475.765,
+              "queued_mono": 192475.765,
+              "translation_started_mono": 192475.765,
+              "translation_completed_mono": 192476.437,
+              "provider_attempts_ms": [
+                672.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 27,
+            "successes": 27,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1461
+      },
+      {
+        "journal_id": 55,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "no chest pain and no short",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:28",
+                "text": "edema,",
+                "start_time": 2.68,
+                "end_time": 86.78,
+                "emitted_at": 86.875,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 83.43799999999464,
+                "latency_ms": 3437.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:28",
+                "raw_text": "edema,",
+                "normalized_text": "edema,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 2.0484,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 862
+      },
+      {
+        "journal_id": 56,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:28",
+            "sequence": 28,
+            "raw_text": "edema,",
+            "normalized_text": "edema,",
+            "translated_text": "edema,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647931.712875,
+            "started_at": 1792647931.7138739,
+            "completed_at": 1792647932.341271,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 625.0,
+            "asr_first_seen_at": 83.43799999999464,
+            "ready_at": 86.875,
+            "normalization_latency_ms": 2.0484,
+            "timing": {
+              "asr_first_seen_mono": 192475.406,
+              "ready_mono": 192478.843,
+              "normalized_completed_mono": 192478.843,
+              "queued_mono": 192478.843,
+              "translation_started_mono": 192478.843,
+              "translation_completed_mono": 192479.468,
+              "provider_attempts_ms": [
+                625.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 28,
+            "successes": 28,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1369
+      },
+      {
+        "journal_id": 57,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "breath.",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:29",
+                "text": "no chest pain and no shortness of",
+                "start_time": 2.68,
+                "end_time": 88.24,
+                "emitted_at": 88.375,
+                "reason": "soft_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 84.71900000001187,
+                "latency_ms": 3656.0,
+                "word_count": 7,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:29",
+                "raw_text": "no chest pain and no shortness of",
+                "normalized_text": "no chest pain and no shortness of",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [
+                  "chest pain"
+                ],
+                "processing_ms": 35.178,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [
+                    "HTN_1bce3b700f26"
+                  ],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 959
+      },
+      {
+        "journal_id": 58,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:30",
+                "text": "breath.",
+                "start_time": 2.68,
+                "end_time": 88.24,
+                "emitted_at": 88.67200000002049,
+                "reason": "punctuation",
+                "boundary_kind": "strong_punctuation",
+                "first_seen_at": 87.76600000000326,
+                "latency_ms": 906.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:30",
+                "raw_text": "breath.",
+                "normalized_text": "breath.",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 1.7588,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 861
+      },
+      {
+        "journal_id": 59,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:29",
+            "sequence": 29,
+            "raw_text": "no chest pain and no shortness of",
+            "normalized_text": "no chest pain and no shortness of",
+            "translated_text": "sin dolor torácico ni dificultad para respirar",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647933.2442973,
+            "started_at": 1792647933.2459238,
+            "completed_at": 1792647934.5199552,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 1281.0,
+            "asr_first_seen_at": 84.71900000001187,
+            "ready_at": 88.375,
+            "normalization_latency_ms": 35.178,
+            "timing": {
+              "asr_first_seen_mono": 192476.687,
+              "ready_mono": 192480.343,
+              "normalized_completed_mono": 192480.375,
+              "queued_mono": 192480.375,
+              "translation_started_mono": 192480.375,
+              "translation_completed_mono": 192481.656,
+              "provider_attempts_ms": [
+                1281.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 1,
+          "translation_metrics": {
+            "queued": 30,
+            "successes": 29,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1468
+      },
+      {
+        "journal_id": 60,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:30",
+            "sequence": 30,
+            "raw_text": "breath.",
+            "normalized_text": "breath.",
+            "translated_text": "respiración.",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647933.5078957,
+            "started_at": 1792647934.5218267,
+            "completed_at": 1792647935.1674442,
+            "queue_delay_ms": 1016.0,
+            "latency_ms": 640.0,
+            "asr_first_seen_at": 87.76600000000326,
+            "ready_at": 88.67200000002049,
+            "normalization_latency_ms": 1.7588,
+            "timing": {
+              "asr_first_seen_mono": 192479.734,
+              "ready_mono": 192480.64,
+              "normalized_completed_mono": 192480.64,
+              "queued_mono": 192480.64,
+              "translation_started_mono": 192481.656,
+              "translation_completed_mono": 192482.296,
+              "provider_attempts_ms": [
+                640.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 30,
+            "successes": 30,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1391
+      },
+      {
+        "journal_id": 61,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "most remain unchanged in",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:31",
+                "text": "This negative findings,",
+                "start_time": 2.68,
+                "end_time": 93.75999999999999,
+                "emitted_at": 93.73500000001513,
+                "reason": "soft_max_age",
+                "boundary_kind": "comma",
+                "first_seen_at": 89.375,
+                "latency_ms": 4360.0,
+                "word_count": 3,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:31",
+                "raw_text": "This negative findings,",
+                "normalized_text": "This negative findings,",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 8.3592,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 923
+      },
+      {
+        "journal_id": 62,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:31",
+            "sequence": 31,
+            "raw_text": "This negative findings,",
+            "normalized_text": "This negative findings,",
+            "translated_text": "Estos resultados negativos,",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647938.5789165,
+            "started_at": 1792647938.5789165,
+            "completed_at": 1792647939.2985237,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 719.0,
+            "asr_first_seen_at": 89.375,
+            "ready_at": 93.73500000001513,
+            "normalization_latency_ms": 8.3592,
+            "timing": {
+              "asr_first_seen_mono": 192481.343,
+              "ready_mono": 192485.703,
+              "normalized_completed_mono": 192485.718,
+              "queued_mono": 192485.718,
+              "translation_started_mono": 192485.718,
+              "translation_completed_mono": 192486.437,
+              "provider_attempts_ms": [
+                719.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 31,
+            "successes": 31,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1426
+      },
+      {
+        "journal_id": 63,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "translation",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:32",
+                "text": "most remain unchanged in the",
+                "start_time": 2.68,
+                "end_time": 94.25999999999999,
+                "emitted_at": 97.29700000002049,
+                "reason": "hard_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 91.76600000000326,
+                "latency_ms": 5531.0,
+                "word_count": 5,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:32",
+                "raw_text": "most remain unchanged in the",
+                "normalized_text": "most remain unchanged in the",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 22.8996,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 942
+      },
+      {
+        "journal_id": 64,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:32",
+            "sequence": 32,
+            "raw_text": "most remain unchanged in the",
+            "normalized_text": "most remain unchanged in the",
+            "translated_text": "la mayoría se mantienen sin cambios en el",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647942.1541896,
+            "started_at": 1792647942.1541896,
+            "completed_at": 1792647942.856064,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 703.0,
+            "asr_first_seen_at": 91.76600000000326,
+            "ready_at": 97.29700000002049,
+            "normalization_latency_ms": 22.8996,
+            "timing": {
+              "asr_first_seen_mono": 192483.734,
+              "ready_mono": 192489.265,
+              "normalized_completed_mono": 192489.281,
+              "queued_mono": 192489.281,
+              "translation_started_mono": 192489.281,
+              "translation_completed_mono": 192489.984,
+              "provider_attempts_ms": [
+                703.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 32,
+            "successes": 32,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1462
+      },
+      {
+        "journal_id": 65,
+        "message": {
+          "type": "segmentation",
+          "protocol_version": 1,
+          "session_id": "cea17b1975ec",
+          "segmentation": {
+            "pending_segment": "",
+            "ready_segments": [
+              {
+                "id": "cea17b1975ec:33",
+                "text": "translation",
+                "start_time": 2.68,
+                "end_time": 94.25999999999999,
+                "emitted_at": 99.73500000001513,
+                "reason": "hard_max_age",
+                "boundary_kind": "whitespace",
+                "first_seen_at": 94.20300000000861,
+                "latency_ms": 5532.0,
+                "word_count": 1,
+                "revisions_before_ready": 0,
+                "source_ids": [
+                  "source-1"
+                ],
+                "timing_precision": "source_line_bounds"
+              }
+            ],
+            "events": []
+          },
+          "normalization": {
+            "segments": [
+              {
+                "segment_id": "cea17b1975ec:33",
+                "raw_text": "translation",
+                "normalized_text": "translation",
+                "corrections": [],
+                "suggestions": [],
+                "known_terms": [],
+                "processing_ms": 1.5947,
+                "glossary": {
+                  "mode": "soft",
+                  "version": "medical-657-v1",
+                  "concept_ids": [],
+                  "blocked_counts": {},
+                  "applied": 0,
+                  "translation_context_enabled": true
+                }
+              }
+            ]
+          }
+        },
+        "retained_bytes": 879
+      },
+      {
+        "journal_id": 66,
+        "message": {
+          "type": "translation",
+          "session_id": "cea17b1975ec",
+          "translation": {
+            "session_id": "cea17b1975ec",
+            "segment_id": "cea17b1975ec:33",
+            "sequence": 33,
+            "raw_text": "translation",
+            "normalized_text": "translation",
+            "translated_text": "traducción",
+            "provider": "deepl",
+            "success": true,
+            "error": null,
+            "attempt_count": 1,
+            "queued_at": 1792647944.5694335,
+            "started_at": 1792647944.570939,
+            "completed_at": 1792647945.333045,
+            "queue_delay_ms": 0.0,
+            "latency_ms": 765.0,
+            "asr_first_seen_at": 94.20300000000861,
+            "ready_at": 99.73500000001513,
+            "normalization_latency_ms": 1.5947,
+            "timing": {
+              "asr_first_seen_mono": 192486.171,
+              "ready_mono": 192491.703,
+              "normalized_completed_mono": 192491.703,
+              "queued_mono": 192491.703,
+              "translation_started_mono": 192491.703,
+              "translation_completed_mono": 192492.468,
+              "provider_attempts_ms": [
+                765.0
+              ]
+            },
+            "source_language": "en",
+            "target_language": "es"
+          },
+          "translation_status": {
+            "state": "ready",
+            "provider": "deepl",
+            "message": "DeepL provider ready"
+          },
+          "translation_queue_depth": 0,
+          "translation_metrics": {
+            "queued": 33,
+            "successes": 33,
+            "failures": 0,
+            "retries": 0,
+            "timeouts": 0,
+            "stale_discarded": 0,
+            "max_queue_depth": 1,
+            "permanent_errors": 0,
+            "cancelled": 0,
+            "expired": 0,
+            "possible_duplicate_requests": 0,
+            "delivery_failures": 0
+          },
+          "protocol_version": 1,
+          "direction": {
+            "id": "en-es",
+            "source_language": "en",
+            "target_language": "es",
+            "normalization_mode": "identity"
+          }
+        },
+        "retained_bytes": 1395
+      }
+    ],
+    "transcript": {
+      "partial_text": "",
+      "confirmed_text": "Today we are discussing hyper tension and hypotension. Hyper tension means high blood pressure and hypotension means low blood pressure. These terms describe different conditions and should remain clearly distinct. The first patient has resistance, hyper tension and chronic kidney disease. The second patient has orthostatic hypotension, there is no evidence of primary outlawed in either patient. The report includes systolic blood pressure, the astolic blood pressure, high rate and kidney function. Blood pressure increase by 10 mm of mercury. The recorded dose was 5 mg, not 15 mg. We also reviewed physical activity and physical inactivity. The patient discussed cardiovascular risks, lifestyle modifications and pharmacological therapy. Several blood pressure measurements were recorded by the clinical team. Finally, the report states that there is no edema, no chest pain and no shortness of breath. This negative findings, most remain unchanged in the translation",
+      "history_truncated_characters": 0,
+      "partial_truncated_characters": 0
+    },
+    "config": {
+      "type": "config",
+      "state": "connected",
+      "session_id": "cea17b1975ec",
+      "direction": {
+        "id": "en-es",
+        "source_language": "en",
+        "target_language": "es",
+        "normalization_mode": "identity"
+      },
+      "normalization_mode": "identity",
+      "glossary": {
+        "mode": "soft",
+        "version": "medical-657-v1"
+      },
+      "sample_rate": 16000,
+      "capabilities": {
+        "terminology_normalizer": 1,
+        "translation_engine": 1,
+        "translation_provider": "deepl",
+        "caption_overlay": 1,
+        "persistent_captions": 1,
+        "caption_latency": 1,
+        "operator_console": 1,
+        "captions_clear": 1,
+        "operator_recovery": 1,
+        "session_direction": 1
+      },
+      "translation_status": {
+        "state": "ready",
+        "provider": "deepl",
+        "message": "DeepL provider ready"
+      },
+      "wlk": {
+        "type": "config",
+        "useAudioWorklet": true,
+        "mode": "full",
+        "session_language": "en",
+        "session_language_isolation": 1
+      },
+      "protocol_version": 1
+    },
+    "pending_segment": "",
+    "ui_history_segments": 500
+  },
+  "translator": {
+    "state": "ready",
+    "provider": "deepl",
+    "message": "DeepL provider ready"
+  },
+  "translator_verified": true,
+  "owns_session": false,
+  "session_open": false,
+  "can_change_direction": true,
+  "glossary": {
+    "mode": "soft",
+    "effective_mode": "soft",
+    "generation": 0,
+    "version": "medical-657-v1",
+    "concepts": 657,
+    "evaluated_english": 97,
+    "fuzzy_english": 80,
+    "exact_only_english": 577,
+    "error": null,
+    "forced_by_environment": false
+  },
+  "can_change_glossary": true,
+  "requires_stop_acknowledgement": false,
+  "can_start": true
+}

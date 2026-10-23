@@ -1,0 +1,169 @@
+CORRECCIONES ACOTADAS PARA CERRAR EL MVP
+22 de octubre de 2026 — medical-corrections-v1
+
+DOS FORMAS DE HACER LA TAREA
+
+1. Parche rápido de errores observados.
+   Revisar únicamente las lecturas recibidas y añadir correspondencias
+   literales cuando el término previsto y el contexto lo permitan. Ventaja:
+   alcance pequeño y reversión sencilla. Límite: mejora esas grafías concretas,
+   sin aumentar la cobertura de otras formas de escritura del catálogo.
+
+2. Barrido breve y conservador del glosario.
+   Añadir el parche anterior y revisar los 657 pares bilingües junto con las
+   567 formas registradas. Comprobar colisiones y reconocer variantes de
+   espacios/guiones que mantengan exactamente las mismas palabras. Ventaja:
+   más cobertura de referencia para traducción, sin relajar globalmente la
+   similitud. Límite: no equivale a aprender pronunciaciones ni validar audio
+   para los 560 conceptos que siguen sin evaluación ASR individual.
+
+DECISIÓN EJECUTADA
+
+Se ejecutó la segunda vía con el límite conservador indicado. Se conserva el
+paquete medical-657-v1 y la segmentación medical-streaming-v2. Las novedades
+están en un parche independiente, activo en modo soft y reversible.
+
+CORRECCIÓN AUTOMÁTICA: UNA REGLA OBSERVADA
+
+  primary adosterizm → primary aldosteronism
+
+La frase original aparece en la segunda lectura y el término previsto estaba
+en el guion y en el catálogo bilingüe investigado. La regla exige la frase
+completa, conserva su capitalización y no actúa sobre «adosterizm» aislado,
+otros errores no observados, plurales, identificadores o prefijos asociados.
+No cambia «primary outlawed» ni reconstruye libremente palabras perdidas.
+La grafía ASR es evidencia de calibración local, no un sinónimo biomédico
+validado por las fuentes. La confianza 1,0 de la auditoría señala coincidencia
+literal de la regla; no es una probabilidad de exactitud clínica.
+
+REVISIÓN, SIN SUSTITUCIÓN AUTOMÁTICA
+
+  resisted hypertension → propuesta: resistant hypertension
+  resisted hyper tension → la misma propuesta
+
+«Resisted» es una palabra válida y puede cambiar el significado. Por eso se
+conserva y se registra como SUGGESTION en Diagnostics / Corrections. La unión
+ya existente de hyper tension sí se mantiene. La propuesta tiene confianza
+semántica no validada, indicada con 0,0, y no se pasa como equivalencia al
+traductor. Tampoco se convierte systolic en diastolic, ni se modifican dosis,
+cifras o negaciones para ajustarlas al guion.
+
+RESULTADO DEL BARRIDO COMPLETO
+
+Se revisaron los 657 conceptos en inglés y español, incluyendo colisiones
+con las 567 formas preservadas. Se encontraron dos colisiones de siglas ya
+conocidas: MRA en inglés y ECA en español. Permanecen sin expansión automática.
+
+Se amplió el reconocimiento de escritura para 62 entradas inglesas y 4
+españolas, correspondientes a 62 conceptos distintos. Solo admiten las mismas
+palabras completas con ciertos espacios/guiones equivalentes. No se reescribe
+su texto; se identifica la entrada y se ofrece su pareja bilingüe como contexto
+al traductor. Por ejemplo:
+
+  white coat hypertension → referencia de white-coat hypertension
+  non elevated blood pressure → referencia de non-elevated blood pressure
+
+Se exige una expresión de al menos tres palabras, sin números, siglas ni
+símbolos en mayúsculas, sin conflicto con otro concepto y sin restricción de
+revisión contextual. No se aplican sustituciones de sinónimos, expansión de
+abreviaturas, eliminación de palabras ni cambios de número gramatical.
+El contexto prioriza la expresión completa: «non elevated blood pressure»
+recibe la referencia negativa, sin sustituirla por el subfragmento positivo.
+
+Esto amplía la referencia terminológica, no obliga a DeepL a usar una salida
+concreta. La calidad real debe comprobarse con otra lectura.
+
+COMPARACIÓN Y PRUEBAS
+
+En las 24 salidas guardadas de la segunda lectura, frente a streaming-v2:
+  - Una modificación adicional: primary adosterizm queda corregido.
+  - Una propuesta de revisión: resisted hypertension.
+  - Se conservan las tres uniones de hyper tension ya implementadas.
+  - Las dos apariciones de systolic y el texto «Not 50.mg.» permanecen intactos.
+
+En las 33 salidas de la primera lectura, el parche no introduce cambios
+adicionales frente a streaming-v2: primary outlawed sigue sin reconstruirse.
+Se conserva el RAW en todas las comparaciones.
+
+Pasaron 191 pruebas Python distintas: 190 en la suite principal, incluida la
+prueba nueva del recorrido por sockets locales hasta el proveedor/overlay,
+y una prueba en Chrome aislado de captions, recarga, cierre y nueva sesión.
+También pasaron las tres comprobaciones de interfaz. El proveedor se simula
+en las pruebas; no se hicieron llamadas reales a DeepL para validar el parche.
+
+Los 153 controles anteriores coinciden con lo esperado; 96 de los 97 controles
+de presión coinciden. Se mantiene la abstención previa ante «antihypertension
+medication». Ninguno de los 233 controles negativos se reescribe.
+
+En nueve transcripciones ASR guardadas, sobre 4204 palabras por modelo:
+  small:          131 errores antes, 131 después
+  medium:         100 errores antes, 100 después
+  large-v3-turbo:  131 errores antes, 131 después
+
+No hay regresión de WER. Son referencias provisionales y reproducción de
+texto ya guardado; no se volvió a reconocer audio ni se midió OBS. En 30
+segmentos cortos, la normalización local tuvo mediana de 49,9 ms y percentil
+95 de 67,1 ms. Esto no mide la latencia física de voz a pantalla.
+
+La validación cubre ausencia de nuevas reescrituras en los 657 canónicos
+ingleses, variantes de guion, identificadores, negaciones, cifras, colisiones,
+versiones incompatibles, paquete dañado y ambos niveles de reversión. Los
+manifiestos o reglas con tipos JSON incorrectos también vuelven al modo seguro.
+Incluso un manifiesto recalculado no permite introducir una regla como systolic →
+diastolic: el conjunto de reparaciones semánticas está cerrado en el código.
+
+REVERSIÓN Y ESTADO ACTUAL
+
+El parche está activo en la aplicación local. La consola se dejó en IDLE,
+English → Español, «Activo para pruebas», con el Blue Yeti seleccionado y
+micrófono inactivo. ASR conserva el modelo small existente, sin recargarlo.
+La captura que seguía abierta se cerró con STOP y terminó con resultado
+complete antes de reiniciar únicamente FastAPI.
+
+Reversión habitual:
+  STOP → esperar cierre → «Desactivado / volver al anterior» → START.
+Esto desactiva todo el paquete soft, incluida la segmentación nueva.
+
+Reversión solo de este último parche, manteniendo streaming-v2:
+  Detener sesiones y FastAPI, definir TRAD_GLOSSARY_PATCH=off en el entorno
+  de arranque y volver a iniciar FastAPI con su comando habitual.
+  Retirar esa variable o usar on para reactivarlo tras reiniciar.
+
+«Observación» conserva la salida anterior y muestra propuestas; no incorpora
+las referencias nuevas al traductor. La selección global de modo sigue
+siendo persistente y queda fija durante cada sesión.
+
+Si el parche falta o no valida su integridad/versión, se mantiene activo el
+glosario con streaming-v2 y se muestra el problema. No se altera el original.
+Si se cambia de versión del paquete base, se debe revisar y reconstruir el
+parche correspondiente; no se trasladan sus reglas silenciosamente.
+
+ARCHIVOS Y TRAZABILIDAD
+
+Reglas independientes:
+  glossaries/releases/medical-corrections-v1/rules.json
+  glossaries/releases/medical-corrections-v1/manifest.json
+Código del parche: app/terminology/correction_patch.py
+Conexión: app/terminology/rollout.py y metadatos de sesión ASR.
+Copias anteriores del código: backups/glossary-patch-v1/
+
+Auditoría completa: benchmarks/glossary_patch_v1/catalog_audit.json
+Comparaciones: benchmarks/glossary_patch_v1/evaluation.json
+Pruebas: benchmarks/glossary_patch_v1/tests.log, pipeline_tests.log,
+        browser_tests.log e interface_tests.json
+Estado: benchmarks/glossary_patch_v1/readiness.json y ready.png
+Integridad: benchmarks/glossary_patch_v1/preservation_final.json e
+           implementation_manifest.json
+
+La segunda lectura queda preservada en second_reading.json y su cierre en
+second_reading_closed.json, dentro de esa misma carpeta. Se guardó también
+el registro previo al reinicio. No se modificaron el glosario original, la
+investigación, el paquete v1 ni las evidencias de las entregas anteriores.
+No se hizo commit ni se restableció trabajo previo del usuario.
+
+SIGUIENTE TAREA
+
+El lanzador único de PowerShell, la solicitud de IP del proyector y la gestión
+de arranque/cierre de servidores quedan para la siguiente tarea. Esta entrega
+se limita a las correcciones y su validación. Al volver, se puede repetir la
+lectura en http://localhost:8010/operator antes de esa fase de preparación.

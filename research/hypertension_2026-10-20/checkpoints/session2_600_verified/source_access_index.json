@@ -1,0 +1,2452 @@
+{
+  "updated_at_utc": "2026-10-20T23:00:06+00:00",
+  "policy": "Source availability does not mean every page was read. Local source copies are excluded from the delivery archive.",
+  "sources": [
+    {
+      "source_id": "S01",
+      "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 15,
+      "extracted_text_sha256": "39bd960cb8f268dc02361be390cd207fa1758f60dc3b8a84800a450db4dde390",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S01.source",
+          "bytes": 399370,
+          "sha256": "6be32179f547caa8a94e5406e4a53ef86751f5fc582d183e91fb6b646458d6bc"
+        }
+      ]
+    },
+    {
+      "source_id": "S02",
+      "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S03",
+      "url": "https://www.acc.org/About-ACC/Press-Releases/2025/08/13/20/03/New-high-blood-pressure-guideline-emphasizes-prevention-early-treatment-to-reduce-CVD-risk",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 5,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 8,
+      "extracted_text_sha256": "fd0481a21a9de7382332e712ce93ee83b1ead292e9d7498f2c04e05b6ef50199",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S03.source",
+          "bytes": 282943,
+          "sha256": "8a96669d5e98efd3693d88118e83358d3f02957eb5503be06ff1009343a86636"
+        }
+      ]
+    },
+    {
+      "source_id": "S04",
+      "url": "https://kdigo.org/wp-content/uploads/2021/03/Top-10-Takeaways-Clinicians-KDIGO-BP-Guideline.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 3,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "2ecb36c56c85f761549bf6804d45261c3e353af919e7ea72890bcb196cabcf6e",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S04.source",
+          "bytes": 537457,
+          "sha256": "0a81638ee657971e9216a271ccfc2b2453ee0e01b753f5b4bd00d28be5559ff1"
+        }
+      ]
+    },
+    {
+      "source_id": "S05",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 42,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 199,
+      "extracted_text_sha256": "549c18a801de8b9f4b1718c74822e43e065dc8cfea3e0bc12c75ddfe02c8667c",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S05.source",
+          "bytes": 5838922,
+          "sha256": "0b77a9e32ca6c7bbccbddf902be4427bf8bc0d2dd7e3ffbc18042f602f371b27"
+        }
+      ]
+    },
+    {
+      "source_id": "S06",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/hypertension",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 34,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 8,
+      "extracted_text_sha256": "e10ee2566fc2f7d88f2f6e38a6c58354a891b5e5a9cabc43bdc5c23e1ea57926",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S06.source",
+          "bytes": 114428,
+          "sha256": "9d4799c1a4efe05625052d1e14739cec945936d651423a7060c3567b5f781635"
+        }
+      ]
+    },
+    {
+      "source_id": "S07",
+      "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 13,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 6,
+      "extracted_text_sha256": "a573d19d0342004a8a20597354993aebb2da649ab7f4a0f09ba59a2becd4e0d3",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S07.web.txt",
+          "bytes": 13277,
+          "sha256": "2f7d52107703e4ddcad01ed678fd19692bf8656a94c0645f4e552e0ed5e0bde6"
+        }
+      ]
+    },
+    {
+      "source_id": "S08",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30827125/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S08.source",
+          "bytes": 5590,
+          "sha256": "dcef1a0f83fe5c20f29308c3aca6f1e2b963eac6a7d9d5b31e73d6c4fa6babb7"
+        },
+        {
+          "filename": "source_cache/S08.web.txt",
+          "bytes": 313,
+          "sha256": "4741546471dd2c6aa26e58f89cf9fa9735ff1b1f773de54594f111598e4bc044"
+        }
+      ]
+    },
+    {
+      "source_id": "S09",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30354828/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "e9a4db4869bfb0d4d14c63f7070838f6f7f8304989926e313b316579a2201f75",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S09.source",
+          "bytes": 5590,
+          "sha256": "1ec8bd4249acbe2d74cc4b3cda9506399080e12253670c2b1d448221261b8223"
+        },
+        {
+          "filename": "source_cache/S09.web.txt",
+          "bytes": 19906,
+          "sha256": "6a8be6e987466ccdb32ed3d8f8e4b7a62367b85093181e3266904ecca72ce443"
+        }
+      ]
+    },
+    {
+      "source_id": "S10",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 9,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 11,
+      "extracted_text_sha256": "71cceefa42bf08b9512e13370d705245309a574e8e3d95e4ba779026c36b39c1",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S10.source",
+          "bytes": 124266,
+          "sha256": "245f4bf759e387ae281e1084b43ad35d59650e8226062b14caf814aab99c0385"
+        }
+      ]
+    },
+    {
+      "source_id": "S11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35384577/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S11.source",
+          "bytes": 5590,
+          "sha256": "2f593602c568b3d634864cf5706bbcca2145a4940bcac45370e07da34428236e"
+        },
+        {
+          "filename": "source_cache/S11.web.txt",
+          "bytes": 318,
+          "sha256": "57deaaf8bfd3a1ba2c54eb745d2a60f29bce6b411e5e2db80efa5286038e4e78"
+        }
+      ]
+    },
+    {
+      "source_id": "S12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34905954/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S12.source",
+          "bytes": 5590,
+          "sha256": "accae3d878081b323bc5f74e50ec19bccf2059c0c164170333a849e1f2fec23e"
+        },
+        {
+          "filename": "source_cache/S12.web.txt",
+          "bytes": 313,
+          "sha256": "676d1b31211c127fba35be1844ab3530158af94f585ebafab34bb71f5ee6acb3"
+        }
+      ]
+    },
+    {
+      "source_id": "S13",
+      "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2022/04/01/03/19/CHAP",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 9,
+      "extracted_text_sha256": "0dcc8460559ac7dcef7cb1cfe9dad9dad4f196df56552b079ed72bb2c7c5bbc5",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S13.source",
+          "bytes": 187199,
+          "sha256": "97579217ea1e7dbc5eadc69b531dce35104fcd3afaf04a53ab92d7dc81788218"
+        }
+      ]
+    },
+    {
+      "source_id": "S14",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24893135/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S14.source",
+          "bytes": 5590,
+          "sha256": "fcf47fa387ddb3e5f6a4a2884c06c64cf4765986a0da5a73c3e486f1646e4b97"
+        },
+        {
+          "filename": "source_cache/S14.web.txt",
+          "bytes": 313,
+          "sha256": "1f3a84d038847188491ddbbdcc105073b1383a27447d0fba9b74585b3dedca97"
+        }
+      ]
+    },
+    {
+      "source_id": "S15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38804130/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "52b87598730cc47d604cae5b4f1362a384d15891abca9661bd679b7c789bc201",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S15.source",
+          "bytes": 5590,
+          "sha256": "527e89012c1bb4162904c99f70162b09ea296079ffc433016c40b231d16d3ffa"
+        },
+        {
+          "filename": "source_cache/S15.web.txt",
+          "bytes": 14227,
+          "sha256": "ca91a46ffe356e6840c9c809890ef44e34a54c31edb8fc3611ff77ce9bd4a27a"
+        }
+      ]
+    },
+    {
+      "source_id": "S16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35708012/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S16.source",
+          "bytes": 5590,
+          "sha256": "5119a437c90c14e8aa846b600c9cfc0308e21110c3b8f88567d9e636bdae20ab"
+        },
+        {
+          "filename": "source_cache/S16.web.txt",
+          "bytes": 313,
+          "sha256": "816bebc6ae10df755097c63a09532ec61064f3cdb52c5305bfd238db9994f3bf"
+        }
+      ]
+    },
+    {
+      "source_id": "S17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29565029/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 5,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 13,
+      "extracted_text_sha256": "be2a65827768d5663409728ad6952e08de13dcca62187011a3496bda1d37ec0a",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S17.source",
+          "bytes": 5590,
+          "sha256": "4b9112d2dbae855e2236bdf478df5c3f1bc06b7d2f4133e86da132ba106bdebc"
+        },
+        {
+          "filename": "source_cache/S17.web.txt",
+          "bytes": 26896,
+          "sha256": "c71786ee35406ea26890bd0361e576135b6a7bf456d94494cefedbc1769111cd"
+        }
+      ]
+    },
+    {
+      "source_id": "S18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26551272/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S18.source",
+          "bytes": 5590,
+          "sha256": "89bdd24b274fe75694e8e2f9c4aba6d8817ad9c6d0d1c2accb6e0915251d8d0c"
+        },
+        {
+          "filename": "source_cache/S18.web.txt",
+          "bytes": 313,
+          "sha256": "235fed730430ea58d697978858b5007d3687d05a938668f3b9dc648c68bb7e47"
+        }
+      ]
+    },
+    {
+      "source_id": "S19",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12479763/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 14,
+      "extracted_text_sha256": "425191da9cc180de97642391c425c1b52bb48bc155eac016b0d960472cda1570",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S19.source",
+          "bytes": 5590,
+          "sha256": "4238eb3eeb33399c169adee2285218130060724922994f5e22fc7da361d36e90"
+        },
+        {
+          "filename": "source_cache/S19.web.txt",
+          "bytes": 25200,
+          "sha256": "a8ca7e0111fe824acb9a723e622e111ab07b3bbd4daea17b71495eca9428970f"
+        }
+      ]
+    },
+    {
+      "source_id": "S20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26414968/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S20.source",
+          "bytes": 5590,
+          "sha256": "c5ad91d2efb97b9df20b4e6241358acbfbe752237ddddfa4ffec3e82abe3fc5f"
+        },
+        {
+          "filename": "source_cache/S20.web.txt",
+          "bytes": 313,
+          "sha256": "6545f5ae863030b69890e05eb44cbc3b864a55762895bb4a3df71032cd9b9f19"
+        }
+      ]
+    },
+    {
+      "source_id": "S21",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34739197/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 14,
+      "extracted_text_sha256": "cb86197c384ab91f09a387e8c4090905efbe50b680fe579b3ca4f1099f8a9fbc",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S21.source",
+          "bytes": 5590,
+          "sha256": "4757f9ec65529cfae8b73f6b8115254838fd8da5f338869d8cbbf2fb7242176e"
+        },
+        {
+          "filename": "source_cache/S21.web.txt",
+          "bytes": 25950,
+          "sha256": "7980eca61a927c4fc06ed7d01aeb377690989f5b1f4431fcaa8702a1bf4ad637"
+        }
+      ]
+    },
+    {
+      "source_id": "S22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39555827/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 7,
+      "extracted_text_sha256": "1643908412971e8b941b68c8bb77814370c83154ec1d9fd9c01d944303a22fbd",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S22.source",
+          "bytes": 5590,
+          "sha256": "e23dfe954551121585bc52161969de9f25f026c31955c8b7efd8140f1bcd245e"
+        },
+        {
+          "filename": "source_cache/S22.web.txt",
+          "bytes": 23751,
+          "sha256": "faf847e496f5fbc25856cc5efad2c7bd916aef8bdccb7f52cbf96cc6a4614246"
+        }
+      ]
+    },
+    {
+      "source_id": "S23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34491661/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S23.source",
+          "bytes": 5590,
+          "sha256": "2d243b7b0094a52326f0f3c927b209455a26175509442656c1ccb59092509d91"
+        },
+        {
+          "filename": "source_cache/S23.web.txt",
+          "bytes": 313,
+          "sha256": "5f8ae5a9d9cc518155b9f9df4f10f5758f3167e4a94522ebff8c92a709196f01"
+        }
+      ]
+    },
+    {
+      "source_id": "S24",
+      "url": "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2024/10/14/19/44/effects-of-catheter-based",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 8,
+      "extracted_text_sha256": "58a9847ecd02b878fed8dd81dc47c4bb1b9c32c77d82f1837ff36d6d8700787a",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S24.source",
+          "bytes": 260534,
+          "sha256": "e27b32687b44b497902babfc520859f2357c494d1343496a7d5c3696c8bb429e"
+        }
+      ]
+    },
+    {
+      "source_id": "S25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9099655/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 11,
+      "extracted_text_sha256": "36947652a430bb61f027b863e7a6f370a606aca38a9544ca4b27857f9a5d9d31",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S25.source",
+          "bytes": 5590,
+          "sha256": "19d9858269c236fc9bfd506de54e76f1272bdf9868e1f7c9fa112959d236605d"
+        },
+        {
+          "filename": "source_cache/S25.web.txt",
+          "bytes": 15616,
+          "sha256": "12e2d5c02d361983f1293cfcdae3173703f411f6b0988ebf810cd04b5cd48253"
+        }
+      ]
+    },
+    {
+      "source_id": "S26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38205630/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 12,
+      "extracted_text_sha256": "c905435eef1728a4a72d503bbfffd91eb1c42d8de5842671fd42819aab428f90",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S26.source",
+          "bytes": 5590,
+          "sha256": "6627cad58131ef1f57eae7d872bdf826e1944521987796cf012bbd1d844ffc5c"
+        },
+        {
+          "filename": "source_cache/S26.web.txt",
+          "bytes": 22733,
+          "sha256": "f6b28281b7ac11d084d878e63b3621335b32b57dfcf1473d80a10403bb8af4c3"
+        }
+      ]
+    },
+    {
+      "source_id": "S27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34148375/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S27.source",
+          "bytes": 5590,
+          "sha256": "d5e63ff23900a05cdea1ea265303e41792db7d7c0e988d03f0a6a936ec85d26a"
+        },
+        {
+          "filename": "source_cache/S27.web.txt",
+          "bytes": 313,
+          "sha256": "938a64ed3b5491000b3b806e575f09027d3f7f420b474bd010be2627305d8420"
+        }
+      ]
+    },
+    {
+      "source_id": "S28",
+      "url": "https://publications.aap.org/pediatrics/article/140/3/e20171904/38358/Clinical-Practice-Guideline-for-Screening-and",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S29",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 375,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 132,
+      "extracted_text_sha256": "8375e2fd211aa857a8395002e383d38253dc74c4b707535b3cabe1f84f2083ca",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S29.source",
+          "bytes": 5913180,
+          "sha256": "065753d01daf44b8d37bb89103df1ac477c78e3d971b4df855a6c527ab15dc1c"
+        }
+      ]
+    },
+    {
+      "source_id": "S30",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-de-renina/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "d02112b249ce441adacdfdb7aff8bece34097d0320bd6a26ec81727a32bdd83a",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S30.source",
+          "bytes": 43149,
+          "sha256": "619571d68fef64f56d0776d774d587a7170f2b3f09406ce93712ebf27e76f4ff"
+        }
+      ]
+    },
+    {
+      "source_id": "S31",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/prueba-de-aldosterona/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 3,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "ffa49ca95153bf01a8eab55fc567ee2b99b403e236c4ab35b6cf7f3438fa060e",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S31.source",
+          "bytes": 46359,
+          "sha256": "5072f77eae2127a31afa87f221d3dc4fee8fff8a567bd733fe19897ada4898fa"
+        }
+      ]
+    },
+    {
+      "source_id": "S32",
+      "url": "https://medlineplus.gov/spanish/ency/article/007484.htm",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 5,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 4,
+      "extracted_text_sha256": "d7e04aff1af07ce89a176f160a8472988e6eb6480feb79a2c4e812d671651e54",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S32.source",
+          "bytes": 32783,
+          "sha256": "520ed41640115aa815e8fef56a7382daa3dde0b19be7465dcf29ade86a258b8b"
+        }
+      ]
+    },
+    {
+      "source_id": "S33",
+      "url": "https://www.medlineplus.gov/spanish/druginfo/meds/a682342-es.html",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "a4b507bde0957601c64e70777474d4a3802428d945f2624b3728361440af75ce",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S33.source",
+          "bytes": 31325,
+          "sha256": "add308b0441235d993372bfbe7fc07a39b896e635543b7b94439d0a83f08008b"
+        }
+      ]
+    },
+    {
+      "source_id": "S34",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32370572/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S34.source",
+          "bytes": 5590,
+          "sha256": "26a0477b6d46160d256b21b3131581fcc355521ee60a655f7bd1e1b4b5f08782"
+        },
+        {
+          "filename": "source_cache/S34.web.txt",
+          "bytes": 313,
+          "sha256": "268bab0d875198f4ba12e0af3a10a6f534eb4581deee755239dd0c69a9818002"
+        }
+      ]
+    },
+    {
+      "source_id": "S35",
+      "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/guidelines-development/guidelines-publication-schedule/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 16,
+      "extracted_text_sha256": "330f75b2fbe5fa3a9c6e86db8e2a0dd4debe6a8b028b3c1e6ac4ff39865a88cf",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S35.source",
+          "bytes": 318281,
+          "sha256": "67a4ff4fd8790edf4f531e9c54a6ba783677bec3f51c4a2761929ec43dedc10c"
+        }
+      ]
+    },
+    {
+      "source_id": "S36",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34459569/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 12,
+      "extracted_text_sha256": "d819bfdc316de3db7d92f8a27d96356708e5324fc79cb21aa0d24d1d69a3f0ef",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S36.source",
+          "bytes": 5590,
+          "sha256": "9e439bc9a5c0a1372b6fc35c52266a4a2916a97878aa90f31518a8914e3574f8"
+        },
+        {
+          "filename": "source_cache/S36.web.txt",
+          "bytes": 24770,
+          "sha256": "eb9c40e0cdab2fbf69caef30a723d3cbbdb722e0681d981dba45bcb10da1ad63"
+        }
+      ]
+    },
+    {
+      "source_id": "S37",
+      "url": "https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/pulmonary-hypertension-high-blood-pressure-in-the-heart-to-lung-system",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S38",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40267417/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S38.source",
+          "bytes": 5590,
+          "sha256": "8ba4fa372576ec40473e308e44be6ee7d60f174ae76b7ec1b68b7b494d44cf23"
+        },
+        {
+          "filename": "source_cache/S38.web.txt",
+          "bytes": 313,
+          "sha256": "7abcb8a16af2094f1396bba30a3495d51748a08d0bcb589e85251f5679b18325"
+        }
+      ]
+    },
+    {
+      "source_id": "S39",
+      "url": "https://newsroom.heart.org/news/la-nueva-guia-sobre-la-presion-arterial-alta-enfatiza-la-prevencion-y-el-tratamiento-temprano-para-reducir-el-riesgo-de-ecv",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 3,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 11,
+      "extracted_text_sha256": "05eba96b100b3bdfe3558ccb952d42385808a1249a1d201e417dc3b0d603a04e",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S39.source",
+          "bytes": 206050,
+          "sha256": "51246c03a874217a2089cb50197b68275990879f9f59137dee27f934145ac7ee"
+        }
+      ]
+    },
+    {
+      "source_id": "S40",
+      "url": "https://www.acc.org/latest-in-cardiology/articles/2024/11/05/11/55/new-blood-pressure-target-for-individuals-at-high-risk",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 8,
+      "extracted_text_sha256": "702ca515aec6902015c2cc6f76f2ca5f663388238a4ef5c99717c7f2efe24c4b",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S40.source",
+          "bytes": 302436,
+          "sha256": "abaff9713acfa5843efdf89d8ddc96b186dc28539fff2099c39c81a25ac6ffe3"
+        }
+      ]
+    },
+    {
+      "source_id": "S41",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25987662/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 12,
+      "extracted_text_sha256": "67c5dd222c36ac38895a2956299f8f352723331e05aee900b0dad94223debf6a",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S41.source",
+          "bytes": 5590,
+          "sha256": "5cca97f91d5f2b812a9010235f80a419545ed29cf55f878efb10982ce5cafae4"
+        },
+        {
+          "filename": "source_cache/S41.web.txt",
+          "bytes": 20482,
+          "sha256": "896adf6a3efa5441a8293130ef38a011afa090f6680e4b75c842295533459a51"
+        }
+      ]
+    },
+    {
+      "source_id": "S42",
+      "url": "https://kdigo.org/guidelines/blood-pressure-in-ckd/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "90ff749b0fbc47ad1e28ccd39d0a13ca03c9db1d9665e9921c7e74d9aaf934d5",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S42.source",
+          "bytes": 88489,
+          "sha256": "3510c57c1c5c36018333a8d5e6e7c513a9e0d7a7dbeaf9a85119696252853458"
+        }
+      ]
+    },
+    {
+      "source_id": "S43",
+      "url": "https://professional.heart.org/en/science-news/orthostatic-hypotension-in-adults-with-hypertension",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S44",
+      "url": "https://www.who.int/es/publications/i/item/9789240033986",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "1947bfc336733a2a0b91899a3ca67fa8f8bdeb975554a96d0a9fd2979c72b150",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S44.source",
+          "bytes": 77869,
+          "sha256": "b5cd7d30c15669771e8e3eb281511f88378748b798689c00b86c6af672dbd2c0"
+        }
+      ]
+    },
+    {
+      "source_id": "S45",
+      "url": "https://www.escardio.org/guidelines/scientific-documents/recommended-reading/hypertension/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 13,
+      "extracted_text_sha256": "67fa37ce0b5fd4fbbaaa1ab2ac8bb895f20a60a3cc5c9755a229cf1ac5dccca0",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S45.source",
+          "bytes": 320490,
+          "sha256": "03e4e09f447750db24364fdb055311334b2368ae6374467ca263b2f38d2b63ac"
+        }
+      ]
+    },
+    {
+      "source_id": "S46",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20228401/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S46.source",
+          "bytes": 5590,
+          "sha256": "3cb27d7b22345d4847f30cd712ab71b107c8490884fce917aeda61b4c5d30471"
+        },
+        {
+          "filename": "source_cache/S46.web.txt",
+          "bytes": 313,
+          "sha256": "c4dc2fc4492abf13aeac4a4b7737a946919f5afb7509192a8e1c037c49c3c02b"
+        }
+      ]
+    },
+    {
+      "source_id": "S47",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35363951/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S47.source",
+          "bytes": 5590,
+          "sha256": "2c97668ab2da62968cc85e2ea1c39ccd1c295dac0b9bf7ab33323c61cda5c98e"
+        },
+        {
+          "filename": "source_cache/S47.web.txt",
+          "bytes": 313,
+          "sha256": "3db2f6b0d8c6e1ab856ec76a4155e4a7b97d6e2fe04ab85e70976396aa751bf2"
+        }
+      ]
+    },
+    {
+      "source_id": "S48",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40888730/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 13,
+      "extracted_text_sha256": "7e32632e1398e4d214a85a39eb8e6c42955ace7c120de3cd58ae9b3bc029c809",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S48.source",
+          "bytes": 5590,
+          "sha256": "be15c689d8c468f8dfbbabb9460aaa8bb69fef60825dad81a203329df9fc5f3c"
+        },
+        {
+          "filename": "source_cache/S48.web.txt",
+          "bytes": 22630,
+          "sha256": "7b2650c3c47ed2341ac8a47f08df3c87f3cf72cd49f8994af96ac15927cf9299"
+        }
+      ]
+    },
+    {
+      "source_id": "S49",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40434761/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S49.source",
+          "bytes": 5590,
+          "sha256": "f8ed5b6c86715c4ca1aa6c2fc2175b250c35e1164b476544f312be598cf7e8eb"
+        },
+        {
+          "filename": "source_cache/S49.web.txt",
+          "bytes": 313,
+          "sha256": "9c1b54aab83adcdef7751276e5b879882f5c32bab610b7e323afadb6c4b18d24"
+        }
+      ]
+    },
+    {
+      "source_id": "S50",
+      "url": "https://www.escardio.org/news/news-room/congress-news/2025-guidelines-cvd-pregnancy/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 13,
+      "extracted_text_sha256": "d948662edaa9eff8d04a18f99f473fbd6fb955ad1cbba488b133ce7675b9ac87",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S50.source",
+          "bytes": 314397,
+          "sha256": "8cc44436a15e4b2f9f4fd647a09a7be5a14135cc106aec3ca96ad4d255771ece"
+        }
+      ]
+    },
+    {
+      "source_id": "S51",
+      "url": "https://medlineplus.gov/spanish/ency/article/002302.htm",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 3,
+      "extracted_text_sha256": "7022af0897c2428931344913cd61d97c4037d2cf334935698029af56e07dab51",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S51.source",
+          "bytes": 26707,
+          "sha256": "2871bec5935f98167f646d964e43958dcc88e482d37952d5c98e744f1bbf84be"
+        }
+      ]
+    },
+    {
+      "source_id": "S52",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25857860/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "bee2eab12d9afc47fbe47bd9ca1065e868f9ff98d5f195af6596bf4c09f5fcfe",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S52.source",
+          "bytes": 5590,
+          "sha256": "0590909cda2d1b607199276fec4a066f9365d17486d9307c637425fb6743a627"
+        },
+        {
+          "filename": "source_cache/S52.web.txt",
+          "bytes": 430,
+          "sha256": "e6012caef1db1c55347e8e428b9598c6a90da2011f716d65996ea6ac43e239b8"
+        }
+      ]
+    },
+    {
+      "source_id": "S53",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39803890/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S53.source",
+          "bytes": 5590,
+          "sha256": "d713d8629899c7f808e04db7b2107bb1e386c63b87ed728be38dd5ea39294584"
+        },
+        {
+          "filename": "source_cache/S53.web.txt",
+          "bytes": 318,
+          "sha256": "1e648087c67a093ef1b9919c7f94d94fe3a3a38acd05cf5093f142e357898cd9"
+        }
+      ]
+    },
+    {
+      "source_id": "S54",
+      "url": "https://academic.oup.com/jes/advance-article-pdf/doi/10.1210/jendso/bvae209/60812095/bvae209.pdf",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S55",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35503297/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "96b3116e8b2af13833b771439b916f7f4b966841d15c3d61d6c006dc513facc3",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S55.source",
+          "bytes": 5590,
+          "sha256": "94b7601963255db5920a551b6b6908108d3ab7299b8016e7bdee01859f7121f9"
+        },
+        {
+          "filename": "source_cache/S55.web.txt",
+          "bytes": 18481,
+          "sha256": "7f4a3427b24021da05ada45f444deec495fde51e4ac0fe27bde79e236f2b8ffc"
+        }
+      ]
+    },
+    {
+      "source_id": "S56",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31655771/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "399607862f922fa644870f1f6984b4a2c9843ed27379ad012120092e9ac0ea59",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S56.source",
+          "bytes": 5590,
+          "sha256": "7904f3ad1f7a29f6d166a0d604940acda9134c7210cdc090bb3738c8dca12d77"
+        },
+        {
+          "filename": "source_cache/S56.web.txt",
+          "bytes": 245,
+          "sha256": "23e1a6a0ccd836bcab02250fe3b7533c55c7180e3b332e99d96b7c5dc74b27db"
+        }
+      ]
+    },
+    {
+      "source_id": "S57",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38669914/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 9,
+      "extracted_text_sha256": "9250a4ee96016efa3d08d2a11667bc0b922245c01300a985d5c64df252ad7f56",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S57.source",
+          "bytes": 5590,
+          "sha256": "ca80af9ef3093ee792368ff2f380370f53d57206f1b01bd82f648ab208614b33"
+        },
+        {
+          "filename": "source_cache/S57.web.txt",
+          "bytes": 12828,
+          "sha256": "171f44c11cd5cfb4cf5df92111f7b3772342fc68f16d5e1cc48d491d6a789fe7"
+        }
+      ]
+    },
+    {
+      "source_id": "S58",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24352797/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 12,
+      "extracted_text_sha256": "2c20a96dfa67bd98c2956dffd6150bfb1ac5d4e26f1905e971cdf80c1fcd8b4d",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S58.source",
+          "bytes": 5590,
+          "sha256": "f2fbae92bc43423f8b70c768aee0875abc2abd69551067b8c4653d081b32f6ab"
+        },
+        {
+          "filename": "source_cache/S58.web.txt",
+          "bytes": 23161,
+          "sha256": "d48c2ed247a95663c7377be47f349fae5e568de7317bbb6878fd46b3de2a7999"
+        }
+      ]
+    },
+    {
+      "source_id": "S59",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15990444/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "8055ad2592944e393577d69bb9d75b2fb9e72bbc148f1d96e3c4b3b342580b1e",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S59.source",
+          "bytes": 5590,
+          "sha256": "aacd27835990d8197696e7533e85346870375e9af572da01fef301196b6e1bc9"
+        },
+        {
+          "filename": "source_cache/S59.web.txt",
+          "bytes": 13865,
+          "sha256": "4cd1f10c9e79c0c53076f2cb733a9c0a634e5edf2f74c6889949c58c9deba085"
+        }
+      ]
+    },
+    {
+      "source_id": "S60",
+      "url": "https://www.cdc.gov/nchs/nhanes/about/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S61",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7101636/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 11,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 31,
+      "extracted_text_sha256": "135a230d31989f27f72903456cf5eebca12f402a58088a8547ce157b847a44b5",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S61.source",
+          "bytes": 306406,
+          "sha256": "0ccafacd6c3d54ba3c966fc67cd67bab44dcb10e6b532d1f303c586d511c4863"
+        }
+      ]
+    },
+    {
+      "source_id": "S62",
+      "url": "https://www.escardio.org/static-file/Escardio/Guidelines/Products/Slide%20sets/2025/2025%20official%20slides_Pregnancy.pdf",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S63",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30855814/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S63.source",
+          "bytes": 5590,
+          "sha256": "0d56a5ba4abfdddfebddeae67689a84192b17a5c0e303ad9bf64cb58c03cd54b"
+        },
+        {
+          "filename": "source_cache/S63.web.txt",
+          "bytes": 317,
+          "sha256": "7b095fafe91cff5de1604a76b009c971fd0b7c085aad11dab0ef474c4791709d"
+        }
+      ]
+    },
+    {
+      "source_id": "S64",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057702/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 11,
+      "extracted_text_sha256": "8b53785381cc2b71af98df06a01246725a99d99df23bc7fb6e4403a4641cfc18",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S64.source",
+          "bytes": 140139,
+          "sha256": "ffb913def7da272ebd978836d6869c98b548e4498681b53b17b444e6ee34c77b"
+        }
+      ]
+    },
+    {
+      "source_id": "S65",
+      "url": "https://ish-world.com/global-hypertension-practice-guidelines",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 2,
+      "extracted_text_sha256": "8c8f12e56b27deb82640f767bb3b3e62eb71bb95fd2a664acae6bad3a3c7a4d3",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S65.source",
+          "bytes": 1594418,
+          "sha256": "e10b7c22193a95117352f3d3a69072899ca8ad4bde23c6a45b035353b00b99ca"
+        }
+      ]
+    },
+    {
+      "source_id": "S66",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39588420/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "1e98c09c4b5ebe8b773f94397752c4242da53e1fe7f93a99d0b2462dcd6ce89e",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S66.source",
+          "bytes": 5590,
+          "sha256": "9688f2b0626db601343303d5382ce2efc6888fd834d5e28fae3c33f00c33412f"
+        },
+        {
+          "filename": "source_cache/S66.web.txt",
+          "bytes": 17054,
+          "sha256": "aaca4272a71b1a3f097891277b394748332aa2c17dd0641f984190569638de08"
+        }
+      ]
+    },
+    {
+      "source_id": "S67",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40348190/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "5800fa77444fed0f117b2a00618a27d6578e8c85167c49715df5d391b4c689c2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S67.source",
+          "bytes": 5590,
+          "sha256": "4d013fe786697b0fe1d94c429b14ac04e2a35303ea10c8bf1be350bda69f991e"
+        },
+        {
+          "filename": "source_cache/S67.web.txt",
+          "bytes": 319,
+          "sha256": "2380c3c930fb1dedec50cf674c90328afb7766e2c2c53b49316eae49011fa6c7"
+        }
+      ]
+    },
+    {
+      "source_id": "S68",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15518726/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "bee2eab12d9afc47fbe47bd9ca1065e868f9ff98d5f195af6596bf4c09f5fcfe",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S68.source",
+          "bytes": 5590,
+          "sha256": "3910aaac58e48e56f614a135f96f0d4de675604359ea843b938261b2ab640e08"
+        },
+        {
+          "filename": "source_cache/S68.web.txt",
+          "bytes": 431,
+          "sha256": "300474c9fdf94473c8981adbacedd920f09b69b5bc73d9a230ed2b0e29b2b27f"
+        }
+      ]
+    },
+    {
+      "source_id": "S69",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21542417/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "bee2eab12d9afc47fbe47bd9ca1065e868f9ff98d5f195af6596bf4c09f5fcfe",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S69.source",
+          "bytes": 5590,
+          "sha256": "333a861bf90455b2b6ec32eb3602ec8c79116a6271162ee677522df98d49db26"
+        },
+        {
+          "filename": "source_cache/S69.web.txt",
+          "bytes": 429,
+          "sha256": "dbfbdc79df8bd5cf6ab7bcf131f708bc183178c962cbfe47808c3929fb75267c"
+        }
+      ]
+    },
+    {
+      "source_id": "S70",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33790146/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "b7da9fda17a1cc30a87c73fac759c4e53740727a61258529d346a7fd79346e55",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S70.source",
+          "bytes": 5590,
+          "sha256": "e61eceb44fae04073e97c8fb5a00bf8b06c1089914beb3fbab8da896d99091cf"
+        },
+        {
+          "filename": "source_cache/S70.web.txt",
+          "bytes": 13568,
+          "sha256": "055d2f2932392fba9d23c7760f29e2db1e54ee2ab58d93a2edec732372974e45"
+        }
+      ]
+    },
+    {
+      "source_id": "S71",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 429,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 107,
+      "extracted_text_sha256": "7d2bf6ab1f02c1238763a6393f738ad678b821b252df092c777fa754c039ff4c",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/esc2024_en.pdf",
+          "bytes": 11917490,
+          "sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a"
+        },
+        {
+          "filename": "source_cache/S71.source",
+          "bytes": 11917490,
+          "sha256": "b1c8e2581bb47ab648b9b33f80688fc4e652071a025af765c37de31703c7929a"
+        }
+      ]
+    },
+    {
+      "source_id": "S72",
+      "url": "https://static.elsevier.es/nad/kdigo2024.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 20,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 33,
+      "extracted_text_sha256": "1ce0e0f825b1d2bdac9464f249312ad82488d210086d989ff8672d5c1bb722cc",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S72.source",
+          "bytes": 1257914,
+          "sha256": "6251cb241748f1e4e9663876941c6517b30f228046552ab770cb3a0d8008976b"
+        }
+      ]
+    },
+    {
+      "source_id": "S73",
+      "url": "https://www.seen.es/ModulGEX/workspace/publico/modulos/web/docs/apartados/230/300819_095918_9241185157.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 21,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 112,
+      "extracted_text_sha256": "c0634973c88149417ec4259b2ce479215162bbadd8a2590de5d4cae7a73d033e",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S73.source",
+          "bytes": 4724163,
+          "sha256": "02b43baa318d8f59421e359a56c2bdcf7387d14abf7ed8ae3b588ef41bd981d7"
+        }
+      ]
+    },
+    {
+      "source_id": "S74",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8882059/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 13,
+      "extracted_text_sha256": "b64511473a27b0509a5b0673a40edecd52045f469b63ba4b7de00bbbf3e9c35c",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S74.source",
+          "bytes": 221360,
+          "sha256": "63e32f2b36023d9980d6f3d89591e6f22c8e55f19ded3deaf2f1a043208fd8a0"
+        }
+      ]
+    },
+    {
+      "source_id": "S75",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8547789/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 13,
+      "extracted_text_sha256": "c67aa6e0b15410a020efc68c4375a7c40f885eba1dd29bbb1cfb82b5c1ff5564",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S75.source",
+          "bytes": 221290,
+          "sha256": "0fe9c1302c4788f9bc0506bd1f7bcf8ea2f0f4e398aabd902b9c66f48d9a92eb"
+        }
+      ]
+    },
+    {
+      "source_id": "S76",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 12,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 48,
+      "extracted_text_sha256": "0ce532541b410cbbd6a07f85fdfac131f9fa7b0814c5e1cfe15b6fed266864c1",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S76.source",
+          "bytes": 675314,
+          "sha256": "8855f9bad745c4895e79600fd1fbcfd2067bce4a9c4775cad367bf2e6ea5dbcb"
+        }
+      ]
+    },
+    {
+      "source_id": "S77",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/medicion-de-la-presion-arterial/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 7,
+      "extracted_text_sha256": "be7e4e76119bb3f8556d95be48edb07cbc2edba8f2a4de7caf39d2f560424fdf",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S77.source",
+          "bytes": 51519,
+          "sha256": "da302b31c6547e27cbaa8dc86b451f5907b86191a3591ba0671b8fc6f3aada0c"
+        }
+      ]
+    },
+    {
+      "source_id": "S78",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11033231/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 5,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 8,
+      "extracted_text_sha256": "2857202ddafdc1dc8bd64e97337e34008cd15dbaa85e8864cf5da32938acf5f2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S78.source",
+          "bytes": 197068,
+          "sha256": "33b3d5c0e89ceb94051f2d4f1e8a25fea962b0db35d99843db102e7db17eadeb"
+        }
+      ]
+    },
+    {
+      "source_id": "S79",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7094457/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 6,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 8,
+      "extracted_text_sha256": "202d99e46a5d3f3d65d873cda3efe4157ca32d67bc9cf1285c1bae2b67c43123",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S79.source",
+          "bytes": 214498,
+          "sha256": "60495fa6641aec6aa41d423b047d94dc7e0c7ca4108d8ba6ee1c193a45fdba47"
+        }
+      ]
+    },
+    {
+      "source_id": "S80",
+      "url": "https://www.stroke.org/es/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 17,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 6,
+      "extracted_text_sha256": "6639526f6f7377beef3feb3519f7619281ba6c72e519fc9f1d30d1865ae899c1",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S80.web.txt",
+          "bytes": 15744,
+          "sha256": "c1e67ae412f974579d68b392d431bd36563330b85ee6744c917e3a3502538284"
+        }
+      ]
+    },
+    {
+      "source_id": "S81",
+      "url": "https://www.stroke.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/types-of-blood-pressure-medications",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S82",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278980/",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "f721c558dee4b5aa6d1b68779e945875d0ae3ce5f00a41359e2c46791a9da390",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S82.source",
+          "bytes": 21268,
+          "sha256": "be2af53f3f603fe4b19f446a0a0cc068c0550be9da0b3a3da533bb58527b709b"
+        }
+      ]
+    },
+    {
+      "source_id": "S83",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6824480/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 11,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 11,
+      "extracted_text_sha256": "a48ccf77ea02cefca118a705ea2d5f6727c1856bcb4521f3501a811d9b4059b0",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S83.source",
+          "bytes": 300193,
+          "sha256": "c6939f38b228bd4d03203c4cf1a4de934db949681ba48647681bcd2514c9e30d"
+        }
+      ]
+    },
+    {
+      "source_id": "S84",
+      "url": "https://www.asacirujanos.com/revista/2024/35/3/16",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 6,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 8,
+      "extracted_text_sha256": "c528f6b605a336c538b5e9b6ff340887853cafc5997b9c35f6d269f1d8dc7d88",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S84.web.txt",
+          "bytes": 28256,
+          "sha256": "6829fca4be220a8a0af15158b8fed6276c4d5e3a810086aab28005ba7123fd34"
+        }
+      ]
+    },
+    {
+      "source_id": "S85",
+      "url": "https://iris.paho.org/bitstream/handle/10665.2/53145/9789275323052_spa.pdf",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "d06c1ce43ac60b7b64e6e7c9fc53fa2b45955b257b67a37dae9fb96a0e9a551a",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S85.source",
+          "bytes": 755,
+          "sha256": "8e880543891746d7d15928224e1efeb463bb2e94085ca99ff4b86e37503cbd91"
+        }
+      ]
+    },
+    {
+      "source_id": "S86",
+      "url": "https://medlineplus.gov/ency/article/007484.htm",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 4,
+      "extracted_text_sha256": "969eb238d367e08ac47c036e520ef40fbce1a708f70ec141f61dd9628af1a4b5",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S86.source",
+          "bytes": 30111,
+          "sha256": "188cffa4e0f3bd5dc81254b8e8e9927b0a1b0075a94f301e144f352f5c14949d"
+        }
+      ]
+    },
+    {
+      "source_id": "S87",
+      "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 7,
+      "extracted_text_sha256": "7655b9d213475a816735f4135032248d7972a6e29ee1c99e9ded06131b54cfe9",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S87.source",
+          "bytes": 48393,
+          "sha256": "504f27b63d06f59e1390ffd1172b8f2e71682bed5730027f5ef732652540aa3f"
+        }
+      ]
+    },
+    {
+      "source_id": "S88",
+      "url": "https://colegiodeenfermeros.org.ar/wp-content/uploads/2000/10/Especificaciones-tecnicas-de-la-OMS-para-dispositivos-electronicos.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 8,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 74,
+      "extracted_text_sha256": "a19f029305bcb3409b9a1025a53c2e3e7621487a30e2cbfab07bb03249c03255",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S88.source",
+          "bytes": 2197887,
+          "sha256": "07b26716cfcc9559dfd0e4c6c1cefbd821d02b3e395dc76c5388258cc7e98323"
+        }
+      ]
+    },
+    {
+      "source_id": "S89",
+      "url": "https://semap.org/wp-content/uploads/simple-file-list/Guia_2018_ESC_ESH_HTA.pdf",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 31,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 110,
+      "extracted_text_sha256": "98970e196ae9f1cbb4737e2a182e57e0f7827a3da91ea919b5cfb1d3b59bb503",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S89.part1300.web.txt",
+          "bytes": 26888,
+          "sha256": "d14cc616710a79849b7f6496563ecdd109529f4dd4ad5a05d2b53419772550ce"
+        },
+        {
+          "filename": "source_cache/S89.part1700.web.txt",
+          "bytes": 26752,
+          "sha256": "4cbfdff00b29f7af5667fc3dc20cb1ab084fd290131fad30a32931ad8557b975"
+        },
+        {
+          "filename": "source_cache/S89.part2600.web.txt",
+          "bytes": 26996,
+          "sha256": "fa24ce5f80843b9fe460d31e11791d922fd974e1f5916c54188e40d05304a490"
+        },
+        {
+          "filename": "source_cache/S89.part3000.web.txt",
+          "bytes": 27194,
+          "sha256": "855b03b9bcb698eb088087aa0027c9ee67bc9cdb66a96f681f9e29ace1ec2b05"
+        },
+        {
+          "filename": "source_cache/S89.part3700.web.txt",
+          "bytes": 25494,
+          "sha256": "8b37cbe38c6bf337932622f7a936ee5fb5da1863e2e90ea813be5a2ac83252be"
+        },
+        {
+          "filename": "source_cache/S89.part4000.web.txt",
+          "bytes": 25579,
+          "sha256": "272064a3b27be7173095c2cac9a8c9fc9e7fd4163be5e3881aad9670cc9f9f71"
+        },
+        {
+          "filename": "source_cache/S89.part4300.web.txt",
+          "bytes": 27492,
+          "sha256": "210a23b3b6ad44df4a73fbcbf64b11cceebcff5fdc138ef56c9b79ce44d17ef7"
+        },
+        {
+          "filename": "source_cache/S89.part4900.web.txt",
+          "bytes": 27023,
+          "sha256": "286cb4bbcbe9e6eaa73c45517a7adab1b73e8a47d142d82252a667270af94bba"
+        },
+        {
+          "filename": "source_cache/S89.part5300.web.txt",
+          "bytes": 27857,
+          "sha256": "d2caff5f0776a27e59c170ea602af6a892ed7a0f9f38c01d116ed961de3c048a"
+        },
+        {
+          "filename": "source_cache/S89.part600.web.txt",
+          "bytes": 26851,
+          "sha256": "1ac2af7ee2273f440f2762d619c2a3bc7e31f98df3d07210a37d599e85ebc095"
+        },
+        {
+          "filename": "source_cache/S89.part850.web.txt",
+          "bytes": 27551,
+          "sha256": "d3233702ba355a34504c30b7c2bb43765d733fc0c895f848198cbda87a710d39"
+        },
+        {
+          "filename": "source_cache/S89.web.txt",
+          "bytes": 29645,
+          "sha256": "bf180acb092b59371170640b3e478d74cc961263161ff4f5acc27ff7835a994a"
+        }
+      ]
+    },
+    {
+      "source_id": "S90",
+      "url": "https://scielo.isciii.es/scielo.php?lng=es&nrm=iso&pid=S2529-850X2021000100010&script=sci_arttext",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 6,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "41ec900ac504ec8a4ca333d4c35e4b3f5613438cfc4767dee52026f8887f9426",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S90.source",
+          "bytes": 56663,
+          "sha256": "02ff8607c4038297ea81525ab6703c32da2c4a419d26cd76290114e76ef1a476"
+        }
+      ]
+    },
+    {
+      "source_id": "S91",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 13,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 44,
+      "extracted_text_sha256": "23643746f623d4da46e9aebad5f5ec57860e81c44e29fd2367827252415a62e9",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S91.source",
+          "bytes": 449621,
+          "sha256": "9c996180b5b1e6702fb0d79f74ceec5de1e6813645c48b9956866fffc9ad9b1c"
+        }
+      ]
+    },
+    {
+      "source_id": "S92",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530990/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 8,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 129,
+      "extracted_text_sha256": "32afa6d40549f4708670576f8b47cc5eb7056211e28821cdd326fd399a4fd5cb",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S92.source",
+          "bytes": 810536,
+          "sha256": "986fe7706cba7a78705a7788447a491f92889ac89e2f9ada13497ba3730a43df"
+        }
+      ]
+    },
+    {
+      "source_id": "S93",
+      "url": "https://svmi.web.ve/back160522/wh/documentos/HTA-LASH.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 26,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 244,
+      "extracted_text_sha256": "572b7cece82855e00b3474be0a54a7e033d083d602efea44be52596cfbc4e777",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S93.source",
+          "bytes": 11767334,
+          "sha256": "f3269fbecc5f1ad3ed07d14696d8f1475b6239615cb400d87a2f6d84f3c04095"
+        }
+      ]
+    },
+    {
+      "source_id": "S94",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11522727/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 7,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 15,
+      "extracted_text_sha256": "9f1d7464283556af29758583050872363e2ff171584baa1fd7db986095854136",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S94.source",
+          "bytes": 194405,
+          "sha256": "d61206a0e924a356da5913fc0e2afa3fd36d0202f52798d2cf98f3f91fcb7f4a"
+        }
+      ]
+    },
+    {
+      "source_id": "S95",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9575330/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 26,
+      "extracted_text_sha256": "b85b59d0128c1d45b25cb59646d0d63a1c58c995bfb410537cdb6d7ca2cf3de7",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S95.source",
+          "bytes": 239734,
+          "sha256": "2d0ca4c17fc56590c3bf0402bb7ba0f2c5abfec99bed70d4c22ad959d1a84a9c"
+        }
+      ]
+    },
+    {
+      "source_id": "S96",
+      "url": "https://newsroom.heart.org/news/las-ecuaciones-prevent-pueden-mejorar-y-personalizar-la-atencion-en-adultos-con-presion-alta",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "8b0a35da98008fb2e146bc79b448fd88427dc918b2269c2094d0428af43960a7",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S96.source",
+          "bytes": 91142,
+          "sha256": "0b4a1fa0630df1a2e10a18574c5a1afd51f1af390f7d1562ed0947ffbe9706d6"
+        }
+      ]
+    },
+    {
+      "source_id": "S97",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10616052/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 16,
+      "extracted_text_sha256": "2c0b7fa8bfa2e7b7149474a91acaeaf68bcc88b88e24ecc58dd865f39b23ca52",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S97.source",
+          "bytes": 163755,
+          "sha256": "d94948f6911de14c9c46d7f912f86d3443c198f4519154993a2b4cf3f3b1a7f7"
+        }
+      ]
+    },
+    {
+      "source_id": "S98",
+      "url": "https://secardiologia.es/images/2024/Gu%C3%ADas/Gui%CC%81a-ESC-2025-manejo-ECV-y-embarazo.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 6,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 126,
+      "extracted_text_sha256": "c3a1b0bbc83993b311cf8efdd63690deae8c68a2d72ad47afcc0d12e3d3a96a9",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S98.source",
+          "bytes": 5019522,
+          "sha256": "f5ad38a23001d16107b602013f8ed9db9f0072b9d5784cda4d19107c5f7ece92"
+        }
+      ]
+    },
+    {
+      "source_id": "S99",
+      "url": "https://es.cochrane.org/es/glosario",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 4,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 9,
+      "extracted_text_sha256": "48d4bbeed6aa9240664f7c452acc48e9de271483ab9e3419aae3d3a24accda65",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S99.source",
+          "bytes": 69988,
+          "sha256": "480d6c3c37e174fe5334ac9efdfaaa8034eb0eb255c803e77dfb4b86210f1d2b"
+        }
+      ]
+    },
+    {
+      "source_id": "S100",
+      "url": "https://es.cochrane.org/sites/es.cochrane.org/files/uploads/manual_cochrane_510_web.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 7,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 639,
+      "extracted_text_sha256": "71ef83b248d85bbf1f307d25f21a065d4ef5bd650525284ad00ad44c64902c6f",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S100.source",
+          "bytes": 3704755,
+          "sha256": "59c89c77f99c34010097e7687fdf756295ea92bea82b178ae51fe0742d95a1b6"
+        }
+      ]
+    },
+    {
+      "source_id": "S101",
+      "url": "https://www.cancer.gov/espanol/publicaciones/diccionarios/diccionario-cancer/def/cociente-de-riesgos-instantaneos",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 2,
+      "extracted_text_sha256": "cabf16382621bc9f7bd55d74f4f076fd88334c0f7ad302de6d118118500b2b92",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S101.source",
+          "bytes": 25651,
+          "sha256": "dfc1544d713e203fc59de4f45ccfd864d382067c3d2ebf1801e0cf9ca47fb387"
+        }
+      ]
+    },
+    {
+      "source_id": "S102",
+      "url": "https://www.cdc.gov/high-blood-pressure/es/about/acerca-de-la-presion-arterial-alta.html",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 4,
+      "extracted_text_sha256": "289dbf7fab2bceb3b5bd73b196dbbdb0e4db85ca2f323e10a9954989c266d9cb",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S102.web.txt",
+          "bytes": 12552,
+          "sha256": "06cba4e64d1ddb06b93f694c80bfd1c5f78eb9cea9c80ce0a48f411eb79102ea"
+        }
+      ]
+    },
+    {
+      "source_id": "S103",
+      "url": "https://newsroom.heart.org/news/una-nueva-investigacion-cientifica-probara-la-calculadora-de-riesgo-prevent-entre-diversos-grupos",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "a235364f331a3db769a8e14520b8b08d199697a7817384294275f71f98297997",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S103.source",
+          "bytes": 78898,
+          "sha256": "131eadac7773962f8816c7afc96be99b3f8ff9f11cac8412604d3b50961ac558"
+        }
+      ]
+    },
+    {
+      "source_id": "S104",
+      "url": "https://www.nia.nih.gov/espanol/deterioro-cognitivo-leve",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 4,
+      "extracted_text_sha256": "2c2cfe590d8f35c28c7175be664c9a0915f991956a048907a6c0a3dfb69d5a07",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S104.source",
+          "bytes": 47038,
+          "sha256": "00cf14e17097e9a45a6654bb53b24dc217838f0e1bb269264395aab63a3a2453"
+        }
+      ]
+    },
+    {
+      "source_id": "S105",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34851584/",
+      "continuation_access_level": "indexed_spanish_abstract_read",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "indexed_other_abstract",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "0515d36baeb9e1fe4c26faf358018dfe81e0eff5c013bc1dca22a7d91af50a28",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S105.indexed.txt",
+          "bytes": 29634,
+          "sha256": "862d5d9dbf987dc20cccc713eccf7b8e2394f7670617a59caf8a16d6b242628f"
+        },
+        {
+          "filename": "source_cache/S105.source",
+          "bytes": 5590,
+          "sha256": "01b78483a190feb1d1ee8ea719c55e193c8dcfdc4c5c5eb420f9a04ff728d183"
+        }
+      ]
+    },
+    {
+      "source_id": "S106",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30383082/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 12,
+      "extracted_text_sha256": "b72494c80c5288669add6c0f1a252b7f2d212e77ba3993610c4e3636572fbd55",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S106.source",
+          "bytes": 5590,
+          "sha256": "d90c9dc5fdc32581ec5c02535b3558932dc540090ca4995190802ce6056dddd2"
+        },
+        {
+          "filename": "source_cache/S106.web.txt",
+          "bytes": 22105,
+          "sha256": "58af9dc57c2d77fca65f2ea7b58b2dbb1ccd4b5749735f169e437a731873473d"
+        }
+      ]
+    },
+    {
+      "source_id": "S107",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39078908/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 9,
+      "extracted_text_sha256": "e810cceb2d86bcf8b09f6dd955102c033b847945b912d5d6a084838808aaeffe",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S107.source",
+          "bytes": 5590,
+          "sha256": "b63e63c7dcc4d1f5ba90e73e343b2892ec9bd950602d473c2aa10ff9b0c67f5a"
+        },
+        {
+          "filename": "source_cache/S107.web.txt",
+          "bytes": 11831,
+          "sha256": "8de09f1e3ddf99e63d26c9af65ae47ec384fa09731c1a02c1e6ca084a3bbfd8e"
+        }
+      ]
+    },
+    {
+      "source_id": "S108",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35064971/",
+      "continuation_access_level": "indexed_excerpt_read_not_full_article",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "extracted_locator_count": 4,
+      "extracted_text_sha256": "06e112a98bdc0402cd8869cc36f441eadda972f6e277379f2b41055d6993183d",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S108.indexed.txt",
+          "bytes": 31286,
+          "sha256": "7b224faf852ba91d7c5e33fc43bb11dada4e87a2a7eaf0e945b716932b4f6611"
+        },
+        {
+          "filename": "source_cache/S108.source",
+          "bytes": 5590,
+          "sha256": "428c661251b51c89722c9ed133b4137888cfbab3458679fcfbeb3c870170eae1"
+        }
+      ]
+    },
+    {
+      "source_id": "S109",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11273899/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 60,
+      "extracted_text_sha256": "a2bae6413ad5abbb43d45ec52dd31c5f9fefc0872406dd2e71f0263d6d434f5f",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S109.source",
+          "bytes": 431258,
+          "sha256": "346603a3acbf19f97a284d2faaf43a4418904765aa3df1b8e55aee8892f48c7d"
+        }
+      ]
+    },
+    {
+      "source_id": "S110",
+      "url": "https://medlineplus.gov/lab-tests/aldosterone-test/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "53e75097e84145ab754a058db7ce4229ab570f13c511bc9d8b26b3e22467922e",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S110.source",
+          "bytes": 42815,
+          "sha256": "00f1f7c13bd8c01ac935caaaf141b0fc56dab865c701b8903a2a37d70e141a81"
+        }
+      ]
+    },
+    {
+      "source_id": "S111",
+      "url": "https://www.nia.nih.gov/health/memory-loss-and-forgetfulness/what-mild-cognitive-impairment",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 5,
+      "extracted_text_sha256": "b79b9c5e41966471ae44dd2cc65a1807da588cc744b1dbe8ad2d88031d88e3bc",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S111.source",
+          "bytes": 62940,
+          "sha256": "d75dabdbe4c857cde65f41f534d9fa12863347249a929b75e8739f2f7606143c"
+        }
+      ]
+    },
+    {
+      "source_id": "S112",
+      "url": "https://static.elsevier.es/nefro/monografias/1/318/318_061120201940.pdf",
+      "continuation_access_level": "full_pdf_available_selected_terminology_sections_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "pdf_page",
+      "extracted_locator_count": 29,
+      "extracted_text_sha256": "ff3d23b83dde66dbb89f9c567e3ac7bea0e662472f511bf5d79095c2b15fe7bd",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S112.source",
+          "bytes": 1473108,
+          "sha256": "1736bb8a253aed6111c9603b5bef2c16d71fa532a5e457dff2111915de882abb"
+        }
+      ]
+    },
+    {
+      "source_id": "S113",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304541212703992",
+      "continuation_access_level": "indexed_excerpt_read_not_full_article",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "extracted_locator_count": 2,
+      "extracted_text_sha256": "591712ecfd6aa0e2cec40af14928f6fcf4bf097a84fcd99fc5040f25c76c1811",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S113.indexed.txt",
+          "bytes": 8630,
+          "sha256": "bbf89de9461292f3041e06cb0430427fce57d3e69ecf5620bea836f82dcd87d7"
+        }
+      ]
+    },
+    {
+      "source_id": "S114",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36990308/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 11,
+      "extracted_text_sha256": "70feb79150019aa56804ad8a68f88b0d9c4f8fb0130bc5bded019a0bdb66b3ce",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S114.source",
+          "bytes": 5590,
+          "sha256": "e72e7e481ecbc677291aa603f7c13d90352991aa4515b8b2083ac292ef752288"
+        },
+        {
+          "filename": "source_cache/S114.web.txt",
+          "bytes": 21487,
+          "sha256": "5342f3dbabdb694596242cf6d6eddbf03831634a1be4184946c9bd0a205f8043"
+        }
+      ]
+    },
+    {
+      "source_id": "S115",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8575407/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 11,
+      "extracted_text_sha256": "8177ca1f1ba8811fab8be02904e0635d404888a532d744ae1936fff8dd8ed0c3",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S115.source",
+          "bytes": 5590,
+          "sha256": "aeaf70e067333d765674124cc1c94df5e48452fc77b46673bc11cd5b0e967f72"
+        },
+        {
+          "filename": "source_cache/S115.web.txt",
+          "bytes": 14663,
+          "sha256": "8fdb1678281c92a040b1581aae45cca9407450456ef7610128a2e7f1c8107648"
+        }
+      ]
+    },
+    {
+      "source_id": "S116",
+      "url": "https://www.niddk.nih.gov/health-information/informacion-de-la-salud/enfermedades-rinones/insuficiencia-renal/hemodialisis",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 9,
+      "extracted_text_sha256": "6f4a67c75b284a33db519ec39eee31fa85e0850008da314c7b95d48e5a5be76b",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S116.source",
+          "bytes": 74031,
+          "sha256": "6756b3b7f23388192317b416936e89946ec41403cafacc6f7c0cbb3ed2e462f4"
+        }
+      ]
+    },
+    {
+      "source_id": "S117",
+      "url": "https://www.seep.es/images/site/publicaciones/oficialesSEEP/consenso/cap30.pdf",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 2,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "fd53d9b0a95fee7c855ed52021e4a3fe612fce3c7078e8aec6e6cbcf1b847482",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S117.web.txt",
+          "bytes": 26687,
+          "sha256": "614046d1c9f44c0e5e50a57fcb430ca8ac2a2f2af399951dcde2ad6eb2df7981"
+        }
+      ]
+    },
+    {
+      "source_id": "S118",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3894504/",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 6,
+      "extracted_text_sha256": "c84873542c7fd84b510808517dbd10f43085e6bbfb38ed627b096a6badeb5ab3",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S118.source",
+          "bytes": 138084,
+          "sha256": "66a910e0ab8e9305f9243afab494e17989e1371818a318eb26aa5f43ebec301b"
+        }
+      ]
+    },
+    {
+      "source_id": "S119",
+      "url": "https://www.revistanefrologia.com/index.php?p=revista&pii=x0211699504030032&r=100&tipo=pdf-simple",
+      "continuation_access_level": "not_accessible_in_continuation_or_challenge_only",
+      "used_for_bilingual_verification": false,
+      "bilingual_attestation_count": 0,
+      "locator_kind": null,
+      "extracted_locator_count": 0,
+      "extracted_text_sha256": null,
+      "local_evidence_files": []
+    },
+    {
+      "source_id": "S120",
+      "url": "https://www.scielo.org.mx/scielo.php?pid=S1405-99402012000400008&script=sci_arttext",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 4,
+      "extracted_text_sha256": "b967a1448d8da6dd4e6d5e36b9c64c2dd0bbfbfafd73240e4c56cd7e04eaa798",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S120.source",
+          "bytes": 73149,
+          "sha256": "4c1e4c4cf471f0bb1246e9129f0bc6a6414a3553bcd586a3dfa077ccaec916ae"
+        }
+      ]
+    },
+    {
+      "source_id": "S121",
+      "url": "https://www.scielo.org.mx/scielo.php?pid=S0301-696X2018000400317&script=sci_arttext_plus&tlng=es",
+      "continuation_access_level": "downloaded_html_available_selected_terminology_checked",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "text_block_35_lines",
+      "extracted_locator_count": 13,
+      "extracted_text_sha256": "2d500da00a19b9e065240444bf584d8dece68fb6de2317c44ac8509819e6d777",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S121.source",
+          "bytes": 82759,
+          "sha256": "b8b1bf4fadfde588b52cab63baf0f8f9d205d5c86556ae17867172d2d3c3ebbf"
+        }
+      ]
+    },
+    {
+      "source_id": "S122",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31795491/",
+      "continuation_access_level": "indexed_excerpt_read_not_full_article",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "extracted_locator_count": 4,
+      "extracted_text_sha256": "6d5c805f6b64591f5beeeb19d7a5eb39886947e8eb4815ca238ee2a8dd98587a",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S122.indexed.txt",
+          "bytes": 32884,
+          "sha256": "b20d666ad1e69c1c608f34bfb82e4775c28ec387e039d2ec3b5fd3dbd22d0718"
+        },
+        {
+          "filename": "source_cache/S122.web.blocked.txt",
+          "bytes": 431,
+          "sha256": "4bedc0b2db8c91e50f2daa20c6664fdeaf59f5eb1b4d187bfab5b4c23dc248df"
+        }
+      ]
+    },
+    {
+      "source_id": "S123",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1663969/",
+      "continuation_access_level": "web_extract_read_partial_document",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "web_text_block_35_lines",
+      "extracted_locator_count": 10,
+      "extracted_text_sha256": "18fc133b45d50a726b58cd4dee13273f1476ae026d12e0fa8ee17c0fb954742f",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S123.web.txt",
+          "bytes": 13015,
+          "sha256": "b761165710797aaa8946410a2f0d99d579316799baf779a566c4a5846ed248ec"
+        }
+      ]
+    },
+    {
+      "source_id": "S124",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24968081/",
+      "continuation_access_level": "indexed_excerpt_read_not_full_article",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "extracted_locator_count": 2,
+      "extracted_text_sha256": "602a0607750ff8fa3aa11e13332d32e3d640b79b5f4c9828ee06a9d403443c91",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S124.indexed.txt",
+          "bytes": 34001,
+          "sha256": "adc1e66ca695c1dbf7f761ea73f151f520d96ed3e396318cce35d0c8761167b1"
+        },
+        {
+          "filename": "source_cache/S124.web.blocked.txt",
+          "bytes": 415,
+          "sha256": "b48785e2fb219eb1058a1d286dc7e7ddacedcfd0ca2da568ee11a7c68f30a509"
+        }
+      ]
+    },
+    {
+      "source_id": "S125",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29534844/",
+      "continuation_access_level": "indexed_bilingual_author_keywords_read",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_bilingual_author_keywords",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "38b8134c127c9781455106f0181bcfe021a721d7b72a406fc100323578570ff2",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S125.indexed.txt",
+          "bytes": 7223,
+          "sha256": "f13f9fca2575b6debf2de83bc65b15c4d0238f9564c2b56990b3ed4d09531267"
+        }
+      ]
+    },
+    {
+      "source_id": "S126",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38349318/",
+      "continuation_access_level": "indexed_spanish_abstract_read",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_other_abstract",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "e363a991f5ae4536d00051cccee3c207dd66bd0de834487595216f7887d0e955",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S126.indexed.txt",
+          "bytes": 29573,
+          "sha256": "3ffcfe0390de22a4d86a7577fe782012bafb08c442f533bf19479ae3012b1e9b"
+        }
+      ]
+    },
+    {
+      "source_id": "S127",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25866131/",
+      "continuation_access_level": "indexed_spanish_original_title_read",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_spanish_original_title",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "c0076eed92f75d5a36b51cc85b3b831414ff310680b6569176d4e9a98fa35347",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S127.indexed.txt",
+          "bytes": 32622,
+          "sha256": "5a4ab90e32dfbf5b21c7e6b80a48c4852ec64a7b63105bf45096078ac2fbfde5"
+        }
+      ]
+    },
+    {
+      "source_id": "S128",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2396173/",
+      "continuation_access_level": "indexed_spanish_original_title_read",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_spanish_original_title",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "d29b28fd457a865ce2d1568e851334de2e1f38508f7f12b91e2a21981dbea5a7",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S128.indexed.txt",
+          "bytes": 31281,
+          "sha256": "842a7d1c0c0e073035729314fc143cb53bbd094f8c2e3698f873e86a72d58cab"
+        }
+      ]
+    },
+    {
+      "source_id": "S129",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11497200/",
+      "continuation_access_level": "indexed_excerpt_read_not_full_article",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "extracted_locator_count": 2,
+      "extracted_text_sha256": "702fdc4c4e7b7830dbed76b7a0240227f4ca8b9be6ad3486a1eeef2c3355dda1",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S129.indexed.txt",
+          "bytes": 33635,
+          "sha256": "c237a15ce224c9543257fd1a6bd943a1a64d7ca27d720cf1c164eda517d255af"
+        }
+      ]
+    },
+    {
+      "source_id": "S130",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11219475/",
+      "continuation_access_level": "indexed_excerpt_read_not_full_article",
+      "used_for_bilingual_verification": true,
+      "bilingual_attestation_count": 1,
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "extracted_locator_count": 1,
+      "extracted_text_sha256": "ec8f61a4786d8ba55b0c056fe8ac4b666d69a3b120b5780bed171b476541c7ca",
+      "local_evidence_files": [
+        {
+          "filename": "source_cache/S130.indexed.txt",
+          "bytes": 36312,
+          "sha256": "65ae98b14580b1b5096618a0559d8f7cff647910614dc86b3e4ddaf1ed49f81d"
+        }
+      ]
+    }
+  ]
+}

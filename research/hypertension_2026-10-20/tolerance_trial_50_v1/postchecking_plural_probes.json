@@ -1,0 +1,40 @@
+[
+  {
+    "input": "diastolic blood pressures",
+    "expected_preservation": "diastolic blood pressures",
+    "output": "diastolic blood pressure",
+    "preserved": false,
+    "changes": [
+      {
+        "source": "diastolic blood pressures",
+        "replacement": "diastolic blood pressure",
+        "start": 0,
+        "end": 25,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.980816,
+        "canonical": "diastolic blood pressure"
+      }
+    ],
+    "post_checking_diagnostic": true,
+    "used_for_calibration": false
+  },
+  {
+    "input": "cardiovascular risks",
+    "expected_preservation": "cardiovascular risks",
+    "output": "cardiovascular risk",
+    "preserved": false,
+    "changes": [
+      {
+        "source": "cardiovascular risks",
+        "replacement": "cardiovascular risk",
+        "start": 0,
+        "end": 20,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.976299,
+        "canonical": "cardiovascular risk"
+      }
+    ],
+    "post_checking_diagnostic": true,
+    "used_for_calibration": false
+  }
+]

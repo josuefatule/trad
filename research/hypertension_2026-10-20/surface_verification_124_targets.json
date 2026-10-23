@@ -1,0 +1,1537 @@
+{
+  "started_at_utc": "2026-10-21T11:43:26+00:00",
+  "baseline_alias_review_sha256": "01756db6cd3f309156f7571f23852c1724922b958bbe119669c03afa34e9418b",
+  "count": 124,
+  "targets": [
+    {
+      "form_id": "UF0015",
+      "concept_id": "HTN_2767d28f15ca",
+      "canonical_en": "drug-induced hypertension",
+      "language": "es",
+      "form": "hipertensión farmacológica",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0021"
+      ]
+    },
+    {
+      "form_id": "UF0038",
+      "concept_id": "HTN_4839c5fb4734",
+      "canonical_en": "blood pressure variability",
+      "language": "es",
+      "form": "variabilidad tensional",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0061"
+      ]
+    },
+    {
+      "form_id": "UF0042",
+      "concept_id": "HTN_f90386ecb722",
+      "canonical_en": "office blood pressure",
+      "language": "es",
+      "form": "presión arterial en consulta",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0065"
+      ]
+    },
+    {
+      "form_id": "UF0044",
+      "concept_id": "HTN_e4fa389210bd",
+      "canonical_en": "home blood pressure monitoring",
+      "language": "es",
+      "form": "automedición domiciliaria de la presión arterial",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Forma clínica de AMPA; verificar quién mide y el ámbito domiciliario. No equiparar todo seguimiento remoto o medición por un profesional con automedición.",
+      "occurrence_ids": [
+        "AF0070"
+      ]
+    },
+    {
+      "form_id": "UF0048",
+      "concept_id": "HTN_cee544e9fe5c",
+      "canonical_en": "out-of-office blood pressure",
+      "language": "es",
+      "form": "presión arterial fuera de consulta",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0080"
+      ]
+    },
+    {
+      "form_id": "UF0058",
+      "concept_id": "HTN_05927d0a6a03",
+      "canonical_en": "stage 2 hypertension",
+      "language": "en",
+      "form": "stage two hypertension",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0097",
+        "AF0099"
+      ]
+    },
+    {
+      "form_id": "UF0075",
+      "concept_id": "HTN_b2e17b4f8177",
+      "canonical_en": "2017 ACC/AHA guideline",
+      "language": "en",
+      "form": "2017 ACC/AHA hypertension guideline",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0128",
+        "AF0129"
+      ]
+    },
+    {
+      "form_id": "UF0079",
+      "concept_id": "HTN_b0de6f8f7d51",
+      "canonical_en": "guideline-driven management",
+      "language": "en",
+      "form": "guideline-directed management",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0136",
+        "AF0138"
+      ]
+    },
+    {
+      "form_id": "UF0080",
+      "concept_id": "HTN_b0de6f8f7d51",
+      "canonical_en": "guideline-driven management",
+      "language": "es",
+      "form": "manejo orientado por guías",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0137"
+      ]
+    },
+    {
+      "form_id": "UF0083",
+      "concept_id": "HTN_b75c6240e7e5",
+      "canonical_en": "treatment goal",
+      "language": "es",
+      "form": "meta de tratamiento",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0142"
+      ]
+    },
+    {
+      "form_id": "UF0117",
+      "concept_id": "HTN_c55b21ee723a",
+      "canonical_en": "co-chair",
+      "language": "es",
+      "form": "coordinador conjunto",
+      "status": "exclude_strict_equivalence",
+      "editorial_reason": "La coordinación conjunta no garantiza el cargo de copresidente. Mantener copresidente; no promover el cargo alternativo a alias.",
+      "occurrence_ids": [
+        "AF0202"
+      ]
+    },
+    {
+      "form_id": "UF0148",
+      "concept_id": "HTN_5995e0e6626c",
+      "canonical_en": "salt loading",
+      "language": "es",
+      "form": "carga salina",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0268"
+      ]
+    },
+    {
+      "form_id": "UF0157",
+      "concept_id": "HTN_ebc0c2650392",
+      "canonical_en": "hyponatremia",
+      "language": "en",
+      "form": "hyponatraemia",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0283",
+        "AF0284"
+      ]
+    },
+    {
+      "form_id": "UF0158",
+      "concept_id": "HTN_2c96093ca246",
+      "canonical_en": "hypernatremia",
+      "language": "en",
+      "form": "hypernatraemia",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0285",
+        "AF0286"
+      ]
+    },
+    {
+      "form_id": "UF0159",
+      "concept_id": "HTN_fe15c79eba36",
+      "canonical_en": "hypokalemic metabolic alkalosis",
+      "language": "en",
+      "form": "hypokalaemic metabolic alkalosis",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0287",
+        "AF0288"
+      ]
+    },
+    {
+      "form_id": "UF0174",
+      "concept_id": "HTN_62d56e18d9ed",
+      "canonical_en": "non-pharmacological therapy",
+      "language": "en",
+      "form": "nonpharmacologic therapy",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0314",
+        "AF0316"
+      ]
+    },
+    {
+      "form_id": "UF0175",
+      "concept_id": "HTN_62d56e18d9ed",
+      "canonical_en": "non-pharmacological therapy",
+      "language": "en",
+      "form": "non-pharmacologic therapy",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0315",
+        "AF0317"
+      ]
+    },
+    {
+      "form_id": "UF0196",
+      "concept_id": "HTN_55b590510cc3",
+      "canonical_en": "alpha blockers",
+      "language": "en",
+      "form": "alpha-adrenergic blockers",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0357",
+        "AF0360"
+      ]
+    },
+    {
+      "form_id": "UF0205",
+      "concept_id": "HTN_5083c8261cb4",
+      "canonical_en": "hormone replacement therapy",
+      "language": "en",
+      "form": "hormonal replacement therapy",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0376",
+        "AF0378"
+      ]
+    },
+    {
+      "form_id": "UF0206",
+      "concept_id": "HTN_5083c8261cb4",
+      "canonical_en": "hormone replacement therapy",
+      "language": "es",
+      "form": "tratamiento hormonal sustitutivo",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0377"
+      ]
+    },
+    {
+      "form_id": "UF0207",
+      "concept_id": "HTN_d8a636f1c1c1",
+      "canonical_en": "immunosuppressive agents",
+      "language": "en",
+      "form": "immunosuppressants",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0379",
+        "AF0381"
+      ]
+    },
+    {
+      "form_id": "UF0232",
+      "concept_id": "HTN_6e971a22a68d",
+      "canonical_en": "hemorrhagic stroke",
+      "language": "en",
+      "form": "haemorrhagic stroke",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0420",
+        "AF0422"
+      ]
+    },
+    {
+      "form_id": "UF0247",
+      "concept_id": "HTN_09417dacb727",
+      "canonical_en": "atrial fibrillation",
+      "language": "en",
+      "form": "AFib",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0452",
+        "AF0455",
+        "AF0458"
+      ]
+    },
+    {
+      "form_id": "UF0267",
+      "concept_id": "HTN_23003a7c53dc",
+      "canonical_en": "healthy diet",
+      "language": "en",
+      "form": "healthy dietary pattern",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Patrón y dieta son formulaciones relacionadas en recomendaciones; no convertirlo en un régimen específico como DASH.",
+      "occurrence_ids": [
+        "AF0493",
+        "AF0495"
+      ]
+    },
+    {
+      "form_id": "UF0274",
+      "concept_id": "HTN_d5f7ec4c74ec",
+      "canonical_en": "dietary sodium restriction",
+      "language": "es",
+      "form": "restricción dietética de sodio",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0505"
+      ]
+    },
+    {
+      "form_id": "UF0277",
+      "concept_id": "HTN_8ded5b0bc81d",
+      "canonical_en": "potassium-enriched salt substitute",
+      "language": "en",
+      "form": "potassium-supplemented salt",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Confirmar que se usa como sustituto de sal y conserva la composición del producto; no inferir porcentaje o dosis de potasio.",
+      "occurrence_ids": [
+        "AF0509",
+        "AF0511"
+      ]
+    },
+    {
+      "form_id": "UF0280",
+      "concept_id": "HTN_f238539d62d7",
+      "canonical_en": "sugar-sweetened beverages",
+      "language": "en",
+      "form": "sugary drinks",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Forma coloquial; verificar presencia de azúcar añadido en la definición del estudio. No incluir automáticamente bebidas sin azúcar añadido.",
+      "occurrence_ids": [
+        "AF0514",
+        "AF0516"
+      ]
+    },
+    {
+      "form_id": "UF0281",
+      "concept_id": "HTN_f238539d62d7",
+      "canonical_en": "sugar-sweetened beverages",
+      "language": "es",
+      "form": "bebidas endulzadas con azúcar",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0515"
+      ]
+    },
+    {
+      "form_id": "UF0282",
+      "concept_id": "HTN_bd3740c054f3",
+      "canonical_en": "aerobic exercise",
+      "language": "en",
+      "form": "aerobic training",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Entrenamiento es un programa; ejercicio puede ser una actividad aislada. Conservar duración y modalidad.",
+      "occurrence_ids": [
+        "AF0517",
+        "AF0518"
+      ]
+    },
+    {
+      "form_id": "UF0284",
+      "concept_id": "HTN_9f7e988429eb",
+      "canonical_en": "dynamic resistance exercise",
+      "language": "es",
+      "form": "ejercicio dinámico de resistencia",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Resistencia se usa aquí como fuerza contra carga; no confundir con resistencia cardiorrespiratoria.",
+      "occurrence_ids": [
+        "AF0520"
+      ]
+    },
+    {
+      "form_id": "UF0286",
+      "concept_id": "HTN_be068174bf76",
+      "canonical_en": "isometric resistance exercise",
+      "language": "es",
+      "form": "ejercicio de resistencia isométrica",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Conservar contracción isométrica de fuerza; no convertir en ejercicio dinámico o aeróbico.",
+      "occurrence_ids": [
+        "AF0523"
+      ]
+    },
+    {
+      "form_id": "UF0288",
+      "concept_id": "HTN_360421e6c958",
+      "canonical_en": "alcohol moderation",
+      "language": "en",
+      "form": "moderation of alcohol consumption",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0526",
+        "AF0527"
+      ]
+    },
+    {
+      "form_id": "UF0289",
+      "concept_id": "HTN_47472794360d",
+      "canonical_en": "dietary counseling",
+      "language": "en",
+      "form": "dietary counselling",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0528",
+        "AF0530"
+      ]
+    },
+    {
+      "form_id": "UF0295",
+      "concept_id": "HTN_367a095cd401",
+      "canonical_en": "millimeters of mercury",
+      "language": "en",
+      "form": "millimetres of mercury",
+      "status": "unit_symbol_preserve",
+      "editorial_reason": "Conservar valor, unidad, prefijo, barra y denominador. Admitir grafía equivalente solo con análisis dimensional; esta revisión no convierte cantidades ni dosis.",
+      "occurrence_ids": [
+        "AF0537",
+        "AF0542"
+      ]
+    },
+    {
+      "form_id": "UF0304",
+      "concept_id": "HTN_b3a920f4854a",
+      "canonical_en": "micrograms per day",
+      "language": "en",
+      "form": "µg/day",
+      "status": "unit_symbol_preserve",
+      "editorial_reason": "Conservar valor, unidad, prefijo, barra y denominador. Admitir grafía equivalente solo con análisis dimensional; esta revisión no convierte cantidades ni dosis.",
+      "occurrence_ids": [
+        "AF0552",
+        "AF0555"
+      ]
+    },
+    {
+      "form_id": "UF0305",
+      "concept_id": "HTN_b3a920f4854a",
+      "canonical_en": "micrograms per day",
+      "language": "en",
+      "form": "mcg/day",
+      "status": "unit_symbol_preserve",
+      "editorial_reason": "Conservar valor, unidad, prefijo, barra y denominador. Admitir grafía equivalente solo con análisis dimensional; esta revisión no convierte cantidades ni dosis.",
+      "occurrence_ids": [
+        "AF0553",
+        "AF0556"
+      ]
+    },
+    {
+      "form_id": "UF0306",
+      "concept_id": "HTN_b3a920f4854a",
+      "canonical_en": "micrograms per day",
+      "language": "es",
+      "form": "µg/día",
+      "status": "unit_symbol_preserve",
+      "editorial_reason": "Conservar valor, unidad, prefijo, barra y denominador. Admitir grafía equivalente solo con análisis dimensional; esta revisión no convierte cantidades ni dosis.",
+      "occurrence_ids": [
+        "AF0554"
+      ]
+    },
+    {
+      "form_id": "UF0308",
+      "concept_id": "HTN_08df2fb9a572",
+      "canonical_en": "micrograms per deciliter",
+      "language": "en",
+      "form": "mcg/dL",
+      "status": "unit_symbol_preserve",
+      "editorial_reason": "Conservar valor, unidad, prefijo, barra y denominador. Admitir grafía equivalente solo con análisis dimensional; esta revisión no convierte cantidades ni dosis.",
+      "occurrence_ids": [
+        "AF0558",
+        "AF0561"
+      ]
+    },
+    {
+      "form_id": "UF0309",
+      "concept_id": "HTN_08df2fb9a572",
+      "canonical_en": "micrograms per deciliter",
+      "language": "es",
+      "form": "µg/dL",
+      "status": "unit_symbol_preserve",
+      "editorial_reason": "Conservar valor, unidad, prefijo, barra y denominador. Admitir grafía equivalente solo con análisis dimensional; esta revisión no convierte cantidades ni dosis.",
+      "occurrence_ids": [
+        "AF0559"
+      ]
+    },
+    {
+      "form_id": "UF0313",
+      "concept_id": "HTN_bb6a727d2682",
+      "canonical_en": "plasma concentration",
+      "language": "en",
+      "form": "plasma levels",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Niveles es una expresión informal de concentración solo si el analito y la muestra son explícitos; no inferir actividad de renina.",
+      "occurrence_ids": [
+        "AF0566"
+      ]
+    },
+    {
+      "form_id": "UF0315",
+      "concept_id": "HTN_8e676c1a319e",
+      "canonical_en": "blood pressure cuff",
+      "language": "es",
+      "form": "brazalete de presión arterial",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0568"
+      ]
+    },
+    {
+      "form_id": "UF0317",
+      "concept_id": "HTN_e73ce78bac75",
+      "canonical_en": "oscillometric blood pressure monitor",
+      "language": "es",
+      "form": "tensiómetro oscilométrico",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0570"
+      ]
+    },
+    {
+      "form_id": "UF0320",
+      "concept_id": "HTN_9814c63d18cd",
+      "canonical_en": "inter-arm blood pressure difference",
+      "language": "es",
+      "form": "diferencia interbraquial de presión arterial",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0574"
+      ]
+    },
+    {
+      "form_id": "UF0336",
+      "concept_id": "HTN_a440318f5b79",
+      "canonical_en": "pressure natriuresis",
+      "language": "es",
+      "form": "relación presión-natriuresis",
+      "status": "exclude_strict_equivalence",
+      "editorial_reason": "El fenómeno y su relación o curva de respuesta no son cadenas intercambiables. Mantener la relación como expresión relacionada.",
+      "occurrence_ids": [
+        "AF0598"
+      ]
+    },
+    {
+      "form_id": "UF0337",
+      "concept_id": "HTN_f4c619217bb3",
+      "canonical_en": "vasodilation",
+      "language": "en",
+      "form": "vasodilatation",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0599"
+      ]
+    },
+    {
+      "form_id": "UF0345",
+      "concept_id": "HTN_1e4b9f34a68a",
+      "canonical_en": "systemic vascular resistance",
+      "language": "en",
+      "form": "SVR",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0608",
+        "AF0611"
+      ]
+    },
+    {
+      "form_id": "UF0349",
+      "concept_id": "HTN_037c29d33df0",
+      "canonical_en": "heart rate variability",
+      "language": "en",
+      "form": "HRV",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0614",
+        "AF0615"
+      ]
+    },
+    {
+      "form_id": "UF0356",
+      "concept_id": "HTN_69258c163a94",
+      "canonical_en": "baroreflex sensitivity",
+      "language": "en",
+      "form": "BRS",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0626",
+        "AF0627"
+      ]
+    },
+    {
+      "form_id": "UF0369",
+      "concept_id": "HTN_593fe4bc6c8e",
+      "canonical_en": "stethoscope",
+      "language": "es",
+      "form": "fonendoscopio",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0642"
+      ]
+    },
+    {
+      "form_id": "UF0370",
+      "concept_id": "HTN_72feae628383",
+      "canonical_en": "validated blood pressure monitor",
+      "language": "es",
+      "form": "tensiómetro validado",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0643"
+      ]
+    },
+    {
+      "form_id": "UF0372",
+      "concept_id": "HTN_3a2b05370dcb",
+      "canonical_en": "daytime blood pressure",
+      "language": "en",
+      "form": "awake blood pressure",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Periodo del reloj y vigilia no son idénticos. Usar diario de sueño y definición del protocolo; no intercambiar automáticamente en trabajadores por turnos.",
+      "occurrence_ids": [
+        "AF0645"
+      ]
+    },
+    {
+      "form_id": "UF0373",
+      "concept_id": "HTN_c10787c36c00",
+      "canonical_en": "nighttime blood pressure",
+      "language": "en",
+      "form": "asleep blood pressure",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Noche y sueño pueden diferir. Usar diario/protocolo y conservar el periodo informado.",
+      "occurrence_ids": [
+        "AF0646"
+      ]
+    },
+    {
+      "form_id": "UF0375",
+      "concept_id": "HTN_22dfa9af1631",
+      "canonical_en": "blood pressure telemonitoring",
+      "language": "es",
+      "form": "telemonitoreo de la presión arterial",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0649"
+      ]
+    },
+    {
+      "form_id": "UF0378",
+      "concept_id": "HTN_92d75169c430",
+      "canonical_en": "seated blood pressure",
+      "language": "es",
+      "form": "presión arterial en sedestación",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0652"
+      ]
+    },
+    {
+      "form_id": "UF0381",
+      "concept_id": "HTN_e570e6cac3f0",
+      "canonical_en": "non-dipping pattern",
+      "language": "en",
+      "form": "non-dipper pattern",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0655"
+      ]
+    },
+    {
+      "form_id": "UF0384",
+      "concept_id": "HTN_1cf4ceb2ef7b",
+      "canonical_en": "reverse-dipping pattern",
+      "language": "en",
+      "form": "riser pattern",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0658"
+      ]
+    },
+    {
+      "form_id": "UF0385",
+      "concept_id": "HTN_1cf4ceb2ef7b",
+      "canonical_en": "reverse-dipping pattern",
+      "language": "es",
+      "form": "patrón de descenso nocturno inverso",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0659"
+      ]
+    },
+    {
+      "form_id": "UF0387",
+      "concept_id": "HTN_96e9c067e48f",
+      "canonical_en": "night-to-day blood pressure ratio",
+      "language": "es",
+      "form": "relación noche-día",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Exigir PA y sentido noche/día; no invertir numerador y denominador ni inferir porcentaje de descenso.",
+      "occurrence_ids": [
+        "AF0661"
+      ]
+    },
+    {
+      "form_id": "UF0388",
+      "concept_id": "HTN_8faae1055d75",
+      "canonical_en": "refractory hypertension",
+      "language": "en",
+      "form": "RfHTN",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0662",
+        "AF0663"
+      ]
+    },
+    {
+      "form_id": "UF0389",
+      "concept_id": "HTN_df21fce6ced5",
+      "canonical_en": "systolic-diastolic hypertension",
+      "language": "es",
+      "form": "hipertensión sistodiastólica",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0664"
+      ]
+    },
+    {
+      "form_id": "UF0390",
+      "concept_id": "HTN_ef6b40c76638",
+      "canonical_en": "renal parenchymal hypertension",
+      "language": "es",
+      "form": "hipertensión renal parenquimatosa",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0665"
+      ]
+    },
+    {
+      "form_id": "UF0391",
+      "concept_id": "HTN_b91db72f25d2",
+      "canonical_en": "secondary hypertension screening",
+      "language": "es",
+      "form": "tamizaje de hipertensión secundaria",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0666"
+      ]
+    },
+    {
+      "form_id": "UF0396",
+      "concept_id": "HTN_80e560c436f7",
+      "canonical_en": "adrenal venous sampling",
+      "language": "es",
+      "form": "cateterismo de venas suprarrenales",
+      "status": "contextual_equivalence",
+      "editorial_reason": "El cateterismo es el acceso; confirmar muestreo de sangre suprarrenal. No equiparar una intervención venosa sin toma de muestras con AVS.",
+      "occurrence_ids": [
+        "AF0671"
+      ]
+    },
+    {
+      "form_id": "UF0399",
+      "concept_id": "HTN_4110283fe66f",
+      "canonical_en": "overnight dexamethasone suppression test",
+      "language": "en",
+      "form": "overnight DST",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0676"
+      ]
+    },
+    {
+      "form_id": "UF0406",
+      "concept_id": "HTN_cec28ace449f",
+      "canonical_en": "thyroid-stimulating hormone",
+      "language": "es",
+      "form": "tirotropina",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0683"
+      ]
+    },
+    {
+      "form_id": "UF0408",
+      "concept_id": "HTN_813c489391b8",
+      "canonical_en": "parathyroid hormone",
+      "language": "es",
+      "form": "paratohormona",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0686"
+      ]
+    },
+    {
+      "form_id": "UF0410",
+      "concept_id": "HTN_8909ed6fb46f",
+      "canonical_en": "glucocorticoid-remediable aldosteronism",
+      "language": "en",
+      "form": "glucocorticoid-remediable hyperaldosteronism",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0689"
+      ]
+    },
+    {
+      "form_id": "UF0411",
+      "concept_id": "HTN_8909ed6fb46f",
+      "canonical_en": "glucocorticoid-remediable aldosteronism",
+      "language": "es",
+      "form": "hiperaldosteronismo sensible a glucocorticoides",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0690"
+      ]
+    },
+    {
+      "form_id": "UF0412",
+      "concept_id": "HTN_9ebc2ef8e698",
+      "canonical_en": "licorice-induced hypertension",
+      "language": "en",
+      "form": "liquorice-induced hypertension",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0691"
+      ]
+    },
+    {
+      "form_id": "UF0414",
+      "concept_id": "HTN_d775cb991490",
+      "canonical_en": "renal Doppler ultrasonography",
+      "language": "es",
+      "form": "ultrasonografía Doppler renal",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0693"
+      ]
+    },
+    {
+      "form_id": "UF0417",
+      "concept_id": "HTN_3539ebcddb94",
+      "canonical_en": "computed tomography angiography",
+      "language": "en",
+      "form": "CTA",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0696",
+        "AF0699"
+      ]
+    },
+    {
+      "form_id": "UF0424",
+      "concept_id": "HTN_bd112ce0a2d7",
+      "canonical_en": "captopril challenge test",
+      "language": "es",
+      "form": "prueba de captopril",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0706"
+      ]
+    },
+    {
+      "form_id": "UF0426",
+      "concept_id": "HTN_b635ff15aeb6",
+      "canonical_en": "Gordon syndrome",
+      "language": "en",
+      "form": "pseudohypoaldosteronism type II",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0709"
+      ]
+    },
+    {
+      "form_id": "UF0427",
+      "concept_id": "HTN_b635ff15aeb6",
+      "canonical_en": "Gordon syndrome",
+      "language": "es",
+      "form": "seudohipoaldosteronismo tipo II",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0710"
+      ]
+    },
+    {
+      "form_id": "UF0434",
+      "concept_id": "HTN_b962d6ee32b1",
+      "canonical_en": "urine albumin-to-creatinine ratio",
+      "language": "en",
+      "form": "UACR",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0719",
+        "AF0722"
+      ]
+    },
+    {
+      "form_id": "UF0435",
+      "concept_id": "HTN_b962d6ee32b1",
+      "canonical_en": "urine albumin-to-creatinine ratio",
+      "language": "es",
+      "form": "relación albúmina-creatinina urinaria",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0720"
+      ]
+    },
+    {
+      "form_id": "UF0437",
+      "concept_id": "HTN_34a93ba5e9c3",
+      "canonical_en": "urine protein-to-creatinine ratio",
+      "language": "en",
+      "form": "urinary protein-to-creatinine ratio",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0724"
+      ]
+    },
+    {
+      "form_id": "UF0438",
+      "concept_id": "HTN_34a93ba5e9c3",
+      "canonical_en": "urine protein-to-creatinine ratio",
+      "language": "en",
+      "form": "UPCR",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0725",
+        "AF0726"
+      ]
+    },
+    {
+      "form_id": "UF0440",
+      "concept_id": "HTN_df9e31f92eaa",
+      "canonical_en": "severely increased albuminuria",
+      "language": "es",
+      "form": "albuminuria severamente aumentada",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0729"
+      ]
+    },
+    {
+      "form_id": "UF0460",
+      "concept_id": "HTN_d16300f1f043",
+      "canonical_en": "torsemide",
+      "language": "en",
+      "form": "torasemide",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0754"
+      ]
+    },
+    {
+      "form_id": "UF0461",
+      "concept_id": "HTN_5abdfe8a74e5",
+      "canonical_en": "clevidipine",
+      "language": "es",
+      "form": "clevidipina",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0755"
+      ]
+    },
+    {
+      "form_id": "UF0465",
+      "concept_id": "HTN_b11a365c1e0e",
+      "canonical_en": "dual combination therapy",
+      "language": "es",
+      "form": "biterapia antihipertensiva",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Exige contexto antihipertensivo y dos componentes; no asumir un único comprimido.",
+      "occurrence_ids": [
+        "AF0759"
+      ]
+    },
+    {
+      "form_id": "UF0466",
+      "concept_id": "HTN_84e2adba4b70",
+      "canonical_en": "triple combination therapy",
+      "language": "es",
+      "form": "triterapia antihipertensiva",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Exige contexto antihipertensivo y tres componentes; no asumir dosis fija o un único comprimido.",
+      "occurrence_ids": [
+        "AF0760"
+      ]
+    },
+    {
+      "form_id": "UF0467",
+      "concept_id": "HTN_a72efe860fab",
+      "canonical_en": "fixed-dose combination",
+      "language": "en",
+      "form": "FDC",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0761",
+        "AF0762"
+      ]
+    },
+    {
+      "form_id": "UF0471",
+      "concept_id": "HTN_7865f1343d17",
+      "canonical_en": "pill burden",
+      "language": "es",
+      "form": "carga de medicación",
+      "status": "exclude_strict_equivalence",
+      "editorial_reason": "Carga de medicación es más amplia que número de comprimidos. Proponer número de comprimidos/pastillas como aclaración contextual; no sustituir por dosis total.",
+      "occurrence_ids": [
+        "AF0766"
+      ]
+    },
+    {
+      "form_id": "UF0472",
+      "concept_id": "HTN_4fbed4ebc3ab",
+      "canonical_en": "directly observed therapy",
+      "language": "en",
+      "form": "DOT",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0767",
+        "AF0768"
+      ]
+    },
+    {
+      "form_id": "UF0478",
+      "concept_id": "HTN_9412e69eba77",
+      "canonical_en": "acute target-organ damage",
+      "language": "es",
+      "form": "daño agudo de órgano blanco",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0776"
+      ]
+    },
+    {
+      "form_id": "UF0480",
+      "concept_id": "HTN_904f38fd021a",
+      "canonical_en": "retinal hemorrhages",
+      "language": "en",
+      "form": "retinal haemorrhages",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0778"
+      ]
+    },
+    {
+      "form_id": "UF0481",
+      "concept_id": "HTN_1c4586f0bfb0",
+      "canonical_en": "cotton-wool spots",
+      "language": "es",
+      "form": "manchas algodonosas",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0779"
+      ]
+    },
+    {
+      "form_id": "UF0483",
+      "concept_id": "HTN_41c90614b28b",
+      "canonical_en": "disseminated intravascular coagulation",
+      "language": "en",
+      "form": "DIC",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0781",
+        "AF0783"
+      ]
+    },
+    {
+      "form_id": "UF0486",
+      "concept_id": "HTN_b26b18175258",
+      "canonical_en": "thrombotic microangiopathy",
+      "language": "en",
+      "form": "TMA",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0787",
+        "AF0788"
+      ]
+    },
+    {
+      "form_id": "UF0487",
+      "concept_id": "HTN_073d741b83bc",
+      "canonical_en": "flash pulmonary edema",
+      "language": "es",
+      "form": "edema agudo de pulmón de inicio brusco",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0789"
+      ]
+    },
+    {
+      "form_id": "UF0490",
+      "concept_id": "HTN_29f55df63c6b",
+      "canonical_en": "postpartum hypertension",
+      "language": "es",
+      "form": "hipertensión postparto",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0793"
+      ]
+    },
+    {
+      "form_id": "UF0491",
+      "concept_id": "HTN_696e8078d71d",
+      "canonical_en": "postpartum preeclampsia",
+      "language": "en",
+      "form": "post-partum preeclampsia",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0794"
+      ]
+    },
+    {
+      "form_id": "UF0492",
+      "concept_id": "HTN_24745863022e",
+      "canonical_en": "fetal growth restriction",
+      "language": "en",
+      "form": "FGR",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0795",
+        "AF0797"
+      ]
+    },
+    {
+      "form_id": "UF0493",
+      "concept_id": "HTN_24745863022e",
+      "canonical_en": "fetal growth restriction",
+      "language": "es",
+      "form": "RCF",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0796",
+        "AF0798"
+      ]
+    },
+    {
+      "form_id": "UF0497",
+      "concept_id": "HTN_862d65006732",
+      "canonical_en": "preterm birth",
+      "language": "es",
+      "form": "nacimiento pretérmino",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0804"
+      ]
+    },
+    {
+      "form_id": "UF0498",
+      "concept_id": "HTN_06ea0cc5c018",
+      "canonical_en": "thrombocytopenia",
+      "language": "es",
+      "form": "plaquetopenia",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0805"
+      ]
+    },
+    {
+      "form_id": "UF0501",
+      "concept_id": "HTN_fa41e26c3499",
+      "canonical_en": "low-dose aspirin",
+      "language": "es",
+      "form": "aspirina en dosis bajas",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0808"
+      ]
+    },
+    {
+      "form_id": "UF0504",
+      "concept_id": "HTN_5aa4a62446f8",
+      "canonical_en": "silent cerebral infarcts",
+      "language": "es",
+      "form": "infartos cerebrales asintomáticos",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0812"
+      ]
+    },
+    {
+      "form_id": "UF0505",
+      "concept_id": "HTN_4b80e7a6b344",
+      "canonical_en": "brain atrophy",
+      "language": "es",
+      "form": "atrofia encefálica",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0813"
+      ]
+    },
+    {
+      "form_id": "UF0507",
+      "concept_id": "HTN_393b106c5173",
+      "canonical_en": "left ventricular dilatation",
+      "language": "en",
+      "form": "left ventricular dilation",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0815"
+      ]
+    },
+    {
+      "form_id": "UF0515",
+      "concept_id": "HTN_223d980c4d43",
+      "canonical_en": "fundoscopy",
+      "language": "en",
+      "form": "funduscopy",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0830"
+      ]
+    },
+    {
+      "form_id": "UF0516",
+      "concept_id": "HTN_223d980c4d43",
+      "canonical_en": "fundoscopy",
+      "language": "es",
+      "form": "examen de fondo de ojo",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0831"
+      ]
+    },
+    {
+      "form_id": "UF0518",
+      "concept_id": "HTN_d6534113a000",
+      "canonical_en": "bicuspid aortic valve",
+      "language": "en",
+      "form": "BAV",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0833",
+        "AF0834"
+      ]
+    },
+    {
+      "form_id": "UF0524",
+      "concept_id": "HTN_28bddd9d03fe",
+      "canonical_en": "nonmodifiable risk factors",
+      "language": "en",
+      "form": "non-modifiable risk factors",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0843"
+      ]
+    },
+    {
+      "form_id": "UF0527",
+      "concept_id": "HTN_c25a6df45c74",
+      "canonical_en": "healthcare access",
+      "language": "en",
+      "form": "health care access",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0846"
+      ]
+    },
+    {
+      "form_id": "UF0529",
+      "concept_id": "HTN_a9b889561f21",
+      "canonical_en": "potassium chloride",
+      "language": "en",
+      "form": "KCl",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0849",
+        "AF0850"
+      ]
+    },
+    {
+      "form_id": "UF0530",
+      "concept_id": "HTN_5acfc640f1d6",
+      "canonical_en": "pediatric hypertension",
+      "language": "en",
+      "form": "paediatric hypertension",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0851"
+      ]
+    },
+    {
+      "form_id": "UF0533",
+      "concept_id": "HTN_10b0fd07b0f1",
+      "canonical_en": "intermittent hypoxemia",
+      "language": "en",
+      "form": "intermittent hypoxaemia",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0855"
+      ]
+    },
+    {
+      "form_id": "UF0539",
+      "concept_id": "HTN_314069effe73",
+      "canonical_en": "composite outcome",
+      "language": "es",
+      "form": "criterio de valoración compuesto",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0863"
+      ]
+    },
+    {
+      "form_id": "UF0540",
+      "concept_id": "HTN_503da7f3970c",
+      "canonical_en": "nonfatal myocardial infarction",
+      "language": "en",
+      "form": "non-fatal myocardial infarction",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0864"
+      ]
+    },
+    {
+      "form_id": "UF0541",
+      "concept_id": "HTN_581d1bf28a4d",
+      "canonical_en": "nonfatal stroke",
+      "language": "en",
+      "form": "non-fatal stroke",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0865"
+      ]
+    },
+    {
+      "form_id": "UF0546",
+      "concept_id": "HTN_30e8e09a8300",
+      "canonical_en": "intention-to-treat analysis",
+      "language": "en",
+      "form": "ITT analysis",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0873"
+      ]
+    },
+    {
+      "form_id": "UF0547",
+      "concept_id": "HTN_aba8d7c8cf55",
+      "canonical_en": "crossover trial",
+      "language": "en",
+      "form": "cross-over trial",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0874"
+      ]
+    },
+    {
+      "form_id": "UF0548",
+      "concept_id": "HTN_b35b3e988fc5",
+      "canonical_en": "double-blind trial",
+      "language": "en",
+      "form": "double-masked trial",
+      "status": "contextual_equivalence",
+      "editorial_reason": "Variantes de enmascaramiento: conservar a quién se ocultó la asignación; doble no identifica por sí solo los dos grupos.",
+      "occurrence_ids": [
+        "AF0875"
+      ]
+    },
+    {
+      "form_id": "UF0550",
+      "concept_id": "HTN_8f91151defd9",
+      "canonical_en": "class of recommendation",
+      "language": "en",
+      "form": "COR",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0877",
+        "AF0878"
+      ]
+    },
+    {
+      "form_id": "UF0551",
+      "concept_id": "HTN_1e18acbff377",
+      "canonical_en": "level of evidence",
+      "language": "en",
+      "form": "LOE",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0879",
+        "AF0880"
+      ]
+    },
+    {
+      "form_id": "UF0556",
+      "concept_id": "HTN_1ca84c094bc5",
+      "canonical_en": "relative risk reduction",
+      "language": "en",
+      "form": "RRR",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0887",
+        "AF0888"
+      ]
+    },
+    {
+      "form_id": "UF0557",
+      "concept_id": "HTN_fc1d22db340b",
+      "canonical_en": "2025 AHA/ACC guideline",
+      "language": "en",
+      "form": "2025 ACC/AHA guideline",
+      "status": "contextual_equivalence",
+      "editorial_reason": "El orden de las sociedades puede variar; mantener año y tema de hipertensión. En 2025 existen otras guías AHA/ACC, incluida ACS.",
+      "occurrence_ids": [
+        "AF0889"
+      ]
+    },
+    {
+      "form_id": "UF0558",
+      "concept_id": "HTN_661d20dc6719",
+      "canonical_en": "PREVENT equations",
+      "language": "en",
+      "form": "PREVENT risk equations",
+      "status": "abbreviation_context_only",
+      "editorial_reason": "Forma abreviada o fórmula: exigir definición local, idioma y concepto; conservar número gramatical, subíndices y calificadores. No aprobar expansión automática.",
+      "occurrence_ids": [
+        "AF0890"
+      ]
+    },
+    {
+      "form_id": "UF0562",
+      "concept_id": "HTN_e568e3ec1749",
+      "canonical_en": "10-year cardiovascular disease risk",
+      "language": "en",
+      "form": "ten-year cardiovascular disease risk",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0894"
+      ]
+    },
+    {
+      "form_id": "UF0564",
+      "concept_id": "HTN_49866f6cfaa1",
+      "canonical_en": "dihydropyridine calcium channel blockers",
+      "language": "es",
+      "form": "calcioantagonistas dihidropiridínicos",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0896"
+      ]
+    },
+    {
+      "form_id": "UF0566",
+      "concept_id": "HTN_d4477e83d156",
+      "canonical_en": "non-dihydropyridine calcium channel blockers",
+      "language": "es",
+      "form": "calcioantagonistas no dihidropiridínicos",
+      "status": "lexical_variant_for_research",
+      "editorial_reason": "Revisión editorial: variante de denominación utilizable para consulta dentro de este concepto; conservar gramática y todos los calificadores. No es autorización de sustitución literal.",
+      "occurrence_ids": [
+        "AF0898"
+      ]
+    }
+  ]
+}

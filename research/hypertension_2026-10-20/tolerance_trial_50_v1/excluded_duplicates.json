@@ -1,0 +1,297 @@
+[
+  {
+    "case_id": "F01871",
+    "duplicate_of": "F00031",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01875",
+    "duplicate_of": "F01867",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01879",
+    "duplicate_of": "F00165",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01891",
+    "duplicate_of": "F01889",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01893",
+    "duplicate_of": "F00493",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01895",
+    "duplicate_of": "F00753",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01897",
+    "duplicate_of": "F00753",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01905",
+    "duplicate_of": "F00971",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01911",
+    "duplicate_of": "F01909",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01913",
+    "duplicate_of": "F01109",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F01915",
+    "duplicate_of": "F01211",
+    "split": "calibration"
+  },
+  {
+    "case_id": "F00012",
+    "duplicate_of": "F00006",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00028",
+    "duplicate_of": "F01867",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00084",
+    "duplicate_of": "F00078",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00122",
+    "duplicate_of": "F00116",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00160",
+    "duplicate_of": "F00154",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00198",
+    "duplicate_of": "F00192",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00236",
+    "duplicate_of": "F00230",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00274",
+    "duplicate_of": "F00268",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00314",
+    "duplicate_of": "F00308",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00352",
+    "duplicate_of": "F00346",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00458",
+    "duplicate_of": "F01889",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00492",
+    "duplicate_of": "F00486",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00564",
+    "duplicate_of": "F00558",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00602",
+    "duplicate_of": "F00596",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00640",
+    "duplicate_of": "F00634",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00678",
+    "duplicate_of": "F00672",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00716",
+    "duplicate_of": "F00710",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00788",
+    "duplicate_of": "F00782",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00798",
+    "duplicate_of": "F01901",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00826",
+    "duplicate_of": "F00820",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00932",
+    "duplicate_of": "F00926",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F00970",
+    "duplicate_of": "F00964",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01008",
+    "duplicate_of": "F01002",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01046",
+    "duplicate_of": "F01040",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01084",
+    "duplicate_of": "F01078",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01124",
+    "duplicate_of": "F01118",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01162",
+    "duplicate_of": "F01156",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01200",
+    "duplicate_of": "F01194",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01240",
+    "duplicate_of": "F01234",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01278",
+    "duplicate_of": "F01272",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01316",
+    "duplicate_of": "F01310",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01388",
+    "duplicate_of": "F01382",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01426",
+    "duplicate_of": "F01420",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01464",
+    "duplicate_of": "F01458",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01502",
+    "duplicate_of": "F01496",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01540",
+    "duplicate_of": "F01534",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01578",
+    "duplicate_of": "F01572",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01616",
+    "duplicate_of": "F01610",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01654",
+    "duplicate_of": "F01648",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01692",
+    "duplicate_of": "F01686",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01730",
+    "duplicate_of": "F01724",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01768",
+    "duplicate_of": "F01762",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01840",
+    "duplicate_of": "F01834",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01876",
+    "duplicate_of": "F01868",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01892",
+    "duplicate_of": "F01890",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01898",
+    "duplicate_of": "F01896",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01912",
+    "duplicate_of": "F01910",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "F01914",
+    "duplicate_of": "F01110",
+    "split": "synthetic_checking"
+  }
+]

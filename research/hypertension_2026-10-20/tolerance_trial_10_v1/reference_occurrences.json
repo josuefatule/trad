@@ -1,0 +1,461 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "canonical_en": "sodium-containing salts",
+    "sample_id": "cardio_01",
+    "ref_left": 443,
+    "ref_right": 446,
+    "reference_form": "sodium-containing salts",
+    "reference_tokens": [
+      "sodium",
+      "containing",
+      "salts"
+    ],
+    "reference_context": "rich diet or potassium supplemented salts rather than sodium containing salts but this needs to be in patients who've"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "canonical_en": "sodium reabsorption",
+    "sample_id": "cardio_03",
+    "ref_left": 841,
+    "ref_right": 843,
+    "reference_form": "sodium reabsorption",
+    "reference_tokens": [
+      "sodium",
+      "reabsorption"
+    ],
+    "reference_context": "with hypokalemic metabolic alkalosis in some and increased sodium reabsorption with extracellular volume expansion causing hypertension and suppressing"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 635,
+    "ref_right": 637,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "hypertension because there was an increasing risk of cardiovascular events occurring as one stepped up from normal to"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 1112,
+    "ref_right": 1114,
+    "reference_form": "CVD events",
+    "reference_tokens": [
+      "cvd",
+      "events"
+    ],
+    "reference_context": "reports the first one is a comparison of cvd events and death prevented with adherence to two guideline"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 1229,
+    "ref_right": 1231,
+    "reference_form": "CVD events",
+    "reference_tokens": [
+      "cvd",
+      "events"
+    ],
+    "reference_context": "the 2014 report now if you compare the cvd events that were prevented by adherence to these two"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_02",
+    "ref_left": 1567,
+    "ref_right": 1569,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "pressure levels within the normal intensive range with cardiovascular events or disease and what do the data say"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_03",
+    "ref_left": 1183,
+    "ref_right": 1185,
+    "reference_form": "CVD events",
+    "reference_tokens": [
+      "cvd",
+      "events"
+    ],
+    "reference_context": "population blood pressure level has gone down more cvd events are occurring at lower blood pressure levels this"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_03",
+    "ref_left": 1248,
+    "ref_right": 1250,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "it's very interesting that the hazard ratios for cardiovascular events were high there was a 67 increase for"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "canonical_en": "cardiovascular events",
+    "sample_id": "cardio_03",
+    "ref_left": 1297,
+    "ref_right": 1299,
+    "reference_form": "cardiovascular events",
+    "reference_tokens": [
+      "cardiovascular",
+      "events"
+    ],
+    "reference_context": "on this slide where the cumulative incidence of cardiovascular events was very high and those with stage two"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "canonical_en": "tyrosine kinase inhibitors",
+    "sample_id": "cardio_03",
+    "ref_left": 387,
+    "ref_right": 390,
+    "reference_form": "tyrosine kinase inhibitors",
+    "reference_tokens": [
+      "tyrosine",
+      "kinase",
+      "inhibitors"
+    ],
+    "reference_context": "hormonal replacement therapy immunosuppressive agents recombinant human erythropoietin tyrosine kinase inhibitors cocaine and amphetamines and antidepressants all of these"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "canonical_en": "ten-year ASCVD risk",
+    "sample_id": "cardio_03",
+    "ref_left": 1165,
+    "ref_right": 1169,
+    "reference_form": "10-year ASCVD risk",
+    "reference_tokens": [
+      "10",
+      "year",
+      "ascvd",
+      "risk"
+    ],
+    "reference_context": "lifetime risk of ascvd is high but the 10 year ascvd risk may be low as the overall population blood"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "canonical_en": "ten-year ASCVD risk",
+    "sample_id": "cardio_03",
+    "ref_left": 1371,
+    "ref_right": 1375,
+    "reference_form": "10-year ASCVD risk",
+    "reference_tokens": [
+      "10",
+      "year",
+      "ascvd",
+      "risk"
+    ],
+    "reference_context": "last year that for young adults with low 10 year ascvd risk the recommendation was to start with six months"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "canonical_en": "National Institutes of Health",
+    "sample_id": "cardio_02",
+    "ref_left": 264,
+    "ref_right": 268,
+    "reference_form": "National Institutes of Health",
+    "reference_tokens": [
+      "national",
+      "institutes",
+      "of",
+      "health"
+    ],
+    "reference_context": "publications and has been funded continuously by the national institutes of health since 1973 dr carey co chaired the 2017"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "canonical_en": "mineralocorticoid receptor",
+    "sample_id": "cardio_03",
+    "ref_left": 685,
+    "ref_right": 687,
+    "reference_form": "mineralocorticoid receptor",
+    "reference_tokens": [
+      "mineralocorticoid",
+      "receptor"
+    ],
+    "reference_context": "urinary potassium excretion consistent with activation of the mineralocorticoid receptor and so unrecognized or subclinical primary aldosteronism very"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "canonical_en": "mineralocorticoid receptor",
+    "sample_id": "cardio_03",
+    "ref_left": 761,
+    "ref_right": 763,
+    "reference_form": "mineralocorticoid receptor",
+    "reference_tokens": [
+      "mineralocorticoid",
+      "receptor"
+    ],
+    "reference_context": "patients with primary aldosteronism without specific targeted therapy mineralocorticoid receptor antagonists is at least threefold higher than for"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_02",
+    "ref_left": 452,
+    "ref_right": 454,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "by drugs that people take and the other primary aldosteronism in which there's recent updated literature we will"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 555,
+    "ref_right": 557,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "11 of the untreated normotensive population had overt primary aldosteronism in stage 1 hypertension it rose to almost"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 586,
+    "ref_right": 588,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "so these patients above the line all had primary aldosteronism unequivocally confirmed so a continuum of autonomous and"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 616,
+    "ref_right": 618,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "attention to resistant hypertension and the frequency of primary aldosteronism by this confirmatory testing that we did was"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 692,
+    "ref_right": 694,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "the mineralocorticoid receptor and so unrecognized or subclinical primary aldosteronism very likely explains the pathogenesis of a substantial"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 722,
+    "ref_right": 724,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "patients with primary hypertension are ever screened for primary aldosteronism well it's very low in europe 1 in"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 755,
+    "ref_right": 757,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "that the cardiometabolic risk profile for patients with primary aldosteronism without specific targeted therapy mineralocorticoid receptor antagonists is"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 868,
+    "ref_right": 870,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "with primary or essential hypertension be screened for primary aldosteronism and if so how well this is my"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 918,
+    "ref_right": 920,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "suppressed then this is a negative screen for primary aldosteronism if renin is suppressed that is plasma renin"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "canonical_en": "primary aldosteronism",
+    "sample_id": "cardio_03",
+    "ref_left": 1093,
+    "ref_right": 1095,
+    "reference_form": "primary aldosteronism",
+    "reference_tokens": [
+      "primary",
+      "aldosteronism"
+    ],
+    "reference_context": "10 millimeters of mercury i would strongly suspect primary aldosteronism and either continuum them on the mineralocorticoid antagonist"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 414,
+    "ref_right": 417,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "major guideline recommendations and then talk about optimal systolic blood pressure and primordial disease prevention followed by some information"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1021,
+    "ref_right": 1024,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "or ckd you should aim for a target systolic blood pressure of less than 130 diastolic blood pressure of"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_02",
+    "ref_left": 1638,
+    "ref_right": 1641,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "blood pressure so the 2017 guideline lowered the systolic blood pressure spp goal of therapy from less than 140"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 86,
+    "ref_right": 89,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "ascvd and for every 10 millimeter increase in systolic blood pressure there's a 53 higher risk for ascvd so"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "canonical_en": "systolic blood pressure",
+    "sample_id": "cardio_03",
+    "ref_left": 119,
+    "ref_right": 122,
+    "reference_form": "systolic blood pressure",
+    "reference_tokens": [
+      "systolic",
+      "blood",
+      "pressure"
+    ],
+    "reference_context": "of risk factors like hypertension to maintain optimal systolic blood pressure levels so the next question is since the"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 4,
+    "ref_right": 7,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "on behalf of the american heart association i would like to welcome you to today's"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 38,
+    "ref_right": 41,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "and i'm a quality programs manager for the american heart association before we begin i'd like to quickly review"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 280,
+    "ref_right": 283,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "co chaired the 2017 american college of cardiology american heart association high blood pressure guideline writing committee and chaired"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "canonical_en": "American Heart Association",
+    "sample_id": "cardio_02",
+    "ref_left": 560,
+    "ref_right": 563,
+    "reference_form": "American Heart Association",
+    "reference_tokens": [
+      "american",
+      "heart",
+      "association"
+    ],
+    "reference_context": "and the 2017 american college of physicians and american heart association guideline published in 2017 and for these guidelines"
+  }
+]

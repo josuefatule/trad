@@ -1,0 +1,52 @@
+{
+  "listeners": [
+    {
+      "LocalAddress": "::1",
+      "LocalPort": 8000,
+      "OwningProcess": 32692
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 8010,
+      "OwningProcess": 30000
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 8000,
+      "OwningProcess": 32692
+    },
+    {
+      "LocalAddress": "10.10.4.214",
+      "LocalPort": 3000,
+      "OwningProcess": 6696
+    }
+  ],
+  "addresses": [
+    {
+      "LocalAddress": "10.10.4.214",
+      "RemoteAddress": "Any"
+    }
+  ],
+  "checked_utc": "2026-10-22T14:41:38.3763424Z",
+  "profile": [
+    {
+      "InterfaceAlias": "Wi-Fi",
+      "NetworkCategory": 0
+    }
+  ],
+  "rule": [
+    {
+      "Name": "TRAD-MVP-Overlay",
+      "Enabled": 1,
+      "Profile": 0,
+      "Direction": 1,
+      "Action": 2
+    }
+  ],
+  "port": [
+    {
+      "Protocol": "TCP",
+      "LocalPort": "3000"
+    }
+  ]
+}

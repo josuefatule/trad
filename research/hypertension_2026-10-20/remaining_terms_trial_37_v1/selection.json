@@ -1,0 +1,494 @@
+{
+  "seed": 10672737108816479846,
+  "selection_rule": "Complete remaining set of the original 97 reference-covered concepts; seeded random order only, no fresh subsampling or reroll",
+  "user_confirmed_scope": "37 remaining concepts with audio, not the other 597 glossary concepts",
+  "selected": [
+    {
+      "concept_id": "HTN_6a0750665576",
+      "canonical_en": "network meta-analysis",
+      "preferred_es": "metaanálisis en red",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1
+      },
+      "reference_forms": [
+        "network meta-analysis"
+      ]
+    },
+    {
+      "concept_id": "HTN_55597a586adc",
+      "canonical_en": "metabolic alkalosis",
+      "preferred_es": "alcalosis metabólica",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "metabolic alkalosis"
+      ]
+    },
+    {
+      "concept_id": "HTN_c61cf036297b",
+      "canonical_en": "extracellular volume expansion",
+      "preferred_es": "expansión del volumen extracelular",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "extracellular volume expansion"
+      ]
+    },
+    {
+      "concept_id": "HTN_c3df62c85359",
+      "canonical_en": "atherosclerotic cardiovascular disease",
+      "preferred_es": "enfermedad cardiovascular aterosclerótica",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1,
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "atherosclerotic cardiovascular disease"
+      ]
+    },
+    {
+      "concept_id": "HTN_9c147fb0dd01",
+      "canonical_en": "primordial prevention",
+      "preferred_es": "prevención primordial",
+      "reference_occurrences_by_file": {
+        "cardio_02": 2,
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "primordial prevention"
+      ]
+    },
+    {
+      "concept_id": "HTN_8c53930b9fb6",
+      "canonical_en": "primary hypertension",
+      "preferred_es": "hipertensión primaria",
+      "reference_occurrences_by_file": {
+        "cardio_03": 4
+      },
+      "reference_forms": [
+        "primary hypertension",
+        "essential hypertension"
+      ]
+    },
+    {
+      "concept_id": "HTN_813c32e37386",
+      "canonical_en": "kidney function",
+      "preferred_es": "función renal",
+      "reference_occurrences_by_file": {
+        "cardio_01": 1
+      },
+      "reference_forms": [
+        "kidney function",
+        "renal function"
+      ]
+    },
+    {
+      "concept_id": "HTN_7f88a520a565",
+      "canonical_en": "young adults",
+      "preferred_es": "adultos jóvenes",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1,
+        "cardio_03": 3
+      },
+      "reference_forms": [
+        "young adults"
+      ]
+    },
+    {
+      "concept_id": "HTN_367a095cd401",
+      "canonical_en": "millimeters of mercury",
+      "preferred_es": "milímetros de mercurio",
+      "reference_occurrences_by_file": {
+        "cardio_03": 2
+      },
+      "reference_forms": [
+        "millimeters of mercury"
+      ]
+    },
+    {
+      "concept_id": "HTN_883353142120",
+      "canonical_en": "orthostatic hypotension",
+      "preferred_es": "hipotensión ortostática",
+      "reference_occurrences_by_file": {
+        "cardio_01": 1
+      },
+      "reference_forms": [
+        "orthostatic hypotension",
+        "postural hypotension"
+      ]
+    },
+    {
+      "concept_id": "HTN_b5c94b0468ed",
+      "canonical_en": "recombinant human erythropoietin",
+      "preferred_es": "eritropoyetina humana recombinante",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "recombinant human erythropoietin"
+      ]
+    },
+    {
+      "concept_id": "HTN_9a1d14495070",
+      "canonical_en": "antihypertensive therapy",
+      "preferred_es": "tratamiento antihipertensivo",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1
+      },
+      "reference_forms": [
+        "antihypertensive therapy"
+      ]
+    },
+    {
+      "concept_id": "HTN_1ba7573640bb",
+      "canonical_en": "stroke",
+      "preferred_es": "accidente cerebrovascular",
+      "reference_occurrences_by_file": {
+        "cardio_01": 1
+      },
+      "reference_forms": [
+        "stroke",
+        "cerebrovascular accident"
+      ]
+    },
+    {
+      "concept_id": "HTN_65a8ad331229",
+      "canonical_en": "urinary sodium excretion",
+      "preferred_es": "excreción urinaria de sodio",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "urinary sodium excretion"
+      ]
+    },
+    {
+      "concept_id": "HTN_67290e2a4f79",
+      "canonical_en": "secondary hypertension",
+      "preferred_es": "hipertensión secundaria",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1,
+        "cardio_03": 2
+      },
+      "reference_forms": [
+        "secondary hypertension"
+      ]
+    },
+    {
+      "concept_id": "HTN_fc25c9ee65b4",
+      "canonical_en": "vascular dementia",
+      "preferred_es": "demencia vascular",
+      "reference_occurrences_by_file": {
+        "cardio_01": 1
+      },
+      "reference_forms": [
+        "vascular dementia"
+      ]
+    },
+    {
+      "concept_id": "HTN_4c28630c39b7",
+      "canonical_en": "beta blockers",
+      "preferred_es": "betabloqueadores",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "beta blockers",
+        "beta-adrenergic blockers",
+        "beta-blockers"
+      ]
+    },
+    {
+      "concept_id": "HTN_015add4e7c55",
+      "canonical_en": "antihypertensive medication",
+      "preferred_es": "medicamento antihipertensivo",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "antihypertensive medication"
+      ]
+    },
+    {
+      "concept_id": "HTN_da157827508d",
+      "canonical_en": "normal blood pressure",
+      "preferred_es": "presión arterial normal",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1,
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "normal blood pressure"
+      ]
+    },
+    {
+      "concept_id": "HTN_b82e725f2d5b",
+      "canonical_en": "pharmacologic management",
+      "preferred_es": "manejo farmacológico",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1
+      },
+      "reference_forms": [
+        "pharmacologic management",
+        "pharmacological management"
+      ]
+    },
+    {
+      "concept_id": "HTN_351e3115ce6d",
+      "canonical_en": "renin-angiotensin system",
+      "preferred_es": "sistema renina-angiotensina",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "renin-angiotensin system"
+      ]
+    },
+    {
+      "concept_id": "HTN_8d698ec69088",
+      "canonical_en": "American College of Cardiology",
+      "preferred_es": "Colegio Americano de Cardiología",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1
+      },
+      "reference_forms": [
+        "American College of Cardiology"
+      ]
+    },
+    {
+      "concept_id": "HTN_e28dac3635a0",
+      "canonical_en": "coronary artery calcium",
+      "preferred_es": "calcio coronario",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "coronary artery calcium"
+      ]
+    },
+    {
+      "concept_id": "HTN_3265c21da577",
+      "canonical_en": "antihypertensive drug therapy",
+      "preferred_es": "tratamiento farmacológico antihipertensivo",
+      "reference_occurrences_by_file": {
+        "cardio_02": 5,
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "antihypertensive drug therapy"
+      ]
+    },
+    {
+      "concept_id": "HTN_5418fb6ca9f7",
+      "canonical_en": "clinical implications",
+      "preferred_es": "implicaciones clínicas",
+      "reference_occurrences_by_file": {
+        "cardio_01": 1
+      },
+      "reference_forms": [
+        "clinical implications"
+      ]
+    },
+    {
+      "concept_id": "HTN_7007c7b6a276",
+      "canonical_en": "urinary potassium excretion",
+      "preferred_es": "excreción urinaria de potasio",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "urinary potassium excretion"
+      ]
+    },
+    {
+      "concept_id": "HTN_d5f7ec4c74ec",
+      "canonical_en": "dietary sodium restriction",
+      "preferred_es": "restricción de sodio en la alimentación",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "dietary sodium restriction"
+      ]
+    },
+    {
+      "concept_id": "HTN_46c99f93e124",
+      "canonical_en": "potassium-rich diet",
+      "preferred_es": "dieta rica en potasio",
+      "reference_occurrences_by_file": {
+        "cardio_01": 1
+      },
+      "reference_forms": [
+        "potassium-rich diet"
+      ]
+    },
+    {
+      "concept_id": "HTN_62d56e18d9ed",
+      "canonical_en": "non-pharmacological therapy",
+      "preferred_es": "tratamiento no farmacológico",
+      "reference_occurrences_by_file": {
+        "cardio_02": 3
+      },
+      "reference_forms": [
+        "non-pharmacological therapy",
+        "nonpharmacologic therapy",
+        "non-pharmacologic therapy"
+      ]
+    },
+    {
+      "concept_id": "HTN_9b521b6aa481",
+      "canonical_en": "dietary potassium",
+      "preferred_es": "potasio de la dieta",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "dietary potassium"
+      ]
+    },
+    {
+      "concept_id": "HTN_58ff1710a6fe",
+      "canonical_en": "lifestyle modification",
+      "preferred_es": "modificación del estilo de vida",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "lifestyle modification"
+      ]
+    },
+    {
+      "concept_id": "HTN_e2601a1dc5c2",
+      "canonical_en": "plasma renin activity",
+      "preferred_es": "actividad de renina plasmática",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "plasma renin activity"
+      ]
+    },
+    {
+      "concept_id": "HTN_b2841ea0bccc",
+      "canonical_en": "milligrams per day",
+      "preferred_es": "miligramos por día",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "milligrams per day"
+      ]
+    },
+    {
+      "concept_id": "HTN_0a86f46a7678",
+      "canonical_en": "antidepressants",
+      "preferred_es": "antidepresivos",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "antidepressants"
+      ]
+    },
+    {
+      "concept_id": "HTN_8a14bff08d83",
+      "canonical_en": "potassium intake",
+      "preferred_es": "ingesta de potasio",
+      "reference_occurrences_by_file": {
+        "cardio_01": 1,
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "potassium intake"
+      ]
+    },
+    {
+      "concept_id": "HTN_725551b71cd2",
+      "canonical_en": "aldosterone production",
+      "preferred_es": "producción de aldosterona",
+      "reference_occurrences_by_file": {
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "aldosterone production"
+      ]
+    },
+    {
+      "concept_id": "HTN_81c0b5abec49",
+      "canonical_en": "all-cause mortality",
+      "preferred_es": "mortalidad por todas las causas",
+      "reference_occurrences_by_file": {
+        "cardio_02": 1,
+        "cardio_03": 1
+      },
+      "reference_forms": [
+        "all-cause mortality"
+      ]
+    }
+  ],
+  "excluded_previous60_ids": [
+    "HTN_0114ad465a4c",
+    "HTN_017909dfbe03",
+    "HTN_046b2614a497",
+    "HTN_08be48d0e6db",
+    "HTN_08df2fb9a572",
+    "HTN_1678109dd1e1",
+    "HTN_1801e881de4c",
+    "HTN_18261da1ebb6",
+    "HTN_1b881806cbc3",
+    "HTN_1e5b2c8f44aa",
+    "HTN_1f6c35b66555",
+    "HTN_21aa1e2a0a86",
+    "HTN_23003a7c53dc",
+    "HTN_243c1557a315",
+    "HTN_28505bfb6f7c",
+    "HTN_33721e7d10bc",
+    "HTN_360421e6c958",
+    "HTN_43b62124c3b4",
+    "HTN_5083c8261cb4",
+    "HTN_50b4fc97bb14",
+    "HTN_56226cde8c28",
+    "HTN_56f653079e24",
+    "HTN_580d66f414c7",
+    "HTN_5995e0e6626c",
+    "HTN_5d3f8bcf9aa3",
+    "HTN_5d6308ddf615",
+    "HTN_69524c07e2bc",
+    "HTN_6eaf977b00ec",
+    "HTN_73996112033d",
+    "HTN_78302c3c9580",
+    "HTN_78bad0122173",
+    "HTN_82debac780d7",
+    "HTN_8adeb49fc7d5",
+    "HTN_97cf39b495a5",
+    "HTN_a05dadb4b409",
+    "HTN_a506dcc39d5e",
+    "HTN_a9290515a379",
+    "HTN_aa5f2ce2aa91",
+    "HTN_b3a920f4854a",
+    "HTN_b71def1fdea1",
+    "HTN_b77b3ada1555",
+    "HTN_bd01a89edc9a",
+    "HTN_be068174bf76",
+    "HTN_c14e2214165b",
+    "HTN_c2451614a1c8",
+    "HTN_c55b21ee723a",
+    "HTN_ce88c1a364ff",
+    "HTN_d8a636f1c1c1",
+    "HTN_dcd292247cbd",
+    "HTN_de7d5a3bf89e",
+    "HTN_e59fa7b029fa",
+    "HTN_e9263cf14efb",
+    "HTN_ec261491485c",
+    "HTN_edd3f525e819",
+    "HTN_ee45bdae9c43",
+    "HTN_ee6fe3240e4f",
+    "HTN_f48198e7872f",
+    "HTN_f48ce01048ba",
+    "HTN_f55101cb5e74",
+    "HTN_fe15c79eba36"
+  ],
+  "combined_count": 97
+}

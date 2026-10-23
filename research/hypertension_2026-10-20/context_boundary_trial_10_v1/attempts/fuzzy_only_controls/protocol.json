@@ -1,0 +1,31 @@
+{
+  "frozen_at_utc": "2026-10-22T03:09:53.702482+00:00",
+  "selection_and_thresholds": "Reuse the exact ten IDs and thresholds from tolerance_trial_10_v1; no resampling or retuning.",
+  "frozen_inputs": {
+    "selection.json": "e1c00a05782878d60a171ace872aac50b18a9ee3b1fa4263bd949f52ef295cde",
+    "threshold_decisions.json": "c08fb49d295399ab2e3c1827ac3606ea18ce71eed1be48636a42107861ad3928",
+    "real_speech_checking.json": "982eb08a6ded9ce4afbc2a4a099c011ecbe75e7e0f114035479c1b4a03575b2d",
+    "constructed_cases.json": "91ef44c23d9c15700337e9de5f708b22a555e64c7a75f8279c44a4b81414b311",
+    "checking_overlap_audit.json": "4be955196360861622abb6e9451dafd5e6973f457114739d0a590df03ba2a4e5",
+    "manifest.json": "30f092e8feab173535edec42452609ffa3fd3772ec4ac6186d1fe6aed3391878"
+  },
+  "controls": [
+    "Filter candidate spans BEFORE overlap selection; compare also a post-selection veto as ablation.",
+    "Whole word boundaries required; punctuation/spacing outside corrections is copied unchanged.",
+    "Function words inside a source span must match the canonical function-word sequence, preserving by/of/with/etc. Nearby negation outside the span is retained, not used to block valid spelling repair.",
+    "Literal quantities, number words, unit symbols and negation signature inside each proposed replacement must remain identical.",
+    "Recognized opposed qualifiers and grammatical-number alternatives cannot be substituted.",
+    "Token alignment consumes every source and target token. Adjacent fragments may be merged only as spelling repair; if one fragment already matches the target at >=0.85 similarity, reject adding another word unless the concatenation is exactly the target.",
+    "Per-token similarity floor 0.65 and at least one unchanged lexical anchor of >=3 characters; fixed before evaluating new contexts."
+  ],
+  "comparison": [
+    "Original raw text",
+    "Prior individualized thresholds",
+    "Same thresholds with post-selection veto",
+    "Same thresholds with preselection context/boundary controls"
+  ],
+  "development_scope": "The previous by failure motivated these rules. The reused speech corpus is development/regression evidence, not a new independent holdout. New constructed contexts do not establish speech or clinical accuracy.",
+  "integration_performed": false,
+  "new_audio_inference": false,
+  "write_boundary": "This new context_boundary_trial_10_v1 directory only."
+}

@@ -88,6 +88,8 @@ class OperatorConfig:
 
 def operational_error(error):
     text = str(error).lower()
+    if "language isolation" in text:
+        return "wlk_language_unverified", "WLK no confirmó el idioma de sesión. Con la sesión detenida, usa el arranque bidireccional documentado."
     if "already active" in text:
         return "session_active", "Ya hay una sesión activa; no se abrió otro micrófono."
     if "401" in text or "403" in text or "authorization" in text:
@@ -111,10 +113,11 @@ def operational_error(error):
 
 class OperatorBrowser:
     """Relay adapter: annotate protocol and sanitize errors without changing results upstream."""
-    def __init__(self, socket, session_id, run=None):
+    def __init__(self, socket, session_id, run=None, direction=None):
         self.socket = socket
         self.session_id = session_id
         self.run=run
+        self.direction=direction
         self.send_lock=asyncio.Lock()
 
     async def receive(self):
@@ -150,9 +153,11 @@ class OperatorBrowser:
 
     async def send_json(self, data):
         data = {**data, "protocol_version": 1, "session_id": self.session_id}
+        if self.direction is not None:
+            data["direction"] = self.direction
         if data.get("type") == "config":
             data["capabilities"] = {**data["capabilities"], "operator_console": 1, "captions_clear": 1,
-                                    "operator_recovery":1}
+                                    "operator_recovery":1, "session_direction":1}
         if data.get("type") == "translation" and data["translation"].get("error"):
             code, message = operational_error(data["translation"]["error"])
             data["translation"] = {**data["translation"], "error": message, "error_code": code}

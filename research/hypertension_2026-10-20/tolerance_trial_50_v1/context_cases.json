@@ -1,0 +1,5502 @@
+[
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed resistant hypetension by this test.",
+    "expected": "They discussed resistant hypertension by this test.",
+    "calibration_seed_case_id": "F00001",
+    "calibration_repairable": true,
+    "case_id": "N0001"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed resistant hypetension with the control group.",
+    "expected": "They discussed resistant hypertension with the control group.",
+    "calibration_seed_case_id": "F00001",
+    "calibration_repairable": true,
+    "case_id": "N0002"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed resistant hypetension for patients.",
+    "expected": "They discussed resistant hypertension for patients.",
+    "calibration_seed_case_id": "F00001",
+    "calibration_repairable": true,
+    "case_id": "N0003"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed resistant hypetension patients arrived.",
+    "expected": "They discussed resistant hypertension patients arrived.",
+    "calibration_seed_case_id": "F00001",
+    "calibration_repairable": true,
+    "case_id": "N0004"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed resistant hypetension children were assessed.",
+    "expected": "They discussed resistant hypertension children were assessed.",
+    "calibration_seed_case_id": "F00001",
+    "calibration_repairable": true,
+    "case_id": "N0005"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed resistant hypetension yesterday.",
+    "expected": "They discussed resistant hypertension yesterday.",
+    "calibration_seed_case_id": "F00001",
+    "calibration_repairable": true,
+    "case_id": "N0006"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of resistant hypetension by this test.",
+    "expected": "No evidence of resistant hypertension by this test.",
+    "calibration_seed_case_id": "F00001",
+    "calibration_repairable": true,
+    "case_id": "N0007"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "resistant by hypertension",
+    "expected": "resistant by hypertension",
+    "case_id": "N0008"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "resistant not hypertension",
+    "expected": "resistant not hypertension",
+    "case_id": "N0009"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "resistant 5 hypertension",
+    "expected": "resistant 5 hypertension",
+    "case_id": "N0010"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_resistant hypetension",
+    "expected": "tag_resistant hypetension",
+    "case_id": "N0011"
+  },
+  {
+    "concept_id": "HTN_e59fa7b029fa",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonresistant hypertension",
+    "expected": "nonresistant hypertension",
+    "case_id": "N0012"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed spirnolactone by this test.",
+    "expected": "They discussed spironolactone by this test.",
+    "calibration_seed_case_id": "F00039",
+    "calibration_repairable": false,
+    "case_id": "N0013"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed spirnolactone with the control group.",
+    "expected": "They discussed spironolactone with the control group.",
+    "calibration_seed_case_id": "F00039",
+    "calibration_repairable": false,
+    "case_id": "N0014"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed spirnolactone for patients.",
+    "expected": "They discussed spironolactone for patients.",
+    "calibration_seed_case_id": "F00039",
+    "calibration_repairable": false,
+    "case_id": "N0015"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed spirnolactone patients arrived.",
+    "expected": "They discussed spironolactone patients arrived.",
+    "calibration_seed_case_id": "F00039",
+    "calibration_repairable": false,
+    "case_id": "N0016"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed spirnolactone children were assessed.",
+    "expected": "They discussed spironolactone children were assessed.",
+    "calibration_seed_case_id": "F00039",
+    "calibration_repairable": false,
+    "case_id": "N0017"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed spirnolactone yesterday.",
+    "expected": "They discussed spironolactone yesterday.",
+    "calibration_seed_case_id": "F00039",
+    "calibration_repairable": false,
+    "case_id": "N0018"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of spirnolactone by this test.",
+    "expected": "No evidence of spironolactone by this test.",
+    "calibration_seed_case_id": "F00039",
+    "calibration_repairable": false,
+    "case_id": "N0019"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "spironolactone by ",
+    "expected": "spironolactone by ",
+    "case_id": "N0020"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "spironolactone not ",
+    "expected": "spironolactone not ",
+    "case_id": "N0021"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "spironolactone 5 ",
+    "expected": "spironolactone 5 ",
+    "case_id": "N0022"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_spirnolactone",
+    "expected": "tag_spirnolactone",
+    "case_id": "N0023"
+  },
+  {
+    "concept_id": "HTN_580d66f414c7",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonspironolactone",
+    "expected": "nonspironolactone",
+    "case_id": "N0024"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardimetabolic risk by this test.",
+    "expected": "They discussed cardiometabolic risk by this test.",
+    "calibration_seed_case_id": "F00073",
+    "calibration_repairable": true,
+    "case_id": "N0025"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardimetabolic risk with the control group.",
+    "expected": "They discussed cardiometabolic risk with the control group.",
+    "calibration_seed_case_id": "F00073",
+    "calibration_repairable": true,
+    "case_id": "N0026"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardimetabolic risk for patients.",
+    "expected": "They discussed cardiometabolic risk for patients.",
+    "calibration_seed_case_id": "F00073",
+    "calibration_repairable": true,
+    "case_id": "N0027"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardimetabolic risk patients arrived.",
+    "expected": "They discussed cardiometabolic risk patients arrived.",
+    "calibration_seed_case_id": "F00073",
+    "calibration_repairable": true,
+    "case_id": "N0028"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardimetabolic risk children were assessed.",
+    "expected": "They discussed cardiometabolic risk children were assessed.",
+    "calibration_seed_case_id": "F00073",
+    "calibration_repairable": true,
+    "case_id": "N0029"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardimetabolic risk yesterday.",
+    "expected": "They discussed cardiometabolic risk yesterday.",
+    "calibration_seed_case_id": "F00073",
+    "calibration_repairable": true,
+    "case_id": "N0030"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of cardimetabolic risk by this test.",
+    "expected": "No evidence of cardiometabolic risk by this test.",
+    "calibration_seed_case_id": "F00073",
+    "calibration_repairable": true,
+    "case_id": "N0031"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "cardiometabolic by risk",
+    "expected": "cardiometabolic by risk",
+    "case_id": "N0032"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "cardiometabolic not risk",
+    "expected": "cardiometabolic not risk",
+    "case_id": "N0033"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "cardiometabolic 5 risk",
+    "expected": "cardiometabolic 5 risk",
+    "case_id": "N0034"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_cardimetabolic risk",
+    "expected": "tag_cardimetabolic risk",
+    "case_id": "N0035"
+  },
+  {
+    "concept_id": "HTN_82debac780d7",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "noncardiometabolic risk",
+    "expected": "noncardiometabolic risk",
+    "case_id": "N0036"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed heart diease by this test.",
+    "expected": "They discussed heart disease by this test.",
+    "calibration_seed_case_id": "F00111",
+    "calibration_repairable": true,
+    "case_id": "N0037"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed heart diease with the control group.",
+    "expected": "They discussed heart disease with the control group.",
+    "calibration_seed_case_id": "F00111",
+    "calibration_repairable": true,
+    "case_id": "N0038"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed heart diease for patients.",
+    "expected": "They discussed heart disease for patients.",
+    "calibration_seed_case_id": "F00111",
+    "calibration_repairable": true,
+    "case_id": "N0039"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed heart diease patients arrived.",
+    "expected": "They discussed heart disease patients arrived.",
+    "calibration_seed_case_id": "F00111",
+    "calibration_repairable": true,
+    "case_id": "N0040"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed heart diease children were assessed.",
+    "expected": "They discussed heart disease children were assessed.",
+    "calibration_seed_case_id": "F00111",
+    "calibration_repairable": true,
+    "case_id": "N0041"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed heart diease yesterday.",
+    "expected": "They discussed heart disease yesterday.",
+    "calibration_seed_case_id": "F00111",
+    "calibration_repairable": true,
+    "case_id": "N0042"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of heart diease by this test.",
+    "expected": "No evidence of heart disease by this test.",
+    "calibration_seed_case_id": "F00111",
+    "calibration_repairable": true,
+    "case_id": "N0043"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "heart by disease",
+    "expected": "heart by disease",
+    "case_id": "N0044"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "heart not disease",
+    "expected": "heart not disease",
+    "case_id": "N0045"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "heart 5 disease",
+    "expected": "heart 5 disease",
+    "case_id": "N0046"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_heart diease",
+    "expected": "tag_heart diease",
+    "case_id": "N0047"
+  },
+  {
+    "concept_id": "HTN_1678109dd1e1",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonheart disease",
+    "expected": "nonheart disease",
+    "case_id": "N0048"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed elvated blood pressure by this test.",
+    "expected": "They discussed elevated blood pressure by this test.",
+    "calibration_seed_case_id": "F00149",
+    "calibration_repairable": true,
+    "case_id": "N0049"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed elvated blood pressure with the control group.",
+    "expected": "They discussed elevated blood pressure with the control group.",
+    "calibration_seed_case_id": "F00149",
+    "calibration_repairable": true,
+    "case_id": "N0050"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed elvated blood pressure for patients.",
+    "expected": "They discussed elevated blood pressure for patients.",
+    "calibration_seed_case_id": "F00149",
+    "calibration_repairable": true,
+    "case_id": "N0051"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed elvated blood pressure patients arrived.",
+    "expected": "They discussed elevated blood pressure patients arrived.",
+    "calibration_seed_case_id": "F00149",
+    "calibration_repairable": true,
+    "case_id": "N0052"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed elvated blood pressure children were assessed.",
+    "expected": "They discussed elevated blood pressure children were assessed.",
+    "calibration_seed_case_id": "F00149",
+    "calibration_repairable": true,
+    "case_id": "N0053"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed elvated blood pressure yesterday.",
+    "expected": "They discussed elevated blood pressure yesterday.",
+    "calibration_seed_case_id": "F00149",
+    "calibration_repairable": true,
+    "case_id": "N0054"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of elvated blood pressure by this test.",
+    "expected": "No evidence of elevated blood pressure by this test.",
+    "calibration_seed_case_id": "F00149",
+    "calibration_repairable": true,
+    "case_id": "N0055"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "elevated by blood pressure",
+    "expected": "elevated by blood pressure",
+    "case_id": "N0056"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "elevated not blood pressure",
+    "expected": "elevated not blood pressure",
+    "case_id": "N0057"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "elevated 5 blood pressure",
+    "expected": "elevated 5 blood pressure",
+    "case_id": "N0058"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_elvated blood pressure",
+    "expected": "tag_elvated blood pressure",
+    "case_id": "N0059"
+  },
+  {
+    "concept_id": "HTN_1f6c35b66555",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonelevated blood pressure",
+    "expected": "nonelevated blood pressure",
+    "case_id": "N0060"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure by this test.",
+    "expected": "They discussed blood pressure by this test.",
+    "calibration_seed_case_id": "F00187",
+    "calibration_repairable": true,
+    "case_id": "N0061"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure with the control group.",
+    "expected": "They discussed blood pressure with the control group.",
+    "calibration_seed_case_id": "F00187",
+    "calibration_repairable": true,
+    "case_id": "N0062"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure for patients.",
+    "expected": "They discussed blood pressure for patients.",
+    "calibration_seed_case_id": "F00187",
+    "calibration_repairable": true,
+    "case_id": "N0063"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure patients arrived.",
+    "expected": "They discussed blood pressure patients arrived.",
+    "calibration_seed_case_id": "F00187",
+    "calibration_repairable": true,
+    "case_id": "N0064"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure children were assessed.",
+    "expected": "They discussed blood pressure children were assessed.",
+    "calibration_seed_case_id": "F00187",
+    "calibration_repairable": true,
+    "case_id": "N0065"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure yesterday.",
+    "expected": "They discussed blood pressure yesterday.",
+    "calibration_seed_case_id": "F00187",
+    "calibration_repairable": true,
+    "case_id": "N0066"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of blood prssure by this test.",
+    "expected": "No evidence of blood pressure by this test.",
+    "calibration_seed_case_id": "F00187",
+    "calibration_repairable": true,
+    "case_id": "N0067"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "blood by pressure",
+    "expected": "blood by pressure",
+    "case_id": "N0068"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "blood not pressure",
+    "expected": "blood not pressure",
+    "case_id": "N0069"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "blood 5 pressure",
+    "expected": "blood 5 pressure",
+    "case_id": "N0070"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_blood prssure",
+    "expected": "tag_blood prssure",
+    "case_id": "N0071"
+  },
+  {
+    "concept_id": "HTN_bd01a89edc9a",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonblood pressure",
+    "expected": "nonblood pressure",
+    "case_id": "N0072"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular risk by this test.",
+    "expected": "They discussed cardiovascular risk by this test.",
+    "calibration_seed_case_id": "F00225",
+    "calibration_repairable": true,
+    "case_id": "N0073"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular risk with the control group.",
+    "expected": "They discussed cardiovascular risk with the control group.",
+    "calibration_seed_case_id": "F00225",
+    "calibration_repairable": true,
+    "case_id": "N0074"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular risk for patients.",
+    "expected": "They discussed cardiovascular risk for patients.",
+    "calibration_seed_case_id": "F00225",
+    "calibration_repairable": true,
+    "case_id": "N0075"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular risk patients arrived.",
+    "expected": "They discussed cardiovascular risk patients arrived.",
+    "calibration_seed_case_id": "F00225",
+    "calibration_repairable": true,
+    "case_id": "N0076"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular risk children were assessed.",
+    "expected": "They discussed cardiovascular risk children were assessed.",
+    "calibration_seed_case_id": "F00225",
+    "calibration_repairable": true,
+    "case_id": "N0077"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular risk yesterday.",
+    "expected": "They discussed cardiovascular risk yesterday.",
+    "calibration_seed_case_id": "F00225",
+    "calibration_repairable": true,
+    "case_id": "N0078"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of cardovascular risk by this test.",
+    "expected": "No evidence of cardiovascular risk by this test.",
+    "calibration_seed_case_id": "F00225",
+    "calibration_repairable": true,
+    "case_id": "N0079"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "cardiovascular by risk",
+    "expected": "cardiovascular by risk",
+    "case_id": "N0080"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "cardiovascular not risk",
+    "expected": "cardiovascular not risk",
+    "case_id": "N0081"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "cardiovascular 5 risk",
+    "expected": "cardiovascular 5 risk",
+    "case_id": "N0082"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_cardovascular risk",
+    "expected": "tag_cardovascular risk",
+    "case_id": "N0083"
+  },
+  {
+    "concept_id": "HTN_1801e881de4c",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "noncardiovascular risk",
+    "expected": "noncardiovascular risk",
+    "case_id": "N0084"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed target sytolic blood pressure by this test.",
+    "expected": "They discussed target systolic blood pressure by this test.",
+    "calibration_seed_case_id": "F00263",
+    "calibration_repairable": true,
+    "case_id": "N0085"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed target sytolic blood pressure with the control group.",
+    "expected": "They discussed target systolic blood pressure with the control group.",
+    "calibration_seed_case_id": "F00263",
+    "calibration_repairable": true,
+    "case_id": "N0086"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed target sytolic blood pressure for patients.",
+    "expected": "They discussed target systolic blood pressure for patients.",
+    "calibration_seed_case_id": "F00263",
+    "calibration_repairable": true,
+    "case_id": "N0087"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed target sytolic blood pressure patients arrived.",
+    "expected": "They discussed target systolic blood pressure patients arrived.",
+    "calibration_seed_case_id": "F00263",
+    "calibration_repairable": true,
+    "case_id": "N0088"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed target sytolic blood pressure children were assessed.",
+    "expected": "They discussed target systolic blood pressure children were assessed.",
+    "calibration_seed_case_id": "F00263",
+    "calibration_repairable": true,
+    "case_id": "N0089"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed target sytolic blood pressure yesterday.",
+    "expected": "They discussed target systolic blood pressure yesterday.",
+    "calibration_seed_case_id": "F00263",
+    "calibration_repairable": true,
+    "case_id": "N0090"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of target sytolic blood pressure by this test.",
+    "expected": "No evidence of target systolic blood pressure by this test.",
+    "calibration_seed_case_id": "F00263",
+    "calibration_repairable": true,
+    "case_id": "N0091"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "target by systolic blood pressure",
+    "expected": "target by systolic blood pressure",
+    "case_id": "N0092"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "target not systolic blood pressure",
+    "expected": "target not systolic blood pressure",
+    "case_id": "N0093"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "target 5 systolic blood pressure",
+    "expected": "target 5 systolic blood pressure",
+    "case_id": "N0094"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_target sytolic blood pressure",
+    "expected": "tag_target sytolic blood pressure",
+    "case_id": "N0095"
+  },
+  {
+    "concept_id": "HTN_56f653079e24",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nontarget systolic blood pressure",
+    "expected": "nontarget systolic blood pressure",
+    "case_id": "N0096"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hormone repacement therapy by this test.",
+    "expected": "They discussed hormone replacement therapy by this test.",
+    "calibration_seed_case_id": "F00303",
+    "calibration_repairable": true,
+    "case_id": "N0097"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hormone repacement therapy with the control group.",
+    "expected": "They discussed hormone replacement therapy with the control group.",
+    "calibration_seed_case_id": "F00303",
+    "calibration_repairable": true,
+    "case_id": "N0098"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hormone repacement therapy for patients.",
+    "expected": "They discussed hormone replacement therapy for patients.",
+    "calibration_seed_case_id": "F00303",
+    "calibration_repairable": true,
+    "case_id": "N0099"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hormone repacement therapy patients arrived.",
+    "expected": "They discussed hormone replacement therapy patients arrived.",
+    "calibration_seed_case_id": "F00303",
+    "calibration_repairable": true,
+    "case_id": "N0100"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hormone repacement therapy children were assessed.",
+    "expected": "They discussed hormone replacement therapy children were assessed.",
+    "calibration_seed_case_id": "F00303",
+    "calibration_repairable": true,
+    "case_id": "N0101"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hormone repacement therapy yesterday.",
+    "expected": "They discussed hormone replacement therapy yesterday.",
+    "calibration_seed_case_id": "F00303",
+    "calibration_repairable": true,
+    "case_id": "N0102"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of hormone repacement therapy by this test.",
+    "expected": "No evidence of hormone replacement therapy by this test.",
+    "calibration_seed_case_id": "F00303",
+    "calibration_repairable": true,
+    "case_id": "N0103"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "hormone by replacement therapy",
+    "expected": "hormone by replacement therapy",
+    "case_id": "N0104"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "hormone not replacement therapy",
+    "expected": "hormone not replacement therapy",
+    "case_id": "N0105"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "hormone 5 replacement therapy",
+    "expected": "hormone 5 replacement therapy",
+    "case_id": "N0106"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_hormone repacement therapy",
+    "expected": "tag_hormone repacement therapy",
+    "case_id": "N0107"
+  },
+  {
+    "concept_id": "HTN_5083c8261cb4",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonhormone replacement therapy",
+    "expected": "nonhormone replacement therapy",
+    "case_id": "N0108"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed immun osuppressive agents by this test.",
+    "expected": "They discussed immunosuppressive agents by this test.",
+    "calibration_seed_case_id": "F00345",
+    "calibration_repairable": true,
+    "case_id": "N0109"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed immun osuppressive agents with the control group.",
+    "expected": "They discussed immunosuppressive agents with the control group.",
+    "calibration_seed_case_id": "F00345",
+    "calibration_repairable": true,
+    "case_id": "N0110"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed immun osuppressive agents for patients.",
+    "expected": "They discussed immunosuppressive agents for patients.",
+    "calibration_seed_case_id": "F00345",
+    "calibration_repairable": true,
+    "case_id": "N0111"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed immun osuppressive agents patients arrived.",
+    "expected": "They discussed immunosuppressive agents patients arrived.",
+    "calibration_seed_case_id": "F00345",
+    "calibration_repairable": true,
+    "case_id": "N0112"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed immun osuppressive agents children were assessed.",
+    "expected": "They discussed immunosuppressive agents children were assessed.",
+    "calibration_seed_case_id": "F00345",
+    "calibration_repairable": true,
+    "case_id": "N0113"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed immun osuppressive agents yesterday.",
+    "expected": "They discussed immunosuppressive agents yesterday.",
+    "calibration_seed_case_id": "F00345",
+    "calibration_repairable": true,
+    "case_id": "N0114"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of immun osuppressive agents by this test.",
+    "expected": "No evidence of immunosuppressive agents by this test.",
+    "calibration_seed_case_id": "F00345",
+    "calibration_repairable": true,
+    "case_id": "N0115"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "immunosuppressive by agents",
+    "expected": "immunosuppressive by agents",
+    "case_id": "N0116"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "immunosuppressive not agents",
+    "expected": "immunosuppressive not agents",
+    "case_id": "N0117"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "immunosuppressive 5 agents",
+    "expected": "immunosuppressive 5 agents",
+    "case_id": "N0118"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_immun osuppressive agents",
+    "expected": "tag_immun osuppressive agents",
+    "case_id": "N0119"
+  },
+  {
+    "concept_id": "HTN_d8a636f1c1c1",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonimmunosuppressive agents",
+    "expected": "nonimmunosuppressive agents",
+    "case_id": "N0120"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diuetics by this test.",
+    "expected": "They discussed diuretics by this test.",
+    "calibration_seed_case_id": "F00379",
+    "calibration_repairable": false,
+    "case_id": "N0121"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diuetics with the control group.",
+    "expected": "They discussed diuretics with the control group.",
+    "calibration_seed_case_id": "F00379",
+    "calibration_repairable": false,
+    "case_id": "N0122"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diuetics for patients.",
+    "expected": "They discussed diuretics for patients.",
+    "calibration_seed_case_id": "F00379",
+    "calibration_repairable": false,
+    "case_id": "N0123"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diuetics patients arrived.",
+    "expected": "They discussed diuretics patients arrived.",
+    "calibration_seed_case_id": "F00379",
+    "calibration_repairable": false,
+    "case_id": "N0124"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diuetics children were assessed.",
+    "expected": "They discussed diuretics children were assessed.",
+    "calibration_seed_case_id": "F00379",
+    "calibration_repairable": false,
+    "case_id": "N0125"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diuetics yesterday.",
+    "expected": "They discussed diuretics yesterday.",
+    "calibration_seed_case_id": "F00379",
+    "calibration_repairable": false,
+    "case_id": "N0126"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of diuetics by this test.",
+    "expected": "No evidence of diuretics by this test.",
+    "calibration_seed_case_id": "F00379",
+    "calibration_repairable": false,
+    "case_id": "N0127"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "diuretics by ",
+    "expected": "diuretics by ",
+    "case_id": "N0128"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "diuretics not ",
+    "expected": "diuretics not ",
+    "case_id": "N0129"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "diuretics 5 ",
+    "expected": "diuretics 5 ",
+    "case_id": "N0130"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_diuetics",
+    "expected": "tag_diuetics",
+    "case_id": "N0131"
+  },
+  {
+    "concept_id": "HTN_18261da1ebb6",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nondiuretics",
+    "expected": "nondiuretics",
+    "case_id": "N0132"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed athersclerosis by this test.",
+    "expected": "They discussed atherosclerosis by this test.",
+    "calibration_seed_case_id": "F00413",
+    "calibration_repairable": false,
+    "case_id": "N0133"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed athersclerosis with the control group.",
+    "expected": "They discussed atherosclerosis with the control group.",
+    "calibration_seed_case_id": "F00413",
+    "calibration_repairable": false,
+    "case_id": "N0134"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed athersclerosis for patients.",
+    "expected": "They discussed atherosclerosis for patients.",
+    "calibration_seed_case_id": "F00413",
+    "calibration_repairable": false,
+    "case_id": "N0135"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed athersclerosis patients arrived.",
+    "expected": "They discussed atherosclerosis patients arrived.",
+    "calibration_seed_case_id": "F00413",
+    "calibration_repairable": false,
+    "case_id": "N0136"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed athersclerosis children were assessed.",
+    "expected": "They discussed atherosclerosis children were assessed.",
+    "calibration_seed_case_id": "F00413",
+    "calibration_repairable": false,
+    "case_id": "N0137"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed athersclerosis yesterday.",
+    "expected": "They discussed atherosclerosis yesterday.",
+    "calibration_seed_case_id": "F00413",
+    "calibration_repairable": false,
+    "case_id": "N0138"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of athersclerosis by this test.",
+    "expected": "No evidence of atherosclerosis by this test.",
+    "calibration_seed_case_id": "F00413",
+    "calibration_repairable": false,
+    "case_id": "N0139"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "atherosclerosis by ",
+    "expected": "atherosclerosis by ",
+    "case_id": "N0140"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "atherosclerosis not ",
+    "expected": "atherosclerosis not ",
+    "case_id": "N0141"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "atherosclerosis 5 ",
+    "expected": "atherosclerosis 5 ",
+    "case_id": "N0142"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_athersclerosis",
+    "expected": "tag_athersclerosis",
+    "case_id": "N0143"
+  },
+  {
+    "concept_id": "HTN_56226cde8c28",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonatherosclerosis",
+    "expected": "nonatherosclerosis",
+    "case_id": "N0144"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypetension by this test.",
+    "expected": "They discussed hypertension by this test.",
+    "calibration_seed_case_id": "F00447",
+    "calibration_repairable": false,
+    "case_id": "N0145"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypetension with the control group.",
+    "expected": "They discussed hypertension with the control group.",
+    "calibration_seed_case_id": "F00447",
+    "calibration_repairable": false,
+    "case_id": "N0146"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypetension for patients.",
+    "expected": "They discussed hypertension for patients.",
+    "calibration_seed_case_id": "F00447",
+    "calibration_repairable": false,
+    "case_id": "N0147"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypetension patients arrived.",
+    "expected": "They discussed hypertension patients arrived.",
+    "calibration_seed_case_id": "F00447",
+    "calibration_repairable": false,
+    "case_id": "N0148"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypetension children were assessed.",
+    "expected": "They discussed hypertension children were assessed.",
+    "calibration_seed_case_id": "F00447",
+    "calibration_repairable": false,
+    "case_id": "N0149"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypetension yesterday.",
+    "expected": "They discussed hypertension yesterday.",
+    "calibration_seed_case_id": "F00447",
+    "calibration_repairable": false,
+    "case_id": "N0150"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of hypetension by this test.",
+    "expected": "No evidence of hypertension by this test.",
+    "calibration_seed_case_id": "F00447",
+    "calibration_repairable": false,
+    "case_id": "N0151"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "hypertension by ",
+    "expected": "hypertension by ",
+    "case_id": "N0152"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "hypertension not ",
+    "expected": "hypertension not ",
+    "case_id": "N0153"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "hypertension 5 ",
+    "expected": "hypertension 5 ",
+    "case_id": "N0154"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_hypetension",
+    "expected": "tag_hypetension",
+    "case_id": "N0155"
+  },
+  {
+    "concept_id": "HTN_97cf39b495a5",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonhypertension",
+    "expected": "nonhypertension",
+    "case_id": "N0156"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per deciliter by this test.",
+    "expected": "They discussed micrograms per deciliter by this test.",
+    "calibration_seed_case_id": "F00481",
+    "calibration_repairable": false,
+    "case_id": "N0157"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per deciliter with the control group.",
+    "expected": "They discussed micrograms per deciliter with the control group.",
+    "calibration_seed_case_id": "F00481",
+    "calibration_repairable": false,
+    "case_id": "N0158"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per deciliter for patients.",
+    "expected": "They discussed micrograms per deciliter for patients.",
+    "calibration_seed_case_id": "F00481",
+    "calibration_repairable": false,
+    "case_id": "N0159"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per deciliter patients arrived.",
+    "expected": "They discussed micrograms per deciliter patients arrived.",
+    "calibration_seed_case_id": "F00481",
+    "calibration_repairable": false,
+    "case_id": "N0160"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per deciliter children were assessed.",
+    "expected": "They discussed micrograms per deciliter children were assessed.",
+    "calibration_seed_case_id": "F00481",
+    "calibration_repairable": false,
+    "case_id": "N0161"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per deciliter yesterday.",
+    "expected": "They discussed micrograms per deciliter yesterday.",
+    "calibration_seed_case_id": "F00481",
+    "calibration_repairable": false,
+    "case_id": "N0162"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of micograms per deciliter by this test.",
+    "expected": "No evidence of micrograms per deciliter by this test.",
+    "calibration_seed_case_id": "F00481",
+    "calibration_repairable": false,
+    "case_id": "N0163"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "micrograms by per deciliter",
+    "expected": "micrograms by per deciliter",
+    "case_id": "N0164"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "micrograms not per deciliter",
+    "expected": "micrograms not per deciliter",
+    "case_id": "N0165"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "micrograms 5 per deciliter",
+    "expected": "micrograms 5 per deciliter",
+    "case_id": "N0166"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_micograms per deciliter",
+    "expected": "tag_micograms per deciliter",
+    "case_id": "N0167"
+  },
+  {
+    "concept_id": "HTN_08df2fb9a572",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonmicrograms per deciliter",
+    "expected": "nonmicrograms per deciliter",
+    "case_id": "N0168"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed incdence by this test.",
+    "expected": "They discussed incidence by this test.",
+    "calibration_seed_case_id": "F00519",
+    "calibration_repairable": false,
+    "case_id": "N0169"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed incdence with the control group.",
+    "expected": "They discussed incidence with the control group.",
+    "calibration_seed_case_id": "F00519",
+    "calibration_repairable": false,
+    "case_id": "N0170"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed incdence for patients.",
+    "expected": "They discussed incidence for patients.",
+    "calibration_seed_case_id": "F00519",
+    "calibration_repairable": false,
+    "case_id": "N0171"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed incdence patients arrived.",
+    "expected": "They discussed incidence patients arrived.",
+    "calibration_seed_case_id": "F00519",
+    "calibration_repairable": false,
+    "case_id": "N0172"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed incdence children were assessed.",
+    "expected": "They discussed incidence children were assessed.",
+    "calibration_seed_case_id": "F00519",
+    "calibration_repairable": false,
+    "case_id": "N0173"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed incdence yesterday.",
+    "expected": "They discussed incidence yesterday.",
+    "calibration_seed_case_id": "F00519",
+    "calibration_repairable": false,
+    "case_id": "N0174"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of incdence by this test.",
+    "expected": "No evidence of incidence by this test.",
+    "calibration_seed_case_id": "F00519",
+    "calibration_repairable": false,
+    "case_id": "N0175"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "incidence by ",
+    "expected": "incidence by ",
+    "case_id": "N0176"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "incidence not ",
+    "expected": "incidence not ",
+    "case_id": "N0177"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "incidence 5 ",
+    "expected": "incidence 5 ",
+    "case_id": "N0178"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_incdence",
+    "expected": "tag_incdence",
+    "case_id": "N0179"
+  },
+  {
+    "concept_id": "HTN_a506dcc39d5e",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonincidence",
+    "expected": "nonincidence",
+    "case_id": "N0180"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed isometric resstance exercise by this test.",
+    "expected": "They discussed isometric resistance exercise by this test.",
+    "calibration_seed_case_id": "F00553",
+    "calibration_repairable": true,
+    "case_id": "N0181"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed isometric resstance exercise with the control group.",
+    "expected": "They discussed isometric resistance exercise with the control group.",
+    "calibration_seed_case_id": "F00553",
+    "calibration_repairable": true,
+    "case_id": "N0182"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed isometric resstance exercise for patients.",
+    "expected": "They discussed isometric resistance exercise for patients.",
+    "calibration_seed_case_id": "F00553",
+    "calibration_repairable": true,
+    "case_id": "N0183"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed isometric resstance exercise patients arrived.",
+    "expected": "They discussed isometric resistance exercise patients arrived.",
+    "calibration_seed_case_id": "F00553",
+    "calibration_repairable": true,
+    "case_id": "N0184"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed isometric resstance exercise children were assessed.",
+    "expected": "They discussed isometric resistance exercise children were assessed.",
+    "calibration_seed_case_id": "F00553",
+    "calibration_repairable": true,
+    "case_id": "N0185"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed isometric resstance exercise yesterday.",
+    "expected": "They discussed isometric resistance exercise yesterday.",
+    "calibration_seed_case_id": "F00553",
+    "calibration_repairable": true,
+    "case_id": "N0186"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of isometric resstance exercise by this test.",
+    "expected": "No evidence of isometric resistance exercise by this test.",
+    "calibration_seed_case_id": "F00553",
+    "calibration_repairable": true,
+    "case_id": "N0187"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "isometric by resistance exercise",
+    "expected": "isometric by resistance exercise",
+    "case_id": "N0188"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "isometric not resistance exercise",
+    "expected": "isometric not resistance exercise",
+    "case_id": "N0189"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "isometric 5 resistance exercise",
+    "expected": "isometric 5 resistance exercise",
+    "case_id": "N0190"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_isometric resstance exercise",
+    "expected": "tag_isometric resstance exercise",
+    "case_id": "N0191"
+  },
+  {
+    "concept_id": "HTN_be068174bf76",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonisometric resistance exercise",
+    "expected": "nonisometric resistance exercise",
+    "case_id": "N0192"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed pharmcological therapy by this test.",
+    "expected": "They discussed pharmacological therapy by this test.",
+    "calibration_seed_case_id": "F00591",
+    "calibration_repairable": true,
+    "case_id": "N0193"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed pharmcological therapy with the control group.",
+    "expected": "They discussed pharmacological therapy with the control group.",
+    "calibration_seed_case_id": "F00591",
+    "calibration_repairable": true,
+    "case_id": "N0194"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed pharmcological therapy for patients.",
+    "expected": "They discussed pharmacological therapy for patients.",
+    "calibration_seed_case_id": "F00591",
+    "calibration_repairable": true,
+    "case_id": "N0195"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed pharmcological therapy patients arrived.",
+    "expected": "They discussed pharmacological therapy patients arrived.",
+    "calibration_seed_case_id": "F00591",
+    "calibration_repairable": true,
+    "case_id": "N0196"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed pharmcological therapy children were assessed.",
+    "expected": "They discussed pharmacological therapy children were assessed.",
+    "calibration_seed_case_id": "F00591",
+    "calibration_repairable": true,
+    "case_id": "N0197"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed pharmcological therapy yesterday.",
+    "expected": "They discussed pharmacological therapy yesterday.",
+    "calibration_seed_case_id": "F00591",
+    "calibration_repairable": true,
+    "case_id": "N0198"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of pharmcological therapy by this test.",
+    "expected": "No evidence of pharmacological therapy by this test.",
+    "calibration_seed_case_id": "F00591",
+    "calibration_repairable": true,
+    "case_id": "N0199"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "pharmacological by therapy",
+    "expected": "pharmacological by therapy",
+    "case_id": "N0200"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "pharmacological not therapy",
+    "expected": "pharmacological not therapy",
+    "case_id": "N0201"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "pharmacological 5 therapy",
+    "expected": "pharmacological 5 therapy",
+    "case_id": "N0202"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_pharmcological therapy",
+    "expected": "tag_pharmcological therapy",
+    "case_id": "N0203"
+  },
+  {
+    "concept_id": "HTN_1e5b2c8f44aa",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonpharmacological therapy",
+    "expected": "nonpharmacological therapy",
+    "case_id": "N0204"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed as low as reaonably achievable by this test.",
+    "expected": "They discussed as low as reasonably achievable by this test.",
+    "calibration_seed_case_id": "F00629",
+    "calibration_repairable": true,
+    "case_id": "N0205"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed as low as reaonably achievable with the control group.",
+    "expected": "They discussed as low as reasonably achievable with the control group.",
+    "calibration_seed_case_id": "F00629",
+    "calibration_repairable": true,
+    "case_id": "N0206"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed as low as reaonably achievable for patients.",
+    "expected": "They discussed as low as reasonably achievable for patients.",
+    "calibration_seed_case_id": "F00629",
+    "calibration_repairable": true,
+    "case_id": "N0207"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed as low as reaonably achievable patients arrived.",
+    "expected": "They discussed as low as reasonably achievable patients arrived.",
+    "calibration_seed_case_id": "F00629",
+    "calibration_repairable": true,
+    "case_id": "N0208"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed as low as reaonably achievable children were assessed.",
+    "expected": "They discussed as low as reasonably achievable children were assessed.",
+    "calibration_seed_case_id": "F00629",
+    "calibration_repairable": true,
+    "case_id": "N0209"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed as low as reaonably achievable yesterday.",
+    "expected": "They discussed as low as reasonably achievable yesterday.",
+    "calibration_seed_case_id": "F00629",
+    "calibration_repairable": true,
+    "case_id": "N0210"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of as low as reaonably achievable by this test.",
+    "expected": "No evidence of as low as reasonably achievable by this test.",
+    "calibration_seed_case_id": "F00629",
+    "calibration_repairable": true,
+    "case_id": "N0211"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "as by low as reasonably achievable",
+    "expected": "as by low as reasonably achievable",
+    "case_id": "N0212"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "as not low as reasonably achievable",
+    "expected": "as not low as reasonably achievable",
+    "case_id": "N0213"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "as 5 low as reasonably achievable",
+    "expected": "as 5 low as reasonably achievable",
+    "case_id": "N0214"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_as low as reaonably achievable",
+    "expected": "tag_as low as reaonably achievable",
+    "case_id": "N0215"
+  },
+  {
+    "concept_id": "HTN_73996112033d",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonas low as reasonably achievable",
+    "expected": "nonas low as reasonably achievable",
+    "case_id": "N0216"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed weght loss by this test.",
+    "expected": "They discussed weight loss by this test.",
+    "calibration_seed_case_id": "F00667",
+    "calibration_repairable": true,
+    "case_id": "N0217"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed weght loss with the control group.",
+    "expected": "They discussed weight loss with the control group.",
+    "calibration_seed_case_id": "F00667",
+    "calibration_repairable": true,
+    "case_id": "N0218"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed weght loss for patients.",
+    "expected": "They discussed weight loss for patients.",
+    "calibration_seed_case_id": "F00667",
+    "calibration_repairable": true,
+    "case_id": "N0219"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed weght loss patients arrived.",
+    "expected": "They discussed weight loss patients arrived.",
+    "calibration_seed_case_id": "F00667",
+    "calibration_repairable": true,
+    "case_id": "N0220"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed weght loss children were assessed.",
+    "expected": "They discussed weight loss children were assessed.",
+    "calibration_seed_case_id": "F00667",
+    "calibration_repairable": true,
+    "case_id": "N0221"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed weght loss yesterday.",
+    "expected": "They discussed weight loss yesterday.",
+    "calibration_seed_case_id": "F00667",
+    "calibration_repairable": true,
+    "case_id": "N0222"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of weght loss by this test.",
+    "expected": "No evidence of weight loss by this test.",
+    "calibration_seed_case_id": "F00667",
+    "calibration_repairable": true,
+    "case_id": "N0223"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "weight by loss",
+    "expected": "weight by loss",
+    "case_id": "N0224"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "weight not loss",
+    "expected": "weight not loss",
+    "case_id": "N0225"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "weight 5 loss",
+    "expected": "weight 5 loss",
+    "case_id": "N0226"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_weght loss",
+    "expected": "tag_weght loss",
+    "case_id": "N0227"
+  },
+  {
+    "concept_id": "HTN_ec261491485c",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonweight loss",
+    "expected": "nonweight loss",
+    "case_id": "N0228"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin supression by this test.",
+    "expected": "They discussed renin suppression by this test.",
+    "calibration_seed_case_id": "F00705",
+    "calibration_repairable": true,
+    "case_id": "N0229"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin supression with the control group.",
+    "expected": "They discussed renin suppression with the control group.",
+    "calibration_seed_case_id": "F00705",
+    "calibration_repairable": true,
+    "case_id": "N0230"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin supression for patients.",
+    "expected": "They discussed renin suppression for patients.",
+    "calibration_seed_case_id": "F00705",
+    "calibration_repairable": true,
+    "case_id": "N0231"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin supression patients arrived.",
+    "expected": "They discussed renin suppression patients arrived.",
+    "calibration_seed_case_id": "F00705",
+    "calibration_repairable": true,
+    "case_id": "N0232"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin supression children were assessed.",
+    "expected": "They discussed renin suppression children were assessed.",
+    "calibration_seed_case_id": "F00705",
+    "calibration_repairable": true,
+    "case_id": "N0233"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin supression yesterday.",
+    "expected": "They discussed renin suppression yesterday.",
+    "calibration_seed_case_id": "F00705",
+    "calibration_repairable": true,
+    "case_id": "N0234"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of renin supression by this test.",
+    "expected": "No evidence of renin suppression by this test.",
+    "calibration_seed_case_id": "F00705",
+    "calibration_repairable": true,
+    "case_id": "N0235"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "renin by suppression",
+    "expected": "renin by suppression",
+    "case_id": "N0236"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "renin not suppression",
+    "expected": "renin not suppression",
+    "case_id": "N0237"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "renin 5 suppression",
+    "expected": "renin 5 suppression",
+    "case_id": "N0238"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_renin supression",
+    "expected": "tag_renin supression",
+    "case_id": "N0239"
+  },
+  {
+    "concept_id": "HTN_6eaf977b00ec",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonrenin suppression",
+    "expected": "nonrenin suppression",
+    "case_id": "N0240"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hyptension by this test.",
+    "expected": "They discussed hypotension by this test.",
+    "calibration_seed_case_id": "F00743",
+    "calibration_repairable": false,
+    "case_id": "N0241"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hyptension with the control group.",
+    "expected": "They discussed hypotension with the control group.",
+    "calibration_seed_case_id": "F00743",
+    "calibration_repairable": false,
+    "case_id": "N0242"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hyptension for patients.",
+    "expected": "They discussed hypotension for patients.",
+    "calibration_seed_case_id": "F00743",
+    "calibration_repairable": false,
+    "case_id": "N0243"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hyptension patients arrived.",
+    "expected": "They discussed hypotension patients arrived.",
+    "calibration_seed_case_id": "F00743",
+    "calibration_repairable": false,
+    "case_id": "N0244"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hyptension children were assessed.",
+    "expected": "They discussed hypotension children were assessed.",
+    "calibration_seed_case_id": "F00743",
+    "calibration_repairable": false,
+    "case_id": "N0245"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hyptension yesterday.",
+    "expected": "They discussed hypotension yesterday.",
+    "calibration_seed_case_id": "F00743",
+    "calibration_repairable": false,
+    "case_id": "N0246"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of hyptension by this test.",
+    "expected": "No evidence of hypotension by this test.",
+    "calibration_seed_case_id": "F00743",
+    "calibration_repairable": false,
+    "case_id": "N0247"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "hypotension by ",
+    "expected": "hypotension by ",
+    "case_id": "N0248"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "hypotension not ",
+    "expected": "hypotension not ",
+    "case_id": "N0249"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "hypotension 5 ",
+    "expected": "hypotension 5 ",
+    "case_id": "N0250"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_hyptension",
+    "expected": "tag_hyptension",
+    "case_id": "N0251"
+  },
+  {
+    "concept_id": "HTN_ee6fe3240e4f",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonhypotension",
+    "expected": "nonhypotension",
+    "case_id": "N0252"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed chonic kidney disease by this test.",
+    "expected": "They discussed chronic kidney disease by this test.",
+    "calibration_seed_case_id": "F00777",
+    "calibration_repairable": true,
+    "case_id": "N0253"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed chonic kidney disease with the control group.",
+    "expected": "They discussed chronic kidney disease with the control group.",
+    "calibration_seed_case_id": "F00777",
+    "calibration_repairable": true,
+    "case_id": "N0254"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed chonic kidney disease for patients.",
+    "expected": "They discussed chronic kidney disease for patients.",
+    "calibration_seed_case_id": "F00777",
+    "calibration_repairable": true,
+    "case_id": "N0255"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed chonic kidney disease patients arrived.",
+    "expected": "They discussed chronic kidney disease patients arrived.",
+    "calibration_seed_case_id": "F00777",
+    "calibration_repairable": true,
+    "case_id": "N0256"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed chonic kidney disease children were assessed.",
+    "expected": "They discussed chronic kidney disease children were assessed.",
+    "calibration_seed_case_id": "F00777",
+    "calibration_repairable": true,
+    "case_id": "N0257"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed chonic kidney disease yesterday.",
+    "expected": "They discussed chronic kidney disease yesterday.",
+    "calibration_seed_case_id": "F00777",
+    "calibration_repairable": true,
+    "case_id": "N0258"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of chonic kidney disease by this test.",
+    "expected": "No evidence of chronic kidney disease by this test.",
+    "calibration_seed_case_id": "F00777",
+    "calibration_repairable": true,
+    "case_id": "N0259"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "chronic by kidney disease",
+    "expected": "chronic by kidney disease",
+    "case_id": "N0260"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "chronic not kidney disease",
+    "expected": "chronic not kidney disease",
+    "case_id": "N0261"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "chronic 5 kidney disease",
+    "expected": "chronic 5 kidney disease",
+    "case_id": "N0262"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_chonic kidney disease",
+    "expected": "tag_chonic kidney disease",
+    "case_id": "N0263"
+  },
+  {
+    "concept_id": "HTN_5d6308ddf615",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonchronic kidney disease",
+    "expected": "nonchronic kidney disease",
+    "case_id": "N0264"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure target by this test.",
+    "expected": "They discussed blood pressure target by this test.",
+    "calibration_seed_case_id": "F00815",
+    "calibration_repairable": true,
+    "case_id": "N0265"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure target with the control group.",
+    "expected": "They discussed blood pressure target with the control group.",
+    "calibration_seed_case_id": "F00815",
+    "calibration_repairable": true,
+    "case_id": "N0266"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure target for patients.",
+    "expected": "They discussed blood pressure target for patients.",
+    "calibration_seed_case_id": "F00815",
+    "calibration_repairable": true,
+    "case_id": "N0267"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure target patients arrived.",
+    "expected": "They discussed blood pressure target patients arrived.",
+    "calibration_seed_case_id": "F00815",
+    "calibration_repairable": true,
+    "case_id": "N0268"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure target children were assessed.",
+    "expected": "They discussed blood pressure target children were assessed.",
+    "calibration_seed_case_id": "F00815",
+    "calibration_repairable": true,
+    "case_id": "N0269"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure target yesterday.",
+    "expected": "They discussed blood pressure target yesterday.",
+    "calibration_seed_case_id": "F00815",
+    "calibration_repairable": true,
+    "case_id": "N0270"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of blood prssure target by this test.",
+    "expected": "No evidence of blood pressure target by this test.",
+    "calibration_seed_case_id": "F00815",
+    "calibration_repairable": true,
+    "case_id": "N0271"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "blood by pressure target",
+    "expected": "blood by pressure target",
+    "case_id": "N0272"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "blood not pressure target",
+    "expected": "blood not pressure target",
+    "case_id": "N0273"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "blood 5 pressure target",
+    "expected": "blood 5 pressure target",
+    "case_id": "N0274"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_blood prssure target",
+    "expected": "tag_blood prssure target",
+    "case_id": "N0275"
+  },
+  {
+    "concept_id": "HTN_21aa1e2a0a86",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonblood pressure target",
+    "expected": "nonblood pressure target",
+    "case_id": "N0276"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed exrcise by this test.",
+    "expected": "They discussed exercise by this test.",
+    "calibration_seed_case_id": "F00853",
+    "calibration_repairable": false,
+    "case_id": "N0277"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed exrcise with the control group.",
+    "expected": "They discussed exercise with the control group.",
+    "calibration_seed_case_id": "F00853",
+    "calibration_repairable": false,
+    "case_id": "N0278"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed exrcise for patients.",
+    "expected": "They discussed exercise for patients.",
+    "calibration_seed_case_id": "F00853",
+    "calibration_repairable": false,
+    "case_id": "N0279"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed exrcise patients arrived.",
+    "expected": "They discussed exercise patients arrived.",
+    "calibration_seed_case_id": "F00853",
+    "calibration_repairable": false,
+    "case_id": "N0280"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed exrcise children were assessed.",
+    "expected": "They discussed exercise children were assessed.",
+    "calibration_seed_case_id": "F00853",
+    "calibration_repairable": false,
+    "case_id": "N0281"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed exrcise yesterday.",
+    "expected": "They discussed exercise yesterday.",
+    "calibration_seed_case_id": "F00853",
+    "calibration_repairable": false,
+    "case_id": "N0282"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of exrcise by this test.",
+    "expected": "No evidence of exercise by this test.",
+    "calibration_seed_case_id": "F00853",
+    "calibration_repairable": false,
+    "case_id": "N0283"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "exercise by ",
+    "expected": "exercise by ",
+    "case_id": "N0284"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "exercise not ",
+    "expected": "exercise not ",
+    "case_id": "N0285"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "exercise 5 ",
+    "expected": "exercise 5 ",
+    "case_id": "N0286"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_exrcise",
+    "expected": "tag_exrcise",
+    "case_id": "N0287"
+  },
+  {
+    "concept_id": "HTN_f55101cb5e74",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonexercise",
+    "expected": "nonexercise",
+    "case_id": "N0288"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prehyertension by this test.",
+    "expected": "They discussed prehypertension by this test.",
+    "calibration_seed_case_id": "F00887",
+    "calibration_repairable": false,
+    "case_id": "N0289"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prehyertension with the control group.",
+    "expected": "They discussed prehypertension with the control group.",
+    "calibration_seed_case_id": "F00887",
+    "calibration_repairable": false,
+    "case_id": "N0290"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prehyertension for patients.",
+    "expected": "They discussed prehypertension for patients.",
+    "calibration_seed_case_id": "F00887",
+    "calibration_repairable": false,
+    "case_id": "N0291"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prehyertension patients arrived.",
+    "expected": "They discussed prehypertension patients arrived.",
+    "calibration_seed_case_id": "F00887",
+    "calibration_repairable": false,
+    "case_id": "N0292"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prehyertension children were assessed.",
+    "expected": "They discussed prehypertension children were assessed.",
+    "calibration_seed_case_id": "F00887",
+    "calibration_repairable": false,
+    "case_id": "N0293"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prehyertension yesterday.",
+    "expected": "They discussed prehypertension yesterday.",
+    "calibration_seed_case_id": "F00887",
+    "calibration_repairable": false,
+    "case_id": "N0294"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of prehyertension by this test.",
+    "expected": "No evidence of prehypertension by this test.",
+    "calibration_seed_case_id": "F00887",
+    "calibration_repairable": false,
+    "case_id": "N0295"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "prehypertension by ",
+    "expected": "prehypertension by ",
+    "case_id": "N0296"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "prehypertension not ",
+    "expected": "prehypertension not ",
+    "case_id": "N0297"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "prehypertension 5 ",
+    "expected": "prehypertension 5 ",
+    "case_id": "N0298"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_prehyertension",
+    "expected": "tag_prehyertension",
+    "case_id": "N0299"
+  },
+  {
+    "concept_id": "HTN_43b62124c3b4",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonprehypertension",
+    "expected": "nonprehypertension",
+    "case_id": "N0300"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed milimoles per day by this test.",
+    "expected": "They discussed millimoles per day by this test.",
+    "calibration_seed_case_id": "F00921",
+    "calibration_repairable": true,
+    "case_id": "N0301"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed milimoles per day with the control group.",
+    "expected": "They discussed millimoles per day with the control group.",
+    "calibration_seed_case_id": "F00921",
+    "calibration_repairable": true,
+    "case_id": "N0302"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed milimoles per day for patients.",
+    "expected": "They discussed millimoles per day for patients.",
+    "calibration_seed_case_id": "F00921",
+    "calibration_repairable": true,
+    "case_id": "N0303"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed milimoles per day patients arrived.",
+    "expected": "They discussed millimoles per day patients arrived.",
+    "calibration_seed_case_id": "F00921",
+    "calibration_repairable": true,
+    "case_id": "N0304"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed milimoles per day children were assessed.",
+    "expected": "They discussed millimoles per day children were assessed.",
+    "calibration_seed_case_id": "F00921",
+    "calibration_repairable": true,
+    "case_id": "N0305"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed milimoles per day yesterday.",
+    "expected": "They discussed millimoles per day yesterday.",
+    "calibration_seed_case_id": "F00921",
+    "calibration_repairable": true,
+    "case_id": "N0306"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of milimoles per day by this test.",
+    "expected": "No evidence of millimoles per day by this test.",
+    "calibration_seed_case_id": "F00921",
+    "calibration_repairable": true,
+    "case_id": "N0307"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "millimoles by per day",
+    "expected": "millimoles by per day",
+    "case_id": "N0308"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "millimoles not per day",
+    "expected": "millimoles not per day",
+    "case_id": "N0309"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "millimoles 5 per day",
+    "expected": "millimoles 5 per day",
+    "case_id": "N0310"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_milimoles per day",
+    "expected": "tag_milimoles per day",
+    "case_id": "N0311"
+  },
+  {
+    "concept_id": "HTN_b71def1fdea1",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonmillimoles per day",
+    "expected": "nonmillimoles per day",
+    "case_id": "N0312"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per day by this test.",
+    "expected": "They discussed micrograms per day by this test.",
+    "calibration_seed_case_id": "F00959",
+    "calibration_repairable": false,
+    "case_id": "N0313"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per day with the control group.",
+    "expected": "They discussed micrograms per day with the control group.",
+    "calibration_seed_case_id": "F00959",
+    "calibration_repairable": false,
+    "case_id": "N0314"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per day for patients.",
+    "expected": "They discussed micrograms per day for patients.",
+    "calibration_seed_case_id": "F00959",
+    "calibration_repairable": false,
+    "case_id": "N0315"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per day patients arrived.",
+    "expected": "They discussed micrograms per day patients arrived.",
+    "calibration_seed_case_id": "F00959",
+    "calibration_repairable": false,
+    "case_id": "N0316"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per day children were assessed.",
+    "expected": "They discussed micrograms per day children were assessed.",
+    "calibration_seed_case_id": "F00959",
+    "calibration_repairable": false,
+    "case_id": "N0317"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed micograms per day yesterday.",
+    "expected": "They discussed micrograms per day yesterday.",
+    "calibration_seed_case_id": "F00959",
+    "calibration_repairable": false,
+    "case_id": "N0318"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of micograms per day by this test.",
+    "expected": "No evidence of micrograms per day by this test.",
+    "calibration_seed_case_id": "F00959",
+    "calibration_repairable": false,
+    "case_id": "N0319"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "micrograms by per day",
+    "expected": "micrograms by per day",
+    "case_id": "N0320"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "micrograms not per day",
+    "expected": "micrograms not per day",
+    "case_id": "N0321"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "micrograms 5 per day",
+    "expected": "micrograms 5 per day",
+    "case_id": "N0322"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_micograms per day",
+    "expected": "tag_micograms per day",
+    "case_id": "N0323"
+  },
+  {
+    "concept_id": "HTN_b3a920f4854a",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonmicrograms per day",
+    "expected": "nonmicrograms per day",
+    "case_id": "N0324"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed non-elvated blood pressure by this test.",
+    "expected": "They discussed non-elevated blood pressure by this test.",
+    "calibration_seed_case_id": "F00997",
+    "calibration_repairable": true,
+    "case_id": "N0325"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed non-elvated blood pressure with the control group.",
+    "expected": "They discussed non-elevated blood pressure with the control group.",
+    "calibration_seed_case_id": "F00997",
+    "calibration_repairable": true,
+    "case_id": "N0326"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed non-elvated blood pressure for patients.",
+    "expected": "They discussed non-elevated blood pressure for patients.",
+    "calibration_seed_case_id": "F00997",
+    "calibration_repairable": true,
+    "case_id": "N0327"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed non-elvated blood pressure patients arrived.",
+    "expected": "They discussed non-elevated blood pressure patients arrived.",
+    "calibration_seed_case_id": "F00997",
+    "calibration_repairable": true,
+    "case_id": "N0328"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed non-elvated blood pressure children were assessed.",
+    "expected": "They discussed non-elevated blood pressure children were assessed.",
+    "calibration_seed_case_id": "F00997",
+    "calibration_repairable": true,
+    "case_id": "N0329"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed non-elvated blood pressure yesterday.",
+    "expected": "They discussed non-elevated blood pressure yesterday.",
+    "calibration_seed_case_id": "F00997",
+    "calibration_repairable": true,
+    "case_id": "N0330"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of non-elvated blood pressure by this test.",
+    "expected": "No evidence of non-elevated blood pressure by this test.",
+    "calibration_seed_case_id": "F00997",
+    "calibration_repairable": true,
+    "case_id": "N0331"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "non-elevated by blood pressure",
+    "expected": "non-elevated by blood pressure",
+    "case_id": "N0332"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "non-elevated not blood pressure",
+    "expected": "non-elevated not blood pressure",
+    "case_id": "N0333"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "non-elevated 5 blood pressure",
+    "expected": "non-elevated 5 blood pressure",
+    "case_id": "N0334"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_non-elvated blood pressure",
+    "expected": "tag_non-elvated blood pressure",
+    "case_id": "N0335"
+  },
+  {
+    "concept_id": "HTN_f48ce01048ba",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonnon-elevated blood pressure",
+    "expected": "nonnon-elevated blood pressure",
+    "case_id": "N0336"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alohol intake by this test.",
+    "expected": "They discussed alcohol intake by this test.",
+    "calibration_seed_case_id": "F01035",
+    "calibration_repairable": true,
+    "case_id": "N0337"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alohol intake with the control group.",
+    "expected": "They discussed alcohol intake with the control group.",
+    "calibration_seed_case_id": "F01035",
+    "calibration_repairable": true,
+    "case_id": "N0338"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alohol intake for patients.",
+    "expected": "They discussed alcohol intake for patients.",
+    "calibration_seed_case_id": "F01035",
+    "calibration_repairable": true,
+    "case_id": "N0339"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alohol intake patients arrived.",
+    "expected": "They discussed alcohol intake patients arrived.",
+    "calibration_seed_case_id": "F01035",
+    "calibration_repairable": true,
+    "case_id": "N0340"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alohol intake children were assessed.",
+    "expected": "They discussed alcohol intake children were assessed.",
+    "calibration_seed_case_id": "F01035",
+    "calibration_repairable": true,
+    "case_id": "N0341"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alohol intake yesterday.",
+    "expected": "They discussed alcohol intake yesterday.",
+    "calibration_seed_case_id": "F01035",
+    "calibration_repairable": true,
+    "case_id": "N0342"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of alohol intake by this test.",
+    "expected": "No evidence of alcohol intake by this test.",
+    "calibration_seed_case_id": "F01035",
+    "calibration_repairable": true,
+    "case_id": "N0343"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "alcohol by intake",
+    "expected": "alcohol by intake",
+    "case_id": "N0344"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "alcohol not intake",
+    "expected": "alcohol not intake",
+    "case_id": "N0345"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "alcohol 5 intake",
+    "expected": "alcohol 5 intake",
+    "case_id": "N0346"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_alohol intake",
+    "expected": "tag_alohol intake",
+    "case_id": "N0347"
+  },
+  {
+    "concept_id": "HTN_5d3f8bcf9aa3",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonalcohol intake",
+    "expected": "nonalcohol intake",
+    "case_id": "N0348"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed seious adverse events by this test.",
+    "expected": "They discussed serious adverse events by this test.",
+    "calibration_seed_case_id": "F01073",
+    "calibration_repairable": true,
+    "case_id": "N0349"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed seious adverse events with the control group.",
+    "expected": "They discussed serious adverse events with the control group.",
+    "calibration_seed_case_id": "F01073",
+    "calibration_repairable": true,
+    "case_id": "N0350"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed seious adverse events for patients.",
+    "expected": "They discussed serious adverse events for patients.",
+    "calibration_seed_case_id": "F01073",
+    "calibration_repairable": true,
+    "case_id": "N0351"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed seious adverse events patients arrived.",
+    "expected": "They discussed serious adverse events patients arrived.",
+    "calibration_seed_case_id": "F01073",
+    "calibration_repairable": true,
+    "case_id": "N0352"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed seious adverse events children were assessed.",
+    "expected": "They discussed serious adverse events children were assessed.",
+    "calibration_seed_case_id": "F01073",
+    "calibration_repairable": true,
+    "case_id": "N0353"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed seious adverse events yesterday.",
+    "expected": "They discussed serious adverse events yesterday.",
+    "calibration_seed_case_id": "F01073",
+    "calibration_repairable": true,
+    "case_id": "N0354"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of seious adverse events by this test.",
+    "expected": "No evidence of serious adverse events by this test.",
+    "calibration_seed_case_id": "F01073",
+    "calibration_repairable": true,
+    "case_id": "N0355"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "serious by adverse events",
+    "expected": "serious by adverse events",
+    "case_id": "N0356"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "serious not adverse events",
+    "expected": "serious not adverse events",
+    "case_id": "N0357"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "serious 5 adverse events",
+    "expected": "serious 5 adverse events",
+    "case_id": "N0358"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_seious adverse events",
+    "expected": "tag_seious adverse events",
+    "case_id": "N0359"
+  },
+  {
+    "concept_id": "HTN_28505bfb6f7c",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonserious adverse events",
+    "expected": "nonserious adverse events",
+    "case_id": "N0360"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed salt loding by this test.",
+    "expected": "They discussed salt loading by this test.",
+    "calibration_seed_case_id": "F01113",
+    "calibration_repairable": true,
+    "case_id": "N0361"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed salt loding with the control group.",
+    "expected": "They discussed salt loading with the control group.",
+    "calibration_seed_case_id": "F01113",
+    "calibration_repairable": true,
+    "case_id": "N0362"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed salt loding for patients.",
+    "expected": "They discussed salt loading for patients.",
+    "calibration_seed_case_id": "F01113",
+    "calibration_repairable": true,
+    "case_id": "N0363"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed salt loding patients arrived.",
+    "expected": "They discussed salt loading patients arrived.",
+    "calibration_seed_case_id": "F01113",
+    "calibration_repairable": true,
+    "case_id": "N0364"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed salt loding children were assessed.",
+    "expected": "They discussed salt loading children were assessed.",
+    "calibration_seed_case_id": "F01113",
+    "calibration_repairable": true,
+    "case_id": "N0365"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed salt loding yesterday.",
+    "expected": "They discussed salt loading yesterday.",
+    "calibration_seed_case_id": "F01113",
+    "calibration_repairable": true,
+    "case_id": "N0366"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of salt loding by this test.",
+    "expected": "No evidence of salt loading by this test.",
+    "calibration_seed_case_id": "F01113",
+    "calibration_repairable": true,
+    "case_id": "N0367"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "salt by loading",
+    "expected": "salt by loading",
+    "case_id": "N0368"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "salt not loading",
+    "expected": "salt not loading",
+    "case_id": "N0369"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "salt 5 loading",
+    "expected": "salt 5 loading",
+    "case_id": "N0370"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_salt loding",
+    "expected": "tag_salt loding",
+    "case_id": "N0371"
+  },
+  {
+    "concept_id": "HTN_5995e0e6626c",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonsalt loading",
+    "expected": "nonsalt loading",
+    "case_id": "N0372"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin-indpendent aldosterone production by this test.",
+    "expected": "They discussed renin-independent aldosterone production by this test.",
+    "calibration_seed_case_id": "F01151",
+    "calibration_repairable": true,
+    "case_id": "N0373"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin-indpendent aldosterone production with the control group.",
+    "expected": "They discussed renin-independent aldosterone production with the control group.",
+    "calibration_seed_case_id": "F01151",
+    "calibration_repairable": true,
+    "case_id": "N0374"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin-indpendent aldosterone production for patients.",
+    "expected": "They discussed renin-independent aldosterone production for patients.",
+    "calibration_seed_case_id": "F01151",
+    "calibration_repairable": true,
+    "case_id": "N0375"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin-indpendent aldosterone production patients arrived.",
+    "expected": "They discussed renin-independent aldosterone production patients arrived.",
+    "calibration_seed_case_id": "F01151",
+    "calibration_repairable": true,
+    "case_id": "N0376"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin-indpendent aldosterone production children were assessed.",
+    "expected": "They discussed renin-independent aldosterone production children were assessed.",
+    "calibration_seed_case_id": "F01151",
+    "calibration_repairable": true,
+    "case_id": "N0377"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed renin-indpendent aldosterone production yesterday.",
+    "expected": "They discussed renin-independent aldosterone production yesterday.",
+    "calibration_seed_case_id": "F01151",
+    "calibration_repairable": true,
+    "case_id": "N0378"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of renin-indpendent aldosterone production by this test.",
+    "expected": "No evidence of renin-independent aldosterone production by this test.",
+    "calibration_seed_case_id": "F01151",
+    "calibration_repairable": true,
+    "case_id": "N0379"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "renin-independent by aldosterone production",
+    "expected": "renin-independent by aldosterone production",
+    "case_id": "N0380"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "renin-independent not aldosterone production",
+    "expected": "renin-independent not aldosterone production",
+    "case_id": "N0381"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "renin-independent 5 aldosterone production",
+    "expected": "renin-independent 5 aldosterone production",
+    "case_id": "N0382"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_renin-indpendent aldosterone production",
+    "expected": "tag_renin-indpendent aldosterone production",
+    "case_id": "N0383"
+  },
+  {
+    "concept_id": "HTN_ee45bdae9c43",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonrenin-independent aldosterone production",
+    "expected": "nonrenin-independent aldosterone production",
+    "case_id": "N0384"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed miner alocorticoid receptor antagonists by this test.",
+    "expected": "They discussed mineralocorticoid receptor antagonists by this test.",
+    "calibration_seed_case_id": "F01193",
+    "calibration_repairable": true,
+    "case_id": "N0385"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed miner alocorticoid receptor antagonists with the control group.",
+    "expected": "They discussed mineralocorticoid receptor antagonists with the control group.",
+    "calibration_seed_case_id": "F01193",
+    "calibration_repairable": true,
+    "case_id": "N0386"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed miner alocorticoid receptor antagonists for patients.",
+    "expected": "They discussed mineralocorticoid receptor antagonists for patients.",
+    "calibration_seed_case_id": "F01193",
+    "calibration_repairable": true,
+    "case_id": "N0387"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed miner alocorticoid receptor antagonists patients arrived.",
+    "expected": "They discussed mineralocorticoid receptor antagonists patients arrived.",
+    "calibration_seed_case_id": "F01193",
+    "calibration_repairable": true,
+    "case_id": "N0388"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed miner alocorticoid receptor antagonists children were assessed.",
+    "expected": "They discussed mineralocorticoid receptor antagonists children were assessed.",
+    "calibration_seed_case_id": "F01193",
+    "calibration_repairable": true,
+    "case_id": "N0389"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed miner alocorticoid receptor antagonists yesterday.",
+    "expected": "They discussed mineralocorticoid receptor antagonists yesterday.",
+    "calibration_seed_case_id": "F01193",
+    "calibration_repairable": true,
+    "case_id": "N0390"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of miner alocorticoid receptor antagonists by this test.",
+    "expected": "No evidence of mineralocorticoid receptor antagonists by this test.",
+    "calibration_seed_case_id": "F01193",
+    "calibration_repairable": true,
+    "case_id": "N0391"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "mineralocorticoid by receptor antagonists",
+    "expected": "mineralocorticoid by receptor antagonists",
+    "case_id": "N0392"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "mineralocorticoid not receptor antagonists",
+    "expected": "mineralocorticoid not receptor antagonists",
+    "case_id": "N0393"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "mineralocorticoid 5 receptor antagonists",
+    "expected": "mineralocorticoid 5 receptor antagonists",
+    "case_id": "N0394"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_miner alocorticoid receptor antagonists",
+    "expected": "tag_miner alocorticoid receptor antagonists",
+    "case_id": "N0395"
+  },
+  {
+    "concept_id": "HTN_0114ad465a4c",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonmineralocorticoid receptor antagonists",
+    "expected": "nonmineralocorticoid receptor antagonists",
+    "case_id": "N0396"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed urinary aldsterone by this test.",
+    "expected": "They discussed urinary aldosterone by this test.",
+    "calibration_seed_case_id": "F01229",
+    "calibration_repairable": true,
+    "case_id": "N0397"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed urinary aldsterone with the control group.",
+    "expected": "They discussed urinary aldosterone with the control group.",
+    "calibration_seed_case_id": "F01229",
+    "calibration_repairable": true,
+    "case_id": "N0398"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed urinary aldsterone for patients.",
+    "expected": "They discussed urinary aldosterone for patients.",
+    "calibration_seed_case_id": "F01229",
+    "calibration_repairable": true,
+    "case_id": "N0399"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed urinary aldsterone patients arrived.",
+    "expected": "They discussed urinary aldosterone patients arrived.",
+    "calibration_seed_case_id": "F01229",
+    "calibration_repairable": true,
+    "case_id": "N0400"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed urinary aldsterone children were assessed.",
+    "expected": "They discussed urinary aldosterone children were assessed.",
+    "calibration_seed_case_id": "F01229",
+    "calibration_repairable": true,
+    "case_id": "N0401"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed urinary aldsterone yesterday.",
+    "expected": "They discussed urinary aldosterone yesterday.",
+    "calibration_seed_case_id": "F01229",
+    "calibration_repairable": true,
+    "case_id": "N0402"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of urinary aldsterone by this test.",
+    "expected": "No evidence of urinary aldosterone by this test.",
+    "calibration_seed_case_id": "F01229",
+    "calibration_repairable": true,
+    "case_id": "N0403"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "urinary by aldosterone",
+    "expected": "urinary by aldosterone",
+    "case_id": "N0404"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "urinary not aldosterone",
+    "expected": "urinary not aldosterone",
+    "case_id": "N0405"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "urinary 5 aldosterone",
+    "expected": "urinary 5 aldosterone",
+    "case_id": "N0406"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_urinary aldsterone",
+    "expected": "tag_urinary aldsterone",
+    "case_id": "N0407"
+  },
+  {
+    "concept_id": "HTN_aa5f2ce2aa91",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonurinary aldosterone",
+    "expected": "nonurinary aldosterone",
+    "case_id": "N0408"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed oral cont raceptives by this test.",
+    "expected": "They discussed oral contraceptives by this test.",
+    "calibration_seed_case_id": "F01271",
+    "calibration_repairable": true,
+    "case_id": "N0409"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed oral cont raceptives with the control group.",
+    "expected": "They discussed oral contraceptives with the control group.",
+    "calibration_seed_case_id": "F01271",
+    "calibration_repairable": true,
+    "case_id": "N0410"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed oral cont raceptives for patients.",
+    "expected": "They discussed oral contraceptives for patients.",
+    "calibration_seed_case_id": "F01271",
+    "calibration_repairable": true,
+    "case_id": "N0411"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed oral cont raceptives patients arrived.",
+    "expected": "They discussed oral contraceptives patients arrived.",
+    "calibration_seed_case_id": "F01271",
+    "calibration_repairable": true,
+    "case_id": "N0412"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed oral cont raceptives children were assessed.",
+    "expected": "They discussed oral contraceptives children were assessed.",
+    "calibration_seed_case_id": "F01271",
+    "calibration_repairable": true,
+    "case_id": "N0413"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed oral cont raceptives yesterday.",
+    "expected": "They discussed oral contraceptives yesterday.",
+    "calibration_seed_case_id": "F01271",
+    "calibration_repairable": true,
+    "case_id": "N0414"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of oral cont raceptives by this test.",
+    "expected": "No evidence of oral contraceptives by this test.",
+    "calibration_seed_case_id": "F01271",
+    "calibration_repairable": true,
+    "case_id": "N0415"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "oral by contraceptives",
+    "expected": "oral by contraceptives",
+    "case_id": "N0416"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "oral not contraceptives",
+    "expected": "oral not contraceptives",
+    "case_id": "N0417"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "oral 5 contraceptives",
+    "expected": "oral 5 contraceptives",
+    "case_id": "N0418"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_oral cont raceptives",
+    "expected": "tag_oral cont raceptives",
+    "case_id": "N0419"
+  },
+  {
+    "concept_id": "HTN_edd3f525e819",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonoral contraceptives",
+    "expected": "nonoral contraceptives",
+    "case_id": "N0420"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypkalemic metabolic alkalosis by this test.",
+    "expected": "They discussed hypokalemic metabolic alkalosis by this test.",
+    "calibration_seed_case_id": "F01305",
+    "calibration_repairable": true,
+    "case_id": "N0421"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypkalemic metabolic alkalosis with the control group.",
+    "expected": "They discussed hypokalemic metabolic alkalosis with the control group.",
+    "calibration_seed_case_id": "F01305",
+    "calibration_repairable": true,
+    "case_id": "N0422"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypkalemic metabolic alkalosis for patients.",
+    "expected": "They discussed hypokalemic metabolic alkalosis for patients.",
+    "calibration_seed_case_id": "F01305",
+    "calibration_repairable": true,
+    "case_id": "N0423"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypkalemic metabolic alkalosis patients arrived.",
+    "expected": "They discussed hypokalemic metabolic alkalosis patients arrived.",
+    "calibration_seed_case_id": "F01305",
+    "calibration_repairable": true,
+    "case_id": "N0424"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypkalemic metabolic alkalosis children were assessed.",
+    "expected": "They discussed hypokalemic metabolic alkalosis children were assessed.",
+    "calibration_seed_case_id": "F01305",
+    "calibration_repairable": true,
+    "case_id": "N0425"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed hypkalemic metabolic alkalosis yesterday.",
+    "expected": "They discussed hypokalemic metabolic alkalosis yesterday.",
+    "calibration_seed_case_id": "F01305",
+    "calibration_repairable": true,
+    "case_id": "N0426"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of hypkalemic metabolic alkalosis by this test.",
+    "expected": "No evidence of hypokalemic metabolic alkalosis by this test.",
+    "calibration_seed_case_id": "F01305",
+    "calibration_repairable": true,
+    "case_id": "N0427"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "hypokalemic by metabolic alkalosis",
+    "expected": "hypokalemic by metabolic alkalosis",
+    "case_id": "N0428"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "hypokalemic not metabolic alkalosis",
+    "expected": "hypokalemic not metabolic alkalosis",
+    "case_id": "N0429"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "hypokalemic 5 metabolic alkalosis",
+    "expected": "hypokalemic 5 metabolic alkalosis",
+    "case_id": "N0430"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_hypkalemic metabolic alkalosis",
+    "expected": "tag_hypkalemic metabolic alkalosis",
+    "case_id": "N0431"
+  },
+  {
+    "concept_id": "HTN_fe15c79eba36",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonhypokalemic metabolic alkalosis",
+    "expected": "nonhypokalemic metabolic alkalosis",
+    "case_id": "N0432"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed aldsterone by this test.",
+    "expected": "They discussed aldosterone by this test.",
+    "calibration_seed_case_id": "F01343",
+    "calibration_repairable": false,
+    "case_id": "N0433"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed aldsterone with the control group.",
+    "expected": "They discussed aldosterone with the control group.",
+    "calibration_seed_case_id": "F01343",
+    "calibration_repairable": false,
+    "case_id": "N0434"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed aldsterone for patients.",
+    "expected": "They discussed aldosterone for patients.",
+    "calibration_seed_case_id": "F01343",
+    "calibration_repairable": false,
+    "case_id": "N0435"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed aldsterone patients arrived.",
+    "expected": "They discussed aldosterone patients arrived.",
+    "calibration_seed_case_id": "F01343",
+    "calibration_repairable": false,
+    "case_id": "N0436"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed aldsterone children were assessed.",
+    "expected": "They discussed aldosterone children were assessed.",
+    "calibration_seed_case_id": "F01343",
+    "calibration_repairable": false,
+    "case_id": "N0437"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed aldsterone yesterday.",
+    "expected": "They discussed aldosterone yesterday.",
+    "calibration_seed_case_id": "F01343",
+    "calibration_repairable": false,
+    "case_id": "N0438"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of aldsterone by this test.",
+    "expected": "No evidence of aldosterone by this test.",
+    "calibration_seed_case_id": "F01343",
+    "calibration_repairable": false,
+    "case_id": "N0439"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "aldosterone by ",
+    "expected": "aldosterone by ",
+    "case_id": "N0440"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "aldosterone not ",
+    "expected": "aldosterone not ",
+    "case_id": "N0441"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "aldosterone 5 ",
+    "expected": "aldosterone 5 ",
+    "case_id": "N0442"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_aldsterone",
+    "expected": "tag_aldsterone",
+    "case_id": "N0443"
+  },
+  {
+    "concept_id": "HTN_243c1557a315",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonaldosterone",
+    "expected": "nonaldosterone",
+    "case_id": "N0444"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed phsical activity by this test.",
+    "expected": "They discussed physical activity by this test.",
+    "calibration_seed_case_id": "F01377",
+    "calibration_repairable": true,
+    "case_id": "N0445"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed phsical activity with the control group.",
+    "expected": "They discussed physical activity with the control group.",
+    "calibration_seed_case_id": "F01377",
+    "calibration_repairable": true,
+    "case_id": "N0446"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed phsical activity for patients.",
+    "expected": "They discussed physical activity for patients.",
+    "calibration_seed_case_id": "F01377",
+    "calibration_repairable": true,
+    "case_id": "N0447"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed phsical activity patients arrived.",
+    "expected": "They discussed physical activity patients arrived.",
+    "calibration_seed_case_id": "F01377",
+    "calibration_repairable": true,
+    "case_id": "N0448"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed phsical activity children were assessed.",
+    "expected": "They discussed physical activity children were assessed.",
+    "calibration_seed_case_id": "F01377",
+    "calibration_repairable": true,
+    "case_id": "N0449"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed phsical activity yesterday.",
+    "expected": "They discussed physical activity yesterday.",
+    "calibration_seed_case_id": "F01377",
+    "calibration_repairable": true,
+    "case_id": "N0450"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of phsical activity by this test.",
+    "expected": "No evidence of physical activity by this test.",
+    "calibration_seed_case_id": "F01377",
+    "calibration_repairable": true,
+    "case_id": "N0451"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "physical by activity",
+    "expected": "physical by activity",
+    "case_id": "N0452"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "physical not activity",
+    "expected": "physical not activity",
+    "case_id": "N0453"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "physical 5 activity",
+    "expected": "physical 5 activity",
+    "case_id": "N0454"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_phsical activity",
+    "expected": "tag_phsical activity",
+    "case_id": "N0455"
+  },
+  {
+    "concept_id": "HTN_50b4fc97bb14",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonphysical activity",
+    "expected": "nonphysical activity",
+    "case_id": "N0456"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed meta-anlysis by this test.",
+    "expected": "They discussed meta-analysis by this test.",
+    "calibration_seed_case_id": "F01415",
+    "calibration_repairable": true,
+    "case_id": "N0457"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed meta-anlysis with the control group.",
+    "expected": "They discussed meta-analysis with the control group.",
+    "calibration_seed_case_id": "F01415",
+    "calibration_repairable": true,
+    "case_id": "N0458"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed meta-anlysis for patients.",
+    "expected": "They discussed meta-analysis for patients.",
+    "calibration_seed_case_id": "F01415",
+    "calibration_repairable": true,
+    "case_id": "N0459"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed meta-anlysis patients arrived.",
+    "expected": "They discussed meta-analysis patients arrived.",
+    "calibration_seed_case_id": "F01415",
+    "calibration_repairable": true,
+    "case_id": "N0460"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed meta-anlysis children were assessed.",
+    "expected": "They discussed meta-analysis children were assessed.",
+    "calibration_seed_case_id": "F01415",
+    "calibration_repairable": true,
+    "case_id": "N0461"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed meta-anlysis yesterday.",
+    "expected": "They discussed meta-analysis yesterday.",
+    "calibration_seed_case_id": "F01415",
+    "calibration_repairable": true,
+    "case_id": "N0462"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of meta-anlysis by this test.",
+    "expected": "No evidence of meta-analysis by this test.",
+    "calibration_seed_case_id": "F01415",
+    "calibration_repairable": true,
+    "case_id": "N0463"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "meta-analysis by ",
+    "expected": "meta-analysis by ",
+    "case_id": "N0464"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "meta-analysis not ",
+    "expected": "meta-analysis not ",
+    "case_id": "N0465"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "meta-analysis 5 ",
+    "expected": "meta-analysis 5 ",
+    "case_id": "N0466"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_meta-anlysis",
+    "expected": "tag_meta-anlysis",
+    "case_id": "N0467"
+  },
+  {
+    "concept_id": "HTN_08be48d0e6db",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonmeta-analysis",
+    "expected": "nonmeta-analysis",
+    "case_id": "N0468"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular disease by this test.",
+    "expected": "They discussed cardiovascular disease by this test.",
+    "calibration_seed_case_id": "F01453",
+    "calibration_repairable": true,
+    "case_id": "N0469"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular disease with the control group.",
+    "expected": "They discussed cardiovascular disease with the control group.",
+    "calibration_seed_case_id": "F01453",
+    "calibration_repairable": true,
+    "case_id": "N0470"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular disease for patients.",
+    "expected": "They discussed cardiovascular disease for patients.",
+    "calibration_seed_case_id": "F01453",
+    "calibration_repairable": true,
+    "case_id": "N0471"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular disease patients arrived.",
+    "expected": "They discussed cardiovascular disease patients arrived.",
+    "calibration_seed_case_id": "F01453",
+    "calibration_repairable": true,
+    "case_id": "N0472"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular disease children were assessed.",
+    "expected": "They discussed cardiovascular disease children were assessed.",
+    "calibration_seed_case_id": "F01453",
+    "calibration_repairable": true,
+    "case_id": "N0473"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed cardovascular disease yesterday.",
+    "expected": "They discussed cardiovascular disease yesterday.",
+    "calibration_seed_case_id": "F01453",
+    "calibration_repairable": true,
+    "case_id": "N0474"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of cardovascular disease by this test.",
+    "expected": "No evidence of cardiovascular disease by this test.",
+    "calibration_seed_case_id": "F01453",
+    "calibration_repairable": true,
+    "case_id": "N0475"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "cardiovascular by disease",
+    "expected": "cardiovascular by disease",
+    "case_id": "N0476"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "cardiovascular not disease",
+    "expected": "cardiovascular not disease",
+    "case_id": "N0477"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "cardiovascular 5 disease",
+    "expected": "cardiovascular 5 disease",
+    "case_id": "N0478"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_cardovascular disease",
+    "expected": "tag_cardovascular disease",
+    "case_id": "N0479"
+  },
+  {
+    "concept_id": "HTN_78302c3c9580",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "noncardiovascular disease",
+    "expected": "noncardiovascular disease",
+    "case_id": "N0480"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed evdence-based review by this test.",
+    "expected": "They discussed evidence-based review by this test.",
+    "calibration_seed_case_id": "F01491",
+    "calibration_repairable": true,
+    "case_id": "N0481"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed evdence-based review with the control group.",
+    "expected": "They discussed evidence-based review with the control group.",
+    "calibration_seed_case_id": "F01491",
+    "calibration_repairable": true,
+    "case_id": "N0482"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed evdence-based review for patients.",
+    "expected": "They discussed evidence-based review for patients.",
+    "calibration_seed_case_id": "F01491",
+    "calibration_repairable": true,
+    "case_id": "N0483"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed evdence-based review patients arrived.",
+    "expected": "They discussed evidence-based review patients arrived.",
+    "calibration_seed_case_id": "F01491",
+    "calibration_repairable": true,
+    "case_id": "N0484"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed evdence-based review children were assessed.",
+    "expected": "They discussed evidence-based review children were assessed.",
+    "calibration_seed_case_id": "F01491",
+    "calibration_repairable": true,
+    "case_id": "N0485"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed evdence-based review yesterday.",
+    "expected": "They discussed evidence-based review yesterday.",
+    "calibration_seed_case_id": "F01491",
+    "calibration_repairable": true,
+    "case_id": "N0486"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of evdence-based review by this test.",
+    "expected": "No evidence of evidence-based review by this test.",
+    "calibration_seed_case_id": "F01491",
+    "calibration_repairable": true,
+    "case_id": "N0487"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "evidence-based by review",
+    "expected": "evidence-based by review",
+    "case_id": "N0488"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "evidence-based not review",
+    "expected": "evidence-based not review",
+    "case_id": "N0489"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "evidence-based 5 review",
+    "expected": "evidence-based 5 review",
+    "case_id": "N0490"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_evdence-based review",
+    "expected": "tag_evdence-based review",
+    "case_id": "N0491"
+  },
+  {
+    "concept_id": "HTN_1b881806cbc3",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonevidence-based review",
+    "expected": "nonevidence-based review",
+    "case_id": "N0492"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed direct renin concntration by this test.",
+    "expected": "They discussed direct renin concentration by this test.",
+    "calibration_seed_case_id": "F01529",
+    "calibration_repairable": true,
+    "case_id": "N0493"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed direct renin concntration with the control group.",
+    "expected": "They discussed direct renin concentration with the control group.",
+    "calibration_seed_case_id": "F01529",
+    "calibration_repairable": true,
+    "case_id": "N0494"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed direct renin concntration for patients.",
+    "expected": "They discussed direct renin concentration for patients.",
+    "calibration_seed_case_id": "F01529",
+    "calibration_repairable": true,
+    "case_id": "N0495"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed direct renin concntration patients arrived.",
+    "expected": "They discussed direct renin concentration patients arrived.",
+    "calibration_seed_case_id": "F01529",
+    "calibration_repairable": true,
+    "case_id": "N0496"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed direct renin concntration children were assessed.",
+    "expected": "They discussed direct renin concentration children were assessed.",
+    "calibration_seed_case_id": "F01529",
+    "calibration_repairable": true,
+    "case_id": "N0497"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed direct renin concntration yesterday.",
+    "expected": "They discussed direct renin concentration yesterday.",
+    "calibration_seed_case_id": "F01529",
+    "calibration_repairable": true,
+    "case_id": "N0498"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of direct renin concntration by this test.",
+    "expected": "No evidence of direct renin concentration by this test.",
+    "calibration_seed_case_id": "F01529",
+    "calibration_repairable": true,
+    "case_id": "N0499"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "direct by renin concentration",
+    "expected": "direct by renin concentration",
+    "case_id": "N0500"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "direct not renin concentration",
+    "expected": "direct not renin concentration",
+    "case_id": "N0501"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "direct 5 renin concentration",
+    "expected": "direct 5 renin concentration",
+    "case_id": "N0502"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_direct renin concntration",
+    "expected": "tag_direct renin concntration",
+    "case_id": "N0503"
+  },
+  {
+    "concept_id": "HTN_046b2614a497",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nondirect renin concentration",
+    "expected": "nondirect renin concentration",
+    "case_id": "N0504"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alcohol modration by this test.",
+    "expected": "They discussed alcohol moderation by this test.",
+    "calibration_seed_case_id": "F01567",
+    "calibration_repairable": true,
+    "case_id": "N0505"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alcohol modration with the control group.",
+    "expected": "They discussed alcohol moderation with the control group.",
+    "calibration_seed_case_id": "F01567",
+    "calibration_repairable": true,
+    "case_id": "N0506"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alcohol modration for patients.",
+    "expected": "They discussed alcohol moderation for patients.",
+    "calibration_seed_case_id": "F01567",
+    "calibration_repairable": true,
+    "case_id": "N0507"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alcohol modration patients arrived.",
+    "expected": "They discussed alcohol moderation patients arrived.",
+    "calibration_seed_case_id": "F01567",
+    "calibration_repairable": true,
+    "case_id": "N0508"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alcohol modration children were assessed.",
+    "expected": "They discussed alcohol moderation children were assessed.",
+    "calibration_seed_case_id": "F01567",
+    "calibration_repairable": true,
+    "case_id": "N0509"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed alcohol modration yesterday.",
+    "expected": "They discussed alcohol moderation yesterday.",
+    "calibration_seed_case_id": "F01567",
+    "calibration_repairable": true,
+    "case_id": "N0510"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of alcohol modration by this test.",
+    "expected": "No evidence of alcohol moderation by this test.",
+    "calibration_seed_case_id": "F01567",
+    "calibration_repairable": true,
+    "case_id": "N0511"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "alcohol by moderation",
+    "expected": "alcohol by moderation",
+    "case_id": "N0512"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "alcohol not moderation",
+    "expected": "alcohol not moderation",
+    "case_id": "N0513"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "alcohol 5 moderation",
+    "expected": "alcohol 5 moderation",
+    "case_id": "N0514"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_alcohol modration",
+    "expected": "tag_alcohol modration",
+    "case_id": "N0515"
+  },
+  {
+    "concept_id": "HTN_360421e6c958",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonalcohol moderation",
+    "expected": "nonalcohol moderation",
+    "case_id": "N0516"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed subclinical athersclerosis by this test.",
+    "expected": "They discussed subclinical atherosclerosis by this test.",
+    "calibration_seed_case_id": "F01605",
+    "calibration_repairable": true,
+    "case_id": "N0517"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed subclinical athersclerosis with the control group.",
+    "expected": "They discussed subclinical atherosclerosis with the control group.",
+    "calibration_seed_case_id": "F01605",
+    "calibration_repairable": true,
+    "case_id": "N0518"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed subclinical athersclerosis for patients.",
+    "expected": "They discussed subclinical atherosclerosis for patients.",
+    "calibration_seed_case_id": "F01605",
+    "calibration_repairable": true,
+    "case_id": "N0519"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed subclinical athersclerosis patients arrived.",
+    "expected": "They discussed subclinical atherosclerosis patients arrived.",
+    "calibration_seed_case_id": "F01605",
+    "calibration_repairable": true,
+    "case_id": "N0520"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed subclinical athersclerosis children were assessed.",
+    "expected": "They discussed subclinical atherosclerosis children were assessed.",
+    "calibration_seed_case_id": "F01605",
+    "calibration_repairable": true,
+    "case_id": "N0521"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed subclinical athersclerosis yesterday.",
+    "expected": "They discussed subclinical atherosclerosis yesterday.",
+    "calibration_seed_case_id": "F01605",
+    "calibration_repairable": true,
+    "case_id": "N0522"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of subclinical athersclerosis by this test.",
+    "expected": "No evidence of subclinical atherosclerosis by this test.",
+    "calibration_seed_case_id": "F01605",
+    "calibration_repairable": true,
+    "case_id": "N0523"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "subclinical by atherosclerosis",
+    "expected": "subclinical by atherosclerosis",
+    "case_id": "N0524"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "subclinical not atherosclerosis",
+    "expected": "subclinical not atherosclerosis",
+    "case_id": "N0525"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "subclinical 5 atherosclerosis",
+    "expected": "subclinical 5 atherosclerosis",
+    "case_id": "N0526"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_subclinical athersclerosis",
+    "expected": "tag_subclinical athersclerosis",
+    "case_id": "N0527"
+  },
+  {
+    "concept_id": "HTN_c14e2214165b",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonsubclinical atherosclerosis",
+    "expected": "nonsubclinical atherosclerosis",
+    "case_id": "N0528"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed older adxults by this test.",
+    "expected": "They discussed older adults by this test.",
+    "calibration_seed_case_id": "F01645",
+    "calibration_repairable": true,
+    "case_id": "N0529"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed older adxults with the control group.",
+    "expected": "They discussed older adults with the control group.",
+    "calibration_seed_case_id": "F01645",
+    "calibration_repairable": true,
+    "case_id": "N0530"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed older adxults for patients.",
+    "expected": "They discussed older adults for patients.",
+    "calibration_seed_case_id": "F01645",
+    "calibration_repairable": true,
+    "case_id": "N0531"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed older adxults patients arrived.",
+    "expected": "They discussed older adults patients arrived.",
+    "calibration_seed_case_id": "F01645",
+    "calibration_repairable": true,
+    "case_id": "N0532"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed older adxults children were assessed.",
+    "expected": "They discussed older adults children were assessed.",
+    "calibration_seed_case_id": "F01645",
+    "calibration_repairable": true,
+    "case_id": "N0533"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed older adxults yesterday.",
+    "expected": "They discussed older adults yesterday.",
+    "calibration_seed_case_id": "F01645",
+    "calibration_repairable": true,
+    "case_id": "N0534"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of older adxults by this test.",
+    "expected": "No evidence of older adults by this test.",
+    "calibration_seed_case_id": "F01645",
+    "calibration_repairable": true,
+    "case_id": "N0535"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "older by adults",
+    "expected": "older by adults",
+    "case_id": "N0536"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "older not adults",
+    "expected": "older not adults",
+    "case_id": "N0537"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "older 5 adults",
+    "expected": "older 5 adults",
+    "case_id": "N0538"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_older adxults",
+    "expected": "tag_older adxults",
+    "case_id": "N0539"
+  },
+  {
+    "concept_id": "HTN_8adeb49fc7d5",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonolder adults",
+    "expected": "nonolder adults",
+    "case_id": "N0540"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed helthy diet by this test.",
+    "expected": "They discussed healthy diet by this test.",
+    "calibration_seed_case_id": "F01681",
+    "calibration_repairable": true,
+    "case_id": "N0541"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed helthy diet with the control group.",
+    "expected": "They discussed healthy diet with the control group.",
+    "calibration_seed_case_id": "F01681",
+    "calibration_repairable": true,
+    "case_id": "N0542"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed helthy diet for patients.",
+    "expected": "They discussed healthy diet for patients.",
+    "calibration_seed_case_id": "F01681",
+    "calibration_repairable": true,
+    "case_id": "N0543"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed helthy diet patients arrived.",
+    "expected": "They discussed healthy diet patients arrived.",
+    "calibration_seed_case_id": "F01681",
+    "calibration_repairable": true,
+    "case_id": "N0544"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed helthy diet children were assessed.",
+    "expected": "They discussed healthy diet children were assessed.",
+    "calibration_seed_case_id": "F01681",
+    "calibration_repairable": true,
+    "case_id": "N0545"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed helthy diet yesterday.",
+    "expected": "They discussed healthy diet yesterday.",
+    "calibration_seed_case_id": "F01681",
+    "calibration_repairable": true,
+    "case_id": "N0546"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of helthy diet by this test.",
+    "expected": "No evidence of healthy diet by this test.",
+    "calibration_seed_case_id": "F01681",
+    "calibration_repairable": true,
+    "case_id": "N0547"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "healthy by diet",
+    "expected": "healthy by diet",
+    "case_id": "N0548"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "healthy not diet",
+    "expected": "healthy not diet",
+    "case_id": "N0549"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "healthy 5 diet",
+    "expected": "healthy 5 diet",
+    "case_id": "N0550"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_helthy diet",
+    "expected": "tag_helthy diet",
+    "case_id": "N0551"
+  },
+  {
+    "concept_id": "HTN_23003a7c53dc",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonhealthy diet",
+    "expected": "nonhealthy diet",
+    "case_id": "N0552"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed co-cair by this test.",
+    "expected": "They discussed co-chair by this test.",
+    "calibration_seed_case_id": "F01719",
+    "calibration_repairable": false,
+    "case_id": "N0553"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed co-cair with the control group.",
+    "expected": "They discussed co-chair with the control group.",
+    "calibration_seed_case_id": "F01719",
+    "calibration_repairable": false,
+    "case_id": "N0554"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed co-cair for patients.",
+    "expected": "They discussed co-chair for patients.",
+    "calibration_seed_case_id": "F01719",
+    "calibration_repairable": false,
+    "case_id": "N0555"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed co-cair patients arrived.",
+    "expected": "They discussed co-chair patients arrived.",
+    "calibration_seed_case_id": "F01719",
+    "calibration_repairable": false,
+    "case_id": "N0556"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed co-cair children were assessed.",
+    "expected": "They discussed co-chair children were assessed.",
+    "calibration_seed_case_id": "F01719",
+    "calibration_repairable": false,
+    "case_id": "N0557"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed co-cair yesterday.",
+    "expected": "They discussed co-chair yesterday.",
+    "calibration_seed_case_id": "F01719",
+    "calibration_repairable": false,
+    "case_id": "N0558"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of co-cair by this test.",
+    "expected": "No evidence of co-chair by this test.",
+    "calibration_seed_case_id": "F01719",
+    "calibration_repairable": false,
+    "case_id": "N0559"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "co-chair by ",
+    "expected": "co-chair by ",
+    "case_id": "N0560"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "co-chair not ",
+    "expected": "co-chair not ",
+    "case_id": "N0561"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "co-chair 5 ",
+    "expected": "co-chair 5 ",
+    "case_id": "N0562"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_co-cair",
+    "expected": "tag_co-cair",
+    "case_id": "N0563"
+  },
+  {
+    "concept_id": "HTN_c55b21ee723a",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonco-chair",
+    "expected": "nonco-chair",
+    "case_id": "N0564"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure control by this test.",
+    "expected": "They discussed blood pressure control by this test.",
+    "calibration_seed_case_id": "F01757",
+    "calibration_repairable": true,
+    "case_id": "N0565"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure control with the control group.",
+    "expected": "They discussed blood pressure control with the control group.",
+    "calibration_seed_case_id": "F01757",
+    "calibration_repairable": true,
+    "case_id": "N0566"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure control for patients.",
+    "expected": "They discussed blood pressure control for patients.",
+    "calibration_seed_case_id": "F01757",
+    "calibration_repairable": true,
+    "case_id": "N0567"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure control patients arrived.",
+    "expected": "They discussed blood pressure control patients arrived.",
+    "calibration_seed_case_id": "F01757",
+    "calibration_repairable": true,
+    "case_id": "N0568"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure control children were assessed.",
+    "expected": "They discussed blood pressure control children were assessed.",
+    "calibration_seed_case_id": "F01757",
+    "calibration_repairable": true,
+    "case_id": "N0569"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed blood prssure control yesterday.",
+    "expected": "They discussed blood pressure control yesterday.",
+    "calibration_seed_case_id": "F01757",
+    "calibration_repairable": true,
+    "case_id": "N0570"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of blood prssure control by this test.",
+    "expected": "No evidence of blood pressure control by this test.",
+    "calibration_seed_case_id": "F01757",
+    "calibration_repairable": true,
+    "case_id": "N0571"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "blood by pressure control",
+    "expected": "blood by pressure control",
+    "case_id": "N0572"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "blood not pressure control",
+    "expected": "blood not pressure control",
+    "case_id": "N0573"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "blood 5 pressure control",
+    "expected": "blood 5 pressure control",
+    "case_id": "N0574"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_blood prssure control",
+    "expected": "tag_blood prssure control",
+    "case_id": "N0575"
+  },
+  {
+    "concept_id": "HTN_e9263cf14efb",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonblood pressure control",
+    "expected": "nonblood pressure control",
+    "case_id": "N0576"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prealence by this test.",
+    "expected": "They discussed prevalence by this test.",
+    "calibration_seed_case_id": "F01795",
+    "calibration_repairable": false,
+    "case_id": "N0577"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prealence with the control group.",
+    "expected": "They discussed prevalence with the control group.",
+    "calibration_seed_case_id": "F01795",
+    "calibration_repairable": false,
+    "case_id": "N0578"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prealence for patients.",
+    "expected": "They discussed prevalence for patients.",
+    "calibration_seed_case_id": "F01795",
+    "calibration_repairable": false,
+    "case_id": "N0579"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prealence patients arrived.",
+    "expected": "They discussed prevalence patients arrived.",
+    "calibration_seed_case_id": "F01795",
+    "calibration_repairable": false,
+    "case_id": "N0580"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prealence children were assessed.",
+    "expected": "They discussed prevalence children were assessed.",
+    "calibration_seed_case_id": "F01795",
+    "calibration_repairable": false,
+    "case_id": "N0581"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed prealence yesterday.",
+    "expected": "They discussed prevalence yesterday.",
+    "calibration_seed_case_id": "F01795",
+    "calibration_repairable": false,
+    "case_id": "N0582"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of prealence by this test.",
+    "expected": "No evidence of prevalence by this test.",
+    "calibration_seed_case_id": "F01795",
+    "calibration_repairable": false,
+    "case_id": "N0583"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "prevalence by ",
+    "expected": "prevalence by ",
+    "case_id": "N0584"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "prevalence not ",
+    "expected": "prevalence not ",
+    "case_id": "N0585"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "prevalence 5 ",
+    "expected": "prevalence 5 ",
+    "case_id": "N0586"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_prealence",
+    "expected": "tag_prealence",
+    "case_id": "N0587"
+  },
+  {
+    "concept_id": "HTN_c2451614a1c8",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nonprevalence",
+    "expected": "nonprevalence",
+    "case_id": "N0588"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diatolic blood pressure by this test.",
+    "expected": "They discussed diastolic blood pressure by this test.",
+    "calibration_seed_case_id": "F01829",
+    "calibration_repairable": true,
+    "case_id": "N0589"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diatolic blood pressure with the control group.",
+    "expected": "They discussed diastolic blood pressure with the control group.",
+    "calibration_seed_case_id": "F01829",
+    "calibration_repairable": true,
+    "case_id": "N0590"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diatolic blood pressure for patients.",
+    "expected": "They discussed diastolic blood pressure for patients.",
+    "calibration_seed_case_id": "F01829",
+    "calibration_repairable": true,
+    "case_id": "N0591"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diatolic blood pressure patients arrived.",
+    "expected": "They discussed diastolic blood pressure patients arrived.",
+    "calibration_seed_case_id": "F01829",
+    "calibration_repairable": true,
+    "case_id": "N0592"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diatolic blood pressure children were assessed.",
+    "expected": "They discussed diastolic blood pressure children were assessed.",
+    "calibration_seed_case_id": "F01829",
+    "calibration_repairable": true,
+    "case_id": "N0593"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": true,
+    "kind": "neighbor_context",
+    "text": "They discussed diatolic blood pressure yesterday.",
+    "expected": "They discussed diastolic blood pressure yesterday.",
+    "calibration_seed_case_id": "F01829",
+    "calibration_repairable": true,
+    "case_id": "N0594"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": true,
+    "kind": "outer_negation",
+    "text": "No evidence of diatolic blood pressure by this test.",
+    "expected": "No evidence of diastolic blood pressure by this test.",
+    "calibration_seed_case_id": "F01829",
+    "calibration_repairable": true,
+    "case_id": "N0595"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": false,
+    "kind": "inner_function_word",
+    "text": "diastolic by blood pressure",
+    "expected": "diastolic by blood pressure",
+    "case_id": "N0596"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": false,
+    "kind": "inner_negation",
+    "text": "diastolic not blood pressure",
+    "expected": "diastolic not blood pressure",
+    "case_id": "N0597"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": false,
+    "kind": "inner_quantity",
+    "text": "diastolic 5 blood pressure",
+    "expected": "diastolic 5 blood pressure",
+    "case_id": "N0598"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": false,
+    "kind": "identifier_boundary",
+    "text": "tag_diatolic blood pressure",
+    "expected": "tag_diatolic blood pressure",
+    "case_id": "N0599"
+  },
+  {
+    "concept_id": "HTN_69524c07e2bc",
+    "positive": false,
+    "kind": "morphological_negation",
+    "text": "nondiastolic blood pressure",
+    "expected": "nondiastolic blood pressure",
+    "case_id": "N0600"
+  }
+]

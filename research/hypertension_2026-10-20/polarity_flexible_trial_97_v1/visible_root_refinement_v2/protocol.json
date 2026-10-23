@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-10-22T04:57:23.801938+00:00",
+  "refinement": "Only AMBIGUOUS markers with a literal hyper/hypo root and at most two suffix spelling edits become proven directional markers; missing/ambiguous direction still abstains.",
+  "reuse": "Recompute every previously vetoed constructed case; for speech rerun native selection if any logged directional veto becomes admissible, otherwise prove unchanged candidate filtering and reuse its output. Reuse metrics only for byte-identical output text.",
+  "first_trial_preserved": true,
+  "first_protocol_sha256": "1f71727cef45175c8303b4f8cc0654e33b711d3713c4204c225f49c9e9fec7df",
+  "same_97_terms": true,
+  "same_caps": true,
+  "sources": [
+    {
+      "name": "pressure_refined.py",
+      "sha256": "05c2302133b756734b26b3bc4fb56e6e3a8b58f91f7d995853ee7cc245c797a6"
+    },
+    {
+      "name": "run_refined.py",
+      "sha256": "82f7f48791e585104fd8685a959a0e6e6fa22cb8f796089b33a1d77c87567397"
+    },
+    {
+      "name": "test_refined.py",
+      "sha256": "97a9a935391fa795ae689a72d5b6c5ee013ea974cccd20604e1efdd5cdb95bf5"
+    }
+  ],
+  "inputs_sha256": "2a6adb47d90a781c72990c6d95b2241d806f09a262c8060978d0e05ae5058b7c",
+  "independent_holdout": false,
+  "new_asr_inference": false,
+  "integration_performed": false
+}

@@ -1,0 +1,9 @@
+{
+  "command": [
+    "C:\\live-captions\\.venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\live-captions\\research\\hypertension_2026-10-20\\tolerance_trial_10_v1\\test_trial.py"
+  ],
+  "returncode": 0,
+  "output": "test_102_real_observations_come_from_34_unique_occurrences (__main__.TenTermTrialTests.test_102_real_observations_come_from_34_unique_occurrences) ... ok\ntest_all_ten_audio_examples_are_exact_source_intervals (__main__.TenTermTrialTests.test_all_ten_audio_examples_are_exact_source_intervals) ... ok\ntest_checking_never_changes_frozen_thresholds (__main__.TenTermTrialTests.test_checking_never_changes_frozen_thresholds) ... ok\ntest_choices_depend_on_calibration_only_and_obey_frozen_tie_break (__main__.TenTermTrialTests.test_choices_depend_on_calibration_only_and_obey_frozen_tie_break) ... ok\ntest_duplicate_checking_inputs_are_disclosed_and_excluded (__main__.TenTermTrialTests.test_duplicate_checking_inputs_are_disclosed_and_excluded) ... ok\ntest_native_window_does_not_recover_all_merged_words (__main__.TenTermTrialTests.test_native_window_does_not_recover_all_merged_words) ... ok\ntest_no_changes_in_original_glossary_or_prior_evidence (__main__.TenTermTrialTests.test_no_changes_in_original_glossary_or_prior_evidence) ... ok\ntest_random_draw_reproduces_frozen_selection (__main__.TenTermTrialTests.test_random_draw_reproduces_frozen_selection) ... ok\ntest_ref_mapping_handles_insertion_deletion_and_substitution (__main__.TenTermTrialTests.test_ref_mapping_handles_insertion_deletion_and_substitution) ... ok\ntest_threshold_changes_neighbor_absorption_without_changing_live (__main__.TenTermTrialTests.test_threshold_changes_neighbor_absorption_without_changing_live) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.030s\n\nOK\n"
+}

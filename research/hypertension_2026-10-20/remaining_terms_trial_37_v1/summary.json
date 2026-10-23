@@ -1,0 +1,277 @@
+{
+  "status": "remaining37_trial_complete_not_integrated",
+  "new_terms": 37,
+  "combined_terms": 97,
+  "new_fuzzy_candidates": 33,
+  "new_exact_only": 4,
+  "threshold_counts": {
+    "0.94": 16,
+    "0.96": 14,
+    "0.92": 3,
+    "None": 4
+  },
+  "isolated_checking": [
+    {
+      "profile": "uniform090",
+      "positive_cases": 184,
+      "recovered": 165,
+      "negative_cases": 517,
+      "negative_triggers": 3,
+      "negative_changed": 3
+    },
+    {
+      "profile": "individualized",
+      "positive_cases": 184,
+      "recovered": 163,
+      "negative_cases": 517,
+      "negative_triggers": 0,
+      "negative_changed": 0
+    }
+  ],
+  "context_checking": [
+    {
+      "profile": "new37_uniform090",
+      "group": "new37",
+      "positive_cases": 259,
+      "positive_correct": 231,
+      "negative_cases": 185,
+      "negative_changed": 0
+    },
+    {
+      "profile": "new37_individualized",
+      "group": "new37",
+      "positive_cases": 259,
+      "positive_correct": 231,
+      "negative_cases": 185,
+      "negative_changed": 0
+    },
+    {
+      "profile": "combined97_individualized",
+      "group": "new37",
+      "positive_cases": 259,
+      "positive_correct": 231,
+      "negative_cases": 185,
+      "negative_changed": 0
+    },
+    {
+      "profile": "combined97_individualized",
+      "group": "previous60",
+      "positive_cases": 423,
+      "positive_correct": 332,
+      "negative_cases": 300,
+      "negative_changed": 0
+    }
+  ],
+  "combined_constructed_checking": [
+    {
+      "group": "previous60",
+      "positive_cases": 300,
+      "positive_correct": 206,
+      "negative_cases": 806,
+      "negative_changed": 0
+    },
+    {
+      "group": "new37",
+      "positive_cases": 184,
+      "positive_correct": 163,
+      "negative_cases": 517,
+      "negative_changed": 0
+    }
+  ],
+  "previous60_context_regressions": 0,
+  "previous60_constructed_regressions": 0,
+  "previous_regression_cases": 153,
+  "previous_regressions_passed": 153,
+  "corpus_aggregate": [
+    {
+      "model": "small",
+      "profile": "raw",
+      "word_errors": 148,
+      "reference_words": 4204,
+      "wer": 0.035204567078972404,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "previous60_corrected",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 12,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "new37_uniform090",
+      "word_errors": 144,
+      "reference_words": 4204,
+      "wer": 0.03425309229305423,
+      "simulated_changes": 4,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "new37_individualized",
+      "word_errors": 148,
+      "reference_words": 4204,
+      "wer": 0.035204567078972404,
+      "simulated_changes": 1,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "combined97_uniform_new37",
+      "word_errors": 128,
+      "reference_words": 4204,
+      "wer": 0.030447193149381543,
+      "simulated_changes": 15,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "small",
+      "profile": "combined97_individualized",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 13,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "raw",
+      "word_errors": 117,
+      "reference_words": 4204,
+      "wer": 0.027830637488106564,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "previous60_corrected",
+      "word_errors": 107,
+      "reference_words": 4204,
+      "wer": 0.02545195052331113,
+      "simulated_changes": 14,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "new37_uniform090",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_changes": 5,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "new37_individualized",
+      "word_errors": 109,
+      "reference_words": 4204,
+      "wer": 0.025927687916270217,
+      "simulated_changes": 5,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "combined97_uniform_new37",
+      "word_errors": 100,
+      "reference_words": 4204,
+      "wer": 0.023786869647954328,
+      "simulated_changes": 18,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "medium",
+      "profile": "combined97_individualized",
+      "word_errors": 100,
+      "reference_words": 4204,
+      "wer": 0.023786869647954328,
+      "simulated_changes": 18,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "raw",
+      "word_errors": 132,
+      "reference_words": 4204,
+      "wer": 0.03139866793529972,
+      "simulated_changes": 0,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "previous60_corrected",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 3,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "new37_uniform090",
+      "word_errors": 130,
+      "reference_words": 4204,
+      "wer": 0.03092293054234063,
+      "simulated_changes": 3,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "new37_individualized",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 2,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "combined97_uniform_new37",
+      "word_errors": 130,
+      "reference_words": 4204,
+      "wer": 0.03092293054234063,
+      "simulated_changes": 5,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    },
+    {
+      "model": "large-v3-turbo",
+      "profile": "combined97_individualized",
+      "word_errors": 131,
+      "reference_words": 4204,
+      "wer": 0.03116079923882017,
+      "simulated_changes": 4,
+      "samples_with_changed_cues": 0,
+      "samples_with_changed_function_words": 0
+    }
+  ],
+  "unique_reference_occurrences_new37": 59,
+  "unique_reference_occurrences_all97": 310,
+  "new_variant_records": 9,
+  "all_variant_records": 24,
+  "thresholds_retuned_after_checking": false,
+  "corrected_rules_changed": false,
+  "new_asr_inference": false,
+  "controlled_intonation_variants_tested": 0,
+  "independent_clinical_validation": false,
+  "integration_performed": false
+}

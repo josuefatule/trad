@@ -1,0 +1,406 @@
+# Candidatos nuevos. Respaldo del concepto y traducción se validan por separado.
+@physiology|S17|S17 extractos indexados: Renin-Angiotensin-Aldosterone System y figura 3|supported
+angiotensinogen|angiotensinógeno|||
+angiotensin I|angiotensina I|Ang I||No confundir I con II.
+angiotensin-converting enzyme 2|enzima convertidora de angiotensina 2|ACE2|ECA2|Enzima distinta de ACE.
+angiotensin-(1–7)|angiotensina (1-7)|angiotensin-(1-7);Ang-(1-7)||Conservar todos los números; no convertir a angiotensina II.
+angiotensin II type 1 receptor|receptor de angiotensina II tipo 1|AT1 receptor|receptor AT1|Distinto del receptor AT2.
+angiotensin II type 2 receptor|receptor de angiotensina II tipo 2|AT2 receptor|receptor AT2|
+Mas receptor|receptor Mas|||No sustituir por receptor de mineralocorticoides.
+prorenin|prorrenina|pro-renin||
+juxtaglomerular cells|células yuxtaglomerulares|||
+macula densa|mácula densa|||
+renal perfusion pressure|presión de perfusión renal|||
+pressure natriuresis|natriuresis por presión||relación presión-natriuresis|
+salt sensitivity|sensibilidad a la sal|||
+vasoconstriction|vasoconstricción|||
+vasodilation|vasodilatación|vasodilatation||
+endothelial dysfunction|disfunción endotelial|||
+vascular injury|lesión vascular|||
+renal medullary blood flow|flujo sanguíneo medular renal|||
+natriuresis|natriuresis|||Excreción renal de sodio; no diuresis como equivalente absoluto.
+diuresis|diuresis|||No equivale a natriuresis.
+epithelial sodium channel|canal epitelial de sodio|ENaC||Canal, no cotransportador Na/Cl.
+cortical collecting duct|conducto colector cortical||túbulo colector cortical|
+vascular smooth muscle cells|células del músculo liso vascular|||
+vascular remodeling|remodelado vascular|vascular remodelling|remodelación vascular|
+vascular fibrosis|fibrosis vascular|||
+oxidative stress|estrés oxidativo|||
+@physiology|S29,S41|S29 figura 1 p.18 y figura 2 p.19; S41 resumen|supported
+sympathetic activation|activación simpática||hiperactividad simpática|La activación no implica siempre hiperactividad patológica; variante contextual.
+autonomic nervous system|sistema nervioso autónomo|||
+sympathetic nervous system|sistema nervioso simpático|||
+baroreceptor reflex|reflejo barorreceptor|baroreflex|barorreflejo|
+systemic vascular resistance|resistencia vascular sistémica|SVR|RVS|Distinta de resistencia vascular pulmonar.
+peripheral vascular resistance|resistencia vascular periférica|||En contexto sistémico es cercana a RVS; no contar dos conceptos fisiológicos sin especificar el territorio.
+heart rate variability|variabilidad de la frecuencia cardíaca|HRV||HRV en la traducción ESC significa hipertensión renovascular.
+vascular calcification|calcificación vascular|||
+microvascular remodeling|remodelado microvascular||remodelación microvascular|
+inflammation|inflamación|||
+@physiology|S17,S29|Respaldo temático fisiológico; falta atestación individual y fuente bilingüe|pending
+cardiac output|gasto cardíaco|CO|volumen minuto cardíaco|CO es también monóxido de carbono.
+stroke volume|volumen sistólico|SV||stroke no se traduce como accidente cerebrovascular en esta expresión.
+heart rate|frecuencia cardíaca|HR|FC|HR también hazard ratio.
+arterial compliance|distensibilidad arterial|||Compliance no equivale siempre a distensibility; cotejar definición.
+baroreflex sensitivity|sensibilidad barorrefleja|BRS||
+nitric oxide|óxido nítrico|NO||NO coincide con negación; excluir alias operativo.
+endothelin-1|endotelina 1|ET-1||
+norepinephrine|noradrenalina|noradrenaline|norepinefrina|
+epinephrine|adrenalina|adrenaline|epinefrina|
+vasopressin|vasopresina|antidiuretic hormone|hormona antidiurética|
+@measurement|S08|S08 extractos indexados: BP Measurement in the Office, tabla 2 y ABPM|supported
+auscultatory blood pressure measurement|medición auscultatoria de la presión arterial|||
+oscillometric blood pressure measurement|medición oscilométrica de la presión arterial|||
+sphygmomanometer|esfigmomanómetro||tensiómetro|
+mercury sphygmomanometer|esfigmomanómetro de mercurio|||
+aneroid sphygmomanometer|esfigmomanómetro aneroide|||
+hybrid sphygmomanometer|esfigmomanómetro híbrido|||
+cuff size|tamaño del manguito||tamaño del brazalete|
+arm circumference|circunferencia del brazo||perímetro braquial|
+cuff bladder|cámara inflable del manguito|||Bladder no es vejiga urinaria en este contexto.
+cuff inflation|inflado del manguito|||
+cuff deflation|desinflado del manguito|||
+brachial artery|arteria braquial||arteria humeral|
+radial pulse|pulso radial|||
+stethoscope|estetoscopio||fonendoscopio|
+observer bias|sesgo del observador|||
+measurement error|error de medición|||
+device calibration|calibración del dispositivo|||
+validated blood pressure monitor|monitor de presión arterial validado||tensiómetro validado|Validated no significa recomendado para toda población.
+unattended automated office blood pressure|presión arterial automatizada en consultorio sin observador|unattended AOBP||
+daytime blood pressure|presión arterial diurna|awake blood pressure||Período despierto según diario; no horario fijo universal.
+nighttime blood pressure|presión arterial nocturna|asleep blood pressure||Distinguir sueño de horario nocturno en trabajadores por turnos.
+24-hour average blood pressure|presión arterial media de 24 horas|||No equivale a presión arterial media hemodinámica (MAP).
+masked uncontrolled hypertension|hipertensión enmascarada no controlada|MUCH||Paciente tratado; distinta de masked hypertension no tratada.
+blood pressure telemonitoring|telemonitorización de la presión arterial||telemonitoreo de la presión arterial|
+@measurement|S29|S29 sección 5 pp.19-25; sección 9.12 p.75|supported
+standardized office blood pressure|presión arterial estandarizada en consultorio|||
+attended automated office blood pressure|presión arterial automatizada en consultorio con observador|attended AOBP||
+standing blood pressure|presión arterial de pie||presión arterial en bipedestación|
+supine blood pressure|presión arterial en decúbito supino|||
+seated blood pressure|presión arterial sentado||presión arterial en sedestación|
+cuffless blood pressure device|dispositivo de presión arterial sin manguito|||No asumir exactitud clínica ni intercambiabilidad.
+nocturnal blood pressure dipping|descenso nocturno de la presión arterial|nocturnal dipping||
+non-dipping pattern|patrón sin descenso nocturno|non-dipping;non-dipper pattern|patrón non-dipper|Patrón relativo; no equivale a hipertensión nocturna.
+reverse-dipping pattern|patrón de ascenso nocturno|reverse dipping;riser pattern|patrón de descenso nocturno inverso|
+extreme-dipping pattern|patrón de descenso nocturno extremo|extreme dipping||
+night-to-day blood pressure ratio|cociente de presión arterial noche/día||relación noche-día|
+@classification|S11,S29|S11 resumen; S29 secciones 9.1,9.4,9.5,9.12,9.13|supported
+refractory hypertension|hipertensión refractaria|RfHTN||Fenotipo de investigación; no intercambiar con resistente.
+isolated diastolic hypertension|hipertensión diastólica aislada|||
+systolic-diastolic hypertension|hipertensión sistólica y diastólica||hipertensión sistodiastólica|
+renovascular hypertension|hipertensión renovascular|||No fusionar con estenosis anatómica de arteria renal.
+renal parenchymal hypertension|hipertensión de origen parenquimatoso renal||hipertensión renal parenquimatosa|
+secondary hypertension screening|detección de hipertensión secundaria||tamizaje de hipertensión secundaria;cribado de hipertensión secundaria|
+controlled resistant hypertension|hipertensión resistente controlada|||Definición dependiente de sociedad: AHA incluye control con cuatro o más fármacos; ESC 2024 no usa esta categoría igual.
+true resistant hypertension|hipertensión resistente verdadera|||Exige excluir seudorresistencia.
+hypertensive urgency|urgencia hipertensiva|||Término usado por ESC para elevación grave sin daño agudo; AHA favorece descripciones más explícitas. No equivalente a emergencia.
+malignant hypertension|hipertensión maligna|||Fenotipo con daño microvascular agudo; no cáncer ni sinónimo automático de toda emergencia.
+@classification|S29|Respaldo temático; falta cotejo directo de fenotipos|pending
+sustained hypertension|hipertensión sostenida|||
+labile hypertension|hipertensión lábil|||No equivalente a variabilidad normal.
+low-renin hypertension|hipertensión con renina baja|||No equivale a aldosteronismo primario.
+supine hypertension|hipertensión en decúbito supino||hipertensión supina|Distinguir de hipotensión ortostática.
+@endocrine_renal|S10|Recomendaciones 3-8, pruebas y tratamiento del aldosteronismo primario|supported
+adrenal venous sampling|muestreo venoso suprarrenal|adrenal vein sampling;AVS|cateterismo de venas suprarrenales|No equivale a biopsia suprarrenal.
+adrenal computed tomography|tomografía computarizada suprarrenal|adrenal CT||
+adrenal lateralization|lateralización suprarrenal|||La imagen anatómica sola no demuestra siempre lateralización funcional.
+lateralizing primary aldosteronism|aldosteronismo primario lateralizado|||No asignar unilateralidad por un nódulo incidental.
+bilateral primary aldosteronism|aldosteronismo primario bilateral|||
+autonomous cortisol secretion|secreción autónoma de cortisol|ACS||ACS también acute coronary syndrome.
+overnight dexamethasone suppression test|prueba de supresión nocturna con dexametasona|overnight DST||No confundir con supresión de aldosterona.
+Cushing syndrome|síndrome de Cushing|Cushing's syndrome||No equivalente a enfermedad de Cushing hipofisaria.
+adrenal adenoma|adenoma suprarrenal|||No implica producción de aldosterona.
+normokalemia|normopotasemia|normokalaemia|normokalemia|
+@endocrine_renal|S14,S29|S14 resumen; S29 tabla 13 y sección 9.14|supported
+pheochromocytoma|feocromocitoma|phaeochromocytoma||
+paraganglioma|paraganglioma|||Distinto del feocromocitoma suprarrenal.
+plasma free metanephrines|metanefrinas libres plasmáticas|||
+urinary fractionated metanephrines|metanefrinas fraccionadas urinarias|||
+metanephrine|metanefrina|||
+normetanephrine|normetanefrina|||No alias de metanefrina.
+catecholamines|catecolaminas|||
+preoperative alpha blockade|bloqueo alfaadrenérgico preoperatorio|||No reemplazar por betabloqueo.
+hypovolemia|hipovolemia|hypovolaemia||No equivale a deshidratación en todo contexto.
+hyperthyroidism|hipertiroidismo|||
+hypothyroidism|hipotiroidismo|||
+thyroid-stimulating hormone|hormona estimulante de la tiroides|TSH|tirotropina|
+hyperparathyroidism|hiperparatiroidismo|||
+parathyroid hormone|hormona paratiroidea|PTH|paratohormona|
+acromegaly|acromegalia|||
+Liddle syndrome|síndrome de Liddle|Liddle's syndrome||
+glucocorticoid-remediable aldosteronism|aldosteronismo remediable con glucocorticoides|glucocorticoid-remediable hyperaldosteronism|hiperaldosteronismo sensible a glucocorticoides|
+licorice-induced hypertension|hipertensión inducida por regaliz|liquorice-induced hypertension||No convertir cualquier caramelo en exposición a regaliz natural.
+coarctation of the aorta|coartación de la aorta|aortic coarctation||
+24-hour urinary free cortisol|cortisol libre urinario de 24 horas|||
+renal Doppler ultrasonography|ecografía Doppler renal||ultrasonografía Doppler renal|
+renal ultrasound|ecografía renal||ultrasonografía renal|
+computed tomography angiography|angiografía por tomografía computarizada|CT angiography;CTA|angiotomografía;angio-TC|
+magnetic resonance angiography|angiografía por resonancia magnética|MR angiography;MRA|angiorresonancia|Colisión con mineralocorticoid receptor antagonist.
+fibromuscular dysplasia|displasia fibromuscular|FMD||No equivale a aterosclerosis.
+@endocrine_renal|S10,S17|Candidatos plausibles que necesitan fuente puntual o lectura adicional|pending
+saline infusion test|prueba de infusión salina|||No alias automático del conjunto de pruebas de supresión.
+oral sodium loading test|prueba de sobrecarga oral de sodio|||
+captopril challenge test|prueba de desafío con captopril||prueba de captopril|
+fludrocortisone suppression test|prueba de supresión con fludrocortisona|||
+apparent mineralocorticoid excess|exceso aparente de mineralocorticoides|AME||
+Gordon syndrome|síndrome de Gordon|pseudohypoaldosteronism type II|seudohipoaldosteronismo tipo II|
+congenital adrenal hyperplasia|hiperplasia suprarrenal congénita|||No sinónimo de hiperplasia suprarrenal bilateral del aldosteronismo.
+@kidney|S05|S05 nomenclatura pp.S126-S128; capítulo 1 y tablas 1-3,16-17|supported
+glomerular filtration rate|tasa de filtración glomerular|GFR|TFG|Concepto general, no necesariamente estimado.
+measured glomerular filtration rate|tasa de filtración glomerular medida|mGFR||
+serum creatinine|creatinina sérica|||
+cystatin C|cistatina C|||
+creatinine-based estimated glomerular filtration rate|tasa de filtración glomerular estimada con creatinina|eGFRcr||
+creatinine-cystatin C estimated glomerular filtration rate|tasa de filtración glomerular estimada con creatinina y cistatina C|eGFRcr-cys||
+urine albumin-to-creatinine ratio|cociente albúmina/creatinina en orina|urinary albumin-to-creatinine ratio;UACR|relación albúmina-creatinina urinaria;RAC|No equivale al cociente proteína/creatinina.
+urine protein-to-creatinine ratio|cociente proteína/creatinina en orina|urinary protein-to-creatinine ratio;UPCR||PCR en otros contextos es reacción en cadena de la polimerasa.
+albumin excretion rate|tasa de excreción de albúmina|AER||
+moderately increased albuminuria|albuminuria moderadamente aumentada|||Categoría A2; conservar contexto y unidades.
+severely increased albuminuria|albuminuria gravemente aumentada||albuminuria severamente aumentada|Categoría A3.
+kidney failure|falla renal||fallo renal|No convertir toda renal insufficiency en kidney failure.
+acute kidney injury|lesión renal aguda|AKI|LRA|No equivale a ERC.
+kidney disease progression|progresión de la enfermedad renal|||
+kidney replacement therapy|tratamiento de reemplazo renal|KRT|terapia de reemplazo renal;TRR|
+hemodialysis|hemodiálisis|haemodialysis||
+kidney transplant recipient|receptor de trasplante renal|KTR||
+hematuria|hematuria|haematuria||
+urinalysis|análisis de orina||uroanálisis|
+first morning urine sample|primera muestra de orina de la mañana|||
+spot urine sample|muestra aislada de orina|||No equivale a recolección de 24 horas.
+sodium-glucose cotransporter 2 inhibitors|inhibidores del cotransportador de sodio-glucosa tipo 2|SGLT2 inhibitors|iSGLT2|Clase cardiorrenal; no clasificar como antihipertensivo convencional.
+nonsteroidal mineralocorticoid receptor antagonist|antagonista no esteroideo del receptor de mineralocorticoides|nonsteroidal MRA|ARM no esteroideo|
+finerenone|finerenona|||No intercambiar con espironolactona ni asumir indicaciones idénticas.
+hyperuricemia|hiperuricemia|||
+hyperglycemia|hiperglucemia|hyperglycaemia||
+@medications|S07|S07 listado de genéricos por clase|supported
+captopril|captopril|||
+benazepril|benazepril|||
+fosinopril|fosinopril|||
+perindopril|perindopril|||
+quinapril|quinapril|||
+trandolapril|trandolapril|||
+moexipril|moexipril|||
+irbesartan|irbesartán||irbesartan|
+azilsartan|azilsartán||azilsartan|
+felodipine|felodipino||felodipina|
+nicardipine|nicardipino||nicardipina|
+bumetanide|bumetanida|||
+torsemide|torasemida|torasemide||
+doxazosin|doxazosina|||
+prazosin|prazosina|||
+terazosin|terazosina|||No equiparar automáticamente base y sal.
+methyldopa|metildopa|||
+guanfacine|guanfacina|||
+minoxidil|minoxidil|||Distinguir formulación oral y tópica.
+vasodilators|vasodilatadores|||
+angioedema|angioedema|||No es sinónimo de edema periférico.
+reflex tachycardia|taquicardia refleja|||
+bradycardia|bradicardia|||
+dry cough|tos seca|||
+fluid retention|retención de líquidos|||
+@medications|S38|Advance-HTN resumen|supported
+lorundrostat|lorundrostat|||Denominación conservada; ensayo verificado, aprobación regulatoria no verificada.
+aldosterone synthase inhibitor|inhibidor de la aldosterona sintasa|||Mecanismo distinto del antagonismo del receptor mineralocorticoide.
+@medications|S26|S26 resumen, tratamiento ortostático|supported
+midodrine|midodrina|||Agente presor usado en hipotensión; no antihipertensivo.
+droxidopa|droxidopa|||Agente presor; no antihipertensivo.
+@medications|S29|Respaldo temático farmacológico; falta fuente puntual para el término|pending
+aliskiren|aliskireno|||
+clevidipine|clevidipino||clevidipina|
+esmolol|esmolol|||
+sodium nitroprusside|nitroprusiato de sodio|||
+nitroglycerin|nitroglicerina|glyceryl trinitrate||
+fenoldopam|fenoldopam|||
+urapidil|urapidilo||urapidil|
+baxdrostat|baxdrostat|||No afirmar aprobación regulatoria.
+zilebesiran|zilebesirán||zilebesiran|Candidato de investigación; estado regulatorio y forma española requieren cotejo.
+@treatment|S02,S09,S29|S02 punto 8; S29 secciones 7.4.2,8.3,8.6,8.7 y 11|supported
+monotherapy|monoterapia|||
+dual combination therapy|tratamiento combinado doble||biterapia antihipertensiva|
+triple combination therapy|tratamiento combinado triple||triterapia antihipertensiva|
+fixed-dose combination|combinación de dosis fijas|FDC||No implica siempre el mismo producto que polipíldora cardiovascular.
+polypill|polipíldora|||Puede incluir hipolipemiante y antiagregante; no todo single-pill combination es una polipíldora cardiovascular.
+maximum tolerated dose|dosis máxima tolerada|maximally tolerated dose||Distinta de dosis máxima autorizada.
+dose escalation|aumento progresivo de la dosis|||No equivale a toda titulación.
+treatment intensification|intensificación del tratamiento|||
+medication nonadherence|falta de adherencia a la medicación|medication non-adherence||No asumir intención ni causalidad por una lectura elevada.
+treatment persistence|persistencia del tratamiento|||Dimensión temporal distinta de adherencia.
+therapeutic inertia|inercia terapéutica|clinical inertia||
+pill burden|carga de comprimidos||carga de medicación|No equivale exactamente a polifarmacia.
+directly observed therapy|tratamiento directamente observado|DOT||
+biochemical adherence testing|pruebas bioquímicas de adherencia|||
+medication reconciliation|conciliación de la medicación|||
+multidisciplinary team-based care|atención por un equipo multidisciplinario||atención multidisciplinaria|
+renal denervation|denervación renal|RDN||Intervención, no revascularización.
+catheter-based renal denervation|denervación renal mediante catéter||denervación renal por catéter|
+radiofrequency renal denervation|denervación renal por radiofrecuencia|||
+ultrasound renal denervation|denervación renal por ultrasonido|||
+@treatment|S16,S24|S16 leyenda de figura; S24 puntos 1-4|supported
+alcohol-mediated renal denervation|denervación renal mediada por alcohol|||
+renal revascularization|revascularización renal|||No equivale a denervación.
+percutaneous transluminal renal angioplasty|angioplastia renal transluminal percutánea|PTRA||
+renal artery stenting|colocación de stent en la arteria renal|||
+sham procedure|procedimiento simulado|sham intervention||Control de ensayo; no cirugía falsa en la traducción preferida.
+@emergencies|S15,S29|S15 resumen; S29 sección 10.1 pp.79-80|supported
+acute target-organ damage|daño agudo de órgano diana||daño agudo de órgano blanco|No eliminar acute.
+asymptomatic markedly elevated blood pressure|presión arterial marcadamente elevada sin síntomas|||No sustituir por emergencia hipertensiva.
+hypertensive encephalopathy|encefalopatía hipertensiva|||
+acute aortic dissection|disección aórtica aguda|||Distinta de aneurisma.
+acute heart failure|insuficiencia cardíaca aguda|||
+myocardial ischemia|isquemia miocárdica|myocardial ischaemia||No equivale a infarto establecido.
+fibrinoid necrosis|necrosis fibrinoide|||
+microangiopathy|microangiopatía|||
+retinal hemorrhages|hemorragias retinianas|retinal haemorrhages||
+cotton-wool spots|exudados algodonosos||manchas algodonosas|No traducción literal de algodón.
+papilledema|papiledema|papilloedema||No equivale a cualquier edema de disco óptico.
+disseminated intravascular coagulation|coagulación intravascular diseminada|DIC|CID|
+focal neurological deficit|déficit neurológico focal|||
+cortical blindness|ceguera cortical|||
+tonic-clonic seizures|convulsiones tonicoclónicas|||
+intravenous antihypertensive therapy|tratamiento antihipertensivo intravenoso|||No especifica fármaco ni pauta.
+@emergencies|S29|Sección 10; candidatos por contrastar con fuente puntual|pending
+posterior reversible encephalopathy syndrome|síndrome de encefalopatía posterior reversible|PRES||No sinónimo absoluto de encefalopatía hipertensiva.
+thrombotic microangiopathy|microangiopatía trombótica|TMA||Distinguir de PTT y SHU.
+flash pulmonary edema|edema pulmonar de aparición súbita||edema agudo de pulmón de inicio brusco|
+@pregnancy|S12,S13,S29,S39|S29 sección 9.2 p.63 y 10.4; S13 resultados CHAP; S39 extractos españoles|supported
+hypertensive disorders of pregnancy|trastornos hipertensivos del embarazo|HDP||Categoría paraguas.
+chronic hypertension in pregnancy|hipertensión crónica en el embarazo|||Distinguir de gestacional.
+gestational hypertension|hipertensión gestacional|||No equivale a hipertensión durante cualquier etapa del embarazo.
+preeclampsia|preeclampsia|pre-eclampsia||Proteinuria no obligatoria en todos los marcos diagnósticos.
+eclampsia|eclampsia|||No equivalente a preeclampsia.
+postpartum hypertension|hipertensión posparto||hipertensión postparto|
+postpartum preeclampsia|preeclampsia posparto|post-partum preeclampsia||
+fetal growth restriction|restricción del crecimiento fetal|FGR|RCF|Distinta de pequeño para edad gestacional.
+small for gestational age|pequeño para la edad gestacional|SGA|PEG|No sinónimo de restricción del crecimiento fetal.
+placental insufficiency|insuficiencia placentaria|||
+placental abruption|desprendimiento prematuro de placenta|abruptio placentae||No placenta previa.
+preterm birth|parto prematuro||nacimiento pretérmino|
+perinatal death|muerte perinatal|||
+maternal organ dysfunction|disfunción orgánica materna|||
+thrombocytopenia|trombocitopenia||plaquetopenia|
+hemolysis|hemólisis|haemolysis||
+liver dysfunction|disfunción hepática|||
+gestational age|edad gestacional|||
+@pregnancy|S12,S29|Requiere cotejo con guía obstétrica 2025 y fuentes puntuales|pending
+superimposed preeclampsia|preeclampsia sobreagregada||preeclampsia superpuesta|Sobre hipertensión crónica; no alias de toda preeclampsia.
+preeclampsia with severe features|preeclampsia con características graves|||Calificador dependiente de marco diagnóstico.
+HELLP syndrome|síndrome HELLP|||Hemólisis, enzimas hepáticas elevadas y plaquetas bajas; no fusionar con toda preeclampsia.
+magnesium sulfate|sulfato de magnesio|||Prevención/tratamiento de convulsiones eclámpticas; no antihipertensivo primario.
+low-dose aspirin|ácido acetilsalicílico en dosis bajas||aspirina en dosis bajas|No introducir dosis ni recomendar universalmente.
+soluble fms-like tyrosine kinase-1|tirosina cinasa soluble 1 similar a fms|sFlt-1||Marcador angiogénico; traducción por confirmar.
+placental growth factor|factor de crecimiento placentario|PlGF||
+@organ_damage|S29|Figura 2 p.19; tabla 9 p.37; sección 9.10 p.74|supported
+hypertensive retinopathy|retinopatía hipertensiva|||
+glomerular hypertension|hipertensión glomerular|||No equivale a hipertensión sistémica.
+glomerulosclerosis|glomeruloesclerosis|||
+white matter lesions|lesiones de la sustancia blanca|||
+silent cerebral infarcts|infartos cerebrales silentes||infartos cerebrales asintomáticos|
+cerebral microbleeds|microhemorragias cerebrales|||
+brain atrophy|atrofia cerebral||atrofia encefálica|
+cognitive impairment|deterioro cognitivo|||No implica demencia.
+left atrial enlargement|agrandamiento de la aurícula izquierda||dilatación de la aurícula izquierda|
+left ventricular dilatation|dilatación ventricular izquierda|left ventricular dilation||
+left ventricular mass index|índice de masa ventricular izquierda|LVMI||
+diastolic dysfunction|disfunción diastólica|||No sinónimo absoluto de ICFEp.
+systolic dysfunction|disfunción sistólica|||No equivale automáticamente a insuficiencia cardíaca clínica.
+pulse wave velocity|velocidad de la onda de pulso|PWV|VOP|
+ankle-brachial index|índice tobillo-brazo|ABI|ITB|
+echocardiography|ecocardiografía|||
+electrocardiogram|electrocardiograma|ECG;EKG||
+fundoscopy|oftalmoscopia|funduscopy|examen de fondo de ojo|
+aortic dilatation|dilatación aórtica|aortic dilation||
+aortic aneurysm|aneurisma aórtico|||No equivalente a disección.
+bicuspid aortic valve|válvula aórtica bicúspide|BAV||
+transient ischemic attack|ataque isquémico transitorio|transient ischaemic attack;TIA|accidente isquémico transitorio;AIT|
+mild cognitive impairment|deterioro cognitivo leve|MCI||
+@risk_prevention|S02,S06,S29|S06 factores de riesgo; S29 figura 1 y secciones 6,8.2|supported
+modifiable risk factors|factores de riesgo modificables|||
+nonmodifiable risk factors|factores de riesgo no modificables|non-modifiable risk factors||
+family history of hypertension|antecedentes familiares de hipertensión|||
+physical inactivity|inactividad física|||No equivale exactamente a conducta sedentaria.
+sedentary behavior|comportamiento sedentario|sedentary behaviour|conducta sedentaria|
+air pollution|contaminación atmosférica|||
+noise pollution|contaminación acústica|||
+psychosocial stress|estrés psicosocial|||
+social deprivation|privación social|||
+healthcare access|acceso a la atención de salud|health care access||
+sodium chloride|cloruro de sodio|NaCl||No confundir gramos de sal con gramos de sodio.
+potassium chloride|cloruro de potasio|KCl||No convertir en suplemento universal.
+sleep quality|calidad del sueño|||
+@special_populations|S04,S05,S26,S27,S28,S29|KDIGO población especial; AAP; S27 resumen; S29 secciones 9.1-9.3|supported
+pediatric hypertension|hipertensión pediátrica|paediatric hypertension||
+blood pressure percentile|percentil de presión arterial|||Depende de edad, sexo, talla y marco normativo.
+older adults|adultos mayores||personas mayores|
+young adults|adultos jóvenes|||
+limited life expectancy|esperanza de vida limitada|||
+autonomic dysfunction|disfunción autonómica|||
+cerebral hypoperfusion|hipoperfusión cerebral|||
+continuous positive airway pressure|presión positiva continua en la vía aérea|CPAP||No equivale a presión arterial.
+intermittent hypoxemia|hipoxemia intermitente|intermittent hypoxaemia||
+sleep fragmentation|fragmentación del sueño|||
+polysomnography|polisomnografía|||
+apnea-hypopnea index|índice de apnea-hipopnea|AHI|IAH|
+mandibular advancement device|dispositivo de avance mandibular|||
+@clinical_trials|S19,S20,S21,S22,S23,S36,S38,S40|Registros/resúmenes de cada ensayo; no recomendaciones clínicas derivadas|supported
+ALLHAT trial|ensayo ALLHAT|||Distinguir componente antihipertensivo del hipolipemiante.
+PATHWAY-2 trial|ensayo PATHWAY-2|||Conservar número 2.
+CLICK trial|ensayo CLICK|||Nombre propio, no traducir como clic.
+BPROAD trial|ensayo BPROAD|||Ensayo en diabetes tipo 2; no mezclar con SPRINT.
+STEP trial|ensayo STEP|||Nombre propio, no traducir como paso.
+SSaSS trial|ensayo SSaSS|||
+ESPRIT trial|ensayo ESPRIT|||
+Advance-HTN trial|ensayo Advance-HTN|||No intercambiar con Launch-HTN.
+CHAP trial|ensayo CHAP|||Hipertensión crónica leve en embarazo.
+@clinical_trials|S29|Candidatos históricos presentes en bibliografía; verificación de registro pendiente|pending
+HYVET trial|ensayo HYVET|||
+ACCOMPLISH trial|ensayo ACCOMPLISH|||
+ASCOT-BPLA trial|ensayo ASCOT-BPLA|||
+RADIANCE-HTN TRIO trial|ensayo RADIANCE-HTN TRIO|||
+SPYRAL HTN-OFF MED trial|ensayo SPYRAL HTN-OFF MED|||OFF y ON no intercambiables.
+SPYRAL HTN-ON MED trial|ensayo SPYRAL HTN-ON MED|||
+@research_methods|S18,S19,S20,S21,S22,S23,S36|Métodos y desenlaces de los resúmenes de ensayos consultados|supported
+intensive blood pressure control|control intensivo de la presión arterial|||Objetivos y población dependen del ensayo.
+standard blood pressure control|control estándar de la presión arterial|||
+primary outcome|desenlace primario||resultado principal|
+secondary outcome|desenlace secundario|||
+composite outcome|desenlace compuesto||criterio de valoración compuesto|
+cardiovascular death|muerte cardiovascular|||Evento individual; distinto de tasa de mortalidad cardiovascular.
+nonfatal myocardial infarction|infarto de miocardio no mortal|non-fatal myocardial infarction||No eliminar negación.
+nonfatal stroke|accidente cerebrovascular no mortal|non-fatal stroke||
+hospitalization for heart failure|hospitalización por insuficiencia cardíaca|||
+relative risk|riesgo relativo|risk ratio;RR||No sinónimo de hazard ratio.
+confidence interval|intervalo de confianza|CI|IC|IC también insuficiencia cardíaca.
+intention-to-treat analysis|análisis por intención de tratar|ITT analysis||
+per-protocol analysis|análisis por protocolo|||
+crossover trial|ensayo cruzado|cross-over trial||
+double-blind trial|ensayo doble ciego|double-masked trial||
+placebo-controlled trial|ensayo controlado con placebo|||
+cluster-randomized trial|ensayo aleatorizado por conglomerados|cluster-randomised trial||La unidad aleatorizada es el conglomerado.
+open-label trial|ensayo abierto|||
+sham-controlled trial|ensayo controlado con procedimiento simulado|||
+symptomatic hypotension|hipotensión sintomática|||No equivale a toda hipotensión.
+@research_methods|S05,S29|S05 métodos GRADE; S29 tablas de recomendaciones|supported
+class of recommendation|clase de recomendación|COR||
+level of evidence|nivel de evidencia|LOE||
+certainty of evidence|certeza de la evidencia|||No equivale a fuerza de recomendación.
+practice point|punto de práctica|||KDIGO distingue puntos de práctica de recomendaciones graduadas.
+@research_methods|S18,S20|Candidatos metodológicos; falta verificar equivalencia en fuente puntual|pending
+odds ratio|razón de momios|OR|odds ratio;razón de posibilidades|No riesgo relativo.
+number needed to harm|número necesario para dañar|NNH||Distinguir NNT y especificar horizonte temporal.
+relative risk reduction|reducción relativa del riesgo|RRR||Distinta de reducción absoluta.
+@guidelines|S02,S03,S04,S05,S50|Títulos y páginas oficiales de documentos vigentes consultados|supported
+2025 AHA/ACC guideline|guía AHA/ACC de 2025|2025 ACC/AHA guideline||Reemplaza la guía estadounidense de 2017; conservar el año en las citas históricas.
+2021 KDIGO blood pressure guideline|guía KDIGO de presión arterial de 2021|||Guía específica de presión arterial en ERC, distinta de la guía general de ERC de 2024.
+2024 KDIGO CKD guideline|guía KDIGO de enfermedad renal crónica de 2024|||No fechar como 2026 por la ruta de alojamiento del PDF.
+2025 ESC pregnancy guidelines|guía ESC de embarazo de 2025|||Documento específico posterior a la guía general de hipertensión de 2024; solo resumen oficial consultado.
+@risk_prevention|S02,S29|S02 punto 6 y S29 sección 6 y abreviaturas p.7|supported
+PREVENT equations|ecuaciones PREVENT|PREVENT risk equations||Estimación de riesgo cardiovascular total; no equivalente al riesgo ASCVD ni a SCORE2.
+SCORE2|SCORE2|Systematic COronary Risk Evaluation 2||Conservar nombre propio y contexto de población.
+SCORE2-OP|SCORE2-OP|||Versión para personas de edad avanzada; no intercambiar con SCORE2.
+SCORE2-Diabetes|SCORE2-Diabetes|||Modelo específico; no generalizar a toda diabetes o toda edad.
+10-year cardiovascular disease risk|riesgo de enfermedad cardiovascular a 10 años|ten-year cardiovascular disease risk||Horizonte temporal distinto de riesgo de por vida.
+@medications|S04,S07,S29,S32|S04 trasplante, S07 clases, S29 sección 9.8.4 y S32 clases|supported
+dihydropyridine calcium channel blockers|bloqueadores de los canales de calcio dihidropiridínicos|dihydropyridine CCBs|calcioantagonistas dihidropiridínicos|
+non-dihydropyridine calcium channel blockers|bloqueadores de los canales de calcio no dihidropiridínicos|non-dihydropyridine CCBs|calcioantagonistas no dihidropiridínicos|No equiparar con dihidropiridínicos ni asumir indicaciones idénticas.
+direct renin inhibitors|inhibidores directos de la renina|DRIs||Mecanismo distinto de IECA y ARA-II.

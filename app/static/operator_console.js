@@ -23,6 +23,7 @@
     if (/translation_timeout|timeout de traducción/.test(text)) return "Timeout de traducción; consulta el segmento fallido en diagnósticos.";
     if (/translation_queue_full|saturada/.test(text)) return "Cola de traducción saturada; consulta los segmentos fallidos en diagnósticos.";
     if (/ya hay|already active/.test(text)) return "Ya hay una sesión activa. Usa la consola que la inició.";
+    if (/wlk.*idioma/.test(text)) return "WLK no confirmó el idioma. Usa el arranque bidireccional documentado con la sesión detenida.";
     if (/wlk|websocket|conexión|timeout/.test(text)) return "WLK o conexión de sesión no disponible. Comprueba los servidores antes de volver a iniciar.";
     return "No se pudo completar la operación. Consulta los logs locales y vuelve a intentar cuando se resuelva el error.";
   }
@@ -33,7 +34,25 @@
       this.alertSince=new Map();this.startedAt=null;this.stopped=false;this.clearBusy=false;
       this.captureMode=typeof location!=="undefined" && location.pathname==="/capture";
       this.historyCursor=0;
+      this.directionId="en-es";this.directionSupported=false;this.directionInitialized=false;
+      this.startPending=false;
       this.render();this.ready=this.initialize();
+    }
+    canSelectDirection() {
+      return this.directionSupported && this.authorized && !this.localActive &&
+        ["IDLE","STOPPED","ERROR"].includes(this.phase) && this.snapshot?.can_change_direction===true;
+    }
+    directionLabels() {
+      const english=this.directionId==="en-es", source=english?"EN":"ES", target=english?"ESPAÑOL":"ENGLISH";
+      this.get("direction").value=this.directionId;
+      this.get("translation-label").textContent=target;
+      this.get("translation-segments-label").textContent=`${target} SEGMENTS · sequence / segment ID`;
+      this.get("normalized-label").textContent=`NORMALIZED ${source}`;
+      this.get("raw-label").textContent=`RAW ${source} / ASR CONFIRMED`;
+      this.get("normalization-info").textContent=english?"English: identity (no glossary)":"Spanish terminology glossary";
+      this.get("direction-info").textContent=this.directionSupported?
+        `${english?"English → Español":"Español → English"} · ${this.canSelectDirection()?"editable con sesión detenida":"idiomas bloqueados"}`:
+        "Backend sin selección por sesión; modo histórico";
     }
     render() {
       const s=this.snapshot;
@@ -42,6 +61,9 @@
       this.get("start").disabled=!allowed.start;this.get("stop").disabled=!allowed.stop;
       this.get("clear").disabled=!allowed.clear || this.clearBusy;
       this.get("refresh").disabled=this.localActive;this.get("microphone").disabled=this.localActive;
+      this.get("direction").disabled=!this.canSelectDirection();
+      this.get("acknowledge-stop").disabled=!(this.authorized && s?.owns_session && s?.requires_stop_acknowledgement);
+      this.directionLabels();
       this.get("session-state").textContent=this.phase;
       if (this.get("session-state").dataset) this.get("session-state").dataset.state=this.phase;
     }
@@ -61,6 +83,8 @@
           throw Error("Backend incompatible");
         this.token=data.control_token;this.config=data.diagnostics_config;this.authorized=true;
         this.recovery=data.capabilities?.operator_recovery===1;this.serverPid=data.server_pid;
+        this.directionSupported=data.capabilities?.session_direction===1;
+        this.directionId=this.directionSupported?(data.default_direction || "en-es"):"es-en";
         if(!this.captureMode && this.recovery)try{sessionStorage.setItem("operator-recovery",JSON.stringify({token:this.token,secret:data.resume_secret}));}catch{}
         if(this.captureMode){this.render();return true;}
         await this.refresh();this.render();return this.authorized;
@@ -78,8 +102,12 @@
         const data=await response.json();
         if(data.protocol_version!==1) throw Error("Backend incompatible");
         this.snapshot=data;
+        if(this.startPending && data.session_id && data.session_id!==this.pendingSessionId)this.startPending=false;
+        if(data.direction && !this.startPending && (!this.directionInitialized || data.session_open || ["connecting","live","draining"].includes(data.state) || data.requires_stop_acknowledgement))
+          this.directionId=data.direction.id;
+        this.directionInitialized=true;
         if(this.recovery && !this.captureMode) {
-          this.localActive=!!data.owns_session && ["connecting","live","draining"].includes(data.state);
+          this.localActive=this.startPending || (!!data.owns_session && ["connecting","live","draining"].includes(data.state));
           this.startedAt=data.reliability?.duration_seconds!=null?Date.now()-data.reliability.duration_seconds*1000:null;
           const frames=data.reliability?.audio_frames || 0, age=data.reliability?.audio_age_seconds;
           this.get("capture").textContent=this.localActive?`CAPTURE independiente · ${frames} frames PCM recibidos · última recepción ${age==null?"sin medir":age+" s"}`:"Micrófono inactivo";
@@ -90,7 +118,11 @@
         }
         if(!this.localActive && ["live","draining"].includes(data.state))
           this.get("connection").textContent="Connected · active session in another tab";
-        if((this.recovery || !this.localActive) && !(this.phase==="ERROR" && this.get("error").textContent && !this.recovery)) this.phase=phases[data.state] || "ERROR";
+        if(!this.startPending && (this.recovery || !this.localActive) && !(this.phase==="ERROR" && this.get("error").textContent && !this.recovery)) this.phase=phases[data.state] || "ERROR";
+        if(!data.session_open && data.can_start===true && data.requires_stop_acknowledgement===false && data.reliability?.outcome==="incomplete") {
+          this.phase="STOPPED";
+          this.get("connection").textContent="Sesión anterior cerrada · puede iniciar otra";
+        }
         this.get("overlay-clients").textContent=`Overlay clients: ${data.overlay_connections}`;
         this.get("overlay-info").textContent=`${data.caption_config.mode} · requested ${data.caption_config.max_lines} lines · published sequence ${data.sequence} · visual generation ${data.visual_generation}`;
         this.get("last-caption").textContent=data.last_caption?`#${data.last_caption.sequence} · ${data.last_caption.text}`:"No caption in overlay window";
@@ -112,12 +144,14 @@
         capture_disconnected:"Captura desconectada; sesión incompleta. Se requiere un nuevo START.",
         session_transport_error:"Conexión de sesión perdida; sesión incompleta.",stop_timeout:"STOP agotó su plazo; contenido pendiente incompleto."};
       labels.resource_budget_exhausted="Límite de recursos excedido: sesión incompleta. Revisa el evento budget_exhausted en el log local.";
-      const notices=String(h.reason || "").split(",").map(reason=>labels[reason]).filter(Boolean);
+      let notices=String(h.reason || "").split(",").map(reason=>labels[reason]).filter(Boolean);
       if(h.outcome==="incomplete")notices.push("Finalización INCOMPLETA. Consulta los contadores de contenido pendiente/fallido.");
       if(h.stop_reason==="session_resource_budget")notices.push("Límite operativo de sesión alcanzado: finalización controlada. Inicia una sesión nueva cuando termine STOP.");
       if(h.translator?.reason==="provider_quota")notices.push("Cuota DeepL agotada. Revisa el plan antes de rearmar el traductor.");
       if(h.translator?.reason==="provider_auth")notices.push("DeepL rechazó credenciales. Corrige .env con la sesión detenida y reinicia FastAPI.");
-      if(data.session_id && !data.owns_session)notices.push("Esta consola no es propietaria de la sesión; no tiene controles activos.");
+      if(data.session_id && !data.owns_session && data.session_open)notices.push("Esta consola no es propietaria de la sesión; no tiene controles activos.");
+      if(!data.session_open && data.can_start===true && data.requires_stop_acknowledgement===false && h.outcome==="incomplete")
+        notices=["La sesión anterior terminó incompleta; cierre reconocido. Puedes iniciar una nueva sesión."];
       this.get("operational-alert").textContent=notices.join(" · ");
       this.get("reliability-diagnostics").textContent=JSON.stringify(h,null,2);
       this.get("recover-owner").disabled=data.owns_session || !data.session_id;

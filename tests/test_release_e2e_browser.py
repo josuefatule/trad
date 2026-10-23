@@ -17,6 +17,7 @@ import tempfile
 import threading
 import time
 import unittest
+from urllib.parse import parse_qs, urlsplit
 from unittest.mock import patch
 from urllib.request import urlopen
 
@@ -72,7 +73,8 @@ class ReleaseBrowserTests(unittest.IsolatedAsyncioTestCase):
         async def wlk(ws):
             number = len(connections) + 1
             connections.append(number)
-            await ws.send(json.dumps({"type": "config", "useAudioWorklet": True, "mode": "full"}))
+            lang = parse_qs(urlsplit(ws.request.path).query)["language"][0]
+            await ws.send(json.dumps({"type": "config", "useAudioWorklet": True, "mode": "full", "session_language":lang,"session_language_isolation":1}))
             producer = None
 
             async def feed():
@@ -159,6 +161,8 @@ class ReleaseBrowserTests(unittest.IsolatedAsyncioTestCase):
                             target = next(t for t in json.load(response) if t["type"] == "page")
                         with page_connection(port, target["webSocketDebuggerUrl"]) as (call, evaluate):
                             wait(lambda: evaluate("globalThis.OperatorUI?.authorized===true"))
+                            wait(lambda: evaluate("!document.getElementById('direction').disabled"))
+                            evaluate("document.getElementById('direction').value='es-en'; document.getElementById('direction').onchange()")
                             overlay = call("Target.createTarget", {"url": base + "/overlay"})["targetId"]
                             with urlopen(f"http://127.0.0.1:{port}/json", timeout=3) as response:
                                 overlay_target = next(t for t in json.load(response) if t["id"] == overlay)

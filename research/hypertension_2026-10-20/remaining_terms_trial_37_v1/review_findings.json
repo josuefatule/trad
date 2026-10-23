@@ -1,0 +1,859 @@
+{
+  "status": "frozen_expansion_review_complete_not_integrated",
+  "model_comparison": [
+    {
+      "model": "small",
+      "previous60_word_errors": 131,
+      "combined97_word_errors": 131,
+      "error_delta": 0,
+      "previous60_wer": 0.03116079923882017,
+      "combined97_wer": 0.03116079923882017,
+      "new37_alone_word_errors": 148,
+      "new37_uniform_word_errors": 144,
+      "introduced_changes": 1,
+      "introduced_assessment_counts": {
+        "lexically_neutral": 1
+      }
+    },
+    {
+      "model": "medium",
+      "previous60_word_errors": 107,
+      "combined97_word_errors": 100,
+      "error_delta": -7,
+      "previous60_wer": 0.02545195052331113,
+      "combined97_wer": 0.023786869647954328,
+      "new37_alone_word_errors": 109,
+      "new37_uniform_word_errors": 109,
+      "introduced_changes": 4,
+      "introduced_assessment_counts": {
+        "lexical_agreement_improved": 4
+      }
+    },
+    {
+      "model": "large-v3-turbo",
+      "previous60_word_errors": 131,
+      "combined97_word_errors": 131,
+      "error_delta": 0,
+      "previous60_wer": 0.03116079923882017,
+      "combined97_wer": 0.03116079923882017,
+      "new37_alone_word_errors": 131,
+      "new37_uniform_word_errors": 130,
+      "introduced_changes": 1,
+      "introduced_assessment_counts": {
+        "lexically_neutral": 1
+      }
+    }
+  ],
+  "previous60_changes": 29,
+  "combined97_changes": 35,
+  "introduced_changes": 6,
+  "removed_changes": 0,
+  "introduced_assessments": {
+    "lexically_neutral": 2,
+    "lexical_agreement_improved": 4
+  },
+  "new37_alone_assessments": {
+    "lexically_neutral": 2,
+    "lexical_agreement_improved": 6
+  },
+  "term_literal_agreement": {
+    "new37": {
+      "improved": 5,
+      "unchanged": 32,
+      "worsened": 0,
+      "rows": [
+        {
+          "concept_id": "HTN_6a0750665576",
+          "canonical_en": "network meta-analysis",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_55597a586adc",
+          "canonical_en": "metabolic alkalosis",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_c61cf036297b",
+          "canonical_en": "extracellular volume expansion",
+          "delta": 1,
+          "before": 2,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_c3df62c85359",
+          "canonical_en": "atherosclerotic cardiovascular disease",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_9c147fb0dd01",
+          "canonical_en": "primordial prevention",
+          "delta": 0,
+          "before": 9,
+          "after": 9,
+          "observations": 9
+        },
+        {
+          "concept_id": "HTN_8c53930b9fb6",
+          "canonical_en": "primary hypertension",
+          "delta": 0,
+          "before": 12,
+          "after": 12,
+          "observations": 12
+        },
+        {
+          "concept_id": "HTN_813c32e37386",
+          "canonical_en": "kidney function",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_7f88a520a565",
+          "canonical_en": "young adults",
+          "delta": 0,
+          "before": 12,
+          "after": 12,
+          "observations": 12
+        },
+        {
+          "concept_id": "HTN_367a095cd401",
+          "canonical_en": "millimeters of mercury",
+          "delta": 0,
+          "before": 5,
+          "after": 5,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_883353142120",
+          "canonical_en": "orthostatic hypotension",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_b5c94b0468ed",
+          "canonical_en": "recombinant human erythropoietin",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_9a1d14495070",
+          "canonical_en": "antihypertensive therapy",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_1ba7573640bb",
+          "canonical_en": "stroke",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_65a8ad331229",
+          "canonical_en": "urinary sodium excretion",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_67290e2a4f79",
+          "canonical_en": "secondary hypertension",
+          "delta": 0,
+          "before": 9,
+          "after": 9,
+          "observations": 9
+        },
+        {
+          "concept_id": "HTN_fc25c9ee65b4",
+          "canonical_en": "vascular dementia",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_4c28630c39b7",
+          "canonical_en": "beta blockers",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_015add4e7c55",
+          "canonical_en": "antihypertensive medication",
+          "delta": 1,
+          "before": 0,
+          "after": 1,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_da157827508d",
+          "canonical_en": "normal blood pressure",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_b82e725f2d5b",
+          "canonical_en": "pharmacologic management",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_351e3115ce6d",
+          "canonical_en": "renin-angiotensin system",
+          "delta": 1,
+          "before": 1,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_8d698ec69088",
+          "canonical_en": "American College of Cardiology",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_e28dac3635a0",
+          "canonical_en": "coronary artery calcium",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_3265c21da577",
+          "canonical_en": "antihypertensive drug therapy",
+          "delta": 1,
+          "before": 17,
+          "after": 18,
+          "observations": 18
+        },
+        {
+          "concept_id": "HTN_5418fb6ca9f7",
+          "canonical_en": "clinical implications",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_7007c7b6a276",
+          "canonical_en": "urinary potassium excretion",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_d5f7ec4c74ec",
+          "canonical_en": "dietary sodium restriction",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_46c99f93e124",
+          "canonical_en": "potassium-rich diet",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_62d56e18d9ed",
+          "canonical_en": "non-pharmacological therapy",
+          "delta": 0,
+          "before": 9,
+          "after": 9,
+          "observations": 9
+        },
+        {
+          "concept_id": "HTN_9b521b6aa481",
+          "canonical_en": "dietary potassium",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_58ff1710a6fe",
+          "canonical_en": "lifestyle modification",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_e2601a1dc5c2",
+          "canonical_en": "plasma renin activity",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_b2841ea0bccc",
+          "canonical_en": "milligrams per day",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_0a86f46a7678",
+          "canonical_en": "antidepressants",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_8a14bff08d83",
+          "canonical_en": "potassium intake",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_725551b71cd2",
+          "canonical_en": "aldosterone production",
+          "delta": 2,
+          "before": 0,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_81c0b5abec49",
+          "canonical_en": "all-cause mortality",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        }
+      ]
+    },
+    "previous60": {
+      "improved": 0,
+      "unchanged": 60,
+      "worsened": 0,
+      "rows": [
+        {
+          "concept_id": "HTN_b77b3ada1555",
+          "canonical_en": "sodium-containing salts",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_017909dfbe03",
+          "canonical_en": "sodium reabsorption",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_33721e7d10bc",
+          "canonical_en": "cardiovascular events",
+          "delta": 0,
+          "before": 21,
+          "after": 21,
+          "observations": 21
+        },
+        {
+          "concept_id": "HTN_f48198e7872f",
+          "canonical_en": "tyrosine kinase inhibitors",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_a9290515a379",
+          "canonical_en": "ten-year ASCVD risk",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_de7d5a3bf89e",
+          "canonical_en": "National Institutes of Health",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_a05dadb4b409",
+          "canonical_en": "mineralocorticoid receptor",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_dcd292247cbd",
+          "canonical_en": "primary aldosteronism",
+          "delta": 0,
+          "before": 29,
+          "after": 29,
+          "observations": 30
+        },
+        {
+          "concept_id": "HTN_ce88c1a364ff",
+          "canonical_en": "systolic blood pressure",
+          "delta": 0,
+          "before": 15,
+          "after": 15,
+          "observations": 15
+        },
+        {
+          "concept_id": "HTN_78bad0122173",
+          "canonical_en": "American Heart Association",
+          "delta": 0,
+          "before": 12,
+          "after": 12,
+          "observations": 12
+        },
+        {
+          "concept_id": "HTN_e59fa7b029fa",
+          "canonical_en": "resistant hypertension",
+          "delta": 0,
+          "before": 15,
+          "after": 15,
+          "observations": 15
+        },
+        {
+          "concept_id": "HTN_580d66f414c7",
+          "canonical_en": "spironolactone",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_82debac780d7",
+          "canonical_en": "cardiometabolic risk",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_1678109dd1e1",
+          "canonical_en": "heart disease",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_1f6c35b66555",
+          "canonical_en": "elevated blood pressure",
+          "delta": 0,
+          "before": 27,
+          "after": 27,
+          "observations": 27
+        },
+        {
+          "concept_id": "HTN_bd01a89edc9a",
+          "canonical_en": "blood pressure",
+          "delta": 0,
+          "before": 201,
+          "after": 201,
+          "observations": 204
+        },
+        {
+          "concept_id": "HTN_1801e881de4c",
+          "canonical_en": "cardiovascular risk",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_56f653079e24",
+          "canonical_en": "target systolic blood pressure",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_5083c8261cb4",
+          "canonical_en": "hormone replacement therapy",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_d8a636f1c1c1",
+          "canonical_en": "immunosuppressive agents",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_18261da1ebb6",
+          "canonical_en": "diuretics",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_56226cde8c28",
+          "canonical_en": "atherosclerosis",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_97cf39b495a5",
+          "canonical_en": "hypertension",
+          "delta": 0,
+          "before": 165,
+          "after": 165,
+          "observations": 165
+        },
+        {
+          "concept_id": "HTN_08df2fb9a572",
+          "canonical_en": "micrograms per deciliter",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_a506dcc39d5e",
+          "canonical_en": "incidence",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_be068174bf76",
+          "canonical_en": "isometric resistance exercise",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_1e5b2c8f44aa",
+          "canonical_en": "pharmacological therapy",
+          "delta": 0,
+          "before": 15,
+          "after": 15,
+          "observations": 15
+        },
+        {
+          "concept_id": "HTN_73996112033d",
+          "canonical_en": "as low as reasonably achievable",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_ec261491485c",
+          "canonical_en": "weight loss",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_6eaf977b00ec",
+          "canonical_en": "renin suppression",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_ee6fe3240e4f",
+          "canonical_en": "hypotension",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_5d6308ddf615",
+          "canonical_en": "chronic kidney disease",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_21aa1e2a0a86",
+          "canonical_en": "blood pressure target",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_f55101cb5e74",
+          "canonical_en": "exercise",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_43b62124c3b4",
+          "canonical_en": "prehypertension",
+          "delta": 0,
+          "before": 1,
+          "after": 1,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_b71def1fdea1",
+          "canonical_en": "millimoles per day",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_b3a920f4854a",
+          "canonical_en": "micrograms per day",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_f48ce01048ba",
+          "canonical_en": "non-elevated blood pressure",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_5d3f8bcf9aa3",
+          "canonical_en": "alcohol intake",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_28505bfb6f7c",
+          "canonical_en": "serious adverse events",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_5995e0e6626c",
+          "canonical_en": "salt loading",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_ee45bdae9c43",
+          "canonical_en": "renin-independent aldosterone production",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_0114ad465a4c",
+          "canonical_en": "mineralocorticoid receptor antagonists",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_aa5f2ce2aa91",
+          "canonical_en": "urinary aldosterone",
+          "delta": 0,
+          "before": 2,
+          "after": 2,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_edd3f525e819",
+          "canonical_en": "oral contraceptives",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_fe15c79eba36",
+          "canonical_en": "hypokalemic metabolic alkalosis",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_243c1557a315",
+          "canonical_en": "aldosterone",
+          "delta": 0,
+          "before": 11,
+          "after": 11,
+          "observations": 27
+        },
+        {
+          "concept_id": "HTN_50b4fc97bb14",
+          "canonical_en": "physical activity",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_08be48d0e6db",
+          "canonical_en": "meta-analysis",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        },
+        {
+          "concept_id": "HTN_78302c3c9580",
+          "canonical_en": "cardiovascular disease",
+          "delta": 0,
+          "before": 30,
+          "after": 30,
+          "observations": 30
+        },
+        {
+          "concept_id": "HTN_1b881806cbc3",
+          "canonical_en": "evidence-based review",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_046b2614a497",
+          "canonical_en": "direct renin concentration",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_360421e6c958",
+          "canonical_en": "alcohol moderation",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_c14e2214165b",
+          "canonical_en": "subclinical atherosclerosis",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_8adeb49fc7d5",
+          "canonical_en": "older adults",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_23003a7c53dc",
+          "canonical_en": "healthy diet",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_c55b21ee723a",
+          "canonical_en": "co-chair",
+          "delta": 0,
+          "before": 3,
+          "after": 3,
+          "observations": 3
+        },
+        {
+          "concept_id": "HTN_e9263cf14efb",
+          "canonical_en": "blood pressure control",
+          "delta": 0,
+          "before": 9,
+          "after": 9,
+          "observations": 9
+        },
+        {
+          "concept_id": "HTN_c2451614a1c8",
+          "canonical_en": "prevalence",
+          "delta": 0,
+          "before": 9,
+          "after": 9,
+          "observations": 9
+        },
+        {
+          "concept_id": "HTN_69524c07e2bc",
+          "canonical_en": "diastolic blood pressure",
+          "delta": 0,
+          "before": 6,
+          "after": 6,
+          "observations": 6
+        }
+      ]
+    }
+  },
+  "aggregate_no_worse_in_any_model": true,
+  "previous60_context_regressions": 0,
+  "previous60_constructed_regressions": 0,
+  "thresholds_retuned_after_checking": false,
+  "corrected_rules_changed": false,
+  "independent_holdout": false,
+  "clinical_validation": false,
+  "integration_performed": false
+}

@@ -1,0 +1,574 @@
+{
+  "profile": "existing normalizer with all 657 terms in suggest and default .90/.86 thresholds",
+  "cases": [
+    {
+      "id": "A001",
+      "language": "en",
+      "input": "No hypertension; potassium is not low.",
+      "native_candidate_text": "No hypertension; potassium is not low.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [
+        {
+          "source": "potassium is not",
+          "candidate": "potassium intake",
+          "start": 17,
+          "end": 33,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.931429,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_8a14bff08d83",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 2,
+      "wall_ms_including_load_and_metrics": 119.1044,
+      "controlled_text": "No hypertension; potassium is not low.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A002",
+      "language": "es",
+      "input": "No hay hipertensión ni hipopotasemia.",
+      "native_candidate_text": "No hay hipertensión ni hipopotasemia.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 2,
+      "wall_ms_including_load_and_metrics": 158.5061,
+      "controlled_text": "No hay hipertensión ni hipopotasemia.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A003",
+      "language": "en",
+      "input": "The record says 5 mg, not 50 mg; BP <140/90 mmHg.",
+      "native_candidate_text": "The record says 5 mg, not 50 mg; BP <140/90 mmHg.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 177.1461,
+      "controlled_text": "The record says 5 mg, not 50 mg; BP <140/90 mmHg.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A004",
+      "language": "es",
+      "input": "Constan 5 mg, no 50 mg; presión arterial ≥140/90 mmHg.",
+      "native_candidate_text": "Constan 5 mg, no 50 mg; presión arterial ≥140/90 mmHg.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 85.8539,
+      "controlled_text": "Constan 5 mg, no 50 mg; presión arterial ≥140/90 mmHg.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A005",
+      "language": "en",
+      "input": "Keep -5%, 0.5 mg, 5 µg/dL and 5 mg/dL distinct.",
+      "native_candidate_text": "Keep -5%, 0.5 mg, 5 µg/dL and 5 mg/dL distinct.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 110.237,
+      "controlled_text": "Keep -5%, 0.5 mg, 5 µg/dL and 5 mg/dL distinct.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A006",
+      "language": "es",
+      "input": "Conservar −5%, 0,5 mg, 5 μg/dL y 5 mg/dL.",
+      "native_candidate_text": "Conservar −5%, 0,5 mg, 5 μg/dL y 5 mg/dL.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 64.1392,
+      "controlled_text": "Conservar −5%, 0,5 mg, 5 μg/dL y 5 mg/dL.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A007",
+      "language": "en",
+      "input": "MRA is undefined in this sentence.",
+      "native_candidate_text": "MRA is undefined in this sentence.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 210.0524,
+      "controlled_text": "MRA is undefined in this sentence.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A008",
+      "language": "es",
+      "input": "ECA no tiene definición local.",
+      "native_candidate_text": "ECA no tiene definición local.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 147.1662,
+      "controlled_text": "ECA no tiene definición local.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A009",
+      "language": "es",
+      "input": "PAD no tiene definición local.",
+      "native_candidate_text": "PAD no tiene definición local.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 160.9681,
+      "controlled_text": "PAD no tiene definición local.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A010",
+      "language": "en",
+      "input": "PAD has no local definition.",
+      "native_candidate_text": "PAD has no local definition.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 151.0897,
+      "controlled_text": "PAD has no local definition.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A011",
+      "language": "en",
+      "input": "HR, PA, HRV, RR and CI need local definitions.",
+      "native_candidate_text": "HR, PA, HRV, RR and CI need local definitions.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 232.6777,
+      "controlled_text": "HR, PA, HRV, RR and CI need local definitions.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A012",
+      "language": "es",
+      "input": "IC, RAR y PA necesitan definición local.",
+      "native_candidate_text": "IC, RAR y PA necesitan definición local.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 274.7578,
+      "controlled_text": "IC, RAR y PA necesitan definición local.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A013",
+      "language": "es",
+      "input": "El coordinador conjunto organizó la reunión.",
+      "native_candidate_text": "El coordinador conjunto organizó la reunión.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 278.0328,
+      "controlled_text": "El coordinador conjunto organizó la reunión.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A014",
+      "language": "es",
+      "input": "Se discutió la relación presión-natriuresis.",
+      "native_candidate_text": "Se discutió la relación presión-natriuresis.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 243.8708,
+      "controlled_text": "Se discutió la relación presión-natriuresis.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A015",
+      "language": "es",
+      "input": "La carga de medicación se preparó en farmacia.",
+      "native_candidate_text": "La carga de medicación se preparó en farmacia.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [
+        {
+          "source": "carga de medicación se",
+          "candidate": "carga de comprimidos",
+          "start": 3,
+          "end": 25,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.86721,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_7865f1343d17",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 413.9761,
+      "controlled_text": "La carga de medicación se preparó en farmacia.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A016",
+      "language": "es",
+      "input": "La frase hipertensión farmacológica resulta ambigua.",
+      "native_candidate_text": "La frase hipertensión farmacológica resulta ambigua.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 383.7249,
+      "controlled_text": "La frase hipertensión farmacológica resulta ambigua.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A017",
+      "language": "es",
+      "input": "La prueba de captopril necesita especificar el protocolo.",
+      "native_candidate_text": "La prueba de captopril necesita especificar el protocolo.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 427.3962,
+      "controlled_text": "La prueba de captopril necesita especificar el protocolo.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A018",
+      "language": "en",
+      "input": "The 2025 ACC/AHA guideline needs an explicit topic.",
+      "native_candidate_text": "The 2025 ACC/AHA guideline needs an explicit topic.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [
+        {
+          "source": "guideline needs an",
+          "candidate": "guideline recommendations",
+          "start": 17,
+          "end": 35,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.902083,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_f285e85c972e",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 267.3691,
+      "controlled_text": "The 2025 ACC/AHA guideline needs an explicit topic.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A019",
+      "language": "en",
+      "input": "SPYRAL HTN-OFF MED and SPYRAL HTN-ON MED are different arms.",
+      "native_candidate_text": "SPYRAL HTN-OFF MED and SPYRAL HTN-ON MED are different arms.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [
+        {
+          "source": "SPYRAL HTN-OFF MED and SPYRAL",
+          "candidate": "SPYRAL HTN-OFF MED trial",
+          "start": 0,
+          "end": 29,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.918889,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_8b09e2cea13f",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 478.4047,
+      "controlled_text": "SPYRAL HTN-OFF MED and SPYRAL HTN-ON MED are different arms.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A020",
+      "language": "en",
+      "input": "Keep SPRINT, ESPRIT, STEP and STEP-1 distinct.",
+      "native_candidate_text": "Keep SPRINT, ESPRIT, STEP and STEP-1 distinct.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 144.2341,
+      "controlled_text": "Keep SPRINT, ESPRIT, STEP and STEP-1 distinct.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A021",
+      "language": "en",
+      "input": "ACE and ACE2; AT1 and AT2; HFrEF and HFpEF.",
+      "native_candidate_text": "ACE and ACE2; AT1 and AT2; HFrEF and HFpEF.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 124.8857,
+      "controlled_text": "ACE and ACE2; AT1 and AT2; HFrEF and HFpEF.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A022",
+      "language": "en",
+      "input": "Left is not right, and severe is not serious.",
+      "native_candidate_text": "Left is not right, and severe is not serious.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [
+        {
+          "source": "severe is not",
+          "candidate": "severe hypertension",
+          "start": 23,
+          "end": 36,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.862929,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_4144dc9b2f73",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 219.3632,
+      "controlled_text": "Left is not right, and severe is not serious.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A023",
+      "language": "es",
+      "input": "Sistólica no es diastólica; alta no es baja.",
+      "native_candidate_text": "Sistólica no es diastólica; alta no es baja.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 161.5804,
+      "controlled_text": "Sistólica no es diastólica; alta no es baja.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A024",
+      "language": "en",
+      "input": "She will map the route and check the HR policy.",
+      "native_candidate_text": "She will map the route and check the HR policy.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 409.7377,
+      "controlled_text": "She will map the route and check the HR policy.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A025",
+      "language": "en",
+      "input": "The orange suitcase is beside the wooden chair.",
+      "native_candidate_text": "The orange suitcase is beside the wooden chair.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 343.9404,
+      "controlled_text": "The orange suitcase is beside the wooden chair.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A026",
+      "language": "es",
+      "input": "La maleta naranja está junto a la silla de madera.",
+      "native_candidate_text": "La maleta naranja está junto a la silla de madera.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [],
+      "suggestions_total": 0,
+      "wall_ms_including_load_and_metrics": 423.5643,
+      "controlled_text": "La maleta naranja está junto a la silla de madera.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A027",
+      "language": "en",
+      "input": "  No edema,please;keep 5 mg.  ",
+      "native_candidate_text": "No edema, please; keep 5 mg.",
+      "native_corrections": [
+        {
+          "source": "  ",
+          "replacement": "",
+          "start": 0,
+          "end": 2,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        },
+        {
+          "source": "",
+          "replacement": " ",
+          "start": 11,
+          "end": 11,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        },
+        {
+          "source": "",
+          "replacement": " ",
+          "start": 18,
+          "end": 18,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        },
+        {
+          "source": "  ",
+          "replacement": "",
+          "start": 28,
+          "end": 30,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        }
+      ],
+      "fuzzy_suggestions": [
+        {
+          "source": "No edema",
+          "candidate": "angioedema",
+          "start": 2,
+          "end": 10,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.9,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_51910881d7c6",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 47.4476,
+      "controlled_text": "  No edema,please;keep 5 mg.  ",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A028",
+      "language": "es",
+      "input": "  No edema,por favor;conservar 5 mg.  ",
+      "native_candidate_text": "No edema, por favor; conservar 5 mg.",
+      "native_corrections": [
+        {
+          "source": "  ",
+          "replacement": "",
+          "start": 0,
+          "end": 2,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        },
+        {
+          "source": "",
+          "replacement": " ",
+          "start": 11,
+          "end": 11,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        },
+        {
+          "source": "",
+          "replacement": " ",
+          "start": 21,
+          "end": 21,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        },
+        {
+          "source": "  ",
+          "replacement": "",
+          "start": 36,
+          "end": 38,
+          "rule": "deterministic_spacing",
+          "confidence": 1.0,
+          "canonical": null,
+          "risk_categories": [],
+          "approval": "spacing_only"
+        }
+      ],
+      "fuzzy_suggestions": [
+        {
+          "source": "No edema",
+          "candidate": "angioedema",
+          "start": 2,
+          "end": 10,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.9,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_51910881d7c6",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 59.8786,
+      "controlled_text": "  No edema,por favor;conservar 5 mg.  ",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A029",
+      "language": "en",
+      "input": "The transcript contains hyper tenson.",
+      "native_candidate_text": "The transcript contains hyper tenson.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [
+        {
+          "source": "hyper tenson",
+          "candidate": "hypertension",
+          "start": 24,
+          "end": 36,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.983333,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_97cf39b495a5",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 198.8615,
+      "controlled_text": "The transcript contains hyper tenson.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    },
+    {
+      "id": "A030",
+      "language": "en",
+      "input": "They discussed primary aldosteronizm.",
+      "native_candidate_text": "They discussed primary aldosteronizm.",
+      "native_corrections": [],
+      "fuzzy_suggestions": [
+        {
+          "source": "primary aldosteronizm",
+          "candidate": "primary aldosteronism",
+          "start": 15,
+          "end": 36,
+          "rule": "glossary_fuzzy",
+          "confidence": 0.956071,
+          "cross_segment": false,
+          "previous_segment_id": null,
+          "concept_id": "HTN_dcd292247cbd",
+          "review_required": true
+        }
+      ],
+      "suggestions_total": 1,
+      "wall_ms_including_load_and_metrics": 134.509,
+      "controlled_text": "They discussed primary aldosteronizm.",
+      "note": "Existing shadow permits spacing; this validation's stricter controlled output remains the original input."
+    }
+  ],
+  "fuzzy_suggestions_total": 9,
+  "policy": "Unadjudicated diagnostics only; no fuzzy suggestion or replacement is approved."
+}

@@ -1,0 +1,142 @@
+{
+  "created_at": "2026-10-20T19:00:06-04:00",
+  "original_unchanged": true,
+  "candidate_unchanged_in_continuation": true,
+  "original_sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "candidate_sha256": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45",
+  "verified_bilingual_pairs": 600,
+  "pending_bilingual_pairs": 57,
+  "source_copies_excluded": true,
+  "files": [
+    {
+      "name": "hypertension_research_en_es.json",
+      "bytes": 2615919,
+      "sha256": "83e33aaaf730c4e0c6a8bc8dcc99fe144d1e01691c4e8e949dfe2b2001859fef"
+    },
+    {
+      "name": "hypertension_research_progress.json",
+      "bytes": 27639,
+      "sha256": "7e2ce4c22d520b3525b82534d1ec7616654a54ee167a4036702910687e679139"
+    },
+    {
+      "name": "hypertension_research_report.md",
+      "bytes": 20624,
+      "sha256": "9a110c7f9d5e14ec2cd0b3d0201e9b37392467e000e3dc948edc5fb1d8b5c55c"
+    },
+    {
+      "name": "DATASET_SCHEMA.md",
+      "bytes": 9555,
+      "sha256": "e8705e4c6f510decbe5a31c7ee9fa53e7716b94b9b367b11a94d307aac4e7219"
+    },
+    {
+      "name": "bilingual_verification.json",
+      "bytes": 1051744,
+      "sha256": "c3343f2864d391532940c74aede281cbbeb9fa60fbbe98c1c0f4f8a40d2b47ae"
+    },
+    {
+      "name": "bilingual_decisions.json",
+      "bytes": 306651,
+      "sha256": "ea56fc6cdabeabae5adc007905672c2acc4c8fcca475bbcd62ae47358e19c876"
+    },
+    {
+      "name": "sources.json",
+      "bytes": 80179,
+      "sha256": "c798817476d2074f5f13c71b7772328fb345a5f15c98d06d2149369b0f19460d"
+    },
+    {
+      "name": "source_access_index.json",
+      "bytes": 101880,
+      "sha256": "a3cd3ffb66288c64cf6a0229859660c7496f1210c86fec7eb3cd7b6feafcf02d"
+    },
+    {
+      "name": "validation_results.json",
+      "bytes": 17843,
+      "sha256": "e9305dd849b1299d75c72330671f758e116fe03c0db739608222747b99eafc4b"
+    },
+    {
+      "name": "medical_base_en_extended_candidate.json",
+      "bytes": 75422,
+      "sha256": "f70199e00efd516220f33c6c36f500ed220992b2caa6bba0d85cdf9b2086ae45"
+    },
+    {
+      "name": "original_glossary_audit.json",
+      "bytes": 30664,
+      "sha256": "ef0370e1d6ab1dc0446bbcdd971ec1f332cd36dac14eb9a42f9a00fb9f9fb747"
+    },
+    {
+      "name": "web_consultation_index.json",
+      "bytes": 90757,
+      "sha256": "cc873810cbb940b8bd73d8b788d72d8d001ee9af8d8843cc1df72328372890e9"
+    },
+    {
+      "name": "original_terms_review.txt",
+      "bytes": 24385,
+      "sha256": "04e0a9ac707ab4abb20fd4e4d2faec483abd9b62089b412cbac5324d3fdd8ab2"
+    },
+    {
+      "name": "new_terms_review.txt",
+      "bytes": 32333,
+      "sha256": "7ca5e94bf6a7a23bcdb210c9e5745fdfaa83ef771131759ba1a13658d27f3b8d"
+    },
+    {
+      "name": "evidence_updates.json",
+      "bytes": 7918,
+      "sha256": "1fb3d5c35355a6b77d6c8211ad76f296cceee18a86c14ac7d607fee773c36a13"
+    },
+    {
+      "name": "bilingual_discovery.json",
+      "bytes": 424049,
+      "sha256": "30466d380bd89f66876400c031e421ebce25ac1ba4a4b75f5875b5f1cf2681cd"
+    },
+    {
+      "name": "bilingual_search_forms.txt",
+      "bytes": 18434,
+      "sha256": "ec8856788b91a30363be73a2abc82c3b616125a9b76d6f5ff30ea145c54c202c"
+    },
+    {
+      "name": "verify_bilingual.py",
+      "bytes": 4232,
+      "sha256": "2137e08a5db9f292aa0de99e081ef15327ea5075b44909c47ffc7b68102b361d"
+    },
+    {
+      "name": "prepare_corpus.py",
+      "bytes": 4775,
+      "sha256": "acb65252e65afb1aba4daf7a4870e4b3acf260f5b87658a93dfbd262fd636c51"
+    },
+    {
+      "name": "record_bilingual_review.py",
+      "bytes": 10992,
+      "sha256": "e7454d6eef5adf1ffc84c610cde8b04ab1194daf5f4ddff367054c24f359acee"
+    },
+    {
+      "name": "finalize_continuation.py",
+      "bytes": 16937,
+      "sha256": "f84c272d9523ab66e4d856be221f3dba59923cf612924259a42e5e30e6a14d51"
+    },
+    {
+      "name": "continuation_report_template.md",
+      "bytes": 14182,
+      "sha256": "c6657db79e23bdd87275846855d62d23756f5ca0f6edc921ef0a283a8bf8f0b5"
+    },
+    {
+      "name": "CONTINUATION_README.txt",
+      "bytes": 2114,
+      "sha256": "00fc4e296dc46fee5a690e0410027c06e0c4262c6e696882f59c3e9fd40c8332"
+    },
+    {
+      "name": "fetch_source_cache.ps1",
+      "bytes": 797,
+      "sha256": "afe40a8d230d794d436adcf50f70af916e7ae54e0061ba1b381f1338c0bf0c9d"
+    },
+    {
+      "name": "add_continuation_sources.py",
+      "bytes": 14433,
+      "sha256": "8a81e4a30b671d47889639ff4a2f5f94f3496bc6f2083bb88570e763c4ebe28b"
+    },
+    {
+      "name": "register_last_sources.py",
+      "bytes": 2703,
+      "sha256": "1628f94d514be055a2044b66de645e523b1ddfe7ff47fbb84710fe81eec75906"
+    }
+  ]
+}

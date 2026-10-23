@@ -1,0 +1,161 @@
+AMPLIACIÓN DE TOLERANCIAS A OTROS 50 TÉRMINOS ALEATORIOS
+Investigación local; resultados simulados, sin integración en TRAD.
+
+RESULTADO PRINCIPAL
+La ampliación no mejora el error léxico global frente a los diez términos con controles de contexto y límites de palabra.
+Añade 4 errores en small, 4 en medium y 5 en large-v3-turbo. Se conserva el resultado desfavorable, sin repetir el sorteo ni retocar los umbrales después de verlo.
+Se estudiaron 50 términos nuevos y se comparó también el conjunto acumulado de 60.
+
+MUESTRA Y MÉTODO
+Muestreo uniforme sin reemplazo entre los 87 conceptos restantes de los 97 presentes en las referencias inglesas anteriores. Se excluyeron los diez ya estudiados.
+Semilla reproducible: 17039792620311577075. No representa una muestra uniforme de los 657 conceptos completos: está limitada por la cobertura del corpus.
+Por término se probaron umbrales 0.86, 0.88, 0.90, 0.92, 0.94, 0.96, 0.98, 0.99 y 1.00 con los controles anteriores sin cambios.
+Se eligió la mayor recuperación de erratas construidas con cero disparos en negativos de calibración; desempate hacia el umbral más alto. Sin recuperación útil, se dejó solo coincidencia exacta.
+Resultado: 37 candidatos con tolerancia individual y 13 limitados a coincidencia exacta. Un score 1.00 no significa certeza médica ni coincidencia literal obligatoria.
+Los umbrales quedaron congelados antes de las comprobaciones. Se eliminaron duplicados exactos entre calibración y checking antes de elegirlos; se conservaron los casos originales y el listado excluido.
+Los ejemplos construidos de ambas particiones comparten recetas y no constituyen datos independientes de pronunciación.
+Las reglas se aplicaron antes de seleccionar coincidencias: contexto, conectores, negación, cifras/unidades, límites de palabra e identificadores y anclas léxicas. Su protección de plurales es parcial y falló en los casos indicados más abajo.
+No se habilitaron las alternativas del paquete para sustitución literal: el ensayo utiliza formas canónicas y decisiones experimentales. No se ha autorizado ninguna nueva equivalencia.
+
+COMPARACIÓN PRINCIPAL: DIEZ ANTERIORES FRENTE A SESENTA ACUMULADOS
+WER = errores de palabras / 4.204 palabras de referencia por modelo; menor es mejor. Referencias provisionales, no adjudicación clínica.
+Modelo | Antes: 10 con controles | Después: 60 con controles | Diferencia
+small | 3.14% (132) | 3.24% (136) | +4 errores
+medium | 2.59% (109) | 2.69% (113) | +4 errores
+large-v3-turbo | 3.14% (132) | 3.26% (137) | +5 errores
+
+COMPARACIÓN COMPLETA SOBRE EL MISMO CORPUS
+Las cifras siguientes son errores de palabras. Todos los perfiles usan las mismas hipótesis crudas y referencias, sin generar nuevas inferencias.
+Modelo | Crudo | 10 con controles | 50 uniforme 0.90 con controles | 50 individual sin controles | 50 individual con controles | 60 individual con controles
+small | 148 | 132 | 149 | 152 | 152 | 136
+medium | 117 | 109 | 122 | 122 | 121 | 113
+large-v3-turbo | 132 | 132 | 138 | 137 | 137 | 137
+El acumulado de 60 conserva parte de la mejora anterior en small/medium frente al crudo, pero la ampliación por sí misma empeora los tres modelos.
+
+COMPROBACIONES CONSTRUIDAS
+Checking por término: 250 casos positivos y 667 negativos, sin duplicados exactos con calibración.
+Perfil | Positivos recuperados | Negativos que activan corrección fuzzy
+uniform090_guarded | 185/250 | 8/667
+individualized_unguarded | 168/250 | 1/667
+individualized_guarded | 168/250 | 0/667
+La tolerancia individual con controles evita los ocho disparos negativos del uniforme, a costa de recuperar 17 positivos menos. Cero de 667 no estima una tasa clínica ni garantiza ausencia de errores en texto real.
+Contexto con los 50 activos a la vez: 350 positivos y 250 negativos; incluyen by, palabras vecinas, negación exterior/interior, cifras e identificadores.
+Perfil | Contextos positivos correctos | Negativos modificados
+uniform090_guarded | 217/350 | 1/250
+individualized_unguarded | 217/350 | 93/250
+individualized_guarded | 217/350 | 0/250
+La prueba conjunta revela interferencias que no aparecen al calibrar cada término aislado.
+
+QUÉ EXPLICA EL EMPEORAMIENTO
+Se auditaron por separado los 27 cambios nuevos del perfil individual con controles: 4 mejoran la concordancia léxica con la referencia, 17 la empeoran y 6 son neutros.
+Doce cambios convierten pharmacologic therapy en pharmacological therapy: cuatro por modelo, que añaden cuatro errores por modelo frente a la grafía ya presente en la referencia.
+El registro previo UF0173 clasifica pharmacologic therapy como variante léxica de investigación, con localización literal de una fuente; niega aprobación de equivalencia estricta y de sustitución automática.
+No se interpreta una distancia léxica mayor entre estas grafías como daño clínico demostrado. El fallo de política es reescribir la forma sin demostrar un error de reconocimiento ni contar con aprobación de sustitución.
+Cinco cambios adicionales convierten plurales en singular: diastolic blood pressures en los tres modelos y cardiovascular risks en medium/turbo. Se pierde la forma gramatical observada.
+Los controles congelados protegían algunos pares explícitos (event/events, receptor/receptors, etc.), pero no pressure/pressures ni risk/risks. Los nuevos negativos de calibración tampoco cubrían todas las direcciones singular/plural.
+Por eso el buen resultado en negativos construidos no basta: el corpus descubre huecos que la prueba sintética no cubría.
+Las cuatro mejoras léxicas corresponden a hypokalamic metabolic alkalosis, renin-independent allosterone production, urinary allosterone y renin-independent aldosteron production.
+Cada cambio tiene contexto provisional, offsets, score y delta de error documentados en correction_review.json. No hubo revisión auditiva o clínica independiente.
+
+INTERFERENCIA ENTRE EXPRESIONES LARGAS Y CORTAS
+259 contextos positivos eran recuperables en calibración aislada; solo 217 se recuperan al activar los 50 términos juntos. Hay 42 fallos adicionales, siete por cada una de estas seis expresiones:
+- elevated blood pressure: 7 contextos; subexpresión reservada: blood pressure.
+  Ejemplo: They discussed elvated blood pressure by this test.
+  Aislado: They discussed elevated blood pressure by this test.
+  Con los 50: They discussed elvated blood pressure by this test.
+- target systolic blood pressure: 7 contextos; subexpresión reservada: blood pressure.
+  Ejemplo: They discussed target sytolic blood pressure by this test.
+  Aislado: They discussed target systolic blood pressure by this test.
+  Con los 50: They discussed target sytolic blood pressure by this test.
+- isometric resistance exercise: 7 contextos; subexpresión reservada: exercise.
+  Ejemplo: They discussed isometric resstance exercise by this test.
+  Aislado: They discussed isometric resistance exercise by this test.
+  Con los 50: They discussed isometric resstance exercise by this test.
+- non-elevated blood pressure: 7 contextos; subexpresión reservada: blood pressure.
+  Ejemplo: They discussed non-elvated blood pressure by this test.
+  Aislado: They discussed non-elevated blood pressure by this test.
+  Con los 50: They discussed non-elvated blood pressure by this test.
+- renin-independent aldosterone production: 7 contextos; subexpresión reservada: aldosterone.
+  Ejemplo: They discussed renin-indpendent aldosterone production by this test.
+  Aislado: They discussed renin-independent aldosterone production by this test.
+  Con los 50: They discussed renin-indpendent aldosterone production by this test.
+- diastolic blood pressure: 7 contextos; subexpresión reservada: blood pressure.
+  Ejemplo: They discussed diatolic blood pressure by this test.
+  Aislado: They discussed diastolic blood pressure by this test.
+  Con los 50: They discussed diatolic blood pressure by this test.
+El motor reserva coincidencias exactas cortas antes de seleccionar la frase aproximada. La frase larga sí supera su umbral y pasa los controles, pero se descarta por solapamiento.
+Se verificó el mecanismo con offsets y candidatos en overlap_diagnostics.json, sin modificar el motor. Los otros 91 positivos no recuperados pertenecen a los 13 términos deliberadamente limitados a exacto.
+
+LOS 50 TÉRMINOS Y SUS DECISIONES
+Solo exacto significa que no hubo recuperación fuzzy útil compatible con los negativos de calibración y los controles congelados; no que el término haya sido validado para producción.
+Apariciones: coincidencia con la forma de referencia inglesa sobre tres modelos correlacionados; no equivale a exactitud conceptual o clínica. Pueden solaparse términos como blood pressure y diastolic blood pressure.
+N.º | Inglés / Español | Umbral candidato | Coincidencias crudo -> 50 con controles / observaciones
+01 | resistant hypertension / hipertensión resistente | 0.94 | 15 -> 15 / 15
+02 | spironolactone / espironolactona | Solo exacto | 2 -> 2 / 3
+03 | cardiometabolic risk / riesgo cardiometabólico | 0.94 | 3 -> 3 / 3
+04 | heart disease / cardiopatía | 0.92 | 3 -> 3 / 3
+05 | elevated blood pressure / presión arterial elevada | 0.94 | 27 -> 27 / 27
+06 | blood pressure / presión arterial | 0.92 | 201 -> 201 / 204
+07 | cardiovascular risk / riesgo cardiovascular | 0.94 | 6 -> 6 / 6
+08 | target systolic blood pressure / objetivo de presión arterial sistólica | 0.96 | 3 -> 3 / 3
+09 | hormone replacement therapy / terapia hormonal de reemplazo | 0.96 | 3 -> 3 / 3
+10 | immunosuppressive agents / inmunosupresores | 1.00 | 3 -> 3 / 3
+11 | diuretics / diuréticos | Solo exacto | 3 -> 3 / 3
+12 | atherosclerosis / aterosclerosis | Solo exacto | 3 -> 3 / 3
+13 | hypertension / hipertensión arterial | Solo exacto | 165 -> 165 / 165
+14 | micrograms per deciliter / microgramos por decilitro | Solo exacto | 3 -> 3 / 3
+15 | incidence / incidencia | Solo exacto | 3 -> 3 / 3
+16 | isometric resistance exercise / ejercicio isométrico de fuerza | 0.96 | 2 -> 2 / 3
+17 | pharmacological therapy / tratamiento farmacológico | 0.94 | 15 -> 3 / 15
+18 | as low as reasonably achievable / tan baja como sea razonablemente alcanzable | 0.96 | 3 -> 3 / 3
+19 | weight loss / pérdida de peso | 0.90 | 6 -> 6 / 6
+20 | renin suppression / supresión de renina | 0.94 | 3 -> 3 / 3
+21 | hypotension / hipotensión | Solo exacto | 2 -> 2 / 3
+22 | chronic kidney disease / enfermedad renal crónica | 0.94 | 6 -> 6 / 6
+23 | blood pressure target / objetivo de presión arterial | 0.94 | 3 -> 3 / 3
+24 | exercise / ejercicio | Solo exacto | 6 -> 6 / 6
+25 | prehypertension / prehipertensión | Solo exacto | 1 -> 1 / 3
+26 | millimoles per day / milimoles por día | 0.94 | 6 -> 6 / 6
+27 | micrograms per day / microgramos por día | Solo exacto | 6 -> 6 / 6
+28 | non-elevated blood pressure / presión arterial no elevada | 0.96 | 6 -> 6 / 6
+29 | alcohol intake / consumo de alcohol | 0.92 | 3 -> 3 / 3
+30 | serious adverse events / eventos adversos graves | 0.94 | 3 -> 3 / 3
+31 | salt loading / sobrecarga de sodio | 0.92 | 3 -> 3 / 3
+32 | renin-independent aldosterone production / producción de aldosterona independiente de renina | 0.96 | 0 -> 2 / 3
+33 | mineralocorticoid receptor antagonists / antagonistas del receptor de mineralocorticoides | 1.00 | 3 -> 3 / 3
+34 | urinary aldosterone / aldosterona urinaria | 0.94 | 1 -> 2 / 3
+35 | oral contraceptives / anticonceptivos orales | 1.00 | 3 -> 3 / 3
+36 | hypokalemic metabolic alkalosis / alcalosis metabólica hipopotasémica | 0.96 | 2 -> 3 / 3
+37 | aldosterone / aldosterona | Solo exacto | 8 -> 11 / 27
+38 | physical activity / actividad física | 0.96 | 3 -> 3 / 3
+39 | meta-analysis / metaanálisis | 0.92 | 6 -> 6 / 6
+40 | cardiovascular disease / enfermedad cardiovascular | 0.94 | 30 -> 30 / 30
+41 | evidence-based review / revisión basada en la evidencia | 0.94 | 3 -> 3 / 3
+42 | direct renin concentration / concentración directa de renina | 0.96 | 3 -> 3 / 3
+43 | alcohol moderation / moderación del consumo de alcohol | 0.94 | 3 -> 3 / 3
+44 | subclinical atherosclerosis / aterosclerosis subclínica | 0.96 | 3 -> 3 / 3
+45 | older adults / adultos mayores | 0.96 | 3 -> 3 / 3
+46 | healthy diet / alimentación saludable | 0.92 | 3 -> 3 / 3
+47 | co-chair / copresidente | Solo exacto | 3 -> 3 / 3
+48 | blood pressure control / control de la presión arterial | 0.94 | 9 -> 9 / 9
+49 | prevalence / prevalencia | Solo exacto | 9 -> 9 / 9
+50 | diastolic blood pressure / presión arterial diastólica | 0.96 | 6 -> 6 / 6
+
+ALCANCE Y DECISIÓN DE INVESTIGACIÓN
+Se reutilizaron tres archivos de voz natural (36,96 minutos únicos) y sus nueve salidas ASR previamente calculadas. Los archivos 02/03 podrían pertenecer a una misma charla.
+Hay 217 apariciones únicas de los 50 términos y 651 observaciones de modelo correlacionadas; acumulado de 60: 251 apariciones. Una misma grabación analizada por tres modelos no son tres entonaciones.
+No se grabaron nuevas voces, no se modificaron tono/acento/velocidad y no hubo prueba de entonaciones controladas. Las erratas construidas son texto, no variantes fonéticas verificadas.
+La muestra inglesa ya había sido explorada. No se extrapola a los 657 conceptos, español, otros hablantes ni funcionamiento en directo.
+Los siete casos de regresión previos pasan con los 60 términos, incluido primary allosteronism by this test -> primary aldosteronism by this test: se conserva by.
+En las nueve transcripciones con el perfil individual y controles no cambió la secuencia medida de conectores/negaciones/cifras, pero esas comprobaciones no detectan todos los cambios de significado ni de gramática.
+Antes de otra prueba conviene estudiar tres correcciones de política en un experimento nuevo: conservar variantes ya admisibles, proteger flexión singular/plural en ambas direcciones y resolver la selección entre frases largas y subexpresiones.
+Estas propuestas se documentan únicamente; no se aplicaron retrospectivamente, no se corrigieron los resultados desfavorables ni se cambió TRAD.
+
+CONSERVACIÓN Y REPRODUCIBILIDAD
+Se comprobaron 1032 archivos de la instantánea; 821 estaban protegidos estrictamente: glosarios, investigación anterior, paquete depurado, audios, referencias, ASR y bibliotecas usadas.
+Cambios ajenos a la carpeta de este experimento observados en la instantánea: 0.
+Las huellas de los originales y las evidencias anteriores coinciden. Únicos archivos nuevos: esta carpeta tolerance_trial_50_v1.
+Pasaron 12 pruebas de reproducibilidad/protección; la auditoría posterior comprobó los 27 cambios y las seis interferencias. No son una aprobación de eficacia del perfil.
+selection.json y protocol.json fijan muestra y método; threshold_decisions.json justifica cada punto; speech_comparison.json conserva todas las salidas simuladas y perfiles.
+final_results.json resume las comparaciones; preservation_final.json acredita la conservación; manifest.json contiene las huellas de los archivos nuevos.
+No se modificó el glosario original, no se alteraron evidencias previas y no se conectó ni integró nada en TRAD.

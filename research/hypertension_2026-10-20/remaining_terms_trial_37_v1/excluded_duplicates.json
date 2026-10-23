@@ -1,0 +1,212 @@
+[
+  {
+    "case_id": "R00529",
+    "duplicate_of": "R00505",
+    "split": "calibration"
+  },
+  {
+    "case_id": "R01426",
+    "duplicate_of": "R01233",
+    "split": "calibration"
+  },
+  {
+    "case_id": "R01438",
+    "duplicate_of": "R01408",
+    "split": "calibration"
+  },
+  {
+    "case_id": "R01452",
+    "duplicate_of": "R01416",
+    "split": "calibration"
+  },
+  {
+    "case_id": "R01462",
+    "duplicate_of": "R01418",
+    "split": "calibration"
+  },
+  {
+    "case_id": "R01474",
+    "duplicate_of": "R01428",
+    "split": "calibration"
+  },
+  {
+    "case_id": "R00012",
+    "duplicate_of": "R00006",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00050",
+    "duplicate_of": "R00044",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00088",
+    "duplicate_of": "R00082",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00126",
+    "duplicate_of": "R00120",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00164",
+    "duplicate_of": "R00158",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00202",
+    "duplicate_of": "R00196",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00210",
+    "duplicate_of": "R00227",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00242",
+    "duplicate_of": "R00236",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00280",
+    "duplicate_of": "R00274",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00318",
+    "duplicate_of": "R00312",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00356",
+    "duplicate_of": "R00350",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00394",
+    "duplicate_of": "R00388",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00432",
+    "duplicate_of": "R00426",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00504",
+    "duplicate_of": "R00498",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00544",
+    "duplicate_of": "R00538",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00582",
+    "duplicate_of": "R00576",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00620",
+    "duplicate_of": "R00614",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00658",
+    "duplicate_of": "R00652",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00696",
+    "duplicate_of": "R00690",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00734",
+    "duplicate_of": "R00728",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00772",
+    "duplicate_of": "R00766",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00810",
+    "duplicate_of": "R00804",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00850",
+    "duplicate_of": "R00844",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00888",
+    "duplicate_of": "R00882",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00926",
+    "duplicate_of": "R00920",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R00964",
+    "duplicate_of": "R00958",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01002",
+    "duplicate_of": "R00996",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01042",
+    "duplicate_of": "R01036",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01080",
+    "duplicate_of": "R01074",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01118",
+    "duplicate_of": "R01112",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01156",
+    "duplicate_of": "R01150",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01194",
+    "duplicate_of": "R01188",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01232",
+    "duplicate_of": "R01226",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01303",
+    "duplicate_of": "R01297",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01341",
+    "duplicate_of": "R01335",
+    "split": "synthetic_checking"
+  },
+  {
+    "case_id": "R01379",
+    "duplicate_of": "R01373",
+    "split": "synthetic_checking"
+  }
+]

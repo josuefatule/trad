@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "HTN_8d17bae1bc5a",
+    "en": "JNC 7 guideline",
+    "es": "guía JNC 7",
+    "category": "conference_language",
+    "en_hit": {
+      "form": "JNC 7",
+      "source_id": "S169",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12748199/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "JNC 7",
+      "source_id": "S146",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://www3.paho.org/hq/dmdocuments/2010/jnc7_interactivo.pdf",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_4ab0f32c0a4c",
+    "en": "JNC 8 report",
+    "es": "informe JNC 8",
+    "category": "conference_language",
+    "en_hit": {
+      "form": "JNC 8",
+      "source_id": "S58",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24352797/",
+      "locator_index": 5
+    },
+    "es_hit": {
+      "form": "JNC 8",
+      "source_id": "S93",
+      "locator_kind": "pdf_page",
+      "url": "https://svmi.web.ve/back160522/wh/documentos/HTA-LASH.pdf",
+      "locator_index": 19
+    }
+  },
+  {
+    "id": "HTN_b0de6f8f7d51",
+    "en": "guideline-driven management",
+    "es": "manejo basado en guías",
+    "category": "conference_language",
+    "en_hit": {
+      "form": "guideline-directed treatment",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 57
+    },
+    "es_hit": {
+      "form": "manejo basado en las guías de práctica clínica",
+      "source_id": "S181",
+      "locator_kind": "pdf_page",
+      "url": "https://www.archivoscardiologia.com/files/acm_23_93_supl-2_001-013.pdf",
+      "locator_index": 2
+    }
+  },
+  {
+    "id": "HTN_1b881806cbc3",
+    "en": "evidence-based review",
+    "es": "revisión basada en la evidencia",
+    "category": "conference_language",
+    "en_hit": {
+      "form": "evidence-based review",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 84
+    },
+    "es_hit": {
+      "form": "revisión basada en la evidencia",
+      "source_id": "S167",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://campusvirtual.farmacoterapia-sanidadmadrid.org/CURSOS/logic/Consejeria_sanidad/uso_seguro_medicamentos/uso_seguro_medicamento_enfermeria/03/03/es/pdf/anexo6.pdf",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_a9290515a379",
+    "en": "ten-year ASCVD risk",
+    "es": "riesgo de enfermedad cardiovascular aterosclerótica a 10 años",
+    "category": "risk_prevention",
+    "en_hit": {
+      "form": "10-year ASCVD risk",
+      "source_id": "S91",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+      "locator_index": 14
+    },
+    "es_hit": {
+      "form": "riesgo de enfermedad cardiovascular aterosclerótica",
+      "source_id": "S145",
+      "locator_kind": "pdf_page",
+      "url": "https://www.solatcolombia.org/archives/ATEROMA%20V22N1.pdf",
+      "locator_index": 43
+    }
+  },
+  {
+    "id": "HTN_9c147fb0dd01",
+    "en": "primordial prevention",
+    "es": "prevención primordial",
+    "category": "risk_prevention",
+    "en_hit": {
+      "form": "primordial prevention",
+      "source_id": "S157",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://professional.heart.org/en/science-news/cardiovascular-risk-reduction-in-high-risk-pediatric-patients/top-things-to-know",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "prevención primordial",
+      "source_id": "S149",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://www.heart.org/en/news/2023/09/11/el-dolor-en-las-piernas-al-caminar-podria-ser-sintoma-de-un-problema-arterial",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_2674e0e256e0",
+    "en": "CARDIA study",
+    "es": "estudio CARDIA",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "CARDIA study",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 90
+    },
+    "es_hit": {
+      "form": "Coronary Artery Risk Development in Young Adults",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 127
+    }
+  },
+  {
+    "id": "HTN_9efacc096375",
+    "en": "REGARDS study",
+    "es": "estudio REGARDS",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "REGARDS study",
+      "source_id": "S59",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15990444/",
+      "locator_index": 7
+    },
+    "es_hit": {
+      "form": "estudio REGARDS",
+      "source_id": "S151",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://secardiologia.es/blog/5411-enfermedad-coronaria-estable-icual-es-el-grado-de-control-en-prevencion-secundaria",
+      "locator_index": 3
+    }
+  },
+  {
+    "id": "HTN_de8a43278de5",
+    "en": "NHANES",
+    "es": "NHANES",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "NHANES",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 100
+    },
+    "es_hit": {
+      "form": "NHANES",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 120
+    }
+  },
+  {
+    "id": "HTN_c55b21ee723a",
+    "en": "co-chair",
+    "es": "copresidente",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "co-chair",
+      "source_id": "S05",
+      "locator_kind": "pdf_page",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "locator_index": 9
+    },
+    "es_hit": {
+      "form": "copresidente",
+      "source_id": "S142",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.who.int/es/news/item/01-07-2017-dr-tedros-takes-office-as-who-director-general",
+      "locator_index": 4
+    }
+  },
+  {
+    "id": "HTN_ee45bdae9c43",
+    "en": "renin-independent aldosterone production",
+    "es": "producción de aldosterona independiente de renina",
+    "category": "endocrine_renal",
+    "en_hit": {
+      "form": "renin-independent aldosterone production",
+      "source_id": "S10",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_index": 7
+    },
+    "es_hit": {
+      "form": "independiente de la secreción de renina",
+      "source_id": "S138",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1636541024493136",
+      "locator_index": 3
+    }
+  },
+  {
+    "id": "HTN_fe15c79eba36",
+    "en": "hypokalemic metabolic alkalosis",
+    "es": "alcalosis metabólica hipopotasémica",
+    "category": "endocrine_renal",
+    "en_hit": {
+      "form": "hypokalemic metabolic alkalosis",
+      "source_id": "S118",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3894504/",
+      "locator_index": 4
+    },
+    "es_hit": {
+      "form": "alcalosis metabólica hipopotasémica",
+      "source_id": "S119",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://www.revistanefrologia.com/index.php?p=revista&pii=x0211699504030032&r=100&tipo=pdf-simple",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_90d4d5df0cdf",
+    "en": "medication titration",
+    "es": "ajuste gradual de la dosis",
+    "category": "treatment",
+    "en_hit": {
+      "form": "medication titration",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 24
+    },
+    "es_hit": {
+      "form": "titulación a dosis creciente",
+      "source_id": "S93",
+      "locator_kind": "pdf_page",
+      "url": "https://svmi.web.ve/back160522/wh/documentos/HTA-LASH.pdf",
+      "locator_index": 144
+    }
+  },
+  {
+    "id": "HTN_210db6e8d322",
+    "en": "mineralocorticoid receptor antagonist therapy",
+    "es": "tratamiento con antagonistas del receptor de mineralocorticoides",
+    "category": "treatment",
+    "en_hit": {
+      "form": "MR antagonist therapy",
+      "source_id": "S83",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6824480/",
+      "locator_index": 5
+    },
+    "es_hit": {
+      "form": "tratamiento con antagonistas del MR",
+      "source_id": "S141",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0716864025000719",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_c14e2214165b",
+    "en": "subclinical atherosclerosis",
+    "es": "aterosclerosis subclínica",
+    "category": "organ_damage",
+    "en_hit": {
+      "form": "subclinical atherosclerosis",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 88
+    },
+    "es_hit": {
+      "form": "aterosclerosis subclínica",
+      "source_id": "S166",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://secardiologia.es/blog/15900-lp-a-elevada-y-su-asociacion-con-la-aterosclerosis-subclinica",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_b77b3ada1555",
+    "en": "sodium-containing salts",
+    "es": "sales que contienen sodio",
+    "category": "lifestyle",
+    "en_hit": {
+      "form": "salts containing sodium",
+      "source_id": "S147",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://link.springer.com/article/10.1186/s12872-015-0161-7",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "sales de sodio",
+      "source_id": "S176",
+      "locator_kind": "pdf_page",
+      "url": "https://cima.aemps.es/cima/pdfs/es/ft/39858/FT_39858.html.pdf",
+      "locator_index": 2
+    }
+  },
+  {
+    "id": "HTN_360421e6c958",
+    "en": "alcohol moderation",
+    "es": "moderación del consumo de alcohol",
+    "category": "lifestyle",
+    "en_hit": {
+      "form": "moderate alcohol consumption",
+      "source_id": "S91",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477925/",
+      "locator_index": 14
+    },
+    "es_hit": {
+      "form": "moderación del consumo de alcohol",
+      "source_id": "S89",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://semap.org/wp-content/uploads/simple-file-list/Guia_2018_ESC_ESH_HTA.pdf",
+      "locator_index": 5
+    }
+  },
+  {
+    "id": "HTN_b3a920f4854a",
+    "en": "micrograms per day",
+    "es": "microgramos por día",
+    "category": "units_measurement",
+    "en_hit": {
+      "form": "micrograms/day",
+      "source_id": "S177",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/437205/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "mcg/24h",
+      "source_id": "S73",
+      "locator_kind": "pdf_page",
+      "url": "https://www.seen.es/ModulGEX/workspace/publico/modulos/web/docs/apartados/230/300819_095918_9241185157.pdf",
+      "locator_index": 41
+    }
+  },
+  {
+    "id": "HTN_08df2fb9a572",
+    "en": "micrograms per deciliter",
+    "es": "microgramos por decilitro",
+    "category": "units_measurement",
+    "en_hit": {
+      "form": "µg/dL",
+      "source_id": "S10",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_index": 8
+    },
+    "es_hit": {
+      "form": "mcg/dl",
+      "source_id": "S182",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/como-entender-sus-resultados-de-pruebas-de-laboratorio/",
+      "locator_index": 3
+    }
+  },
+  {
+    "id": "HTN_1461e740924a",
+    "en": "clinical guidelines implementation",
+    "es": "implementación de guías de práctica clínica",
+    "category": "conference_language",
+    "en_hit": {
+      "form": "guideline implementation",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 9
+    },
+    "es_hit": {
+      "form": "implementación de guías de práctica clínica",
+      "source_id": "S152",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35099884/",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_ab697e405d94",
+    "en": "arterial compliance",
+    "es": "distensibilidad arterial",
+    "category": "physiology",
+    "en_hit": {
+      "form": "arterial compliance",
+      "source_id": "S76",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/",
+      "locator_index": 18
+    },
+    "es_hit": {
+      "form": "distensibilidad arterial",
+      "source_id": "S93",
+      "locator_kind": "pdf_page",
+      "url": "https://svmi.web.ve/back160522/wh/documentos/HTA-LASH.pdf",
+      "locator_index": 146
+    }
+  },
+  {
+    "id": "HTN_51c3b943c1c3",
+    "en": "hybrid sphygmomanometer",
+    "es": "esfigmomanómetro híbrido",
+    "category": "measurement",
+    "en_hit": {
+      "form": "hybrid sphygmomanometer",
+      "source_id": "S76",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/",
+      "locator_index": 7
+    },
+    "es_hit": {
+      "form": "comprenden los dispositivos aneroides y los híbridos",
+      "source_id": "S158",
+      "locator_kind": "pdf_page",
+      "url": "https://repositorio.binasss.sa.cr/server/api/core/bitstreams/dd1125d8-782a-4d89-89b0-88d3892055db/content",
+      "locator_index": 20
+    }
+  },
+  {
+    "id": "HTN_7a7149e08b17",
+    "en": "attended automated office blood pressure",
+    "es": "presión arterial automatizada en consultorio con observador",
+    "category": "measurement",
+    "en_hit": {
+      "form": "attended AOBP",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 19
+    },
+    "es_hit": {
+      "form": "con asistencia de un profesional de la salud",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 21
+    }
+  },
+  {
+    "id": "HTN_ef6b40c76638",
+    "en": "renal parenchymal hypertension",
+    "es": "hipertensión de origen parenquimatoso renal",
+    "category": "classification",
+    "en_hit": {
+      "form": "renal parenchymal hypertension",
+      "source_id": "S170",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35459368/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "hipertensión por enfermedad renal parenquimatosay",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 40
+    }
+  },
+  {
+    "id": "HTN_e0ffd99ff3e1",
+    "en": "adrenal lateralization",
+    "es": "lateralización suprarrenal",
+    "category": "endocrine_renal",
+    "en_hit": {
+      "form": "adrenal lateralization",
+      "source_id": "S10",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_index": 8
+    },
+    "es_hit": {
+      "form": "lateralización en la secreción de aldosterona",
+      "source_id": "S141",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0716864025000719",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_001a4396cf85",
+    "en": "lateralizing primary aldosteronism",
+    "es": "aldosteronismo primario lateralizado",
+    "category": "endocrine_renal",
+    "en_hit": {
+      "form": "lateralizing PA",
+      "source_id": "S10",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_index": 6
+    },
+    "es_hit": {
+      "form": "HAP que lateraliza",
+      "source_id": "S141",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0716864025000719",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_4110283fe66f",
+    "en": "overnight dexamethasone suppression test",
+    "es": "prueba de supresión nocturna con dexametasona",
+    "category": "endocrine_renal",
+    "en_hit": {
+      "form": "overnight dexamethasone suppression test",
+      "source_id": "S10",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism-2",
+      "locator_index": 8
+    },
+    "es_hit": {
+      "form": "prueba nocturna con un miligramo",
+      "source_id": "S171",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.cun.es/diccionario-medico/terminos/prueba-dexametasona",
+      "locator_index": 3
+    }
+  },
+  {
+    "id": "HTN_2059d7aa272f",
+    "en": "preoperative alpha blockade",
+    "es": "bloqueo alfaadrenérgico preoperatorio",
+    "category": "endocrine_renal",
+    "en_hit": {
+      "form": "preoperative alpha blockade",
+      "source_id": "S173",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27864838/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "bloqueo alfaadrenérgico preoperatorio",
+      "source_id": "S180",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://revistachilenadeanestesia.cl/revchilanestv50n02-03/",
+      "locator_index": 5
+    }
+  },
+  {
+    "id": "HTN_9ebc2ef8e698",
+    "en": "licorice-induced hypertension",
+    "es": "hipertensión inducida por regaliz",
+    "category": "endocrine_renal",
+    "en_hit": {
+      "form": "licorice-induced hypertension",
+      "source_id": "S163",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28276791/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "hipertensión por ingesta de regaliz",
+      "source_id": "S117",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://www.seep.es/images/site/publicaciones/oficialesSEEP/consenso/cap30.pdf",
+      "locator_index": 4
+    }
+  },
+  {
+    "id": "HTN_02d32c438fa5",
+    "en": "albumin excretion rate",
+    "es": "tasa de excreción de albúmina",
+    "category": "kidney",
+    "en_hit": {
+      "form": "albumin excretion rate",
+      "source_id": "S05",
+      "locator_kind": "pdf_page",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "locator_index": 12
+    },
+    "es_hit": {
+      "form": "tasa de excreción de albúmina",
+      "source_id": "S134",
+      "locator_kind": "pdf_page",
+      "url": "https://www.iacs.es/wp-content/uploads/2021/06/281_Nefropatia_diabetes_IACS.pdf",
+      "locator_index": 47
+    }
+  },
+  {
+    "id": "HTN_48687c33055c",
+    "en": "spot urine sample",
+    "es": "muestra aislada de orina",
+    "category": "kidney",
+    "en_hit": {
+      "form": "spot urine sample",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 59
+    },
+    "es_hit": {
+      "form": "muestra de orina aislada",
+      "source_id": "S134",
+      "locator_kind": "pdf_page",
+      "url": "https://www.iacs.es/wp-content/uploads/2021/06/281_Nefropatia_diabetes_IACS.pdf",
+      "locator_index": 53
+    }
+  },
+  {
+    "id": "HTN_ee68c0139219",
+    "en": "biochemical adherence testing",
+    "es": "pruebas bioquímicas de adherencia",
+    "category": "treatment",
+    "en_hit": {
+      "form": "chemical adherence testing",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 35
+    },
+    "es_hit": {
+      "form": "pruebas bioquímicas que valoran",
+      "source_id": "S172",
+      "locator_kind": "pdf_page",
+      "url": "https://revistas.sena.edu.co/index.php/rediis/article/download/2076/2337/7908",
+      "locator_index": 7
+    }
+  },
+  {
+    "id": "HTN_dabd6a557ead",
+    "en": "alcohol-mediated renal denervation",
+    "es": "denervación renal mediada por alcohol",
+    "category": "treatment",
+    "en_hit": {
+      "form": "alcohol-mediated renal denervation",
+      "source_id": "S179",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32081241/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "denervación renal mediada por alcohol",
+      "source_id": "S144",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.caci.org.ar/seguridad-y-eficacia-de-la-denervacion-renal-mediada-por-alcohol-resultados-del-ensayo-target-bp/",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_bf82b7ff7585",
+    "en": "renal artery stenting",
+    "es": "colocación de stent en la arteria renal",
+    "category": "treatment",
+    "en_hit": {
+      "form": "renal artery stenting",
+      "source_id": "S92",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530990/",
+      "locator_index": 112
+    },
+    "es_hit": {
+      "form": "colocación de un stent arterial",
+      "source_id": "S187",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://medlineplus.gov/spanish/ency/article/003781.htm",
+      "locator_index": 3
+    }
+  },
+  {
+    "id": "HTN_52a96921d6d9",
+    "en": "asymptomatic markedly elevated blood pressure",
+    "es": "presión arterial marcadamente elevada sin síntomas",
+    "category": "emergencies",
+    "en_hit": {
+      "form": "asymptomatic markedly elevated blood pressure",
+      "source_id": "S164",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41209582/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "presión arterial marcadamente elevada asintomática",
+      "source_id": "S186",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://www.davila.cl/wp-content/uploads/2025/11/Revista-Cienti%CC%81fica-Volumen-2.-Nu%CC%81mero-1.pdf",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_a771971e83a5",
+    "en": "focal neurological deficit",
+    "es": "déficit neurológico focal",
+    "category": "emergencies",
+    "en_hit": {
+      "form": "focal neurological deficit",
+      "source_id": "S66",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39588420/",
+      "locator_index": 8
+    },
+    "es_hit": {
+      "form": "déficit neurológico focal",
+      "source_id": "S153",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.medlineplus.gov/spanish/ency/article/000701.htm",
+      "locator_index": 3
+    }
+  },
+  {
+    "id": "HTN_5307fadc73e2",
+    "en": "intravenous antihypertensive therapy",
+    "es": "tratamiento antihipertensivo intravenoso",
+    "category": "emergencies",
+    "en_hit": {
+      "form": "intravenous antihypertensive medications",
+      "source_id": "S15",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38804130/",
+      "locator_index": 7
+    },
+    "es_hit": {
+      "form": "administración de medicamentos intravenosos",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 81
+    }
+  },
+  {
+    "id": "HTN_073d741b83bc",
+    "en": "flash pulmonary edema",
+    "es": "edema pulmonar de aparición súbita",
+    "category": "emergencies",
+    "en_hit": {
+      "form": "flash pulmonary oedema",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 11
+    },
+    "es_hit": {
+      "form": "edema pulmonar flash",
+      "source_id": "S161",
+      "locator_kind": "indexed_bilingual_author_keywords",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34210635/",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_696e8078d71d",
+    "en": "postpartum preeclampsia",
+    "es": "preeclampsia posparto",
+    "category": "pregnancy",
+    "en_hit": {
+      "form": "postpartum preeclampsia",
+      "source_id": "S155",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000606.htm",
+      "locator_index": 2
+    },
+    "es_hit": {
+      "form": "preeclampsia posparto",
+      "source_id": "S154",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.medlineplus.gov/spanish/ency/patientinstructions/000606.htm",
+      "locator_index": 2
+    }
+  },
+  {
+    "id": "HTN_5ea9929ea500",
+    "en": "perinatal death",
+    "es": "muerte perinatal",
+    "category": "pregnancy",
+    "en_hit": {
+      "form": "perinatal death",
+      "source_id": "S13",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.acc.org/Latest-in-Cardiology/Clinical-Trials/2022/04/01/03/19/CHAP",
+      "locator_index": 5
+    },
+    "es_hit": {
+      "form": "muerte perinatal",
+      "source_id": "S165",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10395882/",
+      "locator_index": 6
+    }
+  },
+  {
+    "id": "HTN_6832f45cc30b",
+    "en": "glomerular hypertension",
+    "es": "hipertensión glomerular",
+    "category": "organ_damage",
+    "en_hit": {
+      "form": "glomerular hypertension",
+      "source_id": "S162",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1291662/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "hipertensión glomerular",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 20
+    }
+  },
+  {
+    "id": "HTN_be503d73e106",
+    "en": "blood pressure percentile",
+    "es": "percentil de presión arterial",
+    "category": "special_populations",
+    "en_hit": {
+      "form": "blood pressure percentile",
+      "source_id": "S178",
+      "locator_kind": "indexed_excerpt_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30354718/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "percentil (Pc) 95 del promedio de PA",
+      "source_id": "S168",
+      "locator_kind": "pdf_page",
+      "url": "https://www.saha.org.ar/uploads/pdf/1760367723.pdf",
+      "locator_index": 12
+    }
+  },
+  {
+    "id": "HTN_43e0c4af6dd1",
+    "en": "cerebral hypoperfusion",
+    "es": "hipoperfusión cerebral",
+    "category": "special_populations",
+    "en_hit": {
+      "form": "cerebral hypoperfusion",
+      "source_id": "S26",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38205630/",
+      "locator_index": 7
+    },
+    "es_hit": {
+      "form": "hipoperfusión cerebral",
+      "source_id": "S159",
+      "locator_kind": "indexed_bilingual_author_keywords",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37696419/",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_10b0fd07b0f1",
+    "en": "intermittent hypoxemia",
+    "es": "hipoxemia intermitente",
+    "category": "special_populations",
+    "en_hit": {
+      "form": "intermittent hypoxemia",
+      "source_id": "S160",
+      "locator_kind": "indexed_bilingual_author_keywords",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25843225/",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "hipoxemia intermitente",
+      "source_id": "S160",
+      "locator_kind": "indexed_bilingual_author_keywords",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25843225/",
+      "locator_index": 1
+    }
+  },
+  {
+    "id": "HTN_16fdb8ef2c0b",
+    "en": "CLICK trial",
+    "es": "ensayo CLICK",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "CLICK trial",
+      "source_id": "S185",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9119310/",
+      "locator_index": 4
+    },
+    "es_hit": {
+      "form": "ensayo CLICK",
+      "source_id": "S183",
+      "locator_kind": "pdf_page",
+      "url": "https://favaloro.edu.ar/files/eBook-Prevencion-Cardiovascular-Sanchez-2da-eicion.pdf",
+      "locator_index": 54
+    }
+  },
+  {
+    "id": "HTN_11211b77eb7e",
+    "en": "BPROAD trial",
+    "es": "ensayo BPROAD",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "BPROAD",
+      "source_id": "S22",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39555827/",
+      "locator_index": 5
+    },
+    "es_hit": {
+      "form": "ensayo Blood Pressure Control Target in Diabetes",
+      "source_id": "S131",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://secardiologia.es/blog/15689-control-intensivo-de-la-presion-arterial-en-pacientes-con-diabetes-tipo-2",
+      "locator_index": 3
+    }
+  },
+  {
+    "id": "HTN_418a9b8ed5a9",
+    "en": "ESPRIT trial",
+    "es": "ensayo ESPRIT",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "ESPRIT trials",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 64
+    },
+    "es_hit": {
+      "form": "ESPRIT",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 8
+    }
+  },
+  {
+    "id": "HTN_8e92ddf03bf5",
+    "en": "Advance-HTN trial",
+    "es": "ensayo Advance-HTN",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "Advance-HTN trial",
+      "source_id": "S132",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://www.acc.org/latest-in-cardiology/clinical-trials/2025/03/27/15/49/advance-htn",
+      "locator_index": 4
+    },
+    "es_hit": {
+      "form": "ADVANCE-HTN",
+      "source_id": "S145",
+      "locator_kind": "pdf_page",
+      "url": "https://www.solatcolombia.org/archives/ATEROMA%20V22N1.pdf",
+      "locator_index": 4
+    }
+  },
+  {
+    "id": "HTN_3062e896a014",
+    "en": "HYVET trial",
+    "es": "ensayo HYVET",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "Hypertension in the Very Elderly Trial",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 96
+    },
+    "es_hit": {
+      "form": "estudio HYVET",
+      "source_id": "S89",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://semap.org/wp-content/uploads/simple-file-list/Guia_2018_ESC_ESH_HTA.pdf",
+      "locator_index": 61
+    }
+  },
+  {
+    "id": "HTN_7083e8c3981d",
+    "en": "ASCOT-BPLA trial",
+    "es": "ensayo ASCOT-BPLA",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "ASCOT-BPLA",
+      "source_id": "S76",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11409525/",
+      "locator_index": 30
+    },
+    "es_hit": {
+      "form": "ASCOT-BPLA",
+      "source_id": "S175",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/publicaciones/libros/2007-sec-monografia-rinon.pdf",
+      "locator_index": 91
+    }
+  },
+  {
+    "id": "HTN_65b7bf5b1b54",
+    "en": "RADIANCE-HTN TRIO trial",
+    "es": "ensayo RADIANCE-HTN TRIO",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "RADIANCE-HTN TRIO",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 97
+    },
+    "es_hit": {
+      "form": "RADIANCE-HTN TRIO",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 114
+    }
+  },
+  {
+    "id": "HTN_8b09e2cea13f",
+    "en": "SPYRAL HTN-OFF MED trial",
+    "es": "ensayo SPYRAL HTN-OFF MED",
+    "category": "clinical_trials",
+    "en_hit": {
+      "form": "SPYRAL HTN-OFF MED",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 96
+    },
+    "es_hit": {
+      "form": "SPYRAL HTN-OFF MED",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 114
+    }
+  },
+  {
+    "id": "HTN_d006ebf84516",
+    "en": "standard blood pressure control",
+    "es": "control estándar de la presión arterial",
+    "category": "research_methods",
+    "en_hit": {
+      "form": "standard blood pressure control",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 86
+    },
+    "es_hit": {
+      "form": "tratamiento estándar",
+      "source_id": "S29",
+      "locator_kind": "pdf_page",
+      "url": "https://secardiologia.es/images/2023/Gu%C3%ADas/Final_GPC_ESC_2024_PA_elevada_e_hipertensio%CC%81n.pdf",
+      "locator_index": 74
+    }
+  },
+  {
+    "id": "HTN_581d1bf28a4d",
+    "en": "nonfatal stroke",
+    "es": "accidente cerebrovascular no mortal",
+    "category": "research_methods",
+    "en_hit": {
+      "form": "nonfatal stroke",
+      "source_id": "S05",
+      "locator_kind": "pdf_page",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "locator_index": 106
+    },
+    "es_hit": {
+      "form": "ACV no mortal",
+      "source_id": "S89",
+      "locator_kind": "web_text_block_35_lines",
+      "url": "https://semap.org/wp-content/uploads/simple-file-list/Guia_2018_ESC_ESH_HTA.pdf",
+      "locator_index": 39
+    }
+  },
+  {
+    "id": "HTN_9a5b7b5c9e81",
+    "en": "odds ratio",
+    "es": "razón de momios",
+    "category": "research_methods",
+    "en_hit": {
+      "form": "odds ratio",
+      "source_id": "S05",
+      "locator_kind": "pdf_page",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "locator_index": 13
+    },
+    "es_hit": {
+      "form": "razón de momios",
+      "source_id": "S135",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://nefrologiaaldia.org/articulo/2025-guias-kdigo-internacionales-en-espanol-de-poliquistosis-renal-autosomica-dominante/",
+      "locator_index": 29
+    }
+  },
+  {
+    "id": "HTN_8f0c47679c6d",
+    "en": "2021 KDIGO blood pressure guideline",
+    "es": "guía KDIGO de presión arterial de 2021",
+    "category": "guidelines",
+    "en_hit": {
+      "form": "KDIGO 2021 Clinical Practice Guideline",
+      "source_id": "S71",
+      "locator_kind": "pdf_page",
+      "url": "https://repisalud.isciii.es/bitstreams/4fe1933e-3844-454d-9cef-4a64b5debafe/download",
+      "locator_index": 84
+    },
+    "es_hit": {
+      "form": "Guía de Práctica Clínica KDIGO 2021 para el Manejo de la Presión Arterial",
+      "source_id": "S135",
+      "locator_kind": "text_block_35_lines",
+      "url": "https://nefrologiaaldia.org/articulo/2025-guias-kdigo-internacionales-en-espanol-de-poliquistosis-renal-autosomica-dominante/",
+      "locator_index": 11
+    }
+  },
+  {
+    "id": "HTN_f8015196a74c",
+    "en": "2024 KDIGO CKD guideline",
+    "es": "guía KDIGO de enfermedad renal crónica de 2024",
+    "category": "guidelines",
+    "en_hit": {
+      "form": "KDIGO 2024 Clinical Practice Guideline",
+      "source_id": "S05",
+      "locator_kind": "pdf_page",
+      "url": "https://kdigo.org/wp-content/uploads/2026/04/KDIGO-2024-CKD-Guideline.pdf",
+      "locator_index": 1
+    },
+    "es_hit": {
+      "form": "guías KDIGO 2024",
+      "source_id": "S72",
+      "locator_kind": "pdf_page",
+      "url": "https://static.elsevier.es/nad/kdigo2024.pdf",
+      "locator_index": 1
+    }
+  }
+]

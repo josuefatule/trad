@@ -1,0 +1,1163 @@
+{
+  "source": "C:\\live-captions\\glossaries\\medical_base_en.json",
+  "sha256": "4a4920d3ff9404db5601c1c8f832dde4fdeb180dc95d3f06037576ec726c2896",
+  "term_count": 294,
+  "policies": {
+    "exact": 148,
+    "fuzzy": 146
+  },
+  "schema_compatible": true,
+  "load_error": null,
+  "exact_collisions": [],
+  "fuzzy_canonical_screening": [
+    {
+      "a": "hypertension",
+      "b": "prehypertension",
+      "score": 0.9,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "hypertension",
+      "b": "hypotension",
+      "score": 0.882609,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "primary hypertension",
+      "b": "prehypertension",
+      "score": 0.864428,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "hypertension in pregnancy",
+      "b": "hypertensive",
+      "score": 0.878986,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "elevated blood pressure",
+      "b": "non-elevated blood pressure",
+      "score": 0.909,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "systolic blood pressure",
+      "b": "diastolic blood pressure",
+      "score": 0.899802,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "systolic blood pressure",
+      "b": "systolic pressure",
+      "score": 0.952381,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "diastolic blood pressure",
+      "b": "diastolic pressure",
+      "score": 0.954545,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "systolic pressure",
+      "b": "diastolic pressure",
+      "score": 0.867532,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "home blood pressure monitoring",
+      "b": "24-hour blood pressure monitoring",
+      "score": 0.881786,
+      "risk_categories": [
+        "number_or_numeric_word"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "uncontrolled hypertension",
+      "b": "controlled hypertension",
+      "score": 0.961685,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "stage 1 hypertension",
+      "b": "stage 2 hypertension",
+      "score": 0.9525,
+      "risk_categories": [
+        "number_or_numeric_word",
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "clinical practice guidelines",
+      "b": "clinical trial",
+      "score": 0.869231,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "cardiovascular risk factors",
+      "b": "cardiovascular disease",
+      "score": 0.915429,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "cardiovascular risk factors",
+      "b": "cardiovascular events",
+      "score": 0.8755,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "cardiovascular risk factors",
+      "b": "cardiovascular mortality",
+      "score": 0.890902,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "cardiovascular risk factors",
+      "b": "cardiovascular prevention",
+      "score": 0.882889,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "cardiovascular disease",
+      "b": "cardiovascular disease risk",
+      "score": 0.881618,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "plasma renin activity",
+      "b": "plasma concentration",
+      "score": 0.862456,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "plasma aldosterone concentration",
+      "b": "plasma concentration",
+      "score": 0.863509,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "aldosterone-to-renin ratio",
+      "b": "aldosterone production",
+      "score": 0.880319,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "mineralocorticoid receptor antagonists",
+      "b": "mineralocorticoid receptor antagonist therapy",
+      "score": 0.880051,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "hypokalemia",
+      "b": "hyperkalemia",
+      "score": 0.882609,
+      "risk_categories": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "hyponatremia",
+      "b": "hypernatremia",
+      "score": 0.892,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "antihypertensive therapy",
+      "b": "antihypertensive drug therapy",
+      "score": 0.888214,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "antihypertensive drug therapy",
+      "b": "antihypertensive medication",
+      "score": 0.881994,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "pharmacological therapy",
+      "b": "non-pharmacological therapy",
+      "score": 0.901943,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "thiazide diuretics",
+      "b": "thiazide-like diuretics",
+      "score": 0.86442,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "potassium-sparing diuretics",
+      "b": "potassium intake",
+      "score": 0.862952,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "heart failure with reduced ejection fraction",
+      "b": "heart failure with preserved ejection fraction",
+      "score": 0.915,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "potassium-rich diet",
+      "b": "potassium intake",
+      "score": 0.88451,
+      "risk_categories": [],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    },
+    {
+      "a": "milligrams per deciliter",
+      "b": "micrograms per deciliter",
+      "score": 0.882386,
+      "risk_categories": [
+        "unit"
+      ],
+      "scope": "screening canonical pair only; not proof that runtime span matcher applies it"
+    }
+  ],
+  "sensitive_entries": [
+    {
+      "canonical": "high blood pressure",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "arterial hypertension",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "primary hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "secondary hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "drug-induced hypertension",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "hypertension in pregnancy",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "systolic blood pressure",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "diastolic blood pressure",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "systolic pressure",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "diastolic pressure",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "target systolic blood pressure",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "white-coat hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "masked hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "nocturnal hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "resistant hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "apparent treatment-resistant hypertension",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "pseudo-resistant hypertension",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "uncontrolled hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "controlled hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "stage 1 hypertension",
+      "policy": "exact",
+      "flags": [
+        "number_or_numeric_word",
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "stage 2 hypertension",
+      "policy": "exact",
+      "flags": [
+        "number_or_numeric_word",
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "isolated systolic hypertension",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "severe hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "orthostatic hypotension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "hypotension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "2024 ESC guidelines",
+      "policy": "exact",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "2018 ESC/ESH guidelines",
+      "policy": "exact",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "2017 ACC/AHA guideline",
+      "policy": "exact",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "JNC 7 guideline",
+      "policy": "exact",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "JNC 8 report",
+      "policy": "exact",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "ten-year ASCVD risk",
+      "policy": "fuzzy",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "hypokalemia",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "hyperkalemia",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "secondary causes of hypertension",
+      "policy": "exact",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "endocrine hypertension",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "first-line therapy",
+      "policy": "fuzzy",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "alpha-2 receptor agonists",
+      "policy": "fuzzy",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "spironolactone",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "eplerenone",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "hydrochlorothiazide",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "chlorthalidone",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "furosemide",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "lisinopril",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "enalapril",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "ramipril",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "losartan",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "valsartan",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "candesartan",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "metoprolol",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "carvedilol",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "amlodipine",
+      "policy": "exact",
+      "flags": [
+        "medication_cue"
+      ]
+    },
+    {
+      "canonical": "left ventricular function",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "left ventricular hypertrophy",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "left ventricular ejection fraction",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "hypertension-mediated organ damage",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "type 2 diabetes mellitus",
+      "policy": "fuzzy",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "low-sodium diet",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    },
+    {
+      "canonical": "millimeters of mercury",
+      "policy": "fuzzy",
+      "flags": [
+        "unit"
+      ]
+    },
+    {
+      "canonical": "milligrams per day",
+      "policy": "exact",
+      "flags": [
+        "unit"
+      ]
+    },
+    {
+      "canonical": "milligrams per deciliter",
+      "policy": "exact",
+      "flags": [
+        "unit"
+      ]
+    },
+    {
+      "canonical": "micrograms per day",
+      "policy": "exact",
+      "flags": [
+        "unit"
+      ]
+    },
+    {
+      "canonical": "micrograms per deciliter",
+      "policy": "exact",
+      "flags": [
+        "unit"
+      ]
+    },
+    {
+      "canonical": "24-hour urine collection",
+      "policy": "fuzzy",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "24-hour blood pressure monitoring",
+      "policy": "fuzzy",
+      "flags": [
+        "number_or_numeric_word"
+      ]
+    },
+    {
+      "canonical": "as low as reasonably achievable",
+      "policy": "fuzzy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ]
+    }
+  ],
+  "sensitive_forms": [
+    {
+      "source": "HTN",
+      "canonical": "hypertension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "essential hypertension",
+      "canonical": "primary hypertension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "medication-induced hypertension",
+      "canonical": "drug-induced hypertension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "SBP",
+      "canonical": "systolic blood pressure",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "systolic BP",
+      "canonical": "systolic blood pressure",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "DBP",
+      "canonical": "diastolic blood pressure",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "diastolic BP",
+      "canonical": "diastolic blood pressure",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "aTRH",
+      "canonical": "apparent treatment-resistant hypertension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "pseudoresistant hypertension",
+      "canonical": "pseudo-resistant hypertension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "stage one hypertension",
+      "canonical": "stage 1 hypertension",
+      "flags": [
+        "number_or_numeric_word",
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "stage two hypertension",
+      "canonical": "stage 2 hypertension",
+      "flags": [
+        "number_or_numeric_word",
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "pre-hypertension",
+      "canonical": "prehypertension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "postural hypotension",
+      "canonical": "orthostatic hypotension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "low blood pressure",
+      "canonical": "hypotension",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "2024 ESC Guidelines for the Management of Elevated Blood Pressure and Hypertension",
+      "canonical": "2024 ESC guidelines",
+      "flags": [
+        "number_or_numeric_word",
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "2017 ACC/AHA hypertension guideline",
+      "canonical": "2017 ACC/AHA guideline",
+      "flags": [
+        "number_or_numeric_word",
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "Seventh Report of the Joint National Committee",
+      "canonical": "JNC 7 guideline",
+      "flags": [
+        "number_or_numeric_word"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "Eighth Joint National Committee",
+      "canonical": "JNC 8 report",
+      "flags": [
+        "number_or_numeric_word"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "10-year ASCVD risk",
+      "canonical": "ten-year ASCVD risk",
+      "flags": [
+        "number_or_numeric_word"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "Systolic Blood Pressure Intervention Trial",
+      "canonical": "SPRINT trial",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "angiotensin 2",
+      "canonical": "angiotensin II",
+      "flags": [
+        "number_or_numeric_word"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "low blood potassium",
+      "canonical": "hypokalemia",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "hypokalaemia",
+      "canonical": "hypokalemia",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "high blood potassium",
+      "canonical": "hyperkalemia",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "hyperkalaemia",
+      "canonical": "hyperkalemia",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "first-line treatment",
+      "canonical": "first-line therapy",
+      "flags": [
+        "number_or_numeric_word"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "HCTZ",
+      "canonical": "hydrochlorothiazide",
+      "flags": [
+        "medication_cue"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "LVH",
+      "canonical": "left ventricular hypertrophy",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "LVEF",
+      "canonical": "left ventricular ejection fraction",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "HMOD",
+      "canonical": "hypertension-mediated organ damage",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "type 2 diabetes",
+      "canonical": "type 2 diabetes mellitus",
+      "flags": [
+        "number_or_numeric_word"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "T2DM",
+      "canonical": "type 2 diabetes mellitus",
+      "flags": [
+        "number_or_numeric_word"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "Dietary Approaches to Stop Hypertension",
+      "canonical": "DASH diet",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "mmHg",
+      "canonical": "millimeters of mercury",
+      "flags": [
+        "unit"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "mm Hg",
+      "canonical": "millimeters of mercury",
+      "flags": [
+        "unit"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "millimetres of mercury",
+      "canonical": "millimeters of mercury",
+      "flags": [
+        "unit"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    },
+    {
+      "source": "mg/day",
+      "canonical": "milligrams per day",
+      "flags": [
+        "unit"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "mg/dL",
+      "canonical": "milligrams per deciliter",
+      "flags": [
+        "unit"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "mmol/day",
+      "canonical": "millimoles per day",
+      "flags": [
+        "unit"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "µg/day",
+      "canonical": "micrograms per day",
+      "flags": [
+        "unit"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "mcg/day",
+      "canonical": "micrograms per day",
+      "flags": [
+        "unit"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "µg/dL",
+      "canonical": "micrograms per deciliter",
+      "flags": [
+        "unit"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "mcg/dL",
+      "canonical": "micrograms per deciliter",
+      "flags": [
+        "unit"
+      ],
+      "policy": "exact",
+      "action": "manual review required"
+    },
+    {
+      "source": "ALARA",
+      "canonical": "as low as reasonably achievable",
+      "flags": [
+        "clinical_polarity_or_laterality_cue"
+      ],
+      "policy": "fuzzy",
+      "action": "manual review required"
+    }
+  ],
+  "normalizer_source_sha256": "0b1ddfb6d760ca7ad891cb88c0ef1b17f625f5b46b5072a6b583eac4f8fcf0cf",
+  "algorithm_findings": [
+    "exact variants/aliases auto-apply with confidence 1, regardless of auto_threshold",
+    "single-word fuzzy canonicals do not match isolated words; split technical words may match",
+    "collapsed edit-distance path can raise confidence to the configured auto_threshold; 0.99 is not a calibrated probability",
+    "casefold + diacritic removal + hyphen/space joins affect collisions; multiword fuzzy uses conservative asymmetric span lengths",
+    "suggest never applies term replacements, but deterministic spacing still runs",
+    "all clinical replacements require review; exact compatibility is not clinical safety"
+  ],
+  "threshold_099_demo": {
+    "input": "hyper tenson",
+    "output": "hypertension",
+    "corrections": [
+      {
+        "source": "hyper tenson",
+        "replacement": "hypertension",
+        "start": 0,
+        "end": 12,
+        "rule": "glossary_fuzzy",
+        "confidence": 0.99,
+        "canonical": "hypertension"
+      }
+    ],
+    "uncalibrated_score_before_boost": 0.9833333333333333
+  },
+  "live_activation": "NOT authorized or performed",
+  "asr_context_support": {
+    "faster_whisper": "initial_prompt is explicit and implemented in installed transcribe; optional lab experiment only",
+    "wlk": "must inspect installed query and decoder-context path; no context injection assumed"
+  }
+}

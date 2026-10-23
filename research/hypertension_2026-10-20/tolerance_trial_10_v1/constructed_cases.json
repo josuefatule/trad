@@ -1,0 +1,3704 @@
+[
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "sodium-conaining salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0001"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "sodium-conatining salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0002"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "sodium-conxtaining salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0003"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "sodium-conzaining salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0004"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "sodium-con taining salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0005"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "sodiumcontaining salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0006"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "sodium-contaiing salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0007"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "sodium-contaiinng salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0008"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "sodium-contaixning salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0009"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "sodium-contaizing salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0010"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "sodium-contai ning salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0011"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "sodiumcontaining salts",
+    "intended": "sodium-containing salts",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0012"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "oral sodium loading test",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0013"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "young adults",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0014"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium chloride",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0015"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium-glucose cotransporter 2 inhibitors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0016"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium nitroprusside",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0017"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urine albumin-to-creatinine ratio",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0018"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "serum creatinine",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0019"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium reduction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0020"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sham-controlled trial",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0021"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "tonic-clonic seizures",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0022"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "smoking cessation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0023"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "spot urine sample",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0024"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "potassium-sparing diuretics",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0025"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cortical blindness",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0026"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "standing blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0027"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "non-dipping pattern",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0028"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urine protein-to-creatinine ratio",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0029"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "dual combination therapy",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0030"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "silent cerebral infarcts",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0031"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "National Institutes of Health",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0032"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "angiotensin-converting enzyme",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0033"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "potassium-enriched salt substitute",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0034"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "medication titration",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0035"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "plasma concentration",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0036"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "potassium-containing salts",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0037"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed potassium-containing salts today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0038"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "sodium-is not containing salts",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0039"
+  },
+  {
+    "concept_id": "HTN_b77b3ada1555",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "sodium-was never containing salts",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0040"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "sodium reaborption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0041"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "sodium reabosrption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0042"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "sodium reabxsorption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0043"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "sodium reabzorption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0044"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "sodium reab sorption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0045"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "sodiumreabsorption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0046"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "sodium reabsortion",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0047"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "sodium reabsortpion",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0048"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "sodium reabsorxption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0049"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "sodium reabsorztion",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0050"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "sodium reabsor ption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0051"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "sodiumreabsorption",
+    "intended": "sodium reabsorption",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0052"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium reduction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0053"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "dietary sodium restriction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0054"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal sodium retention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0055"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urinary sodium excretion",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0056"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium chloride",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0057"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "vasodilation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0058"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "serum creatinine",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0059"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "smoking cessation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0060"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "odds ratio",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0061"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "low-sodium diet",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0062"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "diuresis",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0063"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "secondary prevention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0064"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "ultrasound renal denervation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0065"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "diuretics",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0066"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "primordial prevention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0067"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium-glucose cotransporter 2 inhibitors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0068"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "secondary hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0069"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "device calibration",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0070"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "primary prevention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0071"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "social deprivation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0072"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "loop diuretics",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0073"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urinary potassium excretion",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0074"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "class of recommendation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0075"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "postpartum hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0076"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "potassium reabsorption",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0077"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed potassium reabsorption today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0078"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "sodium is not reabsorption",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0079"
+  },
+  {
+    "concept_id": "HTN_017909dfbe03",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "sodium was never reabsorption",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0080"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "cardovascular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0081"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "cardoivascular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0082"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "cardxiovascular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0083"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "cardzovascular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0084"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "card iovascular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0085"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "cardiovascularevents",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0086"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "cardiovasular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0087"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "cardiovasuclar events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0088"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "cardiovasxcular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0089"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "cardiovaszular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0090"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "cardiovas cular events",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0091"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "cardiovascularevents",
+    "intended": "cardiovascular events",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0092"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular prevention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0093"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular death",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0094"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular risk",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0095"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular disease",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0096"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular mortality",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0097"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular risk factors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0098"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "vascular dementia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0099"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "microvascular remodeling",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0100"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renovascular hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0101"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "10-year cardiovascular disease risk",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0102"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "vascular remodeling",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0103"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "atherosclerotic cardiovascular disease",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0104"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "serious adverse events",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0105"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "vascular injury",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0106"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "macula densa",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0107"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "vascular fibrosis",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0108"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "primordial prevention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0109"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiac arrhythmia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0110"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "left atrial enlargement",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0111"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal revascularization",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0112"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "systemic vascular resistance",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0113"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "vascular smooth muscle cells",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0114"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "CARDIA study",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0115"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "mandibular advancement device",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0116"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "cardiovascular event",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0117"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed cardiovascular event today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0118"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "cardiovascular is not events",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0119"
+  },
+  {
+    "concept_id": "HTN_33721e7d10bc",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "cardiovascular was never events",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0120"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "tyrosine kinase inhbitors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0121"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "tyrosine kinase inhbiitors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0122"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "tyrosine kinase inhxibitors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0123"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "tyrosine kinase inhzbitors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0124"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "tyrosine kinase inh ibitors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0125"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "tyrosinekinase inhibitors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0126"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "tyrosine kinase inhibiors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0127"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "tyrosine kinase inhibiotrs",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0128"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "tyrosine kinase inhibixtors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0129"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "tyrosine kinase inhibizors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0130"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "tyrosine kinase inhibi tors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0131"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "tyrosinekinase inhibitors",
+    "intended": "tyrosine kinase inhibitors",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0132"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "aldosterone synthase inhibitor",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0133"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "direct renin inhibitors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0134"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "angiotensin-converting enzyme inhibitors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0135"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sodium-glucose cotransporter 2 inhibitors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0136"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "soluble fms-like tyrosine kinase-1",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0137"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "acute kidney injury",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0138"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "physical inactivity",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0139"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "type 2 diabetes mellitus",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0140"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "saline infusion test",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0141"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "tonic-clonic seizures",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0142"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "kidney disease progression",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0143"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "chronic kidney disease",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0144"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "serious adverse events",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0145"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "thyroid-stimulating hormone",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0146"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "moderately increased albuminuria",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0147"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "modifiable risk factors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0148"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "single-pill combination",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0149"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urine albumin-to-creatinine ratio",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0150"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urine protein-to-creatinine ratio",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0151"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "atrial fibrillation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0152"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "confidence interval",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0153"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal insufficiency",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0154"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal ischemia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0155"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "silent cerebral infarcts",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0156"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "tyrosine kinase inhibitor",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0157"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed tyrosine kinase inhibitor today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0158"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "tyrosine is not kinase inhibitors",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0159"
+  },
+  {
+    "concept_id": "HTN_f48198e7872f",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "tyrosine was never kinase inhibitors",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0160"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "ten-year ACVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0161"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "ten-year ACSVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0162"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "ten-year AxSCVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0163"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "ten-year AzCVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0164"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "ten-year A SCVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0165"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "tenyear ASCVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0166"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "ten-year ASCD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0167"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "ten-year ASCDV risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0168"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "ten-year ASCxVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0169"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "ten-year ASCzD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0170"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "ten-year ASC VD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0171"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "tenyear ASCVD risk",
+    "intended": "ten-year ASCVD risk",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0172"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "10-year cardiovascular disease risk",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0173"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular risk",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0174"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "intention-to-treat analysis",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0175"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "atherosclerosis",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0176"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiometabolic risk",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0177"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "evidence-based review",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0178"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "American Heart Association",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0179"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "exercise",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0180"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "relative risk",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0181"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular risk factors",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0182"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "Mediterranean diet",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0183"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sedentary behavior",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0184"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "enalapril",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0185"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal ischemia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0186"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "acute heart failure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0187"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "adrenal hyperplasia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0188"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "lateralizing primary aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0189"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "white matter lesions",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0190"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "target systolic blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0191"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "bilateral primary aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0192"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "dietary sodium restriction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0193"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "open-label trial",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0194"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal ultrasound",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0195"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "left ventricular mass index",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0196"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "five-year ASCVD risk",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0197"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed five-year ASCVD risk today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0198"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "ten-is not year ASCVD risk",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0199"
+  },
+  {
+    "concept_id": "HTN_a9290515a379",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "ten-was never year ASCVD risk",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0200"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "National Insitutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0201"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "National Insittutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0202"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "National Insxtitutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0203"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "National Inszitutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0204"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "National Ins titutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0205"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "NationalInstitutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0206"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "National Instittes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0207"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "National Instittues of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0208"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "National Institxutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0209"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "National Institztes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0210"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "National Instit utes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0211"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "NationalInstitutes of Health",
+    "intended": "National Institutes of Health",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0212"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "coarctation of the aorta",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0213"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "family history of hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0214"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "arterial stiffness",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0215"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "secondary causes of hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0216"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "combination therapy",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0217"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "perinatal death",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0218"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "gestational hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0219"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "medication titration",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0220"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "intermittent hypoxemia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0221"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "millimeters of mercury",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0222"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal ischemia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0223"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "myocardial ischemia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0224"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "dual combination therapy",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0225"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "gestational age",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0226"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "nonfatal stroke",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0227"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "nonfatal myocardial infarction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0228"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "myocardial infarction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0229"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "triple combination therapy",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0230"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "adrenal computed tomography",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0231"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cardiovascular disease",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0232"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "mean arterial pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0233"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "nocturnal hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0234"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "clinical outcomes",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0235"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "hospitalization for heart failure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0236"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "National is not Institutes of Health",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0237"
+  },
+  {
+    "concept_id": "HTN_de7d5a3bf89e",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "National was never Institutes of Health",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0238"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "minerlocorticoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0239"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "minerlaocorticoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0240"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "minerxalocorticoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0241"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "minerzlocorticoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0242"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "miner alocorticoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0243"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "mineralocorticoidreceptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0244"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "mineralocoricoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0245"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "mineralocoritcoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0246"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "mineralocorxticoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0247"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "mineralocorzicoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0248"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "mineralocor ticoid receptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0249"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "mineralocorticoidreceptor",
+    "intended": "mineralocorticoid receptor",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0250"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "mineralocorticoid receptor antagonists",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0251"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "mineralocorticoid receptor antagonist therapy",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0252"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "apparent mineralocorticoid excess",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0253"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "nonsteroidal mineralocorticoid receptor antagonist",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0254"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "Mas receptor",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0255"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "glucocorticoid-remediable aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0256"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "kidney transplant recipient",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0257"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "acute aortic dissection",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0258"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "oscillometric blood pressure monitor",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0259"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "medication reconciliation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0260"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "supine blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0261"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "home blood pressure monitoring",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0262"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "glomerular filtration rate",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0263"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "inter-arm blood pressure difference",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0264"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal sodium retention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0265"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "amiloride",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0266"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "incidence",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0267"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "practice point",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0268"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "relative risk reduction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0269"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "angiotensin II receptor blockers",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0270"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "fludrocortisone suppression test",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0271"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "baroreceptor reflex",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0272"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "oral contraceptives",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0273"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "fetal growth restriction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0274"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "mineralocorticoid receptors",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0275"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed mineralocorticoid receptors today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0276"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "mineralocorticoid is not receptor",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0277"
+  },
+  {
+    "concept_id": "HTN_a05dadb4b409",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "mineralocorticoid was never receptor",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0278"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "primary aldoteronism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0279"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "primary aldotseronism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0280"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "primary aldoxsteronism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0281"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "primary aldozteronism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0282"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "primary aldo steronism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0283"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "primaryaldosteronism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0284"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "primary aldosternism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0285"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "primary aldosternoism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0286"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "primary aldosterxonism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0287"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "primary aldosterznism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0288"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "primary aldoster onism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0289"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "primaryaldosteronism",
+    "intended": "primary aldosteronism",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0290"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "bilateral primary aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0291"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urinary aldosterone",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0292"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "secondary aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0293"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "hyperaldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0294"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "lateralizing primary aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0295"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "aldosterone",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0296"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "primary outcome",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0297"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "glucocorticoid-remediable aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0298"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "primary hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0299"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "plasma aldosterone concentration",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0300"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "primary prevention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0301"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "pulmonary congestion",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0302"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renin-angiotensin-aldosterone system",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0303"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal artery stenosis",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0304"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "aldosterone production",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0305"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "coronary artery calcium",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0306"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "coronary artery disease",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0307"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "hyperparathyroidism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0308"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "autonomous aldosterone secretion",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0309"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "aldosterone suppression test",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0310"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "aldosterone-producing adenoma",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0311"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "primordial prevention",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0312"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "renal artery stenting",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0313"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "dietary potassium",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0314"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "secondary aldosteronism",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0315"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed secondary aldosteronism today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0316"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "primary is not aldosteronism",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0317"
+  },
+  {
+    "concept_id": "HTN_dcd292247cbd",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "primary was never aldosteronism",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0318"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "sytolic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0319"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "sytsolic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0320"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "syxstolic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0321"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "syztolic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0322"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "sy stolic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0323"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "systolicblood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0324"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "systoic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0325"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "systoilc blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0326"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "systoxlic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0327"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "systozic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0328"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "systo lic blood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0329"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "systolicblood pressure",
+    "intended": "systolic blood pressure",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0330"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "diastolic blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0331"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "target systolic blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0332"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "office blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0333"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "daytime blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0334"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "standing blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0335"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "normal blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0336"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "seated blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0337"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "supine blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0338"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0339"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "out-of-office blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0340"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "nighttime blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0341"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "automated office blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0342"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "standardized office blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0343"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "elevated blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0344"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "blood pressure cuff",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0345"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "oscillometric blood pressure monitor",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0346"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "cuffless blood pressure device",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0347"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "non-elevated blood pressure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0348"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "blood pressure target",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0349"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "standard blood pressure control",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0350"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "blood pressure control",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0351"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "blood pressure reading",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0352"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "intensive blood pressure control",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0353"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "nocturnal blood pressure dipping",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0354"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "diastolic blood pressure",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0355"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed diastolic blood pressure today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0356"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "systolic is not blood pressure",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0357"
+  },
+  {
+    "concept_id": "HTN_ce88c1a364ff",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "systolic was never blood pressure",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0358"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "deletion",
+    "positive": true,
+    "text": "American Heart Assciation",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0359"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "transposition",
+    "positive": true,
+    "text": "American Heart Asscoiation",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0360"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "insertion",
+    "positive": true,
+    "text": "American Heart Assxociation",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0361"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "substitution",
+    "positive": true,
+    "text": "American Heart Asszciation",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0362"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "split_word",
+    "positive": true,
+    "text": "American Heart Ass ociation",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0363"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "AmericanHeart Association",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0364"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "deletion",
+    "positive": true,
+    "text": "American Heart Associaion",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0365"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "transposition",
+    "positive": true,
+    "text": "American Heart Associaiton",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0366"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "insertion",
+    "positive": true,
+    "text": "American Heart Associaxtion",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0367"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "substitution",
+    "positive": true,
+    "text": "American Heart Associazion",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0368"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "split_word",
+    "positive": true,
+    "text": "American Heart Associa tion",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0369"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "merged_words",
+    "positive": true,
+    "text": "AmericanHeart Association",
+    "intended": "American Heart Association",
+    "origin": "constructed_spelling_not_acoustic_or_prosodic",
+    "case_id": "T0370"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "medication reconciliation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0371"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "pediatric hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0372"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "sympathetic activation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0373"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "atrial fibrillation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0374"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "acute aortic dissection",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0375"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "glomerular hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0376"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urinary potassium excretion",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0377"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "urinary sodium excretion",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0378"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "aortic dilatation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0379"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "American College of Cardiology",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0380"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "low-renin hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0381"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "potassium-enriched salt substitute",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0382"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "acute heart failure",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0383"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "severe hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0384"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "candesartan",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0385"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "apparent treatment-resistant hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0386"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "aerobic exercise",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0387"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "vasodilation",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0388"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "bilateral adrenal hyperplasia",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0389"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "biochemical adherence testing",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0390"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "licorice-induced hypertension",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0391"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "left ventricular function",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0392"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "myocardial infarction",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0393"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "distinct_glossary_concept",
+    "positive": false,
+    "text": "lateralizing primary aldosteronism",
+    "origin": "separate_canonical_record_not_a_substitution_license",
+    "case_id": "T0394"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "European Heart Association",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0395"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "preserve_qualifier_or_number",
+    "positive": false,
+    "text": "They discussed European Heart Association today.",
+    "origin": "constructed_contrast_do_not_rewrite_qualifier_or_inflection",
+    "case_id": "T0396"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "calibration",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "American is not Heart Association",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0397"
+  },
+  {
+    "concept_id": "HTN_78bad0122173",
+    "split": "synthetic_checking",
+    "kind": "negation_intrusion",
+    "positive": false,
+    "text": "American was never Heart Association",
+    "origin": "constructed_no_absorption_of_negation",
+    "case_id": "T0398"
+  }
+]

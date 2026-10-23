@@ -1,0 +1,134 @@
+{
+  "files": [
+    {
+      "name": "adversarial_cases.json",
+      "bytes": 43801,
+      "sha256": "3f7ac2426e5c0ad7c9941fcc18be25d46d5979c062938d1d7c76d287e2d77066"
+    },
+    {
+      "name": "adversarial_results.json",
+      "bytes": 171093,
+      "sha256": "f52dad373c1c393149dcc9f761101113831cec7359ac17eb1a278d281dbe1def"
+    },
+    {
+      "name": "baseline.json",
+      "bytes": 189460,
+      "sha256": "095ce10de1f3eccc74c09736c8244d2321491b8d22143c1f08a35f36b232096a"
+    },
+    {
+      "name": "corpus_comparison.json",
+      "bytes": 776393,
+      "sha256": "245f9da6005992174888ff75e2e52d266c26ed9326f9dc639856d94978b42e75"
+    },
+    {
+      "name": "corpus_large-v3-turbo_cardio_01.json",
+      "bytes": 115983,
+      "sha256": "200d1a4e4b3f46ca5e9ffc945506e3fc08aff48984b58ba1959ff74d8923b34f"
+    },
+    {
+      "name": "corpus_large-v3-turbo_cardio_02.json",
+      "bytes": 268345,
+      "sha256": "205342d588b8443154e6e99aa5391133d655aeb00bb19b658267b5dad8849596"
+    },
+    {
+      "name": "corpus_large-v3-turbo_cardio_03.json",
+      "bytes": 266165,
+      "sha256": "46714102540572dedfa68f4f4daaff0c0642cd679f35c4313edadd13feccad42"
+    },
+    {
+      "name": "corpus_medium_cardio_01.json",
+      "bytes": 97304,
+      "sha256": "5953bd83ceb04fca69fec8421cdb56e38da774cedbed0fc8e567c5772bcb3c8f"
+    },
+    {
+      "name": "corpus_medium_cardio_02.json",
+      "bytes": 250167,
+      "sha256": "f0da05a51cf2328874bfe6ccd632ab0f4681c9288fa2a93c6925aa0995741006"
+    },
+    {
+      "name": "corpus_medium_cardio_03.json",
+      "bytes": 262037,
+      "sha256": "761318b65b75c7c5b8b006bf93522983aee359ec212d81a6935e86ddcfe73a29"
+    },
+    {
+      "name": "corpus_small_cardio_01.json",
+      "bytes": 92912,
+      "sha256": "a620e6804d55129f4691e3a24ec1311ba5cc153a5268e1dc7afe9dfeb7a5fa99"
+    },
+    {
+      "name": "corpus_small_cardio_02.json",
+      "bytes": 233122,
+      "sha256": "8f0e45ec7e4e028a28033f006a2569577e792e99c56f4bce122ccb24d642599d"
+    },
+    {
+      "name": "corpus_small_cardio_03.json",
+      "bytes": 280684,
+      "sha256": "631613ab3cd4cd84915a0061798c0f39a1ef7b2e46b61271002a0a7471bf7b9f"
+    },
+    {
+      "name": "evaluation_manifest.json",
+      "bytes": 3328,
+      "sha256": "04dcc73d21f17c862ad6b2c5c44349584108c2d60d78add05bbd75e429a59f6e"
+    },
+    {
+      "name": "final_status.json",
+      "bytes": 590,
+      "sha256": "cb9072dd74a1dac71de5f2eaca86d4a63d580f55c595fc6a2deab7a209da86bf"
+    },
+    {
+      "name": "finalize_report.py",
+      "bytes": 14160,
+      "sha256": "76ce492ed993c4ec3df481a7d90c0c07c988b9885210fcb8aab193e331a8b28f"
+    },
+    {
+      "name": "findings.json",
+      "bytes": 13651,
+      "sha256": "ac348c10d23d349cd24d16f0ab27eb4b02dc6229744828db4af36ce66b92a46d"
+    },
+    {
+      "name": "focused_regression_tests.json",
+      "bytes": 2966,
+      "sha256": "5ceb58ece406977a192a91364087df8b4c9931255b78cb53d467663132286359"
+    },
+    {
+      "name": "fuzzy_diagnostics.json",
+      "bytes": 22732,
+      "sha256": "04c5e0e050e39702cb850004bd43233df8c53556fd9c7dbd6df0ec1c71c49764"
+    },
+    {
+      "name": "preservation.json",
+      "bytes": 762,
+      "sha256": "12250910c0654738479a3dd2f79e65128d2b975fb2c62c9b0520457909c4d775"
+    },
+    {
+      "name": "preservation_final.json",
+      "bytes": 762,
+      "sha256": "12250910c0654738479a3dd2f79e65128d2b975fb2c62c9b0520457909c4d775"
+    },
+    {
+      "name": "REPORT.txt",
+      "bytes": 5607,
+      "sha256": "bd427ccfd5da45de3be96be4f441f91ca94364debac7c45acdcfbd4d3b8ae111"
+    },
+    {
+      "name": "summary.json",
+      "bytes": 2494,
+      "sha256": "6229fa6c14a1503cda2300efa6063ca381dbec3e43a8d595f85cdf1d76aea06f"
+    },
+    {
+      "name": "surface_checks.json",
+      "bytes": 533092,
+      "sha256": "0e439531713164b845a3d3a48a3795562103caf7e1472992161256e99a1fd7f9"
+    },
+    {
+      "name": "test_results.json",
+      "bytes": 11877,
+      "sha256": "74846ac2ac02a5de251187a2483bb172c27047e380f34f30cd5ac9d141d676ec"
+    }
+  ],
+  "validator_sha256": "aef37245d9725bde152e7e5c84308be106ca386e53f3eb80a85b05fb549572e4",
+  "tests_sha256": "112ee97e5aeb1b6516a72ab2773e63adead670614aad75f659538c7551dd1660",
+  "original_measurement_tests_sha256": "0837315b22f8423837debfd5a7ea1601a585b5a83bd34035d37a939d13322790",
+  "input_package_manifest_sha256": "a475080f469c8efbc18beaf0067b1d3694f888f6051fb482cbb5bacfc762703a",
+  "integration_performed": false
+}
